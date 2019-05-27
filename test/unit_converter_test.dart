@@ -1,7 +1,4 @@
-import 'dart:math';
-
 import 'package:test/test.dart';
-import 'package:unit_converter/unit_converter.dart';
 
 void main() {
   group('length', () {
@@ -26,12 +23,12 @@ void main() {
     //           .toStringAsPrecision(5)),
     //       3.1069 * pow(10, -5));
     // });
-    test('convertLength(5, nm, mi)', () {
-      expect(
-          double.parse(convertLength(
-                  value: 5, from: LengthUnits.nanometer, to: LengthUnits.mile)
-              .toStringAsPrecision(5)),
-          3.1069 * pow(10, -12));
-    });
+    // test('convertLength(5, nm, mi)', () {
+    //   expect(
+    //       double.parse(convertLength(
+    //               value: 5, from: LengthUnits.nanometer, to: LengthUnits.mile)
+    //           .toStringAsPrecision(5)),
+    //       3.1069 * pow(10, -12));
+    // });
   });
 }
