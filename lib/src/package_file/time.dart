@@ -7,7 +7,7 @@ import '../misc/misc.dart';
 export '../enum/time_units.dart';
 
 /// Converts [value] from [fromUnit] to [toUnit]
-double convertTime(
+int convertTime(
     {@required double value,
     @required TimeUnits from,
     @required TimeUnits to}) {
@@ -15,5 +15,5 @@ double convertTime(
   assert(value != null);
   assert(from != null);
   assert(to != null);
-  return convert(value, timeUnit[from], timeUnit[to]);
+  return convert(value, timeUnit[from], timeUnit[to]).floor();
 }
