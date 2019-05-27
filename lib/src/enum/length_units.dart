@@ -12,7 +12,7 @@ enum LengthUnits {
   decameter,
   hectometer,
   kilometer,
-  megaMeter,
+  megameter,
   gigameter,
   tetrameter,
   inch,

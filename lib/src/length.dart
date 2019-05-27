@@ -4,6 +4,8 @@ import './data/length_unit.dart';
 import './enum/length_units.dart';
 import './misc.dart';
 
+export './enum/length_units.dart';
+
 /// Converts [value] from [fromUnit] to [toUnit]
 double convertLength(
     {@required double value,

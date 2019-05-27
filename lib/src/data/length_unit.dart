@@ -20,7 +20,7 @@ Map<LengthUnits, Unit> lengthUnit = {
   LengthUnits.decameter: Unit('decameter', 10, 'dam'),
   LengthUnits.hectometer: Unit('hectometer', 100, 'hm'),
   LengthUnits.kilometer: Unit('kilometer', 1000, 'km'),
-  LengthUnits.megaMeter: Unit('megameter', 1000000, 'Mm'),
+  LengthUnits.megameter: Unit('megameter', 1000000, 'Mm'),
   LengthUnits.gigameter: Unit('gigameter', 1000000000, 'Gm'),
   LengthUnits.tetrameter: Unit('tetrameter', 1000000000000, 'Tm'),
   LengthUnits.inch: Unit('inch', .0254, 'in'),
