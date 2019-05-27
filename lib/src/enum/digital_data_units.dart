@@ -9,10 +9,13 @@ enum DigitalDataUnits {
   petabyte,
   exabyte,
   zettabyte,
+  yottabyte,
   kilobit,
   megabit,
   gigabit,
   terabit,
   petabit,
-  exabit
+  exabit,
+  zettabit,
+  yottabit,
 }

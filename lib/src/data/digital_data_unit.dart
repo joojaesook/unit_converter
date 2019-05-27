@@ -1,23 +1,27 @@
-import 'dart:math';
-
+import '../constant/constants.dart';
 import '../enum/digital_data_units.dart';
 import '../model/unit.dart';
 
+const bitToByte = .125;
+
 // Conversion data for digital data
 Map<DigitalDataUnits, Unit> digitalDataUnit = {
-  DigitalDataUnits.bit: Unit('Bit', .125, 'bit'),
-  DigitalDataUnits.byte: Unit('Byte', 1, 'b', baseUnit: true),
-  DigitalDataUnits.kilobyte: Unit('Kilobyte', 1000, 'kB'),
-  DigitalDataUnits.megabyte: Unit('Megabyte', pow(10, 6), 'MB'),
-  DigitalDataUnits.gigabyte: Unit('Gigabyte', pow(10, 9), 'GB'),
-  DigitalDataUnits.terabyte: Unit('Terabyte', pow(10, 12), 'TB'),
-  DigitalDataUnits.petabyte: Unit('Petabyte', pow(10, 15), 'PB'),
-  DigitalDataUnits.exabyte: Unit('Exabyte', pow(10, 18), 'EB'),
-  DigitalDataUnits.zettabyte: Unit('Zettabyte', pow(10, 21), 'ZB'),
-  DigitalDataUnits.kilobit: Unit('Kilobit', 125, 'kbit'),
-  DigitalDataUnits.megabit: Unit('Megabit', 125000, 'Mbit'),
-  DigitalDataUnits.gigabit: Unit('Gigabit', 1.25 * pow(10, 8), 'Gbit'),
-  DigitalDataUnits.terabit: Unit('Terabit', 1.25 * pow(10, 11), 'Tbit'),
-  DigitalDataUnits.petabit: Unit('Petabit', 1.25 * pow(10, 14), 'Pbit'),
-  DigitalDataUnits.exabit: Unit('Exabit', 1.25 * pow(10, 17), 'Ebit')
+  DigitalDataUnits.bit: Unit('Bit', bitToByte, 'bit'),
+  DigitalDataUnits.byte: Unit('Byte', 1, 'B', baseUnit: true),
+  DigitalDataUnits.kilobyte: Unit('Kilobyte', kiloBinary, 'kB'),
+  DigitalDataUnits.megabyte: Unit('Megabyte', megaBinary, 'MB'),
+  DigitalDataUnits.gigabyte: Unit('Gigabyte', gigaBinary, 'GB'),
+  DigitalDataUnits.terabyte: Unit('Terabyte', teraBinary, 'TB'),
+  DigitalDataUnits.petabyte: Unit('Petabyte', petaBinary, 'PB'),
+  DigitalDataUnits.exabyte: Unit('Exabyte', exaBinary, 'EB'),
+  DigitalDataUnits.zettabyte: Unit('Zettabyte', zettaBinary, 'ZB'),
+  DigitalDataUnits.yottabyte: Unit('Yottabyte', yottaBinary, 'YB'),
+  DigitalDataUnits.kilobit: Unit('Kilobit', kiloBinary * bitToByte, 'kbit'),
+  DigitalDataUnits.megabit: Unit('Megabit', megaBinary * bitToByte, 'Mbit'),
+  DigitalDataUnits.gigabit: Unit('Gigabit', gigaBinary * bitToByte, 'Gbit'),
+  DigitalDataUnits.terabit: Unit('Terabit', teraBinary * bitToByte, 'Tbit'),
+  DigitalDataUnits.petabit: Unit('Petabit', petaBinary * bitToByte, 'Pbit'),
+  DigitalDataUnits.exabit: Unit('Exabit', exaBinary * bitToByte, 'Ebit'),
+  DigitalDataUnits.zettabit: Unit('Zettabit', zettaBinary * bitToByte, 'Zbit'),
+  DigitalDataUnits.yottabit: Unit('Yottabit', yottaBinary * bitToByte, 'Ybit'),
 };

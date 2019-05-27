@@ -1,6 +1,6 @@
 import 'package:meta/meta.dart';
-import 'package:unit_converter/src/data/digital_data_unit.dart';
 
+import 'data/digital_data_unit.dart';
 import 'enum/digital_data_units.dart';
 import 'misc.dart';
 
