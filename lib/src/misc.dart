@@ -1,4 +1,4 @@
-import './model/unit.dart';
+import 'model/unit.dart';
 
 // Convert the [charCode] to String and append [postfix] to it, and returns the result
 String constructSymbolFromUnicode(String charCode, {String postfix}) {

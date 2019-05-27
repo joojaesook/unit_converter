@@ -1,10 +1,10 @@
 import 'package:meta/meta.dart';
 
-import './data/length_unit.dart';
-import './enum/length_units.dart';
-import './misc.dart';
+import 'data/length_unit.dart';
+import 'enum/length_units.dart';
+import 'misc.dart';
 
-export './enum/length_units.dart';
+export 'enum/length_units.dart';
 
 /// Converts [value] from [fromUnit] to [toUnit]
 double convertLength(
