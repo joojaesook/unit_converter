@@ -1,16 +1,37 @@
-import 'package:unit_converter/unit_converter.dart';
+import 'dart:math';
+
 import 'package:test/test.dart';
+import 'package:unit_converter/unit_converter.dart';
 
 void main() {
-  group('A group of tests', () {
-    Awesome awesome;
-
-    setUp(() {
-      awesome = Awesome();
-    });
-
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+  group('length', () {
+    // test('convertLength(5, fm, mi)', () {
+    //   expect(
+    //       double.parse(convertLength(
+    //               value: 5, from: LengthUnits.femtometer, to: LengthUnits.mile)
+    //           .toStringAsPrecision(5)),
+    //       5 * pow(10, -15));
+    // });
+    // test('convertLength(5, , mi)', () {
+    //   expect(
+    //       double.parse(convertLength(
+    //               value: 5, from: LengthUnits., to: LengthUnits.mile)
+    //           .toStringAsPrecision(5)),
+    //       3.1069 * pow(10, ));
+    // });
+    // test('convertLength(5, cm, mi)', () {
+    //   expect(
+    //       double.parse(convertLength(
+    //               value: 5, from: LengthUnits.centimeter, to: LengthUnits.mile)
+    //           .toStringAsPrecision(5)),
+    //       3.1069 * pow(10, -5));
+    // });
+    test('convertLength(5, nm, mi)', () {
+      expect(
+          double.parse(convertLength(
+                  value: 5, from: LengthUnits.nanometer, to: LengthUnits.mile)
+              .toStringAsPrecision(5)),
+          3.1069 * pow(10, -12));
     });
   });
 }
