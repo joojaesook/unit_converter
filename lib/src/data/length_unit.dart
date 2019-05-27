@@ -1,22 +1,23 @@
 import 'dart:math';
 
+import '../constant/constants.dart';
 import '../enum/length_units.dart';
-import '../misc.dart';
+import '../misc/misc.dart';
 import '../model/unit.dart';
 
 // Conversion data for length
 Map<LengthUnits, Unit> lengthUnit = {
+  LengthUnits.meter: Unit('Meter', 1, 'm', baseUnit: true),
   LengthUnits.femtometer: Unit('Femtometer', pow(10, -15), 'fm'),
   LengthUnits.picometer: Unit('Picometer', pow(10, -12), 'pm'),
-  LengthUnits.angstrom:
-      Unit('Angstrom', pow(10, -10), constructSymbolFromUnicode('00c5')),
+  LengthUnits.angstrom: Unit(
+      'Angstrom', pow(10, -10), constructStringFromUnicode(unicodeAngstrom)),
   LengthUnits.nanometer: Unit('Nanometer', pow(10, -9), 'nm'),
   LengthUnits.micrometer: Unit('Micrometer', pow(10, -6),
-      constructSymbolFromUnicode('03bc', postfix: 'm')),
+      constructStringFromUnicode(unicodeMicro, postfix: 'm')),
   LengthUnits.millimeter: Unit('Millimeter', .001, 'mm'),
   LengthUnits.centimeter: Unit('Centimeter', .01, 'cm'),
   LengthUnits.decimeter: Unit('Decimeter', .1, 'dm'),
-  LengthUnits.meter: Unit('Meter', 1, 'm', baseUnit: true),
   LengthUnits.decameter: Unit('Decameter', 10, 'dam'),
   LengthUnits.hectometer: Unit('Hectometer', 100, 'hm'),
   LengthUnits.kilometer: Unit('Kilometer', 1000, 'km'),
@@ -41,6 +42,6 @@ Map<LengthUnits, Unit> lengthUnit = {
   LengthUnits.barleycorn: Unit('Barleycorn', 0.00846667, 'bc'),
   LengthUnits.pica: Unit('Pica', .0042333, 'pica'),
   LengthUnits.planckLength: Unit('Planck length', 1.616255 * pow(10, -35),
-      constructSymbolFromUnicode('2133', postfix: 'p')),
+      constructStringFromUnicode('2133', postfix: 'p')),
   LengthUnits.chineseMile: Unit('Chinese mile', 500, 'li')
 };

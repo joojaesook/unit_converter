@@ -1,7 +1,7 @@
-import 'model/unit.dart';
+import '../model/unit.dart';
 
 // Convert the [charCode] to String and append [postfix] to it, and returns the result
-String constructSymbolFromUnicode(String charCode, {String postfix}) {
+String constructStringFromUnicode(String charCode, {String postfix}) {
   final resultString = String.fromCharCodes(Runes('\\u{$charCode}'));
   if (postfix != null) {
     return '$resultString$postfix';
