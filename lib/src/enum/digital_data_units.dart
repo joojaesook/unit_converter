@@ -8,6 +8,7 @@ enum DigitalDataUnits {
   terabyte,
   petabyte,
   exabyte,
+  zettabyte,
   kilobit,
   megabit,
   gigabit,
