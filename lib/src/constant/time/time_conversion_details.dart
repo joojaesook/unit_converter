@@ -1,15 +1,15 @@
-import '../constant/prefix_value.dart';
-import '../enum/prefix.dart';
-import '../model/conversion_detail.dart';
-
-import '../enum/time_units.dart';
-import '../misc/global.dart';
-import '../model/unit_conversion_detail.dart';
+import '../../constant/prefix_value.dart';
+import '../../enum/prefix.dart';
+import '../../enum/time_units.dart';
+import '../../misc/global.dart';
+import '../../model/conversion_detail.dart';
+import '../../model/unit_conversion_detail.dart';
 
 Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
+  // Base unit
   TimeUnits.second: createUnitConversionDetail(
     dividend: [
-      ConversionDetail(1, baseUnit: true),
+      ConversionDetail(1),
     ],
   ),
   TimeUnits.nanosecond: createUnitConversionDetail(

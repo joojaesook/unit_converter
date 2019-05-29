@@ -1,6 +1,24 @@
+import 'package:meta/meta.dart';
+import 'package:unit_converter/src/misc/global.dart';
+
+import '../abstract/units.dart';
+import '../constant/time/time_conversion_details.dart';
+import '../enum/conversion_type.dart';
 import '../enum/time_units.dart';
-import 'converter.dart';
+import '../model/unit_conversion_detail.dart';
 
 class TimeConverter extends Converter {
-  double convert(double value, TimeUnits from, TimeUnits to) {}
+  TimeConverter() : super(ConversionType.time);
+
+  int convert(
+      {@required double value,
+      @required TimeUnits from,
+      @required TimeUnits to}) {
+    assert(value != null);
+    assert(from != null);
+    assert(to != null);
+    UnitConversionDetail fromUnit = timeConversionDetails[from];
+    UnitConversionDetail toUnit = timeConversionDetails[to];
+    return globalConvert(value, fromUnit, toUnit).floor();
+  }
 }
