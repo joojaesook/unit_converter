@@ -4,7 +4,7 @@ import '../data/temperature_unit.dart';
 import '../enum/temperature_units.dart';
 import '../misc/misc.dart';
 
-export '../enum/temperature_units.dart';
+// export '../enum/temperature_units.dart';
 
 /// Converts [value] from [fromUnit] to [toUnit]
 double convertTemperature(

@@ -4,7 +4,7 @@ import '../data/digital_data_unit.dart';
 import '../enum/digital_data_units.dart';
 import '../misc/misc.dart';
 
-export '../enum/digital_data_units.dart';
+// export '../enum/digital_data_units.dart';
 
 /// Converts [value] from [fromUnit] to [toUnit]
 double convertDigitalData(

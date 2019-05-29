@@ -1,17 +1,14 @@
 // Class that defines an unit
-class Unit {
+class Unit<T> {
   // Name of the unit
   final String name;
-  // Conversion offset to baseUnit
-  final double conversion;
   // Symbol of the unit
   final String symbol;
-  // Is it the baseUnit for the measure
-  final bool baseUnit;
+  // Type of the unit
+  final T type;
 
-  Unit(this.name, this.conversion, this.symbol, {this.baseUnit = false})
+  Unit(this.name, this.symbol, this.type)
       : assert(name != null),
-        assert(conversion != null),
         assert(symbol != null),
-        assert(baseUnit != null);
+        assert(type != null);
 }

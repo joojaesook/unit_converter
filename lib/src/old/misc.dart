@@ -1,3 +1,5 @@
+import '../model/conversion_detail.dart';
+import '../model/unit_conversion_detail.dart';
 import '../model/unit.dart';
 
 // Convert the [charCode] to String and append [postfix] to it, and returns the result
@@ -7,6 +9,11 @@ String constructStringFromUnicode(String charCode, {String postfix}) {
     return '$resultString$postfix';
   }
   return resultString;
+}
+
+UnitConversionDetail constructUnitConversionDetail(
+    List<ConversionDetail> dividend, List<ConversionDetail> divisor) {
+  return UnitConversionDetail(dividend, divisor);
 }
 
 // Convert value from [from] to [to]

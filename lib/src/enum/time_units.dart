@@ -8,6 +8,7 @@ enum TimeUnits {
   hour,
   day,
   week,
+  fortnight,
   month,
   year,
   decade,

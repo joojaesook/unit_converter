@@ -1,0 +1,17 @@
+enum Prefix {
+  femto,
+  pico,
+  angstrom,
+  nano,
+  micro,
+  milli,
+  centi,
+  deci,
+  deca,
+  hecto,
+  kilo,
+  mega,
+  giga,
+  tetra,
+  peta,
+}
