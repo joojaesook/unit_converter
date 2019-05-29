@@ -1,7 +1,23 @@
 import 'dart:math';
 
+import '../enum/binary_prefix.dart';
 import '../enum/prefix.dart';
 import '../model/conversion_detail.dart';
+
+ConversionDetail createBinaryPrefixConversionDetail(int exponent) {
+  return ConversionDetail(pow(2, exponent));
+}
+
+Map<BinaryPrefix, ConversionDetail> binaryPrefixValue = {
+  BinaryPrefix.kilo: createBinaryPrefixConversionDetail(10),
+  BinaryPrefix.mega: createBinaryPrefixConversionDetail(20),
+  BinaryPrefix.giga: createBinaryPrefixConversionDetail(30),
+  BinaryPrefix.tera: createBinaryPrefixConversionDetail(40),
+  BinaryPrefix.peta: createBinaryPrefixConversionDetail(50),
+  BinaryPrefix.exa: createBinaryPrefixConversionDetail(60),
+  BinaryPrefix.zetta: createBinaryPrefixConversionDetail(70),
+  BinaryPrefix.yotta: createBinaryPrefixConversionDetail(80),
+};
 
 ConversionDetail createPrefixConversionDetail(int exponent) {
   return ConversionDetail(pow(10, exponent));
@@ -24,3 +40,7 @@ Map<Prefix, ConversionDetail> prefixValue = {
   Prefix.tetra: createPrefixConversionDetail(12),
   Prefix.peta: createPrefixConversionDetail(15),
 };
+
+// UTF-32 code point
+const unicodeMicro = '03bc';
+const unicodeAngstrom = '00c5';

@@ -1,6 +1,6 @@
-import '../../constant/prefix_value.dart';
 import '../../enum/prefix.dart';
 import '../../enum/time_units.dart';
+import '../misc_constants.dart';
 import '../../misc/global.dart';
 import '../../model/conversion_detail.dart';
 import '../../model/unit_conversion_detail.dart';

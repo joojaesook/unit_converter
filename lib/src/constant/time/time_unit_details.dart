@@ -1,5 +1,5 @@
-import '../../constant/utf_32_codepoint.dart';
 import '../../enum/time_units.dart';
+import '../misc_constants.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 
