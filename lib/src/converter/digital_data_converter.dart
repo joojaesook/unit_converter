@@ -17,8 +17,8 @@ class DigitalDataConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    UnitConversionDetail fromUnit = digitalDataConversionDetails[from];
-    UnitConversionDetail toUnit = digitalDataConversionDetails[to];
+    final UnitConversionDetail fromUnit = digitalDataConversionDetails[from];
+    final UnitConversionDetail toUnit = digitalDataConversionDetails[to];
     return globalConvert(value, fromUnit, toUnit);
   }
 }
