@@ -1,29 +1,150 @@
 import '../../enum/digital_data_units.dart';
+import '../../enum/postfix.dart';
 import '../../enum/prefix.dart';
+import '../../misc/global.dart';
 import '../../model/unit.dart';
-import '../others/prefix_symbol.dart';
 
 Set<Unit> digitalDataUnitDetails = {
-  Unit('Bit', 'bit', DigitalDataUnits.bit),
-  Unit('Byte', 'B', DigitalDataUnits.byte),
-  Unit('Exabit', '${prefixSymbol[Prefix.exa]}bit', DigitalDataUnits.exabit),
-  Unit('Exabyte', '${prefixSymbol[Prefix.exa]}B', DigitalDataUnits.exabyte),
-  Unit('Gigabit', '${prefixSymbol[Prefix.giga]}bit', DigitalDataUnits.gigabit),
-  Unit('Gigabyte', '${prefixSymbol[Prefix.giga]}B', DigitalDataUnits.gigabyte),
-  Unit('Kilobit', '${prefixSymbol[Prefix.kilo]}bit', DigitalDataUnits.kilobit),
-  Unit('Kilobyte', '${prefixSymbol[Prefix.kilo]}B', DigitalDataUnits.kilobyte),
-  Unit('Megabit', '${prefixSymbol[Prefix.mega]}bit', DigitalDataUnits.megabit),
-  Unit('Megabyte', '${prefixSymbol[Prefix.mega]}B', DigitalDataUnits.megabyte),
-  Unit('Petabit', '${prefixSymbol[Prefix.peta]}bit', DigitalDataUnits.petabit),
-  Unit('Petabyte', '${prefixSymbol[Prefix.peta]}B', DigitalDataUnits.petabyte),
-  Unit('Terabit', '${prefixSymbol[Prefix.tera]}bit', DigitalDataUnits.terabit),
-  Unit('Terabyte', '${prefixSymbol[Prefix.tera]}B', DigitalDataUnits.terabyte),
-  Unit('Yottabit', '${prefixSymbol[Prefix.yotta]}bit',
-      DigitalDataUnits.yottabit),
-  Unit('Yottabyte', '${prefixSymbol[Prefix.yotta]}B',
-      DigitalDataUnits.yottabyte),
-  Unit('Zettabit', '${prefixSymbol[Prefix.zetta]}bit',
-      DigitalDataUnits.zettabit),
-  Unit('Zettabyte', '${prefixSymbol[Prefix.zetta]}B',
-      DigitalDataUnits.zettabyte),
+  Unit(
+    'Bit',
+    createSymbol(
+      postfix: Postfix.bit,
+    ),
+    DigitalDataUnits.bit,
+  ),
+  Unit(
+    'Byte',
+    createSymbol(
+      postfix: Postfix.byte,
+    ),
+    DigitalDataUnits.byte,
+  ),
+  Unit(
+    'Exabit',
+    createSymbol(
+      prefix: Prefix.exa,
+      postfix: Postfix.bit,
+    ),
+    DigitalDataUnits.exabit,
+  ),
+  Unit(
+    'Exabyte',
+    createSymbol(
+      prefix: Prefix.exa,
+      postfix: Postfix.byte,
+    ),
+    DigitalDataUnits.exabyte,
+  ),
+  Unit(
+    'Gigabit',
+    createSymbol(
+      prefix: Prefix.giga,
+      postfix: Postfix.bit,
+    ),
+    DigitalDataUnits.gigabit,
+  ),
+  Unit(
+    'Gigabyte',
+    createSymbol(
+      prefix: Prefix.giga,
+      postfix: Postfix.byte,
+    ),
+    DigitalDataUnits.gigabyte,
+  ),
+  Unit(
+    'Kilobit',
+    createSymbol(
+      prefix: Prefix.kilo,
+      postfix: Postfix.bit,
+    ),
+    DigitalDataUnits.kilobit,
+  ),
+  Unit(
+    'Kilobyte',
+    createSymbol(
+      prefix: Prefix.kilo,
+      postfix: Postfix.byte,
+    ),
+    DigitalDataUnits.kilobyte,
+  ),
+  Unit(
+    'Megabit',
+    createSymbol(
+      prefix: Prefix.mega,
+      postfix: Postfix.bit,
+    ),
+    DigitalDataUnits.megabit,
+  ),
+  Unit(
+    'Megabyte',
+    createSymbol(
+      prefix: Prefix.mega,
+      postfix: Postfix.byte,
+    ),
+    DigitalDataUnits.megabyte,
+  ),
+  Unit(
+    'Petabit',
+    createSymbol(
+      prefix: Prefix.peta,
+      postfix: Postfix.bit,
+    ),
+    DigitalDataUnits.petabit,
+  ),
+  Unit(
+    'Petabyte',
+    createSymbol(
+      prefix: Prefix.peta,
+      postfix: Postfix.byte,
+    ),
+    DigitalDataUnits.petabyte,
+  ),
+  Unit(
+    'Terabit',
+    createSymbol(
+      prefix: Prefix.tera,
+      postfix: Postfix.bit,
+    ),
+    DigitalDataUnits.terabit,
+  ),
+  Unit(
+    'Terabyte',
+    createSymbol(
+      prefix: Prefix.tera,
+      postfix: Postfix.byte,
+    ),
+    DigitalDataUnits.terabyte,
+  ),
+  Unit(
+    'Yottabit',
+    createSymbol(
+      prefix: Prefix.yotta,
+      postfix: Postfix.bit,
+    ),
+    DigitalDataUnits.yottabit,
+  ),
+  Unit(
+    'Yottabyte',
+    createSymbol(
+      prefix: Prefix.yotta,
+      postfix: Postfix.byte,
+    ),
+    DigitalDataUnits.yottabyte,
+  ),
+  Unit(
+    'Zettabit',
+    createSymbol(
+      prefix: Prefix.zetta,
+      postfix: Postfix.bit,
+    ),
+    DigitalDataUnits.zettabit,
+  ),
+  Unit(
+    'Zettabyte',
+    createSymbol(
+      prefix: Prefix.zetta,
+      postfix: Postfix.byte,
+    ),
+    DigitalDataUnits.zettabyte,
+  ),
 };

@@ -1,0 +1,15 @@
+enum Postfix {
+  bit,
+  byte,
+  century,
+  day,
+  decade,
+  fortnight,
+  hour,
+  millennium,
+  minute,
+  month,
+  second,
+  week,
+  year,
+}

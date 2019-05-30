@@ -1,3 +1,7 @@
+import '../constant/others/postfix_symbol.dart';
+import '../constant/others/prefix_symbol.dart';
+import '../enum/postfix.dart';
+import '../enum/prefix.dart';
 import '../model/conversion_detail.dart';
 import '../model/unit_conversion_detail.dart';
 
@@ -8,6 +12,21 @@ String createStringFromUnicode(String charCode, {String postfix}) {
     return '$resultString$postfix';
   }
   return resultString;
+}
+
+String createSymbol({Prefix prefix, Postfix postfix}) {
+  String symbol = '';
+  if (prefix == null && postfix == null) {
+    assert(false, 'Both prefix and postfix cannot be null');
+    return symbol;
+  }
+  if (prefix != null) {
+    symbol += prefixSymbol[prefix];
+  }
+  if (postfix != null) {
+    symbol += postfixSymbol[postfix];
+  }
+  return symbol;
 }
 
 UnitConversionDetail createUnitConversionDetail({
