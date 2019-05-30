@@ -17,8 +17,8 @@ class TimeConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    UnitConversionDetail fromUnit = timeConversionDetails[from];
-    UnitConversionDetail toUnit = timeConversionDetails[to];
+    final UnitConversionDetail fromUnit = timeConversionDetails[from];
+    final UnitConversionDetail toUnit = timeConversionDetails[to];
     return globalConvert(value, fromUnit, toUnit);
   }
 }

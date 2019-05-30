@@ -1,10 +1,10 @@
 enum BinaryPrefix {
+  exa,
+  giga,
   kilo,
   mega,
-  giga,
-  tera,
   peta,
-  exa,
-  zetta,
+  tera,
   yotta,
+  zetta,
 }

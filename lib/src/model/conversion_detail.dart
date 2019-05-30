@@ -1,5 +1,5 @@
 class ConversionDetail {
-  double conversion;
+  final double conversion;
 
   ConversionDetail(this.conversion);
 }

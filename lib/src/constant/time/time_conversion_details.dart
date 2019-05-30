@@ -1,25 +1,100 @@
 import '../../enum/prefix.dart';
 import '../../enum/time_units.dart';
-import '../misc_constants.dart';
 import '../../misc/global.dart';
 import '../../model/conversion_detail.dart';
 import '../../model/unit_conversion_detail.dart';
+import '../others/prefix_value.dart';
 
-Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
+final Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
   // Base unit
   TimeUnits.second: createUnitConversionDetail(
     dividend: [
       ConversionDetail(1),
     ],
   ),
-  TimeUnits.nanosecond: createUnitConversionDetail(
+  TimeUnits.attosecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.nano],
+      prefixValue[Prefix.atto],
+    ],
+  ),
+  TimeUnits.centisecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.centi],
+    ],
+  ),
+  TimeUnits.century: createUnitConversionDetail(
+    dividend: [
+      ConversionDetail(3155695200),
+    ],
+  ),
+  TimeUnits.day: createUnitConversionDetail(
+    dividend: [
+      ConversionDetail(86400),
+    ],
+  ),
+  TimeUnits.decade: createUnitConversionDetail(
+    dividend: [
+      ConversionDetail(315569520),
+    ],
+  ),
+  TimeUnits.decasecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.deca],
+    ],
+  ),
+  TimeUnits.decisecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.deci],
+    ],
+  ),
+  TimeUnits.exasecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.exa],
+    ],
+  ),
+  TimeUnits.femtosecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.femto],
+    ],
+  ),
+  TimeUnits.fortnight: createUnitConversionDetail(
+    dividend: [
+      ConversionDetail(1209600),
+    ],
+  ),
+  TimeUnits.gigasecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.giga],
+    ],
+  ),
+  TimeUnits.hectosecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.hecto],
+    ],
+  ),
+  TimeUnits.hour: createUnitConversionDetail(
+    dividend: [
+      ConversionDetail(3600),
+    ],
+  ),
+  TimeUnits.kilosecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.kilo],
+    ],
+  ),
+  TimeUnits.megasecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.mega],
     ],
   ),
   TimeUnits.microsecond: createUnitConversionDetail(
     dividend: [
       prefixValue[Prefix.micro],
+    ],
+  ),
+  TimeUnits.millennium: createUnitConversionDetail(
+    dividend: [
+      ConversionDetail(31556952000),
     ],
   ),
   TimeUnits.millisecond: createUnitConversionDetail(
@@ -32,14 +107,29 @@ Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
       ConversionDetail(60),
     ],
   ),
-  TimeUnits.hour: createUnitConversionDetail(
+  TimeUnits.month: createUnitConversionDetail(
     dividend: [
-      ConversionDetail(3600),
+      ConversionDetail(2629746),
     ],
   ),
-  TimeUnits.day: createUnitConversionDetail(
+  TimeUnits.nanosecond: createUnitConversionDetail(
     dividend: [
-      ConversionDetail(86400),
+      prefixValue[Prefix.nano],
+    ],
+  ),
+  TimeUnits.petasecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.peta],
+    ],
+  ),
+  TimeUnits.picosecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.pico],
+    ],
+  ),
+  TimeUnits.terasecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.tera],
     ],
   ),
   TimeUnits.week: createUnitConversionDetail(
@@ -47,34 +137,29 @@ Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
       ConversionDetail(604800),
     ],
   ),
-  TimeUnits.fortnight: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(1209600),
-    ],
-  ),
-  TimeUnits.month: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(2629746),
-    ],
-  ),
   TimeUnits.year: createUnitConversionDetail(
     dividend: [
       ConversionDetail(31556952),
     ],
   ),
-  TimeUnits.decade: createUnitConversionDetail(
+  TimeUnits.yoctosecond: createUnitConversionDetail(
     dividend: [
-      ConversionDetail(315569520),
+      prefixValue[Prefix.yocto],
     ],
   ),
-  TimeUnits.century: createUnitConversionDetail(
+  TimeUnits.yottasecond: createUnitConversionDetail(
     dividend: [
-      ConversionDetail(3155695200),
+      prefixValue[Prefix.yotta],
     ],
   ),
-  TimeUnits.millennium: createUnitConversionDetail(
+  TimeUnits.zeptosecond: createUnitConversionDetail(
     dividend: [
-      ConversionDetail(31556952000),
+      prefixValue[Prefix.zepto],
+    ],
+  ),
+  TimeUnits.zettasecond: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.zetta],
     ],
   ),
 };
