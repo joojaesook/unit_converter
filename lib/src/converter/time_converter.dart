@@ -1,6 +1,6 @@
 import 'package:meta/meta.dart';
 
-import '../abstract/units.dart';
+import '../abstract/converter.dart';
 import '../constant/time/time_conversion_details.dart';
 import '../enum/conversion_type.dart';
 import '../enum/time_units.dart';
