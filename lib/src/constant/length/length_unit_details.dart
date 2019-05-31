@@ -180,6 +180,13 @@ Set<Unit> lengthUnitDetails = {
       ),
       LengthUnits.foot),
   Unit(
+      'Foot',
+      createSymbol(
+        postfix: Postfix.foot,
+      ),
+      LengthUnits.foot_USSurvey,
+      domain: 'US Survey'),
+  Unit(
       'Furlong',
       createSymbol(
         postfix: Postfix.furlong,

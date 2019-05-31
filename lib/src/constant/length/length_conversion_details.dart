@@ -161,6 +161,11 @@ Map<LengthUnits, UnitConversionDetail> lengthConversionDetails = {
       ConversionDetail(.3048),
     ],
   ),
+  LengthUnits.foot_USSurvey: createUnitConversionDetail(
+    dividend: [
+      ConversionDetail(0.3048006096012192),
+    ],
+  ),
   LengthUnits.furlong: createUnitConversionDetail(
     dividend: [
       ConversionDetail(201.168),

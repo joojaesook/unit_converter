@@ -1,3 +1,4 @@
+/// Units of digital data
 enum DigitalDataUnits {
   bit,
   byte,

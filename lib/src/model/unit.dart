@@ -6,8 +6,10 @@ class Unit<T> {
   final String symbol;
   // Type of the unit
   final T type;
+  // Additional data
+  final String domain;
 
-  Unit(this.name, this.symbol, this.type)
+  Unit(this.name, this.symbol, this.type, {this.domain})
       : assert(name != null),
         assert(symbol != null),
         assert(type != null);

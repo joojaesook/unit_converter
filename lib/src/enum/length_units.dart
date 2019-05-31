@@ -26,6 +26,7 @@ enum LengthUnits {
   femtoparsec,
   fermi,
   foot,
+  foot_USSurvey,
   furlong,
   gigaLightYear,
   gigameter,
