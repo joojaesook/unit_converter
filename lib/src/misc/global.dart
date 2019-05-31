@@ -15,11 +15,7 @@ String createSymbol(List<SymbolParts> symbolParts) {
 }
 
 // Convert value from [from] to [to]
-double globalConvert(
-  double value,
-  ConversionDetail from,
-  ConversionDetail to,
-) {
+double globalConvert(double value, ConversionDetail from, ConversionDetail to) {
   var result = value;
   result *= calculateOffset(from);
   result /= calculateOffset(to);

@@ -8,7 +8,7 @@ import '../others/prefix_value.dart';
 
 final _barnToSquareMeter = pow(10, -28);
 
-Map<AreaUnits, ConversionDetail> digitalDataConversionDetails = {
+Map<AreaUnits, ConversionDetail> areaConversionDetails = {
   // Base unit
   AreaUnits.squareMeter: ConversionDetail(
     dividend: 1,
