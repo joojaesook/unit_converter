@@ -21,90 +21,90 @@ Map<DigitalDataUnits, UnitConversionDetail> digitalDataConversionDetails = {
   ),
   DigitalDataUnits.exabit: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.exa],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.exa]),
       bitToByte,
     ],
   ),
   DigitalDataUnits.exabyte: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.exa],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.exa]),
     ],
   ),
   DigitalDataUnits.gigabit: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.giga],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.giga]),
       bitToByte,
     ],
   ),
   DigitalDataUnits.gigabyte: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.giga],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.giga]),
     ],
   ),
   DigitalDataUnits.kilobit: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.kilo],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.kilo]),
       bitToByte,
     ],
   ),
   DigitalDataUnits.kilobyte: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.kilo],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.kilo]),
     ],
   ),
   DigitalDataUnits.megabit: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.mega],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.mega]),
       bitToByte,
     ],
   ),
   DigitalDataUnits.megabyte: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.mega],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.mega]),
     ],
   ),
   DigitalDataUnits.petabit: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.peta],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.peta]),
       bitToByte,
     ],
   ),
   DigitalDataUnits.petabyte: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.peta],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.peta]),
     ],
   ),
   DigitalDataUnits.terabit: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.tera],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.tera]),
       bitToByte,
     ],
   ),
   DigitalDataUnits.terabyte: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.tera],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.tera]),
     ],
   ),
   DigitalDataUnits.yottabit: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.yotta],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.yotta]),
       bitToByte,
     ],
   ),
   DigitalDataUnits.yottabyte: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.yotta],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.yotta]),
     ],
   ),
   DigitalDataUnits.zettabit: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.zetta],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.zetta]),
       bitToByte,
     ],
   ),
   DigitalDataUnits.zettabyte: createUnitConversionDetail(
     dividend: [
-      binaryPrefixValue[BinaryPrefix.zetta],
+      ConversionDetail(binaryPrefixValue[BinaryPrefix.zetta]),
     ],
   ),
 };

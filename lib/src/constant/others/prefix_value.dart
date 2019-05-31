@@ -1,32 +1,27 @@
 import 'dart:math';
 
 import '../../enum/prefix.dart';
-import '../../model/conversion_detail.dart';
 
-ConversionDetail createPrefixConversionDetail(int exponent) {
-  return ConversionDetail(pow(10, exponent));
-}
-
-final Map<Prefix, ConversionDetail> prefixValue = {
-  Prefix.angstrom: createPrefixConversionDetail(-10),
-  Prefix.atto: createPrefixConversionDetail(-18),
-  Prefix.centi: createPrefixConversionDetail(-2),
-  Prefix.deca: createPrefixConversionDetail(1),
-  Prefix.deci: createPrefixConversionDetail(-1),
-  Prefix.exa: createPrefixConversionDetail(18),
-  Prefix.femto: createPrefixConversionDetail(-15),
-  Prefix.giga: createPrefixConversionDetail(9),
-  Prefix.hecto: createPrefixConversionDetail(2),
-  Prefix.kilo: createPrefixConversionDetail(3),
-  Prefix.mega: createPrefixConversionDetail(6),
-  Prefix.micro: createPrefixConversionDetail(-6),
-  Prefix.milli: createPrefixConversionDetail(-3),
-  Prefix.nano: createPrefixConversionDetail(-9),
-  Prefix.peta: createPrefixConversionDetail(15),
-  Prefix.pico: createPrefixConversionDetail(-12),
-  Prefix.tera: createPrefixConversionDetail(12),
-  Prefix.yocto: createPrefixConversionDetail(-24),
-  Prefix.yotta: createPrefixConversionDetail(24),
-  Prefix.zepto: createPrefixConversionDetail(-21),
-  Prefix.zetta: createPrefixConversionDetail(21),
+final Map<Prefix, double> prefixValue = {
+  Prefix.angstrom: pow(10, -10),
+  Prefix.atto: pow(10, -18),
+  Prefix.centi: pow(10, -2),
+  Prefix.deca: pow(10, 1),
+  Prefix.deci: pow(10, -1),
+  Prefix.exa: pow(10, 18),
+  Prefix.femto: pow(10, -15),
+  Prefix.giga: pow(10, 9),
+  Prefix.hecto: pow(10, 2),
+  Prefix.kilo: pow(10, 3),
+  Prefix.mega: pow(10, 6),
+  Prefix.micro: pow(10, -6),
+  Prefix.milli: pow(10, -3),
+  Prefix.nano: pow(10, -9),
+  Prefix.peta: pow(10, 15),
+  Prefix.pico: pow(10, -12),
+  Prefix.tera: pow(10, 12),
+  Prefix.yocto: pow(10, -24),
+  Prefix.yotta: pow(10, 24),
+  Prefix.zepto: pow(10, -21),
+  Prefix.zetta: pow(10, 21),
 };

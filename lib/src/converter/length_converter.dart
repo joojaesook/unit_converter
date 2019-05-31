@@ -17,8 +17,8 @@ class LengthConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    UnitConversionDetail fromUnit = lengthConversionDetails[from];
-    UnitConversionDetail toUnit = lengthConversionDetails[to];
+    final UnitConversionDetail fromUnit = lengthConversionDetails[from];
+    final UnitConversionDetail toUnit = lengthConversionDetails[to];
     return globalConvert(value, fromUnit, toUnit);
   }
 }

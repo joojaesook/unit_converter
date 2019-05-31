@@ -14,12 +14,12 @@ final Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
   ),
   TimeUnits.attosecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.atto],
+      ConversionDetail(prefixValue[Prefix.atto]),
     ],
   ),
   TimeUnits.centisecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.centi],
+      ConversionDetail(prefixValue[Prefix.centi]),
     ],
   ),
   TimeUnits.century: createUnitConversionDetail(
@@ -39,22 +39,22 @@ final Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
   ),
   TimeUnits.decasecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.deca],
+      ConversionDetail(prefixValue[Prefix.deca]),
     ],
   ),
   TimeUnits.decisecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.deci],
+      ConversionDetail(prefixValue[Prefix.deci]),
     ],
   ),
   TimeUnits.exasecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.exa],
+      ConversionDetail(prefixValue[Prefix.exa]),
     ],
   ),
   TimeUnits.femtosecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.femto],
+      ConversionDetail(prefixValue[Prefix.femto]),
     ],
   ),
   TimeUnits.fortnight: createUnitConversionDetail(
@@ -64,12 +64,12 @@ final Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
   ),
   TimeUnits.gigasecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.giga],
+      ConversionDetail(prefixValue[Prefix.giga]),
     ],
   ),
   TimeUnits.hectosecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.hecto],
+      ConversionDetail(prefixValue[Prefix.hecto]),
     ],
   ),
   TimeUnits.hour: createUnitConversionDetail(
@@ -79,17 +79,17 @@ final Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
   ),
   TimeUnits.kilosecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.kilo],
+      ConversionDetail(prefixValue[Prefix.kilo]),
     ],
   ),
   TimeUnits.megasecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.mega],
+      ConversionDetail(prefixValue[Prefix.mega]),
     ],
   ),
   TimeUnits.microsecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.micro],
+      ConversionDetail(prefixValue[Prefix.micro]),
     ],
   ),
   TimeUnits.millennium: createUnitConversionDetail(
@@ -99,7 +99,7 @@ final Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
   ),
   TimeUnits.millisecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.milli],
+      ConversionDetail(prefixValue[Prefix.milli]),
     ],
   ),
   TimeUnits.minute: createUnitConversionDetail(
@@ -114,22 +114,22 @@ final Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
   ),
   TimeUnits.nanosecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.nano],
+      ConversionDetail(prefixValue[Prefix.nano]),
     ],
   ),
   TimeUnits.petasecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.peta],
+      ConversionDetail(prefixValue[Prefix.peta]),
     ],
   ),
   TimeUnits.picosecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.pico],
+      ConversionDetail(prefixValue[Prefix.pico]),
     ],
   ),
   TimeUnits.terasecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.tera],
+      ConversionDetail(prefixValue[Prefix.tera]),
     ],
   ),
   TimeUnits.week: createUnitConversionDetail(
@@ -144,22 +144,22 @@ final Map<TimeUnits, UnitConversionDetail> timeConversionDetails = {
   ),
   TimeUnits.yoctosecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.yocto],
+      ConversionDetail(prefixValue[Prefix.yocto]),
     ],
   ),
   TimeUnits.yottasecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.yotta],
+      ConversionDetail(prefixValue[Prefix.yotta]),
     ],
   ),
   TimeUnits.zeptosecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.zepto],
+      ConversionDetail(prefixValue[Prefix.zepto]),
     ],
   ),
   TimeUnits.zettasecond: createUnitConversionDetail(
     dividend: [
-      prefixValue[Prefix.zetta],
+      ConversionDetail(prefixValue[Prefix.zetta]),
     ],
   ),
 };
