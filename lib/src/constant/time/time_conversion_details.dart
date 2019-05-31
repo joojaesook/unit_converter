@@ -3,7 +3,7 @@ import '../../enum/time_units.dart';
 import '../../model/conversion_detail.dart';
 import '../others/prefix_value.dart';
 
-const double yearToSecond = 31556952;
+const double _yearToSecond = 31556952;
 
 final Map<TimeUnits, ConversionDetail> timeConversionDetails = {
   // Base unit
@@ -17,13 +17,13 @@ final Map<TimeUnits, ConversionDetail> timeConversionDetails = {
     dividend: prefixValue[Prefix.centi],
   ),
   TimeUnits.century: ConversionDetail(
-    dividend: 100 * yearToSecond,
+    dividend: 100 * _yearToSecond,
   ),
   TimeUnits.day: ConversionDetail(
     dividend: 86400,
   ),
   TimeUnits.decade: ConversionDetail(
-    dividend: 10 * yearToSecond,
+    dividend: 10 * _yearToSecond,
   ),
   TimeUnits.decasecond: ConversionDetail(
     dividend: prefixValue[Prefix.deca],
@@ -59,7 +59,7 @@ final Map<TimeUnits, ConversionDetail> timeConversionDetails = {
     dividend: prefixValue[Prefix.micro],
   ),
   TimeUnits.millennium: ConversionDetail(
-    dividend: 1000 * yearToSecond,
+    dividend: 1000 * _yearToSecond,
   ),
   TimeUnits.millisecond: ConversionDetail(
     dividend: prefixValue[Prefix.milli],
@@ -86,7 +86,7 @@ final Map<TimeUnits, ConversionDetail> timeConversionDetails = {
     dividend: 604800,
   ),
   TimeUnits.year: ConversionDetail(
-    dividend: yearToSecond,
+    dividend: _yearToSecond,
   ),
   TimeUnits.yoctosecond: ConversionDetail(
     dividend: prefixValue[Prefix.yocto],
