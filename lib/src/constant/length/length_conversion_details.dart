@@ -2,512 +2,280 @@ import 'dart:math';
 
 import '../../enum/length_units.dart';
 import '../../enum/prefix.dart';
-import '../../misc/global.dart';
 import '../../model/conversion_detail.dart';
-import '../../model/unit_conversion_detail.dart';
 import '../others/prefix_value.dart';
 
-final lightYearToMeter =
-    ConversionDetail(9.4607304725808 * prefixValue[Prefix.peta]);
-final parsecToMeter = ConversionDetail(3.0857 * pow(10, 16));
-final inchToMeter = ConversionDetail(.0254);
+final inchToMeter = .0254;
+final lightYearToMeter = 9.4607304725808 * prefixValue[Prefix.peta];
+final parsecToMeter = 3.08567782 * pow(10, 16);
 
-Map<LengthUnits, UnitConversionDetail> lengthConversionDetails = {
+Map<LengthUnits, ConversionDetail> lengthConversionDetails = {
   // Base unit
-  LengthUnits.meter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(1),
-    ],
-  ),
-  LengthUnits.angstrom: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.angstrom]),
-    ],
-  ),
-  LengthUnits.astronomicalUnit: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(149597870700),
-    ],
-  ),
-  LengthUnits.attoLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.atto]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.attometer: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.atto]),
-    ],
-  ),
-  LengthUnits.attoparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.atto]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.barleycorn: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(0.00846667),
-    ],
-  ),
-  LengthUnits.centiLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.centi]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.centimeter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.centi]),
-    ],
-  ),
-  LengthUnits.centiparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.centi]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.chain: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(20.1168),
-    ],
-  ),
-  LengthUnits.chineseMile: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(500),
-    ],
-  ),
-  LengthUnits.decaLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.deca]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.decameter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.deca]),
-    ],
-  ),
-  LengthUnits.decaparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.deca]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.deciLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.deci]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.decimeter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.deci]),
-    ],
-  ),
-  LengthUnits.deciparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.deci]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.exaLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.exa]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.exameter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.exa]),
-    ],
-  ),
-  LengthUnits.exaparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.exa]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.fathom: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(1.8288),
-    ],
-  ),
-  LengthUnits.femtoLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.femto]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.femtometer: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.femto]),
-    ],
-  ),
-  LengthUnits.femtoparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.femto]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.fermi: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.femto]),
-    ],
-  ),
-  LengthUnits.foot: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(.3048),
-    ],
-  ),
-  LengthUnits.foot_USSurvey: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(0.3048006096012192),
-    ],
-  ),
-  LengthUnits.furlong: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(201.168),
-    ],
-  ),
-  LengthUnits.gigaLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.giga]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.gigameter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.giga]),
-    ],
-  ),
-  LengthUnits.gigaparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.giga]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.hand: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(.1016),
-    ],
-  ),
-  LengthUnits.hectoLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.hecto]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.hectometer: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.hecto]),
-    ],
-  ),
-  LengthUnits.hectoparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.hecto]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.inch: createUnitConversionDetail(
-    dividend: [
-      inchToMeter,
-    ],
-  ),
-  LengthUnits.kiloLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.kilo]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.kilometer: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.kilo]),
-    ],
-  ),
-  LengthUnits.kiloparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.kilo]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.lightDay: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(2.59020683712),
-      ConversionDetail(pow(10, 13)),
-    ],
-  ),
-  LengthUnits.lightHour: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.tera]),
-      ConversionDetail(1.0792528488),
-    ],
-  ),
-  LengthUnits.lightMinute: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(1.798754748),
-      ConversionDetail(pow(10, 10)),
-    ],
-  ),
-  LengthUnits.lightSecond: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(299792458),
-    ],
-  ),
-  LengthUnits.lightYear: createUnitConversionDetail(
-    dividend: [
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.megaLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.mega]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.megameter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.mega]),
-    ],
-  ),
-  LengthUnits.megaparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.mega]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.microLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.micro]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.microinch: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.micro]),
-      inchToMeter,
-    ],
-  ),
-  LengthUnits.micrometer: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.micro]),
-    ],
-  ),
-  LengthUnits.micron: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.micro]),
-    ],
-  ),
-  LengthUnits.microparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.micro]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.mile: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(1609.344),
-    ],
-  ),
-  LengthUnits.milliLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.milli]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.millimeter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.milli]),
-    ],
-  ),
-  LengthUnits.milliparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.milli]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.nanoLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.nano]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.nanometer: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.nano]),
-    ],
-  ),
-  LengthUnits.nanoparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.nano]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.nauticalMile: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(1852),
-    ],
-  ),
-  LengthUnits.parsec: createUnitConversionDetail(
-    dividend: [
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.petaLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.peta]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.petameter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.peta]),
-    ],
-  ),
-  LengthUnits.petaparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.peta]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.pica: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(.0042333),
-    ],
-  ),
-  LengthUnits.picoLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.pico]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.picometer: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.pico]),
-    ],
-  ),
-  LengthUnits.picoparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.pico]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.planckLength: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(1.616255),
-      ConversionDetail(pow(10, -35)),
-    ],
-  ),
-  LengthUnits.point: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(0.000352778),
-    ],
-  ),
-  LengthUnits.pole: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(5.0292),
-    ],
-  ),
-  LengthUnits.rod: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(5.0292),
-    ],
-  ),
-  LengthUnits.teraLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.tera]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.terameter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.tera]),
-    ],
-  ),
-  LengthUnits.teraparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.tera]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.thousandOfAnInch: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(2.54),
-      ConversionDetail(pow(10, -5)),
-    ],
-  ),
-  LengthUnits.yard: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(.9144),
-    ],
-  ),
-  LengthUnits.yoctoLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.yocto]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.yoctometer: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.yocto]),
-    ],
-  ),
-  LengthUnits.yoctoparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.yocto]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.yottaLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.yotta]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.yottameter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.yotta]),
-    ],
-  ),
-  LengthUnits.yottaparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.yotta]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.zeptoLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.zepto]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.zeptometer: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.zepto]),
-    ],
-  ),
-  LengthUnits.zeptoparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.zepto]),
-      parsecToMeter,
-    ],
-  ),
-  LengthUnits.zettaLightYear: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.zetta]),
-      lightYearToMeter,
-    ],
-  ),
-  LengthUnits.zettameter: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.zetta]),
-    ],
-  ),
-  LengthUnits.zettaparsec: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(prefixValue[Prefix.zetta]),
-      parsecToMeter,
-    ],
+  LengthUnits.meter: ConversionDetail(
+    dividend: 1,
+  ),
+  LengthUnits.angstrom: ConversionDetail(
+    dividend: prefixValue[Prefix.angstrom],
+  ),
+  LengthUnits.astronomicalUnit: ConversionDetail(
+    dividend: 149597870700,
+  ),
+  LengthUnits.attoLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.atto] * lightYearToMeter,
+  ),
+  LengthUnits.attometer: ConversionDetail(
+    dividend: prefixValue[Prefix.atto],
+  ),
+  LengthUnits.attoparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.atto] * parsecToMeter,
+  ),
+  LengthUnits.barleycorn: ConversionDetail(
+    dividend: 0.00846667,
+  ),
+  LengthUnits.centiLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.centi] * lightYearToMeter,
+  ),
+  LengthUnits.centimeter: ConversionDetail(
+    dividend: prefixValue[Prefix.centi],
+  ),
+  LengthUnits.centiparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.centi] * parsecToMeter,
+  ),
+  LengthUnits.chain: ConversionDetail(
+    dividend: 20.1168,
+  ),
+  LengthUnits.chineseMile: ConversionDetail(
+    dividend: 500,
+  ),
+  LengthUnits.decaLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.deca] * lightYearToMeter,
+  ),
+  LengthUnits.decameter: ConversionDetail(
+    dividend: prefixValue[Prefix.deca],
+  ),
+  LengthUnits.decaparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.deca] * parsecToMeter,
+  ),
+  LengthUnits.deciLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.deci] * lightYearToMeter,
+  ),
+  LengthUnits.decimeter: ConversionDetail(
+    dividend: prefixValue[Prefix.deci],
+  ),
+  LengthUnits.deciparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.deci] * parsecToMeter,
+  ),
+  LengthUnits.exaLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.exa] * lightYearToMeter,
+  ),
+  LengthUnits.exameter: ConversionDetail(
+    dividend: prefixValue[Prefix.exa],
+  ),
+  LengthUnits.exaparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.exa] * parsecToMeter,
+  ),
+  LengthUnits.fathom: ConversionDetail(
+    dividend: 1.8288,
+  ),
+  LengthUnits.femtoLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.femto] * lightYearToMeter,
+  ),
+  LengthUnits.femtometer: ConversionDetail(
+    dividend: prefixValue[Prefix.femto],
+  ),
+  LengthUnits.femtoparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.femto] * parsecToMeter,
+  ),
+  LengthUnits.fermi: ConversionDetail(
+    dividend: prefixValue[Prefix.femto],
+  ),
+  LengthUnits.foot: ConversionDetail(
+    dividend: .3048,
+  ),
+  LengthUnits.furlong: ConversionDetail(
+    dividend: 201.168,
+  ),
+  LengthUnits.gigaLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.giga] * lightYearToMeter,
+  ),
+  LengthUnits.gigameter: ConversionDetail(
+    dividend: prefixValue[Prefix.giga],
+  ),
+  LengthUnits.gigaparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.giga] * parsecToMeter,
+  ),
+  LengthUnits.hand: ConversionDetail(
+    dividend: .1016,
+  ),
+  LengthUnits.hectoLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.hecto] * lightYearToMeter,
+  ),
+  LengthUnits.hectometer: ConversionDetail(
+    dividend: prefixValue[Prefix.hecto],
+  ),
+  LengthUnits.hectoparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.hecto] * parsecToMeter,
+  ),
+  LengthUnits.inch: ConversionDetail(
+    dividend: inchToMeter,
+  ),
+  LengthUnits.kiloLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.kilo] * lightYearToMeter,
+  ),
+  LengthUnits.kilometer: ConversionDetail(
+    dividend: prefixValue[Prefix.kilo],
+  ),
+  LengthUnits.kiloparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.kilo] * parsecToMeter,
+  ),
+  LengthUnits.lightDay: ConversionDetail(
+    dividend: 2.59020683712 * pow(10, 13),
+  ),
+  LengthUnits.lightHour: ConversionDetail(
+    dividend: 1.0792528488 * prefixValue[Prefix.tera],
+  ),
+  LengthUnits.lightMinute: ConversionDetail(
+    dividend: 1.798754748 * pow(10, 10),
+  ),
+  LengthUnits.lightSecond: ConversionDetail(
+    dividend: 299792458,
+  ),
+  LengthUnits.lightYear: ConversionDetail(
+    dividend: lightYearToMeter,
+  ),
+  LengthUnits.megaLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.mega] * lightYearToMeter,
+  ),
+  LengthUnits.megameter: ConversionDetail(
+    dividend: prefixValue[Prefix.mega],
+  ),
+  LengthUnits.megaparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.mega] * parsecToMeter,
+  ),
+  LengthUnits.microLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.micro] * lightYearToMeter,
+  ),
+  LengthUnits.microinch: ConversionDetail(
+    dividend: prefixValue[Prefix.micro] * inchToMeter,
+  ),
+  LengthUnits.micrometer: ConversionDetail(
+    dividend: prefixValue[Prefix.micro],
+  ),
+  LengthUnits.micron: ConversionDetail(
+    dividend: prefixValue[Prefix.micro],
+  ),
+  LengthUnits.microparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.micro] * parsecToMeter,
+  ),
+  LengthUnits.mile: ConversionDetail(
+    dividend: 1609.344,
+  ),
+  LengthUnits.milliLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.milli] * lightYearToMeter,
+  ),
+  LengthUnits.millimeter: ConversionDetail(
+    dividend: prefixValue[Prefix.milli],
+  ),
+  LengthUnits.milliparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.milli] * parsecToMeter,
+  ),
+  LengthUnits.nanoLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.nano] * lightYearToMeter,
+  ),
+  LengthUnits.nanometer: ConversionDetail(
+    dividend: prefixValue[Prefix.nano],
+  ),
+  LengthUnits.nanoparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.nano] * parsecToMeter,
+  ),
+  LengthUnits.nauticalMile: ConversionDetail(
+    dividend: 1852,
+  ),
+  LengthUnits.parsec: ConversionDetail(
+    dividend: parsecToMeter,
+  ),
+  LengthUnits.petaLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.peta] * lightYearToMeter,
+  ),
+  LengthUnits.petameter: ConversionDetail(
+    dividend: prefixValue[Prefix.peta],
+  ),
+  LengthUnits.petaparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.peta] * parsecToMeter,
+  ),
+  LengthUnits.pica: ConversionDetail(
+    dividend: .0042333,
+  ),
+  LengthUnits.picoLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.pico] * lightYearToMeter,
+  ),
+  LengthUnits.picometer: ConversionDetail(
+    dividend: prefixValue[Prefix.pico],
+  ),
+  LengthUnits.picoparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.pico] * parsecToMeter,
+  ),
+  LengthUnits.planckLength: ConversionDetail(
+    dividend: 1.616255 * pow(10, -35),
+  ),
+  LengthUnits.point: ConversionDetail(
+    dividend: 0.000352778,
+  ),
+  LengthUnits.pole: ConversionDetail(
+    dividend: 5.0292,
+  ),
+  LengthUnits.rod: ConversionDetail(
+    dividend: 5.0292,
+  ),
+  LengthUnits.teraLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.tera] * lightYearToMeter,
+  ),
+  LengthUnits.terameter: ConversionDetail(
+    dividend: prefixValue[Prefix.tera],
+  ),
+  LengthUnits.teraparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.tera] * parsecToMeter,
+  ),
+  LengthUnits.thousandOfAnInch: ConversionDetail(
+    dividend: 2.54 * pow(10, -5),
+  ),
+  LengthUnits.yard: ConversionDetail(
+    dividend: .9144,
+  ),
+  LengthUnits.yoctoLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.yocto] * lightYearToMeter,
+  ),
+  LengthUnits.yoctometer: ConversionDetail(
+    dividend: prefixValue[Prefix.yocto],
+  ),
+  LengthUnits.yoctoparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.yocto] * parsecToMeter,
+  ),
+  LengthUnits.yottaLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.yotta] * lightYearToMeter,
+  ),
+  LengthUnits.yottameter: ConversionDetail(
+    dividend: prefixValue[Prefix.yotta],
+  ),
+  LengthUnits.yottaparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.yotta] * parsecToMeter,
+  ),
+  LengthUnits.zeptoLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.zepto] * lightYearToMeter,
+  ),
+  LengthUnits.zeptometer: ConversionDetail(
+    dividend: prefixValue[Prefix.zepto],
+  ),
+  LengthUnits.zeptoparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.zepto] * parsecToMeter,
+  ),
+  LengthUnits.zettaLightYear: ConversionDetail(
+    dividend: prefixValue[Prefix.zetta] * lightYearToMeter,
+  ),
+  LengthUnits.zettameter: ConversionDetail(
+    dividend: prefixValue[Prefix.zetta],
+  ),
+  LengthUnits.zettaparsec: ConversionDetail(
+    dividend: prefixValue[Prefix.zetta] * parsecToMeter,
   ),
 };

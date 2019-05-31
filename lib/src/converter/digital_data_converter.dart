@@ -5,7 +5,7 @@ import '../constant/digital_data/digital_data_conversion_details.dart';
 import '../enum/conversion_type.dart';
 import '../enum/digital_data_units.dart';
 import '../misc/global.dart';
-import '../model/unit_conversion_detail.dart';
+import '../model/conversion_detail.dart';
 
 class DigitalDataConverter extends Converter {
   DigitalDataConverter() : super(ConversionType.digitalData);
@@ -17,8 +17,8 @@ class DigitalDataConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final UnitConversionDetail fromUnit = digitalDataConversionDetails[from];
-    final UnitConversionDetail toUnit = digitalDataConversionDetails[to];
+    final ConversionDetail fromUnit = digitalDataConversionDetails[from];
+    final ConversionDetail toUnit = digitalDataConversionDetails[to];
     return globalConvert(value, fromUnit, toUnit);
   }
 }

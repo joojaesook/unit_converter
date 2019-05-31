@@ -1,214 +1,244 @@
-import '../../enum/postfix.dart';
-import '../../enum/prefix.dart';
+import '../../enum/symbol_parts.dart';
 import '../../enum/time_units.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> timeUnitDetails = {
   Unit(
-      'Attosecond',
-      createSymbol(
-        prefix: Prefix.atto,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.attosecond),
+    'Attosecond',
+    createSymbol(const [
+      SymbolParts.atto,
+      SymbolParts.second,
+    ]),
+    TimeUnits.attosecond,
+  ),
   Unit(
-      'Centisecond',
-      createSymbol(
-        prefix: Prefix.centi,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.centisecond),
+    'Centisecond',
+    createSymbol(const [
+      SymbolParts.centi,
+      SymbolParts.second,
+    ]),
+    TimeUnits.centisecond,
+  ),
   Unit(
-      'Century',
-      createSymbol(
-        postfix: Postfix.century,
-      ),
-      TimeUnits.century),
+    'Century',
+    createSymbol(const [
+      SymbolParts.century,
+    ]),
+    TimeUnits.century,
+  ),
   Unit(
-      'Day',
-      createSymbol(
-        postfix: Postfix.day,
-      ),
-      TimeUnits.day),
+    'Day',
+    createSymbol(const [
+      SymbolParts.day,
+    ]),
+    TimeUnits.day,
+  ),
   Unit(
-      'Decade',
-      createSymbol(
-        postfix: Postfix.decade,
-      ),
-      TimeUnits.decade),
+    'Decade',
+    createSymbol(const [
+      SymbolParts.decade,
+    ]),
+    TimeUnits.decade,
+  ),
   Unit(
-      'Decasecond',
-      createSymbol(
-        prefix: Prefix.deca,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.decasecond),
+    'Decasecond',
+    createSymbol(const [
+      SymbolParts.deca,
+      SymbolParts.second,
+    ]),
+    TimeUnits.decasecond,
+  ),
   Unit(
-      'Decisecond',
-      createSymbol(
-        prefix: Prefix.deci,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.decisecond),
+    'Decisecond',
+    createSymbol(const [
+      SymbolParts.deci,
+      SymbolParts.second,
+    ]),
+    TimeUnits.decisecond,
+  ),
   Unit(
-      'Exasecond',
-      createSymbol(
-        prefix: Prefix.exa,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.exasecond),
+    'Exasecond',
+    createSymbol(const [
+      SymbolParts.exa,
+      SymbolParts.second,
+    ]),
+    TimeUnits.exasecond,
+  ),
   Unit(
-      'Femtosecond',
-      createSymbol(
-        prefix: Prefix.femto,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.femtosecond),
+    'Femtosecond',
+    createSymbol(const [
+      SymbolParts.femto,
+      SymbolParts.second,
+    ]),
+    TimeUnits.femtosecond,
+  ),
   Unit(
-      'Fortnight',
-      createSymbol(
-        postfix: Postfix.fortnight,
-      ),
-      TimeUnits.fortnight),
+    'Fortnight',
+    createSymbol(const [
+      SymbolParts.fortnight,
+    ]),
+    TimeUnits.fortnight,
+  ),
   Unit(
-      'Gigasecond',
-      createSymbol(
-        prefix: Prefix.giga,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.gigasecond),
+    'Gigasecond',
+    createSymbol(const [
+      SymbolParts.giga,
+      SymbolParts.second,
+    ]),
+    TimeUnits.gigasecond,
+  ),
   Unit(
-      'Hectosecond',
-      createSymbol(
-        prefix: Prefix.hecto,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.hectosecond),
+    'Hectosecond',
+    createSymbol(const [
+      SymbolParts.hecto,
+      SymbolParts.second,
+    ]),
+    TimeUnits.hectosecond,
+  ),
   Unit(
-      'Hour',
-      createSymbol(
-        postfix: Postfix.hour,
-      ),
-      TimeUnits.hour),
+    'Hour',
+    createSymbol(const [
+      SymbolParts.hour,
+    ]),
+    TimeUnits.hour,
+  ),
   Unit(
-      'Kilosecond',
-      createSymbol(
-        prefix: Prefix.kilo,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.kilosecond),
+    'Kilosecond',
+    createSymbol(const [
+      SymbolParts.kilo,
+      SymbolParts.second,
+    ]),
+    TimeUnits.kilosecond,
+  ),
   Unit(
-      'Mgasecond',
-      createSymbol(
-        prefix: Prefix.mega,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.megasecond),
+    'Mgasecond',
+    createSymbol(const [
+      SymbolParts.mega,
+      SymbolParts.second,
+    ]),
+    TimeUnits.megasecond,
+  ),
   Unit(
-      'Microsecond',
-      createSymbol(
-        prefix: Prefix.micro,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.microsecond),
+    'Microsecond',
+    createSymbol(const [
+      SymbolParts.micro,
+      SymbolParts.second,
+    ]),
+    TimeUnits.microsecond,
+  ),
   Unit(
-      'Millennium',
-      createSymbol(
-        postfix: Postfix.millennium,
-      ),
-      TimeUnits.millennium),
+    'Millennium',
+    createSymbol(const [
+      SymbolParts.millennium,
+    ]),
+    TimeUnits.millennium,
+  ),
   Unit(
-      'Millisecond',
-      createSymbol(
-        prefix: Prefix.milli,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.millisecond),
+    'Millisecond',
+    createSymbol(const [
+      SymbolParts.milli,
+      SymbolParts.second,
+    ]),
+    TimeUnits.millisecond,
+  ),
   Unit(
-      'Minute',
-      createSymbol(
-        postfix: Postfix.minute,
-      ),
-      TimeUnits.minute),
+    'Minute',
+    createSymbol(const [
+      SymbolParts.minute,
+    ]),
+    TimeUnits.minute,
+  ),
   Unit(
-      'Month',
-      createSymbol(
-        postfix: Postfix.month,
-      ),
-      TimeUnits.month),
+    'Month',
+    createSymbol(const [
+      SymbolParts.month,
+    ]),
+    TimeUnits.month,
+  ),
   Unit(
-      'Nanosecond',
-      createSymbol(
-        prefix: Prefix.nano,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.nanosecond),
+    'Nanosecond',
+    createSymbol(const [
+      SymbolParts.nano,
+      SymbolParts.second,
+    ]),
+    TimeUnits.nanosecond,
+  ),
   Unit(
-      'Petasecond',
-      createSymbol(
-        prefix: Prefix.peta,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.petasecond),
+    'Petasecond',
+    createSymbol(const [
+      SymbolParts.peta,
+      SymbolParts.second,
+    ]),
+    TimeUnits.petasecond,
+  ),
   Unit(
-      'Picosecond',
-      createSymbol(
-        prefix: Prefix.pico,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.picosecond),
+    'Picosecond',
+    createSymbol(const [
+      SymbolParts.pico,
+      SymbolParts.second,
+    ]),
+    TimeUnits.picosecond,
+  ),
   Unit(
-      'Second',
-      createSymbol(
-        postfix: Postfix.second,
-      ),
-      TimeUnits.second),
+    'Second',
+    createSymbol(const [
+      SymbolParts.second,
+    ]),
+    TimeUnits.second,
+  ),
   Unit(
-      'Terasecond',
-      createSymbol(
-        prefix: Prefix.tera,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.terasecond),
+    'Terasecond',
+    createSymbol(const [
+      SymbolParts.tera,
+      SymbolParts.second,
+    ]),
+    TimeUnits.terasecond,
+  ),
   Unit(
-      'Week',
-      createSymbol(
-        postfix: Postfix.week,
-      ),
-      TimeUnits.week),
+    'Week',
+    createSymbol(const [
+      SymbolParts.week,
+    ]),
+    TimeUnits.week,
+  ),
   Unit(
-      'Year',
-      createSymbol(
-        postfix: Postfix.year,
-      ),
-      TimeUnits.year),
+    'Year',
+    createSymbol(const [
+      SymbolParts.year,
+    ]),
+    TimeUnits.year,
+  ),
   Unit(
-      'Yoctosecond',
-      createSymbol(
-        prefix: Prefix.yocto,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.yoctosecond),
+    'Yoctosecond',
+    createSymbol(const [
+      SymbolParts.yocto,
+      SymbolParts.second,
+    ]),
+    TimeUnits.yoctosecond,
+  ),
   Unit(
-      'Yottasecond',
-      createSymbol(
-        prefix: Prefix.yotta,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.yottasecond),
+    'Yottasecond',
+    createSymbol(const [
+      SymbolParts.yotta,
+      SymbolParts.second,
+    ]),
+    TimeUnits.yottasecond,
+  ),
   Unit(
-      'Zeptosecond',
-      createSymbol(
-        prefix: Prefix.zepto,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.zeptosecond),
+    'Zeptosecond',
+    createSymbol(const [
+      SymbolParts.zepto,
+      SymbolParts.second,
+    ]),
+    TimeUnits.zeptosecond,
+  ),
   Unit(
-      'Zettasecond',
-      createSymbol(
-        prefix: Prefix.zetta,
-        postfix: Postfix.second,
-      ),
-      TimeUnits.zettasecond),
+    'Zettasecond',
+    createSymbol(const [
+      SymbolParts.zetta,
+      SymbolParts.second,
+    ]),
+    TimeUnits.zettasecond,
+  ),
 };

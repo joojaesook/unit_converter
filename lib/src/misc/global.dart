@@ -1,45 +1,24 @@
-import '../constant/others/postfix_symbol.dart';
-import '../constant/others/prefix_symbol.dart';
-import '../enum/postfix.dart';
-import '../enum/prefix.dart';
+import '../constant/others/symbol.dart';
+import '../enum/symbol_parts.dart';
 import '../model/conversion_detail.dart';
-import '../model/unit_conversion_detail.dart';
 
-// Convert the [charCode] to String and append [postfix] to it, and returns the result
-String createStringFromUnicode(String charCode) {
-  return String.fromCharCodes(Runes('\\u{$charCode}'));
-}
-
-String createSymbol({Prefix prefix, String mid, Postfix postfix}) {
-  String symbol = '';
-  if (prefix == null && mid == null && postfix == null) {
-    assert(false, 'All of prefix, mid and postfix cannot be null');
-    return symbol;
+String createSymbol(List<SymbolParts> symbolParts) {
+  String symbolName = '';
+  if (symbolParts == null || symbolParts.isEmpty) {
+    assert(false, 'symbolParts cannot be null or empty');
+    return symbolName;
   }
-  if (prefix != null) {
-    symbol += prefixSymbol[prefix];
+  for (var part in symbolParts) {
+    symbolName += symbol[part];
   }
-  if (mid != null) {
-    symbol += mid;
-  }
-  if (postfix != null) {
-    symbol += postfixSymbol[postfix];
-  }
-  return symbol;
-}
-
-UnitConversionDetail createUnitConversionDetail({
-  List<ConversionDetail> dividend,
-  List<ConversionDetail> divisor,
-}) {
-  return UnitConversionDetail(dividend, divisor);
+  return symbolName;
 }
 
 // Convert value from [from] to [to]
 double globalConvert(
   double value,
-  UnitConversionDetail from,
-  UnitConversionDetail to,
+  ConversionDetail from,
+  ConversionDetail to,
 ) {
   var result = value;
   result *= calculateOffset(from);
@@ -47,13 +26,13 @@ double globalConvert(
   return result;
 }
 
-double calculateOffset(UnitConversionDetail unitConversionDetail) {
+double calculateOffset(ConversionDetail conversionDetail) {
   double offest = 1;
-  for (var conversionDetail in unitConversionDetail.dividend) {
-    offest *= conversionDetail.conversion;
+  if (conversionDetail.dividend != null) {
+    offest *= conversionDetail.dividend;
   }
-  for (var conversionDetail in unitConversionDetail.divisor) {
-    offest /= conversionDetail.conversion;
+  if (conversionDetail.divisor != null) {
+    offest /= conversionDetail.divisor;
   }
   return offest;
 }

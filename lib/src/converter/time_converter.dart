@@ -5,7 +5,7 @@ import '../constant/time/time_conversion_details.dart';
 import '../enum/conversion_type.dart';
 import '../enum/time_units.dart';
 import '../misc/global.dart';
-import '../model/unit_conversion_detail.dart';
+import '../model/conversion_detail.dart';
 
 class TimeConverter extends Converter {
   TimeConverter() : super(ConversionType.time);
@@ -17,8 +17,8 @@ class TimeConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final UnitConversionDetail fromUnit = timeConversionDetails[from];
-    final UnitConversionDetail toUnit = timeConversionDetails[to];
+    final ConversionDetail fromUnit = timeConversionDetails[from];
+    final ConversionDetail toUnit = timeConversionDetails[to];
     return globalConvert(value, fromUnit, toUnit);
   }
 }

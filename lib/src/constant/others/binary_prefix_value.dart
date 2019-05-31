@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import '../../enum/binary_prefix.dart';
-import '../../model/conversion_detail.dart';
 
 final Map<BinaryPrefix, double> binaryPrefixValue = {
   BinaryPrefix.exa: pow(2, 60),

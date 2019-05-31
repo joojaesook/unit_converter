@@ -1,5 +1,6 @@
 class ConversionDetail {
-  final double conversion;
+  final double dividend;
+  final double divisor;
 
-  ConversionDetail(this.conversion);
+  ConversionDetail({this.dividend, this.divisor});
 }

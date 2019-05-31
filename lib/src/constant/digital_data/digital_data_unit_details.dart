@@ -1,150 +1,149 @@
 import '../../enum/digital_data_units.dart';
-import '../../enum/postfix.dart';
-import '../../enum/prefix.dart';
+import '../../enum/symbol_parts.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 Set<Unit> digitalDataUnitDetails = {
   Unit(
     'Bit',
-    createSymbol(
-      postfix: Postfix.bit,
-    ),
+    createSymbol(const [
+      SymbolParts.bit,
+    ]),
     DigitalDataUnits.bit,
   ),
   Unit(
     'Byte',
-    createSymbol(
-      postfix: Postfix.byte,
-    ),
+    createSymbol(const [
+      SymbolParts.byte,
+    ]),
     DigitalDataUnits.byte,
   ),
   Unit(
     'Exabit',
-    createSymbol(
-      prefix: Prefix.exa,
-      postfix: Postfix.bit,
-    ),
+    createSymbol(const [
+      SymbolParts.exa,
+      SymbolParts.bit,
+    ]),
     DigitalDataUnits.exabit,
   ),
   Unit(
     'Exabyte',
-    createSymbol(
-      prefix: Prefix.exa,
-      postfix: Postfix.byte,
-    ),
+    createSymbol(const [
+      SymbolParts.exa,
+      SymbolParts.byte,
+    ]),
     DigitalDataUnits.exabyte,
   ),
   Unit(
     'Gigabit',
-    createSymbol(
-      prefix: Prefix.giga,
-      postfix: Postfix.bit,
-    ),
+    createSymbol(const [
+      SymbolParts.giga,
+      SymbolParts.bit,
+    ]),
     DigitalDataUnits.gigabit,
   ),
   Unit(
     'Gigabyte',
-    createSymbol(
-      prefix: Prefix.giga,
-      postfix: Postfix.byte,
-    ),
+    createSymbol(const [
+      SymbolParts.giga,
+      SymbolParts.byte,
+    ]),
     DigitalDataUnits.gigabyte,
   ),
   Unit(
     'Kilobit',
-    createSymbol(
-      prefix: Prefix.kilo,
-      postfix: Postfix.bit,
-    ),
+    createSymbol(const [
+      SymbolParts.kilo,
+      SymbolParts.bit,
+    ]),
     DigitalDataUnits.kilobit,
   ),
   Unit(
     'Kilobyte',
-    createSymbol(
-      prefix: Prefix.kilo,
-      postfix: Postfix.byte,
-    ),
+    createSymbol(const [
+      SymbolParts.kilo,
+      SymbolParts.byte,
+    ]),
     DigitalDataUnits.kilobyte,
   ),
   Unit(
     'Megabit',
-    createSymbol(
-      prefix: Prefix.mega,
-      postfix: Postfix.bit,
-    ),
+    createSymbol(const [
+      SymbolParts.mega,
+      SymbolParts.bit,
+    ]),
     DigitalDataUnits.megabit,
   ),
   Unit(
     'Megabyte',
-    createSymbol(
-      prefix: Prefix.mega,
-      postfix: Postfix.byte,
-    ),
+    createSymbol(const [
+      SymbolParts.mega,
+      SymbolParts.byte,
+    ]),
     DigitalDataUnits.megabyte,
   ),
   Unit(
     'Petabit',
-    createSymbol(
-      prefix: Prefix.peta,
-      postfix: Postfix.bit,
-    ),
+    createSymbol(const [
+      SymbolParts.peta,
+      SymbolParts.bit,
+    ]),
     DigitalDataUnits.petabit,
   ),
   Unit(
     'Petabyte',
-    createSymbol(
-      prefix: Prefix.peta,
-      postfix: Postfix.byte,
-    ),
+    createSymbol(const [
+      SymbolParts.peta,
+      SymbolParts.byte,
+    ]),
     DigitalDataUnits.petabyte,
   ),
   Unit(
     'Terabit',
-    createSymbol(
-      prefix: Prefix.tera,
-      postfix: Postfix.bit,
-    ),
+    createSymbol(const [
+      SymbolParts.tera,
+      SymbolParts.bit,
+    ]),
     DigitalDataUnits.terabit,
   ),
   Unit(
     'Terabyte',
-    createSymbol(
-      prefix: Prefix.tera,
-      postfix: Postfix.byte,
-    ),
+    createSymbol(const [
+      SymbolParts.tera,
+      SymbolParts.byte,
+    ]),
     DigitalDataUnits.terabyte,
   ),
   Unit(
     'Yottabit',
-    createSymbol(
-      prefix: Prefix.yotta,
-      postfix: Postfix.bit,
-    ),
+    createSymbol(const [
+      SymbolParts.yotta,
+      SymbolParts.bit,
+    ]),
     DigitalDataUnits.yottabit,
   ),
   Unit(
     'Yottabyte',
-    createSymbol(
-      prefix: Prefix.yotta,
-      postfix: Postfix.byte,
-    ),
+    createSymbol(const [
+      SymbolParts.yotta,
+      SymbolParts.byte,
+    ]),
     DigitalDataUnits.yottabyte,
   ),
   Unit(
     'Zettabit',
-    createSymbol(
-      prefix: Prefix.zetta,
-      postfix: Postfix.bit,
-    ),
+    createSymbol(const [
+      SymbolParts.zetta,
+      SymbolParts.bit,
+    ]),
     DigitalDataUnits.zettabit,
   ),
   Unit(
     'Zettabyte',
-    createSymbol(
-      prefix: Prefix.zetta,
-      postfix: Postfix.byte,
-    ),
+    createSymbol(const [
+      SymbolParts.zetta,
+      SymbolParts.byte,
+    ]),
     DigitalDataUnits.zettabyte,
   ),
 };

@@ -1,6 +1,4 @@
 import '../../enum/area_units.dart';
-import '../../enum/postfix.dart';
-import '../../enum/prefix.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 
@@ -11,14 +9,6 @@ final Set<Unit> areaUnitDetails = {
         postfix: Postfix.acre,
       ),
       AreaUnits.acre,
-  ),
-  Unit(
-      'Acre',
-      createSymbol(
-        postfix: Postfix.acre,
-      ),
-      AreaUnits.acre_USSurvey,
-      domain: 'US Survey'
   ),
   Unit(
       'Are',
