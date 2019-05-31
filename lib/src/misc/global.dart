@@ -14,14 +14,17 @@ String createStringFromUnicode(String charCode, {String postfix}) {
   return resultString;
 }
 
-String createSymbol({Prefix prefix, Postfix postfix}) {
+String createSymbol({Prefix prefix, String mid, Postfix postfix}) {
   String symbol = '';
-  if (prefix == null && postfix == null) {
-    assert(false, 'Both prefix and postfix cannot be null');
+  if (prefix == null && mid == null && postfix == null) {
+    assert(false, 'All of prefix, mid and postfix cannot be null');
     return symbol;
   }
   if (prefix != null) {
     symbol += prefixSymbol[prefix];
+  }
+  if (mid != null) {
+    symbol += mid;
   }
   if (postfix != null) {
     symbol += postfixSymbol[postfix];

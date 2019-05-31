@@ -85,7 +85,12 @@ final Set<Unit> timeUnitDetails = {
         postfix: Postfix.second,
       ),
       TimeUnits.hectosecond),
-  Unit('Hour', createSymbol(postfix: Postfix.hour), TimeUnits.hour),
+  Unit(
+      'Hour',
+      createSymbol(
+        postfix: Postfix.hour,
+      ),
+      TimeUnits.hour),
   Unit(
       'Kilosecond',
       createSymbol(

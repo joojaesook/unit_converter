@@ -15,6 +15,7 @@ enum Prefix {
   nano,
   peta,
   pico,
+  planck,
   tera,
   yocto,
   yotta,

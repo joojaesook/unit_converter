@@ -19,6 +19,7 @@ final Map<Prefix, String> prefixSymbol = {
   Prefix.nano: 'n',
   Prefix.peta: 'P',
   Prefix.pico: 'p',
+  Prefix.planck: createStringFromUnicode(unicodePlanck),
   Prefix.tera: 'T',
   Prefix.yocto: 'y',
   Prefix.yotta: 'Y',

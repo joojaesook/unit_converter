@@ -1,9 +1,12 @@
-import '../../constant/misc_constants.dart';
+import 'package:unit_converter/src/constant/others/prefix_value.dart';
+
 import '../../enum/length_units.dart';
 import '../../enum/prefix.dart';
 import '../../misc/global.dart';
 import '../../model/conversion_detail.dart';
 import '../../model/unit_conversion_detail.dart';
+
+// final lightYearToMeter = ConversionDetail(9.4607 * prefixValue[Prefix.peta]);
 
 Map<LengthUnits, UnitConversionDetail> lengthConversionDetails = {
   // Base unit
@@ -12,6 +15,23 @@ Map<LengthUnits, UnitConversionDetail> lengthConversionDetails = {
       ConversionDetail(1),
     ],
   ),
+  LengthUnits.angstrom: createUnitConversionDetail(
+    dividend: [
+      prefixValue[Prefix.angstrom],
+    ],
+  ),
+LengthUnits.astronomicalUnit: createUnitConversionDetail(
+    dividend: [
+      ConversionDetail(149597870700),
+    ],
+  ),
+LengthUnits.: createUnitConversionDetail(
+    dividend: [
+      ConversionDetail(),
+    ],
+  ),
+
+  
   LengthUnits.femtometer: createUnitConversionDetail(
     dividend: [
       prefixValue[Prefix.femto],
@@ -22,11 +42,7 @@ Map<LengthUnits, UnitConversionDetail> lengthConversionDetails = {
       prefixValue[Prefix.pico],
     ],
   ),
-  LengthUnits.angstrom: createUnitConversionDetail(
-    dividend: [
-      prefixValue[Prefix.angstrom],
-    ],
-  ),
+  
   LengthUnits.nanometer: createUnitConversionDetail(
     dividend: [
       prefixValue[Prefix.nano],
@@ -114,11 +130,7 @@ Map<LengthUnits, UnitConversionDetail> lengthConversionDetails = {
       ConversionDetail(5.0292),
     ],
   ),
-  LengthUnits.astronomicalUnit: createUnitConversionDetail(
-    dividend: [
-      ConversionDetail(149597870700),
-    ],
-  ),
+  
   LengthUnits.furlong: createUnitConversionDetail(
     dividend: [
       ConversionDetail(201.168),
