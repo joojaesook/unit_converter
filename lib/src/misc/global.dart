@@ -6,12 +6,8 @@ import '../model/conversion_detail.dart';
 import '../model/unit_conversion_detail.dart';
 
 // Convert the [charCode] to String and append [postfix] to it, and returns the result
-String createStringFromUnicode(String charCode, {String postfix}) {
-  final resultString = String.fromCharCodes(Runes('\\u{$charCode}'));
-  if (postfix != null) {
-    return '$resultString$postfix';
-  }
-  return resultString;
+String createStringFromUnicode(String charCode) {
+  return String.fromCharCodes(Runes('\\u{$charCode}'));
 }
 
 String createSymbol({Prefix prefix, String mid, Postfix postfix}) {

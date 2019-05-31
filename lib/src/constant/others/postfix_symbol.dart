@@ -1,10 +1,16 @@
 import '../../enum/postfix.dart';
 
 final Map<Postfix, String> postfixSymbol = {
+  Postfix.acre: 'ac',
+  Postfix.are: 'a',
   Postfix.astronomicalUnit: 'au',
   Postfix.barleycorn: 'bc',
   Postfix.bit: 'bit',
+  Postfix.barn: 'b',
+  Postfix.hectare: 'ha',
   Postfix.byte: 'B',
+  Postfix.rai: 'rai',
+  Postfix.rood: 'rood',
   Postfix.century: 'c',
   Postfix.chain: 'chain',
   Postfix.chineseMile: 'li',
