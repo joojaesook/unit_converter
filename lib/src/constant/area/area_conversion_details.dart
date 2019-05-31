@@ -118,14 +118,18 @@ Map<AreaUnits, ConversionDetail> areaConversionDetails = {
   AreaUnits.squareMicrometer: ConversionDetail(
     dividend: pow(prefixValue[Prefix.micro], 2),
   ),
-  AreaUnits.squareMile: ConversionDetail(dividend: pow(mileToMeter, 2)),
+  AreaUnits.squareMile: ConversionDetail(
+    dividend: pow(mileToMeter, 2),
+  ),
   AreaUnits.squareMillimeter: ConversionDetail(
     dividend: pow(prefixValue[Prefix.milli], 2),
   ),
   AreaUnits.squareNanometer: ConversionDetail(
     dividend: pow(prefixValue[Prefix.nano], 2),
   ),
-  AreaUnits.squarePerch: ConversionDetail(dividend: pow(rodToMeter, 2)),
+  AreaUnits.squarePerch: ConversionDetail(
+    dividend: pow(rodToMeter, 2),
+  ),
   AreaUnits.squarePetameter: ConversionDetail(
     dividend: pow(prefixValue[Prefix.peta], 2),
   ),
@@ -135,7 +139,9 @@ Map<AreaUnits, ConversionDetail> areaConversionDetails = {
   AreaUnits.squareTerameter: ConversionDetail(
     dividend: pow(prefixValue[Prefix.tera], 2),
   ),
-  AreaUnits.squareYard: ConversionDetail(dividend: pow(yardToMeter, 2)),
+  AreaUnits.squareYard: ConversionDetail(
+    dividend: pow(yardToMeter, 2),
+  ),
   AreaUnits.squareYoctometer: ConversionDetail(
     dividend: pow(prefixValue[Prefix.yocto], 2),
   ),
