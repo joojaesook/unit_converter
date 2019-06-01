@@ -12,7 +12,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.attosecond,
+    TimeUnits.attoSecond,
   ),
   Unit(
     'Centisecond',
@@ -22,7 +22,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.centisecond,
+    TimeUnits.centiSecond,
   ),
   Unit(
     'Century',
@@ -59,7 +59,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.decasecond,
+    TimeUnits.decaSecond,
   ),
   Unit(
     'Decisecond',
@@ -69,7 +69,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.decisecond,
+    TimeUnits.deciSecond,
   ),
   Unit(
     'Exasecond',
@@ -79,7 +79,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.exasecond,
+    TimeUnits.exaSecond,
   ),
   Unit(
     'Femtosecond',
@@ -89,7 +89,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.femtosecond,
+    TimeUnits.femtoSecond,
   ),
   Unit(
     'Fortnight',
@@ -108,7 +108,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.gigasecond,
+    TimeUnits.gigaSecond,
   ),
   Unit(
     'Hectosecond',
@@ -118,7 +118,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.hectosecond,
+    TimeUnits.hectoSecond,
   ),
   Unit(
     'Hour',
@@ -137,7 +137,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.kilosecond,
+    TimeUnits.kiloSecond,
   ),
   Unit(
     'Mgasecond',
@@ -147,7 +147,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.megasecond,
+    TimeUnits.megaSecond,
   ),
   Unit(
     'Microsecond',
@@ -157,7 +157,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.microsecond,
+    TimeUnits.microSecond,
   ),
   Unit(
     'Millennium',
@@ -176,7 +176,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.millisecond,
+    TimeUnits.milliSecond,
   ),
   Unit(
     'Minute',
@@ -204,7 +204,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.nanosecond,
+    TimeUnits.nanoSecond,
   ),
   Unit(
     'Petasecond',
@@ -214,7 +214,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.petasecond,
+    TimeUnits.petaSecond,
   ),
   Unit(
     'Picosecond',
@@ -224,7 +224,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.picosecond,
+    TimeUnits.picoSecond,
   ),
   Unit(
     'Second',
@@ -243,7 +243,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.terasecond,
+    TimeUnits.teraSecond,
   ),
   Unit(
     'Week',
@@ -271,7 +271,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.yoctosecond,
+    TimeUnits.yoctoSecond,
   ),
   Unit(
     'Yottasecond',
@@ -281,7 +281,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.yottasecond,
+    TimeUnits.yottaSecond,
   ),
   Unit(
     'Zeptosecond',
@@ -291,7 +291,7 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.zeptosecond,
+    TimeUnits.zeptoSecond,
   ),
   Unit(
     'Zettasecond',
@@ -301,6 +301,6 @@ final Set<Unit> timeUnitDetails = {
         SymbolParts.second,
       ],
     ),
-    TimeUnits.zettasecond,
+    TimeUnits.zettaSecond,
   ),
 };

@@ -30,7 +30,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.attobarn,
+    AreaUnits.attoBarn,
   ),
   Unit(
     'Barn',
@@ -49,7 +49,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.centibarn,
+    AreaUnits.centiBarn,
   ),
   Unit(
     'Circular mil',
@@ -68,7 +68,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.decabarn,
+    AreaUnits.decaBarn,
   ),
   Unit(
     'Decibarn',
@@ -78,7 +78,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.decibarn,
+    AreaUnits.deciBarn,
   ),
   Unit(
     'Exabarn',
@@ -88,7 +88,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.exabarn,
+    AreaUnits.exaBarn,
   ),
   Unit(
     'Femtobarn',
@@ -98,7 +98,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.femtobarn,
+    AreaUnits.femtoBarn,
   ),
   Unit(
     'Gigabarn',
@@ -108,7 +108,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.gigabarn,
+    AreaUnits.gigaBarn,
   ),
   Unit(
     'Hectare',
@@ -127,7 +127,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.hectobarn,
+    AreaUnits.hectoBarn,
   ),
   Unit(
     'Kilobarn',
@@ -137,7 +137,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.kilobarn,
+    AreaUnits.kiloBarn,
   ),
   Unit(
     'Megabarn',
@@ -147,7 +147,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.megabarn,
+    AreaUnits.megaBarn,
   ),
   Unit(
     'Microbarn',
@@ -157,7 +157,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.microbarn,
+    AreaUnits.microBarn,
   ),
   Unit(
     'Millibarn',
@@ -167,7 +167,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.millibarn,
+    AreaUnits.milliBarn,
   ),
   Unit(
     'Nanobarn',
@@ -177,7 +177,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.nanobarn,
+    AreaUnits.nanoBarn,
   ),
   Unit(
     'Petabarn',
@@ -187,7 +187,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.petabarn,
+    AreaUnits.petaBarn,
   ),
   Unit(
     'Picobarn',
@@ -197,7 +197,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.picobarn,
+    AreaUnits.picoBarn,
   ),
   Unit(
     'Rai',
@@ -226,7 +226,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareAttometer,
+    AreaUnits.squareAttoMeter,
   ),
   Unit(
     'Square centimeter',
@@ -237,7 +237,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareCentimeter,
+    AreaUnits.squareCentiMeter,
   ),
   Unit(
     'Square decameter',
@@ -248,7 +248,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareDecameter,
+    AreaUnits.squareDecaMeter,
   ),
   Unit(
     'Square decimeter',
@@ -259,7 +259,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareDecimeter,
+    AreaUnits.squareDeciMeter,
   ),
   Unit(
     'Square exameter',
@@ -270,7 +270,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareExameter,
+    AreaUnits.squareExaMeter,
   ),
   Unit(
     'Square femtometer',
@@ -281,7 +281,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareFemtometer,
+    AreaUnits.squareFemtoMeter,
   ),
   Unit(
     'Square foot',
@@ -302,7 +302,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareGigameter,
+    AreaUnits.squareGigaMeter,
   ),
   Unit(
     'Square hectometer',
@@ -313,7 +313,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareHectometer,
+    AreaUnits.squareHectoMeter,
   ),
   Unit(
     'Square inch',
@@ -334,7 +334,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareKilometer,
+    AreaUnits.squareKiloMeter,
   ),
   Unit(
     'Square megameter',
@@ -345,7 +345,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareMegameter,
+    AreaUnits.squareMegaMeter,
   ),
   Unit(
     'Square meter',
@@ -366,7 +366,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareMicrometer,
+    AreaUnits.squareMicroMeter,
   ),
   Unit(
     'Square mile',
@@ -387,7 +387,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareMillimeter,
+    AreaUnits.squareMilliMeter,
   ),
   Unit(
     'Square nanometer',
@@ -398,7 +398,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareNanometer,
+    AreaUnits.squareNanoMeter,
   ),
   Unit(
     'Square perch',
@@ -418,7 +418,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squarePetameter,
+    AreaUnits.squarePetaMeter,
   ),
   Unit(
     'Square picometer',
@@ -429,7 +429,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squarePicometer,
+    AreaUnits.squarePicoMeter,
   ),
   Unit(
     'Square terameter',
@@ -440,7 +440,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareTerameter,
+    AreaUnits.squareTeraMeter,
   ),
   Unit(
     'Square yard',
@@ -461,7 +461,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareYoctometer,
+    AreaUnits.squareYoctoMeter,
   ),
   Unit(
     'Square yottameter',
@@ -472,7 +472,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareYottameter,
+    AreaUnits.squareYottaMeter,
   ),
   Unit(
     'Square zeptometer',
@@ -483,7 +483,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareZeptometer,
+    AreaUnits.squareZeptoMeter,
   ),
   Unit(
     'Square zettameter',
@@ -494,7 +494,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareZettameter,
+    AreaUnits.squareZettaMeter,
   ),
   Unit(
     'Terabarn',
@@ -504,7 +504,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.terabarn,
+    AreaUnits.teraBarn,
   ),
   Unit(
     'Yoctobarn',
@@ -514,7 +514,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.yoctobarn,
+    AreaUnits.yoctoBarn,
   ),
   Unit(
     'Yottabarn',
@@ -524,7 +524,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.yottabarn,
+    AreaUnits.yottaBarn,
   ),
   Unit(
     'Zeptobarn',
@@ -534,7 +534,7 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.zeptobarn,
+    AreaUnits.zeptoBarn,
   ),
   Unit(
     'Zettabarn',
@@ -544,6 +544,6 @@ final Set<Unit> areaUnitDetails = {
         SymbolParts.barn,
       ],
     ),
-    AreaUnits.zettabarn,
+    AreaUnits.zettaBarn,
   ),
 };

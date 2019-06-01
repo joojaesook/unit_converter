@@ -12,7 +12,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.abfarad,
+    CapacitanceUnits.abFarad,
   ),
   Unit(
     'Attofarad',
@@ -22,7 +22,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.attofarad,
+    CapacitanceUnits.attoFarad,
   ),
   Unit(
     'Centifarad',
@@ -32,7 +32,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.centifarad,
+    CapacitanceUnits.centiFarad,
   ),
   Unit(
     'Decafarad',
@@ -42,7 +42,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.decafarad,
+    CapacitanceUnits.decaFarad,
   ),
   Unit(
     'Decifarad',
@@ -52,7 +52,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.decifarad,
+    CapacitanceUnits.deciFarad,
   ),
   Unit(
     'Exafarad',
@@ -62,7 +62,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.exafarad,
+    CapacitanceUnits.exaFarad,
   ),
   Unit(
     'Farad',
@@ -81,7 +81,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.femtofarad,
+    CapacitanceUnits.femtoFarad,
   ),
   Unit(
     'Gigafarad',
@@ -91,7 +91,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.gigfarad,
+    CapacitanceUnits.gigFarad,
   ),
   Unit(
     'Hectofarad',
@@ -101,7 +101,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.hectofarad,
+    CapacitanceUnits.hectoFarad,
   ),
   Unit(
     'Kilofarad',
@@ -111,7 +111,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.kilofarad,
+    CapacitanceUnits.kiloFarad,
   ),
   Unit(
     'Megafarad',
@@ -121,7 +121,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.megafarad,
+    CapacitanceUnits.megaFarad,
   ),
   Unit(
     'Microfarad',
@@ -131,7 +131,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.microfarad,
+    CapacitanceUnits.microFarad,
   ),
   Unit(
     'Millifarad',
@@ -141,7 +141,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.millifarad,
+    CapacitanceUnits.milliFarad,
   ),
   Unit(
     'Nanofarad',
@@ -151,7 +151,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.nanofarad,
+    CapacitanceUnits.nanoFarad,
   ),
   Unit(
     'Petafarad',
@@ -161,7 +161,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.petafarad,
+    CapacitanceUnits.petaFarad,
   ),
   Unit(
     'Picofarad',
@@ -171,7 +171,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.picofarad,
+    CapacitanceUnits.picoFarad,
   ),
   Unit(
     'Terafarad',
@@ -181,7 +181,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.terafarad,
+    CapacitanceUnits.teraFarad,
   ),
   Unit(
     'Yoctofarad',
@@ -191,7 +191,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.yoctofarad,
+    CapacitanceUnits.yoctoFarad,
   ),
   Unit(
     'Yottafarad',
@@ -201,7 +201,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.yottafarad,
+    CapacitanceUnits.yottaFarad,
   ),
   Unit(
     'Zeptofarad',
@@ -211,7 +211,7 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.zeptofarad,
+    CapacitanceUnits.zeptoFarad,
   ),
   Unit(
     'Zettafarad',
@@ -221,6 +221,6 @@ final Set<Unit> capacitanceUnitDetails = {
         SymbolParts.farad,
       ],
     ),
-    CapacitanceUnits.zettafarad,
+    CapacitanceUnits.zettaFarad,
   ),
 };

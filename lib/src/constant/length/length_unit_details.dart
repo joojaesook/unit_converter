@@ -37,7 +37,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.attometer),
+      LengthUnits.attoMeter),
   Unit(
       'Attoparsec',
       createSymbol(
@@ -46,7 +46,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.attoparsec),
+      LengthUnits.attoParsec),
   Unit(
       'Barleycorn',
       createSymbol(
@@ -72,7 +72,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.centimeter),
+      LengthUnits.centiMeter),
   Unit(
       'Centiparsec',
       createSymbol(
@@ -81,7 +81,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.centiparsec),
+      LengthUnits.centiParsec),
   Unit(
       'Chain',
       createSymbol(
@@ -115,7 +115,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.decameter),
+      LengthUnits.decaMeter),
   Unit(
       'Decaparsec',
       createSymbol(
@@ -124,7 +124,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.decaparsec),
+      LengthUnits.decaParsec),
   Unit(
       'decilight Year',
       createSymbol(
@@ -142,7 +142,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.decimeter),
+      LengthUnits.deciMeter),
   Unit(
       'deciparsec',
       createSymbol(
@@ -151,7 +151,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.deciparsec),
+      LengthUnits.deciParsec),
   Unit(
       'Exalight Year',
       createSymbol(
@@ -169,7 +169,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.exameter),
+      LengthUnits.exaMeter),
   Unit(
       'Exaparsec',
       createSymbol(
@@ -178,7 +178,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.exaparsec),
+      LengthUnits.exaParsec),
   Unit(
       'Fathom',
       createSymbol(
@@ -204,7 +204,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.femtometer),
+      LengthUnits.femtoMeter),
   Unit(
       'Femtoparsec',
       createSymbol(
@@ -213,7 +213,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.femtoparsec),
+      LengthUnits.femtoParsec),
   Unit(
       'Fermi',
       createSymbol(
@@ -255,7 +255,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.gigameter),
+      LengthUnits.gigaMeter),
   Unit(
       'Gigaparsec',
       createSymbol(
@@ -264,7 +264,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.gigaparsec),
+      LengthUnits.gigaParsec),
   Unit(
       'Hand',
       createSymbol(
@@ -290,7 +290,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.hectometer),
+      LengthUnits.hectoMeter),
   Unit(
       'Hectoparsec',
       createSymbol(
@@ -299,7 +299,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.hectoparsec),
+      LengthUnits.hectoParsec),
   Unit(
       'Inch',
       createSymbol(
@@ -325,7 +325,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.kilometer),
+      LengthUnits.kiloMeter),
   Unit(
       'Kiloparsec',
       createSymbol(
@@ -334,7 +334,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.kiloparsec),
+      LengthUnits.kiloParsec),
   Unit(
       'Light Day',
       createSymbol(
@@ -392,7 +392,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.megameter),
+      LengthUnits.megaMeter),
   Unit(
       'Megaparsec',
       createSymbol(
@@ -401,7 +401,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.megaparsec),
+      LengthUnits.megaParsec),
   Unit(
       'Meter',
       createSymbol(
@@ -427,7 +427,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.inch,
         ],
       ),
-      LengthUnits.microinch),
+      LengthUnits.microInch),
   Unit(
       'Micrometer',
       createSymbol(
@@ -436,7 +436,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.micrometer),
+      LengthUnits.microMeter),
   Unit(
       'Micron',
       createSymbol(
@@ -453,7 +453,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.microparsec),
+      LengthUnits.microParsec),
   Unit(
       'Mile',
       createSymbol(
@@ -479,7 +479,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.millimeter),
+      LengthUnits.milliMeter),
   Unit(
       'Milliparsec',
       createSymbol(
@@ -488,7 +488,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.milliparsec),
+      LengthUnits.milliParsec),
   Unit(
       'Nanolight Year',
       createSymbol(
@@ -506,7 +506,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.nanometer),
+      LengthUnits.nanoMeter),
   Unit(
       'Nanoparsec',
       createSymbol(
@@ -515,7 +515,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.nanoparsec),
+      LengthUnits.nanoParsec),
   Unit(
       'Nautical Mile',
       createSymbol(
@@ -549,7 +549,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.petameter),
+      LengthUnits.petaMeter),
   Unit(
       'Petaparsec',
       createSymbol(
@@ -558,7 +558,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.petaparsec),
+      LengthUnits.petaParsec),
   Unit(
       'Pica',
       createSymbol(
@@ -584,7 +584,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.picometer),
+      LengthUnits.picoMeter),
   Unit(
       'Picoparsec',
       createSymbol(
@@ -593,7 +593,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.picoparsec),
+      LengthUnits.picoParsec),
   Unit(
       'Planck Length',
       createSymbol(
@@ -643,7 +643,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.terameter),
+      LengthUnits.teraMeter),
   Unit(
       'Teraparsec',
       createSymbol(
@@ -652,7 +652,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.teraparsec),
+      LengthUnits.teraParsec),
   Unit(
       'Thousand Of An Inch',
       createSymbol(
@@ -686,7 +686,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.yoctometer),
+      LengthUnits.yoctoMeter),
   Unit(
       'Yoctoparsec',
       createSymbol(
@@ -695,7 +695,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.yoctoparsec),
+      LengthUnits.yoctoParsec),
   Unit(
       'Yottalight Year',
       createSymbol(
@@ -713,7 +713,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.yottameter),
+      LengthUnits.yottaMeter),
   Unit(
       'Yottaparsec',
       createSymbol(
@@ -722,7 +722,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.yottaparsec),
+      LengthUnits.yottaParsec),
   Unit(
       'Zeptolight Year',
       createSymbol(
@@ -740,7 +740,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.zeptometer),
+      LengthUnits.zeptoMeter),
   Unit(
       'Zeptoparsec',
       createSymbol(
@@ -749,7 +749,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.zeptoparsec),
+      LengthUnits.zeptopPrsec),
   Unit(
       'Zettalight Year',
       createSymbol(
@@ -767,7 +767,7 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.meter,
         ],
       ),
-      LengthUnits.zettameter),
+      LengthUnits.zettaMeter),
   Unit(
       'Zettaparsec',
       createSymbol(
@@ -776,5 +776,5 @@ Set<Unit> lengthUnitDetails = {
           SymbolParts.parsec,
         ],
       ),
-      LengthUnits.zettaparsec),
+      LengthUnits.zettaParsec),
 };
