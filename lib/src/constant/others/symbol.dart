@@ -7,6 +7,7 @@ String _createStringFromUnicode(String charCode) {
 }
 
 final Map<SymbolParts, String> symbol = {
+  SymbolParts.ab: 'ab',
   SymbolParts.acre: 'ac',
   SymbolParts.angstrom: _createStringFromUnicode(unicodeAngstrom),
   SymbolParts.are: 'a',
@@ -26,6 +27,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.decade: 'decade',
   SymbolParts.deci: 'd',
   SymbolParts.exa: 'E',
+  SymbolParts.farad: 'F',
   SymbolParts.fathom: 'ftm',
   SymbolParts.femto: 'f',
   SymbolParts.fermi: 'fm',

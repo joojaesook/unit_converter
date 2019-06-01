@@ -1,4 +1,5 @@
 enum SymbolParts {
+  ab,
   acre,
   angstrom,
   are,
@@ -18,6 +19,7 @@ enum SymbolParts {
   decade,
   deci,
   exa,
+  farad,
   fathom,
   femto,
   fermi,
