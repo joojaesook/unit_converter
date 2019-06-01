@@ -1,7 +1,7 @@
-import '../../enum/binary_prefix.dart';
 import '../../enum/digital_data_units.dart';
+import '../../enum/prefix.dart';
 import '../../model/conversion_detail.dart';
-import '../others/binary_prefix_value.dart';
+import '../others/prefix_value.dart';
 
 var _bitToByte = .125;
 
@@ -14,51 +14,51 @@ Map<DigitalDataUnits, ConversionDetail> digitalDataConversionDetails = {
     dividend: _bitToByte,
   ),
   DigitalDataUnits.exabit: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.exa] * _bitToByte,
+    dividend: prefixValue[Prefix.binaryExa] * _bitToByte,
   ),
   DigitalDataUnits.exabyte: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.exa],
+    dividend: prefixValue[Prefix.binaryExa],
   ),
   DigitalDataUnits.gigabit: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.giga] * _bitToByte,
+    dividend: prefixValue[Prefix.binaryGiga] * _bitToByte,
   ),
   DigitalDataUnits.gigabyte: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.giga],
+    dividend: prefixValue[Prefix.binaryGiga],
   ),
   DigitalDataUnits.kilobit: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.kilo] * _bitToByte,
+    dividend: prefixValue[Prefix.binaryKilo] * _bitToByte,
   ),
   DigitalDataUnits.kilobyte: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.kilo],
+    dividend: prefixValue[Prefix.binaryKilo],
   ),
   DigitalDataUnits.megabit: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.mega] * _bitToByte,
+    dividend: prefixValue[Prefix.binaryMega] * _bitToByte,
   ),
   DigitalDataUnits.megabyte: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.mega],
+    dividend: prefixValue[Prefix.binaryMega],
   ),
   DigitalDataUnits.petabit: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.peta] * _bitToByte,
+    dividend: prefixValue[Prefix.binaryPeta] * _bitToByte,
   ),
   DigitalDataUnits.petabyte: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.peta],
+    dividend: prefixValue[Prefix.binaryPeta],
   ),
   DigitalDataUnits.terabit: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.tera] * _bitToByte,
+    dividend: prefixValue[Prefix.binaryTera] * _bitToByte,
   ),
   DigitalDataUnits.terabyte: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.tera],
+    dividend: prefixValue[Prefix.binaryTera],
   ),
   DigitalDataUnits.yottabit: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.yotta] * _bitToByte,
+    dividend: prefixValue[Prefix.binaryYotta] * _bitToByte,
   ),
   DigitalDataUnits.yottabyte: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.yotta],
+    dividend: prefixValue[Prefix.binaryYotta],
   ),
   DigitalDataUnits.zettabit: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.zetta] * _bitToByte,
+    dividend: prefixValue[Prefix.binaryZetta] * _bitToByte,
   ),
   DigitalDataUnits.zettabyte: ConversionDetail(
-    dividend: binaryPrefixValue[BinaryPrefix.zetta],
+    dividend: prefixValue[Prefix.binaryZetta],
   ),
 };

@@ -1,3 +1,5 @@
+import 'package:unit_converter/src/enum/conversion_type.dart';
+
 import '../constant/others/symbol.dart';
 import '../enum/symbol_parts.dart';
 import '../model/conversion_detail.dart';
@@ -13,6 +15,8 @@ String createSymbol(List<SymbolParts> symbolParts) {
   }
   return symbolName;
 }
+
+// double getConversion<T>(ConversionType type, T unit) {}
 
 // Convert value from [from] to [to]
 double globalConvert(double value, ConversionDetail from, ConversionDetail to) {
