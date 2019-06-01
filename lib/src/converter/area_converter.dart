@@ -1,11 +1,9 @@
 import 'package:meta/meta.dart';
 
 import '../abstract/converter.dart';
-import '../constant/area/area_conversion_details.dart';
 import '../enum/area_units.dart';
 import '../enum/conversion_type.dart';
 import '../misc/global.dart';
-import '../model/conversion_detail.dart';
 
 class AreaConverter extends Converter {
   AreaConverter() : super(ConversionType.area);
@@ -17,8 +15,8 @@ class AreaConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final ConversionDetail fromUnit = areaConversionDetails[from];
-    final ConversionDetail toUnit = areaConversionDetails[to];
-    return globalConvert(value, fromUnit, toUnit);
+    final double fromOffset = getConversionDetail(ConversionType.area, from);
+    final double toOffset = getConversionDetail(ConversionType.area, to);
+    return globalConvert(value, fromOffset, toOffset);
   }
 }

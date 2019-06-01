@@ -1,11 +1,9 @@
 import 'package:meta/meta.dart';
 
 import '../abstract/converter.dart';
-import '../constant/capacitance/capacitance_conversion_details.dart';
 import '../enum/capacitance_units.dart';
 import '../enum/conversion_type.dart';
 import '../misc/global.dart';
-import '../model/conversion_detail.dart';
 
 class CapacitanceConverter extends Converter {
   CapacitanceConverter() : super(ConversionType.capacitance);
@@ -17,8 +15,9 @@ class CapacitanceConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final ConversionDetail fromUnit = capacitanceConversionDetails[from];
-    final ConversionDetail toUnit = capacitanceConversionDetails[to];
-    return globalConvert(value, fromUnit, toUnit);
+    final double fromOffset =
+        getConversionDetail(ConversionType.capacitance, from);
+    final double toOffset = getConversionDetail(ConversionType.capacitance, to);
+    return globalConvert(value, fromOffset, toOffset);
   }
 }

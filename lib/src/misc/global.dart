@@ -1,8 +1,7 @@
-import 'package:unit_converter/src/enum/conversion_type.dart';
-
+import '../constant/conversion_details.dart';
 import '../constant/others/symbol.dart';
+import '../enum/conversion_type.dart';
 import '../enum/symbol_parts.dart';
-import '../model/conversion_detail.dart';
 
 String createSymbol(List<SymbolParts> symbolParts) {
   String symbolName = '';
@@ -16,23 +15,13 @@ String createSymbol(List<SymbolParts> symbolParts) {
   return symbolName;
 }
 
-// double getConversion<T>(ConversionType type, T unit) {}
-
-// Convert value from [from] to [to]
-double globalConvert(double value, ConversionDetail from, ConversionDetail to) {
-  var result = value;
-  result *= calculateOffset(from);
-  result /= calculateOffset(to);
-  return result;
+double getConversionDetail<T>(ConversionType type, T unit) {
+  return conversionDetails[type][unit];
 }
 
-double calculateOffset(ConversionDetail conversionDetail) {
-  double offest = 1;
-  if (conversionDetail.dividend != null) {
-    offest *= conversionDetail.dividend;
-  }
-  if (conversionDetail.divisor != null) {
-    offest /= conversionDetail.divisor;
-  }
-  return offest;
+double globalConvert(double value, double fromOffset, double toOffset) {
+  var result = value;
+  result *= fromOffset;
+  result /= toOffset;
+  return result;
 }
