@@ -4,10 +4,10 @@ import '../../enum/length_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
-final _inchToMeter = .0254;
+const _inchToMeter = .0254;
 final _lightYearToMeter = 9.4607304725808 * prefixValue[Prefix.peta];
 final _parsecToMeter = 3.08567782 * pow(10, 16);
-final _rodToMeter = 5.0292;
+const _rodToMeter = 5.0292;
 
 Map<LengthUnits, double> lengthConversionDetails = {
   // Base unit

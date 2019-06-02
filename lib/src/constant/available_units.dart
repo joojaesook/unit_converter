@@ -4,6 +4,7 @@ import 'area/area_unit_details.dart';
 import 'capacitance/capacitance_unit_details.dart';
 import 'digital_data/digital_data_unit_details.dart';
 import 'length/length_unit_details.dart';
+import 'mass/mass_unit_details.dart';
 import 'time/time_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
@@ -11,5 +12,6 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.capacitance: capacitanceUnitDetails,
   ConversionType.digitalData: digitalDataUnitDetails,
   ConversionType.length: lengthUnitDetails,
+  ConversionType.mass: massUnitDetails,
   ConversionType.time: timeUnitDetails,
 };

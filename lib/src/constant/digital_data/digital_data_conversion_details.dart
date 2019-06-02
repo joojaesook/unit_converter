@@ -2,7 +2,7 @@ import '../../enum/digital_data_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
-var _bitToByte = .125;
+const _bitToByte = .125;
 
 Map<DigitalDataUnits, double> digitalDataConversionDetails = {
   // Base unit
