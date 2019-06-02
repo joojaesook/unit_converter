@@ -3,7 +3,7 @@ import '../../enum/symbol_parts.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 
-final Set<Unit> timeUnitDetails = {
+final Set<Unit> electricCurrentUnitDetails = {
   Unit(
     'Abampere',
     createSymbol(

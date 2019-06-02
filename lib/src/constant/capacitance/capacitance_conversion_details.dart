@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import '../../enum/capacitance_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
@@ -5,7 +7,7 @@ import '../others/prefix_value.dart';
 final Map<CapacitanceUnits, double> capacitanceConversionDetails = {
   // Base unit
   CapacitanceUnits.farad: 1,
-  CapacitanceUnits.abFarad: prefixValue[Prefix.ab],
+  CapacitanceUnits.abFarad: pow(10, 9),
   CapacitanceUnits.attoFarad: prefixValue[Prefix.atto],
   CapacitanceUnits.centiFarad: prefixValue[Prefix.centi],
   CapacitanceUnits.decaFarad: prefixValue[Prefix.deca],

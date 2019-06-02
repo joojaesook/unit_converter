@@ -1,5 +1,4 @@
 enum Prefix {
-  ab,
   angstrom,
   atto,
   binaryExa,

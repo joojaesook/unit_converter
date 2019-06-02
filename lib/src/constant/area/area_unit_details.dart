@@ -1,10 +1,9 @@
-import 'package:unit_converter/src/constant/others/system_value.dart';
-import 'package:unit_converter/src/enum/system.dart';
-
 import '../../enum/area_units.dart';
 import '../../enum/symbol_parts.dart';
+import '../../enum/system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
+import '../others/system_value.dart';
 
 final Set<Unit> areaUnitDetails = {
   Unit(
