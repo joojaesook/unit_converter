@@ -9,6 +9,7 @@ String _createStringFromUnicode(String charCode) {
 final Map<SymbolParts, String> symbol = {
   SymbolParts.ab: 'ab',
   SymbolParts.acre: 'ac',
+  SymbolParts.ampere: 'A',
   SymbolParts.angstrom: _createStringFromUnicode(unicodeAngstrom),
   SymbolParts.are: 'a',
   SymbolParts.astronomicalUnit: 'au',

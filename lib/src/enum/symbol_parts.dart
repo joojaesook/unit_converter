@@ -1,6 +1,7 @@
 enum SymbolParts {
   ab,
   acre,
+  ampere,
   angstrom,
   are,
   astronomicalUnit,
