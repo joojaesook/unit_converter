@@ -1,7 +1,9 @@
 import '../../enum/mass_units.dart';
 import '../../enum/symbol_parts.dart';
+import '../../enum/system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
+import '../others/system_value.dart';
 
 final Set<Unit> massUnitDetails = {
   Unit(
@@ -23,15 +25,17 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.attoTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
-      'Carat',
-      createSymbol(
-        const [
-          SymbolParts.carat,
-        ],
-      ),
-      MassUnits.carat),
+    'Carat',
+    createSymbol(
+      const [
+        SymbolParts.carat,
+      ],
+    ),
+    MassUnits.carat,
+  ),
   Unit(
     'Centigram',
     createSymbol(
@@ -51,6 +55,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.centiTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Decagram',
@@ -71,6 +76,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.decaTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Decigram',
@@ -91,6 +97,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.deciTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Exagram',
@@ -111,6 +118,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.exaTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Femtogram',
@@ -131,6 +139,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.femtoTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Gigagram',
@@ -151,6 +160,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.gigaTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Grain',
@@ -189,6 +199,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.hectoTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Kilogram',
@@ -209,6 +220,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.kiloTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Long hundredweight',
@@ -231,6 +243,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.longTonne,
+    // system: systemValue[System.imperial],
   ),
   Unit(
     'Megagram',
@@ -251,6 +264,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.megaTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Microgram',
@@ -271,6 +285,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.microTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Milligram',
@@ -291,6 +306,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.milliTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Nanogram',
@@ -311,6 +327,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.nanoTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Ounce',
@@ -320,6 +337,16 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.ounce,
+  ),
+  Unit(
+    'Ounce',
+    createSymbol(
+      const [
+        SymbolParts.ounce,
+      ],
+    ),
+    MassUnits.ounce_USFood,
+    system: systemValue[System.usFood],
   ),
   Unit(
     'Pennyweight',
@@ -349,6 +376,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.petaTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Picogram',
@@ -369,6 +397,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.picoTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Pood',
@@ -398,6 +427,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.shortHundredWeight,
+    // system: systemValue[System.us],
   ),
   Unit(
     'Short tonne',
@@ -409,6 +439,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.shortTonne,
+    // system: systemValue[System.us],
   ),
   Unit(
     'Slug',
@@ -447,6 +478,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.teraTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Tonne',
@@ -456,6 +488,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.tonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Troy ounce',
@@ -498,6 +531,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.yoctoTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Yottagram',
@@ -518,6 +552,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.yottaTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Zeptogram',
@@ -538,6 +573,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.zeptoTonne,
+    // system: systemValue[System.metric],
   ),
   Unit(
     'Zettagram',
@@ -558,5 +594,6 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.zettaTonne,
+    // system: systemValue[System.metric],
   ),
 };

@@ -1,3 +1,6 @@
+import 'package:unit_converter/src/constant/others/system_value.dart';
+import 'package:unit_converter/src/enum/system.dart';
+
 import '../../enum/area_units.dart';
 import '../../enum/symbol_parts.dart';
 import '../../misc/global.dart';
@@ -12,6 +15,16 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.acre,
+  ),
+  Unit(
+    'Acre',
+    createSymbol(
+      const [
+        SymbolParts.acre,
+      ],
+    ),
+    AreaUnits.acre_USSurvey,
+    system: systemValue[System.usSurvey],
   ),
   Unit(
     'Are',

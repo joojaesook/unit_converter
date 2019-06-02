@@ -13,6 +13,7 @@ Map<AreaUnits, double> areaConversionDetails = {
   // Base unit
   AreaUnits.squareMeter: 1,
   AreaUnits.acre: 4046.8564224,
+  AreaUnits.acre_USSurvey: 4046.872609874252,
   AreaUnits.are: 100,
   AreaUnits.attoBarn: prefixValue[Prefix.atto] * _barnToSquareMeter,
   AreaUnits.barn: _barnToSquareMeter,

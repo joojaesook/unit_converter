@@ -32,6 +32,7 @@ enum MassUnits {
   nanoGram,
   nanoTonne,
   ounce,
+  ounce_USFood,
   pennyWeight,
   petaGram,
   petaTonne,
