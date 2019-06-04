@@ -64,6 +64,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.month: 'mo',
   SymbolParts.nano: 'n',
   SymbolParts.nauticalMile: 'nmi',
+  SymbolParts.ohm: 'OHM',
   SymbolParts.ounce: 'oz',
   SymbolParts.parsec: 'pc',
   SymbolParts.pennyWeight: 'dwt',

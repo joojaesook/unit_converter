@@ -5,6 +5,7 @@ enum ConversionType {
   digitalData,
   electricCurrent,
   electricPotential,
+  electricResistance,
   length,
   mass,
   time,

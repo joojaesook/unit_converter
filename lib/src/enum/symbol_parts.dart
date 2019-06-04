@@ -56,6 +56,7 @@ enum SymbolParts {
   month,
   nano,
   nauticalMile,
+  ohm,
   ounce,
   parsec,
   pennyWeight,
