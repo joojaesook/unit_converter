@@ -24,6 +24,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.chain: 'chain',
   SymbolParts.chineseMile: 'li',
   SymbolParts.circularMil: 'circular mil',
+  SymbolParts.coulomb: 'C',
   SymbolParts.day: 'd',
   SymbolParts.deca: 'da',
   SymbolParts.decade: 'decade',

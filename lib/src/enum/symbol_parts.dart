@@ -16,6 +16,7 @@ enum SymbolParts {
   chain,
   chineseMile,
   circularMil,
+  coulomb,
   day,
   deca,
   decade,

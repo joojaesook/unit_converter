@@ -1,3 +1,5 @@
+import 'package:unit_converter/src/converter/electric_charge_converter.dart';
+
 import 'converter/area_converter.dart';
 import 'converter/capacitance_converter.dart';
 import 'converter/digital_data_converter.dart';
@@ -32,6 +34,10 @@ class UnitConverter {
 
   static ElectricConductanceConverter electricConductanceConverter() {
     return ElectricConductanceConverter();
+  }
+
+  static ElectricChargeConverter electricChargeConverter() {
+    return ElectricChargeConverter();
   }
 
   static ElectricCurrentConverter electricCurrentConverter() {
