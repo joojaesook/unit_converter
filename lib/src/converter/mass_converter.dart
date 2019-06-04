@@ -8,10 +8,11 @@ import '../misc/global.dart';
 class MassConverter extends Converter {
   MassConverter() : super(ConversionType.mass);
 
-  double convert(
-      {@required double value,
-      @required MassUnits from,
-      @required MassUnits to}) {
+  double convert({
+    @required double value,
+    @required MassUnits from,
+    @required MassUnits to,
+  }) {
     assert(value != null);
     assert(from != null);
     assert(to != null);

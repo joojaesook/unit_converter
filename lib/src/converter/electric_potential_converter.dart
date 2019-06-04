@@ -8,10 +8,11 @@ import '../misc/global.dart';
 class ElectricPotentialConverter extends Converter {
   ElectricPotentialConverter() : super(ConversionType.electricPotential);
 
-  double convert(
-      {@required double value,
-      @required ElectricPotentialUnits from,
-      @required ElectricPotentialUnits to}) {
+  double convert({
+    @required double value,
+    @required ElectricPotentialUnits from,
+    @required ElectricPotentialUnits to,
+  }) {
     assert(value != null);
     assert(from != null);
     assert(to != null);

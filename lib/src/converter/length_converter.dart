@@ -8,10 +8,11 @@ import '../misc/global.dart';
 class LengthConverter extends Converter {
   LengthConverter() : super(ConversionType.length);
 
-  double convert(
-      {@required double value,
-      @required LengthUnits from,
-      @required LengthUnits to}) {
+  double convert({
+    @required double value,
+    @required LengthUnits from,
+    @required LengthUnits to,
+  }) {
     assert(value != null);
     assert(from != null);
     assert(to != null);

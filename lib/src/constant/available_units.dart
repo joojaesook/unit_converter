@@ -1,3 +1,5 @@
+import 'package:unit_converter/src/constant/electric_conductance/electric_conductance_unit_details.dart';
+
 import '../enum/conversion_type.dart';
 import '../model/unit.dart';
 import 'area/area_unit_details.dart';
@@ -14,6 +16,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.area: areaUnitDetails,
   ConversionType.capacitance: capacitanceUnitDetails,
   ConversionType.digitalData: digitalDataUnitDetails,
+  ConversionType.electricConductance: electricConductanceUnitDetails,
   ConversionType.electricCurrent: electricCurrentUnitDetails,
   ConversionType.electricPotential: electricPotentialUnitDetails,
   ConversionType.electricResistance: electricResistanceUnitDetails,

@@ -8,10 +8,11 @@ import '../misc/global.dart';
 class TimeConverter extends Converter {
   TimeConverter() : super(ConversionType.time);
 
-  double convert(
-      {@required double value,
-      @required TimeUnits from,
-      @required TimeUnits to}) {
+  double convert({
+    @required double value,
+    @required TimeUnits from,
+    @required TimeUnits to,
+  }) {
     assert(value != null);
     assert(from != null);
     assert(to != null);

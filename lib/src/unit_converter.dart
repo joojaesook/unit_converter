@@ -1,6 +1,7 @@
 import 'converter/area_converter.dart';
 import 'converter/capacitance_converter.dart';
 import 'converter/digital_data_converter.dart';
+import 'converter/electric_conductance_converter.dart';
 import 'converter/electric_current_converter.dart';
 import 'converter/electric_potential_converter.dart';
 import 'converter/electric_resistance_converter.dart';
@@ -27,6 +28,10 @@ class UnitConverter {
 
   static DigitalDataConverter digitalDataConverter() {
     return DigitalDataConverter();
+  }
+
+  static ElectricConductanceConverter electricConductanceConverter() {
+    return ElectricConductanceConverter();
   }
 
   static ElectricCurrentConverter electricCurrentConverter() {

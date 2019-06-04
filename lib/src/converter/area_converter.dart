@@ -8,10 +8,11 @@ import '../misc/global.dart';
 class AreaConverter extends Converter {
   AreaConverter() : super(ConversionType.area);
 
-  double convert(
-      {@required double value,
-      @required AreaUnits from,
-      @required AreaUnits to}) {
+  double convert({
+    @required double value,
+    @required AreaUnits from,
+    @required AreaUnits to,
+  }) {
     assert(value != null);
     assert(from != null);
     assert(to != null);

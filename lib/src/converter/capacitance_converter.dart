@@ -8,10 +8,11 @@ import '../misc/global.dart';
 class CapacitanceConverter extends Converter {
   CapacitanceConverter() : super(ConversionType.capacitance);
 
-  double convert(
-      {@required double value,
-      @required CapacitanceUnits from,
-      @required CapacitanceUnits to}) {
+  double convert({
+    @required double value,
+    @required CapacitanceUnits from,
+    @required CapacitanceUnits to,
+  }) {
     assert(value != null);
     assert(from != null);
     assert(to != null);

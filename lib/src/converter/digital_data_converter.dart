@@ -8,10 +8,11 @@ import '../misc/global.dart';
 class DigitalDataConverter extends Converter {
   DigitalDataConverter() : super(ConversionType.digitalData);
 
-  double convert(
-      {@required double value,
-      @required DigitalDataUnits from,
-      @required DigitalDataUnits to}) {
+  double convert({
+    @required double value,
+    @required DigitalDataUnits from,
+    @required DigitalDataUnits to,
+  }) {
     assert(value != null);
     assert(from != null);
     assert(to != null);
