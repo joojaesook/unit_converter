@@ -1,5 +1,6 @@
 import 'package:unit_converter/src/converter/dynamic_viscocity_converter.dart';
 import 'package:unit_converter/src/converter/electric_charge_converter.dart';
+import 'package:unit_converter/src/converter/frequency_converter.dart';
 
 import 'converter/area_converter.dart';
 import 'converter/capacitance_converter.dart';
@@ -55,6 +56,10 @@ class UnitConverter {
 
   static ElectricResistanceConverter electricResistanceConverter() {
     return ElectricResistanceConverter();
+  }
+
+  static FrequencyConverter frequencyConverter() {
+    return FrequencyConverter();
   }
 
   static LengthConverter lengthConverter() {

@@ -9,6 +9,7 @@ enum ConversionType {
   electricCurrent,
   electricPotential,
   electricResistance,
+  frequency,
   length,
   mass,
   time,
