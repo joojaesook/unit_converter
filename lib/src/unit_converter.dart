@@ -1,3 +1,4 @@
+import 'package:unit_converter/src/converter/dynamic_viscocity_converter.dart';
 import 'package:unit_converter/src/converter/electric_charge_converter.dart';
 
 import 'converter/area_converter.dart';
@@ -32,12 +33,16 @@ class UnitConverter {
     return DigitalDataConverter();
   }
 
-  static ElectricConductanceConverter electricConductanceConverter() {
-    return ElectricConductanceConverter();
+  static DynamicViscocityConverter dynamicViscocityConverter() {
+    return DynamicViscocityConverter();
   }
 
   static ElectricChargeConverter electricChargeConverter() {
     return ElectricChargeConverter();
+  }
+
+  static ElectricConductanceConverter electricConductanceConverter() {
+    return ElectricConductanceConverter();
   }
 
   static ElectricCurrentConverter electricCurrentConverter() {

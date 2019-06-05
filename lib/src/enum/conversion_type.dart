@@ -3,6 +3,7 @@ enum ConversionType {
   area,
   capacitance,
   digitalData,
+  dynamicViscocity,
   electricCharge,
   electricConductance,
   electricCurrent,

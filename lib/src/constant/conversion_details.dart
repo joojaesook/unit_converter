@@ -2,6 +2,7 @@ import '../enum/conversion_type.dart';
 import 'area/area_conversion_details.dart';
 import 'capacitance/capacitance_conversion_details.dart';
 import 'digital_data/digital_data_conversion_details.dart';
+import 'dynamic_viscocity/dynamic_viscocity_conversion_details.dart';
 import 'electric_charge/electric_charge_conversion_details.dart';
 import 'electric_conductance/electric_conductance_conversion_details.dart';
 import 'electric_current/electric_current_conversion_details.dart';
@@ -15,6 +16,7 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.area: areaConversionDetails,
   ConversionType.capacitance: capacitanceConversionDetails,
   ConversionType.digitalData: digitalDataConversionDetails,
+  ConversionType.dynamicViscocity: dynamicViscocityConversionDetails,
   ConversionType.electricCharge: electricChargeConversionDetails,
   ConversionType.electricConductance: electricConductanceConversionDetails,
   ConversionType.electricCurrent: electricCurrentConversionDetails,
