@@ -1,0 +1,4 @@
+enum BloodCholesterolUnits {
+  milliGramPerDeciLitre,
+  milliMolePerLitre,
+}

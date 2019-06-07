@@ -1,4 +1,5 @@
 import 'converter/area_converter.dart';
+import 'converter/blood_cholesterol_converter.dart';
 import 'converter/capacitance_converter.dart';
 import 'converter/digital_data_converter.dart';
 import 'converter/dynamic_viscocity_converter.dart';
@@ -31,8 +32,8 @@ class UnitConverter {
     return AreaConverter();
   }
 
-  static MagneticFluxDensityConverter magneticFluxDensityConverter() {
-    return MagneticFluxDensityConverter();
+  static BloodCholesterolConverter bloodCholesterolConverter() {
+    return BloodCholesterolConverter();
   }
 
   static CapacitanceConverter capacitanceConverter() {
@@ -93,6 +94,10 @@ class UnitConverter {
 
   static MagneticFluxConverter magneticFluxConverter() {
     return MagneticFluxConverter();
+  }
+
+  static MagneticFluxDensityConverter magneticFluxDensityConverter() {
+    return MagneticFluxDensityConverter();
   }
 
   static MassConverter massConverter() {

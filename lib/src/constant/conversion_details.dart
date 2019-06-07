@@ -1,5 +1,6 @@
 import '../enum/conversion_type.dart';
 import 'area/area_conversion_details.dart';
+import 'blood_cholesterol/blood_cholesterol_conversion_details.dart';
 import 'capacitance/capacitance_conversion_details.dart';
 import 'digital_data/digital_data_conversion_details.dart';
 import 'dynamic_viscocity/dynamic_viscocity_conversion_details.dart';
@@ -21,6 +22,7 @@ import 'time/time_conversion_details.dart';
 
 final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.area: areaConversionDetails,
+  ConversionType.bloodCholesterol: bloodCholesterolConversionDetails,
   ConversionType.capacitance: capacitanceConversionDetails,
   ConversionType.digitalData: digitalDataConversionDetails,
   ConversionType.dynamicViscocity: dynamicViscocityConversionDetails,

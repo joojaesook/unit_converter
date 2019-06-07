@@ -1,6 +1,7 @@
 /// Supported conversion types
 enum ConversionType {
   area,
+  bloodCholesterol,
   capacitance,
   digitalData,
   dynamicViscocity,
