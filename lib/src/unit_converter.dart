@@ -1,5 +1,6 @@
 import 'converter/area_converter.dart';
 import 'converter/blood_cholesterol_converter.dart';
+import 'converter/blood_glucose_converter.dart';
 import 'converter/capacitance_converter.dart';
 import 'converter/digital_data_converter.dart';
 import 'converter/dynamic_viscocity_converter.dart';
@@ -34,6 +35,10 @@ class UnitConverter {
 
   static BloodCholesterolConverter bloodCholesterolConverter() {
     return BloodCholesterolConverter();
+  }
+
+  static BloodGlucoseConverter bloodGlucoseConverter() {
+    return BloodGlucoseConverter();
   }
 
   static CapacitanceConverter capacitanceConverter() {

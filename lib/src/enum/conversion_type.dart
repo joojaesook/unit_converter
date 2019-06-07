@@ -2,6 +2,7 @@
 enum ConversionType {
   area,
   bloodCholesterol,
+  bloodGlucose,
   capacitance,
   digitalData,
   dynamicViscocity,
