@@ -11,6 +11,7 @@ import 'electric_resistance/electric_resistance_conversion_details.dart';
 import 'force/force_conversion_details.dart';
 import 'frequency/frequency_conversion_details.dart';
 import 'length/length_conversion_details.dart';
+import 'luminance/luminance_conversion_details.dart';
 import 'mass/mass_conversion_details.dart';
 import 'time/time_conversion_details.dart';
 
@@ -27,6 +28,7 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.force: forceConversionDetails,
   ConversionType.frequency: frequencyConversionDetails,
   ConversionType.length: lengthConversionDetails,
+  ConversionType.luminance: luminanceConversionDetails,
   ConversionType.mass: massConversionDetails,
   ConversionType.time: timeConversionDetails,
 };

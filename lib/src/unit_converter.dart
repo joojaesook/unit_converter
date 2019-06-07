@@ -1,16 +1,16 @@
-import 'package:unit_converter/src/converter/dynamic_viscocity_converter.dart';
-import 'package:unit_converter/src/converter/electric_charge_converter.dart';
-import 'package:unit_converter/src/converter/force_converter.dart';
-import 'package:unit_converter/src/converter/frequency_converter.dart';
-
 import 'converter/area_converter.dart';
 import 'converter/capacitance_converter.dart';
 import 'converter/digital_data_converter.dart';
+import 'converter/dynamic_viscocity_converter.dart';
+import 'converter/electric_charge_converter.dart';
 import 'converter/electric_conductance_converter.dart';
 import 'converter/electric_current_converter.dart';
 import 'converter/electric_potential_converter.dart';
 import 'converter/electric_resistance_converter.dart';
+import 'converter/force_converter.dart';
+import 'converter/frequency_converter.dart';
 import 'converter/length_converter.dart';
+import 'converter/luminance_converter.dart';
 import 'converter/mass_converter.dart';
 import 'converter/time_converter.dart';
 
@@ -69,6 +69,10 @@ class UnitConverter {
 
   static LengthConverter lengthConverter() {
     return LengthConverter();
+  }
+
+  static LuminanceConverter luminanceConverter() {
+    return LuminanceConverter();
   }
 
   static MassConverter massConverter() {

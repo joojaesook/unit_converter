@@ -12,6 +12,7 @@ enum ConversionType {
   force,
   frequency,
   length,
+  luminance,
   mass,
   time,
 }
