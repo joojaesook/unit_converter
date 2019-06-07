@@ -21,4 +21,5 @@ enum ConversionType {
   magneticFluxDensity,
   mass,
   time,
+  torque,
 }

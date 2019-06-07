@@ -20,6 +20,7 @@ import 'magnetic_flux/magnetic_flux_unit_details.dart';
 import 'magnetic_flux_density/magnetic_flux_density_unit_details.dart';
 import 'mass/mass_unit_details.dart';
 import 'time/time_unit_details.dart';
+import 'torque/torque_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.area: areaUnitDetails,
@@ -42,4 +43,5 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.magneticFluxDensity: magneticFluxDensityUnitDetails,
   ConversionType.mass: massUnitDetails,
   ConversionType.time: timeUnitDetails,
+  ConversionType.torque: torqueUnitDetails,
 };

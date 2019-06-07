@@ -19,6 +19,7 @@ import 'converter/magnetic_flux_converter.dart';
 import 'converter/magnetic_flux_density_converter.dart';
 import 'converter/mass_converter.dart';
 import 'converter/time_converter.dart';
+import 'converter/torque_converter.dart';
 
 export 'enum/area_units.dart';
 export 'enum/capacitance_units.dart';
@@ -111,5 +112,9 @@ class UnitConverter {
 
   static TimeConverter timeConverter() {
     return TimeConverter();
+  }
+
+  static TorqueConverter torquConverter() {
+    return TorqueConverter();
   }
 }
