@@ -15,6 +15,7 @@ enum ConversionType {
   length,
   luminance,
   magneticFieldIntensity,
+  magneticFlux,
   mass,
   time,
 }

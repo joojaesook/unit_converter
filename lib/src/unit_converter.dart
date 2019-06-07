@@ -13,6 +13,7 @@ import 'converter/inductance_converter.dart';
 import 'converter/length_converter.dart';
 import 'converter/luminance_converter.dart';
 import 'converter/magnetic_field_intensity_converter.dart';
+import 'converter/magnetic_flux_converter.dart';
 import 'converter/mass_converter.dart';
 import 'converter/time_converter.dart';
 
@@ -83,6 +84,10 @@ class UnitConverter {
 
   static MagneticFieldIntensityConverter magneticFieldIntensityConverter() {
     return MagneticFieldIntensityConverter();
+  }
+
+  static MagneticFluxConverter magneticFluxConverter() {
+    return MagneticFluxConverter();
   }
 
   static MassConverter massConverter() {
