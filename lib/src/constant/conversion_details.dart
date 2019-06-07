@@ -15,6 +15,7 @@ import 'length/length_conversion_details.dart';
 import 'luminance/luminance_conversion_details.dart';
 import 'magnetic_field_intensity/magnetic_field_intensity_conversion_details.dart';
 import 'magnetic_flux/magnetic_flux_conversion_details.dart';
+import 'magnetic_flux_density/magnetic_flux_density_conversion_details.dart';
 import 'mass/mass_conversion_details.dart';
 import 'time/time_conversion_details.dart';
 
@@ -36,6 +37,7 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.magneticFieldIntensity:
       magneticFieldIntensityConversionDetails,
   ConversionType.magneticFlux: magneticFluxConversionDetails,
+  ConversionType.magneticFluxDensity: magneticFluxDensityConversionDetails,
   ConversionType.mass: massConversionDetails,
   ConversionType.time: timeConversionDetails,
 };

@@ -14,6 +14,7 @@ import 'converter/length_converter.dart';
 import 'converter/luminance_converter.dart';
 import 'converter/magnetic_field_intensity_converter.dart';
 import 'converter/magnetic_flux_converter.dart';
+import 'converter/magnetic_flux_density_converter.dart';
 import 'converter/mass_converter.dart';
 import 'converter/time_converter.dart';
 
@@ -28,6 +29,10 @@ export 'enum/time_units.dart';
 class UnitConverter {
   static AreaConverter areaConverter() {
     return AreaConverter();
+  }
+
+  static MagneticFluxDensityConverter magneticFluxDensityConverter() {
+    return MagneticFluxDensityConverter();
   }
 
   static CapacitanceConverter capacitanceConverter() {
