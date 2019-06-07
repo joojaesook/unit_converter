@@ -14,6 +14,7 @@ import 'frequency/frequency_unit_details.dart';
 import 'inductance/inductance_unit_details.dart';
 import 'length/length_unit_details.dart';
 import 'luminance/luminance_unit_details.dart';
+import 'magnetic_field_intensity/magnetic_field_intensity_unit_details.dart';
 import 'mass/mass_unit_details.dart';
 import 'time/time_unit_details.dart';
 
@@ -32,6 +33,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.inductance: inductanceUnitDetails,
   ConversionType.length: lengthUnitDetails,
   ConversionType.luminance: luminanceUnitDetails,
+  ConversionType.magneticFieldIntensity: magneticFieldIntensityUnitDetails,
   ConversionType.mass: massUnitDetails,
   ConversionType.time: timeUnitDetails,
 };

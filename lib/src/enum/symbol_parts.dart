@@ -68,6 +68,7 @@ enum SymbolParts {
   nano,
   nauticalMile,
   newton,
+  oersted,
   ohm,
   ounce,
   parsec,

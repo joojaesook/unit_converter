@@ -76,6 +76,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.nano: 'n',
   SymbolParts.nauticalMile: 'nmi',
   SymbolParts.newton: 'N',
+  SymbolParts.oersted: 'Oe',
   SymbolParts.ohm: _createStringFromUnicode(unicodeOhm),
   SymbolParts.ounce: 'oz',
   SymbolParts.parsec: 'pc',
