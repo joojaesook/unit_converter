@@ -11,6 +11,7 @@ import 'electric_potential/electric_potential_unit_details.dart';
 import 'electric_resistance/electric_resistance_unit_details.dart';
 import 'force/force_unit_details.dart';
 import 'frequency/frequency_unit_details.dart';
+import 'inductance/inductance_unit_details.dart';
 import 'length/length_unit_details.dart';
 import 'luminance/luminance_unit_details.dart';
 import 'mass/mass_unit_details.dart';
@@ -28,6 +29,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.electricResistance: electricResistanceUnitDetails,
   ConversionType.force: forceUnitDetails,
   ConversionType.frequency: frequencyUnitDetails,
+  ConversionType.inductance: inductanceUnitDetails,
   ConversionType.length: lengthUnitDetails,
   ConversionType.luminance: luminanceUnitDetails,
   ConversionType.mass: massUnitDetails,

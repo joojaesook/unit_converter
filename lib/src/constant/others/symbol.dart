@@ -48,6 +48,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.hand: 'hh',
   SymbolParts.hectare: 'ha',
   SymbolParts.hecto: 'h',
+  SymbolParts.henry: 'H',
   SymbolParts.hertz: 'Hz',
   SymbolParts.hour: 'hr',
   SymbolParts.hundredWeight: 'cwt',

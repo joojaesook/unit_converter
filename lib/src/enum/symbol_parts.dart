@@ -40,6 +40,7 @@ enum SymbolParts {
   hand,
   hectare,
   hecto,
+  henry,
   hertz,
   hour,
   hundredWeight,
