@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:math' show pow;
 
 import '../../enum/conversion_type.dart';
 import '../../enum/length_units.dart';

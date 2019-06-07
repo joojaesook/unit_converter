@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:math' show pow;
 
 import '../../enum/force_units.dart';
 import '../../enum/prefix.dart';

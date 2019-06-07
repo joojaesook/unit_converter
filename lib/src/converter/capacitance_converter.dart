@@ -1,4 +1,4 @@
-import 'package:meta/meta.dart';
+import 'package:meta/meta.dart' show required;
 
 import '../abstract/converter.dart';
 import '../enum/capacitance_units.dart';
