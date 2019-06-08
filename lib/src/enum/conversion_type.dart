@@ -1,5 +1,6 @@
 /// Supported conversion types
 enum ConversionType {
+  acceleration,
   area,
   bloodCholesterol,
   bloodGlucose,

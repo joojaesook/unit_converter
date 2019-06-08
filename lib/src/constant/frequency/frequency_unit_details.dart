@@ -50,7 +50,7 @@ final Set<Unit> frequencyUnitDetails = {
       const [
         SymbolParts.degree,
         SymbolParts.forwardSlash,
-        SymbolParts.hecto,
+        SymbolParts.hour_2,
       ],
     ),
     FrequencyUnits.degreePerHour,
@@ -202,7 +202,7 @@ final Set<Unit> frequencyUnitDetails = {
       const [
         SymbolParts.radian,
         SymbolParts.forwardSlash,
-        SymbolParts.hecto,
+        SymbolParts.hour_2,
       ],
     ),
     FrequencyUnits.radianPerHour,
@@ -235,7 +235,7 @@ final Set<Unit> frequencyUnitDetails = {
       const [
         SymbolParts.revolution,
         SymbolParts.forwardSlash,
-        SymbolParts.hecto,
+        SymbolParts.hour_2,
       ],
     ),
     FrequencyUnits.revolutionPerHour,

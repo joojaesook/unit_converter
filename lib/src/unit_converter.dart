@@ -1,3 +1,4 @@
+import 'converter/acceleration_converter.dart';
 import 'converter/area_converter.dart';
 import 'converter/blood_cholesterol_converter.dart';
 import 'converter/blood_glucose_converter.dart';
@@ -30,6 +31,10 @@ export 'enum/mass_units.dart';
 export 'enum/time_units.dart';
 
 class UnitConverter {
+  static AccelerationConverter accelerationConverter() {
+    return AccelerationConverter();
+  }
+
   static AreaConverter areaConverter() {
     return AreaConverter();
   }

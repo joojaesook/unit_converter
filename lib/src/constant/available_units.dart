@@ -1,5 +1,6 @@
 import '../enum/conversion_type.dart';
 import '../model/unit.dart';
+import 'acceleration/acceleration_unit_details.dart';
 import 'area/area_unit_details.dart';
 import 'blood_cholesterol/blood_cholesterol_unit_details.dart';
 import 'capacitance/capacitance_unit_details.dart';
@@ -23,6 +24,7 @@ import 'time/time_unit_details.dart';
 import 'torque/torque_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
+  ConversionType.acceleration: accelerationUnitDetails,
   ConversionType.area: areaUnitDetails,
   ConversionType.bloodCholesterol: bloodCholesterolUnitDetails,
   ConversionType.capacitance: capacitanceUnitDetails,
