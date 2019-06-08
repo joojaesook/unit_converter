@@ -14,6 +14,7 @@ enum ConversionType {
   electricResistance,
   force,
   frequency,
+  illuminance,
   inductance,
   length,
   luminance,

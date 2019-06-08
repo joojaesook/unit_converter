@@ -12,6 +12,7 @@ import 'converter/electric_potential_converter.dart';
 import 'converter/electric_resistance_converter.dart';
 import 'converter/force_converter.dart';
 import 'converter/frequency_converter.dart';
+import 'converter/illuminance_converter.dart';
 import 'converter/inductance_converter.dart';
 import 'converter/length_converter.dart';
 import 'converter/luminance_converter.dart';
@@ -86,6 +87,10 @@ class UnitConverter {
 
   static FrequencyConverter frequencyConverter() {
     return FrequencyConverter();
+  }
+
+  static IlluminanceConverter illuminanceConverter() {
+    return IlluminanceConverter();
   }
 
   static InductanceConverter inductanceConverter() {
