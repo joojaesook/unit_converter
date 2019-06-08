@@ -16,7 +16,7 @@ final Map<TorqueUnits, double> torqueConversionDetails = {
   TorqueUnits.gigaNewtonMeter: prefixValue[Prefix.giga],
   TorqueUnits.gramForceCentiMeter: 9.80665 * pow(10, -5),
   TorqueUnits.hectoNewtonMeter: prefixValue[Prefix.hecto],
-  TorqueUnits.kiloGramForceCentiMeter: .0980665,
+  TorqueUnits.kiloGramForceCentiMeter: 0.0980665,
   TorqueUnits.kiloGramForceMeter: 9.80665,
   TorqueUnits.kiloNewtonMeter: prefixValue[Prefix.kilo],
   TorqueUnits.megaNewtonMeter: prefixValue[Prefix.mega],

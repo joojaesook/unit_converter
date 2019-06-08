@@ -4,7 +4,7 @@ import '../../enum/force_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
-const _gramForceToNewton = .00980665;
+const _gramForceToNewton = 0.00980665;
 
 Map<ForceUnits, double> forceConversionDetails = {
   // Base unit

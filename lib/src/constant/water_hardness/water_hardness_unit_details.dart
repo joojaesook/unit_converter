@@ -1,7 +1,9 @@
-import 'package:unit_converter/src/enum/symbol_parts.dart';
-import 'package:unit_converter/src/enum/water_hardness_units.dart';
-import 'package:unit_converter/src/misc/global.dart';
-import 'package:unit_converter/src/model/unit.dart';
+import '../../enum/symbol_parts.dart';
+import '../../enum/system.dart';
+import '../../enum/water_hardness_units.dart';
+import '../../misc/global.dart';
+import '../../model/unit.dart';
+import '../others/system_value.dart';
 
 final Set<Unit> waterHardnessUnitDetails = {
   Unit(
@@ -57,15 +59,103 @@ final Set<Unit> waterHardnessUnitDetails = {
     ),
     WaterHardnessUnits.germanDegree,
   ),
-  // Unit(
-  //   'Grain per gallon',
-  //   createSymbol(
-  //     const [
-  //       SymbolParts.superscriptZero,
-  //       SymbolParts.german,
-  //       SymbolParts.hardness,
-  //     ],
-  //   ),
-  //   WaterHardnessUnits.grainPerGallon,
-  // ),
+  Unit(
+    'Grain per gallon',
+    createSymbol(
+      const [
+        SymbolParts.lG,
+        SymbolParts.lP,
+        SymbolParts.lG,
+      ],
+    ),
+    WaterHardnessUnits.grainPerGallon,
+  ),
+  Unit(
+    'Milliequivalent per litre',
+    createSymbol(
+      const [
+        SymbolParts.milli,
+        SymbolParts.lE,
+        SymbolParts.lQ,
+        SymbolParts.forwardSlash,
+        SymbolParts.litre,
+      ],
+    ),
+    WaterHardnessUnits.milliEquivalentPerLitre,
+  ),
+  Unit(
+    'Milligram per litre',
+    createSymbol(
+      const [
+        SymbolParts.milli,
+        SymbolParts.gram,
+        SymbolParts.forwardSlash,
+        SymbolParts.litre,
+      ],
+    ),
+    WaterHardnessUnits.milliGramPerLitre_Ca2,
+    system: systemValue[System.ca2],
+  ),
+  Unit(
+    'Milligram per litre',
+    createSymbol(
+      const [
+        SymbolParts.milli,
+        SymbolParts.gram,
+        SymbolParts.forwardSlash,
+        SymbolParts.litre,
+      ],
+    ),
+    WaterHardnessUnits.milliGramPerLitre_CaCO3,
+    system: systemValue[System.caCO3],
+  ),
+  Unit(
+    'Milligram per litre',
+    createSymbol(
+      const [
+        SymbolParts.milli,
+        SymbolParts.gram,
+        SymbolParts.forwardSlash,
+        SymbolParts.litre,
+      ],
+    ),
+    WaterHardnessUnits.milliGramPerLitre_CaO,
+    system: systemValue[System.caO],
+  ),
+  Unit(
+    'Milligram per litre',
+    createSymbol(
+      const [
+        SymbolParts.milli,
+        SymbolParts.gram,
+        SymbolParts.forwardSlash,
+        SymbolParts.litre,
+      ],
+    ),
+    WaterHardnessUnits.milliGramPerLitre_Mg2,
+    system: systemValue[System.mg2],
+  ),
+  Unit(
+    'Millimole per litre',
+    createSymbol(
+      const [
+        SymbolParts.milli,
+        SymbolParts.mole,
+        SymbolParts.forwardSlash,
+        SymbolParts.litre,
+      ],
+    ),
+    WaterHardnessUnits.milliMolePerLitre,
+  ),
+  Unit(
+    'Part per million',
+    createSymbol(
+      const [
+        SymbolParts.lP,
+        SymbolParts.lP,
+        SymbolParts.lM,
+      ],
+    ),
+    WaterHardnessUnits.partPerMillion,
+  ),
 };

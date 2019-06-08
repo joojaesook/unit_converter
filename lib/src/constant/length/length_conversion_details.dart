@@ -4,7 +4,7 @@ import '../../enum/length_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
-const _inchToMeter = .0254;
+const _inchToMeter = 0.0254;
 final _lightYearToMeter = 9.4607304725808 * prefixValue[Prefix.peta];
 final _parsecToMeter = 3.08567782 * pow(10, 16);
 const _rodToMeter = 5.0292;
@@ -37,12 +37,12 @@ Map<LengthUnits, double> lengthConversionDetails = {
   LengthUnits.femtoMeter: prefixValue[Prefix.femto],
   LengthUnits.femtoParsec: prefixValue[Prefix.femto] * _parsecToMeter,
   LengthUnits.fermi: prefixValue[Prefix.femto],
-  LengthUnits.foot: .3048,
+  LengthUnits.foot: 0.3048,
   LengthUnits.furlong: 201.168,
   LengthUnits.gigaLightYear: prefixValue[Prefix.giga] * _lightYearToMeter,
   LengthUnits.gigaMeter: prefixValue[Prefix.giga],
   LengthUnits.gigaParsec: prefixValue[Prefix.giga] * _parsecToMeter,
-  LengthUnits.hand: .1016,
+  LengthUnits.hand: 0.1016,
   LengthUnits.hectoLightYear: prefixValue[Prefix.hecto] * _lightYearToMeter,
   LengthUnits.hectoMeter: prefixValue[Prefix.hecto],
   LengthUnits.hectoParsec: prefixValue[Prefix.hecto] * _parsecToMeter,
@@ -56,7 +56,7 @@ Map<LengthUnits, double> lengthConversionDetails = {
   LengthUnits.lightMinute: 1.798754748 * pow(10, 10),
   LengthUnits.lightSecond: 299792458,
   LengthUnits.lightYear: _lightYearToMeter,
-  LengthUnits.link: .201168,
+  LengthUnits.link: 0.201168,
   LengthUnits.megaLightYear: prefixValue[Prefix.mega] * _lightYearToMeter,
   LengthUnits.megaMeter: prefixValue[Prefix.mega],
   LengthUnits.megaParsec: prefixValue[Prefix.mega] * _parsecToMeter,
@@ -77,7 +77,7 @@ Map<LengthUnits, double> lengthConversionDetails = {
   LengthUnits.petaLightYear: prefixValue[Prefix.peta] * _lightYearToMeter,
   LengthUnits.petaMeter: prefixValue[Prefix.peta],
   LengthUnits.petaParsec: prefixValue[Prefix.peta] * _parsecToMeter,
-  LengthUnits.pica: .0042333,
+  LengthUnits.pica: 0.0042333,
   LengthUnits.picoLightYear: prefixValue[Prefix.pico] * _lightYearToMeter,
   LengthUnits.picoMeter: prefixValue[Prefix.pico],
   LengthUnits.picoParsec: prefixValue[Prefix.pico] * _parsecToMeter,
@@ -89,7 +89,7 @@ Map<LengthUnits, double> lengthConversionDetails = {
   LengthUnits.teraMeter: prefixValue[Prefix.tera],
   LengthUnits.teraParsec: prefixValue[Prefix.tera] * _parsecToMeter,
   LengthUnits.thousandOfAnInch: 2.54 * pow(10, -5),
-  LengthUnits.yard: .9144,
+  LengthUnits.yard: 0.9144,
   LengthUnits.yoctoLightYear: prefixValue[Prefix.yocto] * _lightYearToMeter,
   LengthUnits.yoctoMeter: prefixValue[Prefix.yocto],
   LengthUnits.yoctoParsec: prefixValue[Prefix.yocto] * _parsecToMeter,

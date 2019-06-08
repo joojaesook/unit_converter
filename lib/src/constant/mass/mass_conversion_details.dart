@@ -4,7 +4,7 @@ import '../../enum/mass_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
-const _gramToKiloGram = .001;
+const _gramToKiloGram = 0.001;
 const double _tonneToKiloGram = 1000;
 
 Map<MassUnits, double> massConversionDetails = {
@@ -12,7 +12,7 @@ Map<MassUnits, double> massConversionDetails = {
   MassUnits.kiloGram: 1,
   MassUnits.attoGram: prefixValue[Prefix.atto] * _gramToKiloGram,
   MassUnits.attoTonne: prefixValue[Prefix.atto] * _tonneToKiloGram,
-  MassUnits.carat: .0002,
+  MassUnits.carat: 0.0002,
   MassUnits.centiGram: prefixValue[Prefix.centi] * _gramToKiloGram,
   MassUnits.centiTonne: prefixValue[Prefix.centi] * _tonneToKiloGram,
   MassUnits.decaGram: prefixValue[Prefix.deca] * _gramToKiloGram,

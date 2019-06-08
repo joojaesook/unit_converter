@@ -2,7 +2,7 @@ import '../../enum/magnetic_flux_density_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
-const _gaussToTesla = .0001;
+const _gaussToTesla = 0.0001;
 
 Map<MagneticFluxDensityUnits, double> magneticFluxDensityConversionDetails = {
   // Base unit

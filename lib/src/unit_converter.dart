@@ -21,6 +21,7 @@ import 'converter/magnetic_flux_density_converter.dart';
 import 'converter/mass_converter.dart';
 import 'converter/time_converter.dart';
 import 'converter/torque_converter.dart';
+import 'converter/water_hardness_converter.dart';
 
 export 'enum/area_units.dart';
 export 'enum/capacitance_units.dart';
@@ -121,5 +122,9 @@ class UnitConverter {
 
   static TorqueConverter torquConverter() {
     return TorqueConverter();
+  }
+
+  static WaterHardnessConverter waterHardnessConverter() {
+    return WaterHardnessConverter();
   }
 }

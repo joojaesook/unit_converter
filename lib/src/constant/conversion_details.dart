@@ -21,6 +21,7 @@ import 'magnetic_flux_density/magnetic_flux_density_conversion_details.dart';
 import 'mass/mass_conversion_details.dart';
 import 'time/time_conversion_details.dart';
 import 'torque/torque_conversion_details.dart';
+import 'water_hardness/water_hardness_conversion_details.dart';
 
 final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.acceleration: accelerationConversionDetails,
@@ -46,4 +47,5 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.mass: massConversionDetails,
   ConversionType.time: timeConversionDetails,
   ConversionType.torque: torqueConversionDetails,
+  ConversionType.waterHardness: waterHardnessConversionDetails,
 };
