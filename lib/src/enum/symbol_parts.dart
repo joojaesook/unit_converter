@@ -1,4 +1,11 @@
 enum SymbolParts {
+  clark,
+  degree_2,
+  hardness,
+  general,
+  english,
+  french,
+  german,
   ab,
   acre,
   ampere,

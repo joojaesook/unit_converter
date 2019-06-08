@@ -7,6 +7,13 @@ String _createStringFromUnicode(String charCode) {
 }
 
 final Map<SymbolParts, String> symbol = {
+  SymbolParts.clark: 'Clark',
+  SymbolParts.degree_2: 'd',
+  SymbolParts.hardness: 'H',
+  SymbolParts.general: 'G',
+  SymbolParts.english: 'e',
+  SymbolParts.french: 'f',
+  SymbolParts.german: 'd',
   SymbolParts.ab: 'ab',
   SymbolParts.acre: 'ac',
   SymbolParts.ampere: 'A',
