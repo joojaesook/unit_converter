@@ -239,7 +239,8 @@ final Set<Unit> massUnitDetails = {
       const [
         SymbolParts.long,
         SymbolParts.space,
-        SymbolParts.tonne_2,
+        SymbolParts.lT,
+        SymbolParts.lN,
       ],
     ),
     MassUnits.longTonne,
@@ -435,7 +436,8 @@ final Set<Unit> massUnitDetails = {
       const [
         SymbolParts.short,
         SymbolParts.space,
-        SymbolParts.tonne_2,
+        SymbolParts.lT,
+        SymbolParts.lN,
       ],
     ),
     MassUnits.shortTonne,

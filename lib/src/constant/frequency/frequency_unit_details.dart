@@ -48,9 +48,9 @@ final Set<Unit> frequencyUnitDetails = {
     'Degree per hour',
     createSymbol(
       const [
-        SymbolParts.degree,
+        SymbolParts.superscriptZero,
         SymbolParts.forwardSlash,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     FrequencyUnits.degreePerHour,
@@ -59,7 +59,7 @@ final Set<Unit> frequencyUnitDetails = {
     'Degree per minute',
     createSymbol(
       const [
-        SymbolParts.degree,
+        SymbolParts.superscriptZero,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
@@ -70,7 +70,7 @@ final Set<Unit> frequencyUnitDetails = {
     'Degree per second',
     createSymbol(
       const [
-        SymbolParts.degree,
+        SymbolParts.superscriptZero,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
@@ -202,7 +202,7 @@ final Set<Unit> frequencyUnitDetails = {
       const [
         SymbolParts.radian,
         SymbolParts.forwardSlash,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     FrequencyUnits.radianPerHour,
@@ -235,7 +235,7 @@ final Set<Unit> frequencyUnitDetails = {
       const [
         SymbolParts.revolution,
         SymbolParts.forwardSlash,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     FrequencyUnits.revolutionPerHour,

@@ -8,7 +8,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     'Clark degree',
     createSymbol(
       const [
-        SymbolParts.degree,
+        SymbolParts.superscriptZero,
         SymbolParts.clark,
       ],
     ),
@@ -18,8 +18,8 @@ final Set<Unit> waterHardnessUnitDetails = {
     'Degree of general hardness',
     createSymbol(
       const [
-        SymbolParts.degree_2,
-        SymbolParts.general,
+        SymbolParts.lD,
+        SymbolParts.lG,
         SymbolParts.hardness,
       ],
     ),
@@ -29,8 +29,8 @@ final Set<Unit> waterHardnessUnitDetails = {
     'English degree',
     createSymbol(
       const [
-        SymbolParts.degree,
-        SymbolParts.english,
+        SymbolParts.superscriptZero,
+        SymbolParts.lE,
       ],
     ),
     WaterHardnessUnits.englishDegree,
@@ -39,8 +39,8 @@ final Set<Unit> waterHardnessUnitDetails = {
     'French degree',
     createSymbol(
       const [
-        SymbolParts.degree,
-        SymbolParts.french,
+        SymbolParts.superscriptZero,
+        SymbolParts.lF,
         SymbolParts.hardness,
       ],
     ),
@@ -50,22 +50,22 @@ final Set<Unit> waterHardnessUnitDetails = {
     'German degree',
     createSymbol(
       const [
-        SymbolParts.degree,
-        SymbolParts.german,
+        SymbolParts.superscriptZero,
+        SymbolParts.lD,
         SymbolParts.hardness,
       ],
     ),
     WaterHardnessUnits.germanDegree,
   ),
-  Unit(
-    'Grain per gallon',
-    createSymbol(
-      const [
-        SymbolParts.degree,
-        SymbolParts.german,
-        SymbolParts.hardness,
-      ],
-    ),
-    WaterHardnessUnits.grainPerGallon,
-  ),
+  // Unit(
+  //   'Grain per gallon',
+  //   createSymbol(
+  //     const [
+  //       SymbolParts.superscriptZero,
+  //       SymbolParts.german,
+  //       SymbolParts.hardness,
+  //     ],
+  //   ),
+  //   WaterHardnessUnits.grainPerGallon,
+  // ),
 };

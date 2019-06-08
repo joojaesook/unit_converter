@@ -19,7 +19,7 @@ final Set<Unit> electricChargeUnitDetails = {
     createSymbol(
       const [
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.ampereHour,
@@ -40,7 +40,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.atto,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.attoAmpereHour,
@@ -72,7 +72,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.centi,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.centiAmpereHour,
@@ -113,7 +113,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.deca,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.decaAmpereHour,
@@ -145,7 +145,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.deci,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.deciAmpereHour,
@@ -177,7 +177,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.exa,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.exaAmpereHour,
@@ -209,7 +209,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.femto,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.femtoAmpereHour,
@@ -241,7 +241,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.giga,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.gigaAmpereHour,
@@ -273,7 +273,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.hecto,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.hectoAmpereHour,
@@ -305,7 +305,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.kilo,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.kiloAmpereHour,
@@ -337,7 +337,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.mega,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.megaAmpereHour,
@@ -369,7 +369,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.micro,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.microAmpereHour,
@@ -401,7 +401,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.milli,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.milliAmpereHour,
@@ -433,7 +433,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.nano,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.nanoAmpereHour,
@@ -465,7 +465,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.peta,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.petaAmpereHour,
@@ -497,7 +497,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.pico,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.picoAmpereHour,
@@ -529,7 +529,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.tera,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.teraAmpereHour,
@@ -561,7 +561,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.yocto,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.yoctoAmpereHour,
@@ -593,7 +593,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.yotta,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.yottaAmpereHour,
@@ -625,7 +625,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.zepto,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.zeptoAmpereHour,
@@ -657,7 +657,7 @@ final Set<Unit> electricChargeUnitDetails = {
       const [
         SymbolParts.zetta,
         SymbolParts.ampere,
-        SymbolParts.hour_2,
+        SymbolParts.lH,
       ],
     ),
     ElectricChargeUnits.zettaAmpereHour,
