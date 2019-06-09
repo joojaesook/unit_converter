@@ -1,3 +1,4 @@
+/// Units of frequency
 enum FrequencyUnits {
   attoHertz,
   centiHertz,

@@ -1,3 +1,4 @@
+/// Units of illuminance
 enum IlluminanceUnits {
   attoLux,
   attoPhot,

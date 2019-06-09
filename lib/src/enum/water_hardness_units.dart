@@ -1,3 +1,4 @@
+/// Units of water hardness
 enum WaterHardnessUnits {
   clarkDegree,
   degreeOfGeneralHardness,

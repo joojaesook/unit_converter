@@ -1,3 +1,4 @@
+/// Units of magnetic flux density
 enum MagneticFluxDensityUnits {
   attoGauss,
   attoTesla,

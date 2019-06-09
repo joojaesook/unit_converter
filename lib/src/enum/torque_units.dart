@@ -1,3 +1,4 @@
+/// Units of torque
 enum TorqueUnits {
   attoNewtonMeter,
   centiNewtonMeter,

@@ -1,3 +1,4 @@
+/// Units of electric conductance
 enum ElectricConductanceUnits {
   abMho,
   abSiemens,

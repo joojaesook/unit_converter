@@ -1,3 +1,4 @@
+/// Units of kinematic viscocity
 enum KinematicViscocityUnits {
   attoStokes,
   centiStokes,

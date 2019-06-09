@@ -1,3 +1,4 @@
+/// Units of electric resistance
 enum ElectricResistanceUnits {
   abOhm,
   attoOhm,

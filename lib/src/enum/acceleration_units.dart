@@ -1,3 +1,4 @@
+/// Units of acceleration
 enum AccelerationUnits {
   attoGal,
   attoMeterPerHourPerSecond,

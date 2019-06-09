@@ -1,3 +1,4 @@
+/// Units of electric charge
 enum ElectricChargeUnits {
   abCoulomb,
   ampereHour,

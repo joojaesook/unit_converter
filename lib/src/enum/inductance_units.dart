@@ -1,3 +1,4 @@
+/// Units of inductance
 enum InductanceUnits {
   abHenry,
   attoHenry,

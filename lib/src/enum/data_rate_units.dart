@@ -1,3 +1,4 @@
+/// Units of digital data rate
 enum DataRateUnits {
   bitPerHour,
   bitPerMinute,

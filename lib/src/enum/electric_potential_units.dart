@@ -1,3 +1,4 @@
+/// Units of electric potential
 enum ElectricPotentialUnits {
   abVolt,
   attoVolt,

@@ -1,3 +1,4 @@
+/// Units of electric current
 enum ElectricCurrentUnits {
   abAmpere,
   ampere,

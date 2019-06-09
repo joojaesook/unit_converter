@@ -57,115 +57,115 @@ export 'enum/volume_units.dart';
 export 'enum/water_hardness_units.dart';
 
 class UnitConverter {
-  static AccelerationConverter accelerationConverter() {
+  static AccelerationConverter acceleration() {
     return AccelerationConverter();
   }
 
-  static AreaConverter areaConverter() {
+  static AreaConverter area() {
     return AreaConverter();
   }
 
-  static BloodCholesterolConverter bloodCholesterolConverter() {
+  static BloodCholesterolConverter bloodCholesterol() {
     return BloodCholesterolConverter();
   }
 
-  static BloodGlucoseConverter bloodGlucoseConverter() {
+  static BloodGlucoseConverter bloodGlucose() {
     return BloodGlucoseConverter();
   }
 
-  static CapacitanceConverter capacitanceConverter() {
+  static CapacitanceConverter capacitance() {
     return CapacitanceConverter();
   }
 
-  static DataConverter dataConverter() {
+  static DataConverter data() {
     return DataConverter();
   }
 
-  static DataRateConverter dataRateConverter() {
+  static DataRateConverter dataRate() {
     return DataRateConverter();
   }
 
-  static DynamicViscocityConverter dynamicViscocityConverter() {
+  static DynamicViscocityConverter dynamicViscocity() {
     return DynamicViscocityConverter();
   }
 
-  static ElectricChargeConverter electricChargeConverter() {
+  static ElectricChargeConverter electricCharge() {
     return ElectricChargeConverter();
   }
 
-  static ElectricConductanceConverter electricConductanceConverter() {
+  static ElectricConductanceConverter electricConductance() {
     return ElectricConductanceConverter();
   }
 
-  static ElectricCurrentConverter electricCurrentConverter() {
+  static ElectricCurrentConverter electricCurrent() {
     return ElectricCurrentConverter();
   }
 
-  static ElectricPotentialConverter electricPotentialConverter() {
+  static ElectricPotentialConverter electricPotential() {
     return ElectricPotentialConverter();
   }
 
-  static ElectricResistanceConverter electricResistanceConverter() {
+  static ElectricResistanceConverter electricResistance() {
     return ElectricResistanceConverter();
   }
 
-  static ForceConverter forceConverter() {
+  static ForceConverter force() {
     return ForceConverter();
   }
 
-  static FrequencyConverter frequencyConverter() {
+  static FrequencyConverter frequency() {
     return FrequencyConverter();
   }
 
-  static IlluminanceConverter illuminanceConverter() {
+  static IlluminanceConverter illuminance() {
     return IlluminanceConverter();
   }
 
-  static InductanceConverter inductanceConverter() {
+  static InductanceConverter inductance() {
     return InductanceConverter();
   }
 
-  static KinematicViscocityConverter kinematicViscocityConverter() {
+  static KinematicViscocityConverter kinematicViscocity() {
     return KinematicViscocityConverter();
   }
 
-  static LengthConverter lengthConverter() {
+  static LengthConverter length() {
     return LengthConverter();
   }
 
-  static LuminanceConverter luminanceConverter() {
+  static LuminanceConverter luminance() {
     return LuminanceConverter();
   }
 
-  static MagneticFieldIntensityConverter magneticFieldIntensityConverter() {
+  static MagneticFieldIntensityConverter magneticFieldIntensity() {
     return MagneticFieldIntensityConverter();
   }
 
-  static MagneticFluxConverter magneticFluxConverter() {
+  static MagneticFluxConverter magneticFlux() {
     return MagneticFluxConverter();
   }
 
-  static MagneticFluxDensityConverter magneticFluxDensityConverter() {
+  static MagneticFluxDensityConverter magneticFluxDensity() {
     return MagneticFluxDensityConverter();
   }
 
-  static MassConverter massConverter() {
+  static MassConverter mass() {
     return MassConverter();
   }
 
-  static TimeConverter timeConverter() {
+  static TimeConverter time() {
     return TimeConverter();
   }
 
-  static TorqueConverter torquConverter() {
+  static TorqueConverter torque() {
     return TorqueConverter();
   }
 
-  static VolumeConverter volumeConverter() {
+  static VolumeConverter volume() {
     return VolumeConverter();
   }
 
-  static WaterHardnessConverter waterHardnessConverter() {
+  static WaterHardnessConverter waterHardness() {
     return WaterHardnessConverter();
   }
 }

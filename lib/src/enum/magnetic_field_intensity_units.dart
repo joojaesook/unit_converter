@@ -1,3 +1,4 @@
+/// Units of magnetic field intensity
 enum MagneticFieldIntensityUnits {
   amperePerMeter,
   attoAmperePerMeter,

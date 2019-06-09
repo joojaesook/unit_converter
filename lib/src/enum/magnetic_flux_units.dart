@@ -1,3 +1,4 @@
+/// Units of magnetic flux
 enum MagneticFluxUnits {
   attoWeber,
   centiWeber,

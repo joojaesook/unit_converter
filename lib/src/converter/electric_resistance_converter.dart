@@ -2,7 +2,7 @@ import 'package:meta/meta.dart' show required;
 
 import '../abstract/converter.dart';
 import '../enum/conversion_type.dart';
-import '../enum/electric_potential_units.dart';
+import '../enum/electric_resistance_units.dart';
 import '../misc/global.dart';
 
 class ElectricResistanceConverter extends Converter {
@@ -10,8 +10,8 @@ class ElectricResistanceConverter extends Converter {
 
   double convert({
     @required double value,
-    @required ElectricPotentialUnits from,
-    @required ElectricPotentialUnits to,
+    @required ElectricResistanceUnits from,
+    @required ElectricResistanceUnits to,
   }) {
     assert(value != null);
     assert(from != null);

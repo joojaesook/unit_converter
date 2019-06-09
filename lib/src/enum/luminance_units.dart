@@ -1,3 +1,4 @@
+/// Units of luminance
 enum LuminanceUnits {
   candelaPerSquareAttoMeter,
   candelaPerSquareCentiMeter,
