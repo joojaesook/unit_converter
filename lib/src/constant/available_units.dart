@@ -16,6 +16,7 @@ import 'force/force_unit_details.dart';
 import 'frequency/frequency_unit_details.dart';
 import 'illuminance/illuminance_unit_details.dart';
 import 'inductance/inductance_unit_details.dart';
+import 'kinematic_viscocity/kinematic_viscocity_unit_details.dart';
 import 'length/length_unit_details.dart';
 import 'luminance/luminance_unit_details.dart';
 import 'magnetic_field_intensity/magnetic_field_intensity_unit_details.dart';
@@ -43,6 +44,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.frequency: frequencyUnitDetails,
   ConversionType.illuminance: illuminanceUnitDetails,
   ConversionType.inductance: inductanceUnitDetails,
+  ConversionType.kinematicViscocity: kinematicViscocityUnitDetails,
   ConversionType.length: lengthUnitDetails,
   ConversionType.luminance: luminanceUnitDetails,
   ConversionType.magneticFieldIntensity: magneticFieldIntensityUnitDetails,

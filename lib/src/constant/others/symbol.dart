@@ -170,6 +170,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.squarePerch: 'square perch',
   SymbolParts.stat: 'stat',
   SymbolParts.stilb: 'sb',
+  SymbolParts.stokes: 'St',
   SymbolParts.stone: 'st',
   SymbolParts.subscriptThree: _createStringFromUnicode(unicodeSubscriptThree),
   SymbolParts.subscriptZero: _createStringFromUnicode(unicodeSubscriptZero),

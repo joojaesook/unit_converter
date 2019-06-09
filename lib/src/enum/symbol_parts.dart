@@ -161,6 +161,7 @@ enum SymbolParts {
   squarePerch,
   stat,
   stilb,
+  stokes,
   stone,
   subscriptThree,
   subscriptZero,

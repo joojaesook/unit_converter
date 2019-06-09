@@ -15,6 +15,7 @@ import 'converter/force_converter.dart';
 import 'converter/frequency_converter.dart';
 import 'converter/illuminance_converter.dart';
 import 'converter/inductance_converter.dart';
+import 'converter/kinematic_viscocity_converter.dart';
 import 'converter/length_converter.dart';
 import 'converter/luminance_converter.dart';
 import 'converter/magnetic_field_intensity_converter.dart';
@@ -42,6 +43,7 @@ export 'enum/force_units.dart';
 export 'enum/frequency_units.dart';
 export 'enum/illuminance_units.dart';
 export 'enum/inductance_units.dart';
+export 'enum/kinematic_viscocity_units.dart';
 export 'enum/length_units.dart';
 export 'enum/luminance_units.dart';
 export 'enum/magnetic_field_intensity_units.dart';
@@ -119,6 +121,10 @@ class UnitConverter {
 
   static InductanceConverter inductanceConverter() {
     return InductanceConverter();
+  }
+
+  static KinematicViscocityConverter kinematicViscocityConverter() {
+    return KinematicViscocityConverter();
   }
 
   static LengthConverter lengthConverter() {

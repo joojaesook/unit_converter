@@ -17,6 +17,7 @@ enum ConversionType {
   frequency,
   illuminance,
   inductance,
+  kinematicViscocity,
   length,
   luminance,
   magneticFieldIntensity,

@@ -12,22 +12,10 @@ const _meterPerHourPerSecond = 0.000277777778;
 final _meterPerHourSquared = 7.71604938 * pow(10, -8);
 const _meterPerMinutePerSecond = 0.0166666667;
 const _meterPerMinuteSquared = 0.000277777778;
-final _foot = getConversionDetail(
-  ConversionType.length,
-  LengthUnits.foot,
-);
-final _inch = getConversionDetail(
-  ConversionType.length,
-  LengthUnits.inch,
-);
-final _mile = getConversionDetail(
-  ConversionType.length,
-  LengthUnits.mile,
-);
-final _yard = getConversionDetail(
-  ConversionType.length,
-  LengthUnits.yard,
-);
+final _foot = getConversionDetail(ConversionType.length, LengthUnits.foot);
+final _inch = getConversionDetail(ConversionType.length, LengthUnits.inch);
+final _mile = getConversionDetail(ConversionType.length, LengthUnits.mile);
+final _yard = getConversionDetail(ConversionType.length, LengthUnits.yard);
 
 Map<AccelerationUnits, double> accelerationConversionDetails = {
   // Base unit
