@@ -92,6 +92,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.inch: 'in',
   SymbolParts.kilo: 'k',
   SymbolParts.kip: 'kip',
+  SymbolParts.knot: 'kn',
   SymbolParts.lA: 'a',
   SymbolParts.lB: 'b',
   SymbolParts.lC: 'c',

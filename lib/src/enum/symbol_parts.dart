@@ -84,6 +84,7 @@ enum SymbolParts {
   inch,
   kilo,
   kip,
+  knot,
   lA,
   lB,
   lC,

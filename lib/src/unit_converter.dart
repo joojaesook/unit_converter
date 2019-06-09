@@ -22,6 +22,7 @@ import 'converter/magnetic_field_intensity_converter.dart';
 import 'converter/magnetic_flux_converter.dart';
 import 'converter/magnetic_flux_density_converter.dart';
 import 'converter/mass_converter.dart';
+import 'converter/speed_converter.dart';
 import 'converter/time_converter.dart';
 import 'converter/torque_converter.dart';
 import 'converter/volume_converter.dart';
@@ -51,6 +52,7 @@ export 'enum/magnetic_field_intensity_units.dart';
 export 'enum/magnetic_flux_density_units.dart';
 export 'enum/magnetic_flux_units.dart';
 export 'enum/mass_units.dart';
+export 'enum/speed_units.dart';
 export 'enum/time_units.dart';
 export 'enum/torque_units.dart';
 export 'enum/volume_units.dart';
@@ -151,6 +153,10 @@ class UnitConverter {
 
   static MassConverter mass() {
     return MassConverter();
+  }
+
+  static SpeedConverter speed() {
+    return SpeedConverter();
   }
 
   static TimeConverter time() {
