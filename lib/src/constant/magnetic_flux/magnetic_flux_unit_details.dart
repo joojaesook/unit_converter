@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> magneticFluxUnitDetails = {
   Unit(
-    'Attoweber',
+    'attoweber',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -15,7 +15,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.attoWeber,
   ),
   Unit(
-    'Centiweber',
+    'centiweber',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -25,7 +25,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.centiWeber,
   ),
   Unit(
-    'Decaweber',
+    'decaweber',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -35,7 +35,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.decaWeber,
   ),
   Unit(
-    'Deciweber',
+    'deciweber',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -45,7 +45,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.deciWeber,
   ),
   Unit(
-    'Exaweber',
+    'exaweber',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -55,7 +55,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.exaWeber,
   ),
   Unit(
-    'Femtoweber',
+    'femtoweber',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -65,7 +65,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.femtoWeber,
   ),
   Unit(
-    'Gigaweber',
+    'gigaweber',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -75,7 +75,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.gigaWeber,
   ),
   Unit(
-    'Hectoweber',
+    'hectoweber',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -85,7 +85,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.hectoWeber,
   ),
   Unit(
-    'Kiloweber',
+    'kiloweber',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -95,7 +95,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.kiloWeber,
   ),
   Unit(
-    'Maxwell',
+    'maxwell',
     createSymbol(
       const [
         SymbolParts.maxwell,
@@ -104,7 +104,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.maxwell,
   ),
   Unit(
-    'Megaweber',
+    'megaweber',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -114,7 +114,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.megaWeber,
   ),
   Unit(
-    'Microweber',
+    'microweber',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -124,7 +124,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.microWeber,
   ),
   Unit(
-    'Milliweber',
+    'milliweber',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -134,7 +134,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.milliWeber,
   ),
   Unit(
-    'Nanoweber',
+    'nanoweber',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -144,7 +144,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.nanoWeber,
   ),
   Unit(
-    'Petaweber',
+    'petaweber',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -154,7 +154,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.petaWeber,
   ),
   Unit(
-    'Picoweber',
+    'picoweber',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -164,7 +164,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.picoWeber,
   ),
   Unit(
-    'Teraweber',
+    'teraweber',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -174,7 +174,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.teraWeber,
   ),
   Unit(
-    'Weber',
+    'weber',
     createSymbol(
       const [
         SymbolParts.weber,
@@ -183,7 +183,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.weber,
   ),
   Unit(
-    'Yoctoweber',
+    'yoctoweber',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -193,7 +193,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.yoctoWeber,
   ),
   Unit(
-    'Yottaweber',
+    'yottaweber',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -203,7 +203,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.yottaWeber,
   ),
   Unit(
-    'Zeptoweber',
+    'zeptoweber',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -213,7 +213,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     MagneticFluxUnits.zeptoWeber,
   ),
   Unit(
-    'Zettaweber',
+    'zettaweber',
     createSymbol(
       const [
         SymbolParts.zetta,

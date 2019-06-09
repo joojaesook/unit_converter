@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> bloodCholesterolUnitDetails = {
   Unit(
-    'Milligram per decilitre',
+    'milligram per decilitre',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -18,7 +18,7 @@ final Set<Unit> bloodCholesterolUnitDetails = {
     BloodCholesterolUnits.milliGramPerDeciLitre,
   ),
   Unit(
-    'Millimole per litre',
+    'millimole per litre',
     createSymbol(
       const [
         SymbolParts.milli,

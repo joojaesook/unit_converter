@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> electricCurrentUnitDetails = {
   Unit(
-    'Abampere',
+    'abampere',
     createSymbol(
       const [
         SymbolParts.ab,
@@ -24,7 +24,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.ampere,
   ),
   Unit(
-    'Attoampere',
+    'attoampere',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -34,7 +34,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.attoAmpere,
   ),
   Unit(
-    'Centiampere',
+    'centiampere',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -44,7 +44,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.centiAmpere,
   ),
   Unit(
-    'Decaampere',
+    'decaampere',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -54,7 +54,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.decaAmpere,
   ),
   Unit(
-    'Deciampere',
+    'deciampere',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -64,7 +64,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.deciAmpere,
   ),
   Unit(
-    'Exaampere',
+    'exaampere',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -74,7 +74,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.exaAmpere,
   ),
   Unit(
-    'Femtoampere',
+    'femtoampere',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -84,7 +84,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.femtoAmpere,
   ),
   Unit(
-    'Gigaampere',
+    'gigaampere',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -94,7 +94,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.gigaAmpere,
   ),
   Unit(
-    'Hectoampere',
+    'hectoampere',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -104,7 +104,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.hectoAmpere,
   ),
   Unit(
-    'Kiloampere',
+    'kiloampere',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -114,7 +114,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.kiloAmpere,
   ),
   Unit(
-    'Megaampere',
+    'megaampere',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -124,7 +124,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.megaAmpere,
   ),
   Unit(
-    'Microampere',
+    'microampere',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -134,7 +134,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.microAmpere,
   ),
   Unit(
-    'Milliampere',
+    'milliampere',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -144,7 +144,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.milliAmpere,
   ),
   Unit(
-    'Nanoampere',
+    'nanoampere',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -154,7 +154,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.nanoAmpere,
   ),
   Unit(
-    'Petaampere',
+    'petaampere',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -164,7 +164,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.petaAmpere,
   ),
   Unit(
-    'Picoampere',
+    'picoampere',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -174,7 +174,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.picoAmpere,
   ),
   Unit(
-    'Teraampere',
+    'teraampere',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -184,7 +184,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.teraAmpere,
   ),
   Unit(
-    'Yoctoampere',
+    'yoctoampere',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -194,7 +194,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.yoctoAmpere,
   ),
   Unit(
-    'Yottaampere',
+    'yottaampere',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -204,7 +204,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.yottaAmpere,
   ),
   Unit(
-    'Zeptoampere',
+    'zeptoampere',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -214,7 +214,7 @@ final Set<Unit> electricCurrentUnitDetails = {
     ElectricCurrentUnits.zeptoAmpere,
   ),
   Unit(
-    'Zettaampere',
+    'zettaampere',
     createSymbol(
       const [
         SymbolParts.zetta,

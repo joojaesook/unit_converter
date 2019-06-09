@@ -7,7 +7,7 @@ import '../others/system_value.dart';
 
 final Set<Unit> areaUnitDetails = {
   Unit(
-    'Acre',
+    'acre',
     createSymbol(
       const [
         SymbolParts.acre,
@@ -16,7 +16,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.acre,
   ),
   Unit(
-    'Acre',
+    'acre',
     createSymbol(
       const [
         SymbolParts.acre,
@@ -26,7 +26,7 @@ final Set<Unit> areaUnitDetails = {
     system: systemValue[System.usSurvey],
   ),
   Unit(
-    'Are',
+    'are',
     createSymbol(
       const [
         SymbolParts.are,
@@ -35,7 +35,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.are,
   ),
   Unit(
-    'Attobarn',
+    'attobarn',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -45,7 +45,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.attoBarn,
   ),
   Unit(
-    'Barn',
+    'barn',
     createSymbol(
       const [
         SymbolParts.barn,
@@ -54,7 +54,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.barn,
   ),
   Unit(
-    'Centibarn',
+    'centibarn',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -64,7 +64,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.centiBarn,
   ),
   Unit(
-    'Circular mil',
+    'circular mil',
     createSymbol(
       const [
         SymbolParts.circularMil,
@@ -73,7 +73,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.circularMil,
   ),
   Unit(
-    'Decabarn',
+    'decabarn',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -83,7 +83,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.decaBarn,
   ),
   Unit(
-    'Decibarn',
+    'decibarn',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -93,7 +93,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.deciBarn,
   ),
   Unit(
-    'Exabarn',
+    'exabarn',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -103,7 +103,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.exaBarn,
   ),
   Unit(
-    'Femtobarn',
+    'femtobarn',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -113,7 +113,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.femtoBarn,
   ),
   Unit(
-    'Gigabarn',
+    'gigabarn',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -123,7 +123,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.gigaBarn,
   ),
   Unit(
-    'Hectare',
+    'hectare',
     createSymbol(
       const [
         SymbolParts.hectare,
@@ -132,7 +132,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.hectare,
   ),
   Unit(
-    'Hectobarn',
+    'hectobarn',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -142,7 +142,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.hectoBarn,
   ),
   Unit(
-    'Kilobarn',
+    'kilobarn',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -152,7 +152,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.kiloBarn,
   ),
   Unit(
-    'Megabarn',
+    'megabarn',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -162,7 +162,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.megaBarn,
   ),
   Unit(
-    'Microbarn',
+    'microbarn',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -172,7 +172,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.microBarn,
   ),
   Unit(
-    'Millibarn',
+    'millibarn',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -182,7 +182,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.milliBarn,
   ),
   Unit(
-    'Nanobarn',
+    'nanobarn',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -192,7 +192,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.nanoBarn,
   ),
   Unit(
-    'Petabarn',
+    'petabarn',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -202,7 +202,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.petaBarn,
   ),
   Unit(
-    'Picobarn',
+    'picobarn',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -212,7 +212,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.picoBarn,
   ),
   Unit(
-    'Rai',
+    'rai',
     createSymbol(
       const [
         SymbolParts.rai,
@@ -221,7 +221,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.rai,
   ),
   Unit(
-    'Rood',
+    'rood',
     createSymbol(
       const [
         SymbolParts.rood,
@@ -230,7 +230,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.rood,
   ),
   Unit(
-    'Square attometer',
+    'square attometer',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -241,7 +241,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareAttoMeter,
   ),
   Unit(
-    'Square centimeter',
+    'square centimeter',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -252,7 +252,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareCentiMeter,
   ),
   Unit(
-    'Square decameter',
+    'square decameter',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -263,7 +263,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareDecaMeter,
   ),
   Unit(
-    'Square decimeter',
+    'square decimeter',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -274,7 +274,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareDeciMeter,
   ),
   Unit(
-    'Square exameter',
+    'square exameter',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -285,7 +285,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareExaMeter,
   ),
   Unit(
-    'Square femtometer',
+    'square femtometer',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -296,7 +296,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareFemtoMeter,
   ),
   Unit(
-    'Square foot',
+    'square foot',
     createSymbol(
       const [
         SymbolParts.foot,
@@ -306,7 +306,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareFoot,
   ),
   Unit(
-    'Square gigameter',
+    'square gigameter',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -317,7 +317,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareGigaMeter,
   ),
   Unit(
-    'Square hectometer',
+    'square hectometer',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -328,7 +328,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareHectoMeter,
   ),
   Unit(
-    'Square inch',
+    'square inch',
     createSymbol(
       const [
         SymbolParts.inch,
@@ -338,7 +338,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareInch,
   ),
   Unit(
-    'Square kilometer',
+    'square kilometer',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -349,7 +349,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareKiloMeter,
   ),
   Unit(
-    'Square megameter',
+    'square megameter',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -360,7 +360,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareMegaMeter,
   ),
   Unit(
-    'Square meter',
+    'square meter',
     createSymbol(
       const [
         SymbolParts.meter,
@@ -370,7 +370,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareMeter,
   ),
   Unit(
-    'Square micrometer',
+    'square micrometer',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -381,7 +381,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareMicroMeter,
   ),
   Unit(
-    'Square mile',
+    'square mile',
     createSymbol(
       const [
         SymbolParts.mile,
@@ -391,7 +391,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareMile,
   ),
   Unit(
-    'Square millimeter',
+    'square millimeter',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -402,7 +402,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareMilliMeter,
   ),
   Unit(
-    'Square nanometer',
+    'square nanometer',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -413,7 +413,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareNanoMeter,
   ),
   Unit(
-    'Square perch',
+    'square perch',
     createSymbol(
       const [
         SymbolParts.squarePerch,
@@ -422,7 +422,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squarePerch,
   ),
   Unit(
-    'Square petameter',
+    'square petameter',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -433,7 +433,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squarePetaMeter,
   ),
   Unit(
-    'Square picometer',
+    'square picometer',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -444,7 +444,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squarePicoMeter,
   ),
   Unit(
-    'Square terameter',
+    'square terameter',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -455,7 +455,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareTeraMeter,
   ),
   Unit(
-    'Square yard',
+    'square yard',
     createSymbol(
       const [
         SymbolParts.yard,
@@ -465,7 +465,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareYard,
   ),
   Unit(
-    'Square yoctometer',
+    'square yoctometer',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -476,7 +476,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareYoctoMeter,
   ),
   Unit(
-    'Square yottameter',
+    'square yottameter',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -487,7 +487,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareYottaMeter,
   ),
   Unit(
-    'Square zeptometer',
+    'square zeptometer',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -498,7 +498,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareZeptoMeter,
   ),
   Unit(
-    'Square zettameter',
+    'square zettameter',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -509,7 +509,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareZettaMeter,
   ),
   Unit(
-    'Terabarn',
+    'terabarn',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -519,7 +519,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.teraBarn,
   ),
   Unit(
-    'Yoctobarn',
+    'yoctobarn',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -529,7 +529,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.yoctoBarn,
   ),
   Unit(
-    'Yottabarn',
+    'yottabarn',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -539,7 +539,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.yottaBarn,
   ),
   Unit(
-    'Zeptobarn',
+    'zeptobarn',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -549,7 +549,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.zeptoBarn,
   ),
   Unit(
-    'Zettabarn',
+    'zettabarn',
     createSymbol(
       const [
         SymbolParts.zetta,

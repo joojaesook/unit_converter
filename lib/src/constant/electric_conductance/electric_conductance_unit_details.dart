@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> electricConductanceUnitDetails = {
   Unit(
-    'Abmho',
+    'abmho',
     createSymbol(
       const [
         SymbolParts.ab,
@@ -15,7 +15,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.abMho,
   ),
   Unit(
-    'Absiemens',
+    'absiemens',
     createSymbol(
       const [
         SymbolParts.ab,
@@ -25,7 +25,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.abSiemens,
   ),
   Unit(
-    'Attomho',
+    'attomho',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -35,7 +35,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.attoMho,
   ),
   Unit(
-    'Attosiemens',
+    'attosiemens',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -45,7 +45,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.attoSiemens,
   ),
   Unit(
-    'Centimho',
+    'centimho',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -55,7 +55,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.centiMho,
   ),
   Unit(
-    'Centisiemens',
+    'centisiemens',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -65,7 +65,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.centiSiemens,
   ),
   Unit(
-    'Decamho',
+    'decamho',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -75,7 +75,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.decaMho,
   ),
   Unit(
-    'Decasiemens',
+    'decasiemens',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -85,7 +85,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.decaSiemens,
   ),
   Unit(
-    'Decimho',
+    'decimho',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -95,7 +95,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.deciMho,
   ),
   Unit(
-    'Decisiemens',
+    'decisiemens',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -105,7 +105,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.deciSiemens,
   ),
   Unit(
-    'Examho',
+    'examho',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -115,7 +115,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.exaMho,
   ),
   Unit(
-    'Exasiemens',
+    'exasiemens',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -125,7 +125,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.exaSiemens,
   ),
   Unit(
-    'Femtomho',
+    'femtomho',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -135,7 +135,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.femtoMho,
   ),
   Unit(
-    'Femtosiemens',
+    'femtosiemens',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -145,7 +145,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.femtoSiemens,
   ),
   Unit(
-    'Gigamho',
+    'gigamho',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -155,7 +155,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.gigaMho,
   ),
   Unit(
-    'Gigasiemens',
+    'gigasiemens',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -165,7 +165,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.gigaSiemens,
   ),
   Unit(
-    'Hectomho',
+    'hectomho',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -175,7 +175,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.hectoMho,
   ),
   Unit(
-    'Hectosiemens',
+    'hectosiemens',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -185,7 +185,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.hectoSiemens,
   ),
   Unit(
-    'Kilomho',
+    'kilomho',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -195,7 +195,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.kiloMho,
   ),
   Unit(
-    'Kilosiemens',
+    'kilosiemens',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -205,7 +205,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.kiloSiemens,
   ),
   Unit(
-    'Megamho',
+    'megamho',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -215,7 +215,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.megaMho,
   ),
   Unit(
-    'Megasiemens',
+    'megasiemens',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -225,7 +225,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.megaSiemens,
   ),
   Unit(
-    'Mho',
+    'mho',
     createSymbol(
       const [
         SymbolParts.mho,
@@ -234,7 +234,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.mho,
   ),
   Unit(
-    'Micromho',
+    'micromho',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -244,7 +244,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.micrMho,
   ),
   Unit(
-    'Microsiemens',
+    'microsiemens',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -254,7 +254,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.micrSiemens,
   ),
   Unit(
-    'Millimho',
+    'millimho',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -264,7 +264,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.milliMho,
   ),
   Unit(
-    'Millisiemens',
+    'millisiemens',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -274,7 +274,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.milliSiemens,
   ),
   Unit(
-    'Nanomho',
+    'nanomho',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -284,7 +284,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.nanoMho,
   ),
   Unit(
-    'Nanosiemens',
+    'nanosiemens',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -294,7 +294,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.nanoSiemens,
   ),
   Unit(
-    'Petamho',
+    'petamho',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -304,7 +304,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.petaMho,
   ),
   Unit(
-    'Petasiemens',
+    'petasiemens',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -314,7 +314,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.petaSiemens,
   ),
   Unit(
-    'Picomho',
+    'picomho',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -324,7 +324,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.picoMho,
   ),
   Unit(
-    'Picosiemens',
+    'picosiemens',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -334,7 +334,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.picoSiemens,
   ),
   Unit(
-    'Siemens',
+    'siemens',
     createSymbol(
       const [
         SymbolParts.siemens,
@@ -343,7 +343,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.siemens,
   ),
   Unit(
-    'Teramho',
+    'teramho',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -353,7 +353,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.teraMho,
   ),
   Unit(
-    'Terasiemens',
+    'terasiemens',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -363,7 +363,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.teraSiemens,
   ),
   Unit(
-    'Yoctomho',
+    'yoctomho',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -373,7 +373,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.yoctoMho,
   ),
   Unit(
-    'Yoctosiemens',
+    'yoctosiemens',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -383,7 +383,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.yoctoSiemens,
   ),
   Unit(
-    'Yottamho',
+    'yottamho',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -393,7 +393,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.yottaMho,
   ),
   Unit(
-    'Yottasiemens',
+    'yottasiemens',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -403,7 +403,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.yottaSiemens,
   ),
   Unit(
-    'Zeptomho',
+    'zeptomho',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -413,7 +413,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.zeptoMho,
   ),
   Unit(
-    'Zeptosiemens',
+    'zeptosiemens',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -423,7 +423,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.zeptoSiemens,
   ),
   Unit(
-    'Zettamho',
+    'zettamho',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -433,7 +433,7 @@ final Set<Unit> electricConductanceUnitDetails = {
     ElectricConductanceUnits.zettaMho,
   ),
   Unit(
-    'Zettasiemens',
+    'zettasiemens',
     createSymbol(
       const [
         SymbolParts.zetta,

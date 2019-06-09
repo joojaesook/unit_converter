@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 Set<Unit> dataRateUnitDetails = {
   Unit(
-    'Bit per hour',
+    'bit per hour',
     createSymbol(
       const [
         SymbolParts.bit,
@@ -16,7 +16,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.bitPerHour,
   ),
   Unit(
-    'Bit per minute',
+    'bit per minute',
     createSymbol(
       const [
         SymbolParts.bit,
@@ -27,7 +27,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.bitPerMinute,
   ),
   Unit(
-    'Bit per second',
+    'bit per second',
     createSymbol(
       const [
         SymbolParts.bit,
@@ -38,7 +38,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.bitPerSecond,
   ),
   Unit(
-    'Byte per hour',
+    'byte per hour',
     createSymbol(
       const [
         SymbolParts.byte,
@@ -49,7 +49,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.bytePerHour,
   ),
   Unit(
-    'Byte per minute',
+    'byte per minute',
     createSymbol(
       const [
         SymbolParts.byte,
@@ -60,7 +60,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.bytePerMinute,
   ),
   Unit(
-    'Byte per second',
+    'byte per second',
     createSymbol(
       const [
         SymbolParts.byte,
@@ -71,7 +71,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.bytePerSecond,
   ),
   Unit(
-    'Exabit per hour',
+    'exabit per hour',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -83,7 +83,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.exaBitPerHour,
   ),
   Unit(
-    'Exabit per minute',
+    'exabit per minute',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -95,7 +95,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.exaBitPerMinute,
   ),
   Unit(
-    'Exabit per second',
+    'exabit per second',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -107,7 +107,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.exaBitPerSecond,
   ),
   Unit(
-    'Exabyte per hour',
+    'exabyte per hour',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -119,7 +119,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.exaBytePerHour,
   ),
   Unit(
-    'Exabyte per minute',
+    'exabyte per minute',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -131,7 +131,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.exaBytePerMinute,
   ),
   Unit(
-    'Exabyte per second',
+    'exabyte per second',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -143,7 +143,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.exaBytePerSecond,
   ),
   Unit(
-    'Gigabit per hour',
+    'gigabit per hour',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -155,7 +155,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.gigaBitPerHour,
   ),
   Unit(
-    'Gigabit per minute',
+    'gigabit per minute',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -167,7 +167,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.gigaBitPerMinute,
   ),
   Unit(
-    'Gigabit per second',
+    'gigabit per second',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -179,7 +179,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.gigaBitPerSecond,
   ),
   Unit(
-    'Gigabyte per hour',
+    'gigabyte per hour',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -191,7 +191,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.gigaBytePerHour,
   ),
   Unit(
-    'Gigabyte per minute',
+    'gigabyte per minute',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -203,7 +203,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.gigaBytePerMinute,
   ),
   Unit(
-    'Gigabyte per second',
+    'gigabyte per second',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -215,7 +215,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.gigaBytePerSecond,
   ),
   Unit(
-    'Kilobit per hour',
+    'kilobit per hour',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -227,7 +227,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.kiloBitPerHour,
   ),
   Unit(
-    'Kilobit per minute',
+    'kilobit per minute',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -239,7 +239,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.kiloBitPerMinute,
   ),
   Unit(
-    'Kilobit per second',
+    'kilobit per second',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -251,7 +251,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.kiloBitPerSecond,
   ),
   Unit(
-    'Kilobyte per hour',
+    'kilobyte per hour',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -263,7 +263,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.kiloBytePerHour,
   ),
   Unit(
-    'Kilobyte per minute',
+    'kilobyte per minute',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -275,7 +275,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.kiloBytePerMinute,
   ),
   Unit(
-    'Kilobyte per second',
+    'kilobyte per second',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -287,7 +287,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.kiloBytePerSecond,
   ),
   Unit(
-    'Megabit per hour',
+    'megabit per hour',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -299,7 +299,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.megaBitPerHour,
   ),
   Unit(
-    'Megabit per minute',
+    'megabit per minute',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -311,7 +311,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.megaBitPerMinute,
   ),
   Unit(
-    'Megabit per second',
+    'megabit per second',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -323,7 +323,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.megaBitPerSecond,
   ),
   Unit(
-    'Megabyte per hour',
+    'megabyte per hour',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -335,7 +335,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.megaBytePerHour,
   ),
   Unit(
-    'Megabyte per minute',
+    'megabyte per minute',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -347,7 +347,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.megaBytePerMinute,
   ),
   Unit(
-    'Megabyte per second',
+    'megabyte per second',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -359,7 +359,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.megaBytePerSecond,
   ),
   Unit(
-    'Petabit per hour',
+    'petabit per hour',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -371,7 +371,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.petaBitPerHour,
   ),
   Unit(
-    'Petabit per minute',
+    'petabit per minute',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -383,7 +383,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.petaBitPerMinute,
   ),
   Unit(
-    'Petabit per second',
+    'petabit per second',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -395,7 +395,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.petaBitPerSecond,
   ),
   Unit(
-    'Petabyte per hour',
+    'petabyte per hour',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -407,7 +407,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.petaBytePerHour,
   ),
   Unit(
-    'Petabyte per minute',
+    'petabyte per minute',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -419,7 +419,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.petaBytePerMinute,
   ),
   Unit(
-    'Petabyte per second',
+    'petabyte per second',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -431,7 +431,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.petaBytePerSecond,
   ),
   Unit(
-    'Terabit per hour',
+    'terabit per hour',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -443,7 +443,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.teraBitPerHour,
   ),
   Unit(
-    'Terabit per minute',
+    'terabit per minute',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -455,7 +455,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.teraBitPerMinute,
   ),
   Unit(
-    'Terabit per second',
+    'terabit per second',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -467,7 +467,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.teraBitPerSecond,
   ),
   Unit(
-    'Terabyte per hour',
+    'terabyte per hour',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -479,7 +479,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.teraBytePerHour,
   ),
   Unit(
-    'Terabyte per minute',
+    'terabyte per minute',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -491,7 +491,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.teraBytePerMinute,
   ),
   Unit(
-    'Terabyte per second',
+    'terabyte per second',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -503,7 +503,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.teraBytePerSecond,
   ),
   Unit(
-    'Yottabit per hour',
+    'yottabit per hour',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -515,7 +515,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.yottaBitPerHour,
   ),
   Unit(
-    'Yottabit per minute',
+    'yottabit per minute',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -527,7 +527,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.yottaBitPerMinute,
   ),
   Unit(
-    'Yottabit per second',
+    'yottabit per second',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -539,7 +539,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.yottaBitPerSecond,
   ),
   Unit(
-    'Yottabyte per hour',
+    'yottabyte per hour',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -551,7 +551,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.yottaBytePerHour,
   ),
   Unit(
-    'Yottabyte per minute',
+    'yottabyte per minute',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -563,7 +563,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.yottaBytePerMinute,
   ),
   Unit(
-    'Yottabyte per second',
+    'yottabyte per second',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -575,7 +575,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.yottaBytePerSecond,
   ),
   Unit(
-    'Zettabit per hour',
+    'zettabit per hour',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -587,7 +587,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.zettaBitPerHour,
   ),
   Unit(
-    'Zettabit per minute',
+    'zettabit per minute',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -599,7 +599,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.zettaBitPerMinute,
   ),
   Unit(
-    'Zettabit per second',
+    'zettabit per second',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -611,7 +611,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.zettaBitPerSecond,
   ),
   Unit(
-    'Zettabyte per hour',
+    'zettabyte per hour',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -623,7 +623,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.zettaBytePerHour,
   ),
   Unit(
-    'Zettabyte per minute',
+    'zettabyte per minute',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -635,7 +635,7 @@ Set<Unit> dataRateUnitDetails = {
     DataRateUnits.zettaBytePerMinute,
   ),
   Unit(
-    'Zettabyte per second',
+    'zettabyte per second',
     createSymbol(
       const [
         SymbolParts.zetta,

@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> illuminanceUnitDetails = {
   Unit(
-    'Attolux',
+    'attolux',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -15,7 +15,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.attoLux,
   ),
   Unit(
-    'Attophot',
+    'attophot',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -25,7 +25,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.attoPhot,
   ),
   Unit(
-    'Centilux',
+    'centilux',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -35,7 +35,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.centiLux,
   ),
   Unit(
-    'Centiphot',
+    'centiphot',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -45,7 +45,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.centiPhot,
   ),
   Unit(
-    'Decalux',
+    'decalux',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -55,7 +55,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.decaLux,
   ),
   Unit(
-    'Decaphot',
+    'decaphot',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -65,7 +65,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.decaPhot,
   ),
   Unit(
-    'Decilux',
+    'decilux',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -75,7 +75,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.deciLux,
   ),
   Unit(
-    'Deciphot',
+    'deciphot',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -85,7 +85,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.deciPhot,
   ),
   Unit(
-    'Exalux',
+    'exalux',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -95,7 +95,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.exaLux,
   ),
   Unit(
-    'Exaphot',
+    'exaphot',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -105,7 +105,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.exaPhot,
   ),
   Unit(
-    'Femtolux',
+    'femtolux',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -115,7 +115,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.femtoLux,
   ),
   Unit(
-    'Femtophot',
+    'femtophot',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -125,7 +125,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.femtoPhot,
   ),
   Unit(
-    'Foot-candle',
+    'foot-candle',
     createSymbol(
       const [
         SymbolParts.lF,
@@ -135,7 +135,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.footCandle,
   ),
   Unit(
-    'Gigalux',
+    'gigalux',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -145,7 +145,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.gigaLux,
   ),
   Unit(
-    'Gigaphot',
+    'gigaphot',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -155,7 +155,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.gigaPhot,
   ),
   Unit(
-    'Hectolux',
+    'hectolux',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -165,7 +165,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.hectoLux,
   ),
   Unit(
-    'Hectophot',
+    'hectophot',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -175,7 +175,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.hectoPhot,
   ),
   Unit(
-    'Kilolux',
+    'kilolux',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -185,7 +185,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.kiloLux,
   ),
   Unit(
-    'Kilophot',
+    'kilophot',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -195,7 +195,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.kiloPhot,
   ),
   Unit(
-    'Lumen per square attometer',
+    'lumen per square attometer',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -208,7 +208,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareAttoMeter,
   ),
   Unit(
-    'Lumen per square centimeter',
+    'lumen per square centimeter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -221,7 +221,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareCentiMeter,
   ),
   Unit(
-    'Lumen per square decameter',
+    'lumen per square decameter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -234,7 +234,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareDecaMeter,
   ),
   Unit(
-    'Lumen per square decimeter',
+    'lumen per square decimeter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -247,7 +247,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareDeciMeter,
   ),
   Unit(
-    'Lumen per square exameter',
+    'lumen per square exameter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -260,7 +260,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareExaMeter,
   ),
   Unit(
-    'Lumen per square femtometer',
+    'lumen per square femtometer',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -273,7 +273,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareFemtoMeter,
   ),
   Unit(
-    'Lumen per square foot',
+    'lumen per square foot',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -285,7 +285,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareFoot,
   ),
   Unit(
-    'Lumen per square gigameter',
+    'lumen per square gigameter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -298,7 +298,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareGigaMeter,
   ),
   Unit(
-    'Lumen per square hectometer',
+    'lumen per square hectometer',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -311,7 +311,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareHectoMeter,
   ),
   Unit(
-    'Lumen per square inch',
+    'lumen per square inch',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -323,7 +323,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareInch,
   ),
   Unit(
-    'Lumen per square kilometer',
+    'lumen per square kilometer',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -336,7 +336,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareKiloMeter,
   ),
   Unit(
-    'Lumen per square megameter',
+    'lumen per square megameter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -349,7 +349,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareMegaMeter,
   ),
   Unit(
-    'Lumen per square meter',
+    'lumen per square meter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -361,7 +361,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareMeter,
   ),
   Unit(
-    'Lumen per square micrometer',
+    'lumen per square micrometer',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -374,7 +374,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareMicroMeter,
   ),
   Unit(
-    'Lumen per square millimeter',
+    'lumen per square millimeter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -387,7 +387,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareMilliMeter,
   ),
   Unit(
-    'Lumen per square nanometer',
+    'lumen per square nanometer',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -400,7 +400,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareNanoMeter,
   ),
   Unit(
-    'Lumen per square petameter',
+    'lumen per square petameter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -413,7 +413,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquarePetaMeter,
   ),
   Unit(
-    'Lumen per square picometer',
+    'lumen per square picometer',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -426,7 +426,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquarePicoMeter,
   ),
   Unit(
-    'Lumen per square terameter',
+    'lumen per square terameter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -439,7 +439,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareTeraMeter,
   ),
   Unit(
-    'Lumen per square yoctometer',
+    'lumen per square yoctometer',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -452,7 +452,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareYoctoMeter,
   ),
   Unit(
-    'Lumen per square yottameter',
+    'lumen per square yottameter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -465,7 +465,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareYottaMeter,
   ),
   Unit(
-    'Lumen per square zeptometer',
+    'lumen per square zeptometer',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -478,7 +478,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareZeptoMeter,
   ),
   Unit(
-    'Lumen per square zettameter',
+    'lumen per square zettameter',
     createSymbol(
       const [
         SymbolParts.lumen,
@@ -491,7 +491,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lumenPerSquareZettaMeter,
   ),
   Unit(
-    'Lux',
+    'lux',
     createSymbol(
       const [
         SymbolParts.lux,
@@ -500,7 +500,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.lux,
   ),
   Unit(
-    'Megalux',
+    'megalux',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -510,7 +510,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.megaLux,
   ),
   Unit(
-    'Megaphot',
+    'megaphot',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -520,7 +520,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.megaPhot,
   ),
   Unit(
-    'Microlux',
+    'microlux',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -530,7 +530,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.microLux,
   ),
   Unit(
-    'Microphot',
+    'microphot',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -540,7 +540,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.microPhot,
   ),
   Unit(
-    'Millilux',
+    'millilux',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -550,7 +550,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.milliLux,
   ),
   Unit(
-    'Milliphot',
+    'milliphot',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -560,7 +560,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.milliPhot,
   ),
   Unit(
-    'Nanolux',
+    'nanolux',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -570,7 +570,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.nanoLux,
   ),
   Unit(
-    'Nanophot',
+    'nanophot',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -580,7 +580,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.nanoPhot,
   ),
   Unit(
-    'Nox',
+    'nox',
     createSymbol(
       const [
         SymbolParts.nox,
@@ -589,7 +589,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.nox,
   ),
   Unit(
-    'Petalux',
+    'petalux',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -599,7 +599,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.petaLux,
   ),
   Unit(
-    'Petaphot',
+    'petaphot',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -609,7 +609,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.petaPhot,
   ),
   Unit(
-    'Phot',
+    'phot',
     createSymbol(
       const [
         SymbolParts.phot,
@@ -618,7 +618,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.phot,
   ),
   Unit(
-    'Picolux',
+    'picolux',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -628,7 +628,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.picoLux,
   ),
   Unit(
-    'Picophot',
+    'picophot',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -638,7 +638,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.picoPhot,
   ),
   Unit(
-    'Teralux',
+    'teralux',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -648,7 +648,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.teraLux,
   ),
   Unit(
-    'Teraphot',
+    'teraphot',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -658,7 +658,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.teraPhot,
   ),
   Unit(
-    'Yoctolux',
+    'yoctolux',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -668,7 +668,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.yoctoLux,
   ),
   Unit(
-    'Yoctophot',
+    'yoctophot',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -678,7 +678,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.yoctoPhot,
   ),
   Unit(
-    'Yottalux',
+    'yottalux',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -688,7 +688,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.yottaLux,
   ),
   Unit(
-    'Yottaphot',
+    'yottaphot',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -698,7 +698,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.yottaPhot,
   ),
   Unit(
-    'Zeptolux',
+    'zeptolux',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -708,7 +708,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.zeptoLux,
   ),
   Unit(
-    'Zeptophot',
+    'zeptophot',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -718,7 +718,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.zeptoPhot,
   ),
   Unit(
-    'Zettalux',
+    'zettalux',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -728,7 +728,7 @@ final Set<Unit> illuminanceUnitDetails = {
     IlluminanceUnits.zettaLux,
   ),
   Unit(
-    'Zettaphot',
+    'zettaphot',
     createSymbol(
       const [
         SymbolParts.zetta,

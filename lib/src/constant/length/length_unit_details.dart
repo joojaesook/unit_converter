@@ -7,7 +7,7 @@ import '../others/system_value.dart';
 
 Set<Unit> lengthUnitDetails = {
   Unit(
-    'Angstrom',
+    'angstrom',
     createSymbol(
       const [
         SymbolParts.angstrom,
@@ -16,7 +16,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.angstrom,
   ),
   Unit(
-    'Astronomical Unit',
+    'astronomical Unit',
     createSymbol(
       const [
         SymbolParts.astronomicalUnit,
@@ -25,7 +25,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.astronomicalUnit,
   ),
   Unit(
-    'Attolight Year',
+    'attolight Year',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -36,7 +36,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Attometer',
+    'attometer',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -46,7 +46,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.attoMeter,
   ),
   Unit(
-    'Attoparsec',
+    'attoparsec',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -56,7 +56,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.attoParsec,
   ),
   Unit(
-    'Barleycorn',
+    'barleycorn',
     createSymbol(
       const [
         SymbolParts.barleycorn,
@@ -65,7 +65,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.barleycorn,
   ),
   Unit(
-    'Centilight Year',
+    'centilight Year',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -76,7 +76,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Centimeter',
+    'centimeter',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -86,7 +86,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.centiMeter,
   ),
   Unit(
-    'Centiparsec',
+    'centiparsec',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -96,7 +96,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.centiParsec,
   ),
   Unit(
-    'Chain',
+    'chain',
     createSymbol(
       const [
         SymbolParts.chain,
@@ -106,7 +106,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.gunter],
   ),
   Unit(
-    'Chinese Mile',
+    'chinese Mile',
     createSymbol(
       const [
         SymbolParts.chineseMile,
@@ -115,7 +115,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.chineseMile,
   ),
   Unit(
-    'Decalight Year',
+    'decalight Year',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -126,7 +126,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Decameter',
+    'decameter',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -136,7 +136,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.decaMeter,
   ),
   Unit(
-    'Decaparsec',
+    'decaparsec',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -177,7 +177,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.deciParsec,
   ),
   Unit(
-    'Exalight Year',
+    'exalight Year',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -188,7 +188,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Exameter',
+    'exameter',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -198,7 +198,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.exaMeter,
   ),
   Unit(
-    'Exaparsec',
+    'exaparsec',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -208,7 +208,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.exaParsec,
   ),
   Unit(
-    'Fathom',
+    'fathom',
     createSymbol(
       const [
         SymbolParts.fathom,
@@ -217,7 +217,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.fathom,
   ),
   Unit(
-    'Femtolight Year',
+    'femtolight Year',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -228,7 +228,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Femtometer',
+    'femtometer',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -238,7 +238,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.femtoMeter,
   ),
   Unit(
-    'Femtoparsec',
+    'femtoparsec',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -248,7 +248,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.femtoParsec,
   ),
   Unit(
-    'Fermi',
+    'fermi',
     createSymbol(
       const [
         SymbolParts.fermi,
@@ -257,7 +257,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.fermi,
   ),
   Unit(
-    'Foot',
+    'foot',
     createSymbol(
       const [
         SymbolParts.foot,
@@ -266,7 +266,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.foot,
   ),
   Unit(
-    'Foot',
+    'foot',
     createSymbol(
       const [
         SymbolParts.foot,
@@ -276,7 +276,7 @@ Set<Unit> lengthUnitDetails = {
     system: systemValue[System.usSurvey],
   ),
   Unit(
-    'Furlong',
+    'furlong',
     createSymbol(
       const [
         SymbolParts.furlong,
@@ -285,7 +285,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.furlong,
   ),
   Unit(
-    'Gigalight Year',
+    'gigalight Year',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -296,7 +296,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Gigameter',
+    'gigameter',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -306,7 +306,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.gigaMeter,
   ),
   Unit(
-    'Gigaparsec',
+    'gigaparsec',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -316,7 +316,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.gigaParsec,
   ),
   Unit(
-    'Hand',
+    'hand',
     createSymbol(
       const [
         SymbolParts.hand,
@@ -325,7 +325,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.hand,
   ),
   Unit(
-    'Hectolight Year',
+    'hectolight Year',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -336,7 +336,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Hectometer',
+    'hectometer',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -346,7 +346,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.hectoMeter,
   ),
   Unit(
-    'Hectoparsec',
+    'hectoparsec',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -356,7 +356,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.hectoParsec,
   ),
   Unit(
-    'Inch',
+    'inch',
     createSymbol(
       const [
         SymbolParts.inch,
@@ -365,7 +365,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.inch,
   ),
   Unit(
-    'Kilolight Year',
+    'kilolight Year',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -376,7 +376,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Kilometer',
+    'kilometer',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -386,7 +386,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.kiloMeter,
   ),
   Unit(
-    'Kiloparsec',
+    'kiloparsec',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -396,7 +396,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.kiloParsec,
   ),
   Unit(
-    'League',
+    'league',
     createSymbol(
       const [
         SymbolParts.league,
@@ -406,7 +406,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.land],
   ),
   Unit(
-    'Light Day',
+    'light Day',
     createSymbol(
       const [
         SymbolParts.lightDay,
@@ -415,7 +415,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.lightDay,
   ),
   Unit(
-    'Light Hour',
+    'light Hour',
     createSymbol(
       const [
         SymbolParts.lightHour,
@@ -424,7 +424,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.lightHour,
   ),
   Unit(
-    'Light Minute',
+    'light Minute',
     createSymbol(
       const [
         SymbolParts.lightMinute,
@@ -433,7 +433,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.lightMinute,
   ),
   Unit(
-    'Light Second',
+    'light Second',
     createSymbol(
       const [
         SymbolParts.lightSecond,
@@ -442,7 +442,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.lightSecond,
   ),
   Unit(
-    'Light Year',
+    'light Year',
     createSymbol(
       const [
         SymbolParts.lightYear,
@@ -452,7 +452,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Link',
+    'link',
     createSymbol(
       const [
         SymbolParts.link,
@@ -462,7 +462,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.gunter],
   ),
   Unit(
-    'Megalight Year',
+    'megalight Year',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -473,7 +473,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Megameter',
+    'megameter',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -483,7 +483,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.megaMeter,
   ),
   Unit(
-    'Megaparsec',
+    'megaparsec',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -493,7 +493,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.megaParsec,
   ),
   Unit(
-    'Meter',
+    'meter',
     createSymbol(
       const [
         SymbolParts.meter,
@@ -502,7 +502,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.meter,
   ),
   Unit(
-    'Microlight Year',
+    'microlight Year',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -513,7 +513,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Microinch',
+    'microinch',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -523,7 +523,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.microInch,
   ),
   Unit(
-    'Micrometer',
+    'micrometer',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -533,7 +533,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.microMeter,
   ),
   Unit(
-    'Micron',
+    'micron',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -542,7 +542,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.micron,
   ),
   Unit(
-    'Microparsec',
+    'microparsec',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -552,7 +552,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.microParsec,
   ),
   Unit(
-    'Mile',
+    'mile',
     createSymbol(
       const [
         SymbolParts.mile,
@@ -561,7 +561,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.mile,
   ),
   Unit(
-    'Millilight Year',
+    'millilight Year',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -572,7 +572,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Millimeter',
+    'millimeter',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -582,7 +582,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.milliMeter,
   ),
   Unit(
-    'Milliparsec',
+    'milliparsec',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -592,7 +592,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.milliParsec,
   ),
   Unit(
-    'Nanolight Year',
+    'nanolight Year',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -603,7 +603,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Nanometer',
+    'nanometer',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -613,7 +613,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.nanoMeter,
   ),
   Unit(
-    'Nanoparsec',
+    'nanoparsec',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -623,7 +623,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.nanoParsec,
   ),
   Unit(
-    'Nautical Mile',
+    'nautical Mile',
     createSymbol(
       const [
         SymbolParts.nauticalMile,
@@ -632,7 +632,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.nauticalMile,
   ),
   Unit(
-    'Parsec',
+    'parsec',
     createSymbol(
       const [
         SymbolParts.parsec,
@@ -641,7 +641,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.parsec,
   ),
   Unit(
-    'Petalight Year',
+    'petalight Year',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -652,7 +652,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Petameter',
+    'petameter',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -662,7 +662,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.petaMeter,
   ),
   Unit(
-    'Petaparsec',
+    'petaparsec',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -672,7 +672,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.petaParsec,
   ),
   Unit(
-    'Pica',
+    'pica',
     createSymbol(
       const [
         SymbolParts.pica,
@@ -681,7 +681,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.pica,
   ),
   Unit(
-    'Picolight Year',
+    'picolight Year',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -692,7 +692,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Picometer',
+    'picometer',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -702,7 +702,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.picoMeter,
   ),
   Unit(
-    'Picoparsec',
+    'picoparsec',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -712,7 +712,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.picoParsec,
   ),
   Unit(
-    'Planck Length',
+    'planck Length',
     createSymbol(
       const [
         SymbolParts.planck,
@@ -721,7 +721,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.planckLength,
   ),
   Unit(
-    'Point',
+    'point',
     createSymbol(
       const [
         SymbolParts.point,
@@ -730,7 +730,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.point,
   ),
   Unit(
-    'Pole',
+    'pole',
     createSymbol(
       const [
         SymbolParts.pole,
@@ -739,7 +739,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.pole,
   ),
   Unit(
-    'Rod',
+    'rod',
     createSymbol(
       const [
         SymbolParts.rod,
@@ -748,7 +748,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.rod,
   ),
   Unit(
-    'Teralight Year',
+    'teralight Year',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -759,7 +759,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Terameter',
+    'terameter',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -769,7 +769,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.teraMeter,
   ),
   Unit(
-    'Teraparsec',
+    'teraparsec',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -779,7 +779,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.teraParsec,
   ),
   Unit(
-    'Thousand Of An Inch',
+    'thousand Of An Inch',
     createSymbol(
       const [
         SymbolParts.thousandOfAnInch,
@@ -788,7 +788,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.thousandOfAnInch,
   ),
   Unit(
-    'Yard',
+    'yard',
     createSymbol(
       const [
         SymbolParts.yard,
@@ -797,7 +797,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.yard,
   ),
   Unit(
-    'Yoctolight Year',
+    'yoctolight Year',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -808,7 +808,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Yoctometer',
+    'yoctometer',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -818,7 +818,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.yoctoMeter,
   ),
   Unit(
-    'Yoctoparsec',
+    'yoctoparsec',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -828,7 +828,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.yoctoParsec,
   ),
   Unit(
-    'Yottalight Year',
+    'yottalight Year',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -839,7 +839,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Yottameter',
+    'yottameter',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -849,7 +849,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.yottaMeter,
   ),
   Unit(
-    'Yottaparsec',
+    'yottaparsec',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -859,7 +859,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.yottaParsec,
   ),
   Unit(
-    'Zeptolight Year',
+    'zeptolight Year',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -870,7 +870,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Zeptometer',
+    'zeptometer',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -880,7 +880,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.zeptoMeter,
   ),
   Unit(
-    'Zeptoparsec',
+    'zeptoparsec',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -890,7 +890,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.zeptopPrsec,
   ),
   Unit(
-    'Zettalight Year',
+    'zettalight Year',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -901,7 +901,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'Zettameter',
+    'zettameter',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -911,7 +911,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.zettaMeter,
   ),
   Unit(
-    'Zettaparsec',
+    'zettaparsec',
     createSymbol(
       const [
         SymbolParts.zetta,

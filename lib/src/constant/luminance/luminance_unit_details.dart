@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> luminanceUnitDetails = {
   Unit(
-    'Candela per square attometer',
+    'candela per square attometer',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -18,7 +18,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareAttoMeter,
   ),
   Unit(
-    'Candela per square centimeter',
+    'candela per square centimeter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -31,7 +31,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareCentiMeter,
   ),
   Unit(
-    'Candela per square decameter',
+    'candela per square decameter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -44,7 +44,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareDecaMeter,
   ),
   Unit(
-    'Candela per square decimeter',
+    'candela per square decimeter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -57,7 +57,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareDeciMeter,
   ),
   Unit(
-    'Candela per square exameter',
+    'candela per square exameter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -70,7 +70,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareExaMeter,
   ),
   Unit(
-    'Candela per square femtometer',
+    'candela per square femtometer',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -83,7 +83,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareFemtoMeter,
   ),
   Unit(
-    'Candela per square foot',
+    'candela per square foot',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -95,7 +95,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareFoot,
   ),
   Unit(
-    'Candela per square gigameter',
+    'candela per square gigameter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -108,7 +108,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareGigaMeter,
   ),
   Unit(
-    'Candela per square hectometer',
+    'candela per square hectometer',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -121,7 +121,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareHectoMeter,
   ),
   Unit(
-    'Candela per square inch',
+    'candela per square inch',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -133,7 +133,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareInch,
   ),
   Unit(
-    'Candela per square kilometer',
+    'candela per square kilometer',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -146,7 +146,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareKiloMeter,
   ),
   Unit(
-    'Candela per square megameter',
+    'candela per square megameter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -159,7 +159,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareMegaMeter,
   ),
   Unit(
-    'Candela per square meter',
+    'candela per square meter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -171,7 +171,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareMeter,
   ),
   Unit(
-    'Candela per square micrometer',
+    'candela per square micrometer',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -184,7 +184,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareMicroMeter,
   ),
   Unit(
-    'Candela per square millimeter',
+    'candela per square millimeter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -197,7 +197,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareMilliMeter,
   ),
   Unit(
-    'Candela per square nanometer',
+    'candela per square nanometer',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -210,7 +210,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareNanoMeter,
   ),
   Unit(
-    'Candela per square petameter',
+    'candela per square petameter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -223,7 +223,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquarePetaMeter,
   ),
   Unit(
-    'Candela per square picometer',
+    'candela per square picometer',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -236,7 +236,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquarePicoMeter,
   ),
   Unit(
-    'Candela per square terameter',
+    'candela per square terameter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -249,7 +249,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareTeraMeter,
   ),
   Unit(
-    'Candela per square yoctometer',
+    'candela per square yoctometer',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -262,7 +262,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareYoctoMeter,
   ),
   Unit(
-    'Candela per square yottameter',
+    'candela per square yottameter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -275,7 +275,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareYottaMeter,
   ),
   Unit(
-    'Candela per square zeptometer',
+    'candela per square zeptometer',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -288,7 +288,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareZeptoMeter,
   ),
   Unit(
-    'Candela per square zettameter',
+    'candela per square zettameter',
     createSymbol(
       const [
         SymbolParts.candela,
@@ -301,7 +301,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareZettaMeter,
   ),
   Unit(
-    'Foot-lambert',
+    'foot-lambert',
     createSymbol(
       const [
         SymbolParts.force,
@@ -311,7 +311,7 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.footLambert,
   ),
   Unit(
-    'Stilb',
+    'stilb',
     createSymbol(
       const [
         SymbolParts.stilb,

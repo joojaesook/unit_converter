@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> inductanceUnitDetails = {
   Unit(
-    'Abhenry',
+    'abhenry',
     createSymbol(
       const [
         SymbolParts.ab,
@@ -15,7 +15,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.abHenry,
   ),
   Unit(
-    'Attohenry',
+    'attohenry',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -25,7 +25,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.attoHenry,
   ),
   Unit(
-    'Centihenry',
+    'centihenry',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -35,7 +35,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.centiHenry,
   ),
   Unit(
-    'Decahenry',
+    'decahenry',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -45,7 +45,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.decaHenry,
   ),
   Unit(
-    'Decihenry',
+    'decihenry',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -55,7 +55,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.deciHenry,
   ),
   Unit(
-    'Exahenry',
+    'exahenry',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -65,7 +65,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.exaHenry,
   ),
   Unit(
-    'Femtohenry',
+    'femtohenry',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -75,7 +75,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.femtoHenry,
   ),
   Unit(
-    'Gigahenry',
+    'gigahenry',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -85,7 +85,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.gigaHenry,
   ),
   Unit(
-    'Hectohenry',
+    'hectohenry',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -95,7 +95,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.hectoHenry,
   ),
   Unit(
-    'Henry',
+    'henry',
     createSymbol(
       const [
         SymbolParts.henry,
@@ -104,7 +104,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.henry,
   ),
   Unit(
-    'Kilohenry',
+    'kilohenry',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -114,7 +114,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.kiloHenry,
   ),
   Unit(
-    'Megahenry',
+    'megahenry',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -124,7 +124,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.megaHenry,
   ),
   Unit(
-    'Microhenry',
+    'microhenry',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -134,7 +134,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.microHenry,
   ),
   Unit(
-    'Millihenry',
+    'millihenry',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -144,7 +144,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.milliHenry,
   ),
   Unit(
-    'Nanohenry',
+    'nanohenry',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -154,7 +154,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.nanoHenry,
   ),
   Unit(
-    'Petahenry',
+    'petahenry',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -164,7 +164,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.petaHenry,
   ),
   Unit(
-    'Picohenry',
+    'picohenry',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -174,7 +174,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.picoHenry,
   ),
   Unit(
-    'Terahenry',
+    'terahenry',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -184,7 +184,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.teraHenry,
   ),
   Unit(
-    'Yoctohenry',
+    'yoctohenry',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -194,7 +194,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.yoctoHenry,
   ),
   Unit(
-    'Yottahenry',
+    'yottahenry',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -204,7 +204,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.yottaHenry,
   ),
   Unit(
-    'Zeptohenry',
+    'zeptohenry',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -214,7 +214,7 @@ final Set<Unit> inductanceUnitDetails = {
     InductanceUnits.zeptoHenry,
   ),
   Unit(
-    'Zettahenry',
+    'zettahenry',
     createSymbol(
       const [
         SymbolParts.zetta,

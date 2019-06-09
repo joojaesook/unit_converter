@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> electricResistanceUnitDetails = {
   Unit(
-    'Abohm',
+    'abohm',
     createSymbol(
       const [
         SymbolParts.ab,
@@ -15,7 +15,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.abOhm,
   ),
   Unit(
-    'Attoohm',
+    'attoohm',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -25,7 +25,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.attoOhm,
   ),
   Unit(
-    'Centiohm',
+    'centiohm',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -35,7 +35,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.centiOhm,
   ),
   Unit(
-    'Decaohm',
+    'decaohm',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -45,7 +45,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.decaOhm,
   ),
   Unit(
-    'Deciohm',
+    'deciohm',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -55,7 +55,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.deciOhm,
   ),
   Unit(
-    'Exaohm',
+    'exaohm',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -65,7 +65,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.exaOhm,
   ),
   Unit(
-    'Femtoohm',
+    'femtoohm',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -75,7 +75,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.femtoOhm,
   ),
   Unit(
-    'Gigaohm',
+    'gigaohm',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -85,7 +85,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.gigaOhm,
   ),
   Unit(
-    'Hectoohm',
+    'hectoohm',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -95,7 +95,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.hectoOhm,
   ),
   Unit(
-    'Kiloohm',
+    'kiloohm',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -105,7 +105,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.kiloOhm,
   ),
   Unit(
-    'Megaohm',
+    'megaohm',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -115,7 +115,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.megaOhm,
   ),
   Unit(
-    'Microohm',
+    'microohm',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -125,7 +125,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.microOhm,
   ),
   Unit(
-    'Milliohm',
+    'milliohm',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -135,7 +135,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.milliOhm,
   ),
   Unit(
-    'Nanoohm',
+    'nanoohm',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -145,7 +145,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.nanoOhm,
   ),
   Unit(
-    'Ohm',
+    'ohm',
     createSymbol(
       const [
         SymbolParts.ohm,
@@ -154,7 +154,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.ohm,
   ),
   Unit(
-    'Petaohm',
+    'petaohm',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -164,7 +164,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.petaOhm,
   ),
   Unit(
-    'Picoohm',
+    'picoohm',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -174,7 +174,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.picoOhm,
   ),
   Unit(
-    'Teraohm',
+    'teraohm',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -184,7 +184,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.teraOhm,
   ),
   Unit(
-    'Yoctoohm',
+    'yoctoohm',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -194,7 +194,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.yoctoOhm,
   ),
   Unit(
-    'Yottaohm',
+    'yottaohm',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -204,7 +204,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.yottaOhm,
   ),
   Unit(
-    'Zeptoohm',
+    'zeptoohm',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -214,7 +214,7 @@ final Set<Unit> electricResistanceUnitDetails = {
     ElectricResistanceUnits.zeptoOhm,
   ),
   Unit(
-    'Zettaohm',
+    'zettaohm',
     createSymbol(
       const [
         SymbolParts.zetta,

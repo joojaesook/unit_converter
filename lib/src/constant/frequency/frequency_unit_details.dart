@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> frequencyUnitDetails = {
   Unit(
-    'Attohertz',
+    'attohertz',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -15,7 +15,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.attoHertz,
   ),
   Unit(
-    'Centihertz',
+    'centihertz',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -25,7 +25,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.centiHertz,
   ),
   Unit(
-    'Decahertz',
+    'decahertz',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -35,7 +35,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.decaHertz,
   ),
   Unit(
-    'Decihertz',
+    'decihertz',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -45,7 +45,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.deciHertz,
   ),
   Unit(
-    'Degree per hour',
+    'degree per hour',
     createSymbol(
       const [
         SymbolParts.superscriptZero,
@@ -56,7 +56,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.degreePerHour,
   ),
   Unit(
-    'Degree per minute',
+    'degree per minute',
     createSymbol(
       const [
         SymbolParts.superscriptZero,
@@ -67,7 +67,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.degreePerMinute,
   ),
   Unit(
-    'Degree per second',
+    'degree per second',
     createSymbol(
       const [
         SymbolParts.superscriptZero,
@@ -78,7 +78,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.degreePerSecond,
   ),
   Unit(
-    'Exahertz',
+    'exahertz',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -88,7 +88,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.exaHertz,
   ),
   Unit(
-    'Femtohertz',
+    'femtohertz',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -98,7 +98,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.femtoHertz,
   ),
   Unit(
-    'Gigahertz',
+    'gigahertz',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -108,7 +108,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.gigaHertz,
   ),
   Unit(
-    'Hectohertz',
+    'hectohertz',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -118,7 +118,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.hectoHertz,
   ),
   Unit(
-    'Hertz',
+    'hertz',
     createSymbol(
       const [
         SymbolParts.hertz,
@@ -127,7 +127,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.hertz,
   ),
   Unit(
-    'Kilohertz',
+    'kilohertz',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -137,7 +137,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.kiloHertz,
   ),
   Unit(
-    'Megahertz',
+    'megahertz',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -147,7 +147,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.megaHertz,
   ),
   Unit(
-    'Microhertz',
+    'microhertz',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -157,7 +157,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.microHertz,
   ),
   Unit(
-    'Millihertz',
+    'millihertz',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -167,7 +167,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.milliHertz,
   ),
   Unit(
-    'Nanohertz',
+    'nanohertz',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -177,7 +177,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.nanoHertz,
   ),
   Unit(
-    'Petahertz',
+    'petahertz',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -187,7 +187,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.petaHertz,
   ),
   Unit(
-    'Picohertz',
+    'picohertz',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -197,7 +197,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.picoHertz,
   ),
   Unit(
-    'Radian per hour',
+    'radian per hour',
     createSymbol(
       const [
         SymbolParts.radian,
@@ -208,7 +208,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.radianPerHour,
   ),
   Unit(
-    'Radian per minute',
+    'radian per minute',
     createSymbol(
       const [
         SymbolParts.radian,
@@ -219,7 +219,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.radianPerMinute,
   ),
   Unit(
-    'Radian per second',
+    'radian per second',
     createSymbol(
       const [
         SymbolParts.radian,
@@ -230,7 +230,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.radianPerSecond,
   ),
   Unit(
-    'Revolution per hour',
+    'revolution per hour',
     createSymbol(
       const [
         SymbolParts.revolution,
@@ -241,7 +241,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.revolutionPerHour,
   ),
   Unit(
-    'Revolution per minute',
+    'revolution per minute',
     createSymbol(
       const [
         SymbolParts.revolution,
@@ -252,7 +252,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.revolutionPerMinute,
   ),
   Unit(
-    'Revolution per second',
+    'revolution per second',
     createSymbol(
       const [
         SymbolParts.revolution,
@@ -263,7 +263,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.revolutionPerSecond,
   ),
   Unit(
-    'Terahertz',
+    'terahertz',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -273,7 +273,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.teraHertz,
   ),
   Unit(
-    'Yoctohertz',
+    'yoctohertz',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -283,7 +283,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.yoctoHertz,
   ),
   Unit(
-    'Yottahertz',
+    'yottahertz',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -293,7 +293,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.yottaHertz,
   ),
   Unit(
-    'Zeptohertz',
+    'zeptohertz',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -303,7 +303,7 @@ final Set<Unit> frequencyUnitDetails = {
     FrequencyUnits.zeptoHertz,
   ),
   Unit(
-    'Zettahertz',
+    'zettahertz',
     createSymbol(
       const [
         SymbolParts.zetta,

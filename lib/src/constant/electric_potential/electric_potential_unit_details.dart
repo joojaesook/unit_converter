@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> electricPotentialUnitDetails = {
   Unit(
-    'Abvolt',
+    'abvolt',
     createSymbol(
       const [
         SymbolParts.ab,
@@ -15,7 +15,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.abVolt,
   ),
   Unit(
-    'Attovolt',
+    'attovolt',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -25,7 +25,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.attoVolt,
   ),
   Unit(
-    'Centivolt',
+    'centivolt',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -35,7 +35,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.centiVolt,
   ),
   Unit(
-    'Decavolt',
+    'decavolt',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -45,7 +45,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.decaVolt,
   ),
   Unit(
-    'Decivolt',
+    'decivolt',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -55,7 +55,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.deciVolt,
   ),
   Unit(
-    'Exavolt',
+    'exavolt',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -65,7 +65,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.exaVolt,
   ),
   Unit(
-    'Femtovolt',
+    'femtovolt',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -75,7 +75,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.femtoVolt,
   ),
   Unit(
-    'Gigavolt',
+    'gigavolt',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -85,7 +85,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.gigaVolt,
   ),
   Unit(
-    'Hectovolt',
+    'hectovolt',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -95,7 +95,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.hectoVolt,
   ),
   Unit(
-    'Kilovolt',
+    'kilovolt',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -105,7 +105,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.kiloVolt,
   ),
   Unit(
-    'Megavolt',
+    'megavolt',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -115,7 +115,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.megaVolt,
   ),
   Unit(
-    'Microvolt',
+    'microvolt',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -125,7 +125,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.microVolt,
   ),
   Unit(
-    'Millivolt',
+    'millivolt',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -135,7 +135,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.milliVolt,
   ),
   Unit(
-    'Nanovolt',
+    'nanovolt',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -145,7 +145,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.nanoVolt,
   ),
   Unit(
-    'Petavolt',
+    'petavolt',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -155,7 +155,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.petaVolt,
   ),
   Unit(
-    'Picovolt',
+    'picovolt',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -165,7 +165,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.picoVolt,
   ),
   Unit(
-    'Statvolt',
+    'statvolt',
     createSymbol(
       const [
         SymbolParts.stat,
@@ -175,7 +175,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.statVolt,
   ),
   Unit(
-    'Teravolt',
+    'teravolt',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -194,7 +194,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.volt,
   ),
   Unit(
-    'Yoctovolt',
+    'yoctovolt',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -204,7 +204,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.yoctoVolt,
   ),
   Unit(
-    'Yottavolt',
+    'yottavolt',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -214,7 +214,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.yottaVolt,
   ),
   Unit(
-    'Zeptovolt',
+    'zeptovolt',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -224,7 +224,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ElectricPotentialUnits.zeptoVolt,
   ),
   Unit(
-    'Zettavolt',
+    'zettavolt',
     createSymbol(
       const [
         SymbolParts.zetta,

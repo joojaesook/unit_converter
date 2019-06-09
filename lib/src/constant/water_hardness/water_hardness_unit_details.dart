@@ -7,7 +7,7 @@ import '../others/system_value.dart';
 
 final Set<Unit> waterHardnessUnitDetails = {
   Unit(
-    'Clark degree',
+    'clark degree',
     createSymbol(
       const [
         SymbolParts.superscriptZero,
@@ -17,7 +17,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     WaterHardnessUnits.clarkDegree,
   ),
   Unit(
-    'Degree of general hardness',
+    'degree of general hardness',
     createSymbol(
       const [
         SymbolParts.lD,
@@ -28,7 +28,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     WaterHardnessUnits.degreeOfGeneralHardness,
   ),
   Unit(
-    'English degree',
+    'english degree',
     createSymbol(
       const [
         SymbolParts.superscriptZero,
@@ -38,7 +38,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     WaterHardnessUnits.englishDegree,
   ),
   Unit(
-    'French degree',
+    'french degree',
     createSymbol(
       const [
         SymbolParts.superscriptZero,
@@ -49,7 +49,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     WaterHardnessUnits.frenchDegree,
   ),
   Unit(
-    'German degree',
+    'german degree',
     createSymbol(
       const [
         SymbolParts.superscriptZero,
@@ -60,7 +60,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     WaterHardnessUnits.germanDegree,
   ),
   Unit(
-    'Grain per gallon',
+    'grain per gallon',
     createSymbol(
       const [
         SymbolParts.lG,
@@ -71,7 +71,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     WaterHardnessUnits.grainPerGallon,
   ),
   Unit(
-    'Milliequivalent per litre',
+    'milliequivalent per litre',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -84,7 +84,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     WaterHardnessUnits.milliEquivalentPerLitre,
   ),
   Unit(
-    'Milligram per litre',
+    'milligram per litre',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -97,7 +97,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     system: systemValue[System.ca2],
   ),
   Unit(
-    'Milligram per litre',
+    'milligram per litre',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -110,7 +110,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     system: systemValue[System.caCO3],
   ),
   Unit(
-    'Milligram per litre',
+    'milligram per litre',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -123,7 +123,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     system: systemValue[System.caO],
   ),
   Unit(
-    'Milligram per litre',
+    'milligram per litre',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -136,7 +136,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     system: systemValue[System.mg2],
   ),
   Unit(
-    'Millimole per litre',
+    'millimole per litre',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -149,7 +149,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     system: systemValue[System.caCO3],
   ),
   Unit(
-    'Part per million',
+    'part per million',
     createSymbol(
       const [
         SymbolParts.lP,

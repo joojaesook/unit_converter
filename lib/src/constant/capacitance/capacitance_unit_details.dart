@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> capacitanceUnitDetails = {
   Unit(
-    'Abfarad',
+    'abfarad',
     createSymbol(
       const [
         SymbolParts.ab,
@@ -15,7 +15,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.abFarad,
   ),
   Unit(
-    'Attofarad',
+    'attofarad',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -25,7 +25,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.attoFarad,
   ),
   Unit(
-    'Centifarad',
+    'centifarad',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -35,7 +35,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.centiFarad,
   ),
   Unit(
-    'Decafarad',
+    'decafarad',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -45,7 +45,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.decaFarad,
   ),
   Unit(
-    'Decifarad',
+    'decifarad',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -55,7 +55,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.deciFarad,
   ),
   Unit(
-    'Exafarad',
+    'exafarad',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -65,7 +65,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.exaFarad,
   ),
   Unit(
-    'Farad',
+    'farad',
     createSymbol(
       const [
         SymbolParts.farad,
@@ -74,7 +74,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.farad,
   ),
   Unit(
-    'Femtofarad',
+    'femtofarad',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -84,7 +84,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.femtoFarad,
   ),
   Unit(
-    'Gigafarad',
+    'gigafarad',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -94,7 +94,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.gigFarad,
   ),
   Unit(
-    'Hectofarad',
+    'hectofarad',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -104,7 +104,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.hectoFarad,
   ),
   Unit(
-    'Kilofarad',
+    'kilofarad',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -114,7 +114,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.kiloFarad,
   ),
   Unit(
-    'Megafarad',
+    'megafarad',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -124,7 +124,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.megaFarad,
   ),
   Unit(
-    'Microfarad',
+    'microfarad',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -134,7 +134,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.microFarad,
   ),
   Unit(
-    'Millifarad',
+    'millifarad',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -144,7 +144,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.milliFarad,
   ),
   Unit(
-    'Nanofarad',
+    'nanofarad',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -154,7 +154,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.nanoFarad,
   ),
   Unit(
-    'Petafarad',
+    'petafarad',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -164,7 +164,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.petaFarad,
   ),
   Unit(
-    'Picofarad',
+    'picofarad',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -174,7 +174,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.picoFarad,
   ),
   Unit(
-    'Terafarad',
+    'terafarad',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -184,7 +184,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.teraFarad,
   ),
   Unit(
-    'Yoctofarad',
+    'yoctofarad',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -194,7 +194,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.yoctoFarad,
   ),
   Unit(
-    'Yottafarad',
+    'yottafarad',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -204,7 +204,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.yottaFarad,
   ),
   Unit(
-    'Zeptofarad',
+    'zeptofarad',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -214,7 +214,7 @@ final Set<Unit> capacitanceUnitDetails = {
     CapacitanceUnits.zeptoFarad,
   ),
   Unit(
-    'Zettafarad',
+    'zettafarad',
     createSymbol(
       const [
         SymbolParts.zetta,

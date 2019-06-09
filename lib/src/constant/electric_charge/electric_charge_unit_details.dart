@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> electricChargeUnitDetails = {
   Unit(
-    'Abcoulomb',
+    'abcoulomb',
     createSymbol(
       const [
         SymbolParts.ab,
@@ -15,7 +15,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.abCoulomb,
   ),
   Unit(
-    'Ampere-hour',
+    'ampere-hour',
     createSymbol(
       const [
         SymbolParts.ampere,
@@ -25,7 +25,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.ampereHour,
   ),
   Unit(
-    'Ampere-second',
+    'ampere-second',
     createSymbol(
       const [
         SymbolParts.ampere,
@@ -35,7 +35,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.ampereSecond,
   ),
   Unit(
-    'Attompere-hour',
+    'attompere-hour',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -46,7 +46,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.attoAmpereHour,
   ),
   Unit(
-    'Attompere-second',
+    'attompere-second',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -57,7 +57,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.attoAmpereSecond,
   ),
   Unit(
-    'Attocoulomb',
+    'attocoulomb',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -67,7 +67,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.attoCoulomb,
   ),
   Unit(
-    'Centimpere-hour',
+    'centimpere-hour',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -78,7 +78,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.centiAmpereHour,
   ),
   Unit(
-    'Centimpere-second',
+    'centimpere-second',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -89,7 +89,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.centiAmpereSecond,
   ),
   Unit(
-    'Centicoulomb',
+    'centicoulomb',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -99,7 +99,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.centiCoulomb,
   ),
   Unit(
-    'Coulomb',
+    'coulomb',
     createSymbol(
       const [
         SymbolParts.coulomb,
@@ -108,7 +108,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.coulomb,
   ),
   Unit(
-    'Decampere-hour',
+    'decampere-hour',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -119,7 +119,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.decaAmpereHour,
   ),
   Unit(
-    'Decampere-second',
+    'decampere-second',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -130,7 +130,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.decaAmpereSecond,
   ),
   Unit(
-    'Decacoulomb',
+    'decacoulomb',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -140,7 +140,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.decaCoulomb,
   ),
   Unit(
-    'Decimpere-hour',
+    'decimpere-hour',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -151,7 +151,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.deciAmpereHour,
   ),
   Unit(
-    'Decimpere-second',
+    'decimpere-second',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -162,7 +162,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.deciAmpereSecond,
   ),
   Unit(
-    'Decicoulomb',
+    'decicoulomb',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -172,7 +172,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.deciCoulomb,
   ),
   Unit(
-    'Exampere-hour',
+    'exampere-hour',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -183,7 +183,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.exaAmpereHour,
   ),
   Unit(
-    'Exampere-second',
+    'exampere-second',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -194,7 +194,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.exaAmpereSecond,
   ),
   Unit(
-    'Exacoulomb',
+    'exacoulomb',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -204,7 +204,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.exaCoulomb,
   ),
   Unit(
-    'Femtompere-hour',
+    'femtompere-hour',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -215,7 +215,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.femtoAmpereHour,
   ),
   Unit(
-    'Femtompere-second',
+    'femtompere-second',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -226,7 +226,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.femtoAmpereSecond,
   ),
   Unit(
-    'Femtocoulomb',
+    'femtocoulomb',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -236,7 +236,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.femtoCoulomb,
   ),
   Unit(
-    'Gigampere-hour',
+    'gigampere-hour',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -247,7 +247,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.gigaAmpereHour,
   ),
   Unit(
-    'Gigampere-second',
+    'gigampere-second',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -258,7 +258,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.gigaAmpereSecond,
   ),
   Unit(
-    'Gigacoulomb',
+    'gigacoulomb',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -268,7 +268,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.gigaCoulomb,
   ),
   Unit(
-    'Hectompere-hour',
+    'hectompere-hour',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -279,7 +279,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.hectoAmpereHour,
   ),
   Unit(
-    'Hectompere-second',
+    'hectompere-second',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -290,7 +290,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.hectoAmpereSecond,
   ),
   Unit(
-    'Hectocoulomb',
+    'hectocoulomb',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -300,7 +300,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.hectoCoulomb,
   ),
   Unit(
-    'Kilompere-hour',
+    'kilompere-hour',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -311,7 +311,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.kiloAmpereHour,
   ),
   Unit(
-    'Kilompere-second',
+    'kilompere-second',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -322,7 +322,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.kiloAmpereSecond,
   ),
   Unit(
-    'Kilocoulomb',
+    'kilocoulomb',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -332,7 +332,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.kiloCoulomb,
   ),
   Unit(
-    'Megampere-hour',
+    'megampere-hour',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -343,7 +343,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.megaAmpereHour,
   ),
   Unit(
-    'Megampere-second',
+    'megampere-second',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -354,7 +354,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.megaAmpereSecond,
   ),
   Unit(
-    'Megacoulomb',
+    'megacoulomb',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -364,7 +364,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.megaCoulomb,
   ),
   Unit(
-    'Micrompere-hour',
+    'micrompere-hour',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -375,7 +375,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.microAmpereHour,
   ),
   Unit(
-    'Micrompere-second',
+    'micrompere-second',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -386,7 +386,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.microAmpereSecond,
   ),
   Unit(
-    'Microcoulomb',
+    'microcoulomb',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -396,7 +396,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.microCoulomb,
   ),
   Unit(
-    'Millimpere-hour',
+    'millimpere-hour',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -407,7 +407,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.milliAmpereHour,
   ),
   Unit(
-    'Millimpere-second',
+    'millimpere-second',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -418,7 +418,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.milliAmpereSecond,
   ),
   Unit(
-    'Millicoulomb',
+    'millicoulomb',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -428,7 +428,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.milliCoulomb,
   ),
   Unit(
-    'Nanompere-hour',
+    'nanompere-hour',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -439,7 +439,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.nanoAmpereHour,
   ),
   Unit(
-    'Nanompere-second',
+    'nanompere-second',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -450,7 +450,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.nanoAmpereSecond,
   ),
   Unit(
-    'Nanocoulomb',
+    'nanocoulomb',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -460,7 +460,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.nanoCoulomb,
   ),
   Unit(
-    'Petampere-hour',
+    'petampere-hour',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -471,7 +471,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.petaAmpereHour,
   ),
   Unit(
-    'Petampere-second',
+    'petampere-second',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -482,7 +482,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.petaAmpereSecond,
   ),
   Unit(
-    'Petacoulomb',
+    'petacoulomb',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -492,7 +492,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.petaCoulomb,
   ),
   Unit(
-    'Picompere-hour',
+    'picompere-hour',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -503,7 +503,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.picoAmpereHour,
   ),
   Unit(
-    'Picompere-second',
+    'picompere-second',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -514,7 +514,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.picoAmpereSecond,
   ),
   Unit(
-    'Picocoulomb',
+    'picocoulomb',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -524,7 +524,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.picoCoulomb,
   ),
   Unit(
-    'Terampere-hour',
+    'terampere-hour',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -535,7 +535,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.teraAmpereHour,
   ),
   Unit(
-    'Terampere-second',
+    'terampere-second',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -546,7 +546,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.teraAmpereSecond,
   ),
   Unit(
-    'Teracoulomb',
+    'teracoulomb',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -556,7 +556,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.teraCoulomb,
   ),
   Unit(
-    'Yoctompere-hour',
+    'yoctompere-hour',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -567,7 +567,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.yoctoAmpereHour,
   ),
   Unit(
-    'Yoctompere-second',
+    'yoctompere-second',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -578,7 +578,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.yoctoAmpereSecond,
   ),
   Unit(
-    'Yoctocoulomb',
+    'yoctocoulomb',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -588,7 +588,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.yoctoCoulomb,
   ),
   Unit(
-    'Yottampere-hour',
+    'yottampere-hour',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -599,7 +599,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.yottaAmpereHour,
   ),
   Unit(
-    'Yottampere-second',
+    'yottampere-second',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -610,7 +610,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.yottaAmpereSecond,
   ),
   Unit(
-    'Yottacoulomb',
+    'yottacoulomb',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -620,7 +620,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.yottaCoulomb,
   ),
   Unit(
-    'Zeptompere-hour',
+    'zeptompere-hour',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -631,7 +631,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.zeptoAmpereHour,
   ),
   Unit(
-    'Zeptompere-second',
+    'zeptompere-second',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -642,7 +642,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.zeptoAmpereSecond,
   ),
   Unit(
-    'Zeptocoulomb',
+    'zeptocoulomb',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -652,7 +652,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.zeptoCoulomb,
   ),
   Unit(
-    'Zettampere-hour',
+    'zettampere-hour',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -663,7 +663,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.zettaAmpereHour,
   ),
   Unit(
-    'Zettampere-second',
+    'zettampere-second',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -674,7 +674,7 @@ final Set<Unit> electricChargeUnitDetails = {
     ElectricChargeUnits.zettaAmpereSecond,
   ),
   Unit(
-    'Zettacoulomb',
+    'zettacoulomb',
     createSymbol(
       const [
         SymbolParts.zetta,

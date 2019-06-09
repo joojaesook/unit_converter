@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 final Set<Unit> torqueUnitDetails = {
   Unit(
-    'Attonewton meter',
+    'attonewton meter',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -17,7 +17,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.attoNewtonMeter,
   ),
   Unit(
-    'Centinewton meter',
+    'centinewton meter',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -29,7 +29,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.centiNewtonMeter,
   ),
   Unit(
-    'Decanewton meter',
+    'decanewton meter',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -41,7 +41,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.decaNewtonMeter,
   ),
   Unit(
-    'Decinewton meter',
+    'decinewton meter',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -53,7 +53,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.deciNewtonMeter,
   ),
   Unit(
-    'Exanewton meter',
+    'exanewton meter',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -65,7 +65,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.exaNewtonMeter,
   ),
   Unit(
-    'Femtonewton meter',
+    'femtonewton meter',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -77,7 +77,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.femtoNewtonMeter,
   ),
   Unit(
-    'Giganewton meter',
+    'giganewton meter',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -89,7 +89,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.gigaNewtonMeter,
   ),
   Unit(
-    'Gram-force centimeter',
+    'gram-force centimeter',
     createSymbol(
       const [
         SymbolParts.gram,
@@ -102,7 +102,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.gramForceCentiMeter,
   ),
   Unit(
-    'Hectonewton meter',
+    'hectonewton meter',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -114,7 +114,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.hectoNewtonMeter,
   ),
   Unit(
-    'Kilogram-force centimeter',
+    'kilogram-force centimeter',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -128,7 +128,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.kiloGramForceCentiMeter,
   ),
   Unit(
-    'Kilogram-force meter',
+    'kilogram-force meter',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -141,7 +141,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.kiloGramForceMeter,
   ),
   Unit(
-    'Kilonewton meter',
+    'kilonewton meter',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -153,7 +153,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.kiloNewtonMeter,
   ),
   Unit(
-    'Meganewton meter',
+    'meganewton meter',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -165,7 +165,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.megaNewtonMeter,
   ),
   Unit(
-    'Micronewton meter',
+    'micronewton meter',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -177,7 +177,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.microNewtonMeter,
   ),
   Unit(
-    'Millinewton meter',
+    'millinewton meter',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -189,7 +189,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.milliNewtonMeter,
   ),
   Unit(
-    'Nanonewton meter',
+    'nanonewton meter',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -201,7 +201,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.nanoNewtonMeter,
   ),
   Unit(
-    'Newton meter',
+    'newton meter',
     createSymbol(
       const [
         SymbolParts.newton,
@@ -212,7 +212,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.newtonMeter,
   ),
   Unit(
-    'Ounce-force foot',
+    'ounce-force foot',
     createSymbol(
       const [
         SymbolParts.ounce,
@@ -224,7 +224,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.ounceForceFoot,
   ),
   Unit(
-    'Ounce-force inch',
+    'ounce-force inch',
     createSymbol(
       const [
         SymbolParts.ounce,
@@ -236,7 +236,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.ounceForceInch,
   ),
   Unit(
-    'Petanewton meter',
+    'petanewton meter',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -248,7 +248,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.petaNewtonMeter,
   ),
   Unit(
-    'Piconewton meter',
+    'piconewton meter',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -260,7 +260,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.picoNewtonMeter,
   ),
   Unit(
-    'Pound-force foot',
+    'pound-force foot',
     createSymbol(
       const [
         SymbolParts.pound,
@@ -272,7 +272,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.poundForceFoot,
   ),
   Unit(
-    'Pound-force inch',
+    'pound-force inch',
     createSymbol(
       const [
         SymbolParts.pound,
@@ -284,7 +284,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.poundForceInch,
   ),
   Unit(
-    'Poundal foot',
+    'poundal foot',
     createSymbol(
       const [
         SymbolParts.poundal,
@@ -295,7 +295,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.poundalFoot,
   ),
   Unit(
-    'Teranewton meter',
+    'teranewton meter',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -307,7 +307,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.teraNewtonMeter,
   ),
   Unit(
-    'Yoctonewton meter',
+    'yoctonewton meter',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -319,7 +319,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.yoctoNewtonMeter,
   ),
   Unit(
-    'Yottanewton meter',
+    'yottanewton meter',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -331,7 +331,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.yottaNewtonMeter,
   ),
   Unit(
-    'Zeptonewton meter',
+    'zeptonewton meter',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -343,7 +343,7 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.zeptoNewtonMeter,
   ),
   Unit(
-    'Zettanewton meter',
+    'zettanewton meter',
     createSymbol(
       const [
         SymbolParts.zetta,

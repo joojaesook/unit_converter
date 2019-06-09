@@ -5,7 +5,7 @@ import '../../model/unit.dart';
 
 Set<Unit> kinematicViscocityUnitDetails = {
   Unit(
-    'Attostokes',
+    'attostokes',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -15,7 +15,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.attoStokes,
   ),
   Unit(
-    'Centistokes',
+    'centistokes',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -25,7 +25,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.centiStokes,
   ),
   Unit(
-    'Decastokes',
+    'decastokes',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -35,7 +35,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.decaStokes,
   ),
   Unit(
-    'Decistokes',
+    'decistokes',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -45,7 +45,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.deciStokes,
   ),
   Unit(
-    'Exastokes',
+    'exastokes',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -55,7 +55,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.exaStokes,
   ),
   Unit(
-    'Femtostokes',
+    'femtostokes',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -65,7 +65,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.femtoStokes,
   ),
   Unit(
-    'Gigastokes',
+    'gigastokes',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -75,7 +75,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.gigaStokes,
   ),
   Unit(
-    'Hectostokes',
+    'hectostokes',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -85,7 +85,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.hectoStokes,
   ),
   Unit(
-    'Kilostokes',
+    'kilostokes',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -95,7 +95,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.kiloStokes,
   ),
   Unit(
-    'Megastokes',
+    'megastokes',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -105,7 +105,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.megaStokes,
   ),
   Unit(
-    'Microstokes',
+    'microstokes',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -115,7 +115,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.microStokes,
   ),
   Unit(
-    'Millistokes',
+    'millistokes',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -125,7 +125,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.milliStokes,
   ),
   Unit(
-    'Nanostokes',
+    'nanostokes',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -135,7 +135,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.nanoStokes,
   ),
   Unit(
-    'Petastokes',
+    'petastokes',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -145,7 +145,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.petaStokes,
   ),
   Unit(
-    'Picostokes',
+    'picostokes',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -155,7 +155,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.picoStokes,
   ),
   Unit(
-    'Square attometer per day',
+    'square attometer per day',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -168,7 +168,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareAttoMeterPerDay,
   ),
   Unit(
-    'Square attometer per hour',
+    'square attometer per hour',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -181,7 +181,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareAttoMeterPerHour,
   ),
   Unit(
-    'Square attometer per minute',
+    'square attometer per minute',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -194,7 +194,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareAttoMeterPerMinute,
   ),
   Unit(
-    'Square attometer per second',
+    'square attometer per second',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -207,7 +207,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareAttoMeterPerSecond,
   ),
   Unit(
-    'Square centimeter per day',
+    'square centimeter per day',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -220,7 +220,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareCentiMeterPerDay,
   ),
   Unit(
-    'Square centimeter per hour',
+    'square centimeter per hour',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -233,7 +233,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareCentiMeterPerHour,
   ),
   Unit(
-    'Square centimeter per minute',
+    'square centimeter per minute',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -246,7 +246,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareCentiMeterPerMinute,
   ),
   Unit(
-    'Square centimeter per second',
+    'square centimeter per second',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -259,7 +259,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareCentiMeterPerSecond,
   ),
   Unit(
-    'Square decameter per day',
+    'square decameter per day',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -272,7 +272,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareDecaMeterPerDay,
   ),
   Unit(
-    'Square decameter per hour',
+    'square decameter per hour',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -285,7 +285,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareDecaMeterPerHour,
   ),
   Unit(
-    'Square decameter per minute',
+    'square decameter per minute',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -298,7 +298,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareDecaMeterPerMinute,
   ),
   Unit(
-    'Square decameter per second',
+    'square decameter per second',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -311,7 +311,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareDecaMeterPerSecond,
   ),
   Unit(
-    'Square decimeter per day',
+    'square decimeter per day',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -324,7 +324,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareDeciMeterPerDay,
   ),
   Unit(
-    'Square decimeter per hour',
+    'square decimeter per hour',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -337,7 +337,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareDeciMeterPerHour,
   ),
   Unit(
-    'Square decimeter per minute',
+    'square decimeter per minute',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -350,7 +350,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareDeciMeterPerMinute,
   ),
   Unit(
-    'Square decimeter per second',
+    'square decimeter per second',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -363,7 +363,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareDeciMeterPerSecond,
   ),
   Unit(
-    'Square exameter per day',
+    'square exameter per day',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -376,7 +376,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareExaMeterPerDay,
   ),
   Unit(
-    'Square exameter per hour',
+    'square exameter per hour',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -389,7 +389,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareExaMeterPerHour,
   ),
   Unit(
-    'Square exameter per minute',
+    'square exameter per minute',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -402,7 +402,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareExaMeterPerMinute,
   ),
   Unit(
-    'Square exameter per second',
+    'square exameter per second',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -415,7 +415,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareExaMeterPerSecond,
   ),
   Unit(
-    'Square femtometer per day',
+    'square femtometer per day',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -428,7 +428,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareFemtoMeterPerDay,
   ),
   Unit(
-    'Square femtometer per hour',
+    'square femtometer per hour',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -441,7 +441,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareFemtoMeterPerHour,
   ),
   Unit(
-    'Square femtometer per minute',
+    'square femtometer per minute',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -454,7 +454,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareFemtoMeterPerMinute,
   ),
   Unit(
-    'Square femtometer per second',
+    'square femtometer per second',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -467,7 +467,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareFemtoMeterPerSecond,
   ),
   Unit(
-    'Square gigameter per day',
+    'square gigameter per day',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -480,7 +480,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareGigaMeterPerDay,
   ),
   Unit(
-    'Square gigameter per hour',
+    'square gigameter per hour',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -493,7 +493,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareGigaMeterPerHour,
   ),
   Unit(
-    'Square gigameter per minute',
+    'square gigameter per minute',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -506,7 +506,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareGigaMeterPerMinute,
   ),
   Unit(
-    'Square gigameter per second',
+    'square gigameter per second',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -519,7 +519,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareGigaMeterPerSecond,
   ),
   Unit(
-    'Square hectometer per day',
+    'square hectometer per day',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -532,7 +532,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareHectoMeterPerDay,
   ),
   Unit(
-    'Square hectometer per hour',
+    'square hectometer per hour',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -545,7 +545,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareHectoMeterPerHour,
   ),
   Unit(
-    'Square hectometer per minute',
+    'square hectometer per minute',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -558,7 +558,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareHectoMeterPerMinute,
   ),
   Unit(
-    'Square hectometer per second',
+    'square hectometer per second',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -571,7 +571,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareHectoMeterPerSecond,
   ),
   Unit(
-    'Square kilometer per day',
+    'square kilometer per day',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -584,7 +584,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareKiloMeterPerDay,
   ),
   Unit(
-    'Square kilometer per hour',
+    'square kilometer per hour',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -597,7 +597,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareKiloMeterPerHour,
   ),
   Unit(
-    'Square kilometer per minute',
+    'square kilometer per minute',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -610,7 +610,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareKiloMeterPerMinute,
   ),
   Unit(
-    'Square kilometer per second',
+    'square kilometer per second',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -623,7 +623,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareKiloMeterPerSecond,
   ),
   Unit(
-    'Square megameter per day',
+    'square megameter per day',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -636,7 +636,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMegaMeterPerDay,
   ),
   Unit(
-    'Square megameter per hour',
+    'square megameter per hour',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -649,7 +649,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMegaMeterPerHour,
   ),
   Unit(
-    'Square megameter per minute',
+    'square megameter per minute',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -662,7 +662,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMegaMeterPerMinute,
   ),
   Unit(
-    'Square megameter per second',
+    'square megameter per second',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -675,7 +675,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMegaMeterPerSecond,
   ),
   Unit(
-    'Square meter per day',
+    'square meter per day',
     createSymbol(
       const [
         SymbolParts.meter,
@@ -687,7 +687,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMeterPerDay,
   ),
   Unit(
-    'Square meter per hour',
+    'square meter per hour',
     createSymbol(
       const [
         SymbolParts.meter,
@@ -699,7 +699,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMeterPerHour,
   ),
   Unit(
-    'Square meter per minute',
+    'square meter per minute',
     createSymbol(
       const [
         SymbolParts.meter,
@@ -711,7 +711,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMeterPerMinute,
   ),
   Unit(
-    'Square meter per second',
+    'square meter per second',
     createSymbol(
       const [
         SymbolParts.meter,
@@ -723,7 +723,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMeterPerSecond,
   ),
   Unit(
-    'Square micrometer per day',
+    'square micrometer per day',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -736,7 +736,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMicroMeterPerDay,
   ),
   Unit(
-    'Square micrometer per hour',
+    'square micrometer per hour',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -749,7 +749,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMicroMeterPerHour,
   ),
   Unit(
-    'Square micrometer per minute',
+    'square micrometer per minute',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -762,7 +762,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMicroMeterPerMinute,
   ),
   Unit(
-    'Square micrometer per second',
+    'square micrometer per second',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -775,7 +775,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMicroMeterPerSecond,
   ),
   Unit(
-    'Square millimeter per day',
+    'square millimeter per day',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -788,7 +788,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMilliMeterPerDay,
   ),
   Unit(
-    'Square millimeter per hour',
+    'square millimeter per hour',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -801,7 +801,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMilliMeterPerHour,
   ),
   Unit(
-    'Square millimeter per minute',
+    'square millimeter per minute',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -814,7 +814,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMilliMeterPerMinute,
   ),
   Unit(
-    'Square millimeter per second',
+    'square millimeter per second',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -827,7 +827,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareMilliMeterPerSecond,
   ),
   Unit(
-    'Square nanometer per day',
+    'square nanometer per day',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -840,7 +840,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareNanoMeterPerDay,
   ),
   Unit(
-    'Square nanometer per hour',
+    'square nanometer per hour',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -853,7 +853,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareNanoMeterPerHour,
   ),
   Unit(
-    'Square nanometer per minute',
+    'square nanometer per minute',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -866,7 +866,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareNanoMeterPerMinute,
   ),
   Unit(
-    'Square nanometer per second',
+    'square nanometer per second',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -879,7 +879,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareNanoMeterPerSecond,
   ),
   Unit(
-    'Square petameter per day',
+    'square petameter per day',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -892,7 +892,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squarePetaMeterPerDay,
   ),
   Unit(
-    'Square petameter per hour',
+    'square petameter per hour',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -905,7 +905,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squarePetaMeterPerHour,
   ),
   Unit(
-    'Square petameter per minute',
+    'square petameter per minute',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -918,7 +918,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squarePetaMeterPerMinute,
   ),
   Unit(
-    'Square petameter per second',
+    'square petameter per second',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -931,7 +931,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squarePetaMeterPerSecond,
   ),
   Unit(
-    'Square picometer per day',
+    'square picometer per day',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -944,7 +944,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squarePicoMeterPerDay,
   ),
   Unit(
-    'Square picometer per hour',
+    'square picometer per hour',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -957,7 +957,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squarePicoMeterPerHour,
   ),
   Unit(
-    'Square picometer per minute',
+    'square picometer per minute',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -970,7 +970,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squarePicoMeterPerMinute,
   ),
   Unit(
-    'Square picometer per second',
+    'square picometer per second',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -983,7 +983,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squarePicoMeterPerSecond,
   ),
   Unit(
-    'Square terameter per day',
+    'square terameter per day',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -996,7 +996,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareTeraMeterPerDay,
   ),
   Unit(
-    'Square terameter per hour',
+    'square terameter per hour',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -1009,7 +1009,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareTeraMeterPerHour,
   ),
   Unit(
-    'Square terameter per minute',
+    'square terameter per minute',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -1022,7 +1022,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareTeraMeterPerMinute,
   ),
   Unit(
-    'Square terameter per second',
+    'square terameter per second',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -1035,7 +1035,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareTeraMeterPerSecond,
   ),
   Unit(
-    'Square yoctometer per day',
+    'square yoctometer per day',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -1048,7 +1048,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareYoctoMeterPerDay,
   ),
   Unit(
-    'Square yoctometer per hour',
+    'square yoctometer per hour',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -1061,7 +1061,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareYoctoMeterPerHour,
   ),
   Unit(
-    'Square yoctometer per minute',
+    'square yoctometer per minute',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -1074,7 +1074,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareYoctoMeterPerMinute,
   ),
   Unit(
-    'Square yoctometer per second',
+    'square yoctometer per second',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -1087,7 +1087,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareYoctoMeterPerSecond,
   ),
   Unit(
-    'Square yottameter per day',
+    'square yottameter per day',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -1100,7 +1100,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareYottaMeterPerDay,
   ),
   Unit(
-    'Square yottameter per hour',
+    'square yottameter per hour',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -1113,7 +1113,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareYottaMeterPerHour,
   ),
   Unit(
-    'Square yottameter per minute',
+    'square yottameter per minute',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -1126,7 +1126,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareYottaMeterPerMinute,
   ),
   Unit(
-    'Square yottameter per second',
+    'square yottameter per second',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -1139,7 +1139,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareYottaMeterPerSecond,
   ),
   Unit(
-    'Square zeptometer per day',
+    'square zeptometer per day',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -1152,7 +1152,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareZeptoMeterPerDay,
   ),
   Unit(
-    'Square zeptometer per hour',
+    'square zeptometer per hour',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -1165,7 +1165,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareZeptoMeterPerHour,
   ),
   Unit(
-    'Square zeptometer per minute',
+    'square zeptometer per minute',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -1178,7 +1178,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareZeptoMeterPerMinute,
   ),
   Unit(
-    'Square zeptometer per second',
+    'square zeptometer per second',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -1191,7 +1191,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareZeptoMeterPerSecond,
   ),
   Unit(
-    'Square zettameter per day',
+    'square zettameter per day',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -1204,7 +1204,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareZettaMeterPerDay,
   ),
   Unit(
-    'Square zettameter per hour',
+    'square zettameter per hour',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -1217,7 +1217,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareZettaMeterPerHour,
   ),
   Unit(
-    'Square zettameter per minute',
+    'square zettameter per minute',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -1230,7 +1230,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareZettaMeterPerMinute,
   ),
   Unit(
-    'Square zettameter per second',
+    'square zettameter per second',
     createSymbol(
       const [
         SymbolParts.zetta,
@@ -1243,7 +1243,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.squareZettaMeterPerSecond,
   ),
   Unit(
-    'Stokes',
+    'stokes',
     createSymbol(
       const [
         SymbolParts.stokes,
@@ -1252,7 +1252,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.stokes,
   ),
   Unit(
-    'Terastokes',
+    'terastokes',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -1262,7 +1262,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.teraStokes,
   ),
   Unit(
-    'Yoctostokes',
+    'yoctostokes',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -1272,7 +1272,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.yoctoStokes,
   ),
   Unit(
-    'Yottastokes',
+    'yottastokes',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -1282,7 +1282,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.yottaStokes,
   ),
   Unit(
-    'Zeptostokes',
+    'zeptostokes',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -1292,7 +1292,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
     KinematicViscocityUnits.zeptoStokes,
   ),
   Unit(
-    'Zettastokes',
+    'zettastokes',
     createSymbol(
       const [
         SymbolParts.zetta,
