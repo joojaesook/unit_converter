@@ -1,5 +1,5 @@
 /// Units of digital data
-enum DigitalDataUnits {
+enum DataUnits {
   bit,
   byte,
   exaBit,

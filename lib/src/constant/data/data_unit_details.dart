@@ -1,9 +1,9 @@
-import '../../enum/digital_data_units.dart';
+import '../../enum/data_units.dart';
 import '../../enum/symbol_parts.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 
-Set<Unit> digitalDataUnitDetails = {
+Set<Unit> dataUnitDetails = {
   Unit(
     'Bit',
     createSymbol(
@@ -11,7 +11,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.bit,
       ],
     ),
-    DigitalDataUnits.bit,
+    DataUnits.bit,
   ),
   Unit(
     'Byte',
@@ -20,7 +20,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.byte,
       ],
     ),
-    DigitalDataUnits.byte,
+    DataUnits.byte,
   ),
   Unit(
     'Exabit',
@@ -30,7 +30,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.bit,
       ],
     ),
-    DigitalDataUnits.exaBit,
+    DataUnits.exaBit,
   ),
   Unit(
     'Exabyte',
@@ -40,7 +40,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.byte,
       ],
     ),
-    DigitalDataUnits.exaByte,
+    DataUnits.exaByte,
   ),
   Unit(
     'Gigabit',
@@ -50,7 +50,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.bit,
       ],
     ),
-    DigitalDataUnits.gigaBit,
+    DataUnits.gigaBit,
   ),
   Unit(
     'Gigabyte',
@@ -60,7 +60,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.byte,
       ],
     ),
-    DigitalDataUnits.gigaByte,
+    DataUnits.gigaByte,
   ),
   Unit(
     'Kilobit',
@@ -70,7 +70,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.bit,
       ],
     ),
-    DigitalDataUnits.kiloBit,
+    DataUnits.kiloBit,
   ),
   Unit(
     'Kilobyte',
@@ -80,7 +80,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.byte,
       ],
     ),
-    DigitalDataUnits.kiloByte,
+    DataUnits.kiloByte,
   ),
   Unit(
     'Megabit',
@@ -90,7 +90,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.bit,
       ],
     ),
-    DigitalDataUnits.megaBit,
+    DataUnits.megaBit,
   ),
   Unit(
     'Megabyte',
@@ -100,7 +100,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.byte,
       ],
     ),
-    DigitalDataUnits.megaByte,
+    DataUnits.megaByte,
   ),
   Unit(
     'Petabit',
@@ -110,7 +110,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.bit,
       ],
     ),
-    DigitalDataUnits.petaBit,
+    DataUnits.petaBit,
   ),
   Unit(
     'Petabyte',
@@ -120,7 +120,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.byte,
       ],
     ),
-    DigitalDataUnits.petaByte,
+    DataUnits.petaByte,
   ),
   Unit(
     'Terabit',
@@ -130,7 +130,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.bit,
       ],
     ),
-    DigitalDataUnits.teraBit,
+    DataUnits.teraBit,
   ),
   Unit(
     'Terabyte',
@@ -140,7 +140,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.byte,
       ],
     ),
-    DigitalDataUnits.teraByte,
+    DataUnits.teraByte,
   ),
   Unit(
     'Yottabit',
@@ -150,7 +150,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.bit,
       ],
     ),
-    DigitalDataUnits.yottaBit,
+    DataUnits.yottaBit,
   ),
   Unit(
     'Yottabyte',
@@ -160,7 +160,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.byte,
       ],
     ),
-    DigitalDataUnits.yottaByte,
+    DataUnits.yottaByte,
   ),
   Unit(
     'Zettabit',
@@ -170,7 +170,7 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.bit,
       ],
     ),
-    DigitalDataUnits.zettaBit,
+    DataUnits.zettaBit,
   ),
   Unit(
     'Zettabyte',
@@ -180,6 +180,6 @@ Set<Unit> digitalDataUnitDetails = {
         SymbolParts.byte,
       ],
     ),
-    DigitalDataUnits.zettaByte,
+    DataUnits.zettaByte,
   ),
 };

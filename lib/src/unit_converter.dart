@@ -3,7 +3,7 @@ import 'converter/area_converter.dart';
 import 'converter/blood_cholesterol_converter.dart';
 import 'converter/blood_glucose_converter.dart';
 import 'converter/capacitance_converter.dart';
-import 'converter/digital_data_converter.dart';
+import 'converter/data_converter.dart';
 import 'converter/dynamic_viscocity_converter.dart';
 import 'converter/electric_charge_converter.dart';
 import 'converter/electric_conductance_converter.dart';
@@ -24,13 +24,31 @@ import 'converter/time_converter.dart';
 import 'converter/torque_converter.dart';
 import 'converter/water_hardness_converter.dart';
 
+export 'enum/acceleration_units.dart';
 export 'enum/area_units.dart';
+export 'enum/blood_cholesterol_units.dart';
+export 'enum/blood_glucose_units.dart';
 export 'enum/capacitance_units.dart';
-export 'enum/digital_data_units.dart';
+export 'enum/data_units.dart';
+export 'enum/dynamic_viscocity_units.dart';
+export 'enum/electric_charge_units.dart';
+export 'enum/electric_conductance_units.dart';
 export 'enum/electric_current_units.dart';
+export 'enum/electric_potential_units.dart';
+export 'enum/electric_resistance_units.dart';
+export 'enum/force_units.dart';
+export 'enum/frequency_units.dart';
+export 'enum/illuminance_units.dart';
+export 'enum/inductance_units.dart';
 export 'enum/length_units.dart';
+export 'enum/luminance_units.dart';
+export 'enum/magnetic_field_intensity_units.dart';
+export 'enum/magnetic_flux_units.dart';
+export 'enum/magnetic_flux_density_units.dart';
 export 'enum/mass_units.dart';
 export 'enum/time_units.dart';
+export 'enum/torque_units.dart';
+export 'enum/water_hardness_units.dart';
 
 class UnitConverter {
   static AccelerationConverter accelerationConverter() {
@@ -53,8 +71,8 @@ class UnitConverter {
     return CapacitanceConverter();
   }
 
-  static DigitalDataConverter digitalDataConverter() {
-    return DigitalDataConverter();
+  static DataConverter dataConverter() {
+    return DataConverter();
   }
 
   static DynamicViscocityConverter dynamicViscocityConverter() {

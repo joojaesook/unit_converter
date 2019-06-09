@@ -3,7 +3,7 @@ import 'acceleration/acceleration_conversion_details.dart';
 import 'area/area_conversion_details.dart';
 import 'blood_cholesterol/blood_cholesterol_conversion_details.dart';
 import 'capacitance/capacitance_conversion_details.dart';
-import 'digital_data/digital_data_conversion_details.dart';
+import 'data/data_conversion_details.dart';
 import 'dynamic_viscocity/dynamic_viscocity_conversion_details.dart';
 import 'electric_charge/electric_charge_conversion_details.dart';
 import 'electric_conductance/electric_conductance_conversion_details.dart';
@@ -29,7 +29,7 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.area: areaConversionDetails,
   ConversionType.bloodCholesterol: bloodCholesterolConversionDetails,
   ConversionType.capacitance: capacitanceConversionDetails,
-  ConversionType.digitalData: digitalDataConversionDetails,
+  ConversionType.data: dataConversionDetails,
   ConversionType.dynamicViscocity: dynamicViscocityConversionDetails,
   ConversionType.electricCharge: electricChargeConversionDetails,
   ConversionType.electricConductance: electricConductanceConversionDetails,

@@ -4,7 +4,7 @@ import 'acceleration/acceleration_unit_details.dart';
 import 'area/area_unit_details.dart';
 import 'blood_cholesterol/blood_cholesterol_unit_details.dart';
 import 'capacitance/capacitance_unit_details.dart';
-import 'digital_data/digital_data_unit_details.dart';
+import 'data/data_unit_details.dart';
 import 'dynamic_viscocity/dynamic_viscocity_unit_details.dart';
 import 'electric_charge/electric_charge_unit_details.dart';
 import 'electric_conductance/electric_conductance_unit_details.dart';
@@ -30,7 +30,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.area: areaUnitDetails,
   ConversionType.bloodCholesterol: bloodCholesterolUnitDetails,
   ConversionType.capacitance: capacitanceUnitDetails,
-  ConversionType.digitalData: digitalDataUnitDetails,
+  ConversionType.data: dataUnitDetails,
   ConversionType.dynamicViscocity: dynamicViscocityUnitDetails,
   ConversionType.electricCharge: electricChargeUnitDetails,
   ConversionType.electricConductance: electricConductanceUnitDetails,

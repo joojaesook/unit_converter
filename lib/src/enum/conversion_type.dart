@@ -5,7 +5,7 @@ enum ConversionType {
   bloodCholesterol,
   bloodGlucose,
   capacitance,
-  digitalData,
+  data,
   dynamicViscocity,
   electricCharge,
   electricConductance,
