@@ -4,6 +4,7 @@ import 'converter/blood_cholesterol_converter.dart';
 import 'converter/blood_glucose_converter.dart';
 import 'converter/capacitance_converter.dart';
 import 'converter/data_converter.dart';
+import 'converter/data_rate_converter.dart';
 import 'converter/dynamic_viscocity_converter.dart';
 import 'converter/electric_charge_converter.dart';
 import 'converter/electric_conductance_converter.dart';
@@ -29,6 +30,7 @@ export 'enum/area_units.dart';
 export 'enum/blood_cholesterol_units.dart';
 export 'enum/blood_glucose_units.dart';
 export 'enum/capacitance_units.dart';
+export 'enum/data_rate_units.dart';
 export 'enum/data_units.dart';
 export 'enum/dynamic_viscocity_units.dart';
 export 'enum/electric_charge_units.dart';
@@ -43,8 +45,8 @@ export 'enum/inductance_units.dart';
 export 'enum/length_units.dart';
 export 'enum/luminance_units.dart';
 export 'enum/magnetic_field_intensity_units.dart';
-export 'enum/magnetic_flux_units.dart';
 export 'enum/magnetic_flux_density_units.dart';
+export 'enum/magnetic_flux_units.dart';
 export 'enum/mass_units.dart';
 export 'enum/time_units.dart';
 export 'enum/torque_units.dart';
@@ -73,6 +75,10 @@ class UnitConverter {
 
   static DataConverter dataConverter() {
     return DataConverter();
+  }
+
+  static DataRateConverter dataRateConverter() {
+    return DataRateConverter();
   }
 
   static DynamicViscocityConverter dynamicViscocityConverter() {

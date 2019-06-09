@@ -6,6 +6,7 @@ enum ConversionType {
   bloodGlucose,
   capacitance,
   data,
+  dataRate,
   dynamicViscocity,
   electricCharge,
   electricConductance,
