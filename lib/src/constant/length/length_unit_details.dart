@@ -1,7 +1,9 @@
 import '../../enum/length_units.dart';
 import '../../enum/symbol_parts.dart';
+import '../../enum/system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
+import '../others/system_value.dart';
 
 Set<Unit> lengthUnitDetails = {
   Unit(
@@ -262,6 +264,16 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.foot,
+  ),
+  Unit(
+    'Foot',
+    createSymbol(
+      const [
+        SymbolParts.foot,
+      ],
+    ),
+    LengthUnits.foot_USSurvey,
+    system: systemValue[System.usSurvey],
   ),
   Unit(
     'Furlong',

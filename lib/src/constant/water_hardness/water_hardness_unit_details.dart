@@ -146,6 +146,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliMolePerLitre,
+    system: systemValue[System.caCO3],
   ),
   Unit(
     'Part per million',
@@ -157,5 +158,6 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.partPerMillion,
+    system: systemValue[System.caCO3],
   ),
 };

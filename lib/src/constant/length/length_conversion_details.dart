@@ -38,6 +38,7 @@ Map<LengthUnits, double> lengthConversionDetails = {
   LengthUnits.femtoParsec: prefixValue[Prefix.femto] * _parsecToMeter,
   LengthUnits.fermi: prefixValue[Prefix.femto],
   LengthUnits.foot: 0.3048,
+  LengthUnits.foot_USSurvey: 0.304800609601,
   LengthUnits.furlong: 201.168,
   LengthUnits.gigaLightYear: prefixValue[Prefix.giga] * _lightYearToMeter,
   LengthUnits.gigaMeter: prefixValue[Prefix.giga],
