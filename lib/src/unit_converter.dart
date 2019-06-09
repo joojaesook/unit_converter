@@ -26,6 +26,7 @@ import 'converter/speed_converter.dart';
 import 'converter/time_converter.dart';
 import 'converter/torque_converter.dart';
 import 'converter/volume_converter.dart';
+import 'converter/volume_per_area_converter.dart';
 import 'converter/water_hardness_converter.dart';
 
 export 'enum/acceleration_units.dart';
@@ -55,6 +56,7 @@ export 'enum/mass_units.dart';
 export 'enum/speed_units.dart';
 export 'enum/time_units.dart';
 export 'enum/torque_units.dart';
+export 'enum/volume_per_area_units.dart';
 export 'enum/volume_units.dart';
 export 'enum/water_hardness_units.dart';
 
@@ -169,6 +171,10 @@ class UnitConverter {
 
   static VolumeConverter volume() {
     return VolumeConverter();
+  }
+
+  static VolumePerAreaConverter volumePerArea() {
+    return VolumePerAreaConverter();
   }
 
   static WaterHardnessConverter waterHardness() {

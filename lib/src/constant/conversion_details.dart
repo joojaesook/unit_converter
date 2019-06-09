@@ -27,6 +27,7 @@ import 'speed/speed_conversion_details.dart';
 import 'time/time_conversion_details.dart';
 import 'torque/torque_conversion_details.dart';
 import 'volume/volume_conversion_details.dart';
+import 'volume_per_area/volume_per_area_conversion_details.dart';
 import 'water_hardness/water_hardness_conversion_details.dart';
 
 final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
@@ -59,5 +60,6 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.time: timeConversionDetails,
   ConversionType.torque: torqueConversionDetails,
   ConversionType.volume: volumeConversionDetails,
+  ConversionType.volumePerArea: volumePerAreaConversionDetails,
   ConversionType.waterHardness: waterHardnessConversionDetails,
 };
