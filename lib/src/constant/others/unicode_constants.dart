@@ -9,4 +9,5 @@ const unicodeSubscriptThree = '2083';
 const unicodeSubscriptZero = '2080';
 const unicodeSuperscriptPlus = '207A';
 const unicodeSuperscriptTwo = 'b2';
+const unicodeSuperscriptThree = 'b3';
 const unicodeSuperscriptZero = 'b0';

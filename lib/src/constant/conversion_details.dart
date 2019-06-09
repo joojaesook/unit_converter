@@ -2,6 +2,7 @@ import '../enum/conversion_type.dart';
 import 'acceleration/acceleration_conversion_details.dart';
 import 'area/area_conversion_details.dart';
 import 'blood_cholesterol/blood_cholesterol_conversion_details.dart';
+import 'blood_glucose/blood_glucose_conversion_details.dart';
 import 'capacitance/capacitance_conversion_details.dart';
 import 'data/data_conversion_details.dart';
 import 'data_rate/data_rate_conversion_details.dart';
@@ -24,12 +25,14 @@ import 'magnetic_flux_density/magnetic_flux_density_conversion_details.dart';
 import 'mass/mass_conversion_details.dart';
 import 'time/time_conversion_details.dart';
 import 'torque/torque_conversion_details.dart';
+import 'volume/volume_conversion_details.dart';
 import 'water_hardness/water_hardness_conversion_details.dart';
 
 final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.acceleration: accelerationConversionDetails,
   ConversionType.area: areaConversionDetails,
   ConversionType.bloodCholesterol: bloodCholesterolConversionDetails,
+  ConversionType.bloodGlucose: bloodGlucoseConversionDetails,
   ConversionType.capacitance: capacitanceConversionDetails,
   ConversionType.data: dataConversionDetails,
   ConversionType.dataRate: dataRateConversionDetails,
@@ -53,5 +56,6 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.mass: massConversionDetails,
   ConversionType.time: timeConversionDetails,
   ConversionType.torque: torqueConversionDetails,
+  ConversionType.volume: volumeConversionDetails,
   ConversionType.waterHardness: waterHardnessConversionDetails,
 };

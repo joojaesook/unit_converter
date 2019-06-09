@@ -3,6 +3,7 @@ import '../../enum/system.dart';
 import '../../misc/global.dart';
 
 final Map<System, String> systemValue = {
+  System.australian: 'Australian',
   System.ca2: 'Ca${createSymbol(
     const [
       SymbolParts.superscriptTwo,
@@ -28,6 +29,9 @@ final Map<System, String> systemValue = {
     ],
   )}',
   System.us: 'US',
-  System.usFood: 'US food nutrition labeling',
+  System.usDry: 'US dry',
+  System.usDryLevel: 'US dry level',
+  System.usFoodNutrition: 'US food nutrition labeling',
+  System.usLiquid: 'US liquid',
   System.usSurvey: 'US Survey',
 };

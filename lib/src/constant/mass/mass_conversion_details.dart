@@ -41,7 +41,7 @@ Map<MassUnits, double> massConversionDetails = {
   MassUnits.nanoGram: prefixValue[Prefix.nano] * _gramToKiloGram,
   MassUnits.nanoTonne: prefixValue[Prefix.nano] * _tonneToKiloGram,
   MassUnits.ounce: 0.028349523125,
-  MassUnits.ounce_USFood: 0.028,
+  MassUnits.ounce_USFoodNutrition: 0.028,
   MassUnits.pennyWeight: 0.00155517384,
   MassUnits.petaGram: prefixValue[Prefix.peta] * _gramToKiloGram,
   MassUnits.petaTonne: prefixValue[Prefix.peta] * _tonneToKiloGram,

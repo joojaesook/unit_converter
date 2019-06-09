@@ -26,5 +26,6 @@ enum ConversionType {
   mass,
   time,
   torque,
+  volume,
   waterHardness,
 }

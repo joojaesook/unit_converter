@@ -1,4 +1,5 @@
 enum System {
+  australian,
   ca2,
   caCO3,
   caO,
@@ -10,6 +11,9 @@ enum System {
   metric,
   mg2,
   us,
-  usFood,
+  usDry,
+  usDryLevel,
+  usFoodNutrition,
+  usLiquid,
   usSurvey,
 }

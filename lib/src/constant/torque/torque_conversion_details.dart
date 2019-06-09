@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:math' show pow;
 
 import '../../enum/prefix.dart';
 import '../../enum/torque_units.dart';

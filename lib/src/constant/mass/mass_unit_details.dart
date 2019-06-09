@@ -346,8 +346,8 @@ final Set<Unit> massUnitDetails = {
         SymbolParts.ounce,
       ],
     ),
-    MassUnits.ounce_USFood,
-    system: systemValue[System.usFood],
+    MassUnits.ounce_USFoodNutrition,
+    system: systemValue[System.usFoodNutrition],
   ),
   Unit(
     'pennyweight',
