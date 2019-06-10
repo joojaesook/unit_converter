@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> luminanceUnitDetails = {
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square attometre',
     createSymbol(
       const [
@@ -16,8 +16,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareAttoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square centimetre',
     createSymbol(
       const [
@@ -29,8 +30,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareCentiMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square decametre',
     createSymbol(
       const [
@@ -42,8 +44,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareDecaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square decimetre',
     createSymbol(
       const [
@@ -55,8 +58,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareDeciMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square exametre',
     createSymbol(
       const [
@@ -68,8 +72,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareExaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square femtometre',
     createSymbol(
       const [
@@ -81,8 +86,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareFemtoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square foot',
     createSymbol(
       const [
@@ -94,7 +100,7 @@ final Set<Unit> luminanceUnitDetails = {
     ),
     LuminanceUnits.candelaPerSquareFoot,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square gigametre',
     createSymbol(
       const [
@@ -106,8 +112,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareGigaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square hectometre',
     createSymbol(
       const [
@@ -119,8 +126,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareHectoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square inch',
     createSymbol(
       const [
@@ -132,7 +140,7 @@ final Set<Unit> luminanceUnitDetails = {
     ),
     LuminanceUnits.candelaPerSquareInch,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square kilometre',
     createSymbol(
       const [
@@ -144,8 +152,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareKiloMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square megametre',
     createSymbol(
       const [
@@ -157,8 +166,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareMegaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square metre',
     createSymbol(
       const [
@@ -169,8 +179,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareMetre,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square micrometre',
     createSymbol(
       const [
@@ -182,8 +193,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareMicroMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square millimetre',
     createSymbol(
       const [
@@ -195,8 +207,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareMilliMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square nanometre',
     createSymbol(
       const [
@@ -208,8 +221,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareNanoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square petametre',
     createSymbol(
       const [
@@ -221,8 +235,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquarePetaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square picometre',
     createSymbol(
       const [
@@ -234,8 +249,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquarePicoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square terametre',
     createSymbol(
       const [
@@ -247,8 +263,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareTeraMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square yoctometre',
     createSymbol(
       const [
@@ -260,8 +277,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareYoctoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square yottametre',
     createSymbol(
       const [
@@ -273,8 +291,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareYottaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square zeptometre',
     createSymbol(
       const [
@@ -286,8 +305,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareZeptoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'candela per square zettametre',
     createSymbol(
       const [
@@ -299,8 +319,9 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareZettaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'foot-lambert',
     createSymbol(
       const [
@@ -310,7 +331,7 @@ final Set<Unit> luminanceUnitDetails = {
     ),
     LuminanceUnits.footLambert,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'lambert',
     createSymbol(
       const [
@@ -319,7 +340,7 @@ final Set<Unit> luminanceUnitDetails = {
     ),
     LuminanceUnits.lambert,
   ),
-  Unit(
+  Unit<LuminanceUnits>(
     'stilb',
     createSymbol(
       const [
