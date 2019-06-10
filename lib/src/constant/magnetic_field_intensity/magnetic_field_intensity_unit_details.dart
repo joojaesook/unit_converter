@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> magneticFieldIntensityUnitDetails = {
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'ampere per metre',
     createSymbol(
       const [
@@ -14,8 +14,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.amperePerMetre,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'attoampere per metre',
     createSymbol(
       const [
@@ -26,8 +27,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.attoAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'centiampere per metre',
     createSymbol(
       const [
@@ -38,8 +40,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.centiAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'decaampere per metre',
     createSymbol(
       const [
@@ -50,8 +53,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.decaAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'deciampere per metre',
     createSymbol(
       const [
@@ -62,8 +66,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.deciAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'exaampere per metre',
     createSymbol(
       const [
@@ -74,8 +79,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.exaAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'femtoampere per metre',
     createSymbol(
       const [
@@ -86,8 +92,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.femtoAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'gigaampere per metre',
     createSymbol(
       const [
@@ -98,8 +105,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.gigaAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'hectoampere per metre',
     createSymbol(
       const [
@@ -110,8 +118,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.hectoAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'kiloampere per metre',
     createSymbol(
       const [
@@ -122,8 +131,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.kiloAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'megaampere per metre',
     createSymbol(
       const [
@@ -134,8 +144,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.megaAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'microampere per metre',
     createSymbol(
       const [
@@ -146,8 +157,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.microAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'milliampere per metre',
     createSymbol(
       const [
@@ -158,8 +170,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.milliAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'nanoampere per metre',
     createSymbol(
       const [
@@ -170,8 +183,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.nanoAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'oersted',
     createSymbol(
       const [
@@ -180,7 +194,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
     ),
     MagneticFieldIntensityUnits.oersted,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'petaampere per metre',
     createSymbol(
       const [
@@ -191,8 +205,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.petaAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'picoampere per metre',
     createSymbol(
       const [
@@ -203,8 +218,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.picoAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'teraampere per metre',
     createSymbol(
       const [
@@ -215,8 +231,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.teraAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'yoctoampere per metre',
     createSymbol(
       const [
@@ -227,8 +244,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.yoctoAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'yottaampere per metre',
     createSymbol(
       const [
@@ -239,8 +257,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.yottaAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'zeptoampere per metre',
     createSymbol(
       const [
@@ -251,8 +270,9 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.zeptoAmperePerMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFieldIntensityUnits>(
     'zettaampere per metre',
     createSymbol(
       const [
@@ -263,5 +283,6 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.zettaAmperePerMetre,
+    variation: true,
   ),
 };
