@@ -79,7 +79,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerAcre,
-    system: systemValue[System.usLiquid],
+    system: systemValue[Systems.usLiquid],
   ),
   Unit(
     'gallon per hectare',
@@ -91,7 +91,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerHectare,
-    system: systemValue[System.usLiquid],
+    system: systemValue[Systems.usLiquid],
   ),
   Unit(
     'gallon per square metre',
@@ -104,7 +104,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerSquareMetre,
-    system: systemValue[System.usLiquid],
+    system: systemValue[Systems.usLiquid],
   ),
   Unit(
     'gallon per square mile',
@@ -117,7 +117,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerSquareMile,
-    system: systemValue[System.usLiquid],
+    system: systemValue[Systems.usLiquid],
   ),
   Unit(
     'gallon per square yard',
@@ -130,7 +130,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerSquareYard,
-    system: systemValue[System.usLiquid],
+    system: systemValue[Systems.usLiquid],
   ),
   Unit(
     'litre per acre',

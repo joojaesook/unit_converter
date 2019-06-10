@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> accelerationUnitDetails = {
-  Unit(
+  Unit<AccelerationUnits>(
     'attogal',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'attometre per hour per second',
     createSymbol(
       const [
@@ -27,8 +28,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'attometre per hour squared',
     createSymbol(
       const [
@@ -40,8 +42,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'attometre per minute per second',
     createSymbol(
       const [
@@ -54,8 +57,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'attometre per minute squared',
     createSymbol(
       const [
@@ -67,8 +71,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'attometre per second squared',
     createSymbol(
       const [
@@ -80,8 +85,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'centigal',
     createSymbol(
       const [
@@ -90,8 +96,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'centimetre per hour per second',
     createSymbol(
       const [
@@ -104,8 +111,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'centimetre per hour squared',
     createSymbol(
       const [
@@ -117,8 +125,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'centimetre per minute per second',
     createSymbol(
       const [
@@ -131,8 +140,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'centimetre per minute squared',
     createSymbol(
       const [
@@ -144,8 +154,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'centimetre per second squared',
     createSymbol(
       const [
@@ -157,8 +168,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decagal',
     createSymbol(
       const [
@@ -167,8 +179,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decametre per hour per second',
     createSymbol(
       const [
@@ -181,8 +194,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decametre per hour squared',
     createSymbol(
       const [
@@ -194,8 +208,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decametre per minute per second',
     createSymbol(
       const [
@@ -208,8 +223,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decametre per minute squared',
     createSymbol(
       const [
@@ -221,8 +237,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decametre per second squared',
     createSymbol(
       const [
@@ -234,8 +251,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decigal',
     createSymbol(
       const [
@@ -244,8 +262,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decimetre per hour per second',
     createSymbol(
       const [
@@ -258,8 +277,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decimetre per hour squared',
     createSymbol(
       const [
@@ -271,8 +291,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decimetre per minute per second',
     createSymbol(
       const [
@@ -285,8 +306,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decimetre per minute squared',
     createSymbol(
       const [
@@ -298,8 +320,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'decimetre per second squared',
     createSymbol(
       const [
@@ -311,8 +334,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'exagal',
     createSymbol(
       const [
@@ -321,8 +345,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'exametre per hour per second',
     createSymbol(
       const [
@@ -335,8 +360,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'exametre per hour squared',
     createSymbol(
       const [
@@ -348,8 +374,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'exametre per minute per second',
     createSymbol(
       const [
@@ -362,8 +389,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'exametre per minute squared',
     createSymbol(
       const [
@@ -375,8 +403,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'exametre per second squared',
     createSymbol(
       const [
@@ -388,8 +417,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'femtogal',
     createSymbol(
       const [
@@ -398,8 +428,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'femtometre per hour per second',
     createSymbol(
       const [
@@ -412,8 +443,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'femtometre per hour squared',
     createSymbol(
       const [
@@ -425,8 +457,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'femtometre per minute per second',
     createSymbol(
       const [
@@ -439,8 +472,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'femtometre per minute squared',
     createSymbol(
       const [
@@ -452,8 +486,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'femtometre per second squared',
     createSymbol(
       const [
@@ -465,8 +500,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'foot per hour per second',
     createSymbol(
       const [
@@ -479,7 +515,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.footPerHourPerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'foot per hour squared',
     createSymbol(
       const [
@@ -491,7 +527,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.footPerHourSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'foot per minute per second',
     createSymbol(
       const [
@@ -504,7 +540,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.footPerMinutePerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'foot per minute squared',
     createSymbol(
       const [
@@ -516,7 +552,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.footPerMinuteSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'foot per second squared',
     createSymbol(
       const [
@@ -528,7 +564,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.footPerSecondSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'gal',
     createSymbol(
       const [
@@ -537,7 +573,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.gal,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'gigagal',
     createSymbol(
       const [
@@ -546,8 +582,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'gigametre per hour per second',
     createSymbol(
       const [
@@ -560,8 +597,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'gigametre per hour squared',
     createSymbol(
       const [
@@ -573,8 +611,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'gigametre per minute per second',
     createSymbol(
       const [
@@ -587,8 +626,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'gigametre per minute squared',
     createSymbol(
       const [
@@ -600,8 +640,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'gigametre per second squared',
     createSymbol(
       const [
@@ -613,8 +654,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'hectogal',
     createSymbol(
       const [
@@ -623,8 +665,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'hectometre per hour per second',
     createSymbol(
       const [
@@ -637,8 +680,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'hectometre per hour squared',
     createSymbol(
       const [
@@ -650,8 +694,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'hectometre per minute per second',
     createSymbol(
       const [
@@ -664,8 +709,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'hectometre per minute squared',
     createSymbol(
       const [
@@ -677,8 +723,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'hectometre per second squared',
     createSymbol(
       const [
@@ -690,8 +737,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'inch per hour per second',
     createSymbol(
       const [
@@ -704,7 +752,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.inchPerHourPerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'inch per hour squared',
     createSymbol(
       const [
@@ -716,7 +764,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.inchPerHourSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'inch per minute per second',
     createSymbol(
       const [
@@ -729,7 +777,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.inchPerMinutePerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'inch per minute squared',
     createSymbol(
       const [
@@ -741,7 +789,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.inchPerMinuteSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'inch per second squared',
     createSymbol(
       const [
@@ -753,7 +801,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.inchPerSecondSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'kilogal',
     createSymbol(
       const [
@@ -762,8 +810,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'kilometre per hour per second',
     createSymbol(
       const [
@@ -776,8 +825,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'kilometre per hour squared',
     createSymbol(
       const [
@@ -789,8 +839,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'kilometre per minute per second',
     createSymbol(
       const [
@@ -803,8 +854,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'kilometre per minute squared',
     createSymbol(
       const [
@@ -816,8 +868,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'kilometre per second squared',
     createSymbol(
       const [
@@ -829,8 +882,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'megagal',
     createSymbol(
       const [
@@ -839,8 +893,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'megametre per hour per second',
     createSymbol(
       const [
@@ -853,8 +908,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'megametre per hour squared',
     createSymbol(
       const [
@@ -866,8 +922,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'megametre per minute per second',
     createSymbol(
       const [
@@ -880,8 +937,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'megametre per minute squared',
     createSymbol(
       const [
@@ -893,8 +951,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'megametre per second squared',
     createSymbol(
       const [
@@ -906,8 +965,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'metre per hour per second',
     createSymbol(
       const [
@@ -920,7 +980,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.metrePerHourPerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'metre per hour squared',
     createSymbol(
       const [
@@ -932,7 +992,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.metrePerHourSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'metre per minute per second',
     createSymbol(
       const [
@@ -945,7 +1005,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.metrePerMinutePerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'metre per minute squared',
     createSymbol(
       const [
@@ -957,7 +1017,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.metrePerMinuteSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'metre per second squared',
     createSymbol(
       const [
@@ -968,8 +1028,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.metrePerSecondSquared,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'microgal',
     createSymbol(
       const [
@@ -978,8 +1039,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'micrometre per hour per second',
     createSymbol(
       const [
@@ -992,8 +1054,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'micrometre per hour squared',
     createSymbol(
       const [
@@ -1005,8 +1068,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'micrometre per minute per second',
     createSymbol(
       const [
@@ -1019,8 +1083,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'micrometre per minute squared',
     createSymbol(
       const [
@@ -1032,8 +1097,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'micrometre per second squared',
     createSymbol(
       const [
@@ -1045,8 +1111,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'mile per hour per second',
     createSymbol(
       const [
@@ -1059,7 +1126,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.milePerHourPerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'mile per hour squared',
     createSymbol(
       const [
@@ -1071,7 +1138,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.milePerHourSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'mile per minute per second',
     createSymbol(
       const [
@@ -1084,7 +1151,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.milePerMinutePerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'mile per minute squared',
     createSymbol(
       const [
@@ -1096,7 +1163,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.milePerMinuteSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'mile per second squared',
     createSymbol(
       const [
@@ -1108,7 +1175,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.milePerSecondSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'milligal',
     createSymbol(
       const [
@@ -1117,8 +1184,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'millimetre per hour per second',
     createSymbol(
       const [
@@ -1131,8 +1199,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'millimetre per hour squared',
     createSymbol(
       const [
@@ -1144,8 +1213,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'millimetre per minute per second',
     createSymbol(
       const [
@@ -1158,8 +1228,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'millimetre per minute squared',
     createSymbol(
       const [
@@ -1171,8 +1242,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'millimetre per second squared',
     createSymbol(
       const [
@@ -1184,8 +1256,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'nanogal',
     createSymbol(
       const [
@@ -1194,8 +1267,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'nanometre per hour per second',
     createSymbol(
       const [
@@ -1208,8 +1282,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'nanometre per hour squared',
     createSymbol(
       const [
@@ -1221,8 +1296,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'nanometre per minute per second',
     createSymbol(
       const [
@@ -1235,8 +1311,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'nanometre per minute squared',
     createSymbol(
       const [
@@ -1248,8 +1325,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'nanometre per second squared',
     createSymbol(
       const [
@@ -1261,8 +1339,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'petagal',
     createSymbol(
       const [
@@ -1271,8 +1350,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'petametre per hour per second',
     createSymbol(
       const [
@@ -1285,8 +1365,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'petametre per hour squared',
     createSymbol(
       const [
@@ -1298,8 +1379,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'petametre per minute per second',
     createSymbol(
       const [
@@ -1312,8 +1394,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'petametre per minute squared',
     createSymbol(
       const [
@@ -1325,8 +1408,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'petametre per second squared',
     createSymbol(
       const [
@@ -1338,8 +1422,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'picogal',
     createSymbol(
       const [
@@ -1348,8 +1433,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'picometre per hour per second',
     createSymbol(
       const [
@@ -1362,8 +1448,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'picometre per hour squared',
     createSymbol(
       const [
@@ -1375,8 +1462,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'picometre per minute per second',
     createSymbol(
       const [
@@ -1389,8 +1477,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'picometre per minute squared',
     createSymbol(
       const [
@@ -1402,8 +1491,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'picometre per second squared',
     createSymbol(
       const [
@@ -1415,8 +1505,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'standard gravity',
     createSymbol(
       const [
@@ -1426,7 +1517,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.standardGravity,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'teragal',
     createSymbol(
       const [
@@ -1435,8 +1526,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'terametre per hour per second',
     createSymbol(
       const [
@@ -1449,8 +1541,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'terametre per hour squared',
     createSymbol(
       const [
@@ -1462,8 +1555,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'terametre per minute per second',
     createSymbol(
       const [
@@ -1476,8 +1570,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'terametre per minute squared',
     createSymbol(
       const [
@@ -1489,8 +1584,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'terametre per second squared',
     createSymbol(
       const [
@@ -1502,8 +1598,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yard per hour per second',
     createSymbol(
       const [
@@ -1516,7 +1613,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.yardPerHourPerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yard per hour squared',
     createSymbol(
       const [
@@ -1528,7 +1625,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.yardPerHourSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yard per minute per second',
     createSymbol(
       const [
@@ -1541,7 +1638,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.yardPerMinutePerSecond,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yard per minute squared',
     createSymbol(
       const [
@@ -1553,7 +1650,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.yardPerMinuteSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yard per second squared',
     createSymbol(
       const [
@@ -1565,7 +1662,7 @@ final Set<Unit> accelerationUnitDetails = {
     ),
     AccelerationUnits.yardPerSecondSquared,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yoctogal',
     createSymbol(
       const [
@@ -1574,8 +1671,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yoctometre per hour per second',
     createSymbol(
       const [
@@ -1588,8 +1686,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yoctometre per hour squared',
     createSymbol(
       const [
@@ -1601,8 +1700,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yoctometre per minute per second',
     createSymbol(
       const [
@@ -1615,8 +1715,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yoctometre per minute squared',
     createSymbol(
       const [
@@ -1628,8 +1729,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yoctometre per second squared',
     createSymbol(
       const [
@@ -1641,8 +1743,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yottagal',
     createSymbol(
       const [
@@ -1651,8 +1754,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yottametre per hour per second',
     createSymbol(
       const [
@@ -1665,8 +1769,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yottametre per hour squared',
     createSymbol(
       const [
@@ -1678,8 +1783,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yottametre per minute per second',
     createSymbol(
       const [
@@ -1692,8 +1798,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yottametre per minute squared',
     createSymbol(
       const [
@@ -1705,8 +1812,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'yottametre per second squared',
     createSymbol(
       const [
@@ -1718,8 +1826,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zeptogal',
     createSymbol(
       const [
@@ -1728,8 +1837,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zeptometre per hour per second',
     createSymbol(
       const [
@@ -1742,8 +1852,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zeptometre per hour squared',
     createSymbol(
       const [
@@ -1755,8 +1866,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zeptometre per minute per second',
     createSymbol(
       const [
@@ -1769,8 +1881,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zeptometre per minute squared',
     createSymbol(
       const [
@@ -1782,8 +1895,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zeptometre per second squared',
     createSymbol(
       const [
@@ -1795,8 +1909,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerSecondSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zettagal',
     createSymbol(
       const [
@@ -1805,8 +1920,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaGal,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zettametre per hour per second',
     createSymbol(
       const [
@@ -1819,8 +1935,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerHourPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zettametre per hour squared',
     createSymbol(
       const [
@@ -1832,8 +1949,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerHourSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zettametre per minute per second',
     createSymbol(
       const [
@@ -1846,8 +1964,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerMinutePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zettametre per minute squared',
     createSymbol(
       const [
@@ -1859,8 +1978,9 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerMinuteSquared,
+    variation: true,
   ),
-  Unit(
+  Unit<AccelerationUnits>(
     'zettametre per second squared',
     createSymbol(
       const [
@@ -1872,5 +1992,6 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerSecondSquared,
+    variation: true,
   ),
 };

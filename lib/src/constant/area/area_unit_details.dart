@@ -23,7 +23,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.acre_USSurvey,
-    system: systemValue[System.usSurvey],
+    system: systemValue[Systems.usSurvey],
   ),
   Unit(
     'are',

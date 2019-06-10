@@ -94,7 +94,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_Ca2,
-    system: systemValue[System.ca2],
+    system: systemValue[Systems.ca2],
   ),
   Unit(
     'milligram per litre',
@@ -107,7 +107,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_CaCO3,
-    system: systemValue[System.caCO3],
+    system: systemValue[Systems.caCO3],
   ),
   Unit(
     'milligram per litre',
@@ -120,7 +120,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_CaO,
-    system: systemValue[System.caO],
+    system: systemValue[Systems.caO],
   ),
   Unit(
     'milligram per litre',
@@ -133,7 +133,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_Mg2,
-    system: systemValue[System.mg2],
+    system: systemValue[Systems.mg2],
   ),
   Unit(
     'millimole per litre',
@@ -146,7 +146,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliMolePerLitre,
-    system: systemValue[System.caCO3],
+    system: systemValue[Systems.caCO3],
   ),
   Unit(
     'part per million',
@@ -158,6 +158,6 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.partPerMillion,
-    system: systemValue[System.caCO3],
+    system: systemValue[Systems.caCO3],
   ),
 };

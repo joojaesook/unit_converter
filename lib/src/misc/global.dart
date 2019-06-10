@@ -3,6 +3,25 @@ import '../constant/others/symbol.dart';
 import '../enum/conversion_type.dart';
 import '../enum/symbol_parts.dart';
 
+// Unit<T> createVariationUnit<T>(
+//     String name, List<SymbolParts> symbolParts, T type,
+//     {System system}) {
+//   assert(name != null);
+//   assert(symbolParts != null);
+//   assert(type != null);
+
+//   final unit = Unit<T>(
+//     name,
+//     createSymbol(symbolParts),
+//     type,
+//     variation: true,
+//   );
+//   if (system != null) {
+//     unit.system = system;
+//   }
+//   return unit;
+// }
+
 String createSymbol(List<SymbolParts> symbolParts) {
   String symbolName = '';
   if (symbolParts == null || symbolParts.isEmpty) {

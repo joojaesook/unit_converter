@@ -273,7 +273,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.foot_USSurvey,
-    system: systemValue[System.usSurvey],
+    system: systemValue[Systems.usSurvey],
   ),
   Unit(
     'furlong',
