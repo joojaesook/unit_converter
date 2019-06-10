@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> magneticFluxUnitDetails = {
-  Unit(
+  Unit<MagneticFluxUnits>(
     'attoweber',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.attoWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'centiweber',
     createSymbol(
       const [
@@ -23,8 +24,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.centiWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'decaweber',
     createSymbol(
       const [
@@ -33,8 +35,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.decaWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'deciweber',
     createSymbol(
       const [
@@ -43,8 +46,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.deciWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'exaweber',
     createSymbol(
       const [
@@ -53,8 +57,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.exaWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'femtoweber',
     createSymbol(
       const [
@@ -63,8 +68,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.femtoWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'gigaweber',
     createSymbol(
       const [
@@ -73,8 +79,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.gigaWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'hectoweber',
     createSymbol(
       const [
@@ -83,8 +90,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.hectoWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'kiloweber',
     createSymbol(
       const [
@@ -93,8 +101,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.kiloWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'maxwell',
     createSymbol(
       const [
@@ -103,7 +112,7 @@ final Set<Unit> magneticFluxUnitDetails = {
     ),
     MagneticFluxUnits.maxwell,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'megaweber',
     createSymbol(
       const [
@@ -112,8 +121,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.megaWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'microweber',
     createSymbol(
       const [
@@ -122,8 +132,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.microWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'milliweber',
     createSymbol(
       const [
@@ -132,8 +143,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.milliWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'nanoweber',
     createSymbol(
       const [
@@ -142,8 +154,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.nanoWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'petaweber',
     createSymbol(
       const [
@@ -152,8 +165,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.petaWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'picoweber',
     createSymbol(
       const [
@@ -162,8 +176,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.picoWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'teraweber',
     createSymbol(
       const [
@@ -172,8 +187,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.teraWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'weber',
     createSymbol(
       const [
@@ -181,8 +197,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.weber,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'yoctoweber',
     createSymbol(
       const [
@@ -191,8 +208,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.yoctoWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'yottaweber',
     createSymbol(
       const [
@@ -201,8 +219,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.yottaWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'zeptoweber',
     createSymbol(
       const [
@@ -211,8 +230,9 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.zeptoWeber,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxUnits>(
     'zettaweber',
     createSymbol(
       const [
@@ -221,5 +241,6 @@ final Set<Unit> magneticFluxUnitDetails = {
       ],
     ),
     MagneticFluxUnits.zettaWeber,
+    variation: true,
   ),
 };
