@@ -1,12 +1,12 @@
 import '../../enum/mass_units.dart';
 import '../../enum/symbol_parts.dart';
-import '../../enum/system.dart';
+import '../../enum/systems.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/system_value.dart';
 
 final Set<Unit> massUnitDetails = {
-  Unit(
+  Unit<MassUnits>(
     'attogram',
     createSymbol(
       const [
@@ -15,8 +15,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.attoGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'attotonne',
     createSymbol(
       const [
@@ -25,9 +26,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.attoTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'carat',
     createSymbol(
       const [
@@ -36,7 +38,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.carat,
   ),
-  Unit(
+  Unit<MassUnits>(
     'centigram',
     createSymbol(
       const [
@@ -45,8 +47,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.centiGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'centitonne',
     createSymbol(
       const [
@@ -55,9 +58,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.centiTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'decagram',
     createSymbol(
       const [
@@ -66,8 +70,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.decaGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'decatonne',
     createSymbol(
       const [
@@ -76,9 +81,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.decaTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'decigram',
     createSymbol(
       const [
@@ -87,8 +93,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.deciGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'decitonne',
     createSymbol(
       const [
@@ -97,9 +104,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.deciTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'exagram',
     createSymbol(
       const [
@@ -108,8 +116,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.exaGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'exatonne',
     createSymbol(
       const [
@@ -118,9 +127,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.exaTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'femtogram',
     createSymbol(
       const [
@@ -129,8 +139,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.femtoGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'femtotonne',
     createSymbol(
       const [
@@ -139,9 +150,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.femtoTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'gigagram',
     createSymbol(
       const [
@@ -150,8 +162,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.gigaGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'gigatonne',
     createSymbol(
       const [
@@ -160,9 +173,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.gigaTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'grain',
     createSymbol(
       const [
@@ -171,7 +185,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.grain,
   ),
-  Unit(
+  Unit<MassUnits>(
     'gram',
     createSymbol(
       const [
@@ -180,7 +194,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.gram,
   ),
-  Unit(
+  Unit<MassUnits>(
     'hectogram',
     createSymbol(
       const [
@@ -189,8 +203,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.hectoGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'hectotonne',
     createSymbol(
       const [
@@ -199,9 +214,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.hectoTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'kilogram',
     createSymbol(
       const [
@@ -210,8 +226,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.kiloGram,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'kilotonne',
     createSymbol(
       const [
@@ -220,9 +237,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.kiloTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'long hundredweight',
     createSymbol(
       const [
@@ -233,7 +251,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.longHundredWeight,
   ),
-  Unit(
+  Unit<MassUnits>(
     'long tonne',
     createSymbol(
       const [
@@ -246,7 +264,7 @@ final Set<Unit> massUnitDetails = {
     MassUnits.longTonne,
     // system: systemValue[System.imperial],
   ),
-  Unit(
+  Unit<MassUnits>(
     'megagram',
     createSymbol(
       const [
@@ -255,8 +273,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.megaGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'megatonne',
     createSymbol(
       const [
@@ -265,9 +284,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.megaTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'microgram',
     createSymbol(
       const [
@@ -276,8 +296,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.microGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'microtonne',
     createSymbol(
       const [
@@ -286,9 +307,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.microTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'milligram',
     createSymbol(
       const [
@@ -297,8 +319,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.milliGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'millitonne',
     createSymbol(
       const [
@@ -307,9 +330,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.milliTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'nanogram',
     createSymbol(
       const [
@@ -318,8 +342,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.nanoGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'nanotonne',
     createSymbol(
       const [
@@ -328,9 +353,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.nanoTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'ounce',
     createSymbol(
       const [
@@ -339,7 +365,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.ounce,
   ),
-  Unit(
+  Unit<MassUnits>(
     'ounce',
     createSymbol(
       const [
@@ -349,7 +375,7 @@ final Set<Unit> massUnitDetails = {
     MassUnits.ounce_USFoodNutrition,
     system: systemValue[Systems.usFoodNutrition],
   ),
-  Unit(
+  Unit<MassUnits>(
     'pennyweight',
     createSymbol(
       const [
@@ -358,7 +384,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.pennyWeight,
   ),
-  Unit(
+  Unit<MassUnits>(
     'petagram',
     createSymbol(
       const [
@@ -367,8 +393,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.petaGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'petatonne',
     createSymbol(
       const [
@@ -377,9 +404,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.petaTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'picogram',
     createSymbol(
       const [
@@ -388,8 +416,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.picoGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'picotonne',
     createSymbol(
       const [
@@ -398,9 +427,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.picoTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'pood',
     createSymbol(
       const [
@@ -409,7 +439,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.pood,
   ),
-  Unit(
+  Unit<MassUnits>(
     'pound',
     createSymbol(
       const [
@@ -418,7 +448,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.pound,
   ),
-  Unit(
+  Unit<MassUnits>(
     'short hundredweight',
     createSymbol(
       const [
@@ -430,7 +460,7 @@ final Set<Unit> massUnitDetails = {
     MassUnits.shortHundredWeight,
     // system: systemValue[System.us],
   ),
-  Unit(
+  Unit<MassUnits>(
     'short tonne',
     createSymbol(
       const [
@@ -443,7 +473,7 @@ final Set<Unit> massUnitDetails = {
     MassUnits.shortTonne,
     // system: systemValue[System.us],
   ),
-  Unit(
+  Unit<MassUnits>(
     'slug',
     createSymbol(
       const [
@@ -452,7 +482,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.slug,
   ),
-  Unit(
+  Unit<MassUnits>(
     'stone',
     createSymbol(
       const [
@@ -461,7 +491,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.stone,
   ),
-  Unit(
+  Unit<MassUnits>(
     'teragram',
     createSymbol(
       const [
@@ -470,8 +500,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.teraGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'teratonne',
     createSymbol(
       const [
@@ -480,9 +511,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.teraTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'tonne',
     createSymbol(
       const [
@@ -492,7 +524,7 @@ final Set<Unit> massUnitDetails = {
     MassUnits.tonne,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'troy ounce',
     createSymbol(
       const [
@@ -503,7 +535,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.troyOunce,
   ),
-  Unit(
+  Unit<MassUnits>(
     'troy pound',
     createSymbol(
       const [
@@ -514,7 +546,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.troyPound,
   ),
-  Unit(
+  Unit<MassUnits>(
     'yoctogram',
     createSymbol(
       const [
@@ -523,8 +555,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.yoctoGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'yoctotonne',
     createSymbol(
       const [
@@ -533,9 +566,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.yoctoTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'yottagram',
     createSymbol(
       const [
@@ -544,8 +578,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.yottaGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'yottatonne',
     createSymbol(
       const [
@@ -554,9 +589,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.yottaTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'zeptogram',
     createSymbol(
       const [
@@ -565,8 +601,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.zeptoGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'zeptotonne',
     createSymbol(
       const [
@@ -575,9 +612,10 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.zeptoTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
-  Unit(
+  Unit<MassUnits>(
     'zettagram',
     createSymbol(
       const [
@@ -586,8 +624,9 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.zettaGram,
+    variation: true,
   ),
-  Unit(
+  Unit<MassUnits>(
     'zettatonne',
     createSymbol(
       const [
@@ -596,6 +635,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.zettaTonne,
+    variation: true,
     // system: systemValue[System.metric],
   ),
 };
