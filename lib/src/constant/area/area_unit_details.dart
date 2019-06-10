@@ -1,12 +1,12 @@
 import '../../enum/area_units.dart';
 import '../../enum/symbol_parts.dart';
-import '../../enum/system.dart';
+import '../../enum/systems.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/system_value.dart';
 
 final Set<Unit> areaUnitDetails = {
-  Unit(
+  Unit<AreaUnits>(
     'acre',
     createSymbol(
       const [
@@ -15,7 +15,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.acre,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'acre',
     createSymbol(
       const [
@@ -25,7 +25,7 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.acre_USSurvey,
     system: systemValue[Systems.usSurvey],
   ),
-  Unit(
+  Unit<AreaUnits>(
     'are',
     createSymbol(
       const [
@@ -34,7 +34,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.are,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'attobarn',
     createSymbol(
       const [
@@ -43,8 +43,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.attoBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'barn',
     createSymbol(
       const [
@@ -53,7 +54,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.barn,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'centibarn',
     createSymbol(
       const [
@@ -62,8 +63,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.centiBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'circular mil',
     createSymbol(
       const [
@@ -72,7 +74,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.circularMil,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'decabarn',
     createSymbol(
       const [
@@ -81,8 +83,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.decaBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'decibarn',
     createSymbol(
       const [
@@ -91,8 +94,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.deciBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'exabarn',
     createSymbol(
       const [
@@ -101,8 +105,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.exaBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'femtobarn',
     createSymbol(
       const [
@@ -111,8 +116,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.femtoBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'gigabarn',
     createSymbol(
       const [
@@ -121,8 +127,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.gigaBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'hectare',
     createSymbol(
       const [
@@ -131,7 +138,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.hectare,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'hectobarn',
     createSymbol(
       const [
@@ -140,8 +147,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.hectoBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'kilobarn',
     createSymbol(
       const [
@@ -150,8 +158,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.kiloBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'megabarn',
     createSymbol(
       const [
@@ -160,8 +169,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.megaBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'microbarn',
     createSymbol(
       const [
@@ -170,8 +180,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.microBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'millibarn',
     createSymbol(
       const [
@@ -180,8 +191,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.milliBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'nanobarn',
     createSymbol(
       const [
@@ -190,8 +202,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.nanoBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'petabarn',
     createSymbol(
       const [
@@ -200,8 +213,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.petaBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'picobarn',
     createSymbol(
       const [
@@ -210,8 +224,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.picoBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'rai',
     createSymbol(
       const [
@@ -220,7 +235,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.rai,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'rood',
     createSymbol(
       const [
@@ -229,7 +244,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.rood,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square',
     createSymbol(
       const [
@@ -243,7 +258,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.square,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square attometre',
     createSymbol(
       const [
@@ -253,8 +268,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareAttoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square centimetre',
     createSymbol(
       const [
@@ -264,8 +280,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareCentiMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square decametre',
     createSymbol(
       const [
@@ -275,8 +292,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareDecaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square decimetre',
     createSymbol(
       const [
@@ -286,8 +304,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareDeciMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square exametre',
     createSymbol(
       const [
@@ -297,8 +316,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareExaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square femtometre',
     createSymbol(
       const [
@@ -308,8 +328,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareFemtoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square foot',
     createSymbol(
       const [
@@ -319,7 +340,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.squareFoot,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square gigametre',
     createSymbol(
       const [
@@ -329,8 +350,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareGigaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square hectometre',
     createSymbol(
       const [
@@ -340,8 +362,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareHectoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square inch',
     createSymbol(
       const [
@@ -351,7 +374,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.squareInch,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square kilometre',
     createSymbol(
       const [
@@ -361,8 +384,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareKiloMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square megametre',
     createSymbol(
       const [
@@ -372,8 +396,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareMegaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square metre',
     createSymbol(
       const [
@@ -382,8 +407,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareMetre,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square micrometre',
     createSymbol(
       const [
@@ -393,8 +419,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareMicroMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square mile',
     createSymbol(
       const [
@@ -404,7 +431,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.squareMile,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square millimetre',
     createSymbol(
       const [
@@ -414,8 +441,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareMilliMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square nanometre',
     createSymbol(
       const [
@@ -425,8 +453,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareNanoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square perch',
     createSymbol(
       const [
@@ -435,7 +464,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.squarePerch,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square petametre',
     createSymbol(
       const [
@@ -445,8 +474,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squarePetaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square picometre',
     createSymbol(
       const [
@@ -456,8 +486,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squarePicoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square terametre',
     createSymbol(
       const [
@@ -467,8 +498,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareTeraMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square yard',
     createSymbol(
       const [
@@ -478,7 +510,7 @@ final Set<Unit> areaUnitDetails = {
     ),
     AreaUnits.squareYard,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square yoctometre',
     createSymbol(
       const [
@@ -488,8 +520,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareYoctoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square yottametre',
     createSymbol(
       const [
@@ -499,8 +532,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareYottaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square zeptometre',
     createSymbol(
       const [
@@ -510,8 +544,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareZeptoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'square zettametre',
     createSymbol(
       const [
@@ -521,8 +556,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareZettaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'terabarn',
     createSymbol(
       const [
@@ -531,8 +567,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.teraBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'yoctobarn',
     createSymbol(
       const [
@@ -541,8 +578,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.yoctoBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'yottabarn',
     createSymbol(
       const [
@@ -551,8 +589,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.yottaBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'zeptobarn',
     createSymbol(
       const [
@@ -561,8 +600,9 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.zeptoBarn,
+    variation: true,
   ),
-  Unit(
+  Unit<AreaUnits>(
     'zettabarn',
     createSymbol(
       const [
@@ -571,5 +611,6 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.zettaBarn,
+    variation: true,
   ),
 };

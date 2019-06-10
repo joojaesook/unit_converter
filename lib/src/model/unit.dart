@@ -1,5 +1,3 @@
-import 'system.dart';
-
 /// Class that defines an unit
 class Unit<T> {
   // Name of the unit
@@ -10,10 +8,10 @@ class Unit<T> {
   final T type;
   // Whether this is the base unit
   final bool baseUnit;
-  // Whether this unit is a variation of another unit
+  // Whether this unit is a prefixed variation of another unit
   final bool variation;
   // The system to which this unit belong to
-  System system;
+  String system;
 
   Unit(this.name, this.symbol, this.type,
       {this.baseUnit = false, this.variation = false, this.system})
