@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 Set<Unit> dataRateUnitDetails = {
-  Unit(
+  Unit<DataRateUnits>(
     'bit per hour',
     createSymbol(
       const [
@@ -15,7 +15,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.bitPerHour,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'bit per minute',
     createSymbol(
       const [
@@ -26,7 +26,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.bitPerMinute,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'bit per second',
     createSymbol(
       const [
@@ -36,8 +36,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.bitPerSecond,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'byte per hour',
     createSymbol(
       const [
@@ -48,7 +49,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.bytePerHour,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'byte per minute',
     createSymbol(
       const [
@@ -59,7 +60,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.bytePerMinute,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'byte per second',
     createSymbol(
       const [
@@ -70,7 +71,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.bytePerSecond,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'exabit per hour',
     createSymbol(
       const [
@@ -81,8 +82,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.exaBitPerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'exabit per minute',
     createSymbol(
       const [
@@ -93,8 +95,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.exaBitPerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'exabit per second',
     createSymbol(
       const [
@@ -105,8 +108,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.exaBitPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'exabyte per hour',
     createSymbol(
       const [
@@ -117,8 +121,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.exaBytePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'exabyte per minute',
     createSymbol(
       const [
@@ -129,8 +134,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.exaBytePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'exabyte per second',
     createSymbol(
       const [
@@ -141,8 +147,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.exaBytePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'gigabit per hour',
     createSymbol(
       const [
@@ -153,8 +160,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.gigaBitPerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'gigabit per minute',
     createSymbol(
       const [
@@ -165,8 +173,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.gigaBitPerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'gigabit per second',
     createSymbol(
       const [
@@ -177,8 +186,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.gigaBitPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'gigabyte per hour',
     createSymbol(
       const [
@@ -189,8 +199,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.gigaBytePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'gigabyte per minute',
     createSymbol(
       const [
@@ -201,8 +212,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.gigaBytePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'gigabyte per second',
     createSymbol(
       const [
@@ -213,8 +225,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.gigaBytePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'kilobit per hour',
     createSymbol(
       const [
@@ -225,8 +238,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.kiloBitPerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'kilobit per minute',
     createSymbol(
       const [
@@ -237,8 +251,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.kiloBitPerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'kilobit per second',
     createSymbol(
       const [
@@ -249,8 +264,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.kiloBitPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'kilobyte per hour',
     createSymbol(
       const [
@@ -261,8 +277,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.kiloBytePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'kilobyte per minute',
     createSymbol(
       const [
@@ -273,8 +290,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.kiloBytePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'kilobyte per second',
     createSymbol(
       const [
@@ -285,8 +303,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.kiloBytePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'megabit per hour',
     createSymbol(
       const [
@@ -297,8 +316,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.megaBitPerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'megabit per minute',
     createSymbol(
       const [
@@ -309,8 +329,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.megaBitPerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'megabit per second',
     createSymbol(
       const [
@@ -321,8 +342,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.megaBitPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'megabyte per hour',
     createSymbol(
       const [
@@ -333,8 +355,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.megaBytePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'megabyte per minute',
     createSymbol(
       const [
@@ -345,8 +368,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.megaBytePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'megabyte per second',
     createSymbol(
       const [
@@ -357,8 +381,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.megaBytePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'petabit per hour',
     createSymbol(
       const [
@@ -369,8 +394,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.petaBitPerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'petabit per minute',
     createSymbol(
       const [
@@ -381,8 +407,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.petaBitPerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'petabit per second',
     createSymbol(
       const [
@@ -393,8 +420,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.petaBitPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'petabyte per hour',
     createSymbol(
       const [
@@ -405,8 +433,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.petaBytePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'petabyte per minute',
     createSymbol(
       const [
@@ -417,8 +446,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.petaBytePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'petabyte per second',
     createSymbol(
       const [
@@ -429,8 +459,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.petaBytePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'terabit per hour',
     createSymbol(
       const [
@@ -441,8 +472,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.teraBitPerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'terabit per minute',
     createSymbol(
       const [
@@ -453,8 +485,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.teraBitPerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'terabit per second',
     createSymbol(
       const [
@@ -465,8 +498,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.teraBitPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'terabyte per hour',
     createSymbol(
       const [
@@ -477,8 +511,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.teraBytePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'terabyte per minute',
     createSymbol(
       const [
@@ -489,8 +524,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.teraBytePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'terabyte per second',
     createSymbol(
       const [
@@ -501,8 +537,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.teraBytePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'yottabit per hour',
     createSymbol(
       const [
@@ -513,8 +550,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.yottaBitPerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'yottabit per minute',
     createSymbol(
       const [
@@ -525,8 +563,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.yottaBitPerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'yottabit per second',
     createSymbol(
       const [
@@ -537,8 +576,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.yottaBitPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'yottabyte per hour',
     createSymbol(
       const [
@@ -549,8 +589,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.yottaBytePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'yottabyte per minute',
     createSymbol(
       const [
@@ -561,8 +602,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.yottaBytePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'yottabyte per second',
     createSymbol(
       const [
@@ -573,8 +615,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.yottaBytePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'zettabit per hour',
     createSymbol(
       const [
@@ -585,8 +628,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.zettaBitPerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'zettabit per minute',
     createSymbol(
       const [
@@ -597,8 +641,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.zettaBitPerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'zettabit per second',
     createSymbol(
       const [
@@ -609,8 +654,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.zettaBitPerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'zettabyte per hour',
     createSymbol(
       const [
@@ -621,8 +667,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.zettaBytePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'zettabyte per minute',
     createSymbol(
       const [
@@ -633,8 +680,9 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.zettaBytePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<DataRateUnits>(
     'zettabyte per second',
     createSymbol(
       const [
@@ -645,5 +693,6 @@ Set<Unit> dataRateUnitDetails = {
       ],
     ),
     DataRateUnits.zettaBytePerSecond,
+    variation: true,
   ),
 };
