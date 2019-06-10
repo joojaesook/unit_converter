@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> bloodGlucoseUnitDetails = {
-  Unit(
+  Unit<BloodGlucoseUnits>(
     'milligram per decilitre',
     createSymbol(
       const [
@@ -16,8 +16,9 @@ final Set<Unit> bloodGlucoseUnitDetails = {
       ],
     ),
     BloodGlucoseUnits.milliGramPerDeciLitre,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<BloodGlucoseUnits>(
     'millimole per litre',
     createSymbol(
       const [
