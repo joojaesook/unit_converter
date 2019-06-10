@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> electricResistanceUnitDetails = {
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'abohm',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.abOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'attoohm',
     createSymbol(
       const [
@@ -23,8 +24,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.attoOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'centiohm',
     createSymbol(
       const [
@@ -33,8 +35,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.centiOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'decaohm',
     createSymbol(
       const [
@@ -43,8 +46,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.decaOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'deciohm',
     createSymbol(
       const [
@@ -53,8 +57,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.deciOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'exaohm',
     createSymbol(
       const [
@@ -63,8 +68,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.exaOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'femtoohm',
     createSymbol(
       const [
@@ -73,8 +79,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.femtoOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'gigaohm',
     createSymbol(
       const [
@@ -83,8 +90,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.gigaOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'hectoohm',
     createSymbol(
       const [
@@ -93,8 +101,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.hectoOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'kiloohm',
     createSymbol(
       const [
@@ -103,8 +112,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.kiloOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'megaohm',
     createSymbol(
       const [
@@ -113,8 +123,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.megaOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'microohm',
     createSymbol(
       const [
@@ -123,8 +134,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.microOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'milliohm',
     createSymbol(
       const [
@@ -133,8 +145,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.milliOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'nanoohm',
     createSymbol(
       const [
@@ -143,8 +156,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.nanoOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'ohm',
     createSymbol(
       const [
@@ -152,8 +166,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.ohm,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'petaohm',
     createSymbol(
       const [
@@ -162,8 +177,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.petaOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'picoohm',
     createSymbol(
       const [
@@ -172,8 +188,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.picoOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'teraohm',
     createSymbol(
       const [
@@ -182,8 +199,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.teraOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'yoctoohm',
     createSymbol(
       const [
@@ -192,8 +210,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.yoctoOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'yottaohm',
     createSymbol(
       const [
@@ -202,8 +221,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.yottaOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'zeptoohm',
     createSymbol(
       const [
@@ -212,8 +232,9 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.zeptoOhm,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricResistanceUnits>(
     'zettaohm',
     createSymbol(
       const [
@@ -222,5 +243,6 @@ final Set<Unit> electricResistanceUnitDetails = {
       ],
     ),
     ElectricResistanceUnits.zettaOhm,
+    variation: true,
   ),
 };
