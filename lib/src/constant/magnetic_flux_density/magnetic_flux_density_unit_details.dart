@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> magneticFluxDensityUnitDetails = {
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'attogauss',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.attoGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'attotesla',
     createSymbol(
       const [
@@ -23,8 +24,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.attoTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'centigauss',
     createSymbol(
       const [
@@ -33,8 +35,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.centiGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'centitesla',
     createSymbol(
       const [
@@ -43,8 +46,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.centiTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'decagauss',
     createSymbol(
       const [
@@ -53,8 +57,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.decaGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'decatesla',
     createSymbol(
       const [
@@ -63,8 +68,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.decaTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'decigauss',
     createSymbol(
       const [
@@ -73,8 +79,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.deciGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'decitesla',
     createSymbol(
       const [
@@ -83,8 +90,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.deciTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'exagauss',
     createSymbol(
       const [
@@ -93,8 +101,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.exaGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'exatesla',
     createSymbol(
       const [
@@ -103,8 +112,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.exaTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'femtogauss',
     createSymbol(
       const [
@@ -113,8 +123,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.femtoGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'femtotesla',
     createSymbol(
       const [
@@ -123,8 +134,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.femtoTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'gauss',
     createSymbol(
       const [
@@ -133,7 +145,7 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
     ),
     MagneticFluxDensityUnits.gauss,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'gigagauss',
     createSymbol(
       const [
@@ -142,8 +154,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.gigaGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'gigatesla',
     createSymbol(
       const [
@@ -152,8 +165,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.gigaTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'hectogauss',
     createSymbol(
       const [
@@ -162,8 +176,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.hectoGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'hectotesla',
     createSymbol(
       const [
@@ -172,8 +187,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.hectoTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'kilogauss',
     createSymbol(
       const [
@@ -182,8 +198,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.kiloGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'kilotesla',
     createSymbol(
       const [
@@ -192,8 +209,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.kiloTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'megagauss',
     createSymbol(
       const [
@@ -202,8 +220,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.megaGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'megatesla',
     createSymbol(
       const [
@@ -212,8 +231,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.megaTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'microgauss',
     createSymbol(
       const [
@@ -222,8 +242,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.microGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'microtesla',
     createSymbol(
       const [
@@ -232,8 +253,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.microTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'milligauss',
     createSymbol(
       const [
@@ -242,8 +264,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.milliGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'millitesla',
     createSymbol(
       const [
@@ -252,8 +275,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.milliTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'nanogauss',
     createSymbol(
       const [
@@ -262,8 +286,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.nanoGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'nanotesla',
     createSymbol(
       const [
@@ -272,8 +297,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.nanoTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'petagauss',
     createSymbol(
       const [
@@ -282,8 +308,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.petaGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'petatesla',
     createSymbol(
       const [
@@ -292,8 +319,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.petaTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'picogauss',
     createSymbol(
       const [
@@ -302,8 +330,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.picoGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'picotesla',
     createSymbol(
       const [
@@ -312,8 +341,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.picoTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'teragauss',
     createSymbol(
       const [
@@ -322,8 +352,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.teraGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'teratesla',
     createSymbol(
       const [
@@ -332,8 +363,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.teraTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'tesla',
     createSymbol(
       const [
@@ -341,8 +373,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.tesla,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'yoctogauss',
     createSymbol(
       const [
@@ -351,8 +384,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.yoctoGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'yoctotesla',
     createSymbol(
       const [
@@ -361,8 +395,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.yoctoTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'yottagauss',
     createSymbol(
       const [
@@ -371,8 +406,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.yottaGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'yottatesla',
     createSymbol(
       const [
@@ -381,8 +417,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.yottaTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'zeptogauss',
     createSymbol(
       const [
@@ -391,8 +428,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.zeptoGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'zeptotesla',
     createSymbol(
       const [
@@ -401,8 +439,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.zeptoTesla,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'zettagauss',
     createSymbol(
       const [
@@ -411,8 +450,9 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.zettaGauss,
+    variation: true,
   ),
-  Unit(
+  Unit<MagneticFluxDensityUnits>(
     'zettatesla',
     createSymbol(
       const [
@@ -421,5 +461,6 @@ final Set<Unit> magneticFluxDensityUnitDetails = {
       ],
     ),
     MagneticFluxDensityUnits.zettaTesla,
+    variation: true,
   ),
 };
