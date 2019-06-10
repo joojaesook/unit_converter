@@ -9,28 +9,28 @@ import '../others/prefix_value.dart';
 
 Map<LuminanceUnits, double> luminanceConversionDetails = {
   // Base unit
-  LuminanceUnits.candelaPerSquareMeter: 1,
-  LuminanceUnits.candelaPerSquareAttoMeter: pow(
+  LuminanceUnits.candelaPerSquareMetre: 1,
+  LuminanceUnits.candelaPerSquareAttoMetre: pow(
     prefixValue[Prefix.atto],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareCentiMeter: pow(
+  LuminanceUnits.candelaPerSquareCentiMetre: pow(
     prefixValue[Prefix.centi],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareDecaMeter: pow(
+  LuminanceUnits.candelaPerSquareDecaMetre: pow(
     prefixValue[Prefix.deca],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareDeciMeter: pow(
+  LuminanceUnits.candelaPerSquareDeciMetre: pow(
     prefixValue[Prefix.deci],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareExaMeter: pow(
+  LuminanceUnits.candelaPerSquareExaMetre: pow(
     prefixValue[Prefix.exa],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareFemtoMeter: pow(
+  LuminanceUnits.candelaPerSquareFemtoMetre: pow(
     prefixValue[Prefix.femto],
     -2,
   ),
@@ -41,11 +41,11 @@ Map<LuminanceUnits, double> luminanceConversionDetails = {
     ),
     -2,
   ),
-  LuminanceUnits.candelaPerSquareGigaMeter: pow(
+  LuminanceUnits.candelaPerSquareGigaMetre: pow(
     prefixValue[Prefix.giga],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareHectoMeter: pow(
+  LuminanceUnits.candelaPerSquareHectoMetre: pow(
     prefixValue[Prefix.hecto],
     -2,
   ),
@@ -56,51 +56,51 @@ Map<LuminanceUnits, double> luminanceConversionDetails = {
     ),
     -2,
   ),
-  LuminanceUnits.candelaPerSquareKiloMeter: pow(
+  LuminanceUnits.candelaPerSquareKiloMetre: pow(
     prefixValue[Prefix.kilo],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareMegaMeter: pow(
+  LuminanceUnits.candelaPerSquareMegaMetre: pow(
     prefixValue[Prefix.mega],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareMicroMeter: pow(
+  LuminanceUnits.candelaPerSquareMicroMetre: pow(
     prefixValue[Prefix.micro],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareMilliMeter: pow(
+  LuminanceUnits.candelaPerSquareMilliMetre: pow(
     prefixValue[Prefix.milli],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareNanoMeter: pow(
+  LuminanceUnits.candelaPerSquareNanoMetre: pow(
     prefixValue[Prefix.nano],
     -2,
   ),
-  LuminanceUnits.candelaPerSquarePetaMeter: pow(
+  LuminanceUnits.candelaPerSquarePetaMetre: pow(
     prefixValue[Prefix.peta],
     -2,
   ),
-  LuminanceUnits.candelaPerSquarePicoMeter: pow(
+  LuminanceUnits.candelaPerSquarePicoMetre: pow(
     prefixValue[Prefix.pico],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareTeraMeter: pow(
+  LuminanceUnits.candelaPerSquareTeraMetre: pow(
     prefixValue[Prefix.tera],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareYoctoMeter: pow(
+  LuminanceUnits.candelaPerSquareYoctoMetre: pow(
     prefixValue[Prefix.yocto],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareYottaMeter: pow(
+  LuminanceUnits.candelaPerSquareYottaMetre: pow(
     prefixValue[Prefix.yotta],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareZeptoMeter: pow(
+  LuminanceUnits.candelaPerSquareZeptoMetre: pow(
     prefixValue[Prefix.zepto],
     -2,
   ),
-  LuminanceUnits.candelaPerSquareZettaMeter: pow(
+  LuminanceUnits.candelaPerSquareZettaMetre: pow(
     prefixValue[Prefix.zetta],
     -2,
   ),
@@ -108,6 +108,6 @@ Map<LuminanceUnits, double> luminanceConversionDetails = {
   LuminanceUnits.lambert: 3183.09886184,
   LuminanceUnits.stilb: getConversionDetail(
     ConversionType.luminance,
-    LuminanceUnits.candelaPerSquareCentiMeter,
+    LuminanceUnits.candelaPerSquareCentiMetre,
   ),
 };

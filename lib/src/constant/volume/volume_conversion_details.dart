@@ -11,7 +11,7 @@ const _litre = 0.001;
 
 final Map<VolumeUnits, double> volumeConversionDetails = {
   // Base unit
-  VolumeUnits.cubicMeter: 1,
+  VolumeUnits.cubicMetre: 1,
   VolumeUnits.acreFoot: 1233.48183754752,
   VolumeUnits.acreInch: 102.79015312896,
   VolumeUnits.attoLitre: _litre * prefixValue[Prefix.atto],
@@ -19,27 +19,27 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
   VolumeUnits.bushel_Imperial: 0.03636872,
   VolumeUnits.bushel_USDryLevel: 0.03523907016688,
   VolumeUnits.centiLitre: _litre * prefixValue[Prefix.centi],
-  VolumeUnits.cubicAttoMeter: pow(
+  VolumeUnits.cubicAttoMetre: pow(
     prefixValue[Prefix.atto],
     3,
   ),
-  VolumeUnits.cubicCentiMeter: pow(
+  VolumeUnits.cubicCentiMetre: pow(
     prefixValue[Prefix.centi],
     3,
   ),
-  VolumeUnits.cubicDecaMeter: pow(
+  VolumeUnits.cubicDecaMetre: pow(
     prefixValue[Prefix.deca],
     3,
   ),
-  VolumeUnits.cubicDeciMeter: pow(
+  VolumeUnits.cubicDeciMetre: pow(
     prefixValue[Prefix.deci],
     3,
   ),
-  VolumeUnits.cubicExaMeter: pow(
+  VolumeUnits.cubicExaMetre: pow(
     prefixValue[Prefix.exa],
     3,
   ),
-  VolumeUnits.cubicFemtoMeter: pow(
+  VolumeUnits.cubicFemtoMetre: pow(
     prefixValue[Prefix.femto],
     3,
   ),
@@ -47,11 +47,11 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
     getConversionDetail(ConversionType.length, LengthUnits.foot),
     3,
   ),
-  VolumeUnits.cubicGigaMeter: pow(
+  VolumeUnits.cubicGigaMetre: pow(
     prefixValue[Prefix.giga],
     3,
   ),
-  VolumeUnits.cubicHectoMeter: pow(
+  VolumeUnits.cubicHectoMetre: pow(
     prefixValue[Prefix.hecto],
     3,
   ),
@@ -59,15 +59,15 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
     getConversionDetail(ConversionType.length, LengthUnits.inch),
     3,
   ),
-  VolumeUnits.cubicKiloMeter: pow(
+  VolumeUnits.cubicKiloMetre: pow(
     prefixValue[Prefix.kilo],
     3,
   ),
-  VolumeUnits.cubicMegaMeter: pow(
+  VolumeUnits.cubicMegaMetre: pow(
     prefixValue[Prefix.mega],
     3,
   ),
-  VolumeUnits.cubicMicroMeter: pow(
+  VolumeUnits.cubicMicroMetre: pow(
     prefixValue[Prefix.micro],
     3,
   ),
@@ -75,23 +75,23 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
     getConversionDetail(ConversionType.length, LengthUnits.mile),
     3,
   ),
-  VolumeUnits.cubicMilliMeter: pow(
+  VolumeUnits.cubicMilliMetre: pow(
     prefixValue[Prefix.milli],
     3,
   ),
-  VolumeUnits.cubicNanoMeter: pow(
+  VolumeUnits.cubicNanoMetre: pow(
     prefixValue[Prefix.nano],
     3,
   ),
-  VolumeUnits.cubicPetaMeter: pow(
+  VolumeUnits.cubicPetaMetre: pow(
     prefixValue[Prefix.peta],
     3,
   ),
-  VolumeUnits.cubicPicoMeter: pow(
+  VolumeUnits.cubicPicoMetre: pow(
     prefixValue[Prefix.pico],
     3,
   ),
-  VolumeUnits.cubicTeraMeter: pow(
+  VolumeUnits.cubicTeraMetre: pow(
     prefixValue[Prefix.tera],
     3,
   ),
@@ -99,19 +99,19 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
     getConversionDetail(ConversionType.length, LengthUnits.yard),
     3,
   ),
-  VolumeUnits.cubicYoctoMeter: pow(
+  VolumeUnits.cubicYoctoMetre: pow(
     prefixValue[Prefix.yocto],
     3,
   ),
-  VolumeUnits.cubicYottaMeter: pow(
+  VolumeUnits.cubicYottaMetre: pow(
     prefixValue[Prefix.yotta],
     3,
   ),
-  VolumeUnits.cubicZeptoMeter: pow(
+  VolumeUnits.cubicZeptoMetre: pow(
     prefixValue[Prefix.zepto],
     3,
   ),
-  VolumeUnits.cubicZettaMeter: pow(
+  VolumeUnits.cubicZettaMetre: pow(
     prefixValue[Prefix.zetta],
     3,
   ),
@@ -135,7 +135,7 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
   VolumeUnits.gigaLitre: _litre * prefixValue[Prefix.giga],
   VolumeUnits.gill_Imperial: 0.0001420653125,
   VolumeUnits.gill_US: 0.00011829411825,
-  VolumeUnits.hectareMeter: 10000,
+  VolumeUnits.hectareMetre: 10000,
   VolumeUnits.hectoLitre: _litre * prefixValue[Prefix.hecto],
   VolumeUnits.jigger: 0.0000443602943,
   VolumeUnits.kiloLitre: _litre * prefixValue[Prefix.kilo],

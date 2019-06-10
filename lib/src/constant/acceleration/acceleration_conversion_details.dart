@@ -8,10 +8,10 @@ import '../../misc/global.dart';
 import '../others/prefix_value.dart';
 
 final _gal = pow(10, -2);
-const _meterPerHourPerSecond = 0.000277777778;
-final _meterPerHourSquared = 7.71604938 * pow(10, -8);
-const _meterPerMinutePerSecond = 0.0166666667;
-const _meterPerMinuteSquared = 0.000277777778;
+const _metrePerHourPerSecond = 0.000277777778;
+final _metrePerHourSquared = 7.71604938 * pow(10, -8);
+const _metrePerMinutePerSecond = 0.0166666667;
+const _metrePerMinuteSquared = 0.000277777778;
 final _foot = getConversionDetail(ConversionType.length, LengthUnits.foot);
 final _inch = getConversionDetail(ConversionType.length, LengthUnits.inch);
 final _mile = getConversionDetail(ConversionType.length, LengthUnits.mile);
@@ -19,231 +19,231 @@ final _yard = getConversionDetail(ConversionType.length, LengthUnits.yard);
 
 Map<AccelerationUnits, double> accelerationConversionDetails = {
   // Base unit
-  AccelerationUnits.meterPerSecondSquared: 1,
+  AccelerationUnits.metrePerSecondSquared: 1,
   AccelerationUnits.attoGal: _gal * prefixValue[Prefix.atto],
-  AccelerationUnits.attoMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.atto],
-  AccelerationUnits.attoMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.atto],
-  AccelerationUnits.attoMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.atto],
-  AccelerationUnits.attoMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.atto],
-  AccelerationUnits.attoMeterPerSecondSquared: prefixValue[Prefix.atto],
+  AccelerationUnits.attoMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.atto],
+  AccelerationUnits.attoMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.atto],
+  AccelerationUnits.attoMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.atto],
+  AccelerationUnits.attoMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.atto],
+  AccelerationUnits.attoMetrePerSecondSquared: prefixValue[Prefix.atto],
   AccelerationUnits.centiGal: _gal * prefixValue[Prefix.centi],
-  AccelerationUnits.centiMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.centi],
-  AccelerationUnits.centiMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.centi],
-  AccelerationUnits.centiMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.centi],
-  AccelerationUnits.centiMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.centi],
-  AccelerationUnits.centiMeterPerSecondSquared: prefixValue[Prefix.centi],
+  AccelerationUnits.centiMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.centi],
+  AccelerationUnits.centiMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.centi],
+  AccelerationUnits.centiMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.centi],
+  AccelerationUnits.centiMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.centi],
+  AccelerationUnits.centiMetrePerSecondSquared: prefixValue[Prefix.centi],
   AccelerationUnits.decaGal: _gal * prefixValue[Prefix.deca],
-  AccelerationUnits.decaMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.deca],
-  AccelerationUnits.decaMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.deca],
-  AccelerationUnits.decaMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.deca],
-  AccelerationUnits.decaMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.deca],
-  AccelerationUnits.decaMeterPerSecondSquared: prefixValue[Prefix.deca],
+  AccelerationUnits.decaMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.deca],
+  AccelerationUnits.decaMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.deca],
+  AccelerationUnits.decaMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.deca],
+  AccelerationUnits.decaMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.deca],
+  AccelerationUnits.decaMetrePerSecondSquared: prefixValue[Prefix.deca],
   AccelerationUnits.deciGal: _gal * prefixValue[Prefix.deci],
-  AccelerationUnits.deciMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.deci],
-  AccelerationUnits.deciMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.deci],
-  AccelerationUnits.deciMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.deci],
-  AccelerationUnits.deciMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.deci],
-  AccelerationUnits.deciMeterPerSecondSquared: prefixValue[Prefix.deci],
+  AccelerationUnits.deciMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.deci],
+  AccelerationUnits.deciMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.deci],
+  AccelerationUnits.deciMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.deci],
+  AccelerationUnits.deciMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.deci],
+  AccelerationUnits.deciMetrePerSecondSquared: prefixValue[Prefix.deci],
   AccelerationUnits.exaGal: _gal * prefixValue[Prefix.exa],
-  AccelerationUnits.exaMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.exa],
-  AccelerationUnits.exaMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.exa],
-  AccelerationUnits.exaMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.exa],
-  AccelerationUnits.exaMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.exa],
-  AccelerationUnits.exaMeterPerSecondSquared: prefixValue[Prefix.exa],
+  AccelerationUnits.exaMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.exa],
+  AccelerationUnits.exaMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.exa],
+  AccelerationUnits.exaMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.exa],
+  AccelerationUnits.exaMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.exa],
+  AccelerationUnits.exaMetrePerSecondSquared: prefixValue[Prefix.exa],
   AccelerationUnits.femtoGal: _gal * prefixValue[Prefix.femto],
-  AccelerationUnits.femtoMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.femto],
-  AccelerationUnits.femtoMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.femto],
-  AccelerationUnits.femtoMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.femto],
-  AccelerationUnits.femtoMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.femto],
-  AccelerationUnits.femtoMeterPerSecondSquared: prefixValue[Prefix.femto],
-  AccelerationUnits.footPerHourPerSecond: _meterPerHourPerSecond * _foot,
-  AccelerationUnits.footPerHourSquared: _meterPerHourSquared * _foot,
-  AccelerationUnits.footPerMinutePerSecond: _meterPerMinutePerSecond * _foot,
-  AccelerationUnits.footPerMinuteSquared: _meterPerMinuteSquared * _foot,
+  AccelerationUnits.femtoMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.femto],
+  AccelerationUnits.femtoMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.femto],
+  AccelerationUnits.femtoMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.femto],
+  AccelerationUnits.femtoMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.femto],
+  AccelerationUnits.femtoMetrePerSecondSquared: prefixValue[Prefix.femto],
+  AccelerationUnits.footPerHourPerSecond: _metrePerHourPerSecond * _foot,
+  AccelerationUnits.footPerHourSquared: _metrePerHourSquared * _foot,
+  AccelerationUnits.footPerMinutePerSecond: _metrePerMinutePerSecond * _foot,
+  AccelerationUnits.footPerMinuteSquared: _metrePerMinuteSquared * _foot,
   AccelerationUnits.footPerSecondSquared: _foot,
   AccelerationUnits.gal: _gal,
   AccelerationUnits.gigaGal: _gal * prefixValue[Prefix.giga],
-  AccelerationUnits.gigaMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.giga],
-  AccelerationUnits.gigaMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.giga],
-  AccelerationUnits.gigaMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.giga],
-  AccelerationUnits.gigaMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.giga],
-  AccelerationUnits.gigaMeterPerSecondSquared: prefixValue[Prefix.giga],
+  AccelerationUnits.gigaMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.giga],
+  AccelerationUnits.gigaMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.giga],
+  AccelerationUnits.gigaMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.giga],
+  AccelerationUnits.gigaMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.giga],
+  AccelerationUnits.gigaMetrePerSecondSquared: prefixValue[Prefix.giga],
   AccelerationUnits.hectoGal: _gal * prefixValue[Prefix.hecto],
-  AccelerationUnits.hectoMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.hecto],
-  AccelerationUnits.hectoMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.hecto],
-  AccelerationUnits.hectoMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.hecto],
-  AccelerationUnits.hectoMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.hecto],
-  AccelerationUnits.hectoMeterPerSecondSquared: prefixValue[Prefix.hecto],
-  AccelerationUnits.inchPerHourPerSecond: _meterPerHourPerSecond * _inch,
-  AccelerationUnits.inchPerHourSquared: _meterPerHourSquared * _inch,
-  AccelerationUnits.inchPerMinutePerSecond: _meterPerMinutePerSecond * _inch,
-  AccelerationUnits.inchPerMinuteSquared: _meterPerMinuteSquared * _inch,
+  AccelerationUnits.hectoMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.hecto],
+  AccelerationUnits.hectoMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.hecto],
+  AccelerationUnits.hectoMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.hecto],
+  AccelerationUnits.hectoMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.hecto],
+  AccelerationUnits.hectoMetrePerSecondSquared: prefixValue[Prefix.hecto],
+  AccelerationUnits.inchPerHourPerSecond: _metrePerHourPerSecond * _inch,
+  AccelerationUnits.inchPerHourSquared: _metrePerHourSquared * _inch,
+  AccelerationUnits.inchPerMinutePerSecond: _metrePerMinutePerSecond * _inch,
+  AccelerationUnits.inchPerMinuteSquared: _metrePerMinuteSquared * _inch,
   AccelerationUnits.inchPerSecondSquared: _inch,
   AccelerationUnits.kiloGal: _gal * prefixValue[Prefix.kilo],
-  AccelerationUnits.kiloMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.kilo],
-  AccelerationUnits.kiloMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.kilo],
-  AccelerationUnits.kiloMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.kilo],
-  AccelerationUnits.kiloMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.kilo],
-  AccelerationUnits.kiloMeterPerSecondSquared: prefixValue[Prefix.kilo],
+  AccelerationUnits.kiloMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.kilo],
+  AccelerationUnits.kiloMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.kilo],
+  AccelerationUnits.kiloMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.kilo],
+  AccelerationUnits.kiloMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.kilo],
+  AccelerationUnits.kiloMetrePerSecondSquared: prefixValue[Prefix.kilo],
   AccelerationUnits.megaGal: _gal * prefixValue[Prefix.mega],
-  AccelerationUnits.megaMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.mega],
-  AccelerationUnits.megaMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.mega],
-  AccelerationUnits.megaMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.mega],
-  AccelerationUnits.megaMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.mega],
-  AccelerationUnits.megaMeterPerSecondSquared: prefixValue[Prefix.mega],
-  AccelerationUnits.meterPerHourPerSecond: _meterPerHourPerSecond,
-  AccelerationUnits.meterPerHourSquared: _meterPerHourSquared,
-  AccelerationUnits.meterPerMinutePerSecond: _meterPerMinutePerSecond,
-  AccelerationUnits.meterPerMinuteSquared: _meterPerMinuteSquared,
+  AccelerationUnits.megaMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.mega],
+  AccelerationUnits.megaMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.mega],
+  AccelerationUnits.megaMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.mega],
+  AccelerationUnits.megaMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.mega],
+  AccelerationUnits.megaMetrePerSecondSquared: prefixValue[Prefix.mega],
+  AccelerationUnits.metrePerHourPerSecond: _metrePerHourPerSecond,
+  AccelerationUnits.metrePerHourSquared: _metrePerHourSquared,
+  AccelerationUnits.metrePerMinutePerSecond: _metrePerMinutePerSecond,
+  AccelerationUnits.metrePerMinuteSquared: _metrePerMinuteSquared,
   AccelerationUnits.microGal: _gal * prefixValue[Prefix.micro],
-  AccelerationUnits.microMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.micro],
-  AccelerationUnits.microMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.micro],
-  AccelerationUnits.microMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.micro],
-  AccelerationUnits.microMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.micro],
-  AccelerationUnits.microMeterPerSecondSquared: prefixValue[Prefix.micro],
-  AccelerationUnits.milePerHourPerSecond: _meterPerHourPerSecond * _mile,
-  AccelerationUnits.milePerHourSquared: _meterPerHourSquared * _mile,
-  AccelerationUnits.milePerMinutePerSecond: _meterPerMinutePerSecond * _mile,
-  AccelerationUnits.milePerMinuteSquared: _meterPerMinuteSquared * _mile,
+  AccelerationUnits.microMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.micro],
+  AccelerationUnits.microMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.micro],
+  AccelerationUnits.microMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.micro],
+  AccelerationUnits.microMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.micro],
+  AccelerationUnits.microMetrePerSecondSquared: prefixValue[Prefix.micro],
+  AccelerationUnits.milePerHourPerSecond: _metrePerHourPerSecond * _mile,
+  AccelerationUnits.milePerHourSquared: _metrePerHourSquared * _mile,
+  AccelerationUnits.milePerMinutePerSecond: _metrePerMinutePerSecond * _mile,
+  AccelerationUnits.milePerMinuteSquared: _metrePerMinuteSquared * _mile,
   AccelerationUnits.milePerSecondSquared: _mile,
   AccelerationUnits.milliGal: _gal * prefixValue[Prefix.milli],
-  AccelerationUnits.milliMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.milli],
-  AccelerationUnits.milliMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.milli],
-  AccelerationUnits.milliMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.milli],
-  AccelerationUnits.milliMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.milli],
-  AccelerationUnits.milliMeterPerSecondSquared: prefixValue[Prefix.milli],
+  AccelerationUnits.milliMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.milli],
+  AccelerationUnits.milliMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.milli],
+  AccelerationUnits.milliMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.milli],
+  AccelerationUnits.milliMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.milli],
+  AccelerationUnits.milliMetrePerSecondSquared: prefixValue[Prefix.milli],
   AccelerationUnits.nanoGal: _gal * prefixValue[Prefix.nano],
-  AccelerationUnits.nanoMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.nano],
-  AccelerationUnits.nanoMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.nano],
-  AccelerationUnits.nanoMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.nano],
-  AccelerationUnits.nanoMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.nano],
-  AccelerationUnits.nanoMeterPerSecondSquared: prefixValue[Prefix.nano],
+  AccelerationUnits.nanoMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.nano],
+  AccelerationUnits.nanoMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.nano],
+  AccelerationUnits.nanoMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.nano],
+  AccelerationUnits.nanoMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.nano],
+  AccelerationUnits.nanoMetrePerSecondSquared: prefixValue[Prefix.nano],
   AccelerationUnits.petaGal: _gal * prefixValue[Prefix.peta],
-  AccelerationUnits.petaMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.peta],
-  AccelerationUnits.petaMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.peta],
-  AccelerationUnits.petaMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.peta],
-  AccelerationUnits.petaMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.peta],
-  AccelerationUnits.petaMeterPerSecondSquared: prefixValue[Prefix.peta],
+  AccelerationUnits.petaMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.peta],
+  AccelerationUnits.petaMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.peta],
+  AccelerationUnits.petaMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.peta],
+  AccelerationUnits.petaMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.peta],
+  AccelerationUnits.petaMetrePerSecondSquared: prefixValue[Prefix.peta],
   AccelerationUnits.picoGal: _gal * prefixValue[Prefix.pico],
-  AccelerationUnits.picoMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.pico],
-  AccelerationUnits.picoMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.pico],
-  AccelerationUnits.picoMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.pico],
-  AccelerationUnits.picoMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.pico],
-  AccelerationUnits.picoMeterPerSecondSquared: prefixValue[Prefix.pico],
+  AccelerationUnits.picoMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.pico],
+  AccelerationUnits.picoMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.pico],
+  AccelerationUnits.picoMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.pico],
+  AccelerationUnits.picoMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.pico],
+  AccelerationUnits.picoMetrePerSecondSquared: prefixValue[Prefix.pico],
   AccelerationUnits.standardGravity: 9.80665,
   AccelerationUnits.teraGal: _gal * prefixValue[Prefix.tera],
-  AccelerationUnits.teraMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.tera],
-  AccelerationUnits.teraMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.tera],
-  AccelerationUnits.teraMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.tera],
-  AccelerationUnits.teraMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.tera],
-  AccelerationUnits.teraMeterPerSecondSquared: prefixValue[Prefix.tera],
-  AccelerationUnits.yardPerHourPerSecond: _meterPerHourPerSecond * _yard,
-  AccelerationUnits.yardPerHourSquared: _meterPerHourSquared * _yard,
-  AccelerationUnits.yardPerMinutePerSecond: _meterPerMinutePerSecond * _yard,
-  AccelerationUnits.yardPerMinuteSquared: _meterPerMinuteSquared * _yard,
+  AccelerationUnits.teraMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.tera],
+  AccelerationUnits.teraMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.tera],
+  AccelerationUnits.teraMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.tera],
+  AccelerationUnits.teraMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.tera],
+  AccelerationUnits.teraMetrePerSecondSquared: prefixValue[Prefix.tera],
+  AccelerationUnits.yardPerHourPerSecond: _metrePerHourPerSecond * _yard,
+  AccelerationUnits.yardPerHourSquared: _metrePerHourSquared * _yard,
+  AccelerationUnits.yardPerMinutePerSecond: _metrePerMinutePerSecond * _yard,
+  AccelerationUnits.yardPerMinuteSquared: _metrePerMinuteSquared * _yard,
   AccelerationUnits.yardPerSecondSquared: _yard,
   AccelerationUnits.yoctoGal: _gal * prefixValue[Prefix.yocto],
-  AccelerationUnits.yoctoMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.yocto],
-  AccelerationUnits.yoctoMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.yocto],
-  AccelerationUnits.yoctoMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.yocto],
-  AccelerationUnits.yoctoMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.yocto],
-  AccelerationUnits.yoctoMeterPerSecondSquared: prefixValue[Prefix.yocto],
+  AccelerationUnits.yoctoMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.yocto],
+  AccelerationUnits.yoctoMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.yocto],
+  AccelerationUnits.yoctoMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.yocto],
+  AccelerationUnits.yoctoMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.yocto],
+  AccelerationUnits.yoctoMetrePerSecondSquared: prefixValue[Prefix.yocto],
   AccelerationUnits.yottaGal: _gal * prefixValue[Prefix.yotta],
-  AccelerationUnits.yottaMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.yotta],
-  AccelerationUnits.yottaMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.yotta],
-  AccelerationUnits.yottaMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.yotta],
-  AccelerationUnits.yottaMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.yotta],
-  AccelerationUnits.yottaMeterPerSecondSquared: prefixValue[Prefix.yotta],
+  AccelerationUnits.yottaMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.yotta],
+  AccelerationUnits.yottaMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.yotta],
+  AccelerationUnits.yottaMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.yotta],
+  AccelerationUnits.yottaMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.yotta],
+  AccelerationUnits.yottaMetrePerSecondSquared: prefixValue[Prefix.yotta],
   AccelerationUnits.zeptoGal: _gal * prefixValue[Prefix.zepto],
-  AccelerationUnits.zeptoMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.zepto],
-  AccelerationUnits.zeptoMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.zepto],
-  AccelerationUnits.zeptoMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.zepto],
-  AccelerationUnits.zeptoMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.zepto],
-  AccelerationUnits.zeptoMeterPerSecondSquared: prefixValue[Prefix.zepto],
+  AccelerationUnits.zeptoMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.zepto],
+  AccelerationUnits.zeptoMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.zepto],
+  AccelerationUnits.zeptoMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.zepto],
+  AccelerationUnits.zeptoMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.zepto],
+  AccelerationUnits.zeptoMetrePerSecondSquared: prefixValue[Prefix.zepto],
   AccelerationUnits.zettaGal: _gal * prefixValue[Prefix.zetta],
-  AccelerationUnits.zettaMeterPerHourPerSecond:
-      _meterPerHourPerSecond * prefixValue[Prefix.zetta],
-  AccelerationUnits.zettaMeterPerHourSquared:
-      _meterPerHourSquared * prefixValue[Prefix.zetta],
-  AccelerationUnits.zettaMeterPerMinutePerSecond:
-      _meterPerMinutePerSecond * prefixValue[Prefix.zetta],
-  AccelerationUnits.zettaMeterPerMinuteSquared:
-      _meterPerMinuteSquared * prefixValue[Prefix.zetta],
-  AccelerationUnits.zettaMeterPerSecondSquared: prefixValue[Prefix.zetta],
+  AccelerationUnits.zettaMetrePerHourPerSecond:
+      _metrePerHourPerSecond * prefixValue[Prefix.zetta],
+  AccelerationUnits.zettaMetrePerHourSquared:
+      _metrePerHourSquared * prefixValue[Prefix.zetta],
+  AccelerationUnits.zettaMetrePerMinutePerSecond:
+      _metrePerMinutePerSecond * prefixValue[Prefix.zetta],
+  AccelerationUnits.zettaMetrePerMinuteSquared:
+      _metrePerMinuteSquared * prefixValue[Prefix.zetta],
+  AccelerationUnits.zettaMetrePerSecondSquared: prefixValue[Prefix.zetta],
 };

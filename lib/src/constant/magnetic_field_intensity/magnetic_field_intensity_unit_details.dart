@@ -5,171 +5,171 @@ import '../../model/unit.dart';
 
 final Set<Unit> magneticFieldIntensityUnitDetails = {
   Unit(
-    'ampere per meter',
+    'ampere per metre',
     createSymbol(
       const [
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.amperePerMeter,
+    MagneticFieldIntensityUnits.amperePerMetre,
   ),
   Unit(
-    'attoampere per meter',
+    'attoampere per metre',
     createSymbol(
       const [
         SymbolParts.atto,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.attoAmperePerMeter,
+    MagneticFieldIntensityUnits.attoAmperePerMetre,
   ),
   Unit(
-    'centiampere per meter',
+    'centiampere per metre',
     createSymbol(
       const [
         SymbolParts.centi,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.centiAmperePerMeter,
+    MagneticFieldIntensityUnits.centiAmperePerMetre,
   ),
   Unit(
-    'decaampere per meter',
+    'decaampere per metre',
     createSymbol(
       const [
         SymbolParts.deca,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.decaAmperePerMeter,
+    MagneticFieldIntensityUnits.decaAmperePerMetre,
   ),
   Unit(
-    'deciampere per meter',
+    'deciampere per metre',
     createSymbol(
       const [
         SymbolParts.deci,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.deciAmperePerMeter,
+    MagneticFieldIntensityUnits.deciAmperePerMetre,
   ),
   Unit(
-    'exaampere per meter',
+    'exaampere per metre',
     createSymbol(
       const [
         SymbolParts.exa,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.exaAmperePerMeter,
+    MagneticFieldIntensityUnits.exaAmperePerMetre,
   ),
   Unit(
-    'femtoampere per meter',
+    'femtoampere per metre',
     createSymbol(
       const [
         SymbolParts.femto,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.femtoAmperePerMeter,
+    MagneticFieldIntensityUnits.femtoAmperePerMetre,
   ),
   Unit(
-    'gigaampere per meter',
+    'gigaampere per metre',
     createSymbol(
       const [
         SymbolParts.giga,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.gigaAmperePerMeter,
+    MagneticFieldIntensityUnits.gigaAmperePerMetre,
   ),
   Unit(
-    'hectoampere per meter',
+    'hectoampere per metre',
     createSymbol(
       const [
         SymbolParts.hecto,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.hectoAmperePerMeter,
+    MagneticFieldIntensityUnits.hectoAmperePerMetre,
   ),
   Unit(
-    'kiloampere per meter',
+    'kiloampere per metre',
     createSymbol(
       const [
         SymbolParts.kilo,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.kiloAmperePerMeter,
+    MagneticFieldIntensityUnits.kiloAmperePerMetre,
   ),
   Unit(
-    'megaampere per meter',
+    'megaampere per metre',
     createSymbol(
       const [
         SymbolParts.mega,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.megaAmperePerMeter,
+    MagneticFieldIntensityUnits.megaAmperePerMetre,
   ),
   Unit(
-    'microampere per meter',
+    'microampere per metre',
     createSymbol(
       const [
         SymbolParts.micro,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.microAmperePerMeter,
+    MagneticFieldIntensityUnits.microAmperePerMetre,
   ),
   Unit(
-    'milliampere per meter',
+    'milliampere per metre',
     createSymbol(
       const [
         SymbolParts.milli,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.milliAmperePerMeter,
+    MagneticFieldIntensityUnits.milliAmperePerMetre,
   ),
   Unit(
-    'nanoampere per meter',
+    'nanoampere per metre',
     createSymbol(
       const [
         SymbolParts.nano,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.nanoAmperePerMeter,
+    MagneticFieldIntensityUnits.nanoAmperePerMetre,
   ),
   Unit(
     'oersted',
@@ -181,87 +181,87 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
     MagneticFieldIntensityUnits.oersted,
   ),
   Unit(
-    'petaampere per meter',
+    'petaampere per metre',
     createSymbol(
       const [
         SymbolParts.peta,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.petaAmperePerMeter,
+    MagneticFieldIntensityUnits.petaAmperePerMetre,
   ),
   Unit(
-    'picoampere per meter',
+    'picoampere per metre',
     createSymbol(
       const [
         SymbolParts.pico,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.picoAmperePerMeter,
+    MagneticFieldIntensityUnits.picoAmperePerMetre,
   ),
   Unit(
-    'teraampere per meter',
+    'teraampere per metre',
     createSymbol(
       const [
         SymbolParts.tera,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.teraAmperePerMeter,
+    MagneticFieldIntensityUnits.teraAmperePerMetre,
   ),
   Unit(
-    'yoctoampere per meter',
+    'yoctoampere per metre',
     createSymbol(
       const [
         SymbolParts.yocto,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.yoctoAmperePerMeter,
+    MagneticFieldIntensityUnits.yoctoAmperePerMetre,
   ),
   Unit(
-    'yottaampere per meter',
+    'yottaampere per metre',
     createSymbol(
       const [
         SymbolParts.yotta,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.yottaAmperePerMeter,
+    MagneticFieldIntensityUnits.yottaAmperePerMetre,
   ),
   Unit(
-    'zeptoampere per meter',
+    'zeptoampere per metre',
     createSymbol(
       const [
         SymbolParts.zepto,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.zeptoAmperePerMeter,
+    MagneticFieldIntensityUnits.zeptoAmperePerMetre,
   ),
   Unit(
-    'zettaampere per meter',
+    'zettaampere per metre',
     createSymbol(
       const [
         SymbolParts.zetta,
         SymbolParts.ampere,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    MagneticFieldIntensityUnits.zettaAmperePerMeter,
+    MagneticFieldIntensityUnits.zettaAmperePerMetre,
   ),
 };

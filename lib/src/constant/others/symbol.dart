@@ -133,7 +133,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.lux: 'lx',
   SymbolParts.maxwell: 'Mx',
   SymbolParts.mega: 'M',
-  SymbolParts.meter: 'm',
+  SymbolParts.metre: 'm',
   SymbolParts.mho: _createStringFromUnicode(unicodeMho),
   SymbolParts.micro: _createStringFromUnicode(unicodeMicro),
   SymbolParts.mile: 'mi',

@@ -36,14 +36,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'attometer',
+    'attometre',
     createSymbol(
       const [
         SymbolParts.atto,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.attoMeter,
+    LengthUnits.attoMetre,
   ),
   Unit(
     'attoparsec',
@@ -76,14 +76,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'centimeter',
+    'centimetre',
     createSymbol(
       const [
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.centiMeter,
+    LengthUnits.centiMetre,
   ),
   Unit(
     'centiparsec',
@@ -126,14 +126,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'decameter',
+    'decametre',
     createSymbol(
       const [
         SymbolParts.deca,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.decaMeter,
+    LengthUnits.decaMetre,
   ),
   Unit(
     'decaparsec',
@@ -157,14 +157,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'decimeter',
+    'decimetre',
     createSymbol(
       const [
         SymbolParts.deci,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.deciMeter,
+    LengthUnits.deciMetre,
   ),
   Unit(
     'deciparsec',
@@ -188,14 +188,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'exameter',
+    'exametre',
     createSymbol(
       const [
         SymbolParts.exa,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.exaMeter,
+    LengthUnits.exaMetre,
   ),
   Unit(
     'exaparsec',
@@ -228,14 +228,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'femtometer',
+    'femtometre',
     createSymbol(
       const [
         SymbolParts.femto,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.femtoMeter,
+    LengthUnits.femtoMetre,
   ),
   Unit(
     'femtoparsec',
@@ -296,14 +296,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'gigameter',
+    'gigametre',
     createSymbol(
       const [
         SymbolParts.giga,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.gigaMeter,
+    LengthUnits.gigaMetre,
   ),
   Unit(
     'gigaparsec',
@@ -336,14 +336,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'hectometer',
+    'hectometre',
     createSymbol(
       const [
         SymbolParts.hecto,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.hectoMeter,
+    LengthUnits.hectoMetre,
   ),
   Unit(
     'hectoparsec',
@@ -376,14 +376,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'kilometer',
+    'kilometre',
     createSymbol(
       const [
         SymbolParts.kilo,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.kiloMeter,
+    LengthUnits.kiloMetre,
   ),
   Unit(
     'kiloparsec',
@@ -473,14 +473,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'megameter',
+    'megametre',
     createSymbol(
       const [
         SymbolParts.mega,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.megaMeter,
+    LengthUnits.megaMetre,
   ),
   Unit(
     'megaparsec',
@@ -493,13 +493,13 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.megaParsec,
   ),
   Unit(
-    'meter',
+    'metre',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.meter,
+    LengthUnits.metre,
   ),
   Unit(
     'microlight Year',
@@ -523,14 +523,14 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.microInch,
   ),
   Unit(
-    'micrometer',
+    'micrometre',
     createSymbol(
       const [
         SymbolParts.micro,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.microMeter,
+    LengthUnits.microMetre,
   ),
   Unit(
     'micron',
@@ -572,14 +572,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'millimeter',
+    'millimetre',
     createSymbol(
       const [
         SymbolParts.milli,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.milliMeter,
+    LengthUnits.milliMetre,
   ),
   Unit(
     'milliparsec',
@@ -603,14 +603,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'nanometer',
+    'nanometre',
     createSymbol(
       const [
         SymbolParts.nano,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.nanoMeter,
+    LengthUnits.nanoMetre,
   ),
   Unit(
     'nanoparsec',
@@ -652,14 +652,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'petameter',
+    'petametre',
     createSymbol(
       const [
         SymbolParts.peta,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.petaMeter,
+    LengthUnits.petaMetre,
   ),
   Unit(
     'petaparsec',
@@ -692,14 +692,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'picometer',
+    'picometre',
     createSymbol(
       const [
         SymbolParts.pico,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.picoMeter,
+    LengthUnits.picoMetre,
   ),
   Unit(
     'picoparsec',
@@ -759,14 +759,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'terameter',
+    'terametre',
     createSymbol(
       const [
         SymbolParts.tera,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.teraMeter,
+    LengthUnits.teraMetre,
   ),
   Unit(
     'teraparsec',
@@ -808,14 +808,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'yoctometer',
+    'yoctometre',
     createSymbol(
       const [
         SymbolParts.yocto,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.yoctoMeter,
+    LengthUnits.yoctoMetre,
   ),
   Unit(
     'yoctoparsec',
@@ -839,14 +839,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'yottameter',
+    'yottametre',
     createSymbol(
       const [
         SymbolParts.yotta,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.yottaMeter,
+    LengthUnits.yottaMetre,
   ),
   Unit(
     'yottaparsec',
@@ -870,14 +870,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'zeptometer',
+    'zeptometre',
     createSymbol(
       const [
         SymbolParts.zepto,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.zeptoMeter,
+    LengthUnits.zeptoMetre,
   ),
   Unit(
     'zeptoparsec',
@@ -901,14 +901,14 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.julian],
   ),
   Unit(
-    'zettameter',
+    'zettametre',
     createSymbol(
       const [
         SymbolParts.zetta,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    LengthUnits.zettaMeter,
+    LengthUnits.zettaMetre,
   ),
   Unit(
     'zettaparsec',

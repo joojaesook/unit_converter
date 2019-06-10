@@ -5,82 +5,82 @@ import '../../model/unit.dart';
 
 final Set<Unit> luminanceUnitDetails = {
   Unit(
-    'candela per square attometer',
+    'candela per square attometre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.atto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareAttoMeter,
+    LuminanceUnits.candelaPerSquareAttoMetre,
   ),
   Unit(
-    'candela per square centimeter',
+    'candela per square centimetre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareCentiMeter,
+    LuminanceUnits.candelaPerSquareCentiMetre,
   ),
   Unit(
-    'candela per square decameter',
+    'candela per square decametre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.deca,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareDecaMeter,
+    LuminanceUnits.candelaPerSquareDecaMetre,
   ),
   Unit(
-    'candela per square decimeter',
+    'candela per square decimetre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.deci,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareDeciMeter,
+    LuminanceUnits.candelaPerSquareDeciMetre,
   ),
   Unit(
-    'candela per square exameter',
+    'candela per square exametre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.exa,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareExaMeter,
+    LuminanceUnits.candelaPerSquareExaMetre,
   ),
   Unit(
-    'candela per square femtometer',
+    'candela per square femtometre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.femto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareFemtoMeter,
+    LuminanceUnits.candelaPerSquareFemtoMetre,
   ),
   Unit(
     'candela per square foot',
@@ -95,30 +95,30 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareFoot,
   ),
   Unit(
-    'candela per square gigameter',
+    'candela per square gigametre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.giga,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareGigaMeter,
+    LuminanceUnits.candelaPerSquareGigaMetre,
   ),
   Unit(
-    'candela per square hectometer',
+    'candela per square hectometre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.hecto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareHectoMeter,
+    LuminanceUnits.candelaPerSquareHectoMetre,
   ),
   Unit(
     'candela per square inch',
@@ -133,172 +133,172 @@ final Set<Unit> luminanceUnitDetails = {
     LuminanceUnits.candelaPerSquareInch,
   ),
   Unit(
-    'candela per square kilometer',
+    'candela per square kilometre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.kilo,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareKiloMeter,
+    LuminanceUnits.candelaPerSquareKiloMetre,
   ),
   Unit(
-    'candela per square megameter',
+    'candela per square megametre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.mega,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareMegaMeter,
+    LuminanceUnits.candelaPerSquareMegaMetre,
   ),
   Unit(
-    'candela per square meter',
+    'candela per square metre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareMeter,
+    LuminanceUnits.candelaPerSquareMetre,
   ),
   Unit(
-    'candela per square micrometer',
+    'candela per square micrometre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.micro,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareMicroMeter,
+    LuminanceUnits.candelaPerSquareMicroMetre,
   ),
   Unit(
-    'candela per square millimeter',
+    'candela per square millimetre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.milli,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareMilliMeter,
+    LuminanceUnits.candelaPerSquareMilliMetre,
   ),
   Unit(
-    'candela per square nanometer',
+    'candela per square nanometre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.nano,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareNanoMeter,
+    LuminanceUnits.candelaPerSquareNanoMetre,
   ),
   Unit(
-    'candela per square petameter',
+    'candela per square petametre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.peta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquarePetaMeter,
+    LuminanceUnits.candelaPerSquarePetaMetre,
   ),
   Unit(
-    'candela per square picometer',
+    'candela per square picometre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.pico,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquarePicoMeter,
+    LuminanceUnits.candelaPerSquarePicoMetre,
   ),
   Unit(
-    'candela per square terameter',
+    'candela per square terametre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.tera,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareTeraMeter,
+    LuminanceUnits.candelaPerSquareTeraMetre,
   ),
   Unit(
-    'candela per square yoctometer',
+    'candela per square yoctometre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.yocto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareYoctoMeter,
+    LuminanceUnits.candelaPerSquareYoctoMetre,
   ),
   Unit(
-    'candela per square yottameter',
+    'candela per square yottametre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.yotta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareYottaMeter,
+    LuminanceUnits.candelaPerSquareYottaMetre,
   ),
   Unit(
-    'candela per square zeptometer',
+    'candela per square zeptometre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.zepto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareZeptoMeter,
+    LuminanceUnits.candelaPerSquareZeptoMetre,
   ),
   Unit(
-    'candela per square zettameter',
+    'candela per square zettametre',
     createSymbol(
       const [
         SymbolParts.candela,
         SymbolParts.forwardSlash,
         SymbolParts.zetta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareZettaMeter,
+    LuminanceUnits.candelaPerSquareZettaMetre,
   ),
   Unit(
     'foot-lambert',

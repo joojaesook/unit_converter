@@ -16,7 +16,7 @@ final _minuteToSecond =
 final Map<KinematicViscocityUnits, double> kinematicViscocityConversionDetails =
     {
   // Base unit
-  KinematicViscocityUnits.squareMeterPerSecond: 1,
+  KinematicViscocityUnits.squareMetrePerSecond: 1,
   KinematicViscocityUnits.attoStokes: _stokes * prefixValue[Prefix.atto],
   KinematicViscocityUnits.centiStokes: _stokes * prefixValue[Prefix.centi],
   KinematicViscocityUnits.decaStokes: _stokes * prefixValue[Prefix.deca],
@@ -32,168 +32,168 @@ final Map<KinematicViscocityUnits, double> kinematicViscocityConversionDetails =
   KinematicViscocityUnits.nanoStokes: _stokes * prefixValue[Prefix.nano],
   KinematicViscocityUnits.petaStokes: _stokes * prefixValue[Prefix.peta],
   KinematicViscocityUnits.picoStokes: _stokes * prefixValue[Prefix.pico],
-  KinematicViscocityUnits.squareAttoMeterPerDay:
+  KinematicViscocityUnits.squareAttoMetrePerDay:
       pow(prefixValue[Prefix.atto], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareAttoMeterPerHour:
+  KinematicViscocityUnits.squareAttoMetrePerHour:
       pow(prefixValue[Prefix.atto], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareAttoMeterPerMinute:
+  KinematicViscocityUnits.squareAttoMetrePerMinute:
       pow(prefixValue[Prefix.atto], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareAttoMeterPerSecond:
+  KinematicViscocityUnits.squareAttoMetrePerSecond:
       pow(prefixValue[Prefix.atto], 2),
-  KinematicViscocityUnits.squareCentiMeterPerDay:
+  KinematicViscocityUnits.squareCentiMetrePerDay:
       pow(prefixValue[Prefix.centi], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareCentiMeterPerHour:
+  KinematicViscocityUnits.squareCentiMetrePerHour:
       pow(prefixValue[Prefix.centi], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareCentiMeterPerMinute:
+  KinematicViscocityUnits.squareCentiMetrePerMinute:
       pow(prefixValue[Prefix.centi], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareCentiMeterPerSecond:
+  KinematicViscocityUnits.squareCentiMetrePerSecond:
       pow(prefixValue[Prefix.centi], 2),
-  KinematicViscocityUnits.squareDecaMeterPerDay:
+  KinematicViscocityUnits.squareDecaMetrePerDay:
       pow(prefixValue[Prefix.deca], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareDecaMeterPerHour:
+  KinematicViscocityUnits.squareDecaMetrePerHour:
       pow(prefixValue[Prefix.deca], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareDecaMeterPerMinute:
+  KinematicViscocityUnits.squareDecaMetrePerMinute:
       pow(prefixValue[Prefix.deca], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareDecaMeterPerSecond:
+  KinematicViscocityUnits.squareDecaMetrePerSecond:
       pow(prefixValue[Prefix.deca], 2),
-  KinematicViscocityUnits.squareDeciMeterPerDay:
+  KinematicViscocityUnits.squareDeciMetrePerDay:
       pow(prefixValue[Prefix.deci], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareDeciMeterPerHour:
+  KinematicViscocityUnits.squareDeciMetrePerHour:
       pow(prefixValue[Prefix.deci], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareDeciMeterPerMinute:
+  KinematicViscocityUnits.squareDeciMetrePerMinute:
       pow(prefixValue[Prefix.deci], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareDeciMeterPerSecond:
+  KinematicViscocityUnits.squareDeciMetrePerSecond:
       pow(prefixValue[Prefix.deci], 2),
-  KinematicViscocityUnits.squareExaMeterPerDay:
+  KinematicViscocityUnits.squareExaMetrePerDay:
       pow(prefixValue[Prefix.exa], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareExaMeterPerHour:
+  KinematicViscocityUnits.squareExaMetrePerHour:
       pow(prefixValue[Prefix.exa], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareExaMeterPerMinute:
+  KinematicViscocityUnits.squareExaMetrePerMinute:
       pow(prefixValue[Prefix.exa], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareExaMeterPerSecond:
+  KinematicViscocityUnits.squareExaMetrePerSecond:
       pow(prefixValue[Prefix.exa], 2),
-  KinematicViscocityUnits.squareFemtoMeterPerDay:
+  KinematicViscocityUnits.squareFemtoMetrePerDay:
       pow(prefixValue[Prefix.femto], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareFemtoMeterPerHour:
+  KinematicViscocityUnits.squareFemtoMetrePerHour:
       pow(prefixValue[Prefix.femto], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareFemtoMeterPerMinute:
+  KinematicViscocityUnits.squareFemtoMetrePerMinute:
       pow(prefixValue[Prefix.femto], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareFemtoMeterPerSecond:
+  KinematicViscocityUnits.squareFemtoMetrePerSecond:
       pow(prefixValue[Prefix.femto], 2),
-  KinematicViscocityUnits.squareGigaMeterPerDay:
+  KinematicViscocityUnits.squareGigaMetrePerDay:
       pow(prefixValue[Prefix.giga], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareGigaMeterPerHour:
+  KinematicViscocityUnits.squareGigaMetrePerHour:
       pow(prefixValue[Prefix.giga], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareGigaMeterPerMinute:
+  KinematicViscocityUnits.squareGigaMetrePerMinute:
       pow(prefixValue[Prefix.giga], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareGigaMeterPerSecond:
+  KinematicViscocityUnits.squareGigaMetrePerSecond:
       pow(prefixValue[Prefix.giga], 2),
-  KinematicViscocityUnits.squareHectoMeterPerDay:
+  KinematicViscocityUnits.squareHectoMetrePerDay:
       pow(prefixValue[Prefix.hecto], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareHectoMeterPerHour:
+  KinematicViscocityUnits.squareHectoMetrePerHour:
       pow(prefixValue[Prefix.hecto], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareHectoMeterPerMinute:
+  KinematicViscocityUnits.squareHectoMetrePerMinute:
       pow(prefixValue[Prefix.hecto], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareHectoMeterPerSecond:
+  KinematicViscocityUnits.squareHectoMetrePerSecond:
       pow(prefixValue[Prefix.hecto], 2),
-  KinematicViscocityUnits.squareKiloMeterPerDay:
+  KinematicViscocityUnits.squareKiloMetrePerDay:
       pow(prefixValue[Prefix.kilo], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareKiloMeterPerHour:
+  KinematicViscocityUnits.squareKiloMetrePerHour:
       pow(prefixValue[Prefix.kilo], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareKiloMeterPerMinute:
+  KinematicViscocityUnits.squareKiloMetrePerMinute:
       pow(prefixValue[Prefix.kilo], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareKiloMeterPerSecond:
+  KinematicViscocityUnits.squareKiloMetrePerSecond:
       pow(prefixValue[Prefix.kilo], 2),
-  KinematicViscocityUnits.squareMegaMeterPerDay:
+  KinematicViscocityUnits.squareMegaMetrePerDay:
       pow(prefixValue[Prefix.mega], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareMegaMeterPerHour:
+  KinematicViscocityUnits.squareMegaMetrePerHour:
       pow(prefixValue[Prefix.mega], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareMegaMeterPerMinute:
+  KinematicViscocityUnits.squareMegaMetrePerMinute:
       pow(prefixValue[Prefix.mega], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareMegaMeterPerSecond:
+  KinematicViscocityUnits.squareMegaMetrePerSecond:
       pow(prefixValue[Prefix.mega], 2),
-  KinematicViscocityUnits.squareMeterPerDay: 1 / _dayToSecond,
-  KinematicViscocityUnits.squareMeterPerHour: 1 / _hourToSecond,
-  KinematicViscocityUnits.squareMeterPerMinute: 1 / _minuteToSecond,
-  KinematicViscocityUnits.squareMicroMeterPerDay:
+  KinematicViscocityUnits.squareMetrePerDay: 1 / _dayToSecond,
+  KinematicViscocityUnits.squareMetrePerHour: 1 / _hourToSecond,
+  KinematicViscocityUnits.squareMetrePerMinute: 1 / _minuteToSecond,
+  KinematicViscocityUnits.squareMicroMetrePerDay:
       pow(prefixValue[Prefix.micro], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareMicroMeterPerHour:
+  KinematicViscocityUnits.squareMicroMetrePerHour:
       pow(prefixValue[Prefix.micro], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareMicroMeterPerMinute:
+  KinematicViscocityUnits.squareMicroMetrePerMinute:
       pow(prefixValue[Prefix.micro], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareMicroMeterPerSecond:
+  KinematicViscocityUnits.squareMicroMetrePerSecond:
       pow(prefixValue[Prefix.micro], 2),
-  KinematicViscocityUnits.squareMilliMeterPerDay:
+  KinematicViscocityUnits.squareMilliMetrePerDay:
       pow(prefixValue[Prefix.milli], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareMilliMeterPerHour:
+  KinematicViscocityUnits.squareMilliMetrePerHour:
       pow(prefixValue[Prefix.milli], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareMilliMeterPerMinute:
+  KinematicViscocityUnits.squareMilliMetrePerMinute:
       pow(prefixValue[Prefix.milli], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareMilliMeterPerSecond:
+  KinematicViscocityUnits.squareMilliMetrePerSecond:
       pow(prefixValue[Prefix.milli], 2),
-  KinematicViscocityUnits.squareNanoMeterPerDay:
+  KinematicViscocityUnits.squareNanoMetrePerDay:
       pow(prefixValue[Prefix.nano], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareNanoMeterPerHour:
+  KinematicViscocityUnits.squareNanoMetrePerHour:
       pow(prefixValue[Prefix.nano], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareNanoMeterPerMinute:
+  KinematicViscocityUnits.squareNanoMetrePerMinute:
       pow(prefixValue[Prefix.nano], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareNanoMeterPerSecond:
+  KinematicViscocityUnits.squareNanoMetrePerSecond:
       pow(prefixValue[Prefix.nano], 2),
-  KinematicViscocityUnits.squarePetaMeterPerDay:
+  KinematicViscocityUnits.squarePetaMetrePerDay:
       pow(prefixValue[Prefix.peta], 2) / _dayToSecond,
-  KinematicViscocityUnits.squarePetaMeterPerHour:
+  KinematicViscocityUnits.squarePetaMetrePerHour:
       pow(prefixValue[Prefix.peta], 2) / _hourToSecond,
-  KinematicViscocityUnits.squarePetaMeterPerMinute:
+  KinematicViscocityUnits.squarePetaMetrePerMinute:
       pow(prefixValue[Prefix.peta], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squarePetaMeterPerSecond:
+  KinematicViscocityUnits.squarePetaMetrePerSecond:
       pow(prefixValue[Prefix.peta], 2),
-  KinematicViscocityUnits.squarePicoMeterPerDay:
+  KinematicViscocityUnits.squarePicoMetrePerDay:
       pow(prefixValue[Prefix.pico], 2) / _dayToSecond,
-  KinematicViscocityUnits.squarePicoMeterPerHour:
+  KinematicViscocityUnits.squarePicoMetrePerHour:
       pow(prefixValue[Prefix.pico], 2) / _hourToSecond,
-  KinematicViscocityUnits.squarePicoMeterPerMinute:
+  KinematicViscocityUnits.squarePicoMetrePerMinute:
       pow(prefixValue[Prefix.pico], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squarePicoMeterPerSecond:
+  KinematicViscocityUnits.squarePicoMetrePerSecond:
       pow(prefixValue[Prefix.pico], 2),
-  KinematicViscocityUnits.squareTeraMeterPerDay:
+  KinematicViscocityUnits.squareTeraMetrePerDay:
       pow(prefixValue[Prefix.tera], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareTeraMeterPerHour:
+  KinematicViscocityUnits.squareTeraMetrePerHour:
       pow(prefixValue[Prefix.tera], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareTeraMeterPerMinute:
+  KinematicViscocityUnits.squareTeraMetrePerMinute:
       pow(prefixValue[Prefix.tera], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareTeraMeterPerSecond:
+  KinematicViscocityUnits.squareTeraMetrePerSecond:
       pow(prefixValue[Prefix.tera], 2),
-  KinematicViscocityUnits.squareYoctoMeterPerDay:
+  KinematicViscocityUnits.squareYoctoMetrePerDay:
       pow(prefixValue[Prefix.yocto], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareYoctoMeterPerHour:
+  KinematicViscocityUnits.squareYoctoMetrePerHour:
       pow(prefixValue[Prefix.yocto], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareYoctoMeterPerMinute:
+  KinematicViscocityUnits.squareYoctoMetrePerMinute:
       pow(prefixValue[Prefix.yocto], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareYoctoMeterPerSecond:
+  KinematicViscocityUnits.squareYoctoMetrePerSecond:
       pow(prefixValue[Prefix.yocto], 2),
-  KinematicViscocityUnits.squareYottaMeterPerDay:
+  KinematicViscocityUnits.squareYottaMetrePerDay:
       pow(prefixValue[Prefix.yotta], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareYottaMeterPerHour:
+  KinematicViscocityUnits.squareYottaMetrePerHour:
       pow(prefixValue[Prefix.yotta], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareYottaMeterPerMinute:
+  KinematicViscocityUnits.squareYottaMetrePerMinute:
       pow(prefixValue[Prefix.yotta], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareYottaMeterPerSecond:
+  KinematicViscocityUnits.squareYottaMetrePerSecond:
       pow(prefixValue[Prefix.yotta], 2),
-  KinematicViscocityUnits.squareZeptoMeterPerDay:
+  KinematicViscocityUnits.squareZeptoMetrePerDay:
       pow(prefixValue[Prefix.zepto], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareZeptoMeterPerHour:
+  KinematicViscocityUnits.squareZeptoMetrePerHour:
       pow(prefixValue[Prefix.zepto], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareZeptoMeterPerMinute:
+  KinematicViscocityUnits.squareZeptoMetrePerMinute:
       pow(prefixValue[Prefix.zepto], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareZeptoMeterPerSecond:
+  KinematicViscocityUnits.squareZeptoMetrePerSecond:
       pow(prefixValue[Prefix.zepto], 2),
-  KinematicViscocityUnits.squareZettaMeterPerDay:
+  KinematicViscocityUnits.squareZettaMetrePerDay:
       pow(prefixValue[Prefix.zetta], 2) / _dayToSecond,
-  KinematicViscocityUnits.squareZettaMeterPerHour:
+  KinematicViscocityUnits.squareZettaMetrePerHour:
       pow(prefixValue[Prefix.zetta], 2) / _hourToSecond,
-  KinematicViscocityUnits.squareZettaMeterPerMinute:
+  KinematicViscocityUnits.squareZettaMetrePerMinute:
       pow(prefixValue[Prefix.zetta], 2) / _minuteToSecond,
-  KinematicViscocityUnits.squareZettaMeterPerSecond:
+  KinematicViscocityUnits.squareZettaMetrePerSecond:
       pow(prefixValue[Prefix.zetta], 2),
   KinematicViscocityUnits.stokes: _stokes,
   KinematicViscocityUnits.teraStokes: _stokes * prefixValue[Prefix.tera],

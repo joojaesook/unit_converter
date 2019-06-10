@@ -125,7 +125,7 @@ enum SymbolParts {
   lux,
   maxwell,
   mega,
-  meter,
+  metre,
   mho,
   micro,
   mile,

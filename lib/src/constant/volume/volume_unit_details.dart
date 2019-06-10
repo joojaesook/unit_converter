@@ -78,70 +78,70 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.centiLitre,
   ),
   Unit(
-    'cubic attometer',
+    'cubic attometre',
     createSymbol(
       const [
         SymbolParts.atto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicAttoMeter,
+    VolumeUnits.cubicAttoMetre,
   ),
   Unit(
-    'cubic centimeter',
+    'cubic centimetre',
     createSymbol(
       const [
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicCentiMeter,
+    VolumeUnits.cubicCentiMetre,
   ),
   Unit(
-    'cubic decameter',
+    'cubic decametre',
     createSymbol(
       const [
         SymbolParts.deca,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicDecaMeter,
+    VolumeUnits.cubicDecaMetre,
   ),
   Unit(
-    'cubic decimeter',
+    'cubic decimetre',
     createSymbol(
       const [
         SymbolParts.deci,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicDeciMeter,
+    VolumeUnits.cubicDeciMetre,
   ),
   Unit(
-    'cubic exameter',
+    'cubic exametre',
     createSymbol(
       const [
         SymbolParts.exa,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicExaMeter,
+    VolumeUnits.cubicExaMetre,
   ),
   Unit(
-    'cubic femtometer',
+    'cubic femtometre',
     createSymbol(
       const [
         SymbolParts.femto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicFemtoMeter,
+    VolumeUnits.cubicFemtoMetre,
   ),
   Unit(
     'cubic foot',
@@ -154,26 +154,26 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.cubicFoot,
   ),
   Unit(
-    'cubic gigameter',
+    'cubic gigametre',
     createSymbol(
       const [
         SymbolParts.giga,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicGigaMeter,
+    VolumeUnits.cubicGigaMetre,
   ),
   Unit(
-    'cubic hectometer',
+    'cubic hectometre',
     createSymbol(
       const [
         SymbolParts.hecto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicHectoMeter,
+    VolumeUnits.cubicHectoMetre,
   ),
   Unit(
     'cubic inch',
@@ -186,47 +186,47 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.cubicInch,
   ),
   Unit(
-    'cubic kilometer',
+    'cubic kilometre',
     createSymbol(
       const [
         SymbolParts.kilo,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicKiloMeter,
+    VolumeUnits.cubicKiloMetre,
   ),
   Unit(
-    'cubic megameter',
+    'cubic megametre',
     createSymbol(
       const [
         SymbolParts.mega,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicMegaMeter,
+    VolumeUnits.cubicMegaMetre,
   ),
   Unit(
-    'cubic meter',
+    'cubic metre',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicMeter,
+    VolumeUnits.cubicMetre,
   ),
   Unit(
-    'cubic micrometer',
+    'cubic micrometre',
     createSymbol(
       const [
         SymbolParts.micro,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicMicroMeter,
+    VolumeUnits.cubicMicroMetre,
   ),
   Unit(
     'cubic mile',
@@ -239,59 +239,59 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.cubicMile,
   ),
   Unit(
-    'cubic millimeter',
+    'cubic millimetre',
     createSymbol(
       const [
         SymbolParts.milli,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicMilliMeter,
+    VolumeUnits.cubicMilliMetre,
   ),
   Unit(
-    'cubic nanometer',
+    'cubic nanometre',
     createSymbol(
       const [
         SymbolParts.nano,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicNanoMeter,
+    VolumeUnits.cubicNanoMetre,
   ),
   Unit(
-    'cubic petameter',
+    'cubic petametre',
     createSymbol(
       const [
         SymbolParts.peta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicPetaMeter,
+    VolumeUnits.cubicPetaMetre,
   ),
   Unit(
-    'cubic picometer',
+    'cubic picometre',
     createSymbol(
       const [
         SymbolParts.pico,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicPicoMeter,
+    VolumeUnits.cubicPicoMetre,
   ),
   Unit(
-    'cubic terameter',
+    'cubic terametre',
     createSymbol(
       const [
         SymbolParts.tera,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicTeraMeter,
+    VolumeUnits.cubicTeraMetre,
   ),
   Unit(
     'cubic yard',
@@ -304,48 +304,48 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.cubicYard,
   ),
   Unit(
-    'cubic yoctometer',
+    'cubic yoctometre',
     createSymbol(
       const [
         SymbolParts.yocto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicYoctoMeter,
+    VolumeUnits.cubicYoctoMetre,
   ),
   Unit(
-    'cubic yottameter',
+    'cubic yottametre',
     createSymbol(
       const [
         SymbolParts.yotta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicYottaMeter,
+    VolumeUnits.cubicYottaMetre,
   ),
   Unit(
-    'cubic zeptometer',
+    'cubic zeptometre',
     createSymbol(
       const [
         SymbolParts.zepto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicZeptoMeter,
+    VolumeUnits.cubicZeptoMetre,
   ),
   Unit(
-    'cubic zettameter',
+    'cubic zettametre',
     createSymbol(
       const [
         SymbolParts.zetta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicZettaMeter,
+    VolumeUnits.cubicZettaMetre,
   ),
   Unit(
     'cup',
@@ -556,15 +556,15 @@ final Set<Unit> volumeUnitDetails = {
     system: systemValue[System.us],
   ),
   Unit(
-    'hectare meter',
+    'hectare metre',
     createSymbol(
       const [
         SymbolParts.hectare,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    VolumeUnits.hectareMeter,
+    VolumeUnits.hectareMetre,
   ),
   Unit(
     'hectolitre',

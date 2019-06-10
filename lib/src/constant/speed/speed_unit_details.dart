@@ -5,292 +5,292 @@ import '../../model/unit.dart';
 
 final Set<Unit> speedUnitDetails = {
   Unit(
-    'attometer per day',
+    'attometre per day',
     createSymbol(
       const [
         SymbolParts.atto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.attoMeterPerDay,
+    SpeedUnits.attoMetrePerDay,
   ),
   Unit(
-    'attometer per hour',
+    'attometre per hour',
     createSymbol(
       const [
         SymbolParts.atto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.attoMeterPerHour,
+    SpeedUnits.attoMetrePerHour,
   ),
   Unit(
-    'attometer per minute',
+    'attometre per minute',
     createSymbol(
       const [
         SymbolParts.atto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.attoMeterPerMinute,
+    SpeedUnits.attoMetrePerMinute,
   ),
   Unit(
-    'attometer per second',
+    'attometre per second',
     createSymbol(
       const [
         SymbolParts.atto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.attoMeterPerSecond,
+    SpeedUnits.attoMetrePerSecond,
   ),
   Unit(
-    'centimeter per day',
+    'centimetre per day',
     createSymbol(
       const [
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.centiMeterPerDay,
+    SpeedUnits.centiMetrePerDay,
   ),
   Unit(
-    'centimeter per hour',
+    'centimetre per hour',
     createSymbol(
       const [
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.centiMeterPerHour,
+    SpeedUnits.centiMetrePerHour,
   ),
   Unit(
-    'centimeter per minute',
+    'centimetre per minute',
     createSymbol(
       const [
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.centiMeterPerMinute,
+    SpeedUnits.centiMetrePerMinute,
   ),
   Unit(
-    'centimeter per second',
+    'centimetre per second',
     createSymbol(
       const [
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.centiMeterPerSecond,
+    SpeedUnits.centiMetrePerSecond,
   ),
   Unit(
-    'decameter per day',
+    'decametre per day',
     createSymbol(
       const [
         SymbolParts.deca,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.decaMeterPerDay,
+    SpeedUnits.decaMetrePerDay,
   ),
   Unit(
-    'decameter per hour',
+    'decametre per hour',
     createSymbol(
       const [
         SymbolParts.deca,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.decaMeterPerHour,
+    SpeedUnits.decaMetrePerHour,
   ),
   Unit(
-    'decameter per minute',
+    'decametre per minute',
     createSymbol(
       const [
         SymbolParts.deca,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.decaMeterPerMinute,
+    SpeedUnits.decaMetrePerMinute,
   ),
   Unit(
-    'decameter per second',
+    'decametre per second',
     createSymbol(
       const [
         SymbolParts.deca,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.decaMeterPerSecond,
+    SpeedUnits.decaMetrePerSecond,
   ),
   Unit(
-    'decimeter per day',
+    'decimetre per day',
     createSymbol(
       const [
         SymbolParts.deci,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.deciMeterPerDay,
+    SpeedUnits.deciMetrePerDay,
   ),
   Unit(
-    'decimeter per hour',
+    'decimetre per hour',
     createSymbol(
       const [
         SymbolParts.deci,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.deciMeterPerHour,
+    SpeedUnits.deciMetrePerHour,
   ),
   Unit(
-    'decimeter per minute',
+    'decimetre per minute',
     createSymbol(
       const [
         SymbolParts.deci,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.deciMeterPerMinute,
+    SpeedUnits.deciMetrePerMinute,
   ),
   Unit(
-    'decimeter per second',
+    'decimetre per second',
     createSymbol(
       const [
         SymbolParts.deci,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.deciMeterPerSecond,
+    SpeedUnits.deciMetrePerSecond,
   ),
   Unit(
-    'exameter per day',
+    'exametre per day',
     createSymbol(
       const [
         SymbolParts.exa,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.exaMeterPerDay,
+    SpeedUnits.exaMetrePerDay,
   ),
   Unit(
-    'exameter per hour',
+    'exametre per hour',
     createSymbol(
       const [
         SymbolParts.exa,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.exaMeterPerHour,
+    SpeedUnits.exaMetrePerHour,
   ),
   Unit(
-    'exameter per minute',
+    'exametre per minute',
     createSymbol(
       const [
         SymbolParts.exa,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.exaMeterPerMinute,
+    SpeedUnits.exaMetrePerMinute,
   ),
   Unit(
-    'exameter per second',
+    'exametre per second',
     createSymbol(
       const [
         SymbolParts.exa,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.exaMeterPerSecond,
+    SpeedUnits.exaMetrePerSecond,
   ),
   Unit(
-    'femtometer per day',
+    'femtometre per day',
     createSymbol(
       const [
         SymbolParts.femto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.femtoMeterPerDay,
+    SpeedUnits.femtoMetrePerDay,
   ),
   Unit(
-    'femtometer per hour',
+    'femtometre per hour',
     createSymbol(
       const [
         SymbolParts.femto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.femtoMeterPerHour,
+    SpeedUnits.femtoMetrePerHour,
   ),
   Unit(
-    'femtometer per minute',
+    'femtometre per minute',
     createSymbol(
       const [
         SymbolParts.femto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.femtoMeterPerMinute,
+    SpeedUnits.femtoMetrePerMinute,
   ),
   Unit(
-    'femtometer per second',
+    'femtometre per second',
     createSymbol(
       const [
         SymbolParts.femto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.femtoMeterPerSecond,
+    SpeedUnits.femtoMetrePerSecond,
   ),
   Unit(
     'foot per day',
@@ -337,100 +337,100 @@ final Set<Unit> speedUnitDetails = {
     SpeedUnits.footPerSecond,
   ),
   Unit(
-    'gigameter per day',
+    'gigametre per day',
     createSymbol(
       const [
         SymbolParts.giga,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.gigaMeterPerDay,
+    SpeedUnits.gigaMetrePerDay,
   ),
   Unit(
-    'gigameter per hour',
+    'gigametre per hour',
     createSymbol(
       const [
         SymbolParts.giga,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.gigaMeterPerHour,
+    SpeedUnits.gigaMetrePerHour,
   ),
   Unit(
-    'gigameter per minute',
+    'gigametre per minute',
     createSymbol(
       const [
         SymbolParts.giga,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.gigaMeterPerMinute,
+    SpeedUnits.gigaMetrePerMinute,
   ),
   Unit(
-    'gigameter per second',
+    'gigametre per second',
     createSymbol(
       const [
         SymbolParts.giga,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.gigaMeterPerSecond,
+    SpeedUnits.gigaMetrePerSecond,
   ),
   Unit(
-    'hectometer per day',
+    'hectometre per day',
     createSymbol(
       const [
         SymbolParts.hecto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.hectoMeterPerDay,
+    SpeedUnits.hectoMetrePerDay,
   ),
   Unit(
-    'hectometer per hour',
+    'hectometre per hour',
     createSymbol(
       const [
         SymbolParts.hecto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.hectoMeterPerHour,
+    SpeedUnits.hectoMetrePerHour,
   ),
   Unit(
-    'hectometer per minute',
+    'hectometre per minute',
     createSymbol(
       const [
         SymbolParts.hecto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.hectoMeterPerMinute,
+    SpeedUnits.hectoMetrePerMinute,
   ),
   Unit(
-    'hectometer per second',
+    'hectometre per second',
     createSymbol(
       const [
         SymbolParts.hecto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.hectoMeterPerSecond,
+    SpeedUnits.hectoMetrePerSecond,
   ),
   Unit(
     'inch per day',
@@ -477,52 +477,52 @@ final Set<Unit> speedUnitDetails = {
     SpeedUnits.inchPerSecond,
   ),
   Unit(
-    'kilometer per day',
+    'kilometre per day',
     createSymbol(
       const [
         SymbolParts.kilo,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.kiloMeterPerDay,
+    SpeedUnits.kiloMetrePerDay,
   ),
   Unit(
-    'kilometer per hour',
+    'kilometre per hour',
     createSymbol(
       const [
         SymbolParts.kilo,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.kiloMeterPerHour,
+    SpeedUnits.kiloMetrePerHour,
   ),
   Unit(
-    'kilometer per minute',
+    'kilometre per minute',
     createSymbol(
       const [
         SymbolParts.kilo,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.kiloMeterPerMinute,
+    SpeedUnits.kiloMetrePerMinute,
   ),
   Unit(
-    'kilometer per second',
+    'kilometre per second',
     createSymbol(
       const [
         SymbolParts.kilo,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.kiloMeterPerSecond,
+    SpeedUnits.kiloMetrePerSecond,
   ),
   Unit(
     'knot',
@@ -534,144 +534,144 @@ final Set<Unit> speedUnitDetails = {
     SpeedUnits.knot,
   ),
   Unit(
-    'megameter per day',
+    'megametre per day',
     createSymbol(
       const [
         SymbolParts.mega,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.megaMeterPerDay,
+    SpeedUnits.megaMetrePerDay,
   ),
   Unit(
-    'megameter per hour',
+    'megametre per hour',
     createSymbol(
       const [
         SymbolParts.mega,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.megaMeterPerHour,
+    SpeedUnits.megaMetrePerHour,
   ),
   Unit(
-    'megameter per minute',
+    'megametre per minute',
     createSymbol(
       const [
         SymbolParts.mega,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.megaMeterPerMinute,
+    SpeedUnits.megaMetrePerMinute,
   ),
   Unit(
-    'megameter per second',
+    'megametre per second',
     createSymbol(
       const [
         SymbolParts.mega,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.megaMeterPerSecond,
+    SpeedUnits.megaMetrePerSecond,
   ),
   Unit(
-    'meter per day',
+    'metre per day',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.meterPerDay,
+    SpeedUnits.metrePerDay,
   ),
   Unit(
-    'meter per hour',
+    'metre per hour',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.meterPerHour,
+    SpeedUnits.metrePerHour,
   ),
   Unit(
-    'meter per minute',
+    'metre per minute',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.meterPerMinute,
+    SpeedUnits.metrePerMinute,
   ),
   Unit(
-    'meter per second',
+    'metre per second',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.meterPerSecond,
+    SpeedUnits.metrePerSecond,
   ),
   Unit(
-    'micrometer per day',
+    'micrometre per day',
     createSymbol(
       const [
         SymbolParts.micro,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.microMeterPerDay,
+    SpeedUnits.microMetrePerDay,
   ),
   Unit(
-    'micrometer per hour',
+    'micrometre per hour',
     createSymbol(
       const [
         SymbolParts.micro,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.microMeterPerHour,
+    SpeedUnits.microMetrePerHour,
   ),
   Unit(
-    'micrometer per minute',
+    'micrometre per minute',
     createSymbol(
       const [
         SymbolParts.micro,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.microMeterPerMinute,
+    SpeedUnits.microMetrePerMinute,
   ),
   Unit(
-    'micrometer per second',
+    'micrometre per second',
     createSymbol(
       const [
         SymbolParts.micro,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.microMeterPerSecond,
+    SpeedUnits.microMetrePerSecond,
   ),
   Unit(
     'mile per day',
@@ -718,64 +718,64 @@ final Set<Unit> speedUnitDetails = {
     SpeedUnits.milePerSecond,
   ),
   Unit(
-    'millimeter per day',
+    'millimetre per day',
     createSymbol(
       const [
         SymbolParts.milli,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.milliMeterPerDay,
+    SpeedUnits.milliMetrePerDay,
   ),
   Unit(
-    'millimeter per hour',
+    'millimetre per hour',
     createSymbol(
       const [
         SymbolParts.milli,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.milliMeterPerHour,
+    SpeedUnits.milliMetrePerHour,
   ),
   Unit(
-    'millimeter per minute',
+    'millimetre per minute',
     createSymbol(
       const [
         SymbolParts.milli,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.milliMeterPerMinute,
+    SpeedUnits.milliMetrePerMinute,
   ),
   Unit(
-    'millimeter per second',
+    'millimetre per second',
     createSymbol(
       const [
         SymbolParts.milli,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.milliMeterPerSecond,
+    SpeedUnits.milliMetrePerSecond,
   ),
   // Unit(
-  //   'minute per kilometer',
+  //   'minute per kilometre',
   //   createSymbol(
   //     const [
   //       SymbolParts.minute,
   //       SymbolParts.forwardSlash,
   //       SymbolParts.kilo,
-  //       SymbolParts.meter,
+  //       SymbolParts.metre,
   //     ],
   //   ),
-  //   SpeedUnits.minutePerKiloMeter,
+  //   SpeedUnits.minutePerKiloMetre,
   // ),
   // Unit(
   //   'minute per mile',
@@ -789,52 +789,52 @@ final Set<Unit> speedUnitDetails = {
   //   SpeedUnits.minutePerMile,
   // ),
   Unit(
-    'nanometer per day',
+    'nanometre per day',
     createSymbol(
       const [
         SymbolParts.nano,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.nanoMeterPerDay,
+    SpeedUnits.nanoMetrePerDay,
   ),
   Unit(
-    'nanometer per hour',
+    'nanometre per hour',
     createSymbol(
       const [
         SymbolParts.nano,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.nanoMeterPerHour,
+    SpeedUnits.nanoMetrePerHour,
   ),
   Unit(
-    'nanometer per minute',
+    'nanometre per minute',
     createSymbol(
       const [
         SymbolParts.nano,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.nanoMeterPerMinute,
+    SpeedUnits.nanoMetrePerMinute,
   ),
   Unit(
-    'nanometer per second',
+    'nanometre per second',
     createSymbol(
       const [
         SymbolParts.nano,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.nanoMeterPerSecond,
+    SpeedUnits.nanoMetrePerSecond,
   ),
   Unit(
     'nautical mile per hour',
@@ -870,148 +870,148 @@ final Set<Unit> speedUnitDetails = {
     SpeedUnits.nauticalMilePerSecond,
   ),
   Unit(
-    'petameter per day',
+    'petametre per day',
     createSymbol(
       const [
         SymbolParts.peta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.petaMeterPerDay,
+    SpeedUnits.petaMetrePerDay,
   ),
   Unit(
-    'petameter per hour',
+    'petametre per hour',
     createSymbol(
       const [
         SymbolParts.peta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.petaMeterPerHour,
+    SpeedUnits.petaMetrePerHour,
   ),
   Unit(
-    'petameter per minute',
+    'petametre per minute',
     createSymbol(
       const [
         SymbolParts.peta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.petaMeterPerMinute,
+    SpeedUnits.petaMetrePerMinute,
   ),
   Unit(
-    'petameter per second',
+    'petametre per second',
     createSymbol(
       const [
         SymbolParts.peta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.petaMeterPerSecond,
+    SpeedUnits.petaMetrePerSecond,
   ),
   Unit(
-    'picometer per day',
+    'picometre per day',
     createSymbol(
       const [
         SymbolParts.pico,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.picoMeterPerDay,
+    SpeedUnits.picoMetrePerDay,
   ),
   Unit(
-    'picometer per hour',
+    'picometre per hour',
     createSymbol(
       const [
         SymbolParts.pico,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.picoMeterPerHour,
+    SpeedUnits.picoMetrePerHour,
   ),
   Unit(
-    'picometer per minute',
+    'picometre per minute',
     createSymbol(
       const [
         SymbolParts.pico,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.picoMeterPerMinute,
+    SpeedUnits.picoMetrePerMinute,
   ),
   Unit(
-    'picometer per second',
+    'picometre per second',
     createSymbol(
       const [
         SymbolParts.pico,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.picoMeterPerSecond,
+    SpeedUnits.picoMetrePerSecond,
   ),
   Unit(
-    'terameter per day',
+    'terametre per day',
     createSymbol(
       const [
         SymbolParts.tera,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.teraMeterPerDay,
+    SpeedUnits.teraMetrePerDay,
   ),
   Unit(
-    'terameter per hour',
+    'terametre per hour',
     createSymbol(
       const [
         SymbolParts.tera,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.teraMeterPerHour,
+    SpeedUnits.teraMetrePerHour,
   ),
   Unit(
-    'terameter per minute',
+    'terametre per minute',
     createSymbol(
       const [
         SymbolParts.tera,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.teraMeterPerMinute,
+    SpeedUnits.teraMetrePerMinute,
   ),
   Unit(
-    'terameter per second',
+    'terametre per second',
     createSymbol(
       const [
         SymbolParts.tera,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.teraMeterPerSecond,
+    SpeedUnits.teraMetrePerSecond,
   ),
   Unit(
     'yard per day',
@@ -1058,195 +1058,195 @@ final Set<Unit> speedUnitDetails = {
     SpeedUnits.yardPerSecond,
   ),
   Unit(
-    'yoctometer per day',
+    'yoctometre per day',
     createSymbol(
       const [
         SymbolParts.yocto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.yoctoMeterPerDay,
+    SpeedUnits.yoctoMetrePerDay,
   ),
   Unit(
-    'yoctometer per hour',
+    'yoctometre per hour',
     createSymbol(
       const [
         SymbolParts.yocto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.yoctoMeterPerHour,
+    SpeedUnits.yoctoMetrePerHour,
   ),
   Unit(
-    'yoctometer per minute',
+    'yoctometre per minute',
     createSymbol(
       const [
         SymbolParts.yocto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.yoctoMeterPerMinute,
+    SpeedUnits.yoctoMetrePerMinute,
   ),
   Unit(
-    'yoctometer per second',
+    'yoctometre per second',
     createSymbol(
       const [
         SymbolParts.yocto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.yoctoMeterPerSecond,
+    SpeedUnits.yoctoMetrePerSecond,
   ),
   Unit(
-    'yottameter per day',
+    'yottametre per day',
     createSymbol(
       const [
         SymbolParts.yotta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.yottaMeterPerDay,
+    SpeedUnits.yottaMetrePerDay,
   ),
   Unit(
-    'yottameter per hour',
+    'yottametre per hour',
     createSymbol(
       const [
         SymbolParts.yotta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.yottaMeterPerHour,
+    SpeedUnits.yottaMetrePerHour,
   ),
   Unit(
-    'yottameter per minute',
+    'yottametre per minute',
     createSymbol(
       const [
         SymbolParts.yotta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.yottaMeterPerMinute,
+    SpeedUnits.yottaMetrePerMinute,
   ),
   Unit(
-    'yottameter per second',
+    'yottametre per second',
     createSymbol(
       const [
         SymbolParts.yotta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.yottaMeterPerSecond,
+    SpeedUnits.yottaMetrePerSecond,
   ),
   Unit(
-    'zeptometer per day',
+    'zeptometre per day',
     createSymbol(
       const [
         SymbolParts.zepto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.zeptoMeterPerDay,
+    SpeedUnits.zeptoMetrePerDay,
   ),
   Unit(
-    'zeptometer per hour',
+    'zeptometre per hour',
     createSymbol(
       const [
         SymbolParts.zepto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.zeptoMeterPerHour,
+    SpeedUnits.zeptoMetrePerHour,
   ),
   Unit(
-    'zeptometer per minute',
+    'zeptometre per minute',
     createSymbol(
       const [
         SymbolParts.zepto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.zeptoMeterPerMinute,
+    SpeedUnits.zeptoMetrePerMinute,
   ),
   Unit(
-    'zeptometer per second',
+    'zeptometre per second',
     createSymbol(
       const [
         SymbolParts.zepto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.zeptoMeterPerSecond,
+    SpeedUnits.zeptoMetrePerSecond,
   ),
   Unit(
-    'zettameter per day',
+    'zettametre per day',
     createSymbol(
       const [
         SymbolParts.zetta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.day,
       ],
     ),
-    SpeedUnits.zettaMeterPerDay,
+    SpeedUnits.zettaMetrePerDay,
   ),
   Unit(
-    'zettameter per hour',
+    'zettametre per hour',
     createSymbol(
       const [
         SymbolParts.zetta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.lH,
       ],
     ),
-    SpeedUnits.zettaMeterPerHour,
+    SpeedUnits.zettaMetrePerHour,
   ),
   Unit(
-    'zettameter per minute',
+    'zettametre per minute',
     createSymbol(
       const [
         SymbolParts.zetta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.minute,
       ],
     ),
-    SpeedUnits.zettaMeterPerMinute,
+    SpeedUnits.zettaMetrePerMinute,
   ),
   Unit(
-    'zettameter per second',
+    'zettametre per second',
     createSymbol(
       const [
         SymbolParts.zetta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.forwardSlash,
         SymbolParts.second,
       ],
     ),
-    SpeedUnits.zettaMeterPerSecond,
+    SpeedUnits.zettaMetrePerSecond,
   ),
 };

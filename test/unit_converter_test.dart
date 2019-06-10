@@ -5,7 +5,7 @@ void main() {
     // test('convertLength(5, fm, mi)', () {
     //   expect(
     //       double.parse(convertLength(
-    //               value: 5, from: LengthUnits.femtometer, to: LengthUnits.mile)
+    //               value: 5, from: LengthUnits.femtometre, to: LengthUnits.mile)
     //           .toStringAsPrecision(5)),
     //       5 * pow(10, -15));
     // });
@@ -19,14 +19,14 @@ void main() {
     // test('convertLength(5, cm, mi)', () {
     //   expect(
     //       double.parse(convertLength(
-    //               value: 5, from: LengthUnits.centimeter, to: LengthUnits.mile)
+    //               value: 5, from: LengthUnits.centimetre, to: LengthUnits.mile)
     //           .toStringAsPrecision(5)),
     //       3.1069 * pow(10, -5));
     // });
     // test('convertLength(5, nm, mi)', () {
     //   expect(
     //       double.parse(convertLength(
-    //               value: 5, from: LengthUnits.nanometer, to: LengthUnits.mile)
+    //               value: 5, from: LengthUnits.nanometre, to: LengthUnits.mile)
     //           .toStringAsPrecision(5)),
     //       3.1069 * pow(10, -12));
     // });

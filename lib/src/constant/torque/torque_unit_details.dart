@@ -5,116 +5,116 @@ import '../../model/unit.dart';
 
 final Set<Unit> torqueUnitDetails = {
   Unit(
-    'attonewton meter',
+    'attonewton metre',
     createSymbol(
       const [
         SymbolParts.atto,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.attoNewtonMeter,
+    TorqueUnits.attoNewtonMetre,
   ),
   Unit(
-    'centinewton meter',
+    'centinewton metre',
     createSymbol(
       const [
         SymbolParts.centi,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.centiNewtonMeter,
+    TorqueUnits.centiNewtonMetre,
   ),
   Unit(
-    'decanewton meter',
+    'decanewton metre',
     createSymbol(
       const [
         SymbolParts.deca,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.decaNewtonMeter,
+    TorqueUnits.decaNewtonMetre,
   ),
   Unit(
-    'decinewton meter',
+    'decinewton metre',
     createSymbol(
       const [
         SymbolParts.deci,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.deciNewtonMeter,
+    TorqueUnits.deciNewtonMetre,
   ),
   Unit(
-    'exanewton meter',
+    'exanewton metre',
     createSymbol(
       const [
         SymbolParts.exa,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.exaNewtonMeter,
+    TorqueUnits.exaNewtonMetre,
   ),
   Unit(
-    'femtonewton meter',
+    'femtonewton metre',
     createSymbol(
       const [
         SymbolParts.femto,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.femtoNewtonMeter,
+    TorqueUnits.femtoNewtonMetre,
   ),
   Unit(
-    'giganewton meter',
+    'giganewton metre',
     createSymbol(
       const [
         SymbolParts.giga,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.gigaNewtonMeter,
+    TorqueUnits.gigaNewtonMetre,
   ),
   Unit(
-    'gram-force centimeter',
+    'gram-force centimetre',
     createSymbol(
       const [
         SymbolParts.gram,
         SymbolParts.force,
         SymbolParts.space,
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.gramForceCentiMeter,
+    TorqueUnits.gramForceCentiMetre,
   ),
   Unit(
-    'hectonewton meter',
+    'hectonewton metre',
     createSymbol(
       const [
         SymbolParts.hecto,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.hectoNewtonMeter,
+    TorqueUnits.hectoNewtonMetre,
   ),
   Unit(
-    'kilogram-force centimeter',
+    'kilogram-force centimetre',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -122,94 +122,94 @@ final Set<Unit> torqueUnitDetails = {
         SymbolParts.force,
         SymbolParts.space,
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.kiloGramForceCentiMeter,
+    TorqueUnits.kiloGramForceCentiMetre,
   ),
   Unit(
-    'kilogram-force meter',
+    'kilogram-force metre',
     createSymbol(
       const [
         SymbolParts.kilo,
         SymbolParts.gram,
         SymbolParts.force,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.kiloGramForceMeter,
+    TorqueUnits.kiloGramForceMetre,
   ),
   Unit(
-    'kilonewton meter',
+    'kilonewton metre',
     createSymbol(
       const [
         SymbolParts.kilo,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.kiloNewtonMeter,
+    TorqueUnits.kiloNewtonMetre,
   ),
   Unit(
-    'meganewton meter',
+    'meganewton metre',
     createSymbol(
       const [
         SymbolParts.mega,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.megaNewtonMeter,
+    TorqueUnits.megaNewtonMetre,
   ),
   Unit(
-    'micronewton meter',
+    'micronewton metre',
     createSymbol(
       const [
         SymbolParts.micro,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.microNewtonMeter,
+    TorqueUnits.microNewtonMetre,
   ),
   Unit(
-    'millinewton meter',
+    'millinewton metre',
     createSymbol(
       const [
         SymbolParts.milli,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.milliNewtonMeter,
+    TorqueUnits.milliNewtonMetre,
   ),
   Unit(
-    'nanonewton meter',
+    'nanonewton metre',
     createSymbol(
       const [
         SymbolParts.nano,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.nanoNewtonMeter,
+    TorqueUnits.nanoNewtonMetre,
   ),
   Unit(
-    'newton meter',
+    'newton metre',
     createSymbol(
       const [
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.newtonMeter,
+    TorqueUnits.newtonMetre,
   ),
   Unit(
     'ounce-force foot',
@@ -236,28 +236,28 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.ounceForceInch,
   ),
   Unit(
-    'petanewton meter',
+    'petanewton metre',
     createSymbol(
       const [
         SymbolParts.peta,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.petaNewtonMeter,
+    TorqueUnits.petaNewtonMetre,
   ),
   Unit(
-    'piconewton meter',
+    'piconewton metre',
     createSymbol(
       const [
         SymbolParts.pico,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.picoNewtonMeter,
+    TorqueUnits.picoNewtonMetre,
   ),
   Unit(
     'pound-force foot',
@@ -295,63 +295,63 @@ final Set<Unit> torqueUnitDetails = {
     TorqueUnits.poundalFoot,
   ),
   Unit(
-    'teranewton meter',
+    'teranewton metre',
     createSymbol(
       const [
         SymbolParts.tera,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.teraNewtonMeter,
+    TorqueUnits.teraNewtonMetre,
   ),
   Unit(
-    'yoctonewton meter',
+    'yoctonewton metre',
     createSymbol(
       const [
         SymbolParts.yocto,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.yoctoNewtonMeter,
+    TorqueUnits.yoctoNewtonMetre,
   ),
   Unit(
-    'yottanewton meter',
+    'yottanewton metre',
     createSymbol(
       const [
         SymbolParts.yotta,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.yottaNewtonMeter,
+    TorqueUnits.yottaNewtonMetre,
   ),
   Unit(
-    'zeptonewton meter',
+    'zeptonewton metre',
     createSymbol(
       const [
         SymbolParts.zepto,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.zeptoNewtonMeter,
+    TorqueUnits.zeptoNewtonMetre,
   ),
   Unit(
-    'zettanewton meter',
+    'zettanewton metre',
     createSymbol(
       const [
         SymbolParts.zetta,
         SymbolParts.newton,
         SymbolParts.space,
-        SymbolParts.meter,
+        SymbolParts.metre,
       ],
     ),
-    TorqueUnits.zettaNewtonMeter,
+    TorqueUnits.zettaNewtonMetre,
   ),
 };

@@ -2,5 +2,5 @@
 enum FuelUnits {
   milePerGallon_Imperial,
   milePerGallon_US,
-  litrePerKiloMeter,
+  litrePerKiloMetre,
 }

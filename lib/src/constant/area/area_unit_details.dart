@@ -244,70 +244,70 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.square,
   ),
   Unit(
-    'square attometer',
+    'square attometre',
     createSymbol(
       const [
         SymbolParts.atto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareAttoMeter,
+    AreaUnits.squareAttoMetre,
   ),
   Unit(
-    'square centimeter',
+    'square centimetre',
     createSymbol(
       const [
         SymbolParts.centi,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareCentiMeter,
+    AreaUnits.squareCentiMetre,
   ),
   Unit(
-    'square decameter',
+    'square decametre',
     createSymbol(
       const [
         SymbolParts.deca,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareDecaMeter,
+    AreaUnits.squareDecaMetre,
   ),
   Unit(
-    'square decimeter',
+    'square decimetre',
     createSymbol(
       const [
         SymbolParts.deci,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareDeciMeter,
+    AreaUnits.squareDeciMetre,
   ),
   Unit(
-    'square exameter',
+    'square exametre',
     createSymbol(
       const [
         SymbolParts.exa,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareExaMeter,
+    AreaUnits.squareExaMetre,
   ),
   Unit(
-    'square femtometer',
+    'square femtometre',
     createSymbol(
       const [
         SymbolParts.femto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareFemtoMeter,
+    AreaUnits.squareFemtoMetre,
   ),
   Unit(
     'square foot',
@@ -320,26 +320,26 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareFoot,
   ),
   Unit(
-    'square gigameter',
+    'square gigametre',
     createSymbol(
       const [
         SymbolParts.giga,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareGigaMeter,
+    AreaUnits.squareGigaMetre,
   ),
   Unit(
-    'square hectometer',
+    'square hectometre',
     createSymbol(
       const [
         SymbolParts.hecto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareHectoMeter,
+    AreaUnits.squareHectoMetre,
   ),
   Unit(
     'square inch',
@@ -352,47 +352,47 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareInch,
   ),
   Unit(
-    'square kilometer',
+    'square kilometre',
     createSymbol(
       const [
         SymbolParts.kilo,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareKiloMeter,
+    AreaUnits.squareKiloMetre,
   ),
   Unit(
-    'square megameter',
+    'square megametre',
     createSymbol(
       const [
         SymbolParts.mega,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareMegaMeter,
+    AreaUnits.squareMegaMetre,
   ),
   Unit(
-    'square meter',
+    'square metre',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareMeter,
+    AreaUnits.squareMetre,
   ),
   Unit(
-    'square micrometer',
+    'square micrometre',
     createSymbol(
       const [
         SymbolParts.micro,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareMicroMeter,
+    AreaUnits.squareMicroMetre,
   ),
   Unit(
     'square mile',
@@ -405,26 +405,26 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareMile,
   ),
   Unit(
-    'square millimeter',
+    'square millimetre',
     createSymbol(
       const [
         SymbolParts.milli,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareMilliMeter,
+    AreaUnits.squareMilliMetre,
   ),
   Unit(
-    'square nanometer',
+    'square nanometre',
     createSymbol(
       const [
         SymbolParts.nano,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareNanoMeter,
+    AreaUnits.squareNanoMetre,
   ),
   Unit(
     'square perch',
@@ -436,37 +436,37 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squarePerch,
   ),
   Unit(
-    'square petameter',
+    'square petametre',
     createSymbol(
       const [
         SymbolParts.peta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squarePetaMeter,
+    AreaUnits.squarePetaMetre,
   ),
   Unit(
-    'square picometer',
+    'square picometre',
     createSymbol(
       const [
         SymbolParts.pico,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squarePicoMeter,
+    AreaUnits.squarePicoMetre,
   ),
   Unit(
-    'square terameter',
+    'square terametre',
     createSymbol(
       const [
         SymbolParts.tera,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareTeraMeter,
+    AreaUnits.squareTeraMetre,
   ),
   Unit(
     'square yard',
@@ -479,48 +479,48 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.squareYard,
   ),
   Unit(
-    'square yoctometer',
+    'square yoctometre',
     createSymbol(
       const [
         SymbolParts.yocto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareYoctoMeter,
+    AreaUnits.squareYoctoMetre,
   ),
   Unit(
-    'square yottameter',
+    'square yottametre',
     createSymbol(
       const [
         SymbolParts.yotta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareYottaMeter,
+    AreaUnits.squareYottaMetre,
   ),
   Unit(
-    'square zeptometer',
+    'square zeptometre',
     createSymbol(
       const [
         SymbolParts.zepto,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareZeptoMeter,
+    AreaUnits.squareZeptoMetre,
   ),
   Unit(
-    'square zettameter',
+    'square zettametre',
     createSymbol(
       const [
         SymbolParts.zetta,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    AreaUnits.squareZettaMeter,
+    AreaUnits.squareZettaMetre,
   ),
   Unit(
     'terabarn',

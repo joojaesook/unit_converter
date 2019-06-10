@@ -7,56 +7,56 @@ import '../../enum/prefix.dart';
 import '../../misc/global.dart';
 import '../others/prefix_value.dart';
 
-final _barnToSquareMeter = pow(10, -28);
+final _barnToSquareMetre = pow(10, -28);
 
 Map<AreaUnits, double> areaConversionDetails = {
   // Base unit
-  AreaUnits.squareMeter: 1,
+  AreaUnits.squareMetre: 1,
   AreaUnits.acre: 4046.8564224,
   AreaUnits.acre_USSurvey: 4046.872609874252,
   AreaUnits.are: 100,
-  AreaUnits.attoBarn: prefixValue[Prefix.atto] * _barnToSquareMeter,
-  AreaUnits.barn: _barnToSquareMeter,
-  AreaUnits.centiBarn: prefixValue[Prefix.centi] * _barnToSquareMeter,
+  AreaUnits.attoBarn: prefixValue[Prefix.atto] * _barnToSquareMetre,
+  AreaUnits.barn: _barnToSquareMetre,
+  AreaUnits.centiBarn: prefixValue[Prefix.centi] * _barnToSquareMetre,
   AreaUnits.circularMil: 5.067074790975 * prefixValue[Prefix.angstrom],
-  AreaUnits.decaBarn: prefixValue[Prefix.deca] * _barnToSquareMeter,
-  AreaUnits.deciBarn: prefixValue[Prefix.deci] * _barnToSquareMeter,
-  AreaUnits.exaBarn: prefixValue[Prefix.exa] * _barnToSquareMeter,
-  AreaUnits.femtoBarn: prefixValue[Prefix.femto] * _barnToSquareMeter,
-  AreaUnits.gigaBarn: prefixValue[Prefix.giga] * _barnToSquareMeter,
+  AreaUnits.decaBarn: prefixValue[Prefix.deca] * _barnToSquareMetre,
+  AreaUnits.deciBarn: prefixValue[Prefix.deci] * _barnToSquareMetre,
+  AreaUnits.exaBarn: prefixValue[Prefix.exa] * _barnToSquareMetre,
+  AreaUnits.femtoBarn: prefixValue[Prefix.femto] * _barnToSquareMetre,
+  AreaUnits.gigaBarn: prefixValue[Prefix.giga] * _barnToSquareMetre,
   AreaUnits.hectare: 10000,
-  AreaUnits.hectoBarn: prefixValue[Prefix.hecto] * _barnToSquareMeter,
-  AreaUnits.kiloBarn: prefixValue[Prefix.kilo] * _barnToSquareMeter,
-  AreaUnits.megaBarn: prefixValue[Prefix.mega] * _barnToSquareMeter,
-  AreaUnits.microBarn: prefixValue[Prefix.micro] * _barnToSquareMeter,
-  AreaUnits.milliBarn: prefixValue[Prefix.milli] * _barnToSquareMeter,
-  AreaUnits.nanoBarn: prefixValue[Prefix.nano] * _barnToSquareMeter,
-  AreaUnits.petaBarn: prefixValue[Prefix.peta] * _barnToSquareMeter,
-  AreaUnits.picoBarn: prefixValue[Prefix.pico] * _barnToSquareMeter,
+  AreaUnits.hectoBarn: prefixValue[Prefix.hecto] * _barnToSquareMetre,
+  AreaUnits.kiloBarn: prefixValue[Prefix.kilo] * _barnToSquareMetre,
+  AreaUnits.megaBarn: prefixValue[Prefix.mega] * _barnToSquareMetre,
+  AreaUnits.microBarn: prefixValue[Prefix.micro] * _barnToSquareMetre,
+  AreaUnits.milliBarn: prefixValue[Prefix.milli] * _barnToSquareMetre,
+  AreaUnits.nanoBarn: prefixValue[Prefix.nano] * _barnToSquareMetre,
+  AreaUnits.petaBarn: prefixValue[Prefix.peta] * _barnToSquareMetre,
+  AreaUnits.picoBarn: prefixValue[Prefix.pico] * _barnToSquareMetre,
   AreaUnits.rai: 1600,
   AreaUnits.rood: 1011.7141056,
   AreaUnits.square: 9.290304,
-  AreaUnits.squareAttoMeter: pow(
+  AreaUnits.squareAttoMetre: pow(
     prefixValue[Prefix.atto],
     2,
   ),
-  AreaUnits.squareCentiMeter: pow(
+  AreaUnits.squareCentiMetre: pow(
     prefixValue[Prefix.centi],
     2,
   ),
-  AreaUnits.squareDecaMeter: pow(
+  AreaUnits.squareDecaMetre: pow(
     prefixValue[Prefix.deca],
     2,
   ),
-  AreaUnits.squareDeciMeter: pow(
+  AreaUnits.squareDeciMetre: pow(
     prefixValue[Prefix.deci],
     2,
   ),
-  AreaUnits.squareExaMeter: pow(
+  AreaUnits.squareExaMetre: pow(
     prefixValue[Prefix.exa],
     2,
   ),
-  AreaUnits.squareFemtoMeter: pow(
+  AreaUnits.squareFemtoMetre: pow(
     prefixValue[Prefix.femto],
     2,
   ),
@@ -67,11 +67,11 @@ Map<AreaUnits, double> areaConversionDetails = {
     ),
     2,
   ),
-  AreaUnits.squareGigaMeter: pow(
+  AreaUnits.squareGigaMetre: pow(
     prefixValue[Prefix.giga],
     2,
   ),
-  AreaUnits.squareHectoMeter: pow(
+  AreaUnits.squareHectoMetre: pow(
     prefixValue[Prefix.hecto],
     2,
   ),
@@ -82,15 +82,15 @@ Map<AreaUnits, double> areaConversionDetails = {
     ),
     2,
   ),
-  AreaUnits.squareKiloMeter: pow(
+  AreaUnits.squareKiloMetre: pow(
     prefixValue[Prefix.kilo],
     2,
   ),
-  AreaUnits.squareMegaMeter: pow(
+  AreaUnits.squareMegaMetre: pow(
     prefixValue[Prefix.mega],
     2,
   ),
-  AreaUnits.squareMicroMeter: pow(
+  AreaUnits.squareMicroMetre: pow(
     prefixValue[Prefix.micro],
     2,
   ),
@@ -101,11 +101,11 @@ Map<AreaUnits, double> areaConversionDetails = {
     ),
     2,
   ),
-  AreaUnits.squareMilliMeter: pow(
+  AreaUnits.squareMilliMetre: pow(
     prefixValue[Prefix.milli],
     2,
   ),
-  AreaUnits.squareNanoMeter: pow(
+  AreaUnits.squareNanoMetre: pow(
     prefixValue[Prefix.nano],
     2,
   ),
@@ -116,15 +116,15 @@ Map<AreaUnits, double> areaConversionDetails = {
     ),
     2,
   ),
-  AreaUnits.squarePetaMeter: pow(
+  AreaUnits.squarePetaMetre: pow(
     prefixValue[Prefix.peta],
     2,
   ),
-  AreaUnits.squarePicoMeter: pow(
+  AreaUnits.squarePicoMetre: pow(
     prefixValue[Prefix.pico],
     2,
   ),
-  AreaUnits.squareTeraMeter: pow(
+  AreaUnits.squareTeraMetre: pow(
     prefixValue[Prefix.tera],
     2,
   ),
@@ -135,25 +135,25 @@ Map<AreaUnits, double> areaConversionDetails = {
     ),
     2,
   ),
-  AreaUnits.squareYoctoMeter: pow(
+  AreaUnits.squareYoctoMetre: pow(
     prefixValue[Prefix.yocto],
     2,
   ),
-  AreaUnits.squareYottaMeter: pow(
+  AreaUnits.squareYottaMetre: pow(
     prefixValue[Prefix.yotta],
     2,
   ),
-  AreaUnits.squareZeptoMeter: pow(
+  AreaUnits.squareZeptoMetre: pow(
     prefixValue[Prefix.zepto],
     2,
   ),
-  AreaUnits.squareZettaMeter: pow(
+  AreaUnits.squareZettaMetre: pow(
     prefixValue[Prefix.zetta],
     2,
   ),
-  AreaUnits.teraBarn: prefixValue[Prefix.tera] * _barnToSquareMeter,
-  AreaUnits.yoctoBarn: prefixValue[Prefix.yocto] * _barnToSquareMeter,
-  AreaUnits.yottaBarn: prefixValue[Prefix.yotta] * _barnToSquareMeter,
-  AreaUnits.zeptoBarn: prefixValue[Prefix.zepto] * _barnToSquareMeter,
-  AreaUnits.zettaBarn: prefixValue[Prefix.zetta] * _barnToSquareMeter,
+  AreaUnits.teraBarn: prefixValue[Prefix.tera] * _barnToSquareMetre,
+  AreaUnits.yoctoBarn: prefixValue[Prefix.yocto] * _barnToSquareMetre,
+  AreaUnits.yottaBarn: prefixValue[Prefix.yotta] * _barnToSquareMetre,
+  AreaUnits.zeptoBarn: prefixValue[Prefix.zepto] * _barnToSquareMetre,
+  AreaUnits.zettaBarn: prefixValue[Prefix.zetta] * _barnToSquareMetre,
 };

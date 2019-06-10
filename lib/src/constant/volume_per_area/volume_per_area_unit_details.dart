@@ -7,67 +7,67 @@ import '../others/system_value.dart';
 
 final Set<Unit> volumePerAreaUnitDetails = {
   Unit(
-    'cubic meter per acre',
+    'cubic metre per acre',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
         SymbolParts.forwardSlash,
         SymbolParts.acre,
       ],
     ),
-    VolumePerAreaUnits.cubicMeterPerAcre,
+    VolumePerAreaUnits.cubicMetrePerAcre,
   ),
   Unit(
-    'cubic meter per hectare',
+    'cubic metre per hectare',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
         SymbolParts.forwardSlash,
         SymbolParts.hectare,
       ],
     ),
-    VolumePerAreaUnits.cubicMeterPerHectare,
+    VolumePerAreaUnits.cubicMetrePerHectare,
   ),
   Unit(
-    'cubic meter per square meter',
+    'cubic metre per square metre',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    VolumePerAreaUnits.cubicMeterPerSquareMeter,
+    VolumePerAreaUnits.cubicMetrePerSquareMetre,
   ),
   Unit(
-    'cubic meter per square mile',
+    'cubic metre per square mile',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
         SymbolParts.forwardSlash,
         SymbolParts.mile,
         SymbolParts.superscriptTwo,
       ],
     ),
-    VolumePerAreaUnits.cubicMeterPerSquareMile,
+    VolumePerAreaUnits.cubicMetrePerSquareMile,
   ),
   Unit(
-    'cubic meter per square yard',
+    'cubic metre per square yard',
     createSymbol(
       const [
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptThree,
         SymbolParts.forwardSlash,
         SymbolParts.yard,
         SymbolParts.superscriptTwo,
       ],
     ),
-    VolumePerAreaUnits.cubicMeterPerSquareYard,
+    VolumePerAreaUnits.cubicMetrePerSquareYard,
   ),
   Unit(
     'gallon per acre',
@@ -94,16 +94,16 @@ final Set<Unit> volumePerAreaUnitDetails = {
     system: systemValue[System.usLiquid],
   ),
   Unit(
-    'gallon per square meter',
+    'gallon per square metre',
     createSymbol(
       const [
         SymbolParts.gallon,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    VolumePerAreaUnits.gallonPerSquareMeter,
+    VolumePerAreaUnits.gallonPerSquareMetre,
     system: systemValue[System.usLiquid],
   ),
   Unit(
@@ -155,16 +155,16 @@ final Set<Unit> volumePerAreaUnitDetails = {
     VolumePerAreaUnits.litrePerHectare,
   ),
   Unit(
-    'litre per square meter',
+    'litre per square metre',
     createSymbol(
       const [
         SymbolParts.lL,
         SymbolParts.forwardSlash,
-        SymbolParts.meter,
+        SymbolParts.metre,
         SymbolParts.superscriptTwo,
       ],
     ),
-    VolumePerAreaUnits.litrePerSquareMeter,
+    VolumePerAreaUnits.litrePerSquareMetre,
   ),
   Unit(
     'litre per square mile',

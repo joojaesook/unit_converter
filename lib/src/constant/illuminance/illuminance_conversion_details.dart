@@ -31,27 +31,27 @@ Map<IlluminanceUnits, double> illuminanceConversionDetails = {
   IlluminanceUnits.hectoPhot: _photToLux * prefixValue[Prefix.hecto],
   IlluminanceUnits.kiloLux: prefixValue[Prefix.kilo],
   IlluminanceUnits.kiloPhot: _photToLux * prefixValue[Prefix.kilo],
-  IlluminanceUnits.lumenPerSquareAttoMeter: pow(
+  IlluminanceUnits.lumenPerSquareAttoMetre: pow(
     prefixValue[Prefix.atto],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareCentiMeter: pow(
+  IlluminanceUnits.lumenPerSquareCentiMetre: pow(
     prefixValue[Prefix.centi],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareDecaMeter: pow(
+  IlluminanceUnits.lumenPerSquareDecaMetre: pow(
     prefixValue[Prefix.deca],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareDeciMeter: pow(
+  IlluminanceUnits.lumenPerSquareDeciMetre: pow(
     prefixValue[Prefix.deci],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareExaMeter: pow(
+  IlluminanceUnits.lumenPerSquareExaMetre: pow(
     prefixValue[Prefix.exa],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareFemtoMeter: pow(
+  IlluminanceUnits.lumenPerSquareFemtoMetre: pow(
     prefixValue[Prefix.femto],
     -2,
   ),
@@ -62,11 +62,11 @@ Map<IlluminanceUnits, double> illuminanceConversionDetails = {
     ),
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareGigaMeter: pow(
+  IlluminanceUnits.lumenPerSquareGigaMetre: pow(
     prefixValue[Prefix.giga],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareHectoMeter: pow(
+  IlluminanceUnits.lumenPerSquareHectoMetre: pow(
     prefixValue[Prefix.hecto],
     -2,
   ),
@@ -77,52 +77,52 @@ Map<IlluminanceUnits, double> illuminanceConversionDetails = {
     ),
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareKiloMeter: pow(
+  IlluminanceUnits.lumenPerSquareKiloMetre: pow(
     prefixValue[Prefix.kilo],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareMegaMeter: pow(
+  IlluminanceUnits.lumenPerSquareMegaMetre: pow(
     prefixValue[Prefix.mega],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareMeter: 1,
-  IlluminanceUnits.lumenPerSquareMicroMeter: pow(
+  IlluminanceUnits.lumenPerSquareMetre: 1,
+  IlluminanceUnits.lumenPerSquareMicroMetre: pow(
     prefixValue[Prefix.micro],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareMilliMeter: pow(
+  IlluminanceUnits.lumenPerSquareMilliMetre: pow(
     prefixValue[Prefix.milli],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareNanoMeter: pow(
+  IlluminanceUnits.lumenPerSquareNanoMetre: pow(
     prefixValue[Prefix.nano],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquarePetaMeter: pow(
+  IlluminanceUnits.lumenPerSquarePetaMetre: pow(
     prefixValue[Prefix.peta],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquarePicoMeter: pow(
+  IlluminanceUnits.lumenPerSquarePicoMetre: pow(
     prefixValue[Prefix.pico],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareTeraMeter: pow(
+  IlluminanceUnits.lumenPerSquareTeraMetre: pow(
     prefixValue[Prefix.tera],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareYoctoMeter: pow(
+  IlluminanceUnits.lumenPerSquareYoctoMetre: pow(
     prefixValue[Prefix.yocto],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareYottaMeter: pow(
+  IlluminanceUnits.lumenPerSquareYottaMetre: pow(
     prefixValue[Prefix.yotta],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareZeptoMeter: pow(
+  IlluminanceUnits.lumenPerSquareZeptoMetre: pow(
     prefixValue[Prefix.zepto],
     -2,
   ),
-  IlluminanceUnits.lumenPerSquareZettaMeter: pow(
+  IlluminanceUnits.lumenPerSquareZettaMetre: pow(
     prefixValue[Prefix.zetta],
     -2,
   ),

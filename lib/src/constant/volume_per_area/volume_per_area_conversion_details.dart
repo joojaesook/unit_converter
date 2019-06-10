@@ -30,30 +30,30 @@ final _perSquareYard = 1 /
       getConversionDetail(ConversionType.length, LengthUnits.yard),
       2,
     );
-final _gallonToCubicMeter = getConversionDetail(
+final _gallonToCubicMetre = getConversionDetail(
   ConversionType.volume,
   VolumeUnits.gallon_USLiquid,
 );
-final _litreToCubicMeter = getConversionDetail(
+final _litreToCubicMetre = getConversionDetail(
   ConversionType.volume,
   VolumeUnits.litre,
 );
 
 final Map<VolumePerAreaUnits, double> volumePerAreaConversionDetails = {
   // Base unit
-  VolumePerAreaUnits.cubicMeterPerSquareMeter: 1,
-  VolumePerAreaUnits.cubicMeterPerAcre: _perAcre,
-  VolumePerAreaUnits.cubicMeterPerHectare: _perHectare,
-  VolumePerAreaUnits.cubicMeterPerSquareMile: _perSquareMile,
-  VolumePerAreaUnits.cubicMeterPerSquareYard: _perSquareYard,
-  VolumePerAreaUnits.gallonPerAcre: _gallonToCubicMeter * _perAcre,
-  VolumePerAreaUnits.gallonPerHectare: _gallonToCubicMeter * _perHectare,
-  VolumePerAreaUnits.gallonPerSquareMeter: _gallonToCubicMeter,
-  VolumePerAreaUnits.gallonPerSquareMile: _gallonToCubicMeter * _perSquareMile,
-  VolumePerAreaUnits.gallonPerSquareYard: _gallonToCubicMeter * _perSquareYard,
-  VolumePerAreaUnits.litrePerAcre: _litreToCubicMeter * _perAcre,
-  VolumePerAreaUnits.litrePerHectare: _litreToCubicMeter * _perHectare,
-  VolumePerAreaUnits.litrePerSquareMeter: _litreToCubicMeter,
-  VolumePerAreaUnits.litrePerSquareMile: _litreToCubicMeter * _perSquareMile,
-  VolumePerAreaUnits.litrePerSquareYard: _litreToCubicMeter * _perSquareYard,
+  VolumePerAreaUnits.cubicMetrePerSquareMetre: 1,
+  VolumePerAreaUnits.cubicMetrePerAcre: _perAcre,
+  VolumePerAreaUnits.cubicMetrePerHectare: _perHectare,
+  VolumePerAreaUnits.cubicMetrePerSquareMile: _perSquareMile,
+  VolumePerAreaUnits.cubicMetrePerSquareYard: _perSquareYard,
+  VolumePerAreaUnits.gallonPerAcre: _gallonToCubicMetre * _perAcre,
+  VolumePerAreaUnits.gallonPerHectare: _gallonToCubicMetre * _perHectare,
+  VolumePerAreaUnits.gallonPerSquareMetre: _gallonToCubicMetre,
+  VolumePerAreaUnits.gallonPerSquareMile: _gallonToCubicMetre * _perSquareMile,
+  VolumePerAreaUnits.gallonPerSquareYard: _gallonToCubicMetre * _perSquareYard,
+  VolumePerAreaUnits.litrePerAcre: _litreToCubicMetre * _perAcre,
+  VolumePerAreaUnits.litrePerHectare: _litreToCubicMetre * _perHectare,
+  VolumePerAreaUnits.litrePerSquareMetre: _litreToCubicMetre,
+  VolumePerAreaUnits.litrePerSquareMile: _litreToCubicMetre * _perSquareMile,
+  VolumePerAreaUnits.litrePerSquareYard: _litreToCubicMetre * _perSquareYard,
 };
