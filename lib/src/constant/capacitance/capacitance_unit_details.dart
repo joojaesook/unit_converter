@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> capacitanceUnitDetails = {
-  Unit(
+  Unit<CapacitanceUnits>(
     'abfarad',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.abFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'attofarad',
     createSymbol(
       const [
@@ -23,8 +24,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.attoFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'centifarad',
     createSymbol(
       const [
@@ -33,8 +35,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.centiFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'decafarad',
     createSymbol(
       const [
@@ -43,8 +46,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.decaFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'decifarad',
     createSymbol(
       const [
@@ -53,8 +57,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.deciFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'exafarad',
     createSymbol(
       const [
@@ -63,8 +68,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.exaFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'farad',
     createSymbol(
       const [
@@ -72,8 +78,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.farad,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'femtofarad',
     createSymbol(
       const [
@@ -82,8 +89,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.femtoFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'gigafarad',
     createSymbol(
       const [
@@ -92,8 +100,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.gigFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'hectofarad',
     createSymbol(
       const [
@@ -102,8 +111,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.hectoFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'kilofarad',
     createSymbol(
       const [
@@ -112,8 +122,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.kiloFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'megafarad',
     createSymbol(
       const [
@@ -122,8 +133,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.megaFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'microfarad',
     createSymbol(
       const [
@@ -132,8 +144,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.microFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'millifarad',
     createSymbol(
       const [
@@ -142,8 +155,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.milliFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'nanofarad',
     createSymbol(
       const [
@@ -152,8 +166,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.nanoFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'petafarad',
     createSymbol(
       const [
@@ -162,8 +177,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.petaFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'picofarad',
     createSymbol(
       const [
@@ -172,8 +188,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.picoFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'terafarad',
     createSymbol(
       const [
@@ -182,8 +199,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.teraFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'yoctofarad',
     createSymbol(
       const [
@@ -192,8 +210,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.yoctoFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'yottafarad',
     createSymbol(
       const [
@@ -202,8 +221,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.yottaFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'zeptofarad',
     createSymbol(
       const [
@@ -212,8 +232,9 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.zeptoFarad,
+    variation: true,
   ),
-  Unit(
+  Unit<CapacitanceUnits>(
     'zettafarad',
     createSymbol(
       const [
@@ -222,5 +243,6 @@ final Set<Unit> capacitanceUnitDetails = {
       ],
     ),
     CapacitanceUnits.zettaFarad,
+    variation: true,
   ),
 };
