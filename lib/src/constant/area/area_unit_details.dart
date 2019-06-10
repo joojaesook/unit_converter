@@ -230,6 +230,20 @@ final Set<Unit> areaUnitDetails = {
     AreaUnits.rood,
   ),
   Unit(
+    'square',
+    createSymbol(
+      const [
+        SymbolParts.lS,
+        SymbolParts.lQ,
+        SymbolParts.lU,
+        SymbolParts.lA,
+        SymbolParts.lR,
+        SymbolParts.lE,
+      ],
+    ),
+    AreaUnits.square,
+  ),
+  Unit(
     'square attometer',
     createSymbol(
       const [

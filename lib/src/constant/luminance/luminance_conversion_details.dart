@@ -105,7 +105,7 @@ Map<LuminanceUnits, double> luminanceConversionDetails = {
     -2,
   ),
   LuminanceUnits.footLambert: 3.42625909964,
-  // LuminanceUnits.lambert: ,
+  LuminanceUnits.lambert: 3183.09886184,
   LuminanceUnits.stilb: getConversionDetail(
     ConversionType.luminance,
     LuminanceUnits.candelaPerSquareCentiMeter,

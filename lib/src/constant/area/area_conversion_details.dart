@@ -35,6 +35,7 @@ Map<AreaUnits, double> areaConversionDetails = {
   AreaUnits.picoBarn: prefixValue[Prefix.pico] * _barnToSquareMeter,
   AreaUnits.rai: 1600,
   AreaUnits.rood: 1011.7141056,
+  AreaUnits.square: 9.290304,
   AreaUnits.squareAttoMeter: pow(
     prefixValue[Prefix.atto],
     2,

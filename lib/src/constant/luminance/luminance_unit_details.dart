@@ -304,11 +304,20 @@ final Set<Unit> luminanceUnitDetails = {
     'foot-lambert',
     createSymbol(
       const [
-        SymbolParts.force,
+        SymbolParts.lF,
         SymbolParts.lambert,
       ],
     ),
     LuminanceUnits.footLambert,
+  ),
+  Unit(
+    'lambert',
+    createSymbol(
+      const [
+        SymbolParts.lambert,
+      ],
+    ),
+    LuminanceUnits.lambert,
   ),
   Unit(
     'stilb',

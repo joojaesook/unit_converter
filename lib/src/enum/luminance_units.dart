@@ -24,6 +24,6 @@ enum LuminanceUnits {
   candelaPerSquareZeptoMeter,
   candelaPerSquareZettaMeter,
   footLambert,
-  // lambert,
+  lambert,
   stilb,
 }

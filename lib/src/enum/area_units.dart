@@ -23,6 +23,7 @@ enum AreaUnits {
   picoBarn,
   rai,
   rood,
+  square,
   squareAttoMeter,
   squareCentiMeter,
   squareDecaMeter,
