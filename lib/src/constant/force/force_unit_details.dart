@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> forceUnitDetails = {
-  Unit(
+  Unit<ForceUnits>(
     'attogram-force',
     createSymbol(
       const [
@@ -14,8 +14,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.attoGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'attonewton',
     createSymbol(
       const [
@@ -24,8 +25,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.attoNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'centigram-force',
     createSymbol(
       const [
@@ -35,8 +37,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.centiGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'centinewton',
     createSymbol(
       const [
@@ -45,8 +48,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.centiNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'decagram-force',
     createSymbol(
       const [
@@ -56,8 +60,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.decaGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'decanewton',
     createSymbol(
       const [
@@ -66,8 +71,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.decaNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'decigram-force',
     createSymbol(
       const [
@@ -77,8 +83,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.deciGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'decinewton',
     createSymbol(
       const [
@@ -87,8 +94,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.deciNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'dyne',
     createSymbol(
       const [
@@ -97,7 +105,7 @@ final Set<Unit> forceUnitDetails = {
     ),
     ForceUnits.dyne,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'exagram-force',
     createSymbol(
       const [
@@ -107,8 +115,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.exaGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'exanewton',
     createSymbol(
       const [
@@ -117,8 +126,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.exaNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'femtogram-force',
     createSymbol(
       const [
@@ -128,8 +138,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.femtoGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'femtonewton',
     createSymbol(
       const [
@@ -138,8 +149,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.femtoNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'gigagram-force',
     createSymbol(
       const [
@@ -149,8 +161,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.gigaGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'giganewton',
     createSymbol(
       const [
@@ -159,8 +172,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.gigaNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'gram-force',
     createSymbol(
       const [
@@ -170,7 +184,7 @@ final Set<Unit> forceUnitDetails = {
     ),
     ForceUnits.gramForce,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'hectogram-force',
     createSymbol(
       const [
@@ -180,8 +194,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.hectoGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'hectonewton',
     createSymbol(
       const [
@@ -190,8 +205,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.hectoNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'kilogram-force',
     createSymbol(
       const [
@@ -201,8 +217,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.kiloGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'kilonewton',
     createSymbol(
       const [
@@ -211,8 +228,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.kiloNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'kilopond',
     createSymbol(
       const [
@@ -222,7 +240,7 @@ final Set<Unit> forceUnitDetails = {
     ),
     ForceUnits.kilopond,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'kip',
     createSymbol(
       const [
@@ -231,7 +249,7 @@ final Set<Unit> forceUnitDetails = {
     ),
     ForceUnits.kip,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'megagram-force',
     createSymbol(
       const [
@@ -241,8 +259,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.megaGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'meganewton',
     createSymbol(
       const [
@@ -251,8 +270,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.megaNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'microgram-force',
     createSymbol(
       const [
@@ -262,8 +282,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.microGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'micronewton',
     createSymbol(
       const [
@@ -272,8 +293,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.microNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'milligram-force',
     createSymbol(
       const [
@@ -283,8 +305,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.milliGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'millinewton',
     createSymbol(
       const [
@@ -293,8 +316,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.milliNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'nanogram-force',
     createSymbol(
       const [
@@ -304,8 +328,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.nanoGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'nanonewton',
     createSymbol(
       const [
@@ -314,8 +339,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.nanoNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'newton',
     createSymbol(
       const [
@@ -323,8 +349,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.newton,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'ounce-force',
     createSymbol(
       const [
@@ -334,7 +361,7 @@ final Set<Unit> forceUnitDetails = {
     ),
     ForceUnits.ounceForce,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'petagram-force',
     createSymbol(
       const [
@@ -344,8 +371,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.petaGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'petanewton',
     createSymbol(
       const [
@@ -354,8 +382,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.petaNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'picogram-force',
     createSymbol(
       const [
@@ -365,8 +394,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.picoGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'piconewton',
     createSymbol(
       const [
@@ -375,8 +405,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.picoNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'pound-force',
     createSymbol(
       const [
@@ -386,7 +417,7 @@ final Set<Unit> forceUnitDetails = {
     ),
     ForceUnits.poundForce,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'poundal',
     createSymbol(
       const [
@@ -395,7 +426,7 @@ final Set<Unit> forceUnitDetails = {
     ),
     ForceUnits.poundal,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'teragram-force',
     createSymbol(
       const [
@@ -405,8 +436,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.teraGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'teranewton',
     createSymbol(
       const [
@@ -415,8 +447,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.teraNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'yoctogram-force',
     createSymbol(
       const [
@@ -426,8 +459,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.yoctoGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'yoctonewton',
     createSymbol(
       const [
@@ -436,8 +470,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.yoctoNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'yottagram-force',
     createSymbol(
       const [
@@ -447,8 +482,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.yottaGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'yottanewton',
     createSymbol(
       const [
@@ -457,8 +493,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.yottaNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'zeptogram-force',
     createSymbol(
       const [
@@ -468,8 +505,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.zeptoGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'zeptonewton',
     createSymbol(
       const [
@@ -478,8 +516,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.zeptoNewton,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'zettagram-force',
     createSymbol(
       const [
@@ -489,8 +528,9 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.zettaGramForce,
+    variation: true,
   ),
-  Unit(
+  Unit<ForceUnits>(
     'zettanewton',
     createSymbol(
       const [
@@ -499,5 +539,6 @@ final Set<Unit> forceUnitDetails = {
       ],
     ),
     ForceUnits.zettaNewton,
+    variation: true,
   ),
 };
