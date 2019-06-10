@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> dynamicViscocityUnitDetails = {
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'attopascal second',
     createSymbol(
       const [
@@ -15,8 +15,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.attoPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'attopoise',
     createSymbol(
       const [
@@ -25,8 +26,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.attoPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'centipascal second',
     createSymbol(
       const [
@@ -37,8 +39,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.centiPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'centipoise',
     createSymbol(
       const [
@@ -47,8 +50,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.centiPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'decapascal second',
     createSymbol(
       const [
@@ -59,8 +63,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.decaPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'decapoise',
     createSymbol(
       const [
@@ -69,8 +74,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.decaPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'decipascal second',
     createSymbol(
       const [
@@ -81,8 +87,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.deciPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'decipoise',
     createSymbol(
       const [
@@ -91,8 +98,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.deciPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'exapascal second',
     createSymbol(
       const [
@@ -103,8 +111,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.exaPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'exapoise',
     createSymbol(
       const [
@@ -113,8 +122,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.exaPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'femtopascal second',
     createSymbol(
       const [
@@ -125,8 +135,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.femtoPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'femtopoise',
     createSymbol(
       const [
@@ -135,8 +146,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.femtoPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'gigapascal second',
     createSymbol(
       const [
@@ -147,8 +159,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.gigaPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'gigapoise',
     createSymbol(
       const [
@@ -157,8 +170,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.gigaPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'hectopascal second',
     createSymbol(
       const [
@@ -169,8 +183,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.hectoPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'hectopoise',
     createSymbol(
       const [
@@ -179,8 +194,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.hectoPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'kilopascal second',
     createSymbol(
       const [
@@ -191,8 +207,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.kiloPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'kilopoise',
     createSymbol(
       const [
@@ -201,8 +218,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.kiloPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'megapascal second',
     createSymbol(
       const [
@@ -213,8 +231,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.megaPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'megapoise',
     createSymbol(
       const [
@@ -223,8 +242,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.megaPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'micropascal second',
     createSymbol(
       const [
@@ -235,8 +255,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.microPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'micropoise',
     createSymbol(
       const [
@@ -245,8 +266,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.microPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'millipascal second',
     createSymbol(
       const [
@@ -257,8 +279,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.milliPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'millipoise',
     createSymbol(
       const [
@@ -267,8 +290,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.milliPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'nanopascal second',
     createSymbol(
       const [
@@ -279,8 +303,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.nanoPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'nanopoise',
     createSymbol(
       const [
@@ -289,8 +314,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.nanoPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'pascal second',
     createSymbol(
       const [
@@ -300,8 +326,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.pascalSecond,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'petapascal second',
     createSymbol(
       const [
@@ -312,8 +339,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.petaPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'petapoise',
     createSymbol(
       const [
@@ -322,8 +350,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.petaPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'picopascal second',
     createSymbol(
       const [
@@ -334,8 +363,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.picoPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'picopoise',
     createSymbol(
       const [
@@ -344,8 +374,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.picoPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'poise',
     createSymbol(
       const [
@@ -354,7 +385,7 @@ final Set<Unit> dynamicViscocityUnitDetails = {
     ),
     DynamicViscocityUnits.poise,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'terapascal second',
     createSymbol(
       const [
@@ -365,8 +396,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.teraPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'terapoise',
     createSymbol(
       const [
@@ -375,8 +407,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.teraPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'yoctopascal second',
     createSymbol(
       const [
@@ -387,8 +420,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.yoctoPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'yoctopoise',
     createSymbol(
       const [
@@ -397,8 +431,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.yoctoPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'yottapascal second',
     createSymbol(
       const [
@@ -409,8 +444,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.yottaPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'yottapoise',
     createSymbol(
       const [
@@ -419,8 +455,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.yottaPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'zeptopascal second',
     createSymbol(
       const [
@@ -431,8 +468,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.zeptoPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'zeptopoise',
     createSymbol(
       const [
@@ -441,8 +479,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.zeptoPoise,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'zettapascal second',
     createSymbol(
       const [
@@ -453,8 +492,9 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.zettaPascalSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<DynamicViscocityUnits>(
     'zettapoise',
     createSymbol(
       const [
@@ -463,5 +503,6 @@ final Set<Unit> dynamicViscocityUnitDetails = {
       ],
     ),
     DynamicViscocityUnits.zettaPoise,
+    variation: true,
   ),
 };
