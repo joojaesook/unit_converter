@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> timeUnitDetails = {
-  Unit(
+  Unit<TimeUnits>(
     'attosecond',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.attoSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'centisecond',
     createSymbol(
       const [
@@ -23,8 +24,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.centiSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'century',
     createSymbol(
       const [
@@ -34,7 +36,7 @@ final Set<Unit> timeUnitDetails = {
     TimeUnits.century,
     // system: systemValue[System.gregorian],
   ),
-  Unit(
+  Unit<TimeUnits>(
     'day',
     createSymbol(
       const [
@@ -43,7 +45,7 @@ final Set<Unit> timeUnitDetails = {
     ),
     TimeUnits.day,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'decade',
     createSymbol(
       const [
@@ -53,7 +55,7 @@ final Set<Unit> timeUnitDetails = {
     TimeUnits.decade,
     // system: systemValue[System.gregorian],
   ),
-  Unit(
+  Unit<TimeUnits>(
     'decasecond',
     createSymbol(
       const [
@@ -62,8 +64,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.decaSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'decisecond',
     createSymbol(
       const [
@@ -72,8 +75,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.deciSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'exasecond',
     createSymbol(
       const [
@@ -82,8 +86,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.exaSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'femtosecond',
     createSymbol(
       const [
@@ -92,8 +97,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.femtoSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'fortnight',
     createSymbol(
       const [
@@ -102,7 +108,7 @@ final Set<Unit> timeUnitDetails = {
     ),
     TimeUnits.fortnight,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'gigasecond',
     createSymbol(
       const [
@@ -111,8 +117,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.gigaSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'hectosecond',
     createSymbol(
       const [
@@ -121,8 +128,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.hectoSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'hour',
     createSymbol(
       const [
@@ -131,7 +139,7 @@ final Set<Unit> timeUnitDetails = {
     ),
     TimeUnits.hour,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'kilosecond',
     createSymbol(
       const [
@@ -140,8 +148,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.kiloSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'megasecond',
     createSymbol(
       const [
@@ -150,8 +159,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.megaSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'microsecond',
     createSymbol(
       const [
@@ -160,8 +170,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.microSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'millennium',
     createSymbol(
       const [
@@ -171,7 +182,7 @@ final Set<Unit> timeUnitDetails = {
     TimeUnits.millennium,
     // system: systemValue[System.gregorian],
   ),
-  Unit(
+  Unit<TimeUnits>(
     'millisecond',
     createSymbol(
       const [
@@ -180,8 +191,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.milliSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'minute',
     createSymbol(
       const [
@@ -190,7 +202,7 @@ final Set<Unit> timeUnitDetails = {
     ),
     TimeUnits.minute,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'month',
     createSymbol(
       const [
@@ -200,7 +212,7 @@ final Set<Unit> timeUnitDetails = {
     TimeUnits.month,
     // system: systemValue[System.gregorian],
   ),
-  Unit(
+  Unit<TimeUnits>(
     'nanosecond',
     createSymbol(
       const [
@@ -209,8 +221,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.nanoSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'petasecond',
     createSymbol(
       const [
@@ -219,8 +232,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.petaSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'picosecond',
     createSymbol(
       const [
@@ -229,8 +243,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.picoSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'second',
     createSymbol(
       const [
@@ -238,8 +253,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.second,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'terasecond',
     createSymbol(
       const [
@@ -248,8 +264,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.teraSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'week',
     createSymbol(
       const [
@@ -258,7 +275,7 @@ final Set<Unit> timeUnitDetails = {
     ),
     TimeUnits.week,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'year',
     createSymbol(
       const [
@@ -268,7 +285,7 @@ final Set<Unit> timeUnitDetails = {
     TimeUnits.year,
     // system: systemValue[System.gregorian],
   ),
-  Unit(
+  Unit<TimeUnits>(
     'yoctosecond',
     createSymbol(
       const [
@@ -277,8 +294,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.yoctoSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'yottasecond',
     createSymbol(
       const [
@@ -287,8 +305,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.yottaSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'zeptosecond',
     createSymbol(
       const [
@@ -297,8 +316,9 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.zeptoSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<TimeUnits>(
     'zettasecond',
     createSymbol(
       const [
@@ -307,5 +327,6 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.zettaSecond,
+    variation: true,
   ),
 };
