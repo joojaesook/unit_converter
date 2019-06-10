@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 Set<Unit> dataUnitDetails = {
-  Unit(
+  Unit<DataUnits>(
     'bit',
     createSymbol(
       const [
@@ -12,8 +12,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.bit,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'byte',
     createSymbol(
       const [
@@ -22,7 +23,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.byte,
   ),
-  Unit(
+  Unit<DataUnits>(
     'exabit',
     createSymbol(
       const [
@@ -31,8 +32,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.exaBit,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'exabyte',
     createSymbol(
       const [
@@ -41,8 +43,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.exaByte,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'gigabit',
     createSymbol(
       const [
@@ -51,8 +54,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.gigaBit,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'gigabyte',
     createSymbol(
       const [
@@ -61,8 +65,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.gigaByte,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'kilobit',
     createSymbol(
       const [
@@ -71,8 +76,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.kiloBit,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'kilobyte',
     createSymbol(
       const [
@@ -81,8 +87,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.kiloByte,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'megabit',
     createSymbol(
       const [
@@ -91,8 +98,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.megaBit,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'megabyte',
     createSymbol(
       const [
@@ -101,8 +109,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.megaByte,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'petabit',
     createSymbol(
       const [
@@ -111,8 +120,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.petaBit,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'petabyte',
     createSymbol(
       const [
@@ -121,8 +131,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.petaByte,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'terabit',
     createSymbol(
       const [
@@ -131,8 +142,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.teraBit,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'terabyte',
     createSymbol(
       const [
@@ -141,8 +153,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.teraByte,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'yottabit',
     createSymbol(
       const [
@@ -151,8 +164,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.yottaBit,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'yottabyte',
     createSymbol(
       const [
@@ -161,8 +175,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.yottaByte,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'zettabit',
     createSymbol(
       const [
@@ -171,8 +186,9 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.zettaBit,
+    variation: true,
   ),
-  Unit(
+  Unit<DataUnits>(
     'zettabyte',
     createSymbol(
       const [
@@ -181,5 +197,6 @@ Set<Unit> dataUnitDetails = {
       ],
     ),
     DataUnits.zettaByte,
+    variation: true,
   ),
 };
