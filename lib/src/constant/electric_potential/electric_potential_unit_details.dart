@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> electricPotentialUnitDetails = {
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'abvolt',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.abVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'attovolt',
     createSymbol(
       const [
@@ -23,8 +24,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.attoVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'centivolt',
     createSymbol(
       const [
@@ -33,8 +35,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.centiVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'decavolt',
     createSymbol(
       const [
@@ -43,8 +46,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.decaVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'decivolt',
     createSymbol(
       const [
@@ -53,8 +57,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.deciVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'exavolt',
     createSymbol(
       const [
@@ -63,8 +68,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.exaVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'femtovolt',
     createSymbol(
       const [
@@ -73,8 +79,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.femtoVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'gigavolt',
     createSymbol(
       const [
@@ -83,8 +90,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.gigaVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'hectovolt',
     createSymbol(
       const [
@@ -93,8 +101,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.hectoVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'kilovolt',
     createSymbol(
       const [
@@ -103,8 +112,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.kiloVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'megavolt',
     createSymbol(
       const [
@@ -113,8 +123,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.megaVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'microvolt',
     createSymbol(
       const [
@@ -123,8 +134,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.microVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'millivolt',
     createSymbol(
       const [
@@ -133,8 +145,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.milliVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'nanovolt',
     createSymbol(
       const [
@@ -143,8 +156,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.nanoVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'petavolt',
     createSymbol(
       const [
@@ -153,8 +167,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.petaVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'picovolt',
     createSymbol(
       const [
@@ -163,8 +178,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.picoVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'statvolt',
     createSymbol(
       const [
@@ -174,7 +190,7 @@ final Set<Unit> electricPotentialUnitDetails = {
     ),
     ElectricPotentialUnits.statVolt,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'teravolt',
     createSymbol(
       const [
@@ -183,8 +199,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.teraVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'volt',
     createSymbol(
       const [
@@ -192,8 +209,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.volt,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'yoctovolt',
     createSymbol(
       const [
@@ -202,8 +220,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.yoctoVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'yottavolt',
     createSymbol(
       const [
@@ -212,8 +231,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.yottaVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'zeptovolt',
     createSymbol(
       const [
@@ -222,8 +242,9 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.zeptoVolt,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricPotentialUnits>(
     'zettavolt',
     createSymbol(
       const [
@@ -232,5 +253,6 @@ final Set<Unit> electricPotentialUnitDetails = {
       ],
     ),
     ElectricPotentialUnits.zettaVolt,
+    variation: true,
   ),
 };
