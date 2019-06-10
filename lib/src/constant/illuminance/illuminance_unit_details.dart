@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> illuminanceUnitDetails = {
-  Unit(
+  Unit<IlluminanceUnits>(
     'attolux',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.attoLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'attophot',
     createSymbol(
       const [
@@ -23,8 +24,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.attoPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'centilux',
     createSymbol(
       const [
@@ -33,8 +35,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.centiLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'centiphot',
     createSymbol(
       const [
@@ -43,8 +46,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.centiPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'decalux',
     createSymbol(
       const [
@@ -53,8 +57,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.decaLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'decaphot',
     createSymbol(
       const [
@@ -63,8 +68,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.decaPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'decilux',
     createSymbol(
       const [
@@ -73,8 +79,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.deciLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'deciphot',
     createSymbol(
       const [
@@ -83,8 +90,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.deciPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'exalux',
     createSymbol(
       const [
@@ -93,8 +101,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.exaLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'exaphot',
     createSymbol(
       const [
@@ -103,8 +112,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.exaPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'femtolux',
     createSymbol(
       const [
@@ -113,8 +123,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.femtoLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'femtophot',
     createSymbol(
       const [
@@ -123,8 +134,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.femtoPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'foot-candle',
     createSymbol(
       const [
@@ -134,7 +146,7 @@ final Set<Unit> illuminanceUnitDetails = {
     ),
     IlluminanceUnits.footCandle,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'gigalux',
     createSymbol(
       const [
@@ -143,8 +155,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.gigaLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'gigaphot',
     createSymbol(
       const [
@@ -153,8 +166,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.gigaPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'hectolux',
     createSymbol(
       const [
@@ -163,8 +177,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.hectoLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'hectophot',
     createSymbol(
       const [
@@ -173,8 +188,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.hectoPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'kilolux',
     createSymbol(
       const [
@@ -183,8 +199,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.kiloLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'kilophot',
     createSymbol(
       const [
@@ -193,8 +210,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.kiloPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square attometre',
     createSymbol(
       const [
@@ -206,8 +224,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareAttoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square centimetre',
     createSymbol(
       const [
@@ -219,8 +238,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareCentiMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square decametre',
     createSymbol(
       const [
@@ -232,8 +252,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareDecaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square decimetre',
     createSymbol(
       const [
@@ -245,8 +266,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareDeciMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square exametre',
     createSymbol(
       const [
@@ -258,8 +280,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareExaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square femtometre',
     createSymbol(
       const [
@@ -271,8 +294,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareFemtoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square foot',
     createSymbol(
       const [
@@ -284,7 +308,7 @@ final Set<Unit> illuminanceUnitDetails = {
     ),
     IlluminanceUnits.lumenPerSquareFoot,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square gigametre',
     createSymbol(
       const [
@@ -296,8 +320,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareGigaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square hectometre',
     createSymbol(
       const [
@@ -309,8 +334,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareHectoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square inch',
     createSymbol(
       const [
@@ -322,7 +348,7 @@ final Set<Unit> illuminanceUnitDetails = {
     ),
     IlluminanceUnits.lumenPerSquareInch,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square kilometre',
     createSymbol(
       const [
@@ -334,8 +360,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareKiloMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square megametre',
     createSymbol(
       const [
@@ -347,8 +374,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareMegaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square metre',
     createSymbol(
       const [
@@ -360,7 +388,7 @@ final Set<Unit> illuminanceUnitDetails = {
     ),
     IlluminanceUnits.lumenPerSquareMetre,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square micrometre',
     createSymbol(
       const [
@@ -372,8 +400,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareMicroMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square millimetre',
     createSymbol(
       const [
@@ -385,8 +414,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareMilliMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square nanometre',
     createSymbol(
       const [
@@ -398,8 +428,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareNanoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square petametre',
     createSymbol(
       const [
@@ -411,8 +442,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquarePetaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square picometre',
     createSymbol(
       const [
@@ -424,8 +456,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquarePicoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square terametre',
     createSymbol(
       const [
@@ -437,8 +470,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareTeraMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square yoctometre',
     createSymbol(
       const [
@@ -450,8 +484,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareYoctoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square yottametre',
     createSymbol(
       const [
@@ -463,8 +498,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareYottaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square zeptometre',
     createSymbol(
       const [
@@ -476,8 +512,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareZeptoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lumen per square zettametre',
     createSymbol(
       const [
@@ -489,8 +526,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareZettaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'lux',
     createSymbol(
       const [
@@ -498,8 +536,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lux,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'megalux',
     createSymbol(
       const [
@@ -508,8 +547,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.megaLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'megaphot',
     createSymbol(
       const [
@@ -518,8 +558,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.megaPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'microlux',
     createSymbol(
       const [
@@ -528,8 +569,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.microLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'microphot',
     createSymbol(
       const [
@@ -538,8 +580,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.microPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'millilux',
     createSymbol(
       const [
@@ -548,8 +591,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.milliLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'milliphot',
     createSymbol(
       const [
@@ -558,8 +602,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.milliPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'nanolux',
     createSymbol(
       const [
@@ -568,8 +613,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.nanoLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'nanophot',
     createSymbol(
       const [
@@ -578,8 +624,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.nanoPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'nox',
     createSymbol(
       const [
@@ -588,7 +635,7 @@ final Set<Unit> illuminanceUnitDetails = {
     ),
     IlluminanceUnits.nox,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'petalux',
     createSymbol(
       const [
@@ -597,8 +644,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.petaLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'petaphot',
     createSymbol(
       const [
@@ -607,8 +655,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.petaPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'phot',
     createSymbol(
       const [
@@ -617,7 +666,7 @@ final Set<Unit> illuminanceUnitDetails = {
     ),
     IlluminanceUnits.phot,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'picolux',
     createSymbol(
       const [
@@ -626,8 +675,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.picoLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'picophot',
     createSymbol(
       const [
@@ -636,8 +686,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.picoPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'teralux',
     createSymbol(
       const [
@@ -646,8 +697,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.teraLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'teraphot',
     createSymbol(
       const [
@@ -656,8 +708,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.teraPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'yoctolux',
     createSymbol(
       const [
@@ -666,8 +719,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.yoctoLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'yoctophot',
     createSymbol(
       const [
@@ -676,8 +730,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.yoctoPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'yottalux',
     createSymbol(
       const [
@@ -686,8 +741,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.yottaLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'yottaphot',
     createSymbol(
       const [
@@ -696,8 +752,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.yottaPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'zeptolux',
     createSymbol(
       const [
@@ -706,8 +763,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.zeptoLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'zeptophot',
     createSymbol(
       const [
@@ -716,8 +774,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.zeptoPhot,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'zettalux',
     createSymbol(
       const [
@@ -726,8 +785,9 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.zettaLux,
+    variation: true,
   ),
-  Unit(
+  Unit<IlluminanceUnits>(
     'zettaphot',
     createSymbol(
       const [
@@ -736,5 +796,6 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.zettaPhot,
+    variation: true,
   ),
 };
