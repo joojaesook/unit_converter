@@ -4,8 +4,8 @@ import '../abstract/converter.dart';
 import '../enum/conversion_type.dart';
 import '../misc/global.dart';
 
-class MultiplicativeConverter<T> extends Converter {
-  MultiplicativeConverter(ConversionType type) : super(type);
+class MultiplicationBasedConverter<T> extends Converter {
+  MultiplicationBasedConverter(ConversionType type) : super(type);
 
   double convert({
     @required double value,
