@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> inductanceUnitDetails = {
-  Unit(
+  Unit<InductanceUnits>(
     'abhenry',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.abHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'attohenry',
     createSymbol(
       const [
@@ -23,8 +24,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.attoHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'centihenry',
     createSymbol(
       const [
@@ -33,8 +35,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.centiHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'decahenry',
     createSymbol(
       const [
@@ -43,8 +46,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.decaHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'decihenry',
     createSymbol(
       const [
@@ -53,8 +57,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.deciHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'exahenry',
     createSymbol(
       const [
@@ -63,8 +68,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.exaHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'femtohenry',
     createSymbol(
       const [
@@ -73,8 +79,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.femtoHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'gigahenry',
     createSymbol(
       const [
@@ -83,8 +90,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.gigaHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'hectohenry',
     createSymbol(
       const [
@@ -93,8 +101,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.hectoHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'henry',
     createSymbol(
       const [
@@ -102,8 +111,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.henry,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'kilohenry',
     createSymbol(
       const [
@@ -112,8 +122,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.kiloHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'megahenry',
     createSymbol(
       const [
@@ -122,8 +133,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.megaHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'microhenry',
     createSymbol(
       const [
@@ -132,8 +144,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.microHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'millihenry',
     createSymbol(
       const [
@@ -142,8 +155,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.milliHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'nanohenry',
     createSymbol(
       const [
@@ -152,8 +166,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.nanoHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'petahenry',
     createSymbol(
       const [
@@ -162,8 +177,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.petaHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'picohenry',
     createSymbol(
       const [
@@ -172,8 +188,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.picoHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'terahenry',
     createSymbol(
       const [
@@ -182,8 +199,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.teraHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'yoctohenry',
     createSymbol(
       const [
@@ -192,8 +210,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.yoctoHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'yottahenry',
     createSymbol(
       const [
@@ -202,8 +221,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.yottaHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'zeptohenry',
     createSymbol(
       const [
@@ -212,8 +232,9 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.zeptoHenry,
+    variation: true,
   ),
-  Unit(
+  Unit<InductanceUnits>(
     'zettahenry',
     createSymbol(
       const [
@@ -222,5 +243,6 @@ final Set<Unit> inductanceUnitDetails = {
       ],
     ),
     InductanceUnits.zettaHenry,
+    variation: true,
   ),
 };
