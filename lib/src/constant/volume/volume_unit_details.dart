@@ -1,12 +1,12 @@
 import '../../enum/symbol_parts.dart';
-import '../../enum/system.dart';
+import '../../enum/systems.dart';
 import '../../enum/volume_units.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/system_value.dart';
 
 final Set<Unit> volumeUnitDetails = {
-  Unit(
+  Unit<VolumeUnits>(
     'acre-foot',
     createSymbol(
       const [
@@ -17,7 +17,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.acreFoot,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'acre-inch',
     createSymbol(
       const [
@@ -28,7 +28,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.acreInch,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'attolitre',
     createSymbol(
       const [
@@ -37,8 +37,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.attoLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'board foot',
     createSymbol(
       const [
@@ -47,7 +48,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.boardFoot,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'bushel',
     createSymbol(
       const [
@@ -57,7 +58,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.bushel_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'bushel',
     createSymbol(
       const [
@@ -67,7 +68,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.bushel_USDryLevel,
     system: systemValue[Systems.usDryLevel],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'centilitre',
     createSymbol(
       const [
@@ -76,8 +77,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.centiLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic attometre',
     createSymbol(
       const [
@@ -87,8 +89,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicAttoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic centimetre',
     createSymbol(
       const [
@@ -98,8 +101,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicCentiMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic decametre',
     createSymbol(
       const [
@@ -109,8 +113,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicDecaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic decimetre',
     createSymbol(
       const [
@@ -120,8 +125,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicDeciMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic exametre',
     createSymbol(
       const [
@@ -131,8 +137,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicExaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic femtometre',
     createSymbol(
       const [
@@ -142,8 +149,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicFemtoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic foot',
     createSymbol(
       const [
@@ -153,7 +161,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.cubicFoot,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic gigametre',
     createSymbol(
       const [
@@ -163,8 +171,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicGigaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic hectometre',
     createSymbol(
       const [
@@ -174,8 +183,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicHectoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic inch',
     createSymbol(
       const [
@@ -185,7 +195,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.cubicInch,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic kilometre',
     createSymbol(
       const [
@@ -195,8 +205,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicKiloMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic megametre',
     createSymbol(
       const [
@@ -206,8 +217,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicMegaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic metre',
     createSymbol(
       const [
@@ -216,8 +228,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicMetre,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic micrometre',
     createSymbol(
       const [
@@ -227,8 +240,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicMicroMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic mile',
     createSymbol(
       const [
@@ -238,7 +252,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.cubicMile,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic millimetre',
     createSymbol(
       const [
@@ -248,8 +262,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicMilliMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic nanometre',
     createSymbol(
       const [
@@ -259,8 +274,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicNanoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic petametre',
     createSymbol(
       const [
@@ -270,8 +286,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicPetaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic picometre',
     createSymbol(
       const [
@@ -281,8 +298,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicPicoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic terametre',
     createSymbol(
       const [
@@ -292,8 +310,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicTeraMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic yard',
     createSymbol(
       const [
@@ -303,7 +322,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.cubicYard,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic yoctometre',
     createSymbol(
       const [
@@ -313,8 +332,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicYoctoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic yottametre',
     createSymbol(
       const [
@@ -324,8 +344,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicYottaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic zeptometre',
     createSymbol(
       const [
@@ -335,8 +356,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicZeptoMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cubic zettametre',
     createSymbol(
       const [
@@ -346,8 +368,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicZettaMetre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cup',
     createSymbol(
       const [
@@ -357,7 +380,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.cup_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cup',
     createSymbol(
       const [
@@ -367,7 +390,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.cup_Metric,
     system: systemValue[Systems.metric],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cup',
     createSymbol(
       const [
@@ -377,7 +400,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.cup_US,
     system: systemValue[Systems.us],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'cup',
     createSymbol(
       const [
@@ -387,7 +410,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.cup_USFoodNutrition,
     system: systemValue[Systems.usFoodNutrition],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'decalitre',
     createSymbol(
       const [
@@ -396,8 +419,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.decaLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'decilitre',
     createSymbol(
       const [
@@ -406,8 +430,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.deciLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'exalitre',
     createSymbol(
       const [
@@ -416,8 +441,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.exaLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'femtolitre',
     createSymbol(
       const [
@@ -426,8 +452,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.femtoLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'firlot',
     createSymbol(
       const [
@@ -437,7 +464,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.firlot_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'firlot',
     createSymbol(
       const [
@@ -447,7 +474,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.firlot_USDry,
     system: systemValue[Systems.usDry],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'fluid dram',
     createSymbol(
       const [
@@ -459,7 +486,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.fluidDram_US,
     system: systemValue[Systems.us],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'fluid ounce',
     createSymbol(
       const [
@@ -471,7 +498,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.fluidOunce_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'fluid ounce',
     createSymbol(
       const [
@@ -483,7 +510,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.fluidOunce_US,
     system: systemValue[Systems.us],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'fluid ounce',
     createSymbol(
       const [
@@ -495,7 +522,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.fluidOunce_USFoodNutrition,
     system: systemValue[Systems.usFoodNutrition],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'gallon',
     createSymbol(
       const [
@@ -505,7 +532,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.gallon_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'gallon',
     createSymbol(
       const [
@@ -515,7 +542,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.gallon_USDry,
     system: systemValue[Systems.usDry],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'gallon',
     createSymbol(
       const [
@@ -525,7 +552,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.gallon_USLiquid,
     system: systemValue[Systems.usLiquid],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'gigalitre',
     createSymbol(
       const [
@@ -534,8 +561,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.gigaLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'gill',
     createSymbol(
       const [
@@ -545,7 +573,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.gill_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'gill',
     createSymbol(
       const [
@@ -555,7 +583,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.gill_US,
     system: systemValue[Systems.us],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'hectare metre',
     createSymbol(
       const [
@@ -566,7 +594,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.hectareMetre,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'hectolitre',
     createSymbol(
       const [
@@ -575,8 +603,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.hectoLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'jigger',
     createSymbol(
       const [
@@ -589,8 +618,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.jigger,
+    // system: systemValue[Systems.us],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'kilolitre',
     createSymbol(
       const [
@@ -599,8 +629,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.kiloLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'litre',
     createSymbol(
       const [
@@ -609,7 +640,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.litre,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'megalitre',
     createSymbol(
       const [
@@ -618,8 +649,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.megaLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'microlitre',
     createSymbol(
       const [
@@ -628,8 +660,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.microLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'millilitre',
     createSymbol(
       const [
@@ -638,8 +671,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.milliLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'minim',
     createSymbol(
       const [
@@ -649,7 +683,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.minim_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'minim',
     createSymbol(
       const [
@@ -659,7 +693,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.minim_US,
     system: systemValue[Systems.us],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'nanolitre',
     createSymbol(
       const [
@@ -668,8 +702,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.nanoLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'oil barrel',
     createSymbol(
       const [
@@ -680,7 +715,7 @@ final Set<Unit> volumeUnitDetails = {
     ),
     VolumeUnits.oilBarrel,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'peck',
     createSymbol(
       const [
@@ -690,7 +725,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.peck_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'peck',
     createSymbol(
       const [
@@ -700,7 +735,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.peck_USDry,
     system: systemValue[Systems.usDry],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'petalitre',
     createSymbol(
       const [
@@ -709,8 +744,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.petaLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'picolitre',
     createSymbol(
       const [
@@ -719,8 +755,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.picoLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'pint',
     createSymbol(
       const [
@@ -730,7 +767,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.pint_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'pint',
     createSymbol(
       const [
@@ -740,7 +777,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.pint_USDry,
     system: systemValue[Systems.usDry],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'pint',
     createSymbol(
       const [
@@ -750,7 +787,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.pint_USLiquid,
     system: systemValue[Systems.usLiquid],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'quart',
     createSymbol(
       const [
@@ -760,7 +797,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.quart_Imperial,
     system: systemValue[Systems.imperial],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'quart',
     createSymbol(
       const [
@@ -770,7 +807,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.quart_USDry,
     system: systemValue[Systems.usDry],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'quart',
     createSymbol(
       const [
@@ -780,7 +817,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.quart_USLiquid,
     system: systemValue[Systems.usLiquid],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'tablespoon',
     createSymbol(
       const [
@@ -790,7 +827,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.tablespoon_Australian,
     system: systemValue[Systems.australian],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'tablespoon',
     createSymbol(
       const [
@@ -800,7 +837,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.tablespoon_Metric,
     system: systemValue[Systems.metric],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'tablespoon',
     createSymbol(
       const [
@@ -810,7 +847,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.tablespoon_US,
     system: systemValue[Systems.us],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'tablespoon',
     createSymbol(
       const [
@@ -820,7 +857,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.tablespoon_USFoodNutrition,
     system: systemValue[Systems.usFoodNutrition],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'teaspoon',
     createSymbol(
       const [
@@ -830,7 +867,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.teaspoon_metric,
     system: systemValue[Systems.metric],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'teaspoon',
     createSymbol(
       const [
@@ -840,7 +877,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.teaspoon_US,
     system: systemValue[Systems.us],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'teaspoon',
     createSymbol(
       const [
@@ -850,7 +887,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.teaspoon_USFoodNutrition,
     system: systemValue[Systems.usFoodNutrition],
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'teralitre',
     createSymbol(
       const [
@@ -859,8 +896,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.teraLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'yoctolitre',
     createSymbol(
       const [
@@ -869,8 +907,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.yoctoLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'yottalitre',
     createSymbol(
       const [
@@ -879,8 +918,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.yottaLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'zeptolitre',
     createSymbol(
       const [
@@ -889,8 +929,9 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.zeptoLitre,
+    variation: true,
   ),
-  Unit(
+  Unit<VolumeUnits>(
     'zettalitre',
     createSymbol(
       const [
@@ -899,5 +940,6 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.zettaLitre,
+    variation: true,
   ),
 };
