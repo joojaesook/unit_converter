@@ -1,10 +1,10 @@
-import 'package:unit_converter/src/constant/others/prefix_value.dart';
-import 'package:unit_converter/src/enum/conversion_type.dart';
-import 'package:unit_converter/src/enum/prefix.dart';
-import 'package:unit_converter/src/enum/speed_units.dart';
-import 'package:unit_converter/src/enum/time_units.dart';
-import 'package:unit_converter/src/misc/global.dart';
-import 'package:unit_converter/src/unit_converter.dart';
+import '../../enum/conversion_type.dart';
+import '../../enum/prefix.dart';
+import '../../enum/speed_units.dart';
+import '../../enum/time_units.dart';
+import '../../misc/global.dart';
+import '../../unit_converter.dart';
+import '../others/prefix_value.dart';
 
 final _perDay = 1 / getConversionDetail(ConversionType.time, TimeUnits.day);
 final _perHour = 1 / getConversionDetail(ConversionType.time, TimeUnits.hour);

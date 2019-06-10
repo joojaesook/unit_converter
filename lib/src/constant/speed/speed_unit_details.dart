@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> speedUnitDetails = {
-  Unit(
+  Unit<SpeedUnits>(
     'attometre per day',
     createSymbol(
       const [
@@ -15,8 +15,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.attoMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'attometre per hour',
     createSymbol(
       const [
@@ -27,8 +28,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.attoMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'attometre per minute',
     createSymbol(
       const [
@@ -39,8 +41,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.attoMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'attometre per second',
     createSymbol(
       const [
@@ -51,8 +54,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.attoMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'centimetre per day',
     createSymbol(
       const [
@@ -63,8 +67,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.centiMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'centimetre per hour',
     createSymbol(
       const [
@@ -75,8 +80,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.centiMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'centimetre per minute',
     createSymbol(
       const [
@@ -87,8 +93,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.centiMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'centimetre per second',
     createSymbol(
       const [
@@ -99,8 +106,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.centiMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'decametre per day',
     createSymbol(
       const [
@@ -111,8 +119,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.decaMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'decametre per hour',
     createSymbol(
       const [
@@ -123,8 +132,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.decaMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'decametre per minute',
     createSymbol(
       const [
@@ -135,8 +145,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.decaMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'decametre per second',
     createSymbol(
       const [
@@ -147,8 +158,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.decaMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'decimetre per day',
     createSymbol(
       const [
@@ -159,8 +171,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.deciMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'decimetre per hour',
     createSymbol(
       const [
@@ -171,8 +184,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.deciMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'decimetre per minute',
     createSymbol(
       const [
@@ -183,8 +197,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.deciMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'decimetre per second',
     createSymbol(
       const [
@@ -195,8 +210,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.deciMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'exametre per day',
     createSymbol(
       const [
@@ -207,8 +223,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.exaMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'exametre per hour',
     createSymbol(
       const [
@@ -219,8 +236,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.exaMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'exametre per minute',
     createSymbol(
       const [
@@ -231,8 +249,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.exaMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'exametre per second',
     createSymbol(
       const [
@@ -243,8 +262,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.exaMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'femtometre per day',
     createSymbol(
       const [
@@ -255,8 +275,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.femtoMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'femtometre per hour',
     createSymbol(
       const [
@@ -267,8 +288,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.femtoMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'femtometre per minute',
     createSymbol(
       const [
@@ -279,8 +301,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.femtoMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'femtometre per second',
     createSymbol(
       const [
@@ -291,8 +314,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.femtoMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'foot per day',
     createSymbol(
       const [
@@ -303,7 +327,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.footPerDay,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'foot per hour',
     createSymbol(
       const [
@@ -314,7 +338,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.footPerHour,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'foot per minute',
     createSymbol(
       const [
@@ -325,7 +349,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.footPerMinute,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'foot per second',
     createSymbol(
       const [
@@ -336,7 +360,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.footPerSecond,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'gigametre per day',
     createSymbol(
       const [
@@ -347,8 +371,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.gigaMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'gigametre per hour',
     createSymbol(
       const [
@@ -359,8 +384,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.gigaMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'gigametre per minute',
     createSymbol(
       const [
@@ -371,8 +397,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.gigaMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'gigametre per second',
     createSymbol(
       const [
@@ -383,8 +410,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.gigaMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'hectometre per day',
     createSymbol(
       const [
@@ -395,8 +423,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.hectoMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'hectometre per hour',
     createSymbol(
       const [
@@ -407,8 +436,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.hectoMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'hectometre per minute',
     createSymbol(
       const [
@@ -419,8 +449,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.hectoMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'hectometre per second',
     createSymbol(
       const [
@@ -431,8 +462,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.hectoMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'inch per day',
     createSymbol(
       const [
@@ -443,7 +475,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.inchPerDay,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'inch per hour',
     createSymbol(
       const [
@@ -454,7 +486,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.inchPerHour,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'inch per minute',
     createSymbol(
       const [
@@ -465,7 +497,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.inchPerMinute,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'inch per second',
     createSymbol(
       const [
@@ -476,7 +508,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.inchPerSecond,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'kilometre per day',
     createSymbol(
       const [
@@ -487,8 +519,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.kiloMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'kilometre per hour',
     createSymbol(
       const [
@@ -499,8 +532,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.kiloMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'kilometre per minute',
     createSymbol(
       const [
@@ -511,8 +545,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.kiloMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'kilometre per second',
     createSymbol(
       const [
@@ -523,8 +558,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.kiloMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'knot',
     createSymbol(
       const [
@@ -533,7 +569,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.knot,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'megametre per day',
     createSymbol(
       const [
@@ -544,8 +580,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.megaMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'megametre per hour',
     createSymbol(
       const [
@@ -556,8 +593,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.megaMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'megametre per minute',
     createSymbol(
       const [
@@ -568,8 +606,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.megaMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'megametre per second',
     createSymbol(
       const [
@@ -580,8 +619,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.megaMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'metre per day',
     createSymbol(
       const [
@@ -592,7 +632,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.metrePerDay,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'metre per hour',
     createSymbol(
       const [
@@ -603,7 +643,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.metrePerHour,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'metre per minute',
     createSymbol(
       const [
@@ -614,7 +654,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.metrePerMinute,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'metre per second',
     createSymbol(
       const [
@@ -624,8 +664,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.metrePerSecond,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'micrometre per day',
     createSymbol(
       const [
@@ -636,8 +677,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.microMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'micrometre per hour',
     createSymbol(
       const [
@@ -648,8 +690,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.microMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'micrometre per minute',
     createSymbol(
       const [
@@ -660,8 +703,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.microMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'micrometre per second',
     createSymbol(
       const [
@@ -672,8 +716,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.microMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'mile per day',
     createSymbol(
       const [
@@ -684,7 +729,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.milePerDay,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'mile per hour',
     createSymbol(
       const [
@@ -695,7 +740,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.milePerHour,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'mile per minute',
     createSymbol(
       const [
@@ -706,7 +751,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.milePerMinute,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'mile per second',
     createSymbol(
       const [
@@ -717,7 +762,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.milePerSecond,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'millimetre per day',
     createSymbol(
       const [
@@ -728,8 +773,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.milliMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'millimetre per hour',
     createSymbol(
       const [
@@ -740,8 +786,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.milliMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'millimetre per minute',
     createSymbol(
       const [
@@ -752,8 +799,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.milliMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'millimetre per second',
     createSymbol(
       const [
@@ -764,31 +812,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.milliMetrePerSecond,
+    variation: true,
   ),
-  // Unit(
-  //   'minute per kilometre',
-  //   createSymbol(
-  //     const [
-  //       SymbolParts.minute,
-  //       SymbolParts.forwardSlash,
-  //       SymbolParts.kilo,
-  //       SymbolParts.metre,
-  //     ],
-  //   ),
-  //   SpeedUnits.minutePerKiloMetre,
-  // ),
-  // Unit(
-  //   'minute per mile',
-  //   createSymbol(
-  //     const [
-  //       SymbolParts.minute,
-  //       SymbolParts.forwardSlash,
-  //       SymbolParts.mile,
-  //     ],
-  //   ),
-  //   SpeedUnits.minutePerMile,
-  // ),
-  Unit(
+  Unit<SpeedUnits>(
     'nanometre per day',
     createSymbol(
       const [
@@ -799,8 +825,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.nanoMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'nanometre per hour',
     createSymbol(
       const [
@@ -811,8 +838,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.nanoMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'nanometre per minute',
     createSymbol(
       const [
@@ -823,8 +851,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.nanoMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'nanometre per second',
     createSymbol(
       const [
@@ -835,8 +864,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.nanoMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'nautical mile per hour',
     createSymbol(
       const [
@@ -847,7 +877,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.nauticalMilePerHour,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'nautical mile per minute',
     createSymbol(
       const [
@@ -858,7 +888,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.nauticalMilePerMinute,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'nautical mile per second',
     createSymbol(
       const [
@@ -869,7 +899,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.nauticalMilePerSecond,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'petametre per day',
     createSymbol(
       const [
@@ -880,8 +910,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.petaMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'petametre per hour',
     createSymbol(
       const [
@@ -892,8 +923,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.petaMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'petametre per minute',
     createSymbol(
       const [
@@ -904,8 +936,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.petaMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'petametre per second',
     createSymbol(
       const [
@@ -916,8 +949,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.petaMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'picometre per day',
     createSymbol(
       const [
@@ -928,8 +962,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.picoMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'picometre per hour',
     createSymbol(
       const [
@@ -940,8 +975,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.picoMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'picometre per minute',
     createSymbol(
       const [
@@ -952,8 +988,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.picoMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'picometre per second',
     createSymbol(
       const [
@@ -964,8 +1001,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.picoMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'terametre per day',
     createSymbol(
       const [
@@ -976,8 +1014,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.teraMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'terametre per hour',
     createSymbol(
       const [
@@ -988,8 +1027,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.teraMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'terametre per minute',
     createSymbol(
       const [
@@ -1000,8 +1040,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.teraMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'terametre per second',
     createSymbol(
       const [
@@ -1012,8 +1053,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.teraMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yard per day',
     createSymbol(
       const [
@@ -1024,7 +1066,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.yardPerDay,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yard per hour',
     createSymbol(
       const [
@@ -1035,7 +1077,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.yardPerHour,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yard per minute',
     createSymbol(
       const [
@@ -1046,7 +1088,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.yardPerMinute,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yard per second',
     createSymbol(
       const [
@@ -1057,7 +1099,7 @@ final Set<Unit> speedUnitDetails = {
     ),
     SpeedUnits.yardPerSecond,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yoctometre per day',
     createSymbol(
       const [
@@ -1068,8 +1110,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yoctoMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yoctometre per hour',
     createSymbol(
       const [
@@ -1080,8 +1123,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yoctoMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yoctometre per minute',
     createSymbol(
       const [
@@ -1092,8 +1136,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yoctoMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yoctometre per second',
     createSymbol(
       const [
@@ -1104,8 +1149,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yoctoMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yottametre per day',
     createSymbol(
       const [
@@ -1116,8 +1162,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yottaMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yottametre per hour',
     createSymbol(
       const [
@@ -1128,8 +1175,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yottaMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yottametre per minute',
     createSymbol(
       const [
@@ -1140,8 +1188,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yottaMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'yottametre per second',
     createSymbol(
       const [
@@ -1152,8 +1201,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yottaMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'zeptometre per day',
     createSymbol(
       const [
@@ -1164,8 +1214,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zeptoMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'zeptometre per hour',
     createSymbol(
       const [
@@ -1176,8 +1227,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zeptoMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'zeptometre per minute',
     createSymbol(
       const [
@@ -1188,8 +1240,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zeptoMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'zeptometre per second',
     createSymbol(
       const [
@@ -1200,8 +1253,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zeptoMetrePerSecond,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'zettametre per day',
     createSymbol(
       const [
@@ -1212,8 +1266,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zettaMetrePerDay,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'zettametre per hour',
     createSymbol(
       const [
@@ -1224,8 +1279,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zettaMetrePerHour,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'zettametre per minute',
     createSymbol(
       const [
@@ -1236,8 +1292,9 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zettaMetrePerMinute,
+    variation: true,
   ),
-  Unit(
+  Unit<SpeedUnits>(
     'zettametre per second',
     createSymbol(
       const [
@@ -1248,5 +1305,6 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zettaMetrePerSecond,
+    variation: true,
   ),
 };
