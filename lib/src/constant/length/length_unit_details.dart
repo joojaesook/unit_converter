@@ -16,7 +16,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.angstrom,
   ),
   Unit<LengthUnits>(
-    'astronomical Unit',
+    'astronomical unit',
     createSymbol(
       const [
         SymbolParts.astronomicalUnit,
@@ -25,7 +25,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.astronomicalUnit,
   ),
   Unit<LengthUnits>(
-    'attolight Year',
+    'attolight year',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -68,7 +68,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.barleycorn,
   ),
   Unit<LengthUnits>(
-    'centilight Year',
+    'centilight year',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -112,7 +112,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.gunter],
   ),
   Unit<LengthUnits>(
-    'chinese Mile',
+    'chinese mile',
     createSymbol(
       const [
         SymbolParts.chineseMile,
@@ -121,7 +121,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.chineseMile,
   ),
   Unit<LengthUnits>(
-    'decalight Year',
+    'decalight year',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -155,7 +155,7 @@ Set<Unit> lengthUnitDetails = {
     variation: true,
   ),
   Unit<LengthUnits>(
-    'decilight Year',
+    'decilight year',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -189,7 +189,7 @@ Set<Unit> lengthUnitDetails = {
     variation: true,
   ),
   Unit<LengthUnits>(
-    'exalight Year',
+    'exalight year',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -232,7 +232,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.fathom,
   ),
   Unit<LengthUnits>(
-    'femtolight Year',
+    'femtolight year',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -303,7 +303,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.furlong,
   ),
   Unit<LengthUnits>(
-    'gigalight Year',
+    'gigalight year',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -346,7 +346,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.hand,
   ),
   Unit<LengthUnits>(
-    'hectolight Year',
+    'hectolight year',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -389,7 +389,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.inch,
   ),
   Unit<LengthUnits>(
-    'kilolight Year',
+    'kilolight year',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -489,7 +489,7 @@ Set<Unit> lengthUnitDetails = {
     // system: systemValue[System.gunter],
   ),
   Unit<LengthUnits>(
-    'megalight Year',
+    'megalight year',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -533,7 +533,7 @@ Set<Unit> lengthUnitDetails = {
     baseUnit: true,
   ),
   Unit<LengthUnits>(
-    'microlight Year',
+    'microlight year',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -595,7 +595,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.mile,
   ),
   Unit<LengthUnits>(
-    'millilight Year',
+    'millilight year',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -629,7 +629,7 @@ Set<Unit> lengthUnitDetails = {
     variation: true,
   ),
   Unit<LengthUnits>(
-    'nanolight Year',
+    'nanolight year',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -663,7 +663,7 @@ Set<Unit> lengthUnitDetails = {
     variation: true,
   ),
   Unit<LengthUnits>(
-    'nautical Mile',
+    'nautical mile',
     createSymbol(
       const [
         SymbolParts.nauticalMile,
@@ -681,7 +681,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.parsec,
   ),
   Unit<LengthUnits>(
-    'petalight Year',
+    'petalight year',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -724,7 +724,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.pica,
   ),
   Unit<LengthUnits>(
-    'picolight Year',
+    'picolight year',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -794,7 +794,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.rod,
   ),
   Unit<LengthUnits>(
-    'teralight Year',
+    'teralight year',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -846,7 +846,7 @@ Set<Unit> lengthUnitDetails = {
     LengthUnits.yard,
   ),
   Unit<LengthUnits>(
-    'yoctolight Year',
+    'yoctolight year',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -880,7 +880,7 @@ Set<Unit> lengthUnitDetails = {
     variation: true,
   ),
   Unit<LengthUnits>(
-    'yottalight Year',
+    'yottalight year',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -914,7 +914,7 @@ Set<Unit> lengthUnitDetails = {
     variation: true,
   ),
   Unit<LengthUnits>(
-    'zeptolight Year',
+    'zeptolight year',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -948,7 +948,7 @@ Set<Unit> lengthUnitDetails = {
     variation: true,
   ),
   Unit<LengthUnits>(
-    'zettalight Year',
+    'zettalight year',
     createSymbol(
       const [
         SymbolParts.zetta,
