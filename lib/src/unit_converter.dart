@@ -1,33 +1,35 @@
-import 'converter/acceleration_converter.dart';
-import 'converter/area_converter.dart';
-import 'converter/blood_cholesterol_converter.dart';
-import 'converter/blood_glucose_converter.dart';
-import 'converter/capacitance_converter.dart';
-import 'converter/data_converter.dart';
-import 'converter/data_rate_converter.dart';
-import 'converter/dynamic_viscocity_converter.dart';
-import 'converter/electric_charge_converter.dart';
-import 'converter/electric_conductance_converter.dart';
-import 'converter/electric_current_converter.dart';
-import 'converter/electric_potential_converter.dart';
-import 'converter/electric_resistance_converter.dart';
-import 'converter/force_converter.dart';
-import 'converter/frequency_converter.dart';
-import 'converter/illuminance_converter.dart';
-import 'converter/inductance_converter.dart';
-import 'converter/kinematic_viscocity_converter.dart';
-import 'converter/length_converter.dart';
-import 'converter/luminance_converter.dart';
-import 'converter/magnetic_field_intensity_converter.dart';
-import 'converter/magnetic_flux_converter.dart';
-import 'converter/magnetic_flux_density_converter.dart';
-import 'converter/mass_converter.dart';
-import 'converter/speed_converter.dart';
-import 'converter/time_converter.dart';
-import 'converter/torque_converter.dart';
-import 'converter/volume_converter.dart';
-import 'converter/volume_per_area_converter.dart';
-import 'converter/water_hardness_converter.dart';
+import 'converter/multiplicative_converter.dart';
+import 'enum/acceleration_units.dart';
+import 'enum/area_units.dart';
+import 'enum/blood_cholesterol_units.dart';
+import 'enum/blood_glucose_units.dart';
+import 'enum/capacitance_units.dart';
+import 'enum/conversion_type.dart';
+import 'enum/data_rate_units.dart';
+import 'enum/data_units.dart';
+import 'enum/dynamic_viscocity_units.dart';
+import 'enum/electric_charge_units.dart';
+import 'enum/electric_conductance_units.dart';
+import 'enum/electric_current_units.dart';
+import 'enum/electric_potential_units.dart';
+import 'enum/electric_resistance_units.dart';
+import 'enum/force_units.dart';
+import 'enum/frequency_units.dart';
+import 'enum/illuminance_units.dart';
+import 'enum/inductance_units.dart';
+import 'enum/kinematic_viscocity_units.dart';
+import 'enum/length_units.dart';
+import 'enum/luminance_units.dart';
+import 'enum/magnetic_field_intensity_units.dart';
+import 'enum/magnetic_flux_density_units.dart';
+import 'enum/magnetic_flux_units.dart';
+import 'enum/mass_units.dart';
+import 'enum/speed_units.dart';
+import 'enum/time_units.dart';
+import 'enum/torque_units.dart';
+import 'enum/volume_per_area_units.dart';
+import 'enum/volume_units.dart';
+import 'enum/water_hardness_units.dart';
 
 export 'enum/acceleration_units.dart';
 export 'enum/area_units.dart';
@@ -61,123 +63,183 @@ export 'enum/volume_units.dart';
 export 'enum/water_hardness_units.dart';
 
 class UnitConverter {
-  static AccelerationConverter acceleration() {
-    return AccelerationConverter();
+  static MultiplicativeConverter acceleration() {
+    return MultiplicativeConverter<AccelerationUnits>(
+      ConversionType.acceleration,
+    );
   }
 
-  static AreaConverter area() {
-    return AreaConverter();
+  static MultiplicativeConverter area() {
+    return MultiplicativeConverter<AreaUnits>(
+      ConversionType.area,
+    );
   }
 
-  static BloodCholesterolConverter bloodCholesterol() {
-    return BloodCholesterolConverter();
+  static MultiplicativeConverter bloodCholesterol() {
+    return MultiplicativeConverter<BloodCholesterolUnits>(
+      ConversionType.bloodCholesterol,
+    );
   }
 
-  static BloodGlucoseConverter bloodGlucose() {
-    return BloodGlucoseConverter();
+  static MultiplicativeConverter bloodGlucose() {
+    return MultiplicativeConverter<BloodGlucoseUnits>(
+      ConversionType.bloodGlucose,
+    );
   }
 
-  static CapacitanceConverter capacitance() {
-    return CapacitanceConverter();
+  static MultiplicativeConverter capacitance() {
+    return MultiplicativeConverter<CapacitanceUnits>(
+      ConversionType.capacitance,
+    );
   }
 
-  static DataConverter data() {
-    return DataConverter();
+  static MultiplicativeConverter data() {
+    return MultiplicativeConverter<DataUnits>(
+      ConversionType.data,
+    );
   }
 
-  static DataRateConverter dataRate() {
-    return DataRateConverter();
+  static MultiplicativeConverter dataRate() {
+    return MultiplicativeConverter<DataRateUnits>(
+      ConversionType.dataRate,
+    );
   }
 
-  static DynamicViscocityConverter dynamicViscocity() {
-    return DynamicViscocityConverter();
+  static MultiplicativeConverter dynamicViscocity() {
+    return MultiplicativeConverter<DynamicViscocityUnits>(
+      ConversionType.dynamicViscocity,
+    );
   }
 
-  static ElectricChargeConverter electricCharge() {
-    return ElectricChargeConverter();
+  static MultiplicativeConverter electricCharge() {
+    return MultiplicativeConverter<ElectricChargeUnits>(
+      ConversionType.electricCharge,
+    );
   }
 
-  static ElectricConductanceConverter electricConductance() {
-    return ElectricConductanceConverter();
+  static MultiplicativeConverter electricConductance() {
+    return MultiplicativeConverter<ElectricConductanceUnits>(
+      ConversionType.electricConductance,
+    );
   }
 
-  static ElectricCurrentConverter electricCurrent() {
-    return ElectricCurrentConverter();
+  static MultiplicativeConverter electricCurrent() {
+    return MultiplicativeConverter<ElectricCurrentUnits>(
+      ConversionType.electricCurrent,
+    );
   }
 
-  static ElectricPotentialConverter electricPotential() {
-    return ElectricPotentialConverter();
+  static MultiplicativeConverter electricPotential() {
+    return MultiplicativeConverter<ElectricPotentialUnits>(
+      ConversionType.electricPotential,
+    );
   }
 
-  static ElectricResistanceConverter electricResistance() {
-    return ElectricResistanceConverter();
+  static MultiplicativeConverter electricResistance() {
+    return MultiplicativeConverter<ElectricResistanceUnits>(
+      ConversionType.electricResistance,
+    );
   }
 
-  static ForceConverter force() {
-    return ForceConverter();
+  static MultiplicativeConverter force() {
+    return MultiplicativeConverter<ForceUnits>(
+      ConversionType.force,
+    );
   }
 
-  static FrequencyConverter frequency() {
-    return FrequencyConverter();
+  static MultiplicativeConverter frequency() {
+    return MultiplicativeConverter<FrequencyUnits>(
+      ConversionType.frequency,
+    );
   }
 
-  static IlluminanceConverter illuminance() {
-    return IlluminanceConverter();
+  static MultiplicativeConverter illuminance() {
+    return MultiplicativeConverter<IlluminanceUnits>(
+      ConversionType.illuminance,
+    );
   }
 
-  static InductanceConverter inductance() {
-    return InductanceConverter();
+  static MultiplicativeConverter inductance() {
+    return MultiplicativeConverter<InductanceUnits>(
+      ConversionType.inductance,
+    );
   }
 
-  static KinematicViscocityConverter kinematicViscocity() {
-    return KinematicViscocityConverter();
+  static MultiplicativeConverter kinematicViscocity() {
+    return MultiplicativeConverter<KinematicViscocityUnits>(
+      ConversionType.kinematicViscocity,
+    );
   }
 
-  static LengthConverter length() {
-    return LengthConverter();
+  static MultiplicativeConverter length() {
+    return MultiplicativeConverter<LengthUnits>(
+      ConversionType.length,
+    );
   }
 
-  static LuminanceConverter luminance() {
-    return LuminanceConverter();
+  static MultiplicativeConverter luminance() {
+    return MultiplicativeConverter<LuminanceUnits>(
+      ConversionType.luminance,
+    );
   }
 
-  static MagneticFieldIntensityConverter magneticFieldIntensity() {
-    return MagneticFieldIntensityConverter();
+  static MultiplicativeConverter magneticFieldIntensity() {
+    return MultiplicativeConverter<MagneticFieldIntensityUnits>(
+      ConversionType.magneticFieldIntensity,
+    );
   }
 
-  static MagneticFluxConverter magneticFlux() {
-    return MagneticFluxConverter();
+  static MultiplicativeConverter magneticFlux() {
+    return MultiplicativeConverter<MagneticFluxUnits>(
+      ConversionType.magneticFlux,
+    );
   }
 
-  static MagneticFluxDensityConverter magneticFluxDensity() {
-    return MagneticFluxDensityConverter();
+  static MultiplicativeConverter magneticFluxDensity() {
+    return MultiplicativeConverter<MagneticFluxDensityUnits>(
+      ConversionType.magneticFluxDensity,
+    );
   }
 
-  static MassConverter mass() {
-    return MassConverter();
+  static MultiplicativeConverter mass() {
+    return MultiplicativeConverter<MassUnits>(
+      ConversionType.mass,
+    );
   }
 
-  static SpeedConverter speed() {
-    return SpeedConverter();
+  static MultiplicativeConverter speed() {
+    return MultiplicativeConverter<SpeedUnits>(
+      ConversionType.speed,
+    );
   }
 
-  static TimeConverter time() {
-    return TimeConverter();
+  static MultiplicativeConverter time() {
+    return MultiplicativeConverter<TimeUnits>(
+      ConversionType.time,
+    );
   }
 
-  static TorqueConverter torque() {
-    return TorqueConverter();
+  static MultiplicativeConverter torque() {
+    return MultiplicativeConverter<TorqueUnits>(
+      ConversionType.torque,
+    );
   }
 
-  static VolumeConverter volume() {
-    return VolumeConverter();
+  static MultiplicativeConverter volume() {
+    return MultiplicativeConverter<VolumeUnits>(
+      ConversionType.volume,
+    );
   }
 
-  static VolumePerAreaConverter volumePerArea() {
-    return VolumePerAreaConverter();
+  static MultiplicativeConverter volumePerArea() {
+    return MultiplicativeConverter<VolumePerAreaUnits>(
+      ConversionType.volumePerArea,
+    );
   }
 
-  static WaterHardnessConverter waterHardness() {
-    return WaterHardnessConverter();
+  static MultiplicativeConverter waterHardness() {
+    return MultiplicativeConverter<WaterHardnessUnits>(
+      ConversionType.waterHardness,
+    );
   }
 }
