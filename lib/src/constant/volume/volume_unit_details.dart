@@ -29,7 +29,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.acreInch,
   ),
   Unit(
-    'attoliter',
+    'attolitre',
     createSymbol(
       const [
         SymbolParts.atto,
@@ -68,7 +68,7 @@ final Set<Unit> volumeUnitDetails = {
     system: systemValue[System.usDryLevel],
   ),
   Unit(
-    'centiliter',
+    'centilitre',
     createSymbol(
       const [
         SymbolParts.centi,
@@ -388,7 +388,7 @@ final Set<Unit> volumeUnitDetails = {
     system: systemValue[System.usFoodNutrition],
   ),
   Unit(
-    'decaliter',
+    'decalitre',
     createSymbol(
       const [
         SymbolParts.deca,
@@ -398,7 +398,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.decaLitre,
   ),
   Unit(
-    'deciliter',
+    'decilitre',
     createSymbol(
       const [
         SymbolParts.deci,
@@ -408,7 +408,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.deciLitre,
   ),
   Unit(
-    'exaliter',
+    'exalitre',
     createSymbol(
       const [
         SymbolParts.exa,
@@ -418,7 +418,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.exaLitre,
   ),
   Unit(
-    'femtoliter',
+    'femtolitre',
     createSymbol(
       const [
         SymbolParts.femto,
@@ -526,7 +526,7 @@ final Set<Unit> volumeUnitDetails = {
     system: systemValue[System.usLiquid],
   ),
   Unit(
-    'gigaliter',
+    'gigalitre',
     createSymbol(
       const [
         SymbolParts.giga,
@@ -567,7 +567,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.hectareMeter,
   ),
   Unit(
-    'hectoliter',
+    'hectolitre',
     createSymbol(
       const [
         SymbolParts.hecto,
@@ -591,7 +591,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.jigger,
   ),
   Unit(
-    'kiloliter',
+    'kilolitre',
     createSymbol(
       const [
         SymbolParts.kilo,
@@ -601,7 +601,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.kiloLitre,
   ),
   Unit(
-    'liter',
+    'litre',
     createSymbol(
       const [
         SymbolParts.litre,
@@ -610,7 +610,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.litre,
   ),
   Unit(
-    'megaliter',
+    'megalitre',
     createSymbol(
       const [
         SymbolParts.mega,
@@ -620,7 +620,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.megaLitre,
   ),
   Unit(
-    'microliter',
+    'microlitre',
     createSymbol(
       const [
         SymbolParts.micro,
@@ -630,7 +630,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.microLitre,
   ),
   Unit(
-    'milliliter',
+    'millilitre',
     createSymbol(
       const [
         SymbolParts.milli,
@@ -660,7 +660,7 @@ final Set<Unit> volumeUnitDetails = {
     system: systemValue[System.us],
   ),
   Unit(
-    'nanoliter',
+    'nanolitre',
     createSymbol(
       const [
         SymbolParts.nano,
@@ -701,7 +701,7 @@ final Set<Unit> volumeUnitDetails = {
     system: systemValue[System.usDry],
   ),
   Unit(
-    'petaliter',
+    'petalitre',
     createSymbol(
       const [
         SymbolParts.peta,
@@ -711,7 +711,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.petaLitre,
   ),
   Unit(
-    'picoliter',
+    'picolitre',
     createSymbol(
       const [
         SymbolParts.pico,
@@ -851,7 +851,7 @@ final Set<Unit> volumeUnitDetails = {
     system: systemValue[System.usFoodNutrition],
   ),
   Unit(
-    'teraliter',
+    'teralitre',
     createSymbol(
       const [
         SymbolParts.tera,
@@ -861,7 +861,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.teraLitre,
   ),
   Unit(
-    'yoctoliter',
+    'yoctolitre',
     createSymbol(
       const [
         SymbolParts.yocto,
@@ -871,7 +871,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.yoctoLitre,
   ),
   Unit(
-    'yottaliter',
+    'yottalitre',
     createSymbol(
       const [
         SymbolParts.yotta,
@@ -881,7 +881,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.yottaLitre,
   ),
   Unit(
-    'zeptoliter',
+    'zeptolitre',
     createSymbol(
       const [
         SymbolParts.zepto,
@@ -891,7 +891,7 @@ final Set<Unit> volumeUnitDetails = {
     VolumeUnits.zeptoLitre,
   ),
   Unit(
-    'zettaliter',
+    'zettalitre',
     createSymbol(
       const [
         SymbolParts.zetta,
