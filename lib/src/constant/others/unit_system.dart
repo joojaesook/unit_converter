@@ -4,6 +4,7 @@ import '../../misc/global.dart';
 
 final Map<UnitSystems, String> unitSystem = {
   UnitSystems.australian: 'Australian',
+  UnitSystems.binary: 'Binary',
   UnitSystems.ca2: 'Ca${createSymbol(
     const [
       SymbolParts.superscriptTwo,

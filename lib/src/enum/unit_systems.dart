@@ -1,5 +1,6 @@
 enum UnitSystems {
   australian,
+  binary,
   ca2,
   caCO3,
   caO,

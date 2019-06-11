@@ -1,7 +1,9 @@
 import '../../enum/data_units.dart';
 import '../../enum/symbol_parts.dart';
+import '../../enum/unit_systems.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
+import '../others/unit_system.dart';
 
 Set<Unit> dataUnitDetails = {
   Unit<DataUnits>(
@@ -33,6 +35,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.exaBit,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'exabyte',
@@ -44,6 +47,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.exaByte,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'gigabit',
@@ -55,6 +59,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.gigaBit,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'gigabyte',
@@ -66,6 +71,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.gigaByte,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'kilobit',
@@ -77,6 +83,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.kiloBit,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'kilobyte',
@@ -88,6 +95,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.kiloByte,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'megabit',
@@ -99,6 +107,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.megaBit,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'megabyte',
@@ -110,6 +119,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.megaByte,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'petabit',
@@ -121,6 +131,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.petaBit,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'petabyte',
@@ -132,6 +143,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.petaByte,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'terabit',
@@ -143,6 +155,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.teraBit,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'terabyte',
@@ -154,6 +167,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.teraByte,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'yottabit',
@@ -165,6 +179,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.yottaBit,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'yottabyte',
@@ -176,6 +191,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.yottaByte,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'zettabit',
@@ -187,6 +203,7 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.zettaBit,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataUnits>(
     'zettabyte',
@@ -198,5 +215,6 @@ Set<Unit> dataUnitDetails = {
     ),
     DataUnits.zettaByte,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
 };

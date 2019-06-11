@@ -2,6 +2,8 @@
 class Unit<T> {
   // Name of the unit
   final String name;
+  // Name of the unit in American spelling
+  final String americanName;
   // Symbol of the unit
   final String symbol;
   // Type of the unit
@@ -14,7 +16,10 @@ class Unit<T> {
   String system;
 
   Unit(this.name, this.symbol, this.type,
-      {this.baseUnit = false, this.variation = false, this.system})
+      {this.americanName,
+      this.baseUnit = false,
+      this.variation = false,
+      this.system})
       : assert(name != null),
         assert(symbol != null),
         assert(type != null);
