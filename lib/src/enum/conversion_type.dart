@@ -25,6 +25,7 @@ enum ConversionType {
   magneticFlux,
   magneticFluxDensity,
   mass,
+  massPerArea,
   radioactivity,
   speed,
   time,
