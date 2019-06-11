@@ -7,7 +7,7 @@ import '../others/prefix_value.dart';
 final Map<ElectricalConductanceUnits, double>
     electricalConductanceConversionDetails = {
   // Base unit
-  ElectricalConductanceUnits.mho: 1,
+  ElectricalConductanceUnits.siemens: 1,
   ElectricalConductanceUnits.abMho: pow(10, 9),
   ElectricalConductanceUnits.abSiemens: pow(10, 9),
   ElectricalConductanceUnits.attoMho: prefixValue[Prefix.atto],
@@ -30,6 +30,7 @@ final Map<ElectricalConductanceUnits, double>
   ElectricalConductanceUnits.kiloSiemens: prefixValue[Prefix.kilo],
   ElectricalConductanceUnits.megaMho: prefixValue[Prefix.mega],
   ElectricalConductanceUnits.megaSiemens: prefixValue[Prefix.mega],
+  ElectricalConductanceUnits.mho: 1,
   ElectricalConductanceUnits.micrMho: prefixValue[Prefix.micro],
   ElectricalConductanceUnits.micrSiemens: prefixValue[Prefix.micro],
   ElectricalConductanceUnits.milliMho: prefixValue[Prefix.milli],
@@ -40,7 +41,6 @@ final Map<ElectricalConductanceUnits, double>
   ElectricalConductanceUnits.petaSiemens: prefixValue[Prefix.peta],
   ElectricalConductanceUnits.picoMho: prefixValue[Prefix.pico],
   ElectricalConductanceUnits.picoSiemens: prefixValue[Prefix.pico],
-  ElectricalConductanceUnits.siemens: 1,
   ElectricalConductanceUnits.teraMho: prefixValue[Prefix.tera],
   ElectricalConductanceUnits.teraSiemens: prefixValue[Prefix.tera],
   ElectricalConductanceUnits.yoctoMho: prefixValue[Prefix.yocto],

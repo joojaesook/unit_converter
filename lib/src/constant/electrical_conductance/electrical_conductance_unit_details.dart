@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 final Set<Unit> electricalConductanceUnitDetails = {
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'abmho',
     createSymbol(
       const [
@@ -13,8 +13,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.abMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'absiemens',
     createSymbol(
       const [
@@ -23,8 +24,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.abSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'attomho',
     createSymbol(
       const [
@@ -33,8 +35,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.attoMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'attosiemens',
     createSymbol(
       const [
@@ -43,8 +46,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.attoSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'centimho',
     createSymbol(
       const [
@@ -53,8 +57,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.centiMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'centisiemens',
     createSymbol(
       const [
@@ -63,8 +68,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.centiSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'decamho',
     createSymbol(
       const [
@@ -73,8 +79,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.decaMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'decasiemens',
     createSymbol(
       const [
@@ -83,8 +90,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.decaSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'decimho',
     createSymbol(
       const [
@@ -93,8 +101,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.deciMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'decisiemens',
     createSymbol(
       const [
@@ -103,8 +112,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.deciSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'examho',
     createSymbol(
       const [
@@ -113,8 +123,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.exaMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'exasiemens',
     createSymbol(
       const [
@@ -123,8 +134,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.exaSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'femtomho',
     createSymbol(
       const [
@@ -133,8 +145,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.femtoMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'femtosiemens',
     createSymbol(
       const [
@@ -143,8 +156,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.femtoSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'gigamho',
     createSymbol(
       const [
@@ -153,8 +167,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.gigaMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'gigasiemens',
     createSymbol(
       const [
@@ -163,8 +178,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.gigaSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'hectomho',
     createSymbol(
       const [
@@ -173,8 +189,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.hectoMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'hectosiemens',
     createSymbol(
       const [
@@ -183,8 +200,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.hectoSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'kilomho',
     createSymbol(
       const [
@@ -193,8 +211,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.kiloMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'kilosiemens',
     createSymbol(
       const [
@@ -203,8 +222,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.kiloSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'megamho',
     createSymbol(
       const [
@@ -213,8 +233,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.megaMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'megasiemens',
     createSymbol(
       const [
@@ -223,8 +244,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.megaSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'mho',
     createSymbol(
       const [
@@ -233,7 +255,7 @@ final Set<Unit> electricalConductanceUnitDetails = {
     ),
     ElectricalConductanceUnits.mho,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'micromho',
     createSymbol(
       const [
@@ -242,8 +264,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.micrMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'microsiemens',
     createSymbol(
       const [
@@ -252,8 +275,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.micrSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'millimho',
     createSymbol(
       const [
@@ -262,8 +286,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.milliMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'millisiemens',
     createSymbol(
       const [
@@ -272,8 +297,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.milliSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'nanomho',
     createSymbol(
       const [
@@ -282,8 +308,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.nanoMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'nanosiemens',
     createSymbol(
       const [
@@ -292,8 +319,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.nanoSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'petamho',
     createSymbol(
       const [
@@ -302,8 +330,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.petaMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'petasiemens',
     createSymbol(
       const [
@@ -312,8 +341,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.petaSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'picomho',
     createSymbol(
       const [
@@ -322,8 +352,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.picoMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'picosiemens',
     createSymbol(
       const [
@@ -332,8 +363,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.picoSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'siemens',
     createSymbol(
       const [
@@ -341,8 +373,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.siemens,
+    baseUnit: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'teramho',
     createSymbol(
       const [
@@ -351,8 +384,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.teraMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'terasiemens',
     createSymbol(
       const [
@@ -361,8 +395,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.teraSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'yoctomho',
     createSymbol(
       const [
@@ -371,8 +406,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.yoctoMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'yoctosiemens',
     createSymbol(
       const [
@@ -381,8 +417,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.yoctoSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'yottamho',
     createSymbol(
       const [
@@ -391,8 +428,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.yottaMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'yottasiemens',
     createSymbol(
       const [
@@ -401,8 +439,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.yottaSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'zeptomho',
     createSymbol(
       const [
@@ -411,8 +450,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.zeptoMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'zeptosiemens',
     createSymbol(
       const [
@@ -421,8 +461,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.zeptoSiemens,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'zettamho',
     createSymbol(
       const [
@@ -431,8 +472,9 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.zettaMho,
+    variation: true,
   ),
-  Unit(
+  Unit<ElectricalConductanceUnits>(
     'zettasiemens',
     createSymbol(
       const [
@@ -441,5 +483,6 @@ final Set<Unit> electricalConductanceUnitDetails = {
       ],
     ),
     ElectricalConductanceUnits.zettaSiemens,
+    variation: true,
   ),
 };
