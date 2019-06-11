@@ -1,5 +1,5 @@
 /// Units of electric resistance
-enum ElectricResistanceUnits {
+enum ElectricalResistanceUnits {
   abOhm,
   attoOhm,
   centiOhm,

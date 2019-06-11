@@ -10,7 +10,7 @@ import 'converter_old/electric_charge_converter.dart';
 import 'converter_old/electric_conductance_converter.dart';
 import 'converter_old/electric_current_converter.dart';
 import 'converter_old/electric_potential_converter.dart';
-import 'converter_old/electric_resistance_converter.dart';
+import 'converter_old/electrical_resistance_converter.dart';
 import 'converter_old/force_converter.dart';
 import 'converter_old/frequency_converter.dart';
 import 'converter_old/illuminance_converter.dart';
@@ -41,7 +41,7 @@ export 'enum/electric_charge_units.dart';
 export 'enum/electric_conductance_units.dart';
 export 'enum/electric_current_units.dart';
 export 'enum/electric_potential_units.dart';
-export 'enum/electric_resistance_units.dart';
+export 'enum/electrical_resistance_units.dart';
 export 'enum/force_units.dart';
 export 'enum/frequency_units.dart';
 export 'enum/illuminance_units.dart';
@@ -109,8 +109,8 @@ class UnitConverter {
     return ElectricPotentialConverter();
   }
 
-  static ElectricResistanceConverter electricResistance() {
-    return ElectricResistanceConverter();
+  static ElectricalResistanceConverter electricalResistance() {
+    return ElectricalResistanceConverter();
   }
 
   static ForceConverter force() {

@@ -12,7 +12,7 @@ enum ConversionType {
   electricConductance,
   electricCurrent,
   electricPotential,
-  electricResistance,
+  electricalResistance,
   force,
   frequency,
   illuminance,

@@ -12,7 +12,7 @@ import 'enum/electric_charge_units.dart';
 import 'enum/electric_conductance_units.dart';
 import 'enum/electric_current_units.dart';
 import 'enum/electric_potential_units.dart';
-import 'enum/electric_resistance_units.dart';
+import 'enum/electrical_resistance_units.dart';
 import 'enum/force_units.dart';
 import 'enum/frequency_units.dart';
 import 'enum/illuminance_units.dart';
@@ -45,7 +45,7 @@ export 'enum/electric_charge_units.dart';
 export 'enum/electric_conductance_units.dart';
 export 'enum/electric_current_units.dart';
 export 'enum/electric_potential_units.dart';
-export 'enum/electric_resistance_units.dart';
+export 'enum/electrical_resistance_units.dart';
 export 'enum/force_units.dart';
 export 'enum/frequency_units.dart';
 export 'enum/illuminance_units.dart';
@@ -139,9 +139,9 @@ class UnitConverter {
     );
   }
 
-  static MultiplicationBasedConverter electricResistance() {
-    return MultiplicationBasedConverter<ElectricResistanceUnits>(
-      ConversionType.electricResistance,
+  static MultiplicationBasedConverter electricalResistance() {
+    return MultiplicationBasedConverter<ElectricalResistanceUnits>(
+      ConversionType.electricalResistance,
     );
   }
 
