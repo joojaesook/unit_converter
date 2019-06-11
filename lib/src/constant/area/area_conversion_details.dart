@@ -36,121 +36,36 @@ Map<AreaUnits, double> areaConversionDetails = {
   AreaUnits.rai: 1600,
   AreaUnits.rood: 1011.7141056,
   AreaUnits.square: 9.290304,
-  AreaUnits.squareAttoMetre: pow(
-    prefixValue[Prefix.atto],
-    2,
-  ),
-  AreaUnits.squareCentiMetre: pow(
-    prefixValue[Prefix.centi],
-    2,
-  ),
-  AreaUnits.squareDecaMetre: pow(
-    prefixValue[Prefix.deca],
-    2,
-  ),
-  AreaUnits.squareDeciMetre: pow(
-    prefixValue[Prefix.deci],
-    2,
-  ),
-  AreaUnits.squareExaMetre: pow(
-    prefixValue[Prefix.exa],
-    2,
-  ),
-  AreaUnits.squareFemtoMetre: pow(
-    prefixValue[Prefix.femto],
-    2,
-  ),
-  AreaUnits.squareFoot: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.foot,
-    ),
-    2,
-  ),
-  AreaUnits.squareGigaMetre: pow(
-    prefixValue[Prefix.giga],
-    2,
-  ),
-  AreaUnits.squareHectoMetre: pow(
-    prefixValue[Prefix.hecto],
-    2,
-  ),
-  AreaUnits.squareInch: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.inch,
-    ),
-    2,
-  ),
-  AreaUnits.squareKiloMetre: pow(
-    prefixValue[Prefix.kilo],
-    2,
-  ),
-  AreaUnits.squareMegaMetre: pow(
-    prefixValue[Prefix.mega],
-    2,
-  ),
-  AreaUnits.squareMicroMetre: pow(
-    prefixValue[Prefix.micro],
-    2,
-  ),
-  AreaUnits.squareMile: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.mile,
-    ),
-    2,
-  ),
-  AreaUnits.squareMilliMetre: pow(
-    prefixValue[Prefix.milli],
-    2,
-  ),
-  AreaUnits.squareNanoMetre: pow(
-    prefixValue[Prefix.nano],
-    2,
-  ),
-  AreaUnits.squarePerch: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.rod,
-    ),
-    2,
-  ),
-  AreaUnits.squarePetaMetre: pow(
-    prefixValue[Prefix.peta],
-    2,
-  ),
-  AreaUnits.squarePicoMetre: pow(
-    prefixValue[Prefix.pico],
-    2,
-  ),
-  AreaUnits.squareTeraMetre: pow(
-    prefixValue[Prefix.tera],
-    2,
-  ),
-  AreaUnits.squareYard: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.yard,
-    ),
-    2,
-  ),
-  AreaUnits.squareYoctoMetre: pow(
-    prefixValue[Prefix.yocto],
-    2,
-  ),
-  AreaUnits.squareYottaMetre: pow(
-    prefixValue[Prefix.yotta],
-    2,
-  ),
-  AreaUnits.squareZeptoMetre: pow(
-    prefixValue[Prefix.zepto],
-    2,
-  ),
-  AreaUnits.squareZettaMetre: pow(
-    prefixValue[Prefix.zetta],
-    2,
-  ),
+  AreaUnits.squareAttoMetre: pow(prefixValue[Prefix.atto], 2),
+  AreaUnits.squareCentiMetre: pow(prefixValue[Prefix.centi], 2),
+  AreaUnits.squareDecaMetre: pow(prefixValue[Prefix.deca], 2),
+  AreaUnits.squareDeciMetre: pow(prefixValue[Prefix.deci], 2),
+  AreaUnits.squareExaMetre: pow(prefixValue[Prefix.exa], 2),
+  AreaUnits.squareFemtoMetre: pow(prefixValue[Prefix.femto], 2),
+  AreaUnits.squareFoot:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.foot), 2),
+  AreaUnits.squareGigaMetre: pow(prefixValue[Prefix.giga], 2),
+  AreaUnits.squareHectoMetre: pow(prefixValue[Prefix.hecto], 2),
+  AreaUnits.squareInch:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.inch), 2),
+  AreaUnits.squareKiloMetre: pow(prefixValue[Prefix.kilo], 2),
+  AreaUnits.squareMegaMetre: pow(prefixValue[Prefix.mega], 2),
+  AreaUnits.squareMicroMetre: pow(prefixValue[Prefix.micro], 2),
+  AreaUnits.squareMile:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.mile), 2),
+  AreaUnits.squareMilliMetre: pow(prefixValue[Prefix.milli], 2),
+  AreaUnits.squareNanoMetre: pow(prefixValue[Prefix.nano], 2),
+  AreaUnits.squarePerch:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.rod), 2),
+  AreaUnits.squarePetaMetre: pow(prefixValue[Prefix.peta], 2),
+  AreaUnits.squarePicoMetre: pow(prefixValue[Prefix.pico], 2),
+  AreaUnits.squareTeraMetre: pow(prefixValue[Prefix.tera], 2),
+  AreaUnits.squareYard:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.yard), 2),
+  AreaUnits.squareYoctoMetre: pow(prefixValue[Prefix.yocto], 2),
+  AreaUnits.squareYottaMetre: pow(prefixValue[Prefix.yotta], 2),
+  AreaUnits.squareZeptoMetre: pow(prefixValue[Prefix.zepto], 2),
+  AreaUnits.squareZettaMetre: pow(prefixValue[Prefix.zetta], 2),
   AreaUnits.teraBarn: prefixValue[Prefix.tera] * _barnToSquareMetre,
   AreaUnits.yoctoBarn: prefixValue[Prefix.yocto] * _barnToSquareMetre,
   AreaUnits.yottaBarn: prefixValue[Prefix.yotta] * _barnToSquareMetre,
