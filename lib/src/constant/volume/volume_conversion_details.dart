@@ -19,114 +19,34 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
   VolumeUnits.bushel_Imperial: 0.03636872,
   VolumeUnits.bushel_USDryLevel: 0.03523907016688,
   VolumeUnits.centiLitre: _litre * prefixValue[Prefix.centi],
-  VolumeUnits.cubicAttoMetre: pow(
-    prefixValue[Prefix.atto],
-    3,
-  ),
-  VolumeUnits.cubicCentiMetre: pow(
-    prefixValue[Prefix.centi],
-    3,
-  ),
-  VolumeUnits.cubicDecaMetre: pow(
-    prefixValue[Prefix.deca],
-    3,
-  ),
-  VolumeUnits.cubicDeciMetre: pow(
-    prefixValue[Prefix.deci],
-    3,
-  ),
-  VolumeUnits.cubicExaMetre: pow(
-    prefixValue[Prefix.exa],
-    3,
-  ),
-  VolumeUnits.cubicFemtoMetre: pow(
-    prefixValue[Prefix.femto],
-    3,
-  ),
-  VolumeUnits.cubicFoot: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.foot,
-    ),
-    3,
-  ),
-  VolumeUnits.cubicGigaMetre: pow(
-    prefixValue[Prefix.giga],
-    3,
-  ),
-  VolumeUnits.cubicHectoMetre: pow(
-    prefixValue[Prefix.hecto],
-    3,
-  ),
-  VolumeUnits.cubicInch: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.inch,
-    ),
-    3,
-  ),
-  VolumeUnits.cubicKiloMetre: pow(
-    prefixValue[Prefix.kilo],
-    3,
-  ),
-  VolumeUnits.cubicMegaMetre: pow(
-    prefixValue[Prefix.mega],
-    3,
-  ),
-  VolumeUnits.cubicMicroMetre: pow(
-    prefixValue[Prefix.micro],
-    3,
-  ),
-  VolumeUnits.cubicMile: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.mile,
-    ),
-    3,
-  ),
-  VolumeUnits.cubicMilliMetre: pow(
-    prefixValue[Prefix.milli],
-    3,
-  ),
-  VolumeUnits.cubicNanoMetre: pow(
-    prefixValue[Prefix.nano],
-    3,
-  ),
-  VolumeUnits.cubicPetaMetre: pow(
-    prefixValue[Prefix.peta],
-    3,
-  ),
-  VolumeUnits.cubicPicoMetre: pow(
-    prefixValue[Prefix.pico],
-    3,
-  ),
-  VolumeUnits.cubicTeraMetre: pow(
-    prefixValue[Prefix.tera],
-    3,
-  ),
-  VolumeUnits.cubicYard: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.yard,
-    ),
-    3,
-  ),
-  VolumeUnits.cubicYoctoMetre: pow(
-    prefixValue[Prefix.yocto],
-    3,
-  ),
-  VolumeUnits.cubicYottaMetre: pow(
-    prefixValue[Prefix.yotta],
-    3,
-  ),
-  VolumeUnits.cubicZeptoMetre: pow(
-    prefixValue[Prefix.zepto],
-    3,
-  ),
-  VolumeUnits.cubicZettaMetre: pow(
-    prefixValue[Prefix.zetta],
-    3,
-  ),
+  VolumeUnits.cubicAttoMetre: pow(prefixValue[Prefix.atto], 3),
+  VolumeUnits.cubicCentiMetre: pow(prefixValue[Prefix.centi], 3),
+  VolumeUnits.cubicDecaMetre: pow(prefixValue[Prefix.deca], 3),
+  VolumeUnits.cubicDeciMetre: pow(prefixValue[Prefix.deci], 3),
+  VolumeUnits.cubicExaMetre: pow(prefixValue[Prefix.exa], 3),
+  VolumeUnits.cubicFemtoMetre: pow(prefixValue[Prefix.femto], 3),
+  VolumeUnits.cubicFoot:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.foot), 3),
+  VolumeUnits.cubicGigaMetre: pow(prefixValue[Prefix.giga], 3),
+  VolumeUnits.cubicHectoMetre: pow(prefixValue[Prefix.hecto], 3),
+  VolumeUnits.cubicInch:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.inch), 3),
+  VolumeUnits.cubicKiloMetre: pow(prefixValue[Prefix.kilo], 3),
+  VolumeUnits.cubicMegaMetre: pow(prefixValue[Prefix.mega], 3),
+  VolumeUnits.cubicMicroMetre: pow(prefixValue[Prefix.micro], 3),
+  VolumeUnits.cubicMile:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.mile), 3),
+  VolumeUnits.cubicMilliMetre: pow(prefixValue[Prefix.milli], 3),
+  VolumeUnits.cubicNanoMetre: pow(prefixValue[Prefix.nano], 3),
+  VolumeUnits.cubicPetaMetre: pow(prefixValue[Prefix.peta], 3),
+  VolumeUnits.cubicPicoMetre: pow(prefixValue[Prefix.pico], 3),
+  VolumeUnits.cubicTeraMetre: pow(prefixValue[Prefix.tera], 3),
+  VolumeUnits.cubicYard:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.yard), 3),
+  VolumeUnits.cubicYoctoMetre: pow(prefixValue[Prefix.yocto], 3),
+  VolumeUnits.cubicYottaMetre: pow(prefixValue[Prefix.yotta], 3),
+  VolumeUnits.cubicZeptoMetre: pow(prefixValue[Prefix.zepto], 3),
+  VolumeUnits.cubicZettaMetre: pow(prefixValue[Prefix.zetta], 3),
   VolumeUnits.cup_Imperial: 0.000284130625,
   VolumeUnits.cup_Metric: 0.00025,
   VolumeUnits.cup_US: 0.0002365882365,
