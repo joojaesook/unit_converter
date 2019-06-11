@@ -1,7 +1,9 @@
 import '../../enum/data_rate_units.dart';
 import '../../enum/symbol_parts.dart';
+import '../../enum/unit_systems.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
+import '../others/unit_system.dart';
 
 Set<Unit> dataRateUnitDetails = {
   Unit<DataRateUnits>(
@@ -83,6 +85,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.exaBitPerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'exabit per minute',
@@ -96,6 +99,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.exaBitPerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'exabit per second',
@@ -109,6 +113,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.exaBitPerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'exabyte per hour',
@@ -122,6 +127,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.exaBytePerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'exabyte per minute',
@@ -135,6 +141,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.exaBytePerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'exabyte per second',
@@ -148,6 +155,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.exaBytePerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'gigabit per hour',
@@ -161,6 +169,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.gigaBitPerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'gigabit per minute',
@@ -174,6 +183,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.gigaBitPerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'gigabit per second',
@@ -187,6 +197,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.gigaBitPerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'gigabyte per hour',
@@ -200,6 +211,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.gigaBytePerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'gigabyte per minute',
@@ -213,6 +225,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.gigaBytePerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'gigabyte per second',
@@ -226,6 +239,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.gigaBytePerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'kilobit per hour',
@@ -239,6 +253,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.kiloBitPerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'kilobit per minute',
@@ -252,6 +267,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.kiloBitPerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'kilobit per second',
@@ -265,6 +281,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.kiloBitPerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'kilobyte per hour',
@@ -278,6 +295,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.kiloBytePerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'kilobyte per minute',
@@ -291,6 +309,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.kiloBytePerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'kilobyte per second',
@@ -304,6 +323,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.kiloBytePerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'megabit per hour',
@@ -317,6 +337,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.megaBitPerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'megabit per minute',
@@ -330,6 +351,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.megaBitPerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'megabit per second',
@@ -343,6 +365,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.megaBitPerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'megabyte per hour',
@@ -356,6 +379,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.megaBytePerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'megabyte per minute',
@@ -369,6 +393,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.megaBytePerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'megabyte per second',
@@ -382,6 +407,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.megaBytePerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'petabit per hour',
@@ -395,6 +421,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.petaBitPerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'petabit per minute',
@@ -408,6 +435,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.petaBitPerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'petabit per second',
@@ -421,6 +449,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.petaBitPerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'petabyte per hour',
@@ -434,6 +463,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.petaBytePerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'petabyte per minute',
@@ -447,6 +477,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.petaBytePerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'petabyte per second',
@@ -460,6 +491,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.petaBytePerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'terabit per hour',
@@ -473,6 +505,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.teraBitPerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'terabit per minute',
@@ -486,6 +519,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.teraBitPerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'terabit per second',
@@ -499,6 +533,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.teraBitPerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'terabyte per hour',
@@ -512,6 +547,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.teraBytePerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'terabyte per minute',
@@ -525,6 +561,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.teraBytePerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'terabyte per second',
@@ -538,6 +575,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.teraBytePerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'yottabit per hour',
@@ -551,6 +589,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.yottaBitPerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'yottabit per minute',
@@ -564,6 +603,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.yottaBitPerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'yottabit per second',
@@ -577,6 +617,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.yottaBitPerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'yottabyte per hour',
@@ -590,6 +631,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.yottaBytePerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'yottabyte per minute',
@@ -603,6 +645,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.yottaBytePerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'yottabyte per second',
@@ -616,6 +659,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.yottaBytePerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'zettabit per hour',
@@ -629,6 +673,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.zettaBitPerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'zettabit per minute',
@@ -642,6 +687,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.zettaBitPerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'zettabit per second',
@@ -655,6 +701,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.zettaBitPerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'zettabyte per hour',
@@ -668,6 +715,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.zettaBytePerHour,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'zettabyte per minute',
@@ -681,6 +729,7 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.zettaBytePerMinute,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
   Unit<DataRateUnits>(
     'zettabyte per second',
@@ -694,5 +743,6 @@ Set<Unit> dataRateUnitDetails = {
     ),
     DataRateUnits.zettaBytePerSecond,
     variation: true,
+    system: unitSystem[UnitSystems.binary],
   ),
 };
