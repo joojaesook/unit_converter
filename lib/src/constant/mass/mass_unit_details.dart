@@ -252,7 +252,7 @@ final Set<Unit> massUnitDetails = {
     MassUnits.longHundredWeight,
   ),
   Unit<MassUnits>(
-    'long tonne',
+    'long ton',
     createSymbol(
       const [
         SymbolParts.long,
@@ -261,7 +261,7 @@ final Set<Unit> massUnitDetails = {
         SymbolParts.lN,
       ],
     ),
-    MassUnits.longTonne,
+    MassUnits.longTon,
     system: unitSystem[UnitSystems.imperial],
   ),
   Unit<MassUnits>(
@@ -461,7 +461,7 @@ final Set<Unit> massUnitDetails = {
     system: unitSystem[UnitSystems.us],
   ),
   Unit<MassUnits>(
-    'short tonne',
+    'short ton',
     createSymbol(
       const [
         SymbolParts.short,
@@ -470,7 +470,7 @@ final Set<Unit> massUnitDetails = {
         SymbolParts.lN,
       ],
     ),
-    MassUnits.shortTonne,
+    MassUnits.shortTon,
     system: unitSystem[UnitSystems.us],
   ),
   Unit<MassUnits>(

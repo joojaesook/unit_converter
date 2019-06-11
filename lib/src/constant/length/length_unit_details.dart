@@ -45,6 +45,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.attoMetre,
+    americanName: 'attometer',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -88,6 +89,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.centiMetre,
+    americanName: 'centimeter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -141,6 +143,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.decaMetre,
+    americanName: 'decameter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -175,6 +178,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.deciMetre,
+    americanName: 'decimeter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -209,6 +213,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.exaMetre,
+    americanName: 'exameter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -252,6 +257,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.femtoMetre,
+    americanName: 'femtometer',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -323,6 +329,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.gigaMetre,
+    americanName: 'gigameter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -366,6 +373,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.hectoMetre,
+    americanName: 'hectometer',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -409,6 +417,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.kiloMetre,
+    americanName: 'kilometer',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -509,6 +518,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.megaMetre,
+    americanName: 'megameter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -530,6 +540,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.metre,
+    americanName: 'meter',
     baseUnit: true,
   ),
   Unit<LengthUnits>(
@@ -563,6 +574,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.microMetre,
+    americanName: 'micrometer',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -615,6 +627,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.milliMetre,
+    americanName: 'millimeter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -649,6 +662,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.nanoMetre,
+    americanName: 'nanometer',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -701,6 +715,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.petaMetre,
+    americanName: 'petameter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -745,6 +760,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.picoMetre,
+    americanName: 'picometer',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -816,6 +832,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.teraMetre,
+    americanName: 'terameter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -868,6 +885,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.yoctoMetre,
+    americanName: 'yoctometer',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -902,6 +920,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.yottaMetre,
+    americanName: 'yottameter',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -936,6 +955,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.zeptoMetre,
+    americanName: 'zeptometer',
     variation: true,
   ),
   Unit<LengthUnits>(
@@ -970,6 +990,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.zettaMetre,
+    americanName: 'zettameter',
     variation: true,
   ),
   Unit<LengthUnits>(

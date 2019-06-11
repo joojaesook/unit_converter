@@ -268,6 +268,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareAttoMetre,
+    americanName: 'square attometer',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -280,6 +281,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareCentiMetre,
+    americanName: 'square centimeter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -292,6 +294,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareDecaMetre,
+    americanName: 'square decameter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -304,6 +307,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareDeciMetre,
+    americanName: 'square decimeter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -316,6 +320,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareExaMetre,
+    americanName: 'square exameter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -328,6 +333,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareFemtoMetre,
+    americanName: 'square femtometer',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -350,6 +356,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareGigaMetre,
+    americanName: 'square gigameter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -362,6 +369,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareHectoMetre,
+    americanName: 'square hectometer',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -384,6 +392,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareKiloMetre,
+    americanName: 'square kilometer',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -396,6 +405,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareMegaMetre,
+    americanName: 'square megameter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -407,6 +417,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareMetre,
+    americanName: 'square meter',
     baseUnit: true,
   ),
   Unit<AreaUnits>(
@@ -419,6 +430,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareMicroMetre,
+    americanName: 'square micrometer',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -441,6 +453,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareMilliMetre,
+    americanName: 'square millimeter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -453,6 +466,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareNanoMetre,
+    americanName: 'square nanometer',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -474,6 +488,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squarePetaMetre,
+    americanName: 'square petameter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -486,6 +501,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squarePicoMetre,
+    americanName: 'square picometer',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -498,6 +514,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareTeraMetre,
+    americanName: 'square terameter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -520,6 +537,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareYoctoMetre,
+    americanName: 'square yoctometer',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -532,6 +550,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareYottaMetre,
+    americanName: 'square yottameter',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -544,6 +563,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareZeptoMetre,
+    americanName: 'square zeptometer',
     variation: true,
   ),
   Unit<AreaUnits>(
@@ -556,6 +576,7 @@ final Set<Unit> areaUnitDetails = {
       ],
     ),
     AreaUnits.squareZettaMetre,
+    americanName: 'square zettameter',
     variation: true,
   ),
   Unit<AreaUnits>(

@@ -16,6 +16,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareAttoMetre,
+    americanName: 'candela per square attometer',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -30,6 +31,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareCentiMetre,
+    americanName: 'candela per square centimeter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -44,6 +46,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareDecaMetre,
+    americanName: 'candela per square decameter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -58,6 +61,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareDeciMetre,
+    americanName: 'candela per square decimeter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -72,6 +76,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareExaMetre,
+    americanName: 'candela per square exameter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -86,6 +91,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareFemtoMetre,
+    americanName: 'candela per square femtometer',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -112,6 +118,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareGigaMetre,
+    americanName: 'candela per square gigameter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -126,6 +133,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareHectoMetre,
+    americanName: 'candela per square hectometer',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -152,6 +160,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareKiloMetre,
+    americanName: 'candela per square kilometer',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -166,6 +175,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareMegaMetre,
+    americanName: 'candela per square megameter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -179,6 +189,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareMetre,
+    americanName: 'candela per square meter',
     baseUnit: true,
   ),
   Unit<LuminanceUnits>(
@@ -193,6 +204,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareMicroMetre,
+    americanName: 'candela per square micrometer',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -207,6 +219,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareMilliMetre,
+    americanName: 'candela per square millimeter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -221,6 +234,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareNanoMetre,
+    americanName: 'candela per square nanometer',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -235,6 +249,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquarePetaMetre,
+    americanName: 'candela per square petameter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -249,6 +264,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquarePicoMetre,
+    americanName: 'candela per square picometer',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -263,6 +279,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareTeraMetre,
+    americanName: 'candela per square terameter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -277,6 +294,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareYoctoMetre,
+    americanName: 'candela per square yoctometer',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -291,6 +309,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareYottaMetre,
+    americanName: 'candela per square yottameter',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -305,6 +324,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareZeptoMetre,
+    americanName: 'candela per square zeptometer',
     variation: true,
   ),
   Unit<LuminanceUnits>(
@@ -319,6 +339,7 @@ final Set<Unit> luminanceUnitDetails = {
       ],
     ),
     LuminanceUnits.candelaPerSquareZettaMetre,
+    americanName: 'candela per square zettameter',
     variation: true,
   ),
   Unit<LuminanceUnits>(

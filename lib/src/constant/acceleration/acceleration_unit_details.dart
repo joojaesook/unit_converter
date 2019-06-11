@@ -28,6 +28,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerHourPerSecond,
+    americanName: 'attometer per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -42,6 +43,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerHourSquared,
+    americanName: 'attometer per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -57,6 +59,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerMinutePerSecond,
+    americanName: 'attometer per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -71,6 +74,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerMinuteSquared,
+    americanName: 'attometer per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -85,6 +89,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.attoMetrePerSecondSquared,
+    americanName: 'attometer per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -111,6 +116,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerHourPerSecond,
+    americanName: 'centimeter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -125,6 +131,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerHourSquared,
+    americanName: 'centimeter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -140,6 +147,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerMinutePerSecond,
+    americanName: 'centimeter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -154,6 +162,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerMinuteSquared,
+    americanName: 'centimeter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -168,6 +177,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.centiMetrePerSecondSquared,
+    americanName: 'centimeter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -194,6 +204,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerHourPerSecond,
+    americanName: 'decameter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -208,6 +219,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerHourSquared,
+    americanName: 'decameter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -223,6 +235,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerMinutePerSecond,
+    americanName: 'decameter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -237,6 +250,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerMinuteSquared,
+    americanName: 'decameter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -251,6 +265,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.decaMetrePerSecondSquared,
+    americanName: 'decameter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -277,6 +292,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerHourPerSecond,
+    americanName: 'decimeter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -291,6 +307,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerHourSquared,
+    americanName: 'decimeter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -306,6 +323,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerMinutePerSecond,
+    americanName: 'decimeter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -320,6 +338,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerMinuteSquared,
+    americanName: 'decimeter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -334,6 +353,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.deciMetrePerSecondSquared,
+    americanName: 'decimeter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -360,6 +380,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerHourPerSecond,
+    americanName: 'exameter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -374,6 +395,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerHourSquared,
+    americanName: 'exameter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -389,6 +411,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerMinutePerSecond,
+    americanName: 'exameter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -403,6 +426,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerMinuteSquared,
+    americanName: 'exameter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -417,6 +441,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.exaMetrePerSecondSquared,
+    americanName: 'exameter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -443,6 +468,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerHourPerSecond,
+    americanName: 'femtometer per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -457,6 +483,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerHourSquared,
+    americanName: 'femtometer per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -472,6 +499,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerMinutePerSecond,
+    americanName: 'femtometer per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -486,6 +514,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerMinuteSquared,
+    americanName: 'femtometer per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -500,6 +529,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.femtoMetrePerSecondSquared,
+    americanName: 'femtometer per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -597,6 +627,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerHourPerSecond,
+    americanName: 'gigameter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -611,6 +642,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerHourSquared,
+    americanName: 'gigameter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -626,6 +658,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerMinutePerSecond,
+    americanName: 'gigameter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -640,6 +673,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerMinuteSquared,
+    americanName: 'gigameter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -654,6 +688,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.gigaMetrePerSecondSquared,
+    americanName: 'gigameter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -680,6 +715,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerHourPerSecond,
+    americanName: 'hectometer per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -694,6 +730,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerHourSquared,
+    americanName: 'hectometer per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -709,6 +746,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerMinutePerSecond,
+    americanName: 'hectometer per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -723,6 +761,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerMinuteSquared,
+    americanName: 'hectometer per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -737,6 +776,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.hectoMetrePerSecondSquared,
+    americanName: 'hectometer per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -825,6 +865,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerHourPerSecond,
+    americanName: 'kilometer per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -839,6 +880,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerHourSquared,
+    americanName: 'kilometer per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -854,6 +896,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerMinutePerSecond,
+    americanName: 'kilometer per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -868,6 +911,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerMinuteSquared,
+    americanName: 'kilometer per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -882,6 +926,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.kiloMetrePerSecondSquared,
+    americanName: 'kilometer per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -908,6 +953,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerHourPerSecond,
+    americanName: 'megameter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -922,6 +968,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerHourSquared,
+    americanName: 'megameter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -937,6 +984,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerMinutePerSecond,
+    americanName: 'megameter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -951,6 +999,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerMinuteSquared,
+    americanName: 'megameter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -965,6 +1014,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.megaMetrePerSecondSquared,
+    americanName: 'megameter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -979,6 +1029,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.metrePerHourPerSecond,
+    americanName: 'meter per hour per second',
   ),
   Unit<AccelerationUnits>(
     'metre per hour squared',
@@ -991,6 +1042,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.metrePerHourSquared,
+    americanName: 'meter per hour squared',
   ),
   Unit<AccelerationUnits>(
     'metre per minute per second',
@@ -1004,6 +1056,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.metrePerMinutePerSecond,
+    americanName: 'meter per minute per second',
   ),
   Unit<AccelerationUnits>(
     'metre per minute squared',
@@ -1016,6 +1069,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.metrePerMinuteSquared,
+    americanName: 'meter per minute squared',
   ),
   Unit<AccelerationUnits>(
     'metre per second squared',
@@ -1028,6 +1082,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.metrePerSecondSquared,
+    americanName: 'meter per second squared',
     baseUnit: true,
   ),
   Unit<AccelerationUnits>(
@@ -1054,6 +1109,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerHourPerSecond,
+    americanName: 'micrometer per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1068,6 +1124,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerHourSquared,
+    americanName: 'micrometer per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1083,6 +1140,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerMinutePerSecond,
+    americanName: 'micrometer per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1097,6 +1155,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerMinuteSquared,
+    americanName: 'micrometer per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1111,6 +1170,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.microMetrePerSecondSquared,
+    americanName: 'micrometer per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1199,6 +1259,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerHourPerSecond,
+    americanName: 'millimeter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1213,6 +1274,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerHourSquared,
+    americanName: 'millimeter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1228,6 +1290,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerMinutePerSecond,
+    americanName: 'millimeter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1242,6 +1305,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerMinuteSquared,
+    americanName: 'millimeter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1256,6 +1320,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.milliMetrePerSecondSquared,
+    americanName: 'millimeter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1282,6 +1347,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerHourPerSecond,
+    americanName: 'nanometer per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1296,6 +1362,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerHourSquared,
+    americanName: 'nanometer per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1311,6 +1378,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerMinutePerSecond,
+    americanName: 'nanometer per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1325,6 +1393,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerMinuteSquared,
+    americanName: 'nanometer per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1339,6 +1408,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.nanoMetrePerSecondSquared,
+    americanName: 'nanometer per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1365,6 +1435,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerHourPerSecond,
+    americanName: 'petameter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1379,6 +1450,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerHourSquared,
+    americanName: 'petameter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1394,6 +1466,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerMinutePerSecond,
+    americanName: 'petameter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1408,6 +1481,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerMinuteSquared,
+    americanName: 'petameter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1422,6 +1496,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.petaMetrePerSecondSquared,
+    americanName: 'petameter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1448,6 +1523,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerHourPerSecond,
+    americanName: 'picometer per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1462,6 +1538,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerHourSquared,
+    americanName: 'picometer per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1477,6 +1554,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerMinutePerSecond,
+    americanName: 'picometer per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1491,6 +1569,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerMinuteSquared,
+    americanName: 'picometer per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1505,6 +1584,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.picoMetrePerSecondSquared,
+    americanName: 'picometer per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1541,6 +1621,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerHourPerSecond,
+    americanName: 'terameter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1555,6 +1636,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerHourSquared,
+    americanName: 'terameter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1570,6 +1652,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerMinutePerSecond,
+    americanName: 'terameter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1584,6 +1667,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerMinuteSquared,
+    americanName: 'terameter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1598,6 +1682,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.teraMetrePerSecondSquared,
+    americanName: 'terameter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1686,6 +1771,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerHourPerSecond,
+    americanName: 'yoctometer per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1700,6 +1786,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerHourSquared,
+    americanName: 'yoctometer per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1715,6 +1802,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerMinutePerSecond,
+    americanName: 'yoctometer per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1729,6 +1817,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerMinuteSquared,
+    americanName: 'yoctometer per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1743,6 +1832,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yoctoMetrePerSecondSquared,
+    americanName: 'yoctometer per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1769,6 +1859,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerHourPerSecond,
+    americanName: 'yottameter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1783,6 +1874,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerHourSquared,
+    americanName: 'yottameter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1798,6 +1890,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerMinutePerSecond,
+    americanName: 'yottameter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1812,6 +1905,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerMinuteSquared,
+    americanName: 'yottameter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1826,6 +1920,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.yottaMetrePerSecondSquared,
+    americanName: 'yottameter per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1852,6 +1947,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerHourPerSecond,
+    americanName: 'zeptometer per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1866,6 +1962,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerHourSquared,
+    americanName: 'zeptometer per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1881,6 +1978,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerMinutePerSecond,
+    americanName: 'zeptometer per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1895,6 +1993,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerMinuteSquared,
+    americanName: 'zeptometer per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1909,6 +2008,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zeptoMetrePerSecondSquared,
+    americanName: 'zeptometer per second squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1935,6 +2035,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerHourPerSecond,
+    americanName: 'zettameter per hour per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1949,6 +2050,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerHourSquared,
+    americanName: 'zettameter per hour squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1964,6 +2066,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerMinutePerSecond,
+    americanName: 'zettameter per minute per second',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1978,6 +2081,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerMinuteSquared,
+    americanName: 'zettameter per minute squared',
     variation: true,
   ),
   Unit<AccelerationUnits>(
@@ -1992,6 +2096,7 @@ final Set<Unit> accelerationUnitDetails = {
       ],
     ),
     AccelerationUnits.zettaMetrePerSecondSquared,
+    americanName: 'zettameter per second squared',
     variation: true,
   ),
 };

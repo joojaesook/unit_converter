@@ -16,6 +16,7 @@ final Set<Unit> bloodCholesterolUnitDetails = {
       ],
     ),
     BloodCholesterolUnits.milliGramPerDeciLitre,
+    americanName: 'milligram per deciliter',
     baseUnit: true,
   ),
   Unit<BloodCholesterolUnits>(
@@ -29,5 +30,6 @@ final Set<Unit> bloodCholesterolUnitDetails = {
       ],
     ),
     BloodCholesterolUnits.milliMolePerLitre,
+    americanName: 'millimole per liter',
   ),
 };

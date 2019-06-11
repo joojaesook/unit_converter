@@ -16,6 +16,7 @@ final Set<Unit> bloodGlucoseUnitDetails = {
       ],
     ),
     BloodGlucoseUnits.milliGramPerDeciLitre,
+    americanName: 'milligram per deciliter',
     baseUnit: true,
   ),
   Unit<BloodGlucoseUnits>(
@@ -29,5 +30,6 @@ final Set<Unit> bloodGlucoseUnitDetails = {
       ],
     ),
     BloodGlucoseUnits.milliMolePerLitre,
+    americanName: 'millimole per liter',
   ),
 };

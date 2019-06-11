@@ -181,6 +181,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareAttoMetrePerDay,
+    americanName: 'square attometer per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -195,6 +196,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareAttoMetrePerHour,
+    americanName: 'square attometer per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -209,6 +211,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareAttoMetrePerMinute,
+    americanName: 'square attometer per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -223,6 +226,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareAttoMetrePerSecond,
+    americanName: 'square attometer per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -237,6 +241,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareCentiMetrePerDay,
+    americanName: 'square centimeter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -251,6 +256,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareCentiMetrePerHour,
+    americanName: 'square centimeter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -265,6 +271,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareCentiMetrePerMinute,
+    americanName: 'square centimeter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -279,6 +286,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareCentiMetrePerSecond,
+    americanName: 'square centimeter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -293,6 +301,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareDecaMetrePerDay,
+    americanName: 'square decameter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -307,6 +316,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareDecaMetrePerHour,
+    americanName: 'square decameter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -321,6 +331,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareDecaMetrePerMinute,
+    americanName: 'square decameter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -335,6 +346,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareDecaMetrePerSecond,
+    americanName: 'square decameter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -349,6 +361,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareDeciMetrePerDay,
+    americanName: 'square decimeter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -363,6 +376,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareDeciMetrePerHour,
+    americanName: 'square decimeter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -377,6 +391,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareDeciMetrePerMinute,
+    americanName: 'square decimeter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -391,6 +406,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareDeciMetrePerSecond,
+    americanName: 'square decimeter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -405,6 +421,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareExaMetrePerDay,
+    americanName: 'square exameter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -419,6 +436,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareExaMetrePerHour,
+    americanName: 'square exameter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -433,6 +451,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareExaMetrePerMinute,
+    americanName: 'square exameter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -447,6 +466,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareExaMetrePerSecond,
+    americanName: 'square exameter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -461,6 +481,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareFemtoMetrePerDay,
+    americanName: 'square femtometer per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -475,6 +496,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareFemtoMetrePerHour,
+    americanName: 'square femtometer per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -489,6 +511,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareFemtoMetrePerMinute,
+    americanName: 'square femtometer per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -503,6 +526,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareFemtoMetrePerSecond,
+    americanName: 'square femtometer per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -517,6 +541,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareGigaMetrePerDay,
+    americanName: 'square gigameter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -531,6 +556,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareGigaMetrePerHour,
+    americanName: 'square gigameter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -545,6 +571,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareGigaMetrePerMinute,
+    americanName: 'square gigameter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -559,6 +586,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareGigaMetrePerSecond,
+    americanName: 'square gigameter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -573,6 +601,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareHectoMetrePerDay,
+    americanName: 'square hectometer per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -587,6 +616,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareHectoMetrePerHour,
+    americanName: 'square hectometer per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -601,6 +631,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareHectoMetrePerMinute,
+    americanName: 'square hectometer per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -615,6 +646,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareHectoMetrePerSecond,
+    americanName: 'square hectometer per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -629,6 +661,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareKiloMetrePerDay,
+    americanName: 'square kilometer per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -643,6 +676,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareKiloMetrePerHour,
+    americanName: 'square kilometer per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -657,6 +691,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareKiloMetrePerMinute,
+    americanName: 'square kilometer per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -671,6 +706,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareKiloMetrePerSecond,
+    americanName: 'square kilometer per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -685,6 +721,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMegaMetrePerDay,
+    americanName: 'square megameter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -699,6 +736,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMegaMetrePerHour,
+    americanName: 'square megameter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -713,6 +751,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMegaMetrePerMinute,
+    americanName: 'square megameter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -727,6 +766,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMegaMetrePerSecond,
+    americanName: 'square megameter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -740,6 +780,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMetrePerDay,
+    americanName: 'square meter per day',
   ),
   Unit<KinematicViscocityUnits>(
     'square metre per hour',
@@ -752,6 +793,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMetrePerHour,
+    americanName: 'square meter per hour',
   ),
   Unit<KinematicViscocityUnits>(
     'square metre per minute',
@@ -764,6 +806,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMetrePerMinute,
+    americanName: 'square meter per minute',
   ),
   Unit<KinematicViscocityUnits>(
     'square metre per second',
@@ -776,6 +819,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMetrePerSecond,
+    americanName: 'square meter per second',
     baseUnit: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -790,6 +834,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMicroMetrePerDay,
+    americanName: 'square micrometer per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -804,6 +849,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMicroMetrePerHour,
+    americanName: 'square micrometer per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -818,6 +864,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMicroMetrePerMinute,
+    americanName: 'square micrometer per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -832,6 +879,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMicroMetrePerSecond,
+    americanName: 'square micrometer per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -846,6 +894,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMilliMetrePerDay,
+    americanName: 'square millimeter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -860,6 +909,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMilliMetrePerHour,
+    americanName: 'square millimeter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -874,6 +924,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMilliMetrePerMinute,
+    americanName: 'square millimeter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -888,6 +939,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareMilliMetrePerSecond,
+    americanName: 'square millimeter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -902,6 +954,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareNanoMetrePerDay,
+    americanName: 'square nanometer per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -916,6 +969,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareNanoMetrePerHour,
+    americanName: 'square nanometer per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -930,6 +984,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareNanoMetrePerMinute,
+    americanName: 'square nanometer per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -944,6 +999,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareNanoMetrePerSecond,
+    americanName: 'square nanometer per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -958,6 +1014,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squarePetaMetrePerDay,
+    americanName: 'square petameter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -972,6 +1029,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squarePetaMetrePerHour,
+    americanName: 'square petameter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -986,6 +1044,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squarePetaMetrePerMinute,
+    americanName: 'square petameter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1000,6 +1059,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squarePetaMetrePerSecond,
+    americanName: 'square petameter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1014,6 +1074,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squarePicoMetrePerDay,
+    americanName: 'square picometer per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1028,6 +1089,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squarePicoMetrePerHour,
+    americanName: 'square picometer per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1042,6 +1104,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squarePicoMetrePerMinute,
+    americanName: 'square picometer per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1056,6 +1119,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squarePicoMetrePerSecond,
+    americanName: 'square picometer per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1070,6 +1134,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareTeraMetrePerDay,
+    americanName: 'square terameter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1084,6 +1149,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareTeraMetrePerHour,
+    americanName: 'square terameter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1098,6 +1164,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareTeraMetrePerMinute,
+    americanName: 'square terameter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1112,6 +1179,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareTeraMetrePerSecond,
+    americanName: 'square terameter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1126,6 +1194,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareYoctoMetrePerDay,
+    americanName: 'square yoctometer per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1140,6 +1209,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareYoctoMetrePerHour,
+    americanName: 'square yoctometer per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1154,6 +1224,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareYoctoMetrePerMinute,
+    americanName: 'square yoctometer per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1168,6 +1239,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareYoctoMetrePerSecond,
+    americanName: 'square yoctometer per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1182,6 +1254,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareYottaMetrePerDay,
+    americanName: 'square yottameter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1196,6 +1269,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareYottaMetrePerHour,
+    americanName: 'square yottameter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1210,6 +1284,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareYottaMetrePerMinute,
+    americanName: 'square yottameter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1224,6 +1299,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareYottaMetrePerSecond,
+    americanName: 'square yottameter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1238,6 +1314,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareZeptoMetrePerDay,
+    americanName: 'square zeptometer per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1252,6 +1329,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareZeptoMetrePerHour,
+    americanName: 'square zeptometer per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1266,6 +1344,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareZeptoMetrePerMinute,
+    americanName: 'square zeptometer per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1280,6 +1359,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareZeptoMetrePerSecond,
+    americanName: 'square zeptometer per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1294,6 +1374,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareZettaMetrePerDay,
+    americanName: 'square zettameter per day',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1308,6 +1389,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareZettaMetrePerHour,
+    americanName: 'square zettameter per hour',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1322,6 +1404,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareZettaMetrePerMinute,
+    americanName: 'square zettameter per minute',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(
@@ -1336,6 +1419,7 @@ Set<Unit> kinematicViscocityUnitDetails = {
       ],
     ),
     KinematicViscocityUnits.squareZettaMetrePerSecond,
+    americanName: 'square zettameter per second',
     variation: true,
   ),
   Unit<KinematicViscocityUnits>(

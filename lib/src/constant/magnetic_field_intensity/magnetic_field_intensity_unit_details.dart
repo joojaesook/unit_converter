@@ -14,6 +14,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.amperePerMetre,
+    americanName: 'ampere per meter',
     baseUnit: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -27,6 +28,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.attoAmperePerMetre,
+    americanName: 'attoampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -40,6 +42,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.centiAmperePerMetre,
+    americanName: 'centiampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -53,6 +56,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.decaAmperePerMetre,
+    americanName: 'decaampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -66,6 +70,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.deciAmperePerMetre,
+    americanName: 'deciampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -79,6 +84,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.exaAmperePerMetre,
+    americanName: 'exaampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -92,6 +98,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.femtoAmperePerMetre,
+    americanName: 'femtoampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -105,6 +112,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.gigaAmperePerMetre,
+    americanName: 'gigaampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -118,6 +126,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.hectoAmperePerMetre,
+    americanName: 'hectoampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -131,6 +140,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.kiloAmperePerMetre,
+    americanName: 'kiloampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -144,6 +154,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.megaAmperePerMetre,
+    americanName: 'megaampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -157,6 +168,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.microAmperePerMetre,
+    americanName: 'microampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -170,6 +182,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.milliAmperePerMetre,
+    americanName: 'milliampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -183,6 +196,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.nanoAmperePerMetre,
+    americanName: 'nanoampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -205,6 +219,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.petaAmperePerMetre,
+    americanName: 'petaampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -218,6 +233,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.picoAmperePerMetre,
+    americanName: 'picoampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -231,6 +247,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.teraAmperePerMetre,
+    americanName: 'teraampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -244,6 +261,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.yoctoAmperePerMetre,
+    americanName: 'yoctoampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -257,6 +275,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.yottaAmperePerMetre,
+    americanName: 'yottaampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -270,6 +289,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.zeptoAmperePerMetre,
+    americanName: 'zeptoampere per meter',
     variation: true,
   ),
   Unit<MagneticFieldIntensityUnits>(
@@ -283,6 +303,7 @@ final Set<Unit> magneticFieldIntensityUnitDetails = {
       ],
     ),
     MagneticFieldIntensityUnits.zettaAmperePerMetre,
+    americanName: 'zettaampere per meter',
     variation: true,
   ),
 };

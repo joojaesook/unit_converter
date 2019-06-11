@@ -224,6 +224,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareAttoMetre,
+    americanName: 'lumen per square attometer',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -238,6 +239,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareCentiMetre,
+    americanName: 'lumen per square centimeter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -252,6 +254,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareDecaMetre,
+    americanName: 'lumen per square decameter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -266,6 +269,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareDeciMetre,
+    americanName: 'lumen per square decimeter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -280,6 +284,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareExaMetre,
+    americanName: 'lumen per square exameter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -294,6 +299,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareFemtoMetre,
+    americanName: 'lumen per square femtometer',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -320,6 +326,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareGigaMetre,
+    americanName: 'lumen per square gigameter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -334,6 +341,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareHectoMetre,
+    americanName: 'lumen per square hectometer',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -360,6 +368,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareKiloMetre,
+    americanName: 'lumen per square kilometer',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -374,6 +383,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareMegaMetre,
+    americanName: 'lumen per square megameter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -387,6 +397,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareMetre,
+    americanName: 'lumen per square meter',
   ),
   Unit<IlluminanceUnits>(
     'lumen per square micrometre',
@@ -400,6 +411,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareMicroMetre,
+    americanName: 'lumen per square micrometer',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -414,6 +426,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareMilliMetre,
+    americanName: 'lumen per square millimeter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -428,6 +441,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareNanoMetre,
+    americanName: 'lumen per square nanometer',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -442,6 +456,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquarePetaMetre,
+    americanName: 'lumen per square petameter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -456,6 +471,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquarePicoMetre,
+    americanName: 'lumen per square picometer',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -470,6 +486,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareTeraMetre,
+    americanName: 'lumen per square terameter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -484,6 +501,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareYoctoMetre,
+    americanName: 'lumen per square yoctometer',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -498,6 +516,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareYottaMetre,
+    americanName: 'lumen per square yottameter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -512,6 +531,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareZeptoMetre,
+    americanName: 'lumen per square zeptometer',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
@@ -526,6 +546,7 @@ final Set<Unit> illuminanceUnitDetails = {
       ],
     ),
     IlluminanceUnits.lumenPerSquareZettaMetre,
+    americanName: 'lumen per square zettameter',
     variation: true,
   ),
   Unit<IlluminanceUnits>(
