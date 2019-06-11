@@ -9,7 +9,7 @@ enum ConversionType {
   dataRate,
   dynamicViscocity,
   electricCharge,
-  electricConductance,
+  electricalConductance,
   electricCurrent,
   electricPotential,
   electricalResistance,

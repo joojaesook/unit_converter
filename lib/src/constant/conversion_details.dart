@@ -8,9 +8,9 @@ import 'data/data_conversion_details.dart';
 import 'data_rate/data_rate_conversion_details.dart';
 import 'dynamic_viscocity/dynamic_viscocity_conversion_details.dart';
 import 'electric_charge/electric_charge_conversion_details.dart';
-import 'electric_conductance/electric_conductance_conversion_details.dart';
 import 'electric_current/electric_current_conversion_details.dart';
 import 'electric_potential/electric_potential_conversion_details.dart';
+import 'electrical_conductance/electrical_conductance_conversion_details.dart';
 import 'electrical_resistance/electrical_resistance_conversion_details.dart';
 import 'force/force_conversion_details.dart';
 import 'frequency/frequency_conversion_details.dart';
@@ -42,7 +42,7 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.dataRate: dataRateConversionDetails,
   ConversionType.dynamicViscocity: dynamicViscocityConversionDetails,
   ConversionType.electricCharge: electricChargeConversionDetails,
-  ConversionType.electricConductance: electricConductanceConversionDetails,
+  ConversionType.electricalConductance: electricalConductanceConversionDetails,
   ConversionType.electricCurrent: electricCurrentConversionDetails,
   ConversionType.electricPotential: electricPotentialConversionDetails,
   ConversionType.electricalResistance: electricalResistanceConversionDetails,

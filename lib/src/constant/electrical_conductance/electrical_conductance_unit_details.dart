@@ -1,9 +1,9 @@
-import '../../enum/electric_conductance_units.dart';
+import '../../enum/electrical_conductance_units.dart';
 import '../../enum/symbol_parts.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 
-final Set<Unit> electricConductanceUnitDetails = {
+final Set<Unit> electricalConductanceUnitDetails = {
   Unit(
     'abmho',
     createSymbol(
@@ -12,7 +12,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.abMho,
+    ElectricalConductanceUnits.abMho,
   ),
   Unit(
     'absiemens',
@@ -22,7 +22,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.abSiemens,
+    ElectricalConductanceUnits.abSiemens,
   ),
   Unit(
     'attomho',
@@ -32,7 +32,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.attoMho,
+    ElectricalConductanceUnits.attoMho,
   ),
   Unit(
     'attosiemens',
@@ -42,7 +42,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.attoSiemens,
+    ElectricalConductanceUnits.attoSiemens,
   ),
   Unit(
     'centimho',
@@ -52,7 +52,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.centiMho,
+    ElectricalConductanceUnits.centiMho,
   ),
   Unit(
     'centisiemens',
@@ -62,7 +62,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.centiSiemens,
+    ElectricalConductanceUnits.centiSiemens,
   ),
   Unit(
     'decamho',
@@ -72,7 +72,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.decaMho,
+    ElectricalConductanceUnits.decaMho,
   ),
   Unit(
     'decasiemens',
@@ -82,7 +82,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.decaSiemens,
+    ElectricalConductanceUnits.decaSiemens,
   ),
   Unit(
     'decimho',
@@ -92,7 +92,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.deciMho,
+    ElectricalConductanceUnits.deciMho,
   ),
   Unit(
     'decisiemens',
@@ -102,7 +102,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.deciSiemens,
+    ElectricalConductanceUnits.deciSiemens,
   ),
   Unit(
     'examho',
@@ -112,7 +112,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.exaMho,
+    ElectricalConductanceUnits.exaMho,
   ),
   Unit(
     'exasiemens',
@@ -122,7 +122,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.exaSiemens,
+    ElectricalConductanceUnits.exaSiemens,
   ),
   Unit(
     'femtomho',
@@ -132,7 +132,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.femtoMho,
+    ElectricalConductanceUnits.femtoMho,
   ),
   Unit(
     'femtosiemens',
@@ -142,7 +142,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.femtoSiemens,
+    ElectricalConductanceUnits.femtoSiemens,
   ),
   Unit(
     'gigamho',
@@ -152,7 +152,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.gigaMho,
+    ElectricalConductanceUnits.gigaMho,
   ),
   Unit(
     'gigasiemens',
@@ -162,7 +162,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.gigaSiemens,
+    ElectricalConductanceUnits.gigaSiemens,
   ),
   Unit(
     'hectomho',
@@ -172,7 +172,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.hectoMho,
+    ElectricalConductanceUnits.hectoMho,
   ),
   Unit(
     'hectosiemens',
@@ -182,7 +182,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.hectoSiemens,
+    ElectricalConductanceUnits.hectoSiemens,
   ),
   Unit(
     'kilomho',
@@ -192,7 +192,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.kiloMho,
+    ElectricalConductanceUnits.kiloMho,
   ),
   Unit(
     'kilosiemens',
@@ -202,7 +202,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.kiloSiemens,
+    ElectricalConductanceUnits.kiloSiemens,
   ),
   Unit(
     'megamho',
@@ -212,7 +212,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.megaMho,
+    ElectricalConductanceUnits.megaMho,
   ),
   Unit(
     'megasiemens',
@@ -222,7 +222,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.megaSiemens,
+    ElectricalConductanceUnits.megaSiemens,
   ),
   Unit(
     'mho',
@@ -231,7 +231,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.mho,
+    ElectricalConductanceUnits.mho,
   ),
   Unit(
     'micromho',
@@ -241,7 +241,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.micrMho,
+    ElectricalConductanceUnits.micrMho,
   ),
   Unit(
     'microsiemens',
@@ -251,7 +251,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.micrSiemens,
+    ElectricalConductanceUnits.micrSiemens,
   ),
   Unit(
     'millimho',
@@ -261,7 +261,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.milliMho,
+    ElectricalConductanceUnits.milliMho,
   ),
   Unit(
     'millisiemens',
@@ -271,7 +271,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.milliSiemens,
+    ElectricalConductanceUnits.milliSiemens,
   ),
   Unit(
     'nanomho',
@@ -281,7 +281,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.nanoMho,
+    ElectricalConductanceUnits.nanoMho,
   ),
   Unit(
     'nanosiemens',
@@ -291,7 +291,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.nanoSiemens,
+    ElectricalConductanceUnits.nanoSiemens,
   ),
   Unit(
     'petamho',
@@ -301,7 +301,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.petaMho,
+    ElectricalConductanceUnits.petaMho,
   ),
   Unit(
     'petasiemens',
@@ -311,7 +311,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.petaSiemens,
+    ElectricalConductanceUnits.petaSiemens,
   ),
   Unit(
     'picomho',
@@ -321,7 +321,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.picoMho,
+    ElectricalConductanceUnits.picoMho,
   ),
   Unit(
     'picosiemens',
@@ -331,7 +331,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.picoSiemens,
+    ElectricalConductanceUnits.picoSiemens,
   ),
   Unit(
     'siemens',
@@ -340,7 +340,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.siemens,
+    ElectricalConductanceUnits.siemens,
   ),
   Unit(
     'teramho',
@@ -350,7 +350,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.teraMho,
+    ElectricalConductanceUnits.teraMho,
   ),
   Unit(
     'terasiemens',
@@ -360,7 +360,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.teraSiemens,
+    ElectricalConductanceUnits.teraSiemens,
   ),
   Unit(
     'yoctomho',
@@ -370,7 +370,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.yoctoMho,
+    ElectricalConductanceUnits.yoctoMho,
   ),
   Unit(
     'yoctosiemens',
@@ -380,7 +380,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.yoctoSiemens,
+    ElectricalConductanceUnits.yoctoSiemens,
   ),
   Unit(
     'yottamho',
@@ -390,7 +390,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.yottaMho,
+    ElectricalConductanceUnits.yottaMho,
   ),
   Unit(
     'yottasiemens',
@@ -400,7 +400,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.yottaSiemens,
+    ElectricalConductanceUnits.yottaSiemens,
   ),
   Unit(
     'zeptomho',
@@ -410,7 +410,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.zeptoMho,
+    ElectricalConductanceUnits.zeptoMho,
   ),
   Unit(
     'zeptosiemens',
@@ -420,7 +420,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.zeptoSiemens,
+    ElectricalConductanceUnits.zeptoSiemens,
   ),
   Unit(
     'zettamho',
@@ -430,7 +430,7 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.mho,
       ],
     ),
-    ElectricConductanceUnits.zettaMho,
+    ElectricalConductanceUnits.zettaMho,
   ),
   Unit(
     'zettasiemens',
@@ -440,6 +440,6 @@ final Set<Unit> electricConductanceUnitDetails = {
         SymbolParts.siemens,
       ],
     ),
-    ElectricConductanceUnits.zettaSiemens,
+    ElectricalConductanceUnits.zettaSiemens,
   ),
 };

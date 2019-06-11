@@ -1,5 +1,5 @@
 /// Units of electric conductance
-enum ElectricConductanceUnits {
+enum ElectricalConductanceUnits {
   abMho,
   abSiemens,
   attoMho,
