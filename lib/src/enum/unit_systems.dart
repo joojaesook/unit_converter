@@ -11,6 +11,7 @@ enum UnitSystems {
   land,
   metric,
   mg2,
+  typographic,
   us,
   usDry,
   usDryLevel,

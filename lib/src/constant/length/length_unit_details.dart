@@ -34,7 +34,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.attoLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'attometre',
@@ -77,7 +77,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.centiLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'centimetre',
@@ -109,7 +109,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.chain,
-    // system: systemValue[System.gunter],
+    system: unitSystem[UnitSystems.gunter],
   ),
   Unit<LengthUnits>(
     'chinese mile',
@@ -130,7 +130,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.decaLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'decametre',
@@ -164,7 +164,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.deciLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'decimetre',
@@ -198,7 +198,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.exaLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'exametre',
@@ -241,7 +241,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.femtoLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'femtometre',
@@ -312,7 +312,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.gigaLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'gigametre',
@@ -355,7 +355,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.hectoLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'hectometre',
@@ -398,7 +398,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.kiloLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'kilometre',
@@ -430,7 +430,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.league,
-    // system: systemValue[System.land],
+    system: unitSystem[UnitSystems.land],
   ),
   Unit<LengthUnits>(
     'light-day',
@@ -476,7 +476,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.lightYear,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'link',
@@ -486,7 +486,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.link,
-    // system: systemValue[System.gunter],
+    system: unitSystem[UnitSystems.gunter],
   ),
   Unit<LengthUnits>(
     'megalight year',
@@ -498,7 +498,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.megaLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'megametre',
@@ -542,7 +542,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.microLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'microinch',
@@ -604,7 +604,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.milliLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'millimetre',
@@ -638,7 +638,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.nanoLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'nanometre',
@@ -690,7 +690,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.petaLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'petametre',
@@ -722,6 +722,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.pica,
+    system: unitSystem[UnitSystems.typographic],
   ),
   Unit<LengthUnits>(
     'picolight year',
@@ -733,7 +734,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.picoLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'picometre',
@@ -774,6 +775,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.point,
+    system: unitSystem[UnitSystems.typographic],
   ),
   Unit<LengthUnits>(
     'pole',
@@ -803,7 +805,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.teraLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'terametre',
@@ -855,7 +857,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.yoctoLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'yoctometre',
@@ -889,7 +891,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.yottaLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'yottametre',
@@ -923,7 +925,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.zeptoLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'zeptometre',
@@ -957,7 +959,7 @@ Set<Unit> lengthUnitDetails = {
     ),
     LengthUnits.zettaLightYear,
     variation: true,
-    // system: systemValue[System.julian],
+    system: unitSystem[UnitSystems.julian],
   ),
   Unit<LengthUnits>(
     'zettametre',

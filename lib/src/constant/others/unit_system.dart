@@ -29,6 +29,7 @@ final Map<UnitSystems, String> unitSystem = {
       SymbolParts.superscriptPlus,
     ],
   )}',
+  UnitSystems.typographic: 'Typographic',
   UnitSystems.us: 'US',
   UnitSystems.usDry: 'US dry',
   UnitSystems.usDryLevel: 'US dry level',
