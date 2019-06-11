@@ -1,9 +1,9 @@
 import '../../enum/length_units.dart';
 import '../../enum/symbol_parts.dart';
-import '../../enum/systems.dart';
+import '../../enum/unit_systems.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
-import '../others/system_value.dart';
+import '../others/unit_system.dart';
 
 Set<Unit> lengthUnitDetails = {
   Unit<LengthUnits>(
@@ -291,7 +291,7 @@ Set<Unit> lengthUnitDetails = {
       ],
     ),
     LengthUnits.foot_USSurvey,
-    system: systemValue[Systems.usSurvey],
+    system: unitSystem[UnitSystems.usSurvey],
   ),
   Unit<LengthUnits>(
     'furlong',

@@ -176,7 +176,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.revolution: 'r',
   SymbolParts.rod: 'rd',
   SymbolParts.rood: 'rood',
-  SymbolParts.rutherford: 'rd',
+  SymbolParts.rutherford: 'Rd',
   SymbolParts.second: 's',
   SymbolParts.short: 'sh',
   SymbolParts.siemens: 'S',

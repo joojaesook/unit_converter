@@ -1,9 +1,9 @@
 import '../../enum/mass_units.dart';
 import '../../enum/symbol_parts.dart';
-import '../../enum/systems.dart';
+import '../../enum/unit_systems.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
-import '../others/system_value.dart';
+import '../others/unit_system.dart';
 
 final Set<Unit> massUnitDetails = {
   Unit<MassUnits>(
@@ -373,7 +373,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.ounce_USFoodNutrition,
-    system: systemValue[Systems.usFoodNutrition],
+    system: unitSystem[UnitSystems.usFoodNutrition],
   ),
   Unit<MassUnits>(
     'pennyweight',

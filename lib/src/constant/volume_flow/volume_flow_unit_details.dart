@@ -1,9 +1,9 @@
 import '../../enum/symbol_parts.dart';
-import '../../enum/systems.dart';
+import '../../enum/unit_systems.dart';
 import '../../enum/volume_flow_units.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
-import '../others/system_value.dart';
+import '../others/unit_system.dart';
 
 final Set<Unit> volumeFlowUnitDetails = {
   Unit<VolumeFlowUnits>(
@@ -1619,7 +1619,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gallonPerDay_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeFlowUnits>(
     'gallon per day',
@@ -1631,7 +1631,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gallonPerDay_USLiquid,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowUnits>(
     'gallon per hour',
@@ -1643,7 +1643,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gallonPerHour_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeFlowUnits>(
     'gallon per hour',
@@ -1655,7 +1655,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gallonPerHour_USLiquid,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowUnits>(
     'gallon per minute',
@@ -1667,7 +1667,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gallonPerMinute_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeFlowUnits>(
     'gallon per minute',
@@ -1679,7 +1679,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gallonPerMinute_USLiquid,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowUnits>(
     'gallon per second',
@@ -1691,7 +1691,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gallonPerSecond_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeFlowUnits>(
     'gallon per second',
@@ -1703,7 +1703,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gallonPerSecond_USLiquid,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowUnits>(
     'gigalitre per day',
@@ -2072,7 +2072,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.millionGallonPerDay_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeFlowUnits>(
     'million gallon per day',
@@ -2085,7 +2085,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.millionGallonPerDay_USLiquid,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowUnits>(
     'nanolitre per day',

@@ -1,4 +1,4 @@
-enum Systems {
+enum UnitSystems {
   australian,
   ca2,
   caCO3,

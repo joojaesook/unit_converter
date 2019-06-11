@@ -10,7 +10,7 @@ class Unit<T> {
   final bool baseUnit;
   // Whether this unit is a prefixed variation of another unit
   final bool variation;
-  // The system to which this unit belong to
+  // The unit system to which this unit belong to
   String system;
 
   Unit(this.name, this.symbol, this.type,

@@ -1,9 +1,9 @@
 import '../../enum/symbol_parts.dart';
-import '../../enum/systems.dart';
+import '../../enum/unit_systems.dart';
 import '../../enum/water_hardness_units.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
-import '../others/system_value.dart';
+import '../others/unit_system.dart';
 
 final Set<Unit> waterHardnessUnitDetails = {
   Unit<WaterHardnessUnits>(
@@ -94,7 +94,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_Ca2,
-    system: systemValue[Systems.ca2],
+    system: unitSystem[UnitSystems.ca2],
   ),
   Unit<WaterHardnessUnits>(
     'milligram per litre',
@@ -107,7 +107,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_CaCO3,
-    system: systemValue[Systems.caCO3],
+    system: unitSystem[UnitSystems.caCO3],
   ),
   Unit<WaterHardnessUnits>(
     'milligram per litre',
@@ -120,7 +120,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_CaO,
-    system: systemValue[Systems.caO],
+    system: unitSystem[UnitSystems.caO],
   ),
   Unit<WaterHardnessUnits>(
     'milligram per litre',
@@ -133,7 +133,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_Mg2,
-    system: systemValue[Systems.mg2],
+    system: unitSystem[UnitSystems.mg2],
   ),
   Unit<WaterHardnessUnits>(
     'millimole per litre',
@@ -147,7 +147,7 @@ final Set<Unit> waterHardnessUnitDetails = {
     ),
     WaterHardnessUnits.milliMolePerLitre,
     baseUnit: true,
-    system: systemValue[Systems.caCO3],
+    system: unitSystem[UnitSystems.caCO3],
   ),
   Unit<WaterHardnessUnits>(
     'part per million',
@@ -159,6 +159,6 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.partPerMillion,
-    system: systemValue[Systems.caCO3],
+    system: unitSystem[UnitSystems.caCO3],
   ),
 };

@@ -1,9 +1,9 @@
 import '../../enum/symbol_parts.dart';
-import '../../enum/systems.dart';
+import '../../enum/unit_systems.dart';
 import '../../enum/volume_per_area_units.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
-import '../others/system_value.dart';
+import '../others/unit_system.dart';
 
 final Set<Unit> volumePerAreaUnitDetails = {
   Unit<VolumePerAreaUnits>(
@@ -80,7 +80,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerAcre,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumePerAreaUnits>(
     'gallon per hectare',
@@ -92,7 +92,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerHectare,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumePerAreaUnits>(
     'gallon per square metre',
@@ -105,7 +105,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerSquareMetre,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumePerAreaUnits>(
     'gallon per square mile',
@@ -118,7 +118,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerSquareMile,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumePerAreaUnits>(
     'gallon per square yard',
@@ -131,7 +131,7 @@ final Set<Unit> volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnits.gallonPerSquareYard,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumePerAreaUnits>(
     'litre per acre',

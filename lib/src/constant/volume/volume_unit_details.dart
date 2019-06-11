@@ -1,9 +1,9 @@
 import '../../enum/symbol_parts.dart';
-import '../../enum/systems.dart';
+import '../../enum/unit_systems.dart';
 import '../../enum/volume_units.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
-import '../others/system_value.dart';
+import '../others/unit_system.dart';
 
 final Set<Unit> volumeUnitDetails = {
   Unit<VolumeUnits>(
@@ -56,7 +56,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.bushel_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'bushel',
@@ -66,7 +66,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.bushel_USDryLevel,
-    system: systemValue[Systems.usDryLevel],
+    system: unitSystem[UnitSystems.usDryLevel],
   ),
   Unit<VolumeUnits>(
     'centilitre',
@@ -378,7 +378,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cup_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'cup',
@@ -388,7 +388,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cup_Metric,
-    system: systemValue[Systems.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<VolumeUnits>(
     'cup',
@@ -398,7 +398,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cup_US,
-    system: systemValue[Systems.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<VolumeUnits>(
     'cup',
@@ -408,7 +408,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cup_USFoodNutrition,
-    system: systemValue[Systems.usFoodNutrition],
+    system: unitSystem[UnitSystems.usFoodNutrition],
   ),
   Unit<VolumeUnits>(
     'decalitre',
@@ -462,7 +462,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.firlot_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'firlot',
@@ -472,7 +472,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.firlot_USDry,
-    system: systemValue[Systems.usDry],
+    system: unitSystem[UnitSystems.usDry],
   ),
   Unit<VolumeUnits>(
     'fluid dram',
@@ -484,7 +484,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.fluidDram_US,
-    system: systemValue[Systems.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<VolumeUnits>(
     'fluid ounce',
@@ -496,7 +496,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.fluidOunce_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'fluid ounce',
@@ -508,7 +508,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.fluidOunce_US,
-    system: systemValue[Systems.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<VolumeUnits>(
     'fluid ounce',
@@ -520,7 +520,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.fluidOunce_USFoodNutrition,
-    system: systemValue[Systems.usFoodNutrition],
+    system: unitSystem[UnitSystems.usFoodNutrition],
   ),
   Unit<VolumeUnits>(
     'gallon',
@@ -530,7 +530,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.gallon_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'gallon',
@@ -540,7 +540,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.gallon_USDry,
-    system: systemValue[Systems.usDry],
+    system: unitSystem[UnitSystems.usDry],
   ),
   Unit<VolumeUnits>(
     'gallon',
@@ -550,7 +550,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.gallon_USLiquid,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeUnits>(
     'gigalitre',
@@ -571,7 +571,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.gill_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'gill',
@@ -581,7 +581,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.gill_US,
-    system: systemValue[Systems.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<VolumeUnits>(
     'hectare metre',
@@ -681,7 +681,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.minim_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'minim',
@@ -691,7 +691,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.minim_US,
-    system: systemValue[Systems.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<VolumeUnits>(
     'nanolitre',
@@ -721,7 +721,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.peck_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'peck',
@@ -731,7 +731,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.peck_USDry,
-    system: systemValue[Systems.usDry],
+    system: unitSystem[UnitSystems.usDry],
   ),
   Unit<VolumeUnits>(
     'petalitre',
@@ -763,7 +763,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.pint_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'pint',
@@ -773,7 +773,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.pint_USDry,
-    system: systemValue[Systems.usDry],
+    system: unitSystem[UnitSystems.usDry],
   ),
   Unit<VolumeUnits>(
     'pint',
@@ -783,7 +783,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.pint_USLiquid,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeUnits>(
     'quart',
@@ -793,7 +793,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.quart_Imperial,
-    system: systemValue[Systems.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
     'quart',
@@ -803,7 +803,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.quart_USDry,
-    system: systemValue[Systems.usDry],
+    system: unitSystem[UnitSystems.usDry],
   ),
   Unit<VolumeUnits>(
     'quart',
@@ -813,7 +813,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.quart_USLiquid,
-    system: systemValue[Systems.usLiquid],
+    system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeUnits>(
     'tablespoon',
@@ -823,7 +823,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.tablespoon_Australian,
-    system: systemValue[Systems.australian],
+    system: unitSystem[UnitSystems.australian],
   ),
   Unit<VolumeUnits>(
     'tablespoon',
@@ -833,7 +833,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.tablespoon_Metric,
-    system: systemValue[Systems.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<VolumeUnits>(
     'tablespoon',
@@ -843,7 +843,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.tablespoon_US,
-    system: systemValue[Systems.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<VolumeUnits>(
     'tablespoon',
@@ -853,7 +853,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.tablespoon_USFoodNutrition,
-    system: systemValue[Systems.usFoodNutrition],
+    system: unitSystem[UnitSystems.usFoodNutrition],
   ),
   Unit<VolumeUnits>(
     'teaspoon',
@@ -863,7 +863,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.teaspoon_metric,
-    system: systemValue[Systems.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<VolumeUnits>(
     'teaspoon',
@@ -873,7 +873,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.teaspoon_US,
-    system: systemValue[Systems.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<VolumeUnits>(
     'teaspoon',
@@ -883,7 +883,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.teaspoon_USFoodNutrition,
-    system: systemValue[Systems.usFoodNutrition],
+    system: unitSystem[UnitSystems.usFoodNutrition],
   ),
   Unit<VolumeUnits>(
     'teralitre',
