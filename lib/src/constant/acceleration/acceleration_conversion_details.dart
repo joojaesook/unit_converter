@@ -11,21 +11,21 @@ import '../others/prefix_value.dart';
 
 final _galToMetrePerSquareSecond = pow(10, -2);
 
-final _hourToSecond = getConversionDetail(ConversionType.time, TimeUnits.hour);
+final _hourToSecond = getConversionFactor(ConversionType.time, TimeUnits.hour);
 final _minuteToSecond =
-    getConversionDetail(ConversionType.time, TimeUnits.minute);
+    getConversionFactor(ConversionType.time, TimeUnits.minute);
 final _perHourPerSecondToPerSquareSecond = 1 / _hourToSecond;
 final _perHourSquaredToPerSquareSecond = 1 / pow(_hourToSecond, 2);
 final _perMinutePerSecondToPerSquareSecond = 1 / _minuteToSecond;
 final _perMinuteSquaredToPerSquareSecond = 1 / pow(_minuteToSecond, 2);
 final _footToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.foot);
+    getConversionFactor(ConversionType.length, LengthUnits.foot);
 final _inchToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.inch);
+    getConversionFactor(ConversionType.length, LengthUnits.inch);
 final _mileToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.mile);
+    getConversionFactor(ConversionType.length, LengthUnits.mile);
 final _yardToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.yard);
+    getConversionFactor(ConversionType.length, LengthUnits.yard);
 
 // Conversion factors to baseUnit
 Map<AccelerationUnits, double> accelerationConversionDetails = {

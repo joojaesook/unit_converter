@@ -11,29 +11,29 @@ import '../../unit_converter_old.dart';
 import '../others/prefix_value.dart';
 
 final _acreToSquareMetre =
-    getConversionDetail(ConversionType.area, AreaUnits.acre);
+    getConversionFactor(ConversionType.area, AreaUnits.acre);
 final _footToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.foot);
+    getConversionFactor(ConversionType.length, LengthUnits.foot);
 final _inchToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.inch);
+    getConversionFactor(ConversionType.length, LengthUnits.inch);
 
 final _litreToCubicMetre =
-    getConversionDetail(ConversionType.volume, VolumeUnits.litre);
+    getConversionFactor(ConversionType.volume, VolumeUnits.litre);
 final _gallonImperialToCubicMetre =
-    getConversionDetail(ConversionType.volume, VolumeUnits.gallon_Imperial);
+    getConversionFactor(ConversionType.volume, VolumeUnits.gallon_Imperial);
 final _gallonUSLiquidToCubicMetre =
-    getConversionDetail(ConversionType.volume, VolumeUnits.gallon_USLiquid);
+    getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid);
 final _oilBarrelToCubicMetre =
-    getConversionDetail(ConversionType.volume, VolumeUnits.oilBarrel);
+    getConversionFactor(ConversionType.volume, VolumeUnits.oilBarrel);
 
 final _perDayToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.day);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.day);
 final _perHourToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.hour);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.hour);
 final _perMinuteToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.minute);
 final _perYearToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.year);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.year);
 
 // Conversion factors to baseUnit
 final Map<VolumeFlowUnits, double> volumeFlowConversionDetails = {

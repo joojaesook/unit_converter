@@ -17,8 +17,8 @@ class DataRateConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.dataRate, from);
-    final double toOffset = getConversionDetail(ConversionType.dataRate, to);
+        getConversionFactor(ConversionType.dataRate, from);
+    final double toOffset = getConversionFactor(ConversionType.dataRate, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

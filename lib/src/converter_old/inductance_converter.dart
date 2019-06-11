@@ -17,8 +17,8 @@ class InductanceConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.inductance, from);
-    final double toOffset = getConversionDetail(ConversionType.inductance, to);
+        getConversionFactor(ConversionType.inductance, from);
+    final double toOffset = getConversionFactor(ConversionType.inductance, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

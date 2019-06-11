@@ -17,8 +17,8 @@ class IlluminanceConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.illuminance, from);
-    final double toOffset = getConversionDetail(ConversionType.illuminance, to);
+        getConversionFactor(ConversionType.illuminance, from);
+    final double toOffset = getConversionFactor(ConversionType.illuminance, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

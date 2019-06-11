@@ -10,11 +10,11 @@ import '../others/prefix_value.dart';
 const _stokesToSquareMetrePerSecond = 0.0001;
 
 final _perDayToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.day);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.day);
 final _perHourToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.hour);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.hour);
 final _perMinuteToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.minute);
 
 // Conversion factors to baseUnit
 final Map<KinematicViscocityUnits, double> kinematicViscocityConversionDetails =

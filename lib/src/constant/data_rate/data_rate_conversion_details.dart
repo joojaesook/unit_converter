@@ -6,9 +6,9 @@ import '../../unit_converter.dart';
 import '../others/prefix_value.dart';
 
 final _perHourToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.hour);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.hour);
 final _perMinuteToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.minute);
 const double _byteToBit = 8;
 
 // Conversion factors to baseUnit

@@ -17,9 +17,9 @@ class ElectricCurrentConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.electricCurrent, from);
+        getConversionFactor(ConversionType.electricCurrent, from);
     final double toOffset =
-        getConversionDetail(ConversionType.electricCurrent, to);
+        getConversionFactor(ConversionType.electricCurrent, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

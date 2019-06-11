@@ -17,9 +17,9 @@ class MagneticFluxDensityConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.magneticFluxDensity, from);
+        getConversionFactor(ConversionType.magneticFluxDensity, from);
     final double toOffset =
-        getConversionDetail(ConversionType.magneticFluxDensity, to);
+        getConversionFactor(ConversionType.magneticFluxDensity, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

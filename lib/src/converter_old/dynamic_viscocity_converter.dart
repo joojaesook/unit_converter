@@ -17,9 +17,9 @@ class DynamicViscocityConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.dynamicViscocity, from);
+        getConversionFactor(ConversionType.dynamicViscocity, from);
     final double toOffset =
-        getConversionDetail(ConversionType.dynamicViscocity, to);
+        getConversionFactor(ConversionType.dynamicViscocity, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

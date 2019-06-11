@@ -16,8 +16,8 @@ class AreaConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final double fromOffset = getConversionDetail(ConversionType.area, from);
-    final double toOffset = getConversionDetail(ConversionType.area, to);
+    final double fromOffset = getConversionFactor(ConversionType.area, from);
+    final double toOffset = getConversionFactor(ConversionType.area, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

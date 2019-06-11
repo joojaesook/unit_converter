@@ -16,8 +16,8 @@ class VolumeConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final double fromOffset = getConversionDetail(ConversionType.volume, from);
-    final double toOffset = getConversionDetail(ConversionType.volume, to);
+    final double fromOffset = getConversionFactor(ConversionType.volume, from);
+    final double toOffset = getConversionFactor(ConversionType.volume, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

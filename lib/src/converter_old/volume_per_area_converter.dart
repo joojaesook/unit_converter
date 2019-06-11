@@ -17,9 +17,9 @@ class VolumePerAreaConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.volumePerArea, from);
+        getConversionFactor(ConversionType.volumePerArea, from);
     final double toOffset =
-        getConversionDetail(ConversionType.volumePerArea, to);
+        getConversionFactor(ConversionType.volumePerArea, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

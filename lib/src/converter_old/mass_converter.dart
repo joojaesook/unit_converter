@@ -16,8 +16,8 @@ class MassConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final double fromOffset = getConversionDetail(ConversionType.mass, from);
-    final double toOffset = getConversionDetail(ConversionType.mass, to);
+    final double fromOffset = getConversionFactor(ConversionType.mass, from);
+    final double toOffset = getConversionFactor(ConversionType.mass, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

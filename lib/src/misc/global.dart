@@ -3,25 +3,7 @@ import '../constant/others/symbol.dart';
 import '../enum/conversion_type.dart';
 import '../enum/symbol_parts.dart';
 
-// Unit<T> createVariationUnit<T>(
-//     String name, List<SymbolParts> symbolParts, T type,
-//     {System system}) {
-//   assert(name != null);
-//   assert(symbolParts != null);
-//   assert(type != null);
-
-//   final unit = Unit<T>(
-//     name,
-//     createSymbol(symbolParts),
-//     type,
-//     variation: true,
-//   );
-//   if (system != null) {
-//     unit.system = system;
-//   }
-//   return unit;
-// }
-
+// Create symbol for unit from the [symbolParts]
 String createSymbol(List<SymbolParts> symbolParts) {
   String symbolName = '';
   if (symbolParts == null || symbolParts.isEmpty) {
@@ -34,7 +16,8 @@ String createSymbol(List<SymbolParts> symbolParts) {
   return symbolName;
 }
 
-double getConversionDetail<T>(ConversionType type, T unit) {
+// get conversion factor for unit [unit] from conversion type [type]
+double getConversionFactor<T>(ConversionType type, T unit) {
   return conversionDetails[type][unit];
 }
 

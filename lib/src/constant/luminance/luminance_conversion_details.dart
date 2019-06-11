@@ -19,11 +19,11 @@ Map<LuminanceUnits, double> luminanceConversionDetails = {
   LuminanceUnits.candelaPerSquareExaMetre: pow(prefixValue[Prefix.exa], -2),
   LuminanceUnits.candelaPerSquareFemtoMetre: pow(prefixValue[Prefix.femto], -2),
   LuminanceUnits.candelaPerSquareFoot:
-      pow(getConversionDetail(ConversionType.length, LengthUnits.foot), -2),
+      pow(getConversionFactor(ConversionType.length, LengthUnits.foot), -2),
   LuminanceUnits.candelaPerSquareGigaMetre: pow(prefixValue[Prefix.giga], -2),
   LuminanceUnits.candelaPerSquareHectoMetre: pow(prefixValue[Prefix.hecto], -2),
   LuminanceUnits.candelaPerSquareInch:
-      pow(getConversionDetail(ConversionType.length, LengthUnits.inch), -2),
+      pow(getConversionFactor(ConversionType.length, LengthUnits.inch), -2),
   LuminanceUnits.candelaPerSquareKiloMetre: pow(prefixValue[Prefix.kilo], -2),
   LuminanceUnits.candelaPerSquareMegaMetre: pow(prefixValue[Prefix.mega], -2),
   LuminanceUnits.candelaPerSquareMicroMetre: pow(prefixValue[Prefix.micro], -2),

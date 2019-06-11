@@ -5,18 +5,18 @@ import '../../misc/global.dart';
 import '../../unit_converter.dart';
 
 final _perAcreToPerSquareMetre =
-    1 / getConversionDetail(ConversionType.area, AreaUnits.acre);
+    1 / getConversionFactor(ConversionType.area, AreaUnits.acre);
 final _perHectareToPerSquareMetre =
-    1 / getConversionDetail(ConversionType.area, AreaUnits.hectare);
+    1 / getConversionFactor(ConversionType.area, AreaUnits.hectare);
 final _perSquareMileToPerSquareMetre =
-    1 / getConversionDetail(ConversionType.area, AreaUnits.squareMile);
+    1 / getConversionFactor(ConversionType.area, AreaUnits.squareMile);
 final _perSquareYardToPerSquareMetre =
-    1 / getConversionDetail(ConversionType.area, AreaUnits.squareYard);
+    1 / getConversionFactor(ConversionType.area, AreaUnits.squareYard);
 
 final _gallonUSLiquidToCubicMetre =
-    getConversionDetail(ConversionType.volume, VolumeUnits.gallon_USLiquid);
+    getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid);
 final _litreToCubicMetre =
-    getConversionDetail(ConversionType.volume, VolumeUnits.litre);
+    getConversionFactor(ConversionType.volume, VolumeUnits.litre);
 
 // Conversion factors to baseUnit
 final Map<VolumePerAreaUnits, double> volumePerAreaConversionDetails = {

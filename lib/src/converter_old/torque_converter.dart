@@ -16,8 +16,8 @@ class TorqueConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final double fromOffset = getConversionDetail(ConversionType.torque, from);
-    final double toOffset = getConversionDetail(ConversionType.torque, to);
+    final double fromOffset = getConversionFactor(ConversionType.torque, from);
+    final double toOffset = getConversionFactor(ConversionType.torque, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

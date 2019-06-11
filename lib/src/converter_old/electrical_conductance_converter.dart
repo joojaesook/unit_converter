@@ -18,9 +18,9 @@ class ElectricalConductanceConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.electricalConductance, from);
+        getConversionFactor(ConversionType.electricalConductance, from);
     final double toOffset =
-        getConversionDetail(ConversionType.electricalConductance, to);
+        getConversionFactor(ConversionType.electricalConductance, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

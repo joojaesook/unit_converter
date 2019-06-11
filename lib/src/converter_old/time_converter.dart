@@ -16,8 +16,8 @@ class TimeConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final double fromOffset = getConversionDetail(ConversionType.time, from);
-    final double toOffset = getConversionDetail(ConversionType.time, to);
+    final double fromOffset = getConversionFactor(ConversionType.time, from);
+    final double toOffset = getConversionFactor(ConversionType.time, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

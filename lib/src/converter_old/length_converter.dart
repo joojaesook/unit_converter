@@ -16,8 +16,8 @@ class LengthConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final double fromOffset = getConversionDetail(ConversionType.length, from);
-    final double toOffset = getConversionDetail(ConversionType.length, to);
+    final double fromOffset = getConversionFactor(ConversionType.length, from);
+    final double toOffset = getConversionFactor(ConversionType.length, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

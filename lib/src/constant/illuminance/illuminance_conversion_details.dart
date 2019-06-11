@@ -40,11 +40,11 @@ Map<IlluminanceUnits, double> illuminanceConversionDetails = {
   IlluminanceUnits.lumenPerSquareExaMetre: pow(prefixValue[Prefix.exa], -2),
   IlluminanceUnits.lumenPerSquareFemtoMetre: pow(prefixValue[Prefix.femto], -2),
   IlluminanceUnits.lumenPerSquareFoot:
-      pow(getConversionDetail(ConversionType.length, LengthUnits.foot), -2),
+      pow(getConversionFactor(ConversionType.length, LengthUnits.foot), -2),
   IlluminanceUnits.lumenPerSquareGigaMetre: pow(prefixValue[Prefix.giga], -2),
   IlluminanceUnits.lumenPerSquareHectoMetre: pow(prefixValue[Prefix.hecto], -2),
   IlluminanceUnits.lumenPerSquareInch:
-      pow(getConversionDetail(ConversionType.length, LengthUnits.inch), -2),
+      pow(getConversionFactor(ConversionType.length, LengthUnits.inch), -2),
   IlluminanceUnits.lumenPerSquareKiloMetre: pow(prefixValue[Prefix.kilo], -2),
   IlluminanceUnits.lumenPerSquareMegaMetre: pow(prefixValue[Prefix.mega], -2),
   IlluminanceUnits.lumenPerSquareMetre: 1,

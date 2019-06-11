@@ -17,9 +17,9 @@ class AccelerationConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.acceleration, from);
+        getConversionFactor(ConversionType.acceleration, from);
     final double toOffset =
-        getConversionDetail(ConversionType.acceleration, to);
+        getConversionFactor(ConversionType.acceleration, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

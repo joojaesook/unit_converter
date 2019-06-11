@@ -17,9 +17,9 @@ class ElectricalResistanceConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.electricalResistance, from);
+        getConversionFactor(ConversionType.electricalResistance, from);
     final double toOffset =
-        getConversionDetail(ConversionType.electricalResistance, to);
+        getConversionFactor(ConversionType.electricalResistance, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

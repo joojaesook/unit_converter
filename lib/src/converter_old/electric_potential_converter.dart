@@ -17,9 +17,9 @@ class ElectricPotentialConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.electricPotential, from);
+        getConversionFactor(ConversionType.electricPotential, from);
     final double toOffset =
-        getConversionDetail(ConversionType.electricPotential, to);
+        getConversionFactor(ConversionType.electricPotential, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

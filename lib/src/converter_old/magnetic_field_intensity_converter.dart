@@ -18,9 +18,9 @@ class MagneticFieldIntensityConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.magneticFieldIntensity, from);
+        getConversionFactor(ConversionType.magneticFieldIntensity, from);
     final double toOffset =
-        getConversionDetail(ConversionType.magneticFieldIntensity, to);
+        getConversionFactor(ConversionType.magneticFieldIntensity, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

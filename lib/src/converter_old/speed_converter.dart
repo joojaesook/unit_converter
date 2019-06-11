@@ -16,8 +16,8 @@ class SpeedConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final double fromOffset = getConversionDetail(ConversionType.speed, from);
-    final double toOffset = getConversionDetail(ConversionType.speed, to);
+    final double fromOffset = getConversionFactor(ConversionType.speed, from);
+    final double toOffset = getConversionFactor(ConversionType.speed, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

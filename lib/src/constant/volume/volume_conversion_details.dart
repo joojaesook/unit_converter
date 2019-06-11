@@ -28,23 +28,23 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
   VolumeUnits.cubicExaMetre: pow(prefixValue[Prefix.exa], 3),
   VolumeUnits.cubicFemtoMetre: pow(prefixValue[Prefix.femto], 3),
   VolumeUnits.cubicFoot:
-      pow(getConversionDetail(ConversionType.length, LengthUnits.foot), 3),
+      pow(getConversionFactor(ConversionType.length, LengthUnits.foot), 3),
   VolumeUnits.cubicGigaMetre: pow(prefixValue[Prefix.giga], 3),
   VolumeUnits.cubicHectoMetre: pow(prefixValue[Prefix.hecto], 3),
   VolumeUnits.cubicInch:
-      pow(getConversionDetail(ConversionType.length, LengthUnits.inch), 3),
+      pow(getConversionFactor(ConversionType.length, LengthUnits.inch), 3),
   VolumeUnits.cubicKiloMetre: pow(prefixValue[Prefix.kilo], 3),
   VolumeUnits.cubicMegaMetre: pow(prefixValue[Prefix.mega], 3),
   VolumeUnits.cubicMicroMetre: pow(prefixValue[Prefix.micro], 3),
   VolumeUnits.cubicMile:
-      pow(getConversionDetail(ConversionType.length, LengthUnits.mile), 3),
+      pow(getConversionFactor(ConversionType.length, LengthUnits.mile), 3),
   VolumeUnits.cubicMilliMetre: pow(prefixValue[Prefix.milli], 3),
   VolumeUnits.cubicNanoMetre: pow(prefixValue[Prefix.nano], 3),
   VolumeUnits.cubicPetaMetre: pow(prefixValue[Prefix.peta], 3),
   VolumeUnits.cubicPicoMetre: pow(prefixValue[Prefix.pico], 3),
   VolumeUnits.cubicTeraMetre: pow(prefixValue[Prefix.tera], 3),
   VolumeUnits.cubicYard:
-      pow(getConversionDetail(ConversionType.length, LengthUnits.yard), 3),
+      pow(getConversionFactor(ConversionType.length, LengthUnits.yard), 3),
   VolumeUnits.cubicYoctoMetre: pow(prefixValue[Prefix.yocto], 3),
   VolumeUnits.cubicYottaMetre: pow(prefixValue[Prefix.yotta], 3),
   VolumeUnits.cubicZeptoMetre: pow(prefixValue[Prefix.zepto], 3),

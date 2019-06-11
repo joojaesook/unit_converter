@@ -17,8 +17,8 @@ class CapacitanceConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.capacitance, from);
-    final double toOffset = getConversionDetail(ConversionType.capacitance, to);
+        getConversionFactor(ConversionType.capacitance, from);
+    final double toOffset = getConversionFactor(ConversionType.capacitance, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

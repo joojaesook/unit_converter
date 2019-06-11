@@ -7,21 +7,21 @@ import '../../unit_converter.dart';
 import '../others/prefix_value.dart';
 
 final _perDayToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.day);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.day);
 final _perHourToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.hour);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.hour);
 final _perMinuteToPerSecond =
-    1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
+    1 / getConversionFactor(ConversionType.time, TimeUnits.minute);
 final _footToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.foot);
+    getConversionFactor(ConversionType.length, LengthUnits.foot);
 final _inchToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.inch);
+    getConversionFactor(ConversionType.length, LengthUnits.inch);
 final _mileToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.mile);
+    getConversionFactor(ConversionType.length, LengthUnits.mile);
 final _nauticalMileToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.nauticalMile);
+    getConversionFactor(ConversionType.length, LengthUnits.nauticalMile);
 final _yardToMetre =
-    getConversionDetail(ConversionType.length, LengthUnits.yard);
+    getConversionFactor(ConversionType.length, LengthUnits.yard);
 
 // Conversion factors to baseUnit
 Map<SpeedUnits, double> speedConversionDetails = {

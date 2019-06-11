@@ -17,8 +17,8 @@ class FrequencyConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.frequency, from);
-    final double toOffset = getConversionDetail(ConversionType.frequency, to);
+        getConversionFactor(ConversionType.frequency, from);
+    final double toOffset = getConversionFactor(ConversionType.frequency, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

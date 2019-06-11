@@ -17,9 +17,9 @@ class KinematicViscocityConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.kinematicViscocity, from);
+        getConversionFactor(ConversionType.kinematicViscocity, from);
     final double toOffset =
-        getConversionDetail(ConversionType.kinematicViscocity, to);
+        getConversionFactor(ConversionType.kinematicViscocity, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

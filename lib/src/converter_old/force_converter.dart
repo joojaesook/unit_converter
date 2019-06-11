@@ -16,8 +16,8 @@ class ForceConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final double fromOffset = getConversionDetail(ConversionType.force, from);
-    final double toOffset = getConversionDetail(ConversionType.force, to);
+    final double fromOffset = getConversionFactor(ConversionType.force, from);
+    final double toOffset = getConversionFactor(ConversionType.force, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

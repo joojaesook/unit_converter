@@ -16,8 +16,8 @@ class DataConverter extends Converter {
     assert(value != null);
     assert(from != null);
     assert(to != null);
-    final double fromOffset = getConversionDetail(ConversionType.data, from);
-    final double toOffset = getConversionDetail(ConversionType.data, to);
+    final double fromOffset = getConversionFactor(ConversionType.data, from);
+    final double toOffset = getConversionFactor(ConversionType.data, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

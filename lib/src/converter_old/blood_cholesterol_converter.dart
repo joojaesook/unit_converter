@@ -17,9 +17,9 @@ class BloodCholesterolConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.bloodCholesterol, from);
+        getConversionFactor(ConversionType.bloodCholesterol, from);
     final double toOffset =
-        getConversionDetail(ConversionType.bloodCholesterol, to);
+        getConversionFactor(ConversionType.bloodCholesterol, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }

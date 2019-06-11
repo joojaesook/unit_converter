@@ -17,9 +17,9 @@ class ElectricChargeConverter extends Converter {
     assert(from != null);
     assert(to != null);
     final double fromOffset =
-        getConversionDetail(ConversionType.electricCharge, from);
+        getConversionFactor(ConversionType.electricCharge, from);
     final double toOffset =
-        getConversionDetail(ConversionType.electricCharge, to);
+        getConversionFactor(ConversionType.electricCharge, to);
     return globalConvert(value, fromOffset, toOffset);
   }
 }
