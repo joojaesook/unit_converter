@@ -21,86 +21,92 @@ Map<DataRateUnits, double> dataRateConversionDetails = {
   DataRateUnits.bytePerHour: _byteToBit * _perHourToPerSecond,
   DataRateUnits.bytePerMinute: _byteToBit * _perMinuteToPerSecond,
   DataRateUnits.bytePerSecond: _byteToBit,
-  DataRateUnits.exaBitPerHour:
+  DataRateUnits.exaBitPerHour_Binary:
       _perHourToPerSecond * prefixValue[Prefix.binaryExa],
-  DataRateUnits.exaBitPerMinute:
+  DataRateUnits.exaBitPerMinute_Binary:
       _perMinuteToPerSecond * prefixValue[Prefix.binaryExa],
-  DataRateUnits.exaBitPerSecond: prefixValue[Prefix.binaryExa],
-  DataRateUnits.exaBytePerHour:
+  DataRateUnits.exaBitPerSecond_Binary: prefixValue[Prefix.binaryExa],
+  DataRateUnits.exaBytePerHour_Binary:
       _byteToBit * _perHourToPerSecond * prefixValue[Prefix.binaryExa],
-  DataRateUnits.exaBytePerMinute:
+  DataRateUnits.exaBytePerMinute_Binary:
       _byteToBit * _perMinuteToPerSecond * prefixValue[Prefix.binaryExa],
-  DataRateUnits.exaBytePerSecond: _byteToBit * prefixValue[Prefix.binaryExa],
-  DataRateUnits.gigaBitPerHour:
+  DataRateUnits.exaBytePerSecond_Binary:
+      _byteToBit * prefixValue[Prefix.binaryExa],
+  DataRateUnits.gigaBitPerHour_Binary:
       _perHourToPerSecond * prefixValue[Prefix.binaryGiga],
-  DataRateUnits.gigaBitPerMinute:
+  DataRateUnits.gigaBitPerMinute_Binary:
       _perMinuteToPerSecond * prefixValue[Prefix.binaryGiga],
-  DataRateUnits.gigaBitPerSecond: prefixValue[Prefix.binaryGiga],
-  DataRateUnits.gigaBytePerHour:
+  DataRateUnits.gigaBitPerSecond_Binary: prefixValue[Prefix.binaryGiga],
+  DataRateUnits.gigaBytePerHour_Binary:
       _byteToBit * _perHourToPerSecond * prefixValue[Prefix.binaryGiga],
-  DataRateUnits.gigaBytePerMinute:
+  DataRateUnits.gigaBytePerMinute_Binary:
       _byteToBit * _perMinuteToPerSecond * prefixValue[Prefix.binaryGiga],
-  DataRateUnits.gigaBytePerSecond: _byteToBit * prefixValue[Prefix.binaryGiga],
-  DataRateUnits.kiloBitPerHour:
+  DataRateUnits.gigaBytePerSecond_Binary:
+      _byteToBit * prefixValue[Prefix.binaryGiga],
+  DataRateUnits.kiloBitPerHour_Binary:
       _perHourToPerSecond * prefixValue[Prefix.binaryKilo],
-  DataRateUnits.kiloBitPerMinute:
+  DataRateUnits.kiloBitPerMinute_Binary:
       _perMinuteToPerSecond * prefixValue[Prefix.binaryKilo],
-  DataRateUnits.kiloBitPerSecond: prefixValue[Prefix.binaryKilo],
-  DataRateUnits.kiloBytePerHour:
+  DataRateUnits.kiloBitPerSecond_Binary: prefixValue[Prefix.binaryKilo],
+  DataRateUnits.kiloBytePerHour_Binary:
       _byteToBit * _perHourToPerSecond * prefixValue[Prefix.binaryKilo],
-  DataRateUnits.kiloBytePerMinute:
+  DataRateUnits.kiloBytePerMinute_Binary:
       _byteToBit * _perMinuteToPerSecond * prefixValue[Prefix.binaryKilo],
-  DataRateUnits.kiloBytePerSecond: _byteToBit * prefixValue[Prefix.binaryKilo],
-  DataRateUnits.megaBitPerHour:
+  DataRateUnits.kiloBytePerSecond_Binary:
+      _byteToBit * prefixValue[Prefix.binaryKilo],
+  DataRateUnits.megaBitPerHour_Binary:
       _perHourToPerSecond * prefixValue[Prefix.binaryMega],
-  DataRateUnits.megaBitPerMinute:
+  DataRateUnits.megaBitPerMinute_Binary:
       _perMinuteToPerSecond * prefixValue[Prefix.binaryMega],
-  DataRateUnits.megaBitPerSecond: prefixValue[Prefix.binaryMega],
-  DataRateUnits.megaBytePerHour:
+  DataRateUnits.megaBitPerSecond_Binary: prefixValue[Prefix.binaryMega],
+  DataRateUnits.megaBytePerHour_Binary:
       _byteToBit * _perHourToPerSecond * prefixValue[Prefix.binaryMega],
-  DataRateUnits.megaBytePerMinute:
+  DataRateUnits.megaBytePerMinute_Binary:
       _byteToBit * _perMinuteToPerSecond * prefixValue[Prefix.binaryMega],
-  DataRateUnits.megaBytePerSecond: _byteToBit * prefixValue[Prefix.binaryMega],
-  DataRateUnits.petaBitPerHour:
+  DataRateUnits.megaBytePerSecond_Binary:
+      _byteToBit * prefixValue[Prefix.binaryMega],
+  DataRateUnits.petaBitPerHour_Binary:
       _perHourToPerSecond * prefixValue[Prefix.binaryPeta],
-  DataRateUnits.petaBitPerMinute:
+  DataRateUnits.petaBitPerMinute_Binary:
       _perMinuteToPerSecond * prefixValue[Prefix.binaryPeta],
-  DataRateUnits.petaBitPerSecond: prefixValue[Prefix.binaryPeta],
-  DataRateUnits.petaBytePerHour:
+  DataRateUnits.petaBitPerSecond_Binary: prefixValue[Prefix.binaryPeta],
+  DataRateUnits.petaBytePerHour_Binary:
       _byteToBit * _perHourToPerSecond * prefixValue[Prefix.binaryPeta],
-  DataRateUnits.petaBytePerMinute:
+  DataRateUnits.petaBytePerMinute_Binary:
       _byteToBit * _perMinuteToPerSecond * prefixValue[Prefix.binaryPeta],
-  DataRateUnits.petaBytePerSecond: _byteToBit * prefixValue[Prefix.binaryPeta],
-  DataRateUnits.teraBitPerHour:
+  DataRateUnits.petaBytePerSecond_Binary:
+      _byteToBit * prefixValue[Prefix.binaryPeta],
+  DataRateUnits.teraBitPerHour_Binary:
       _perHourToPerSecond * prefixValue[Prefix.binaryTera],
-  DataRateUnits.teraBitPerMinute:
+  DataRateUnits.teraBitPerMinute_Binary:
       _perMinuteToPerSecond * prefixValue[Prefix.binaryTera],
-  DataRateUnits.teraBitPerSecond: prefixValue[Prefix.binaryTera],
-  DataRateUnits.teraBytePerHour:
+  DataRateUnits.teraBitPerSecond_Binary: prefixValue[Prefix.binaryTera],
+  DataRateUnits.teraBytePerHour_Binary:
       _byteToBit * _perHourToPerSecond * prefixValue[Prefix.binaryTera],
-  DataRateUnits.teraBytePerMinute:
+  DataRateUnits.teraBytePerMinute_Binary:
       _byteToBit * _perMinuteToPerSecond * prefixValue[Prefix.binaryTera],
-  DataRateUnits.teraBytePerSecond: _byteToBit * prefixValue[Prefix.binaryTera],
-  DataRateUnits.yottaBitPerHour:
+  DataRateUnits.teraBytePerSecond_Binary:
+      _byteToBit * prefixValue[Prefix.binaryTera],
+  DataRateUnits.yottaBitPerHour_Binary:
       _perHourToPerSecond * prefixValue[Prefix.binaryYotta],
-  DataRateUnits.yottaBitPerMinute:
+  DataRateUnits.yottaBitPerMinute_Binary:
       _perMinuteToPerSecond * prefixValue[Prefix.binaryYotta],
-  DataRateUnits.yottaBitPerSecond: prefixValue[Prefix.binaryYotta],
-  DataRateUnits.yottaBytePerHour:
+  DataRateUnits.yottaBitPerSecond_Binary: prefixValue[Prefix.binaryYotta],
+  DataRateUnits.yottaBytePerHour_Binary:
       _byteToBit * _perHourToPerSecond * prefixValue[Prefix.binaryYotta],
-  DataRateUnits.yottaBytePerMinute:
+  DataRateUnits.yottaBytePerMinute_Binary:
       _byteToBit * _perMinuteToPerSecond * prefixValue[Prefix.binaryYotta],
-  DataRateUnits.yottaBytePerSecond:
+  DataRateUnits.yottaBytePerSecond_Binary:
       _byteToBit * prefixValue[Prefix.binaryYotta],
-  DataRateUnits.zettaBitPerHour:
+  DataRateUnits.zettaBitPerHour_Binary:
       _perHourToPerSecond * prefixValue[Prefix.binaryZetta],
-  DataRateUnits.zettaBitPerMinute:
+  DataRateUnits.zettaBitPerMinute_Binary:
       _perMinuteToPerSecond * prefixValue[Prefix.binaryZetta],
-  DataRateUnits.zettaBitPerSecond: prefixValue[Prefix.binaryZetta],
-  DataRateUnits.zettaBytePerHour:
+  DataRateUnits.zettaBitPerSecond_Binary: prefixValue[Prefix.binaryZetta],
+  DataRateUnits.zettaBytePerHour_Binary:
       _byteToBit * _perHourToPerSecond * prefixValue[Prefix.binaryZetta],
-  DataRateUnits.zettaBytePerMinute:
+  DataRateUnits.zettaBytePerMinute_Binary:
       _byteToBit * _perMinuteToPerSecond * prefixValue[Prefix.binaryZetta],
-  DataRateUnits.zettaBytePerSecond:
+  DataRateUnits.zettaBytePerSecond_Binary:
       _byteToBit * prefixValue[Prefix.binaryZetta],
 };
