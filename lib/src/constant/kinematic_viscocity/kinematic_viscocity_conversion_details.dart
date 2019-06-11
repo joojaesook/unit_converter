@@ -7,34 +7,49 @@ import '../../misc/global.dart';
 import '../../unit_converter.dart';
 import '../others/prefix_value.dart';
 
-const _stokes = 0.0001;
+const _stokesToSquareMetrePerSecond = 0.0001;
 
 final _perDayToPerSecond =
     1 / getConversionDetail(ConversionType.time, TimeUnits.day);
 final _perHourToPerSecond =
     1 / getConversionDetail(ConversionType.time, TimeUnits.hour);
 final _perMinuteToPerSecond =
-    getConversionDetail(ConversionType.time, TimeUnits.minute);
+    1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
 
 final Map<KinematicViscocityUnits, double> kinematicViscocityConversionDetails =
     {
   // Base unit
   KinematicViscocityUnits.squareMetrePerSecond: 1,
-  KinematicViscocityUnits.attoStokes: _stokes * prefixValue[Prefix.atto],
-  KinematicViscocityUnits.centiStokes: _stokes * prefixValue[Prefix.centi],
-  KinematicViscocityUnits.decaStokes: _stokes * prefixValue[Prefix.deca],
-  KinematicViscocityUnits.deciStokes: _stokes * prefixValue[Prefix.deci],
-  KinematicViscocityUnits.exaStokes: _stokes * prefixValue[Prefix.exa],
-  KinematicViscocityUnits.femtoStokes: _stokes * prefixValue[Prefix.femto],
-  KinematicViscocityUnits.gigaStokes: _stokes * prefixValue[Prefix.giga],
-  KinematicViscocityUnits.hectoStokes: _stokes * prefixValue[Prefix.hecto],
-  KinematicViscocityUnits.kiloStokes: _stokes * prefixValue[Prefix.kilo],
-  KinematicViscocityUnits.megaStokes: _stokes * prefixValue[Prefix.mega],
-  KinematicViscocityUnits.microStokes: _stokes * prefixValue[Prefix.micro],
-  KinematicViscocityUnits.milliStokes: _stokes * prefixValue[Prefix.milli],
-  KinematicViscocityUnits.nanoStokes: _stokes * prefixValue[Prefix.nano],
-  KinematicViscocityUnits.petaStokes: _stokes * prefixValue[Prefix.peta],
-  KinematicViscocityUnits.picoStokes: _stokes * prefixValue[Prefix.pico],
+  KinematicViscocityUnits.attoStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.atto],
+  KinematicViscocityUnits.centiStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.centi],
+  KinematicViscocityUnits.decaStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.deca],
+  KinematicViscocityUnits.deciStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.deci],
+  KinematicViscocityUnits.exaStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.exa],
+  KinematicViscocityUnits.femtoStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.femto],
+  KinematicViscocityUnits.gigaStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.giga],
+  KinematicViscocityUnits.hectoStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.hecto],
+  KinematicViscocityUnits.kiloStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.kilo],
+  KinematicViscocityUnits.megaStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.mega],
+  KinematicViscocityUnits.microStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.micro],
+  KinematicViscocityUnits.milliStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.milli],
+  KinematicViscocityUnits.nanoStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.nano],
+  KinematicViscocityUnits.petaStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.peta],
+  KinematicViscocityUnits.picoStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.pico],
   KinematicViscocityUnits.squareAttoMetrePerDay:
       pow(prefixValue[Prefix.atto], 2) * _perDayToPerSecond,
   KinematicViscocityUnits.squareAttoMetrePerHour:
@@ -198,10 +213,15 @@ final Map<KinematicViscocityUnits, double> kinematicViscocityConversionDetails =
       pow(prefixValue[Prefix.zetta], 2) * _perMinuteToPerSecond,
   KinematicViscocityUnits.squareZettaMetrePerSecond:
       pow(prefixValue[Prefix.zetta], 2),
-  KinematicViscocityUnits.stokes: _stokes,
-  KinematicViscocityUnits.teraStokes: _stokes * prefixValue[Prefix.tera],
-  KinematicViscocityUnits.yoctoStokes: _stokes * prefixValue[Prefix.yocto],
-  KinematicViscocityUnits.yottaStokes: _stokes * prefixValue[Prefix.yotta],
-  KinematicViscocityUnits.zeptoStokes: _stokes * prefixValue[Prefix.zepto],
-  KinematicViscocityUnits.zettaStokes: _stokes * prefixValue[Prefix.zetta],
+  KinematicViscocityUnits.stokes: _stokesToSquareMetrePerSecond,
+  KinematicViscocityUnits.teraStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.tera],
+  KinematicViscocityUnits.yoctoStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.yocto],
+  KinematicViscocityUnits.yottaStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.yotta],
+  KinematicViscocityUnits.zeptoStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.zepto],
+  KinematicViscocityUnits.zettaStokes:
+      _stokesToSquareMetrePerSecond * prefixValue[Prefix.zetta],
 };

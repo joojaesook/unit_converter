@@ -5,7 +5,7 @@ import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
 const _inchToMetre = 0.0254;
-final _lightYearToMetre = 9.4607304725808 * prefixValue[Prefix.peta];
+final _lightYearToMetre = 9.4607304725808 * pow(10, 15);
 final _parsecToMetre = 3.08567782 * pow(10, 16);
 const _rodToMetre = 5.0292;
 

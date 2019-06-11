@@ -13,7 +13,7 @@ final _perSquareMileToPerSquareMetre =
 final _perSquareYardToPerSquareMetre =
     1 / getConversionDetail(ConversionType.area, AreaUnits.squareYard);
 
-final _gallonToCubicMetre =
+final _gallonUSLiquidToCubicMetre =
     getConversionDetail(ConversionType.volume, VolumeUnits.gallon_USLiquid);
 final _litreToCubicMetre =
     getConversionDetail(ConversionType.volume, VolumeUnits.litre);
@@ -26,14 +26,14 @@ final Map<VolumePerAreaUnits, double> volumePerAreaConversionDetails = {
   VolumePerAreaUnits.cubicMetrePerSquareMile: _perSquareMileToPerSquareMetre,
   VolumePerAreaUnits.cubicMetrePerSquareYard: _perSquareYardToPerSquareMetre,
   VolumePerAreaUnits.gallonPerAcre:
-      _gallonToCubicMetre * _perAcreToPerSquareMetre,
+      _gallonUSLiquidToCubicMetre * _perAcreToPerSquareMetre,
   VolumePerAreaUnits.gallonPerHectare:
-      _gallonToCubicMetre * _perHectareToPerSquareMetre,
-  VolumePerAreaUnits.gallonPerSquareMetre: _gallonToCubicMetre,
+      _gallonUSLiquidToCubicMetre * _perHectareToPerSquareMetre,
+  VolumePerAreaUnits.gallonPerSquareMetre: _gallonUSLiquidToCubicMetre,
   VolumePerAreaUnits.gallonPerSquareMile:
-      _gallonToCubicMetre * _perSquareMileToPerSquareMetre,
+      _gallonUSLiquidToCubicMetre * _perSquareMileToPerSquareMetre,
   VolumePerAreaUnits.gallonPerSquareYard:
-      _gallonToCubicMetre * _perSquareYardToPerSquareMetre,
+      _gallonUSLiquidToCubicMetre * _perSquareYardToPerSquareMetre,
   VolumePerAreaUnits.litrePerAcre:
       _litreToCubicMetre * _perAcreToPerSquareMetre,
   VolumePerAreaUnits.litrePerHectare:

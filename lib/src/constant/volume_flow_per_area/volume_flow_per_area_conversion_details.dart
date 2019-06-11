@@ -13,9 +13,10 @@ final _perSquareMileToPerSquareMetre =
 final _perSquareYardToPerSquareMetre =
     1 / getConversionDetail(ConversionType.area, AreaUnits.squareYard);
 
-final _gallonUSLiquid =
+final _gallonUSLiquidToCubicMetre =
     getConversionDetail(ConversionType.volume, VolumeUnits.gallon_USLiquid);
-final _litre = getConversionDetail(ConversionType.volume, VolumeUnits.litre);
+final _litreToCubicMetre =
+    getConversionDetail(ConversionType.volume, VolumeUnits.litre);
 
 final _perMinuteToPerSecond =
     1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
@@ -30,24 +31,33 @@ final Map<VolumeFlowPerAreaUnits, double> volumeFlowPerAreaConversionDetails = {
       _perSquareMileToPerSquareMetre,
   VolumeFlowPerAreaUnits.cubicMetrePerSecondPerSquareYard:
       _perSquareYardToPerSquareMetre,
-  VolumeFlowPerAreaUnits.gallonPerMinutePerAcre:
-      _gallonUSLiquid * _perMinuteToPerSecond * _perAcreToPerSquareMetre,
+  VolumeFlowPerAreaUnits.gallonPerMinutePerAcre: _gallonUSLiquidToCubicMetre *
+      _perMinuteToPerSecond *
+      _perAcreToPerSquareMetre,
   VolumeFlowPerAreaUnits.gallonPerMinutePerHectare:
-      _gallonUSLiquid * _perMinuteToPerSecond * _perHectareToPerSquareMetre,
+      _gallonUSLiquidToCubicMetre *
+          _perMinuteToPerSecond *
+          _perHectareToPerSquareMetre,
   VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMetre:
-      _gallonUSLiquid * _perMinuteToPerSecond,
+      _gallonUSLiquidToCubicMetre * _perMinuteToPerSecond,
   VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMile:
-      _gallonUSLiquid * _perMinuteToPerSecond * _perSquareMileToPerSquareMetre,
+      _gallonUSLiquidToCubicMetre *
+          _perMinuteToPerSecond *
+          _perSquareMileToPerSquareMetre,
   VolumeFlowPerAreaUnits.gallonPerMinutePerSquareYard:
-      _gallonUSLiquid * _perMinuteToPerSecond * _perSquareYardToPerSquareMetre,
+      _gallonUSLiquidToCubicMetre *
+          _perMinuteToPerSecond *
+          _perSquareYardToPerSquareMetre,
   VolumeFlowPerAreaUnits.litrePerMinutePerAcre:
-      _litre * _perMinuteToPerSecond * _perAcreToPerSquareMetre,
+      _litreToCubicMetre * _perMinuteToPerSecond * _perAcreToPerSquareMetre,
   VolumeFlowPerAreaUnits.litrePerMinutePerHectare:
-      _litre * _perMinuteToPerSecond * _perHectareToPerSquareMetre,
+      _litreToCubicMetre * _perMinuteToPerSecond * _perHectareToPerSquareMetre,
   VolumeFlowPerAreaUnits.litrePerMinutePerSquareMetre:
-      _litre * _perMinuteToPerSecond,
-  VolumeFlowPerAreaUnits.litrePerMinutePerSquareMile:
-      _litre * _perMinuteToPerSecond * _perSquareMileToPerSquareMetre,
-  VolumeFlowPerAreaUnits.litrePerMinutePerSquareYard:
-      _litre * _perMinuteToPerSecond * _perSquareYardToPerSquareMetre,
+      _litreToCubicMetre * _perMinuteToPerSecond,
+  VolumeFlowPerAreaUnits.litrePerMinutePerSquareMile: _litreToCubicMetre *
+      _perMinuteToPerSecond *
+      _perSquareMileToPerSquareMetre,
+  VolumeFlowPerAreaUnits.litrePerMinutePerSquareYard: _litreToCubicMetre *
+      _perMinuteToPerSecond *
+      _perSquareYardToPerSquareMetre,
 };
