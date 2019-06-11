@@ -24,6 +24,7 @@ import 'enum/magnetic_field_intensity_units.dart';
 import 'enum/magnetic_flux_density_units.dart';
 import 'enum/magnetic_flux_units.dart';
 import 'enum/mass_units.dart';
+import 'enum/radioactivity_units.dart';
 import 'enum/speed_units.dart';
 import 'enum/time_units.dart';
 import 'enum/torque_units.dart';
@@ -57,6 +58,7 @@ export 'enum/magnetic_field_intensity_units.dart';
 export 'enum/magnetic_flux_density_units.dart';
 export 'enum/magnetic_flux_units.dart';
 export 'enum/mass_units.dart';
+export 'enum/radioactivity_units.dart';
 export 'enum/speed_units.dart';
 export 'enum/time_units.dart';
 export 'enum/torque_units.dart';
@@ -208,6 +210,12 @@ class UnitConverter {
   static MultiplicationBasedConverter mass() {
     return MultiplicationBasedConverter<MassUnits>(
       ConversionType.mass,
+    );
+  }
+
+  static MultiplicationBasedConverter radioactivity() {
+    return MultiplicationBasedConverter<RadioactivityUnits>(
+      ConversionType.radioactivity,
     );
   }
 
