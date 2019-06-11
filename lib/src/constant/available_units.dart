@@ -29,6 +29,7 @@ import 'time/time_unit_details.dart';
 import 'torque/torque_unit_details.dart';
 import 'volume/volume_unit_details.dart';
 import 'volume_flow/volume_flow_unit_details.dart';
+import 'volume_flow_per_area/volume_flow_per_area_unit_details.dart';
 import 'volume_per_area/volume_per_area_unit_details.dart';
 import 'water_hardness/water_hardness_unit_details.dart';
 
@@ -62,6 +63,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.torque: torqueUnitDetails,
   ConversionType.volume: volumeUnitDetails,
   ConversionType.volumeFlow: volumeFlowUnitDetails,
+  ConversionType.volumeFlowPerArea: volumeFlowPerAreaUnitDetails,
   ConversionType.volumePerArea: volumePerAreaUnitDetails,
   ConversionType.waterHardness: waterHardnessUnitDetails,
 };

@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:math' show pow;
 
 import '../../enum/area_units.dart';
 import '../../enum/conversion_type.dart';

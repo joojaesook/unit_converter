@@ -29,6 +29,7 @@ enum ConversionType {
   torque,
   volume,
   volumeFlow,
+  volumeFlowPerArea,
   volumePerArea,
   waterHardness,
 }

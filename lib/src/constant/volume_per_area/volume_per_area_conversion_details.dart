@@ -27,7 +27,10 @@ final _perSquareMile = 1 /
     );
 final _perSquareYard = 1 /
     pow(
-      getConversionDetail(ConversionType.length, LengthUnits.yard),
+      getConversionDetail(
+        ConversionType.length,
+        LengthUnits.yard,
+      ),
       2,
     );
 final _gallonToCubicMetre = getConversionDetail(

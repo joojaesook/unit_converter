@@ -27,6 +27,7 @@ import 'enum/mass_units.dart';
 import 'enum/speed_units.dart';
 import 'enum/time_units.dart';
 import 'enum/torque_units.dart';
+import 'enum/volume_flow_per_area_units.dart';
 import 'enum/volume_flow_units.dart';
 import 'enum/volume_per_area_units.dart';
 import 'enum/volume_units.dart';
@@ -59,6 +60,7 @@ export 'enum/mass_units.dart';
 export 'enum/speed_units.dart';
 export 'enum/time_units.dart';
 export 'enum/torque_units.dart';
+export 'enum/volume_flow_per_area_units.dart';
 export 'enum/volume_flow_units.dart';
 export 'enum/volume_per_area_units.dart';
 export 'enum/volume_units.dart';
@@ -236,6 +238,12 @@ class UnitConverter {
   static MultiplicationBasedConverter volumeFlow() {
     return MultiplicationBasedConverter<VolumeFlowUnits>(
       ConversionType.volumeFlow,
+    );
+  }
+
+  static MultiplicationBasedConverter volumeFlowPerArea() {
+    return MultiplicationBasedConverter<VolumeFlowPerAreaUnits>(
+      ConversionType.volumeFlowPerArea,
     );
   }
 

@@ -44,7 +44,10 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
     3,
   ),
   VolumeUnits.cubicFoot: pow(
-    getConversionDetail(ConversionType.length, LengthUnits.foot),
+    getConversionDetail(
+      ConversionType.length,
+      LengthUnits.foot,
+    ),
     3,
   ),
   VolumeUnits.cubicGigaMetre: pow(
@@ -56,7 +59,10 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
     3,
   ),
   VolumeUnits.cubicInch: pow(
-    getConversionDetail(ConversionType.length, LengthUnits.inch),
+    getConversionDetail(
+      ConversionType.length,
+      LengthUnits.inch,
+    ),
     3,
   ),
   VolumeUnits.cubicKiloMetre: pow(
@@ -72,7 +78,10 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
     3,
   ),
   VolumeUnits.cubicMile: pow(
-    getConversionDetail(ConversionType.length, LengthUnits.mile),
+    getConversionDetail(
+      ConversionType.length,
+      LengthUnits.mile,
+    ),
     3,
   ),
   VolumeUnits.cubicMilliMetre: pow(
@@ -96,7 +105,10 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
     3,
   ),
   VolumeUnits.cubicYard: pow(
-    getConversionDetail(ConversionType.length, LengthUnits.yard),
+    getConversionDetail(
+      ConversionType.length,
+      LengthUnits.yard,
+    ),
     3,
   ),
   VolumeUnits.cubicYoctoMetre: pow(
