@@ -33,20 +33,21 @@ final Map<VolumeFlowPerAreaUnits, double> volumeFlowPerAreaConversionDetails = {
       _perSquareMileToPerSquareMetre,
   VolumeFlowPerAreaUnits.cubicMetrePerSecondPerSquareYard:
       _perSquareYardToPerSquareMetre,
-  VolumeFlowPerAreaUnits.gallonPerMinutePerAcre: _gallonUSLiquidToCubicMetre *
-      _perMinuteToPerSecond *
-      _perAcreToPerSquareMetre,
-  VolumeFlowPerAreaUnits.gallonPerMinutePerHectare:
+  VolumeFlowPerAreaUnits.gallonPerMinutePerAcre_USLiquid:
+      _gallonUSLiquidToCubicMetre *
+          _perMinuteToPerSecond *
+          _perAcreToPerSquareMetre,
+  VolumeFlowPerAreaUnits.gallonPerMinutePerHectare_USLiquid:
       _gallonUSLiquidToCubicMetre *
           _perMinuteToPerSecond *
           _perHectareToPerSquareMetre,
-  VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMetre:
+  VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMetre_USLiquid:
       _gallonUSLiquidToCubicMetre * _perMinuteToPerSecond,
-  VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMile:
+  VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMile_USLiquid:
       _gallonUSLiquidToCubicMetre *
           _perMinuteToPerSecond *
           _perSquareMileToPerSquareMetre,
-  VolumeFlowPerAreaUnits.gallonPerMinutePerSquareYard:
+  VolumeFlowPerAreaUnits.gallonPerMinutePerSquareYard_USLiquid:
       _gallonUSLiquidToCubicMetre *
           _perMinuteToPerSecond *
           _perSquareYardToPerSquareMetre,

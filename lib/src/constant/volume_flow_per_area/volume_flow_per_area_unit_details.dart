@@ -91,7 +91,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
         SymbolParts.acre,
       ],
     ),
-    VolumeFlowPerAreaUnits.gallonPerMinutePerAcre,
+    VolumeFlowPerAreaUnits.gallonPerMinutePerAcre_USLiquid,
     system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowPerAreaUnits>(
@@ -105,7 +105,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
         SymbolParts.hectare,
       ],
     ),
-    VolumeFlowPerAreaUnits.gallonPerMinutePerHectare,
+    VolumeFlowPerAreaUnits.gallonPerMinutePerHectare_USLiquid,
     system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowPerAreaUnits>(
@@ -120,7 +120,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMetre,
+    VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMetre_USLiquid,
     system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowPerAreaUnits>(
@@ -135,7 +135,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMile,
+    VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMile_USLiquid,
     system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowPerAreaUnits>(
@@ -150,7 +150,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
         SymbolParts.superscriptTwo,
       ],
     ),
-    VolumeFlowPerAreaUnits.gallonPerMinutePerSquareYard,
+    VolumeFlowPerAreaUnits.gallonPerMinutePerSquareYard_USLiquid,
     system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowPerAreaUnits>(

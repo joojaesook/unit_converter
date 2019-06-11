@@ -3,7 +3,7 @@ import '../../enum/water_hardness_units.dart';
 // Conversion factors to baseUnit
 final Map<WaterHardnessUnits, double> waterHardnessConversionDetails = {
   // Base unit
-  WaterHardnessUnits.milliMolePerLitre: 1,
+  WaterHardnessUnits.milliMolePerLitre_CaCO3: 1,
 
   WaterHardnessUnits.clarkDegree: 0.142413917539,
   WaterHardnessUnits.degreeOfGeneralHardness: 0.178324958004,
@@ -16,5 +16,5 @@ final Map<WaterHardnessUnits, double> waterHardnessConversionDetails = {
   WaterHardnessUnits.milliGramPerLitre_CaCO3: 0.00999131754505,
   WaterHardnessUnits.milliGramPerLitre_CaO: 0.0178324958004,
   WaterHardnessUnits.milliGramPerLitre_Mg2: 0.0411437975725,
-  WaterHardnessUnits.partPerMillion: 0.00999131754505,
+  WaterHardnessUnits.partPerMillion_CaCO3: 0.00999131754505,
 };

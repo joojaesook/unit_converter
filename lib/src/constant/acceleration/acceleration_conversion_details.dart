@@ -1,11 +1,10 @@
 import 'dart:math' show pow;
 
-import 'package:unit_converter/src/unit_converter.dart';
-
 import '../../enum/acceleration_units.dart';
 import '../../enum/conversion_type.dart';
 import '../../enum/length_units.dart';
 import '../../enum/prefix.dart';
+import '../../enum/time_units.dart';
 import '../../misc/global.dart';
 import '../others/prefix_value.dart';
 

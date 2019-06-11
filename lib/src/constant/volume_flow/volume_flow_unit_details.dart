@@ -31,6 +31,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.acreFootPerYear,
+    system: unitSystem[UnitSystems.gregorian],
   ),
   Unit<VolumeFlowUnits>(
     'attolitre per day',

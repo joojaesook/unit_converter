@@ -11,6 +11,6 @@ enum WaterHardnessUnits {
   milliGramPerLitre_CaCO3,
   milliGramPerLitre_CaO,
   milliGramPerLitre_Mg2,
-  milliMolePerLitre,
-  partPerMillion,
+  milliMolePerLitre_CaCO3,
+  partPerMillion_CaCO3,
 }

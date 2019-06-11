@@ -145,7 +145,7 @@ final Set<Unit> waterHardnessUnitDetails = {
         SymbolParts.litre,
       ],
     ),
-    WaterHardnessUnits.milliMolePerLitre,
+    WaterHardnessUnits.milliMolePerLitre_CaCO3,
     baseUnit: true,
     system: unitSystem[UnitSystems.caCO3],
   ),
@@ -158,7 +158,7 @@ final Set<Unit> waterHardnessUnitDetails = {
         SymbolParts.lM,
       ],
     ),
-    WaterHardnessUnits.partPerMillion,
+    WaterHardnessUnits.partPerMillion_CaCO3,
     system: unitSystem[UnitSystems.caCO3],
   ),
 };

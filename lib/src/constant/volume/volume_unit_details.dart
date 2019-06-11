@@ -407,7 +407,7 @@ final Set<Unit> volumeUnitDetails = {
         SymbolParts.lC,
       ],
     ),
-    VolumeUnits.cup_USFoodNutrition,
+    VolumeUnits.cup_USFoodNutritionLabel,
     system: unitSystem[UnitSystems.usFoodNutritionLabel],
   ),
   Unit<VolumeUnits>(
@@ -519,7 +519,7 @@ final Set<Unit> volumeUnitDetails = {
         SymbolParts.ounce,
       ],
     ),
-    VolumeUnits.fluidOunce_USFoodNutrition,
+    VolumeUnits.fluidOunce_USFoodNutritionLabel,
     system: unitSystem[UnitSystems.usFoodNutritionLabel],
   ),
   Unit<VolumeUnits>(
@@ -618,7 +618,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.jigger,
-    // system: systemValue[Systems.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<VolumeUnits>(
     'kilolitre',
@@ -852,7 +852,7 @@ final Set<Unit> volumeUnitDetails = {
         SymbolParts.tablespoon,
       ],
     ),
-    VolumeUnits.tablespoon_USFoodNutrition,
+    VolumeUnits.tablespoon_USFoodNutritionLabel,
     system: unitSystem[UnitSystems.usFoodNutritionLabel],
   ),
   Unit<VolumeUnits>(
@@ -862,7 +862,7 @@ final Set<Unit> volumeUnitDetails = {
         SymbolParts.teaspoon,
       ],
     ),
-    VolumeUnits.teaspoon_metric,
+    VolumeUnits.teaspoon_Metric,
     system: unitSystem[UnitSystems.metric],
   ),
   Unit<VolumeUnits>(
@@ -882,7 +882,7 @@ final Set<Unit> volumeUnitDetails = {
         SymbolParts.teaspoon,
       ],
     ),
-    VolumeUnits.teaspoon_USFoodNutrition,
+    VolumeUnits.teaspoon_USFoodNutritionLabel,
     system: unitSystem[UnitSystems.usFoodNutritionLabel],
   ),
   Unit<VolumeUnits>(

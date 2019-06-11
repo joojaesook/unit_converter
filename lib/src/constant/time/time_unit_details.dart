@@ -1,7 +1,9 @@
 import '../../enum/symbol_parts.dart';
 import '../../enum/time_units.dart';
+import '../../enum/unit_systems.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
+import '../others/unit_system.dart';
 
 final Set<Unit> timeUnitDetails = {
   Unit<TimeUnits>(
@@ -34,7 +36,7 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.century,
-    // system: systemValue[System.gregorian],
+    system: unitSystem[UnitSystems.gregorian],
   ),
   Unit<TimeUnits>(
     'day',
@@ -53,7 +55,7 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.decade,
-    // system: systemValue[System.gregorian],
+    system: unitSystem[UnitSystems.gregorian],
   ),
   Unit<TimeUnits>(
     'decasecond',
@@ -180,7 +182,7 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.millennium,
-    // system: systemValue[System.gregorian],
+    system: unitSystem[UnitSystems.gregorian],
   ),
   Unit<TimeUnits>(
     'millisecond',
@@ -210,7 +212,7 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.month,
-    // system: systemValue[System.gregorian],
+    system: unitSystem[UnitSystems.gregorian],
   ),
   Unit<TimeUnits>(
     'nanosecond',
@@ -283,7 +285,7 @@ final Set<Unit> timeUnitDetails = {
       ],
     ),
     TimeUnits.year,
-    // system: systemValue[System.gregorian],
+    system: unitSystem[UnitSystems.gregorian],
   ),
   Unit<TimeUnits>(
     'yoctosecond',
