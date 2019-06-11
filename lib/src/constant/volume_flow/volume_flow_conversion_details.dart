@@ -10,55 +10,23 @@ import '../../misc/global.dart';
 import '../../unit_converter_old.dart';
 import '../others/prefix_value.dart';
 
-final _acre = getConversionDetail(
-  ConversionType.area,
-  AreaUnits.acre,
-);
-final _foot = getConversionDetail(
-  ConversionType.length,
-  LengthUnits.foot,
-);
-final _inch = getConversionDetail(
-  ConversionType.length,
-  LengthUnits.inch,
-);
-final _day = getConversionDetail(
-  ConversionType.time,
-  TimeUnits.day,
-);
-final _year = getConversionDetail(
-  ConversionType.time,
-  TimeUnits.year,
-);
-final _hour = getConversionDetail(
-  ConversionType.time,
-  TimeUnits.hour,
-);
-final _minute = getConversionDetail(
-  ConversionType.time,
-  TimeUnits.minute,
-);
+final _acre = getConversionDetail(ConversionType.area, AreaUnits.acre);
+final _foot = getConversionDetail(ConversionType.length, LengthUnits.foot);
+final _inch = getConversionDetail(ConversionType.length, LengthUnits.inch);
 
-final _litre = getConversionDetail(
-  ConversionType.volume,
-  VolumeUnits.litre,
-);
-final _gallonImperial = getConversionDetail(
-  ConversionType.volume,
-  VolumeUnits.gallon_Imperial,
-);
-final _gallonUSLiquid = getConversionDetail(
-  ConversionType.volume,
-  VolumeUnits.gallon_USLiquid,
-);
-final _oilBarrel = getConversionDetail(
-  ConversionType.volume,
-  VolumeUnits.oilBarrel,
-);
+final _litre = getConversionDetail(ConversionType.volume, VolumeUnits.litre);
+final _gallonImperial =
+    getConversionDetail(ConversionType.volume, VolumeUnits.gallon_Imperial);
+final _gallonUSLiquid =
+    getConversionDetail(ConversionType.volume, VolumeUnits.gallon_USLiquid);
+final _oilBarrel =
+    getConversionDetail(ConversionType.volume, VolumeUnits.oilBarrel);
 
-final _perDay = 1 / _day;
-final _perHour = 1 / _hour;
-final _perMinute = 1 / _minute;
+final _perDay = 1 / getConversionDetail(ConversionType.time, TimeUnits.day);
+final _perHour = 1 / getConversionDetail(ConversionType.time, TimeUnits.hour);
+final _perMinute =
+    1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
+final _perYear = 1 / getConversionDetail(ConversionType.time, TimeUnits.year);
 
 final _litrePerDay = _litre * _perDay;
 final _litrePerHour = _litre * _perHour;
@@ -68,7 +36,7 @@ final Map<VolumeFlowUnits, double> volumeFlowConversionDetails = {
   // Base unit
   VolumeFlowUnits.cubicMetrePerSecond: 1,
   VolumeFlowUnits.acreFootPerDay: _acre * _foot * _perDay,
-  VolumeFlowUnits.acreFootPerYear: (_acre * _foot) / _year,
+  VolumeFlowUnits.acreFootPerYear: (_acre * _foot) * _perYear,
   VolumeFlowUnits.attoLitrePerDay: _litrePerDay * prefixValue[Prefix.atto],
   VolumeFlowUnits.attoLitrePerHour: _litrePerHour * prefixValue[Prefix.atto],
   VolumeFlowUnits.attoLitrePerMinute:
@@ -79,427 +47,157 @@ final Map<VolumeFlowUnits, double> volumeFlowConversionDetails = {
   VolumeFlowUnits.centiLitrePerMinute:
       _litrePerMinute * prefixValue[Prefix.centi],
   VolumeFlowUnits.centiLitrePerSecond: _litre * prefixValue[Prefix.centi],
-  VolumeFlowUnits.cubicAttoMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.atto],
-        3,
-      ),
-  VolumeFlowUnits.cubicAttoMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.atto],
-        3,
-      ),
-  VolumeFlowUnits.cubicAttoMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.atto],
-        3,
-      ),
-  VolumeFlowUnits.cubicAttoMetrePerSecond: pow(
-    prefixValue[Prefix.atto],
-    3,
-  ),
-  VolumeFlowUnits.cubicCentiMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.centi],
-        3,
-      ),
-  VolumeFlowUnits.cubicCentiMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.centi],
-        3,
-      ),
-  VolumeFlowUnits.cubicCentiMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.centi],
-        3,
-      ),
-  VolumeFlowUnits.cubicCentiMetrePerSecond: pow(
-    prefixValue[Prefix.centi],
-    3,
-  ),
-  VolumeFlowUnits.cubicDecaMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.deca],
-        3,
-      ),
-  VolumeFlowUnits.cubicDecaMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.deca],
-        3,
-      ),
-  VolumeFlowUnits.cubicDecaMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.deca],
-        3,
-      ),
-  VolumeFlowUnits.cubicDecaMetrePerSecond: pow(
-    prefixValue[Prefix.deca],
-    3,
-  ),
-  VolumeFlowUnits.cubicDeciMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.deci],
-        3,
-      ),
-  VolumeFlowUnits.cubicDeciMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.deci],
-        3,
-      ),
-  VolumeFlowUnits.cubicDeciMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.deci],
-        3,
-      ),
-  VolumeFlowUnits.cubicDeciMetrePerSecond: pow(
-    prefixValue[Prefix.deci],
-    3,
-  ),
-  VolumeFlowUnits.cubicExaMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.exa],
-        3,
-      ),
-  VolumeFlowUnits.cubicExaMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.exa],
-        3,
-      ),
-  VolumeFlowUnits.cubicExaMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.exa],
-        3,
-      ),
-  VolumeFlowUnits.cubicExaMetrePerSecond: pow(
-    prefixValue[Prefix.exa],
-    3,
-  ),
-  VolumeFlowUnits.cubicFemtoMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.femto],
-        3,
-      ),
-  VolumeFlowUnits.cubicFemtoMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.femto],
-        3,
-      ),
-  VolumeFlowUnits.cubicFemtoMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.femto],
-        3,
-      ),
-  VolumeFlowUnits.cubicFemtoMetrePerSecond: pow(
-    prefixValue[Prefix.femto],
-    3,
-  ),
-  VolumeFlowUnits.cubicFootPerDay: _perDay *
-      pow(
-        _foot,
-        3,
-      ),
-  VolumeFlowUnits.cubicFootPerHour: _perHour *
-      pow(
-        _foot,
-        3,
-      ),
-  VolumeFlowUnits.cubicFootPerMinute: _perMinute *
-      pow(
-        _foot,
-        3,
-      ),
-  VolumeFlowUnits.cubicFootPerSecond: pow(
-    _foot,
-    3,
-  ),
-  VolumeFlowUnits.cubicGigaMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.giga],
-        3,
-      ),
-  VolumeFlowUnits.cubicGigaMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.giga],
-        3,
-      ),
-  VolumeFlowUnits.cubicGigaMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.giga],
-        3,
-      ),
-  VolumeFlowUnits.cubicGigaMetrePerSecond: pow(
-    prefixValue[Prefix.giga],
-    3,
-  ),
-  VolumeFlowUnits.cubicHectoMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.hecto],
-        3,
-      ),
-  VolumeFlowUnits.cubicHectoMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.hecto],
-        3,
-      ),
-  VolumeFlowUnits.cubicHectoMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.hecto],
-        3,
-      ),
-  VolumeFlowUnits.cubicHectoMetrePerSecond: pow(
-    prefixValue[Prefix.hecto],
-    3,
-  ),
-  VolumeFlowUnits.cubicInchPerDay: _perDay *
-      pow(
-        _inch,
-        3,
-      ),
-  VolumeFlowUnits.cubicInchPerHour: _perHour *
-      pow(
-        _inch,
-        3,
-      ),
-  VolumeFlowUnits.cubicInchPerMinute: _perMinute *
-      pow(
-        _inch,
-        3,
-      ),
-  VolumeFlowUnits.cubicInchPerSecond: pow(
-    _inch,
-    3,
-  ),
-  VolumeFlowUnits.cubicKiloMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.kilo],
-        3,
-      ),
-  VolumeFlowUnits.cubicKiloMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.kilo],
-        3,
-      ),
-  VolumeFlowUnits.cubicKiloMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.kilo],
-        3,
-      ),
-  VolumeFlowUnits.cubicKiloMetrePerSecond: pow(
-    prefixValue[Prefix.kilo],
-    3,
-  ),
-  VolumeFlowUnits.cubicMegaMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.mega],
-        3,
-      ),
-  VolumeFlowUnits.cubicMegaMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.mega],
-        3,
-      ),
-  VolumeFlowUnits.cubicMegaMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.mega],
-        3,
-      ),
-  VolumeFlowUnits.cubicMegaMetrePerSecond: pow(
-    prefixValue[Prefix.mega],
-    3,
-  ),
+  VolumeFlowUnits.cubicAttoMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.atto], 3),
+  VolumeFlowUnits.cubicAttoMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.atto], 3),
+  VolumeFlowUnits.cubicAttoMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.atto], 3),
+  VolumeFlowUnits.cubicAttoMetrePerSecond: pow(prefixValue[Prefix.atto], 3),
+  VolumeFlowUnits.cubicCentiMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.centi], 3),
+  VolumeFlowUnits.cubicCentiMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.centi], 3),
+  VolumeFlowUnits.cubicCentiMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.centi], 3),
+  VolumeFlowUnits.cubicCentiMetrePerSecond: pow(prefixValue[Prefix.centi], 3),
+  VolumeFlowUnits.cubicDecaMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.deca], 3),
+  VolumeFlowUnits.cubicDecaMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.deca], 3),
+  VolumeFlowUnits.cubicDecaMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.deca], 3),
+  VolumeFlowUnits.cubicDecaMetrePerSecond: pow(prefixValue[Prefix.deca], 3),
+  VolumeFlowUnits.cubicDeciMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.deci], 3),
+  VolumeFlowUnits.cubicDeciMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.deci], 3),
+  VolumeFlowUnits.cubicDeciMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.deci], 3),
+  VolumeFlowUnits.cubicDeciMetrePerSecond: pow(prefixValue[Prefix.deci], 3),
+  VolumeFlowUnits.cubicExaMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.exa], 3),
+  VolumeFlowUnits.cubicExaMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.exa], 3),
+  VolumeFlowUnits.cubicExaMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.exa], 3),
+  VolumeFlowUnits.cubicExaMetrePerSecond: pow(prefixValue[Prefix.exa], 3),
+  VolumeFlowUnits.cubicFemtoMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.femto], 3),
+  VolumeFlowUnits.cubicFemtoMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.femto], 3),
+  VolumeFlowUnits.cubicFemtoMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.femto], 3),
+  VolumeFlowUnits.cubicFemtoMetrePerSecond: pow(prefixValue[Prefix.femto], 3),
+  VolumeFlowUnits.cubicFootPerDay: _perDay * pow(_foot, 3),
+  VolumeFlowUnits.cubicFootPerHour: _perHour * pow(_foot, 3),
+  VolumeFlowUnits.cubicFootPerMinute: _perMinute * pow(_foot, 3),
+  VolumeFlowUnits.cubicFootPerSecond: pow(_foot, 3),
+  VolumeFlowUnits.cubicGigaMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.giga], 3),
+  VolumeFlowUnits.cubicGigaMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.giga], 3),
+  VolumeFlowUnits.cubicGigaMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.giga], 3),
+  VolumeFlowUnits.cubicGigaMetrePerSecond: pow(prefixValue[Prefix.giga], 3),
+  VolumeFlowUnits.cubicHectoMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.hecto], 3),
+  VolumeFlowUnits.cubicHectoMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.hecto], 3),
+  VolumeFlowUnits.cubicHectoMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.hecto], 3),
+  VolumeFlowUnits.cubicHectoMetrePerSecond: pow(prefixValue[Prefix.hecto], 3),
+  VolumeFlowUnits.cubicInchPerDay: _perDay * pow(_inch, 3),
+  VolumeFlowUnits.cubicInchPerHour: _perHour * pow(_inch, 3),
+  VolumeFlowUnits.cubicInchPerMinute: _perMinute * pow(_inch, 3),
+  VolumeFlowUnits.cubicInchPerSecond: pow(_inch, 3),
+  VolumeFlowUnits.cubicKiloMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.kilo], 3),
+  VolumeFlowUnits.cubicKiloMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.kilo], 3),
+  VolumeFlowUnits.cubicKiloMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.kilo], 3),
+  VolumeFlowUnits.cubicKiloMetrePerSecond: pow(prefixValue[Prefix.kilo], 3),
+  VolumeFlowUnits.cubicMegaMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.mega], 3),
+  VolumeFlowUnits.cubicMegaMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.mega], 3),
+  VolumeFlowUnits.cubicMegaMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.mega], 3),
+  VolumeFlowUnits.cubicMegaMetrePerSecond: pow(prefixValue[Prefix.mega], 3),
   VolumeFlowUnits.cubicMetrePerDay: _perDay,
   VolumeFlowUnits.cubicMetrePerHour: _perHour,
   VolumeFlowUnits.cubicMetrePerMinute: _perMinute,
-  VolumeFlowUnits.cubicMicroMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.micro],
-        3,
-      ),
-  VolumeFlowUnits.cubicMicroMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.micro],
-        3,
-      ),
-  VolumeFlowUnits.cubicMicroMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.micro],
-        3,
-      ),
-  VolumeFlowUnits.cubicMicroMetrePerSecond: pow(
-    prefixValue[Prefix.micro],
-    3,
-  ),
-  VolumeFlowUnits.cubicMilliMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.milli],
-        3,
-      ),
-  VolumeFlowUnits.cubicMilliMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.milli],
-        3,
-      ),
-  VolumeFlowUnits.cubicMilliMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.milli],
-        3,
-      ),
-  VolumeFlowUnits.cubicMilliMetrePerSecond: pow(
-    prefixValue[Prefix.milli],
-    3,
-  ),
-  VolumeFlowUnits.cubicNanoMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.nano],
-        3,
-      ),
-  VolumeFlowUnits.cubicNanoMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.nano],
-        3,
-      ),
-  VolumeFlowUnits.cubicNanoMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.nano],
-        3,
-      ),
-  VolumeFlowUnits.cubicNanoMetrePerSecond: pow(
-    prefixValue[Prefix.nano],
-    3,
-  ),
-  VolumeFlowUnits.cubicPetaMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.peta],
-        3,
-      ),
-  VolumeFlowUnits.cubicPetaMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.peta],
-        3,
-      ),
-  VolumeFlowUnits.cubicPetaMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.peta],
-        3,
-      ),
-  VolumeFlowUnits.cubicPetaMetrePerSecond: pow(
-    prefixValue[Prefix.peta],
-    3,
-  ),
-  VolumeFlowUnits.cubicPicoMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.pico],
-        3,
-      ),
-  VolumeFlowUnits.cubicPicoMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.pico],
-        3,
-      ),
-  VolumeFlowUnits.cubicPicoMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.pico],
-        3,
-      ),
-  VolumeFlowUnits.cubicPicoMetrePerSecond: pow(
-    prefixValue[Prefix.pico],
-    3,
-  ),
-  VolumeFlowUnits.cubicTeraMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.tera],
-        3,
-      ),
-  VolumeFlowUnits.cubicTeraMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.tera],
-        3,
-      ),
-  VolumeFlowUnits.cubicTeraMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.tera],
-        3,
-      ),
-  VolumeFlowUnits.cubicTeraMetrePerSecond: pow(
-    prefixValue[Prefix.tera],
-    3,
-  ),
-  VolumeFlowUnits.cubicYoctoMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.yocto],
-        3,
-      ),
-  VolumeFlowUnits.cubicYoctoMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.yocto],
-        3,
-      ),
-  VolumeFlowUnits.cubicYoctoMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.yocto],
-        3,
-      ),
-  VolumeFlowUnits.cubicYoctoMetrePerSecond: pow(
-    prefixValue[Prefix.yocto],
-    3,
-  ),
-  VolumeFlowUnits.cubicYottaMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.yotta],
-        3,
-      ),
-  VolumeFlowUnits.cubicYottaMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.yotta],
-        3,
-      ),
-  VolumeFlowUnits.cubicYottaMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.yotta],
-        3,
-      ),
-  VolumeFlowUnits.cubicYottaMetrePerSecond: pow(
-    prefixValue[Prefix.yotta],
-    3,
-  ),
-  VolumeFlowUnits.cubicZeptoMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.zepto],
-        3,
-      ),
-  VolumeFlowUnits.cubicZeptoMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.zepto],
-        3,
-      ),
-  VolumeFlowUnits.cubicZeptoMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.zepto],
-        3,
-      ),
-  VolumeFlowUnits.cubicZeptoMetrePerSecond: pow(
-    prefixValue[Prefix.zepto],
-    3,
-  ),
-  VolumeFlowUnits.cubicZettaMetrePerDay: _perDay *
-      pow(
-        prefixValue[Prefix.zetta],
-        3,
-      ),
-  VolumeFlowUnits.cubicZettaMetrePerHour: _perHour *
-      pow(
-        prefixValue[Prefix.zetta],
-        3,
-      ),
-  VolumeFlowUnits.cubicZettaMetrePerMinute: _perMinute *
-      pow(
-        prefixValue[Prefix.zetta],
-        3,
-      ),
-  VolumeFlowUnits.cubicZettaMetrePerSecond: pow(
-    prefixValue[Prefix.zetta],
-    3,
-  ),
+  VolumeFlowUnits.cubicMicroMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.micro], 3),
+  VolumeFlowUnits.cubicMicroMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.micro], 3),
+  VolumeFlowUnits.cubicMicroMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.micro], 3),
+  VolumeFlowUnits.cubicMicroMetrePerSecond: pow(prefixValue[Prefix.micro], 3),
+  VolumeFlowUnits.cubicMilliMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.milli], 3),
+  VolumeFlowUnits.cubicMilliMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.milli], 3),
+  VolumeFlowUnits.cubicMilliMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.milli], 3),
+  VolumeFlowUnits.cubicMilliMetrePerSecond: pow(prefixValue[Prefix.milli], 3),
+  VolumeFlowUnits.cubicNanoMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.nano], 3),
+  VolumeFlowUnits.cubicNanoMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.nano], 3),
+  VolumeFlowUnits.cubicNanoMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.nano], 3),
+  VolumeFlowUnits.cubicNanoMetrePerSecond: pow(prefixValue[Prefix.nano], 3),
+  VolumeFlowUnits.cubicPetaMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.peta], 3),
+  VolumeFlowUnits.cubicPetaMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.peta], 3),
+  VolumeFlowUnits.cubicPetaMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.peta], 3),
+  VolumeFlowUnits.cubicPetaMetrePerSecond: pow(prefixValue[Prefix.peta], 3),
+  VolumeFlowUnits.cubicPicoMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.pico], 3),
+  VolumeFlowUnits.cubicPicoMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.pico], 3),
+  VolumeFlowUnits.cubicPicoMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.pico], 3),
+  VolumeFlowUnits.cubicPicoMetrePerSecond: pow(prefixValue[Prefix.pico], 3),
+  VolumeFlowUnits.cubicTeraMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.tera], 3),
+  VolumeFlowUnits.cubicTeraMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.tera], 3),
+  VolumeFlowUnits.cubicTeraMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.tera], 3),
+  VolumeFlowUnits.cubicTeraMetrePerSecond: pow(prefixValue[Prefix.tera], 3),
+  VolumeFlowUnits.cubicYoctoMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.yocto], 3),
+  VolumeFlowUnits.cubicYoctoMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.yocto], 3),
+  VolumeFlowUnits.cubicYoctoMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.yocto], 3),
+  VolumeFlowUnits.cubicYoctoMetrePerSecond: pow(prefixValue[Prefix.yocto], 3),
+  VolumeFlowUnits.cubicYottaMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.yotta], 3),
+  VolumeFlowUnits.cubicYottaMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.yotta], 3),
+  VolumeFlowUnits.cubicYottaMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.yotta], 3),
+  VolumeFlowUnits.cubicYottaMetrePerSecond: pow(prefixValue[Prefix.yotta], 3),
+  VolumeFlowUnits.cubicZeptoMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.zepto], 3),
+  VolumeFlowUnits.cubicZeptoMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.zepto], 3),
+  VolumeFlowUnits.cubicZeptoMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.zepto], 3),
+  VolumeFlowUnits.cubicZeptoMetrePerSecond: pow(prefixValue[Prefix.zepto], 3),
+  VolumeFlowUnits.cubicZettaMetrePerDay:
+      _perDay * pow(prefixValue[Prefix.zetta], 3),
+  VolumeFlowUnits.cubicZettaMetrePerHour:
+      _perHour * pow(prefixValue[Prefix.zetta], 3),
+  VolumeFlowUnits.cubicZettaMetrePerMinute:
+      _perMinute * pow(prefixValue[Prefix.zetta], 3),
+  VolumeFlowUnits.cubicZettaMetrePerSecond: pow(prefixValue[Prefix.zetta], 3),
   VolumeFlowUnits.decaLitrePerDay: _litrePerDay * prefixValue[Prefix.deca],
   VolumeFlowUnits.decaLitrePerHour: _litrePerHour * prefixValue[Prefix.deca],
   VolumeFlowUnits.decaLitrePerMinute:
