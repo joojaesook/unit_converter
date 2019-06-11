@@ -19,6 +19,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.cubicMetrePerSecondPerAcre,
+    americanName: 'cubic meter per second per acre',
   ),
   Unit<VolumeFlowPerAreaUnits>(
     'cubic metre per second per hectare',
@@ -33,6 +34,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.cubicMetrePerSecondPerHectare,
+    americanName: 'cubic meter per second per hectare',
   ),
   Unit<VolumeFlowPerAreaUnits>(
     'cubic metre per second per square metre',
@@ -48,6 +50,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.cubicMetrePerSecondPerSquareMetre,
+    americanName: 'cubic meter per second per square meter',
     baseUnit: true,
   ),
   Unit<VolumeFlowPerAreaUnits>(
@@ -64,6 +67,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.cubicMetrePerSecondPerSquareMile,
+    americanName: 'cubic meter per second per square mile',
   ),
   Unit<VolumeFlowPerAreaUnits>(
     'cubic metre per second per square yard',
@@ -79,6 +83,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.cubicMetrePerSecondPerSquareYard,
+    americanName: 'cubic meter per second per square yard',
   ),
   Unit<VolumeFlowPerAreaUnits>(
     'gallon per minute per acre',
@@ -121,6 +126,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.gallonPerMinutePerSquareMetre_USLiquid,
+    americanName: 'gallon per minute per square meter',
     system: unitSystem[UnitSystems.usLiquid],
   ),
   Unit<VolumeFlowPerAreaUnits>(
@@ -165,6 +171,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.litrePerMinutePerAcre,
+    americanName: 'liter per minute per acre',
   ),
   Unit<VolumeFlowPerAreaUnits>(
     'litre per minute per hectare',
@@ -178,6 +185,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.litrePerMinutePerHectare,
+    americanName: 'liter per minute per hectare',
   ),
   Unit<VolumeFlowPerAreaUnits>(
     'litre per minute per square metre',
@@ -192,6 +200,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.litrePerMinutePerSquareMetre,
+    americanName: 'liter per minute per square meter',
   ),
   Unit<VolumeFlowPerAreaUnits>(
     'litre per minute per square mile',
@@ -206,6 +215,7 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.litrePerMinutePerSquareMile,
+    americanName: 'liter per minute per square mile',
   ),
   Unit<VolumeFlowPerAreaUnits>(
     'litre per minute per square yard',
@@ -220,5 +230,6 @@ final Set<Unit> volumeFlowPerAreaUnitDetails = {
       ],
     ),
     VolumeFlowPerAreaUnits.litrePerMinutePerSquareYard,
+    americanName: 'liter per minute per square yard',
   ),
 };

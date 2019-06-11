@@ -15,6 +15,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.attoMetrePerDay,
+    americanName: 'attometer per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -28,6 +29,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.attoMetrePerHour,
+    americanName: 'attometer per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -41,6 +43,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.attoMetrePerMinute,
+    americanName: 'attometer per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -54,6 +57,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.attoMetrePerSecond,
+    americanName: 'attometer per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -67,6 +71,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.centiMetrePerDay,
+    americanName: 'centimeter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -80,6 +85,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.centiMetrePerHour,
+    americanName: 'centimeter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -93,6 +99,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.centiMetrePerMinute,
+    americanName: 'centimeter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -106,6 +113,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.centiMetrePerSecond,
+    americanName: 'centimeter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -119,6 +127,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.decaMetrePerDay,
+    americanName: 'decameter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -132,6 +141,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.decaMetrePerHour,
+    americanName: 'decameter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -145,6 +155,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.decaMetrePerMinute,
+    americanName: 'decameter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -158,6 +169,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.decaMetrePerSecond,
+    americanName: 'decameter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -171,6 +183,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.deciMetrePerDay,
+    americanName: 'decimeter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -184,6 +197,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.deciMetrePerHour,
+    americanName: 'decimeter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -197,6 +211,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.deciMetrePerMinute,
+    americanName: 'decimeter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -210,6 +225,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.deciMetrePerSecond,
+    americanName: 'decimeter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -223,6 +239,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.exaMetrePerDay,
+    americanName: 'exameter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -236,6 +253,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.exaMetrePerHour,
+    americanName: 'exameter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -249,6 +267,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.exaMetrePerMinute,
+    americanName: 'exameter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -262,6 +281,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.exaMetrePerSecond,
+    americanName: 'exameter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -275,6 +295,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.femtoMetrePerDay,
+    americanName: 'femtometer per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -288,6 +309,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.femtoMetrePerHour,
+    americanName: 'femtometer per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -301,6 +323,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.femtoMetrePerMinute,
+    americanName: 'femtometer per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -314,6 +337,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.femtoMetrePerSecond,
+    americanName: 'femtometer per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -371,6 +395,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.gigaMetrePerDay,
+    americanName: 'gigameter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -384,6 +409,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.gigaMetrePerHour,
+    americanName: 'gigameter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -397,6 +423,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.gigaMetrePerMinute,
+    americanName: 'gigameter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -410,6 +437,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.gigaMetrePerSecond,
+    americanName: 'gigameter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -423,6 +451,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.hectoMetrePerDay,
+    americanName: 'hectometer per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -436,6 +465,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.hectoMetrePerHour,
+    americanName: 'hectometer per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -449,6 +479,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.hectoMetrePerMinute,
+    americanName: 'hectometer per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -462,6 +493,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.hectoMetrePerSecond,
+    americanName: 'hectometer per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -519,6 +551,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.kiloMetrePerDay,
+    americanName: 'kilometer per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -532,6 +565,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.kiloMetrePerHour,
+    americanName: 'kilometer per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -545,6 +579,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.kiloMetrePerMinute,
+    americanName: 'kilometer per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -558,6 +593,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.kiloMetrePerSecond,
+    americanName: 'kilometer per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -580,6 +616,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.megaMetrePerDay,
+    americanName: 'megameter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -593,6 +630,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.megaMetrePerHour,
+    americanName: 'megameter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -606,6 +644,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.megaMetrePerMinute,
+    americanName: 'megameter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -619,6 +658,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.megaMetrePerSecond,
+    americanName: 'megameter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -631,6 +671,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.metrePerDay,
+    americanName: 'meter per day',
   ),
   Unit<SpeedUnits>(
     'metre per hour',
@@ -642,6 +683,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.metrePerHour,
+    americanName: 'meter per hour',
   ),
   Unit<SpeedUnits>(
     'metre per minute',
@@ -653,6 +695,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.metrePerMinute,
+    americanName: 'meter per minute',
   ),
   Unit<SpeedUnits>(
     'metre per second',
@@ -664,6 +707,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.metrePerSecond,
+    americanName: 'meter per second',
     baseUnit: true,
   ),
   Unit<SpeedUnits>(
@@ -677,6 +721,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.microMetrePerDay,
+    americanName: 'micrometer per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -690,6 +735,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.microMetrePerHour,
+    americanName: 'micrometer per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -703,6 +749,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.microMetrePerMinute,
+    americanName: 'micrometer per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -716,6 +763,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.microMetrePerSecond,
+    americanName: 'micrometer per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -773,6 +821,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.milliMetrePerDay,
+    americanName: 'millimeter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -786,6 +835,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.milliMetrePerHour,
+    americanName: 'millimeter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -799,6 +849,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.milliMetrePerMinute,
+    americanName: 'millimeter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -812,6 +863,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.milliMetrePerSecond,
+    americanName: 'millimeter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -825,6 +877,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.nanoMetrePerDay,
+    americanName: 'nanometer per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -838,6 +891,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.nanoMetrePerHour,
+    americanName: 'nanometer per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -851,6 +905,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.nanoMetrePerMinute,
+    americanName: 'nanometer per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -864,6 +919,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.nanoMetrePerSecond,
+    americanName: 'nanometer per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -910,6 +966,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.petaMetrePerDay,
+    americanName: 'petameter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -923,6 +980,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.petaMetrePerHour,
+    americanName: 'petameter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -936,6 +994,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.petaMetrePerMinute,
+    americanName: 'petameter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -949,6 +1008,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.petaMetrePerSecond,
+    americanName: 'petameter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -962,6 +1022,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.picoMetrePerDay,
+    americanName: 'picometer per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -975,6 +1036,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.picoMetrePerHour,
+    americanName: 'picometer per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -988,6 +1050,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.picoMetrePerMinute,
+    americanName: 'picometer per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1001,6 +1064,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.picoMetrePerSecond,
+    americanName: 'picometer per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1014,6 +1078,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.teraMetrePerDay,
+    americanName: 'terameter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1027,6 +1092,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.teraMetrePerHour,
+    americanName: 'terameter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1040,6 +1106,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.teraMetrePerMinute,
+    americanName: 'terameter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1053,6 +1120,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.teraMetrePerSecond,
+    americanName: 'terameter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1110,6 +1178,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yoctoMetrePerDay,
+    americanName: 'yoctometer per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1123,6 +1192,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yoctoMetrePerHour,
+    americanName: 'yoctometer per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1136,6 +1206,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yoctoMetrePerMinute,
+    americanName: 'yoctometer per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1149,6 +1220,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yoctoMetrePerSecond,
+    americanName: 'yoctometer per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1162,6 +1234,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yottaMetrePerDay,
+    americanName: 'yottameter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1175,6 +1248,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yottaMetrePerHour,
+    americanName: 'yottameter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1188,6 +1262,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yottaMetrePerMinute,
+    americanName: 'yottameter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1201,6 +1276,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.yottaMetrePerSecond,
+    americanName: 'yottameter per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1214,6 +1290,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zeptoMetrePerDay,
+    americanName: 'zeptometer per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1227,6 +1304,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zeptoMetrePerHour,
+    americanName: 'zeptometer per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1240,6 +1318,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zeptoMetrePerMinute,
+    americanName: 'zeptometer per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1253,6 +1332,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zeptoMetrePerSecond,
+    americanName: 'zeptometer per second',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1266,6 +1346,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zettaMetrePerDay,
+    americanName: 'zettameter per day',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1279,6 +1360,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zettaMetrePerHour,
+    americanName: 'zettameter per hour',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1292,6 +1374,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zettaMetrePerMinute,
+    americanName: 'zettameter per minute',
     variation: true,
   ),
   Unit<SpeedUnits>(
@@ -1305,6 +1388,7 @@ final Set<Unit> speedUnitDetails = {
       ],
     ),
     SpeedUnits.zettaMetrePerSecond,
+    americanName: 'zettameter per second',
     variation: true,
   ),
 };

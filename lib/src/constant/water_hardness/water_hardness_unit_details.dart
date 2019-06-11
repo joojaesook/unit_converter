@@ -82,6 +82,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliEquivalentPerLitre,
+    americanName: 'milliequivalent per liter',
   ),
   Unit<WaterHardnessUnits>(
     'milligram per litre',
@@ -94,6 +95,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_Ca2,
+    americanName: 'milligram per liter',
     system: unitSystem[UnitSystems.ca2],
   ),
   Unit<WaterHardnessUnits>(
@@ -107,6 +109,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_CaCO3,
+    americanName: 'milligram per liter',
     system: unitSystem[UnitSystems.caCO3],
   ),
   Unit<WaterHardnessUnits>(
@@ -120,6 +123,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_CaO,
+    americanName: 'milligram per liter',
     system: unitSystem[UnitSystems.caO],
   ),
   Unit<WaterHardnessUnits>(
@@ -133,6 +137,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliGramPerLitre_Mg2,
+    americanName: 'milligram per liter',
     system: unitSystem[UnitSystems.mg2],
   ),
   Unit<WaterHardnessUnits>(
@@ -146,6 +151,7 @@ final Set<Unit> waterHardnessUnitDetails = {
       ],
     ),
     WaterHardnessUnits.milliMolePerLitre_CaCO3,
+    americanName: 'millimole per liter',
     baseUnit: true,
     system: unitSystem[UnitSystems.caCO3],
   ),

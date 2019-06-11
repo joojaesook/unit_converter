@@ -15,6 +15,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.attoNewtonMetre,
+    americanName: 'attonewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -28,6 +29,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.centiNewtonMetre,
+    americanName: 'centinewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -41,6 +43,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.decaNewtonMetre,
+    americanName: 'decanewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -54,6 +57,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.deciNewtonMetre,
+    americanName: 'decinewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -67,6 +71,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.exaNewtonMetre,
+    americanName: 'exanewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -80,6 +85,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.femtoNewtonMetre,
+    americanName: 'femtonewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -93,6 +99,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.gigaNewtonMetre,
+    americanName: 'giganewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -107,6 +114,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.gramForceCentiMetre,
+    americanName: 'gram-force centimeter',
   ),
   Unit<TorqueUnits>(
     'hectonewton metre',
@@ -119,6 +127,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.hectoNewtonMetre,
+    americanName: 'hectonewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -134,6 +143,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.kiloGramForceCentiMetre,
+    americanName: 'kilogram-force centimeter',
   ),
   Unit<TorqueUnits>(
     'kilogram-force metre',
@@ -147,6 +157,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.kiloGramForceMetre,
+    americanName: 'kilogram-force meter',
   ),
   Unit<TorqueUnits>(
     'kilonewton metre',
@@ -159,6 +170,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.kiloNewtonMetre,
+    americanName: 'kilonewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -172,6 +184,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.megaNewtonMetre,
+    americanName: 'meganewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -185,6 +198,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.microNewtonMetre,
+    americanName: 'micronewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -198,6 +212,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.milliNewtonMetre,
+    americanName: 'millinewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -211,6 +226,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.nanoNewtonMetre,
+    americanName: 'nanonewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -223,6 +239,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.newtonMetre,
+    americanName: 'newton meter',
     baseUnit: true,
   ),
   Unit<TorqueUnits>(
@@ -260,6 +277,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.petaNewtonMetre,
+    americanName: 'petanewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -273,6 +291,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.picoNewtonMetre,
+    americanName: 'piconewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -321,6 +340,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.teraNewtonMetre,
+    americanName: 'teranewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -334,6 +354,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.yoctoNewtonMetre,
+    americanName: 'yoctonewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -347,6 +368,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.yottaNewtonMetre,
+    americanName: 'yottanewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -360,6 +382,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.zeptoNewtonMetre,
+    americanName: 'zeptonewton meter',
     variation: true,
   ),
   Unit<TorqueUnits>(
@@ -373,6 +396,7 @@ final Set<Unit> torqueUnitDetails = {
       ],
     ),
     TorqueUnits.zettaNewtonMetre,
+    americanName: 'zettanewton meter',
     variation: true,
   ),
 };
