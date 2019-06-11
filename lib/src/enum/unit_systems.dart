@@ -15,7 +15,7 @@ enum UnitSystems {
   us,
   usDry,
   usDryLevel,
-  usFoodNutrition,
+  usFoodNutritionLabel,
   usLiquid,
   usSurvey,
 }

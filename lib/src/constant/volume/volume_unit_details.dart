@@ -408,7 +408,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cup_USFoodNutrition,
-    system: unitSystem[UnitSystems.usFoodNutrition],
+    system: unitSystem[UnitSystems.usFoodNutritionLabel],
   ),
   Unit<VolumeUnits>(
     'decalitre',
@@ -520,7 +520,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.fluidOunce_USFoodNutrition,
-    system: unitSystem[UnitSystems.usFoodNutrition],
+    system: unitSystem[UnitSystems.usFoodNutritionLabel],
   ),
   Unit<VolumeUnits>(
     'gallon',
@@ -853,7 +853,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.tablespoon_USFoodNutrition,
-    system: unitSystem[UnitSystems.usFoodNutrition],
+    system: unitSystem[UnitSystems.usFoodNutritionLabel],
   ),
   Unit<VolumeUnits>(
     'teaspoon',
@@ -883,7 +883,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.teaspoon_USFoodNutrition,
-    system: unitSystem[UnitSystems.usFoodNutrition],
+    system: unitSystem[UnitSystems.usFoodNutritionLabel],
   ),
   Unit<VolumeUnits>(
     'teralitre',

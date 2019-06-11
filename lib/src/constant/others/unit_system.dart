@@ -33,7 +33,7 @@ final Map<UnitSystems, String> unitSystem = {
   UnitSystems.us: 'US',
   UnitSystems.usDry: 'US dry',
   UnitSystems.usDryLevel: 'US dry level',
-  UnitSystems.usFoodNutrition: 'US food nutrition labeling',
+  UnitSystems.usFoodNutritionLabel: 'US food nutrition labeling',
   UnitSystems.usLiquid: 'US liquid',
   UnitSystems.usSurvey: 'US Survey',
 };

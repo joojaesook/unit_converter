@@ -27,7 +27,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.attoTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'carat',
@@ -59,7 +59,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.centiTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'decagram',
@@ -82,7 +82,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.decaTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'decigram',
@@ -105,7 +105,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.deciTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'exagram',
@@ -128,7 +128,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.exaTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'femtogram',
@@ -151,7 +151,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.femtoTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'gigagram',
@@ -174,7 +174,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.gigaTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'grain',
@@ -215,7 +215,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.hectoTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'kilogram',
@@ -238,7 +238,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.kiloTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'long hundredweight',
@@ -262,7 +262,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.longTonne,
-    // system: systemValue[System.imperial],
+    system: unitSystem[UnitSystems.imperial],
   ),
   Unit<MassUnits>(
     'megagram',
@@ -285,7 +285,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.megaTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'microgram',
@@ -308,7 +308,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.microTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'milligram',
@@ -331,7 +331,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.milliTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'nanogram',
@@ -354,7 +354,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.nanoTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'ounce',
@@ -372,8 +372,8 @@ final Set<Unit> massUnitDetails = {
         SymbolParts.ounce,
       ],
     ),
-    MassUnits.ounce_USFoodNutrition,
-    system: unitSystem[UnitSystems.usFoodNutrition],
+    MassUnits.ounce_USFoodNutritionLabel,
+    system: unitSystem[UnitSystems.usFoodNutritionLabel],
   ),
   Unit<MassUnits>(
     'pennyweight',
@@ -405,7 +405,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.petaTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'picogram',
@@ -428,7 +428,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.picoTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'pood',
@@ -458,7 +458,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.shortHundredWeight,
-    // system: systemValue[System.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<MassUnits>(
     'short tonne',
@@ -471,7 +471,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.shortTonne,
-    // system: systemValue[System.us],
+    system: unitSystem[UnitSystems.us],
   ),
   Unit<MassUnits>(
     'slug',
@@ -512,7 +512,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.teraTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'tonne',
@@ -522,7 +522,7 @@ final Set<Unit> massUnitDetails = {
       ],
     ),
     MassUnits.tonne,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'troy ounce',
@@ -567,7 +567,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.yoctoTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'yottagram',
@@ -590,7 +590,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.yottaTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'zeptogram',
@@ -613,7 +613,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.zeptoTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
   Unit<MassUnits>(
     'zettagram',
@@ -636,6 +636,6 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.zettaTonne,
     variation: true,
-    // system: systemValue[System.metric],
+    system: unitSystem[UnitSystems.metric],
   ),
 };
