@@ -31,101 +31,31 @@ Map<IlluminanceUnits, double> illuminanceConversionDetails = {
   IlluminanceUnits.hectoPhot: _photToLux * prefixValue[Prefix.hecto],
   IlluminanceUnits.kiloLux: prefixValue[Prefix.kilo],
   IlluminanceUnits.kiloPhot: _photToLux * prefixValue[Prefix.kilo],
-  IlluminanceUnits.lumenPerSquareAttoMetre: pow(
-    prefixValue[Prefix.atto],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareCentiMetre: pow(
-    prefixValue[Prefix.centi],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareDecaMetre: pow(
-    prefixValue[Prefix.deca],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareDeciMetre: pow(
-    prefixValue[Prefix.deci],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareExaMetre: pow(
-    prefixValue[Prefix.exa],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareFemtoMetre: pow(
-    prefixValue[Prefix.femto],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareFoot: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.foot,
-    ),
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareGigaMetre: pow(
-    prefixValue[Prefix.giga],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareHectoMetre: pow(
-    prefixValue[Prefix.hecto],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareInch: pow(
-    getConversionDetail(
-      ConversionType.length,
-      LengthUnits.inch,
-    ),
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareKiloMetre: pow(
-    prefixValue[Prefix.kilo],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareMegaMetre: pow(
-    prefixValue[Prefix.mega],
-    -2,
-  ),
+  IlluminanceUnits.lumenPerSquareAttoMetre: pow(prefixValue[Prefix.atto], -2),
+  IlluminanceUnits.lumenPerSquareCentiMetre: pow(prefixValue[Prefix.centi], -2),
+  IlluminanceUnits.lumenPerSquareDecaMetre: pow(prefixValue[Prefix.deca], -2),
+  IlluminanceUnits.lumenPerSquareDeciMetre: pow(prefixValue[Prefix.deci], -2),
+  IlluminanceUnits.lumenPerSquareExaMetre: pow(prefixValue[Prefix.exa], -2),
+  IlluminanceUnits.lumenPerSquareFemtoMetre: pow(prefixValue[Prefix.femto], -2),
+  IlluminanceUnits.lumenPerSquareFoot:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.foot), -2),
+  IlluminanceUnits.lumenPerSquareGigaMetre: pow(prefixValue[Prefix.giga], -2),
+  IlluminanceUnits.lumenPerSquareHectoMetre: pow(prefixValue[Prefix.hecto], -2),
+  IlluminanceUnits.lumenPerSquareInch:
+      pow(getConversionDetail(ConversionType.length, LengthUnits.inch), -2),
+  IlluminanceUnits.lumenPerSquareKiloMetre: pow(prefixValue[Prefix.kilo], -2),
+  IlluminanceUnits.lumenPerSquareMegaMetre: pow(prefixValue[Prefix.mega], -2),
   IlluminanceUnits.lumenPerSquareMetre: 1,
-  IlluminanceUnits.lumenPerSquareMicroMetre: pow(
-    prefixValue[Prefix.micro],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareMilliMetre: pow(
-    prefixValue[Prefix.milli],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareNanoMetre: pow(
-    prefixValue[Prefix.nano],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquarePetaMetre: pow(
-    prefixValue[Prefix.peta],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquarePicoMetre: pow(
-    prefixValue[Prefix.pico],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareTeraMetre: pow(
-    prefixValue[Prefix.tera],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareYoctoMetre: pow(
-    prefixValue[Prefix.yocto],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareYottaMetre: pow(
-    prefixValue[Prefix.yotta],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareZeptoMetre: pow(
-    prefixValue[Prefix.zepto],
-    -2,
-  ),
-  IlluminanceUnits.lumenPerSquareZettaMetre: pow(
-    prefixValue[Prefix.zetta],
-    -2,
-  ),
+  IlluminanceUnits.lumenPerSquareMicroMetre: pow(prefixValue[Prefix.micro], -2),
+  IlluminanceUnits.lumenPerSquareMilliMetre: pow(prefixValue[Prefix.milli], -2),
+  IlluminanceUnits.lumenPerSquareNanoMetre: pow(prefixValue[Prefix.nano], -2),
+  IlluminanceUnits.lumenPerSquarePetaMetre: pow(prefixValue[Prefix.peta], -2),
+  IlluminanceUnits.lumenPerSquarePicoMetre: pow(prefixValue[Prefix.pico], -2),
+  IlluminanceUnits.lumenPerSquareTeraMetre: pow(prefixValue[Prefix.tera], -2),
+  IlluminanceUnits.lumenPerSquareYoctoMetre: pow(prefixValue[Prefix.yocto], -2),
+  IlluminanceUnits.lumenPerSquareYottaMetre: pow(prefixValue[Prefix.yotta], -2),
+  IlluminanceUnits.lumenPerSquareZeptoMetre: pow(prefixValue[Prefix.zepto], -2),
+  IlluminanceUnits.lumenPerSquareZettaMetre: pow(prefixValue[Prefix.zetta], -2),
   IlluminanceUnits.megaLux: prefixValue[Prefix.mega],
   IlluminanceUnits.megaPhot: _photToLux * prefixValue[Prefix.mega],
   IlluminanceUnits.microLux: prefixValue[Prefix.micro],
