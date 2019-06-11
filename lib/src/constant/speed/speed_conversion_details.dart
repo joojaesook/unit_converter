@@ -23,9 +23,11 @@ final _nauticalMileToMetre =
 final _yardToMetre =
     getConversionDetail(ConversionType.length, LengthUnits.yard);
 
+// Conversion factors to baseUnit
 Map<SpeedUnits, double> speedConversionDetails = {
   // Base unit
   SpeedUnits.metrePerSecond: 1,
+
   SpeedUnits.attoMetrePerDay: _perDayToPerSecond * prefixValue[Prefix.atto],
   SpeedUnits.attoMetrePerHour: _perHourToPerSecond * prefixValue[Prefix.atto],
   SpeedUnits.attoMetrePerMinute:

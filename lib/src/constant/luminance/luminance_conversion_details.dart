@@ -7,9 +7,11 @@ import '../../enum/prefix.dart';
 import '../../misc/global.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 Map<LuminanceUnits, double> luminanceConversionDetails = {
   // Base unit
   LuminanceUnits.candelaPerSquareMetre: 1,
+
   LuminanceUnits.candelaPerSquareAttoMetre: pow(prefixValue[Prefix.atto], -2),
   LuminanceUnits.candelaPerSquareCentiMetre: pow(prefixValue[Prefix.centi], -2),
   LuminanceUnits.candelaPerSquareDecaMetre: pow(prefixValue[Prefix.deca], -2),

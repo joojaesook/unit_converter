@@ -4,9 +4,11 @@ import '../../enum/electric_potential_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 final Map<ElectricPotentialUnits, double> electricPotentialConversionDetails = {
   // Base unit
   ElectricPotentialUnits.volt: 1,
+
   ElectricPotentialUnits.abVolt: pow(10, -8),
   ElectricPotentialUnits.attoVolt: prefixValue[Prefix.atto],
   ElectricPotentialUnits.centiVolt: prefixValue[Prefix.centi],

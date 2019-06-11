@@ -9,9 +9,11 @@ import '../others/prefix_value.dart';
 
 const double _photToLux = 10000;
 
+// Conversion factors to baseUnit
 Map<IlluminanceUnits, double> illuminanceConversionDetails = {
   // Base unit
   IlluminanceUnits.lux: 1,
+
   IlluminanceUnits.attoLux: prefixValue[Prefix.atto],
   IlluminanceUnits.attoPhot: _photToLux * prefixValue[Prefix.atto],
   IlluminanceUnits.centiLux: prefixValue[Prefix.centi],

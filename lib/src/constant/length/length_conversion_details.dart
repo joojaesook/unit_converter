@@ -9,9 +9,11 @@ final _lightYearToMetre = 9.4607304725808 * pow(10, 15);
 final _parsecToMetre = 3.08567782 * pow(10, 16);
 const _rodToMetre = 5.0292;
 
+// Conversion factors to baseUnit
 Map<LengthUnits, double> lengthConversionDetails = {
   // Base unit
   LengthUnits.metre: 1,
+
   LengthUnits.angstrom: prefixValue[Prefix.angstrom],
   LengthUnits.astronomicalUnit: 149597870700,
   LengthUnits.attoLightYear: prefixValue[Prefix.atto] * _lightYearToMetre,

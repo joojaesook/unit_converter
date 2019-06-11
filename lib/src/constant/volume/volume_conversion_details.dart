@@ -9,9 +9,11 @@ import '../others/prefix_value.dart';
 
 const _litreToCubicMetre = 0.001;
 
+// Conversion factors to baseUnit
 final Map<VolumeUnits, double> volumeConversionDetails = {
   // Base unit
   VolumeUnits.cubicMetre: 1,
+
   VolumeUnits.acreFoot: 1233.48183754752,
   VolumeUnits.acreInch: 102.79015312896,
   VolumeUnits.attoLitre: _litreToCubicMetre * prefixValue[Prefix.atto],

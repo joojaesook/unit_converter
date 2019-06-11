@@ -21,9 +21,11 @@ final _litreToCubicMetre =
 final _perMinuteToPerSecond =
     1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
 
+// Conversion factors to baseUnit
 final Map<VolumeFlowPerAreaUnits, double> volumeFlowPerAreaConversionDetails = {
   // Base unit
   VolumeFlowPerAreaUnits.cubicMetrePerSecondPerSquareMetre: 1,
+
   VolumeFlowPerAreaUnits.cubicMetrePerSecondPerAcre: _perAcreToPerSquareMetre,
   VolumeFlowPerAreaUnits.cubicMetrePerSecondPerHectare:
       _perHectareToPerSquareMetre,

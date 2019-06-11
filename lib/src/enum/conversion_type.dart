@@ -1,4 +1,5 @@
 /// Supported conversion types
+// Types of converter
 enum ConversionType {
   acceleration,
   area,
@@ -9,9 +10,9 @@ enum ConversionType {
   dataRate,
   dynamicViscocity,
   electricCharge,
-  electricalConductance,
   electricCurrent,
   electricPotential,
+  electricalConductance,
   electricalResistance,
   force,
   frequency,
@@ -24,6 +25,7 @@ enum ConversionType {
   magneticFlux,
   magneticFluxDensity,
   mass,
+  radioactivity,
   speed,
   time,
   torque,

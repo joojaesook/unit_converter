@@ -18,9 +18,11 @@ final _gallonUSLiquidToCubicMetre =
 final _litreToCubicMetre =
     getConversionDetail(ConversionType.volume, VolumeUnits.litre);
 
+// Conversion factors to baseUnit
 final Map<VolumePerAreaUnits, double> volumePerAreaConversionDetails = {
   // Base unit
   VolumePerAreaUnits.cubicMetrePerSquareMetre: 1,
+
   VolumePerAreaUnits.cubicMetrePerAcre: _perAcreToPerSquareMetre,
   VolumePerAreaUnits.cubicMetrePerHectare: _perHectareToPerSquareMetre,
   VolumePerAreaUnits.cubicMetrePerSquareMile: _perSquareMileToPerSquareMetre,

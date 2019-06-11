@@ -4,9 +4,11 @@ import '../../enum/magnetic_flux_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 Map<MagneticFluxUnits, double> magneticFluxConversionDetails = {
   // Base unit
   MagneticFluxUnits.weber: 1,
+
   MagneticFluxUnits.attoWeber: prefixValue[Prefix.atto],
   MagneticFluxUnits.centiWeber: prefixValue[Prefix.centi],
   MagneticFluxUnits.decaWeber: prefixValue[Prefix.deca],

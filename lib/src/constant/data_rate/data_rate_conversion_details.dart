@@ -11,9 +11,11 @@ final _perMinuteToPerSecond =
     1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
 const double _byteToBit = 8;
 
+// Conversion factors to baseUnit
 Map<DataRateUnits, double> dataRateConversionDetails = {
   // Base unit
   DataRateUnits.bitPerSecond: 1,
+
   DataRateUnits.bitPerHour: _perHourToPerSecond,
   DataRateUnits.bitPerMinute: _perMinuteToPerSecond,
   DataRateUnits.bytePerHour: _byteToBit * _perHourToPerSecond,

@@ -6,9 +6,11 @@ import '../others/prefix_value.dart';
 
 const _gramForceToNewton = 0.00980665;
 
+// Conversion factors to baseUnit
 Map<ForceUnits, double> forceConversionDetails = {
   // Base unit
   ForceUnits.newton: 1,
+
   ForceUnits.attoGramForce: _gramForceToNewton * prefixValue[Prefix.atto],
   ForceUnits.attoNewton: prefixValue[Prefix.atto],
   ForceUnits.centiGramForce: _gramForceToNewton * prefixValue[Prefix.centi],

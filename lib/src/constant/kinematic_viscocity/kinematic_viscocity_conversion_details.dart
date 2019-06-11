@@ -16,10 +16,12 @@ final _perHourToPerSecond =
 final _perMinuteToPerSecond =
     1 / getConversionDetail(ConversionType.time, TimeUnits.minute);
 
+// Conversion factors to baseUnit
 final Map<KinematicViscocityUnits, double> kinematicViscocityConversionDetails =
     {
   // Base unit
   KinematicViscocityUnits.squareMetrePerSecond: 1,
+
   KinematicViscocityUnits.attoStokes:
       _stokesToSquareMetrePerSecond * prefixValue[Prefix.atto],
   KinematicViscocityUnits.centiStokes:

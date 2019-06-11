@@ -27,9 +27,11 @@ final _mileToMetre =
 final _yardToMetre =
     getConversionDetail(ConversionType.length, LengthUnits.yard);
 
+// Conversion factors to baseUnit
 Map<AccelerationUnits, double> accelerationConversionDetails = {
   // Base unit
   AccelerationUnits.metrePerSecondSquared: 1,
+
   AccelerationUnits.attoGal:
       _galToMetrePerSquareSecond * prefixValue[Prefix.atto],
   AccelerationUnits.attoMetrePerHourPerSecond:

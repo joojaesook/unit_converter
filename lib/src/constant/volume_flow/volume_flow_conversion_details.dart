@@ -35,9 +35,11 @@ final _perMinuteToPerSecond =
 final _perYearToPerSecond =
     1 / getConversionDetail(ConversionType.time, TimeUnits.year);
 
+// Conversion factors to baseUnit
 final Map<VolumeFlowUnits, double> volumeFlowConversionDetails = {
   // Base unit
   VolumeFlowUnits.cubicMetrePerSecond: 1,
+
   VolumeFlowUnits.acreFootPerDay:
       _acreToSquareMetre * _footToMetre * _perDayToPerSecond,
   VolumeFlowUnits.acreFootPerYear:

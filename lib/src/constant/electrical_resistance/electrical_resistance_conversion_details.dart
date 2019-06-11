@@ -4,10 +4,12 @@ import '../../enum/electrical_resistance_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 final Map<ElectricalResistanceUnits, double>
     electricalResistanceConversionDetails = {
   // Base unit
   ElectricalResistanceUnits.ohm: 1,
+
   ElectricalResistanceUnits.abOhm: pow(10, -9),
   ElectricalResistanceUnits.attoOhm: prefixValue[Prefix.atto],
   ElectricalResistanceUnits.centiOhm: prefixValue[Prefix.centi],

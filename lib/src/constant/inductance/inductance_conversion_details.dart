@@ -4,9 +4,11 @@ import '../../enum/inductance_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 Map<InductanceUnits, double> inductanceConversionDetails = {
   // Base unit
   InductanceUnits.henry: 1,
+
   InductanceUnits.abHenry: pow(10, -9),
   InductanceUnits.attoHenry: prefixValue[Prefix.atto],
   InductanceUnits.centiHenry: prefixValue[Prefix.centi],

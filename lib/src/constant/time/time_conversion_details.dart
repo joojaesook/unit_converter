@@ -4,9 +4,11 @@ import '../others/prefix_value.dart';
 
 const double _yearToSecond = 31556952;
 
+// Conversion factors to baseUnit
 final Map<TimeUnits, double> timeConversionDetails = {
   // Base unit
   TimeUnits.second: 1,
+
   TimeUnits.attoSecond: prefixValue[Prefix.atto],
   TimeUnits.centiSecond: prefixValue[Prefix.centi],
   TimeUnits.century: 100 * _yearToSecond,

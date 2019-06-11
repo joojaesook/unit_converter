@@ -2,10 +2,12 @@ import '../../enum/magnetic_field_intensity_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 Map<MagneticFieldIntensityUnits, double>
     magneticFieldIntensityConversionDetails = {
   // Base unit
   MagneticFieldIntensityUnits.amperePerMetre: 1,
+
   MagneticFieldIntensityUnits.attoAmperePerMetre: prefixValue[Prefix.atto],
   MagneticFieldIntensityUnits.centiAmperePerMetre: prefixValue[Prefix.centi],
   MagneticFieldIntensityUnits.decaAmperePerMetre: prefixValue[Prefix.deca],

@@ -2,9 +2,11 @@ import '../../enum/dynamic_viscocity_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 final Map<DynamicViscocityUnits, double> dynamicViscocityConversionDetails = {
   // Base unit
   DynamicViscocityUnits.pascalSecond: 1,
+
   DynamicViscocityUnits.attoPascalSecond: prefixValue[Prefix.atto],
   DynamicViscocityUnits.attoPoise:
       prefixValue[Prefix.atto] * prefixValue[Prefix.deci],

@@ -4,9 +4,11 @@ import '../../enum/frequency_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 Map<FrequencyUnits, double> frequencyConversionDetails = {
   // Base unit
   FrequencyUnits.hertz: 1,
+
   FrequencyUnits.attoHertz: prefixValue[Prefix.atto],
   FrequencyUnits.centiHertz: prefixValue[Prefix.centi],
   FrequencyUnits.decaHertz: prefixValue[Prefix.deca],

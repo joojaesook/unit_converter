@@ -4,9 +4,11 @@ import '../others/prefix_value.dart';
 
 const double _byteToBit = 8;
 
+// Conversion factors to baseUnit
 Map<DataUnits, double> dataConversionDetails = {
   // Base unit
   DataUnits.bit: 1,
+
   DataUnits.byte: _byteToBit,
   DataUnits.exaBit: prefixValue[Prefix.binaryExa],
   DataUnits.exaByte: prefixValue[Prefix.binaryExa] * _byteToBit,

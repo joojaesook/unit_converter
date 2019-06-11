@@ -115,15 +115,21 @@ class UnitConverter {
     );
   }
 
-  static MultiplicationBasedConverter electricCharge() {
-    return MultiplicationBasedConverter<ElectricChargeUnits>(
-      ConversionType.electricCharge,
-    );
-  }
-
   static MultiplicationBasedConverter electricalConductance() {
     return MultiplicationBasedConverter<ElectricalConductanceUnits>(
       ConversionType.electricalConductance,
+    );
+  }
+
+  static MultiplicationBasedConverter electricalResistance() {
+    return MultiplicationBasedConverter<ElectricalResistanceUnits>(
+      ConversionType.electricalResistance,
+    );
+  }
+
+  static MultiplicationBasedConverter electricCharge() {
+    return MultiplicationBasedConverter<ElectricChargeUnits>(
+      ConversionType.electricCharge,
     );
   }
 
@@ -136,12 +142,6 @@ class UnitConverter {
   static MultiplicationBasedConverter electricPotential() {
     return MultiplicationBasedConverter<ElectricPotentialUnits>(
       ConversionType.electricPotential,
-    );
-  }
-
-  static MultiplicationBasedConverter electricalResistance() {
-    return MultiplicationBasedConverter<ElectricalResistanceUnits>(
-      ConversionType.electricalResistance,
     );
   }
 

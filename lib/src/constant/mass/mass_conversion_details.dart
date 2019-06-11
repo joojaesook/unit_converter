@@ -7,9 +7,11 @@ import '../others/prefix_value.dart';
 const _gramToKiloGram = 0.001;
 const double _tonneToKiloGram = 1000;
 
+// Conversion factors to baseUnit
 Map<MassUnits, double> massConversionDetails = {
   // Base unit
   MassUnits.kiloGram: 1,
+
   MassUnits.attoGram: prefixValue[Prefix.atto] * _gramToKiloGram,
   MassUnits.attoTonne: prefixValue[Prefix.atto] * _tonneToKiloGram,
   MassUnits.carat: 0.0002,

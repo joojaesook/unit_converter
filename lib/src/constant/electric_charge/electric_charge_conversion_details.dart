@@ -2,9 +2,11 @@ import '../../enum/electric_charge_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 final Map<ElectricChargeUnits, double> electricChargeConversionDetails = {
   // Base unit
   ElectricChargeUnits.coulomb: 1,
+
   ElectricChargeUnits.abCoulomb: 10,
   ElectricChargeUnits.ampereHour: 3600,
   ElectricChargeUnits.ampereSecond: 1,

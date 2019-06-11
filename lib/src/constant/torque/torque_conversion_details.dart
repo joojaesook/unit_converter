@@ -4,9 +4,11 @@ import '../../enum/prefix.dart';
 import '../../enum/torque_units.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 final Map<TorqueUnits, double> torqueConversionDetails = {
   // Base unit
   TorqueUnits.newtonMetre: 1,
+
   TorqueUnits.attoNewtonMetre: prefixValue[Prefix.atto],
   TorqueUnits.centiNewtonMetre: prefixValue[Prefix.centi],
   TorqueUnits.decaNewtonMetre: prefixValue[Prefix.deca],

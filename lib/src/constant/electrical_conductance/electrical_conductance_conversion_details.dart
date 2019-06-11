@@ -4,10 +4,12 @@ import '../../enum/electrical_conductance_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
+// Conversion factors to baseUnit
 final Map<ElectricalConductanceUnits, double>
     electricalConductanceConversionDetails = {
   // Base unit
   ElectricalConductanceUnits.siemens: 1,
+
   ElectricalConductanceUnits.abMho: pow(10, 9),
   ElectricalConductanceUnits.abSiemens: pow(10, 9),
   ElectricalConductanceUnits.attoMho: prefixValue[Prefix.atto],

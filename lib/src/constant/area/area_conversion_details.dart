@@ -9,9 +9,11 @@ import '../others/prefix_value.dart';
 
 final _barnToSquareMetre = pow(10, -28);
 
+// Conversion factors to baseUnit
 Map<AreaUnits, double> areaConversionDetails = {
   // Base unit
   AreaUnits.squareMetre: 1,
+
   AreaUnits.acre: 4046.8564224,
   AreaUnits.acre_USSurvey: 4046.872609874252,
   AreaUnits.are: 100,

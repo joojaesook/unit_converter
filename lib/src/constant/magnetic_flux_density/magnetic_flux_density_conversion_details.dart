@@ -4,9 +4,11 @@ import '../others/prefix_value.dart';
 
 const _gaussToTesla = 0.0001;
 
+// Conversion factors to baseUnit
 Map<MagneticFluxDensityUnits, double> magneticFluxDensityConversionDetails = {
   // Base unit
   MagneticFluxDensityUnits.tesla: 1,
+
   MagneticFluxDensityUnits.attoGauss: _gaussToTesla * prefixValue[Prefix.atto],
   MagneticFluxDensityUnits.attoTesla: prefixValue[Prefix.atto],
   MagneticFluxDensityUnits.centiGauss:
