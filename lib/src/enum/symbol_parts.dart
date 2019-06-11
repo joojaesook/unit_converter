@@ -141,6 +141,7 @@ enum SymbolParts {
   nox,
   oersted,
   ohm,
+  oilBarrel,
   ounce,
   parsec,
   pascal,

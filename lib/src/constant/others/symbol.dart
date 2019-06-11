@@ -149,6 +149,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.nox: 'nx',
   SymbolParts.oersted: 'Oe',
   SymbolParts.ohm: _createStringFromUnicode(unicodeOhm),
+  SymbolParts.oilBarrel: 'bbl',
   SymbolParts.ounce: 'oz',
   SymbolParts.parsec: 'pc',
   SymbolParts.pascal: 'Pa',

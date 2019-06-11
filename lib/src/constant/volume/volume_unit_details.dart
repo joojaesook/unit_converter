@@ -708,9 +708,7 @@ final Set<Unit> volumeUnitDetails = {
     'oil barrel',
     createSymbol(
       const [
-        SymbolParts.lB,
-        SymbolParts.lB,
-        SymbolParts.lL,
+        SymbolParts.oilBarrel,
       ],
     ),
     VolumeUnits.oilBarrel,
