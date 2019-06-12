@@ -20,7 +20,6 @@ enum SymbolParts {
   century,
   chain,
   chineseMile,
-  circularMil,
   clA,
   clB,
   clC,

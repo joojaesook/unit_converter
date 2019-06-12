@@ -9,8 +9,6 @@ const _gramToKiloGram = 0.001;
 const double _tonneToKiloGram = 1000;
 const _poundToKiloGram = 0.45359237;
 
-// const double _pound =
-
 // Conversion factors to baseUnit
 Map<MassUnits, double> massConversionDetails = {
   // Base unit

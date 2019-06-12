@@ -69,7 +69,10 @@ final Set<Unit> areaUnitDetails = {
     'circular mil',
     createSymbol(
       const [
-        SymbolParts.circularMil,
+        SymbolParts.lC,
+        SymbolParts.lM,
+        SymbolParts.lI,
+        SymbolParts.lL,
       ],
     ),
     AreaUnits.circularMil,

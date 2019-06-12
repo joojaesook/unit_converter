@@ -227,6 +227,7 @@ final Set<Unit> massUnitDetails = {
     ),
     MassUnits.kiloGram,
     baseUnit: true,
+    variation: true,
   ),
   Unit<MassUnits>(
     'kilotonne',

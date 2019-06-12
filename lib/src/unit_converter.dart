@@ -23,6 +23,7 @@ import 'enum/luminance_units.dart';
 import 'enum/magnetic_field_intensity_units.dart';
 import 'enum/magnetic_flux_density_units.dart';
 import 'enum/magnetic_flux_units.dart';
+import 'enum/mass_flow_units.dart';
 import 'enum/mass_per_area_units.dart';
 import 'enum/mass_units.dart';
 import 'enum/plane_angle_units.dart';
@@ -59,6 +60,7 @@ export 'enum/luminance_units.dart';
 export 'enum/magnetic_field_intensity_units.dart';
 export 'enum/magnetic_flux_density_units.dart';
 export 'enum/magnetic_flux_units.dart';
+export 'enum/mass_flow_units.dart';
 export 'enum/mass_per_area_units.dart';
 export 'enum/mass_units.dart';
 export 'enum/plane_angle_units.dart';
@@ -214,6 +216,12 @@ class UnitConverter {
   static MultiplicationBasedConverter mass() {
     return MultiplicationBasedConverter<MassUnits>(
       ConversionType.mass,
+    );
+  }
+
+  static MultiplicationBasedConverter massFlow() {
+    return MultiplicationBasedConverter<MassFlowUnits>(
+      ConversionType.massFlow,
     );
   }
 
