@@ -23,6 +23,7 @@ import 'magnetic_field_intensity/magnetic_field_intensity_conversion_details.dar
 import 'magnetic_flux/magnetic_flux_conversion_details.dart';
 import 'magnetic_flux_density/magnetic_flux_density_conversion_details.dart';
 import 'mass/mass_conversion_details.dart';
+import 'mass_per_area/mass_per_area_conversion_details.dart';
 import 'radioactivity/radioactivity_conversion_details.dart';
 import 'speed/speed_conversion_details.dart';
 import 'time/time_conversion_details.dart';
@@ -59,6 +60,7 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.magneticFlux: magneticFluxConversionDetails,
   ConversionType.magneticFluxDensity: magneticFluxDensityConversionDetails,
   ConversionType.mass: massConversionDetails,
+  ConversionType.massPerArea: massPerAreaConversionDetails,
   ConversionType.radioactivity: radioactivityConversionDetails,
   ConversionType.speed: speedConversionDetails,
   ConversionType.time: timeConversionDetails,
