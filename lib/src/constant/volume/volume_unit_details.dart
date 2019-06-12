@@ -37,6 +37,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.attoLitre,
+    americanName: 'attoliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -77,6 +78,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.centiLitre,
+    americanName: 'centiliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -89,6 +91,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicAttoMetre,
+    americanName: 'cubic attometer',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -101,6 +104,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicCentiMetre,
+    americanName: 'cubic centimeter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -113,6 +117,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicDecaMetre,
+    americanName: 'cubic decameter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -125,6 +130,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicDeciMetre,
+    americanName: 'cubic decimeter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -137,6 +143,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicExaMetre,
+    americanName: 'cubic exameter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -149,6 +156,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicFemtoMetre,
+    americanName: 'cubic femtometer',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -171,6 +179,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicGigaMetre,
+    americanName: 'cubic gigameter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -183,6 +192,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicHectoMetre,
+    americanName: 'cubic hectometer',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -205,6 +215,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicKiloMetre,
+    americanName: 'cubic kilometer',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -217,6 +228,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicMegaMetre,
+    americanName: 'cubic megameter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -228,6 +240,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicMetre,
+    americanName: 'cubic meter',
     baseUnit: true,
   ),
   Unit<VolumeUnits>(
@@ -240,6 +253,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicMicroMetre,
+    americanName: 'cubic micrometer',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -262,6 +276,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicMilliMetre,
+    americanName: 'cubic millimeter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -274,6 +289,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicNanoMetre,
+    americanName: 'cubic nanometer',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -286,6 +302,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicPetaMetre,
+    americanName: 'cubic petameter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -298,6 +315,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicPicoMetre,
+    americanName: 'cubic picometer',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -310,6 +328,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicTeraMetre,
+    americanName: 'cubic terameter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -332,6 +351,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicYoctoMetre,
+    americanName: 'cubic yoctometer',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -344,6 +364,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicYottaMetre,
+    americanName: 'cubic yottameter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -356,6 +377,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicZeptoMetre,
+    americanName: 'cubic zeptometer',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -368,6 +390,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.cubicZettaMetre,
+    americanName: 'cubic zettameter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -419,6 +442,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.decaLitre,
+    americanName: 'decaliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -430,6 +454,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.deciLitre,
+    americanName: 'deciliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -441,6 +466,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.exaLitre,
+    americanName: 'exaliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -452,6 +478,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.femtoLitre,
+    americanName: 'femtoliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -561,6 +588,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.gigaLitre,
+    americanName: 'gigaliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -593,6 +621,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.hectareMetre,
+    americanName: 'hectare meter',
   ),
   Unit<VolumeUnits>(
     'hectolitre',
@@ -603,6 +632,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.hectoLitre,
+    americanName: 'hectoliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -629,6 +659,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.kiloLitre,
+    americanName: 'kiloliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -639,6 +670,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.litre,
+    americanName: 'liter',
   ),
   Unit<VolumeUnits>(
     'megalitre',
@@ -649,6 +681,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.megaLitre,
+    americanName: 'megaliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -660,6 +693,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.microLitre,
+    americanName: 'microliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -671,6 +705,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.milliLitre,
+    americanName: 'milliliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -702,6 +737,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.nanoLitre,
+    americanName: 'nanoliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -742,6 +778,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.petaLitre,
+    americanName: 'petaliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -753,6 +790,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.picoLitre,
+    americanName: 'picoliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -894,6 +932,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.teraLitre,
+    americanName: 'teraliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -905,6 +944,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.yoctoLitre,
+    americanName: 'yoctoliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -916,6 +956,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.yottaLitre,
+    americanName: 'yottaliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -927,6 +968,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.zeptoLitre,
+    americanName: 'zeptoliter',
     variation: true,
   ),
   Unit<VolumeUnits>(
@@ -938,6 +980,7 @@ final Set<Unit> volumeUnitDetails = {
       ],
     ),
     VolumeUnits.zettaLitre,
+    americanName: 'zettaliter',
     variation: true,
   ),
 };

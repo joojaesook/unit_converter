@@ -44,6 +44,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.attoLitrePerDay,
+    americanName: 'attoliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -57,6 +58,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.attoLitrePerHour,
+    americanName: 'attoliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -70,6 +72,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.attoLitrePerMinute,
+    americanName: 'attoliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -83,6 +86,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.attoLitrePerSecond,
+    americanName: 'attoliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -96,6 +100,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.centiLitrePerDay,
+    americanName: 'centiliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -109,6 +114,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.centiLitrePerHour,
+    americanName: 'centiliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -122,6 +128,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.centiLitrePerMinute,
+    americanName: 'centiliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -135,6 +142,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.centiLitrePerSecond,
+    americanName: 'centiliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -149,6 +157,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicAttoMetrePerDay,
+    americanName: 'cubic attometer per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -163,6 +172,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicAttoMetrePerHour,
+    americanName: 'cubic attometer per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -177,6 +187,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicAttoMetrePerMinute,
+    americanName: 'cubic attometer per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -191,6 +202,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicAttoMetrePerSecond,
+    americanName: 'cubic attometer per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -205,6 +217,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicCentiMetrePerDay,
+    americanName: 'cubic centimeter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -219,6 +232,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicCentiMetrePerHour,
+    americanName: 'cubic centimeter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -233,6 +247,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicCentiMetrePerMinute,
+    americanName: 'cubic centimeter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -247,6 +262,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicCentiMetrePerSecond,
+    americanName: 'cubic centimeter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -261,6 +277,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicDecaMetrePerDay,
+    americanName: 'cubic decameter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -275,6 +292,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicDecaMetrePerHour,
+    americanName: 'cubic decameter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -289,6 +307,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicDecaMetrePerMinute,
+    americanName: 'cubic decameter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -303,6 +322,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicDecaMetrePerSecond,
+    americanName: 'cubic decameter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -317,6 +337,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicDeciMetrePerDay,
+    americanName: 'cubic decimeter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -331,6 +352,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicDeciMetrePerHour,
+    americanName: 'cubic decimeter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -345,6 +367,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicDeciMetrePerMinute,
+    americanName: 'cubic decimeter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -359,6 +382,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicDeciMetrePerSecond,
+    americanName: 'cubic decimeter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -373,6 +397,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicExaMetrePerDay,
+    americanName: 'cubic exameter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -387,6 +412,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicExaMetrePerHour,
+    americanName: 'cubic exameter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -401,6 +427,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicExaMetrePerMinute,
+    americanName: 'cubic exameter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -415,6 +442,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicExaMetrePerSecond,
+    americanName: 'cubic exameter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -429,6 +457,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicFemtoMetrePerDay,
+    americanName: 'cubic femtometer per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -443,6 +472,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicFemtoMetrePerHour,
+    americanName: 'cubic femtometer per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -457,6 +487,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicFemtoMetrePerMinute,
+    americanName: 'cubic femtometer per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -471,6 +502,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicFemtoMetrePerSecond,
+    americanName: 'cubic femtometer per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -533,6 +565,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicGigaMetrePerDay,
+    americanName: 'cubic gigameter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -547,6 +580,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicGigaMetrePerHour,
+    americanName: 'cubic gigameter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -561,6 +595,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicGigaMetrePerMinute,
+    americanName: 'cubic gigameter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -575,6 +610,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicGigaMetrePerSecond,
+    americanName: 'cubic gigameter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -589,6 +625,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicHectoMetrePerDay,
+    americanName: 'cubic hectometer per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -603,6 +640,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicHectoMetrePerHour,
+    americanName: 'cubic hectometer per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -617,6 +655,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicHectoMetrePerMinute,
+    americanName: 'cubic hectometer per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -631,6 +670,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicHectoMetrePerSecond,
+    americanName: 'cubic hectometer per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -693,6 +733,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicKiloMetrePerDay,
+    americanName: 'cubic kilometer per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -707,6 +748,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicKiloMetrePerHour,
+    americanName: 'cubic kilometer per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -721,6 +763,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicKiloMetrePerMinute,
+    americanName: 'cubic kilometer per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -735,6 +778,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicKiloMetrePerSecond,
+    americanName: 'cubic kilometer per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -749,6 +793,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMegaMetrePerDay,
+    americanName: 'cubic megameter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -763,6 +808,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMegaMetrePerHour,
+    americanName: 'cubic megameter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -777,6 +823,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMegaMetrePerMinute,
+    americanName: 'cubic megameter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -791,6 +838,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMegaMetrePerSecond,
+    americanName: 'cubic megameter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -804,6 +852,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMetrePerDay,
+    americanName: 'cubic meter per day',
   ),
   Unit<VolumeFlowUnits>(
     'cubic metre per hour',
@@ -816,6 +865,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMetrePerHour,
+    americanName: 'cubic meter per hour',
   ),
   Unit<VolumeFlowUnits>(
     'cubic metre per minute',
@@ -828,6 +878,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMetrePerMinute,
+    americanName: 'cubic meter per minute',
   ),
   Unit<VolumeFlowUnits>(
     'cubic metre per second',
@@ -840,6 +891,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMetrePerSecond,
+    americanName: 'cubic meter per second',
     baseUnit: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -854,6 +906,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMicroMetrePerDay,
+    americanName: 'cubic micrometer per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -868,6 +921,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMicroMetrePerHour,
+    americanName: 'cubic micrometer per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -882,6 +936,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMicroMetrePerMinute,
+    americanName: 'cubic micrometer per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -896,6 +951,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMicroMetrePerSecond,
+    americanName: 'cubic micrometer per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -910,6 +966,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMilliMetrePerDay,
+    americanName: 'cubic millimeter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -924,6 +981,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMilliMetrePerHour,
+    americanName: 'cubic millimeter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -938,6 +996,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMilliMetrePerMinute,
+    americanName: 'cubic millimeter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -952,6 +1011,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicMilliMetrePerSecond,
+    americanName: 'cubic millimeter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -966,6 +1026,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicNanoMetrePerDay,
+    americanName: 'cubic nanometer per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -980,6 +1041,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicNanoMetrePerHour,
+    americanName: 'cubic nanometer per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -994,6 +1056,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicNanoMetrePerMinute,
+    americanName: 'cubic nanometer per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1008,6 +1071,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicNanoMetrePerSecond,
+    americanName: 'cubic nanometer per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1022,6 +1086,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicPetaMetrePerDay,
+    americanName: 'cubic petameter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1036,6 +1101,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicPetaMetrePerHour,
+    americanName: 'cubic petameter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1050,6 +1116,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicPetaMetrePerMinute,
+    americanName: 'cubic petameter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1064,6 +1131,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicPetaMetrePerSecond,
+    americanName: 'cubic petameter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1078,6 +1146,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicPicoMetrePerDay,
+    americanName: 'cubic picometer per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1092,6 +1161,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicPicoMetrePerHour,
+    americanName: 'cubic picometer per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1106,6 +1176,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicPicoMetrePerMinute,
+    americanName: 'cubic picometer per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1120,6 +1191,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicPicoMetrePerSecond,
+    americanName: 'cubic picometer per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1134,6 +1206,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicTeraMetrePerDay,
+    americanName: 'cubic terameter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1148,6 +1221,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicTeraMetrePerHour,
+    americanName: 'cubic terameter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1162,6 +1236,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicTeraMetrePerMinute,
+    americanName: 'cubic terameter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1176,6 +1251,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicTeraMetrePerSecond,
+    americanName: 'cubic terameter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1190,6 +1266,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicYoctoMetrePerDay,
+    americanName: 'cubic yoctometer per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1204,6 +1281,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicYoctoMetrePerHour,
+    americanName: 'cubic yoctometer per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1218,6 +1296,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicYoctoMetrePerMinute,
+    americanName: 'cubic yoctometer per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1232,6 +1311,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicYoctoMetrePerSecond,
+    americanName: 'cubic yoctometer per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1246,6 +1326,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicYottaMetrePerDay,
+    americanName: 'cubic yottameter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1260,6 +1341,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicYottaMetrePerHour,
+    americanName: 'cubic yottameter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1274,6 +1356,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicYottaMetrePerMinute,
+    americanName: 'cubic yottameter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1288,6 +1371,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicYottaMetrePerSecond,
+    americanName: 'cubic yottameter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1302,6 +1386,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicZeptoMetrePerDay,
+    americanName: 'cubic zeptometer per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1316,6 +1401,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicZeptoMetrePerHour,
+    americanName: 'cubic zeptometer per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1330,6 +1416,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicZeptoMetrePerMinute,
+    americanName: 'cubic zeptometer per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1344,6 +1431,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicZeptoMetrePerSecond,
+    americanName: 'cubic zeptometer per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1358,6 +1446,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicZettaMetrePerDay,
+    americanName: 'cubic zettameter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1372,6 +1461,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicZettaMetrePerHour,
+    americanName: 'cubic zettameter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1386,6 +1476,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicZettaMetrePerMinute,
+    americanName: 'cubic zettameter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1400,6 +1491,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.cubicZettaMetrePerSecond,
+    americanName: 'cubic zettameter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1413,6 +1505,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.decaLitrePerDay,
+    americanName: 'decaliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1426,6 +1519,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.decaLitrePerHour,
+    americanName: 'decaliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1439,6 +1533,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.decaLitrePerMinute,
+    americanName: 'decaliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1452,6 +1547,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.decaLitrePerSecond,
+    americanName: 'decaliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1465,6 +1561,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.deciLitrePerDay,
+    americanName: 'deciliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1478,6 +1575,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.deciLitrePerHour,
+    americanName: 'deciliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1491,6 +1589,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.deciLitrePerMinute,
+    americanName: 'deciliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1504,6 +1603,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.deciLitrePerSecond,
+    americanName: 'deciliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1517,6 +1617,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.exaLitrePerDay,
+    americanName: 'exaliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1530,6 +1631,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.exaLitrePerHour,
+    americanName: 'exaliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1543,6 +1645,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.exaLitrePerMinute,
+    americanName: 'exaliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1556,6 +1659,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.exaLitrePerSecond,
+    americanName: 'exaliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1569,6 +1673,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.femtoLitrePerDay,
+    americanName: 'femtoliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1582,6 +1687,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.femtoLitrePerHour,
+    americanName: 'femtoliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1595,6 +1701,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.femtoLitrePerMinute,
+    americanName: 'femtoliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1608,6 +1715,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.femtoLitrePerSecond,
+    americanName: 'femtoliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1717,6 +1825,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gigaLitrePerDay,
+    americanName: 'gigaliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1730,6 +1839,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gigaLitrePerHour,
+    americanName: 'gigaliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1743,6 +1853,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gigaLitrePerMinute,
+    americanName: 'gigaliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1756,6 +1867,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.gigaLitrePerSecond,
+    americanName: 'gigaliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1769,6 +1881,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.hectoLitrePerDay,
+    americanName: 'hectoliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1782,6 +1895,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.hectoLitrePerHour,
+    americanName: 'hectoliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1795,6 +1909,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.hectoLitrePerMinute,
+    americanName: 'hectoliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1808,6 +1923,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.hectoLitrePerSecond,
+    americanName: 'hectoliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1821,6 +1937,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.kiloLitrePerDay,
+    americanName: 'kiloliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1834,6 +1951,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.kiloLitrePerHour,
+    americanName: 'kiloliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1847,6 +1965,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.kiloLitrePerMinute,
+    americanName: 'kiloliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1860,6 +1979,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.kiloLitrePerSecond,
+    americanName: 'kiloliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1872,6 +1992,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.litrePerDay,
+    americanName: 'liter per day',
   ),
   Unit<VolumeFlowUnits>(
     'litre per hour',
@@ -1883,6 +2004,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.litrePerHour,
+    americanName: 'liter per hour',
   ),
   Unit<VolumeFlowUnits>(
     'litre per minute',
@@ -1894,6 +2016,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.litrePerMinute,
+    americanName: 'liter per minute',
   ),
   Unit<VolumeFlowUnits>(
     'litre per second',
@@ -1905,6 +2028,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.litrePerSecond,
+    americanName: 'liter per second',
   ),
   Unit<VolumeFlowUnits>(
     'megalitre per day',
@@ -1917,6 +2041,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.megaLitrePerDay,
+    americanName: 'megaliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1930,6 +2055,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.megaLitrePerHour,
+    americanName: 'megaliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1943,6 +2069,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.megaLitrePerMinute,
+    americanName: 'megaliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1956,6 +2083,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.megaLitrePerSecond,
+    americanName: 'megaliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1969,6 +2097,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.microLitrePerDay,
+    americanName: 'microliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1982,6 +2111,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.microLitrePerHour,
+    americanName: 'microliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -1995,6 +2125,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.microLitrePerMinute,
+    americanName: 'microliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2008,6 +2139,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.microLitrePerSecond,
+    americanName: 'microliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2021,6 +2153,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.milliLitrePerDay,
+    americanName: 'milliliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2034,6 +2167,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.milliLitrePerHour,
+    americanName: 'milliliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2047,6 +2181,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.milliLitrePerMinute,
+    americanName: 'milliliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2060,6 +2195,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.milliLitrePerSecond,
+    americanName: 'milliliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2099,6 +2235,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.nanoLitrePerDay,
+    americanName: 'nanoliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2112,6 +2249,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.nanoLitrePerHour,
+    americanName: 'nanoliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2125,6 +2263,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.nanoLitrePerMinute,
+    americanName: 'nanoliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2138,6 +2277,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.nanoLitrePerSecond,
+    americanName: 'nanoliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2195,6 +2335,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.petaLitrePerDay,
+    americanName: 'petaliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2208,6 +2349,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.petaLitrePerHour,
+    americanName: 'petaliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2221,6 +2363,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.petaLitrePerMinute,
+    americanName: 'petaliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2234,6 +2377,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.petaLitrePerSecond,
+    americanName: 'petaliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2247,6 +2391,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.picoLitrePerDay,
+    americanName: 'picoliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2260,6 +2405,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.picoLitrePerHour,
+    americanName: 'picoliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2273,6 +2419,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.picoLitrePerMinute,
+    americanName: 'picoliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2286,6 +2433,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.picoLitrePerSecond,
+    americanName: 'picoliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2299,6 +2447,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.teraLitrePerDay,
+    americanName: 'teraliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2312,6 +2461,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.teraLitrePerHour,
+    americanName: 'teraliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2325,6 +2475,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.teraLitrePerMinute,
+    americanName: 'teraliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2338,6 +2489,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.teraLitrePerSecond,
+    americanName: 'teraliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2351,6 +2503,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.yoctoLitrePerDay,
+    americanName: 'yoctoliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2364,6 +2517,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.yoctoLitrePerHour,
+    americanName: 'yoctoliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2377,6 +2531,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.yoctoLitrePerMinute,
+    americanName: 'yoctoliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2390,6 +2545,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.yoctoLitrePerSecond,
+    americanName: 'yoctoliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2403,6 +2559,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.yottaLitrePerDay,
+    americanName: 'yottaliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2416,6 +2573,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.yottaLitrePerHour,
+    americanName: 'yottaliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2429,6 +2587,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.yottaLitrePerMinute,
+    americanName: 'yottaliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2442,6 +2601,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.yottaLitrePerSecond,
+    americanName: 'yottaliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2455,6 +2615,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.zeptoLitrePerDay,
+    americanName: 'zeptoliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2468,6 +2629,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.zeptoLitrePerHour,
+    americanName: 'zeptoliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2481,6 +2643,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.zeptoLitrePerMinute,
+    americanName: 'zeptoliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2494,6 +2657,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.zeptoLitrePerSecond,
+    americanName: 'zeptoliter per second',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2507,6 +2671,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.zettaLitrePerDay,
+    americanName: 'zettaliter per day',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2520,6 +2685,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.zettaLitrePerHour,
+    americanName: 'zettaliter per hour',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2533,6 +2699,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.zettaLitrePerMinute,
+    americanName: 'zettaliter per minute',
     variation: true,
   ),
   Unit<VolumeFlowUnits>(
@@ -2546,6 +2713,7 @@ final Set<Unit> volumeFlowUnitDetails = {
       ],
     ),
     VolumeFlowUnits.zettaLitrePerSecond,
+    americanName: 'zettaliter per second',
     variation: true,
   ),
 };
