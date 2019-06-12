@@ -8,18 +8,26 @@ import '../../unit_converter.dart';
 import '../others/prefix_value.dart';
 
 const _litreToCubicMetre = 0.001;
+final _acreToSquareMetre =
+    getConversionFactor(ConversionType.area, AreaUnits.acre);
+final _footToMetre =
+    getConversionFactor(ConversionType.length, LengthUnits.foot);
+final _inchToMetre =
+    getConversionFactor(ConversionType.length, LengthUnits.inch);
 
 // Conversion factors to baseUnit
 final Map<VolumeUnits, double> volumeConversionDetails = {
   // Base unit
   VolumeUnits.cubicMetre: 1,
 
-  VolumeUnits.acreFoot: 1233.48183754752,
-  VolumeUnits.acreInch: 102.79015312896,
+  VolumeUnits.acreFoot: _acreToSquareMetre * _footToMetre,
+  VolumeUnits.acreInch: _acreToSquareMetre * _inchToMetre,
   VolumeUnits.attoLitre: _litreToCubicMetre * prefixValue[Prefix.atto],
-  VolumeUnits.boardFoot: 0.002359737216,
-  VolumeUnits.bushel_Imperial: 0.03636872,
-  VolumeUnits.bushel_USDryLevel: 0.03523907016688,
+  VolumeUnits.boardFoot: pow(_footToMetre, 3) / 12,
+  VolumeUnits.bushel_Imperial: 8 *
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_Imperial),
+  VolumeUnits.bushel_USDryLevel:
+      8 * getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USDry),
   VolumeUnits.centiLitre: _litreToCubicMetre * prefixValue[Prefix.centi],
   VolumeUnits.cubicAttoMetre: pow(prefixValue[Prefix.atto], 3),
   VolumeUnits.cubicCentiMetre: pow(prefixValue[Prefix.centi], 3),
@@ -49,55 +57,99 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
   VolumeUnits.cubicYottaMetre: pow(prefixValue[Prefix.yotta], 3),
   VolumeUnits.cubicZeptoMetre: pow(prefixValue[Prefix.zepto], 3),
   VolumeUnits.cubicZettaMetre: pow(prefixValue[Prefix.zetta], 3),
-  VolumeUnits.cup_Imperial: 0.000284130625,
-  VolumeUnits.cup_Metric: 0.00025,
-  VolumeUnits.cup_US: 0.0002365882365,
-  VolumeUnits.cup_USFoodNutritionLabel: 0.00024,
+  VolumeUnits.cup_Imperial:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_Imperial) /
+          16,
+  VolumeUnits.cup_Metric:
+      250 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.cup_US:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid) /
+          16,
+  VolumeUnits.cup_USFoodNutritionLabel:
+      240 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
   VolumeUnits.decaLitre: _litreToCubicMetre * prefixValue[Prefix.deca],
   VolumeUnits.deciLitre: _litreToCubicMetre * prefixValue[Prefix.deci],
   VolumeUnits.exaLitre: _litreToCubicMetre * prefixValue[Prefix.exa],
   VolumeUnits.femtoLitre: _litreToCubicMetre * prefixValue[Prefix.femto],
-  VolumeUnits.firlot_Imperial: 0.03636872,
-  VolumeUnits.firlot_USDry: 0.0352390701669,
+  VolumeUnits.firlot_Imperial:
+      4 * getConversionFactor(ConversionType.volume, VolumeUnits.peck_Imperial),
+  VolumeUnits.firlot_USDry:
+      4 * getConversionFactor(ConversionType.volume, VolumeUnits.peck_USDry),
   VolumeUnits.fluidDram_US: 0.000003696691195313,
-  VolumeUnits.fluidOunce_Imperial: 0.0000284130625,
-  VolumeUnits.fluidOunce_US: 2.95735295625 * pow(10, -5),
-  VolumeUnits.fluidOunce_USFoodNutritionLabel: 0.00003,
+  VolumeUnits.fluidOunce_Imperial:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_Imperial) /
+          160,
+  VolumeUnits.fluidOunce_US:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid) /
+          128,
+  VolumeUnits.fluidOunce_USFoodNutritionLabel:
+      30 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
   VolumeUnits.gallon_Imperial: 0.00454609,
   VolumeUnits.gallon_USDry: 0.00440488377086,
   VolumeUnits.gallon_USLiquid: 0.003785411784,
   VolumeUnits.gigaLitre: _litreToCubicMetre * prefixValue[Prefix.giga],
-  VolumeUnits.gill_Imperial: 0.0001420653125,
-  VolumeUnits.gill_US: 0.00011829411825,
+  VolumeUnits.gill_Imperial:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_Imperial) /
+          32,
+  VolumeUnits.gill_US:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid) /
+          32,
   VolumeUnits.hectareMetre: 10000,
   VolumeUnits.hectoLitre: _litreToCubicMetre * prefixValue[Prefix.hecto],
-  VolumeUnits.jigger: 0.0000443602943,
+  VolumeUnits.jigger: 1.5 *
+      getConversionFactor(ConversionType.volume, VolumeUnits.fluidOunce_US),
   VolumeUnits.kiloLitre: _litreToCubicMetre * prefixValue[Prefix.kilo],
   VolumeUnits.litre: _litreToCubicMetre,
   VolumeUnits.megaLitre: _litreToCubicMetre * prefixValue[Prefix.mega],
   VolumeUnits.microLitre: _litreToCubicMetre * prefixValue[Prefix.micro],
   VolumeUnits.milliLitre: _litreToCubicMetre * prefixValue[Prefix.milli],
-  VolumeUnits.minim_Imperial: 5.9193880208 * pow(10, -8),
-  VolumeUnits.minim_US: 6.1611519922 * pow(10, -8),
+  VolumeUnits.minim_Imperial: getConversionFactor(
+          ConversionType.volume, VolumeUnits.fluidOunce_Imperial) /
+      480,
+  VolumeUnits.minim_US:
+      getConversionFactor(ConversionType.volume, VolumeUnits.fluidOunce_US) /
+          480,
   VolumeUnits.nanoLitre: _litreToCubicMetre * prefixValue[Prefix.nano],
-  VolumeUnits.oilBarrel: 0.158987294928,
-  VolumeUnits.peck_Imperial: 0.00909218,
-  VolumeUnits.peck_USDry: 0.00880976754172,
+  VolumeUnits.oilBarrel: 42 *
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid),
+  VolumeUnits.peck_Imperial: 2 *
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_Imperial),
+  VolumeUnits.peck_USDry:
+      2 * getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USDry),
   VolumeUnits.petaLitre: _litreToCubicMetre * prefixValue[Prefix.peta],
   VolumeUnits.picoLitre: _litreToCubicMetre * prefixValue[Prefix.pico],
-  VolumeUnits.pint_Imperial: 0.00056826125,
-  VolumeUnits.pint_USDry: 0.0005506104713575,
-  VolumeUnits.pint_USLiquid: 0.000473176473,
-  VolumeUnits.quart_Imperial: 0.0011365225,
-  VolumeUnits.quart_USDry: 0.00110122094272,
-  VolumeUnits.quart_USLiquid: 0.000946352946,
-  VolumeUnits.tablespoon_Australian: 2 * pow(10, -5),
-  VolumeUnits.tablespoon_Metric: 1.5 * pow(10, -5),
-  VolumeUnits.tablespoon_US: 0.00001478676478,
-  VolumeUnits.tablespoon_USFoodNutritionLabel: 1.5 * pow(10, -5),
-  VolumeUnits.teaspoon_Metric: 5 * pow(10, -6),
-  VolumeUnits.teaspoon_US: 0.00000492892159,
-  VolumeUnits.teaspoon_USFoodNutritionLabel: 5 * pow(10, -6),
+  VolumeUnits.pint_Imperial:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_Imperial) /
+          8,
+  VolumeUnits.pint_USDry:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USDry) / 8,
+  VolumeUnits.pint_USLiquid:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid) /
+          8,
+  VolumeUnits.quart_Imperial:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_Imperial) /
+          4,
+  VolumeUnits.quart_USDry:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USDry) / 4,
+  VolumeUnits.quart_USLiquid:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid) /
+          4,
+  VolumeUnits.tablespoon_Australian:
+      20 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.tablespoon_Metric:
+      15 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.tablespoon_US:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid) /
+          256,
+  VolumeUnits.tablespoon_USFoodNutritionLabel:
+      15 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.teaspoon_Metric:
+      5 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.teaspoon_US:
+      getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid) /
+          768,
+  VolumeUnits.teaspoon_USFoodNutritionLabel:
+      5 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
   VolumeUnits.teraLitre: _litreToCubicMetre * prefixValue[Prefix.tera],
   VolumeUnits.yoctoLitre: _litreToCubicMetre * prefixValue[Prefix.yocto],
   VolumeUnits.yottaLitre: _litreToCubicMetre * prefixValue[Prefix.yotta],

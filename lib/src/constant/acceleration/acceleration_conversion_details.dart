@@ -8,7 +8,7 @@ import '../../enum/time_units.dart';
 import '../../misc/global.dart';
 import '../others/prefix_value.dart';
 
-final _galToMetrePerSquareSecond = pow(10, -2);
+final _galToMetrePerSquareSecond = .01;
 
 final _hourToSecond = getConversionFactor(ConversionType.time, TimeUnits.hour);
 final _minuteToSecond =

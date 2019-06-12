@@ -8,19 +8,23 @@ import '../../misc/global.dart';
 import '../others/prefix_value.dart';
 
 final _barnToSquareMetre = pow(10, -28);
+final _squareFoot =
+    pow(getConversionFactor(ConversionType.length, LengthUnits.foot), 2);
+
+final _acreToSquareMetre = 43560 * _squareFoot;
 
 // Conversion factors to baseUnit
 Map<AreaUnits, double> areaConversionDetails = {
   // Base unit
   AreaUnits.squareMetre: 1,
 
-  AreaUnits.acre: 4046.8564224,
+  AreaUnits.acre: _acreToSquareMetre,
   AreaUnits.acre_USSurvey: 4046.872609874252,
   AreaUnits.are: 100,
   AreaUnits.attoBarn: prefixValue[Prefix.atto] * _barnToSquareMetre,
   AreaUnits.barn: _barnToSquareMetre,
   AreaUnits.centiBarn: prefixValue[Prefix.centi] * _barnToSquareMetre,
-  AreaUnits.circularMil: 5.067074790975 * prefixValue[Prefix.angstrom],
+  AreaUnits.circularMil: 5.067074790975 * pow(10, -10),
   AreaUnits.decaBarn: prefixValue[Prefix.deca] * _barnToSquareMetre,
   AreaUnits.deciBarn: prefixValue[Prefix.deci] * _barnToSquareMetre,
   AreaUnits.exaBarn: prefixValue[Prefix.exa] * _barnToSquareMetre,
@@ -36,16 +40,15 @@ Map<AreaUnits, double> areaConversionDetails = {
   AreaUnits.petaBarn: prefixValue[Prefix.peta] * _barnToSquareMetre,
   AreaUnits.picoBarn: prefixValue[Prefix.pico] * _barnToSquareMetre,
   AreaUnits.rai: 1600,
-  AreaUnits.rood: 1011.7141056,
-  AreaUnits.square: 9.290304,
+  AreaUnits.rood: _acreToSquareMetre / 4,
+  AreaUnits.square: 100 * _squareFoot,
   AreaUnits.squareAttoMetre: pow(prefixValue[Prefix.atto], 2),
   AreaUnits.squareCentiMetre: pow(prefixValue[Prefix.centi], 2),
   AreaUnits.squareDecaMetre: pow(prefixValue[Prefix.deca], 2),
   AreaUnits.squareDeciMetre: pow(prefixValue[Prefix.deci], 2),
   AreaUnits.squareExaMetre: pow(prefixValue[Prefix.exa], 2),
   AreaUnits.squareFemtoMetre: pow(prefixValue[Prefix.femto], 2),
-  AreaUnits.squareFoot:
-      pow(getConversionFactor(ConversionType.length, LengthUnits.foot), 2),
+  AreaUnits.squareFoot: _squareFoot,
   AreaUnits.squareGigaMetre: pow(prefixValue[Prefix.giga], 2),
   AreaUnits.squareHectoMetre: pow(prefixValue[Prefix.hecto], 2),
   AreaUnits.squareInch:

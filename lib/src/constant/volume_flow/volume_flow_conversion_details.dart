@@ -16,16 +16,14 @@ final _footToMetre =
     getConversionFactor(ConversionType.length, LengthUnits.foot);
 final _inchToMetre =
     getConversionFactor(ConversionType.length, LengthUnits.inch);
-
 final _litreToCubicMetre =
     getConversionFactor(ConversionType.volume, VolumeUnits.litre);
-final _gallonImperialToCubicMetre =
+final _gallonToCubicMetre_Imperial =
     getConversionFactor(ConversionType.volume, VolumeUnits.gallon_Imperial);
-final _gallonUSLiquidToCubicMetre =
+final _gallonToCubicMetre_USLiquid =
     getConversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid);
 final _oilBarrelToCubicMetre =
     getConversionFactor(ConversionType.volume, VolumeUnits.oilBarrel);
-
 final _perDayToPerSecond =
     1 / getConversionFactor(ConversionType.time, TimeUnits.day);
 final _perHourToPerSecond =
@@ -246,19 +244,19 @@ final Map<VolumeFlowUnits, double> volumeFlowConversionDetails = {
   VolumeFlowUnits.femtoLitrePerSecond:
       _litreToCubicMetre * prefixValue[Prefix.femto],
   VolumeFlowUnits.gallonPerDay_Imperial:
-      _gallonImperialToCubicMetre * _perDayToPerSecond,
+      _gallonToCubicMetre_Imperial * _perDayToPerSecond,
   VolumeFlowUnits.gallonPerDay_USLiquid:
-      _gallonUSLiquidToCubicMetre * _perDayToPerSecond,
+      _gallonToCubicMetre_USLiquid * _perDayToPerSecond,
   VolumeFlowUnits.gallonPerHour_Imperial:
-      _gallonImperialToCubicMetre * _perHourToPerSecond,
+      _gallonToCubicMetre_Imperial * _perHourToPerSecond,
   VolumeFlowUnits.gallonPerHour_USLiquid:
-      _gallonUSLiquidToCubicMetre * _perHourToPerSecond,
+      _gallonToCubicMetre_USLiquid * _perHourToPerSecond,
   VolumeFlowUnits.gallonPerMinute_Imperial:
-      _gallonImperialToCubicMetre * _perMinuteToPerSecond,
+      _gallonToCubicMetre_Imperial * _perMinuteToPerSecond,
   VolumeFlowUnits.gallonPerMinute_USLiquid:
-      _gallonUSLiquidToCubicMetre * _perMinuteToPerSecond,
-  VolumeFlowUnits.gallonPerSecond_Imperial: _gallonImperialToCubicMetre,
-  VolumeFlowUnits.gallonPerSecond_USLiquid: _gallonUSLiquidToCubicMetre,
+      _gallonToCubicMetre_USLiquid * _perMinuteToPerSecond,
+  VolumeFlowUnits.gallonPerSecond_Imperial: _gallonToCubicMetre_Imperial,
+  VolumeFlowUnits.gallonPerSecond_USLiquid: _gallonToCubicMetre_USLiquid,
   VolumeFlowUnits.gigaLitrePerDay:
       _litreToCubicMetre * _perDayToPerSecond * prefixValue[Prefix.giga],
   VolumeFlowUnits.gigaLitrePerHour:
@@ -311,10 +309,10 @@ final Map<VolumeFlowUnits, double> volumeFlowConversionDetails = {
       _litreToCubicMetre * _perMinuteToPerSecond * prefixValue[Prefix.milli],
   VolumeFlowUnits.milliLitrePerSecond:
       _litreToCubicMetre * prefixValue[Prefix.milli],
-  VolumeFlowUnits.millionGallonPerDay_Imperial: _gallonImperialToCubicMetre *
+  VolumeFlowUnits.millionGallonPerDay_Imperial: _gallonToCubicMetre_Imperial *
       _perDayToPerSecond *
       prefixValue[Prefix.mega],
-  VolumeFlowUnits.millionGallonPerDay_USLiquid: _gallonUSLiquidToCubicMetre *
+  VolumeFlowUnits.millionGallonPerDay_USLiquid: _gallonToCubicMetre_USLiquid *
       _perDayToPerSecond *
       prefixValue[Prefix.mega],
   VolumeFlowUnits.nanoLitrePerDay:
