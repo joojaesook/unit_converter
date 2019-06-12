@@ -1,4 +1,4 @@
-import '../constant/conversion_details.dart';
+import '../constant/others/conversion_details.dart';
 import '../constant/others/symbol.dart';
 import '../enum/conversion_type.dart';
 import '../enum/symbol_parts.dart';

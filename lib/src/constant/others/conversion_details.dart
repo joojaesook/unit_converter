@@ -1,0 +1,77 @@
+import '../../enum/conversion_type.dart';
+import '../acceleration/acceleration_conversion_details.dart';
+import '../area/area_conversion_details.dart';
+import '../blood_cholesterol/blood_cholesterol_conversion_details.dart';
+import '../blood_glucose/blood_glucose_conversion_details.dart';
+import '../capacitance/capacitance_conversion_details.dart';
+import '../data/data_conversion_details.dart';
+import '../data_rate/data_rate_conversion_details.dart';
+import '../dynamic_viscocity/dynamic_viscocity_conversion_details.dart';
+import '../electric_charge/electric_charge_conversion_details.dart';
+import '../electric_current/electric_current_conversion_details.dart';
+import '../electric_potential/electric_potential_conversion_details.dart';
+import '../electrical_conductance/electrical_conductance_conversion_details.dart';
+import '../electrical_resistance/electrical_resistance_conversion_details.dart';
+import '../force/force_conversion_details.dart';
+import '../frequency/frequency_conversion_details.dart';
+import '../illuminance/illuminance_conversion_details.dart';
+import '../inductance/inductance_conversion_details.dart';
+import '../kinematic_viscocity/kinematic_viscocity_conversion_details.dart';
+import '../length/length_conversion_details.dart';
+import '../luminance/luminance_conversion_details.dart';
+import '../magnetic_field_intensity/magnetic_field_intensity_conversion_details.dart';
+import '../magnetic_flux/magnetic_flux_conversion_details.dart';
+import '../magnetic_flux_density/magnetic_flux_density_conversion_details.dart';
+import '../mass/mass_conversion_details.dart';
+import '../mass_flow/mass_flow_conversion_details.dart';
+import '../mass_per_area/mass_per_area_conversion_details.dart';
+import '../plane_angle/plane_angle_conversion_details.dart';
+import '../radioactivity/radioactivity_conversion_details.dart';
+import '../speed/speed_conversion_details.dart';
+import '../time/time_conversion_details.dart';
+import '../torque/torque_conversion_details.dart';
+import '../volume/volume_conversion_details.dart';
+import '../volume_flow/volume_flow_conversion_details.dart';
+import '../volume_flow_per_area/volume_flow_per_area_conversion_details.dart';
+import '../volume_per_area/volume_per_area_conversion_details.dart';
+import '../water_hardness/water_hardness_conversion_details.dart';
+
+final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
+  ConversionType.acceleration: accelerationConversionDetails,
+  ConversionType.area: areaConversionDetails,
+  ConversionType.bloodCholesterol: bloodCholesterolConversionDetails,
+  ConversionType.bloodGlucose: bloodGlucoseConversionDetails,
+  ConversionType.capacitance: capacitanceConversionDetails,
+  ConversionType.data: dataConversionDetails,
+  ConversionType.dataRate: dataRateConversionDetails,
+  ConversionType.dynamicViscocity: dynamicViscocityConversionDetails,
+  ConversionType.electricCharge: electricChargeConversionDetails,
+  ConversionType.electricCurrent: electricCurrentConversionDetails,
+  ConversionType.electricPotential: electricPotentialConversionDetails,
+  ConversionType.electricalConductance: electricalConductanceConversionDetails,
+  ConversionType.electricalResistance: electricalResistanceConversionDetails,
+  ConversionType.force: forceConversionDetails,
+  ConversionType.frequency: frequencyConversionDetails,
+  ConversionType.illuminance: illuminanceConversionDetails,
+  ConversionType.inductance: inductanceConversionDetails,
+  ConversionType.kinematicViscocity: kinematicViscocityConversionDetails,
+  ConversionType.length: lengthConversionDetails,
+  ConversionType.luminance: luminanceConversionDetails,
+  ConversionType.magneticFieldIntensity:
+      magneticFieldIntensityConversionDetails,
+  ConversionType.magneticFlux: magneticFluxConversionDetails,
+  ConversionType.magneticFluxDensity: magneticFluxDensityConversionDetails,
+  ConversionType.mass: massConversionDetails,
+  ConversionType.massFlow: massFlowConversionDetails,
+  ConversionType.massPerArea: massPerAreaConversionDetails,
+  ConversionType.planeAngle: planeAngleConversionDetails,
+  ConversionType.radioactivity: radioactivityConversionDetails,
+  ConversionType.speed: speedConversionDetails,
+  ConversionType.time: timeConversionDetails,
+  ConversionType.torque: torqueConversionDetails,
+  ConversionType.volume: volumeConversionDetails,
+  ConversionType.volumeFlow: volumeFlowConversionDetails,
+  ConversionType.volumeFlowPerArea: volumeFlowPerAreaConversionDetails,
+  ConversionType.volumePerArea: volumePerAreaConversionDetails,
+  ConversionType.waterHardness: waterHardnessConversionDetails,
+};

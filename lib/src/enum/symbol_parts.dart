@@ -138,6 +138,8 @@ enum SymbolParts {
   minute,
   mole,
   month,
+  nOne,
+  nZero,
   nano,
   nauticalMile,
   newton,

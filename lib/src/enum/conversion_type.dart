@@ -16,6 +16,7 @@ enum ConversionType {
   electricalResistance,
   force,
   frequency,
+  fuelConsumption,
   illuminance,
   inductance,
   kinematicViscocity,

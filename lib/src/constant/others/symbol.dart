@@ -145,6 +145,8 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.minute: 'min',
   SymbolParts.mole: 'mol',
   SymbolParts.month: 'mo',
+  SymbolParts.nOne: '1',
+  SymbolParts.nZero: '0',
   SymbolParts.nano: 'n',
   SymbolParts.nauticalMile: 'nmi',
   SymbolParts.newton: 'N',
