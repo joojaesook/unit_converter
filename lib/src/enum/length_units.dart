@@ -62,6 +62,7 @@ enum LengthUnits {
   nanoLightYear,
   nanoMetre,
   nanoParsec,
+  nauticalLeague,
   nauticalMile,
   parsec,
   petaLightYear,

@@ -18,6 +18,7 @@ final _inchToMetre =
 const _gallon_Imperial = 0.00454609;
 const _gallon_USDry = 0.00440488377086;
 const _gallon_USLiquid = 0.003785411784;
+final _milliLiterToCubicMetre = _litreToCubicMetre * prefixValue[Prefix.milli];
 
 // Conversion factors to baseUnit
 final Map<VolumeUnits, double> volumeConversionDetails = {
@@ -60,11 +61,9 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
   VolumeUnits.cubicZeptoMetre: pow(prefixValue[Prefix.zepto], 3),
   VolumeUnits.cubicZettaMetre: pow(prefixValue[Prefix.zetta], 3),
   VolumeUnits.cup_Imperial: _gallon_Imperial / 16,
-  VolumeUnits.cup_Metric:
-      250 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.cup_Metric: 250 * _milliLiterToCubicMetre,
   VolumeUnits.cup_US: _gallon_USLiquid / 16,
-  VolumeUnits.cup_USFoodNutritionLabel:
-      240 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.cup_USFoodNutritionLabel: 240 * _milliLiterToCubicMetre,
   VolumeUnits.decaLitre: _litreToCubicMetre * prefixValue[Prefix.deca],
   VolumeUnits.deciLitre: _litreToCubicMetre * prefixValue[Prefix.deci],
   VolumeUnits.exaLitre: _litreToCubicMetre * prefixValue[Prefix.exa],
@@ -76,8 +75,7 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
   VolumeUnits.fluidDram_US: 0.000003696691195313,
   VolumeUnits.fluidOunce_Imperial: _gallon_Imperial / 160,
   VolumeUnits.fluidOunce_US: _gallon_USLiquid / 128,
-  VolumeUnits.fluidOunce_USFoodNutritionLabel:
-      30 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.fluidOunce_USFoodNutritionLabel: 30 * _milliLiterToCubicMetre,
   VolumeUnits.gallon_Imperial: _gallon_Imperial,
   VolumeUnits.gallon_USDry: _gallon_USDry,
   VolumeUnits.gallon_USLiquid: _gallon_USLiquid,
@@ -92,7 +90,7 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
   VolumeUnits.litre: _litreToCubicMetre,
   VolumeUnits.megaLitre: _litreToCubicMetre * prefixValue[Prefix.mega],
   VolumeUnits.microLitre: _litreToCubicMetre * prefixValue[Prefix.micro],
-  VolumeUnits.milliLitre: _litreToCubicMetre * prefixValue[Prefix.milli],
+  VolumeUnits.milliLitre: _milliLiterToCubicMetre,
   VolumeUnits.minim_Imperial: getConversionFactor(
           ConversionType.volume, VolumeUnits.fluidOunce_Imperial) /
       480,
@@ -111,18 +109,13 @@ final Map<VolumeUnits, double> volumeConversionDetails = {
   VolumeUnits.quart_Imperial: _gallon_Imperial / 4,
   VolumeUnits.quart_USDry: _gallon_USDry / 4,
   VolumeUnits.quart_USLiquid: _gallon_USLiquid / 4,
-  VolumeUnits.tablespoon_Australian:
-      20 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
-  VolumeUnits.tablespoon_Metric:
-      15 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.tablespoon_Australian: 20 * _milliLiterToCubicMetre,
+  VolumeUnits.tablespoon_Metric: 15 * _milliLiterToCubicMetre,
   VolumeUnits.tablespoon_US: _gallon_USLiquid / 256,
-  VolumeUnits.tablespoon_USFoodNutritionLabel:
-      15 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
-  VolumeUnits.teaspoon_Metric:
-      5 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.tablespoon_USFoodNutritionLabel: 15 * _milliLiterToCubicMetre,
+  VolumeUnits.teaspoon_Metric: 5 * _milliLiterToCubicMetre,
   VolumeUnits.teaspoon_US: _gallon_USLiquid / 768,
-  VolumeUnits.teaspoon_USFoodNutritionLabel:
-      5 * getConversionFactor(ConversionType.volume, VolumeUnits.milliLitre),
+  VolumeUnits.teaspoon_USFoodNutritionLabel: 5 * _milliLiterToCubicMetre,
   VolumeUnits.teraLitre: _litreToCubicMetre * prefixValue[Prefix.tera],
   VolumeUnits.yoctoLitre: _litreToCubicMetre * prefixValue[Prefix.yocto],
   VolumeUnits.yottaLitre: _litreToCubicMetre * prefixValue[Prefix.yotta],

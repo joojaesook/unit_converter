@@ -5,6 +5,7 @@ import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
 
 const _gramForceToNewton = 0.00980665;
+const _poundForceToNewton = 4.4482216152605;
 
 // Conversion factors to baseUnit
 Map<ForceUnits, double> forceConversionDetails = {
@@ -32,7 +33,7 @@ Map<ForceUnits, double> forceConversionDetails = {
   ForceUnits.kiloGramForce: _gramForceToNewton * prefixValue[Prefix.kilo],
   ForceUnits.kiloNewton: prefixValue[Prefix.kilo],
   ForceUnits.kilopond: 9.80665,
-  ForceUnits.kip: 4448.2216,
+  ForceUnits.kip: 1000 * _poundForceToNewton,
   ForceUnits.megaGramForce: _gramForceToNewton * prefixValue[Prefix.mega],
   ForceUnits.megaNewton: prefixValue[Prefix.mega],
   ForceUnits.microGramForce: _gramForceToNewton * prefixValue[Prefix.micro],
@@ -46,7 +47,7 @@ Map<ForceUnits, double> forceConversionDetails = {
   ForceUnits.petaNewton: prefixValue[Prefix.peta],
   ForceUnits.picoGramForce: _gramForceToNewton * prefixValue[Prefix.pico],
   ForceUnits.picoNewton: prefixValue[Prefix.pico],
-  ForceUnits.poundForce: 4.4482216152605,
+  ForceUnits.poundForce: _poundForceToNewton,
   ForceUnits.poundal: 0.13825495,
   ForceUnits.teraGramForce: _gramForceToNewton * prefixValue[Prefix.tera],
   ForceUnits.teraNewton: prefixValue[Prefix.tera],

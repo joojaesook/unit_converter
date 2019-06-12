@@ -677,6 +677,16 @@ Set<Unit> lengthUnitDetails = {
     variation: true,
   ),
   Unit<LengthUnits>(
+    'nautical league',
+    createSymbol(
+      const [
+        SymbolParts.lN,
+        SymbolParts.lL,
+      ],
+    ),
+    LengthUnits.nauticalLeague,
+  ),
+  Unit<LengthUnits>(
     'nautical mile',
     createSymbol(
       const [
