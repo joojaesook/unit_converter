@@ -1,4 +1,5 @@
-import 'dart:math' show pow;
+import 'package:unit_converter/src/enum/conversion_type.dart';
+import 'package:unit_converter/src/misc/global.dart';
 
 import '../../enum/mass_units.dart';
 import '../../enum/prefix.dart';
@@ -6,8 +7,9 @@ import '../others/prefix_value.dart';
 
 const _gramToKiloGram = 0.001;
 const double _tonneToKiloGram = 1000;
+const _poundToKiloGram = 0.45359237;
 
-// const double _pound = 
+// const double _pound =
 
 // Conversion factors to baseUnit
 Map<MassUnits, double> massConversionDetails = {
@@ -29,13 +31,13 @@ Map<MassUnits, double> massConversionDetails = {
   MassUnits.femtoTonne: prefixValue[Prefix.femto] * _tonneToKiloGram,
   MassUnits.gigaGram: prefixValue[Prefix.giga] * _gramToKiloGram,
   MassUnits.gigaTonne: prefixValue[Prefix.giga] * _tonneToKiloGram,
-  MassUnits.grain: 6.479891 * pow(10, -5),
+  MassUnits.grain: _poundToKiloGram / 7000,
   MassUnits.gram: _gramToKiloGram,
   MassUnits.hectoGram: prefixValue[Prefix.hecto] * _gramToKiloGram,
   MassUnits.hectoTonne: prefixValue[Prefix.hecto] * _tonneToKiloGram,
   MassUnits.kiloTonne: prefixValue[Prefix.kilo] * _tonneToKiloGram,
-  MassUnits.longHundredWeight: 50.80234544,
-  MassUnits.longTonne: 1016.0469088,
+  MassUnits.longHundredWeight: 112 * _poundToKiloGram,
+  MassUnits.longTonne: 2240 * _poundToKiloGram,
   MassUnits.megaGram: prefixValue[Prefix.mega] * _gramToKiloGram,
   MassUnits.megaTonne: prefixValue[Prefix.mega] * _tonneToKiloGram,
   MassUnits.microGram: prefixValue[Prefix.micro] * _gramToKiloGram,
@@ -44,24 +46,27 @@ Map<MassUnits, double> massConversionDetails = {
   MassUnits.milliTonne: prefixValue[Prefix.milli] * _tonneToKiloGram,
   MassUnits.nanoGram: prefixValue[Prefix.nano] * _gramToKiloGram,
   MassUnits.nanoTonne: prefixValue[Prefix.nano] * _tonneToKiloGram,
-  MassUnits.ounce: 0.028349523125,
+  MassUnits.ounce: _poundToKiloGram / 16,
   MassUnits.ounce_USFoodNutritionLabel: 0.028,
-  MassUnits.pennyWeight: 0.00155517384,
+  MassUnits.pennyWeight:
+      24 * getConversionFactor(ConversionType.mass, MassUnits.grain),
   MassUnits.petaGram: prefixValue[Prefix.peta] * _gramToKiloGram,
   MassUnits.petaTonne: prefixValue[Prefix.peta] * _tonneToKiloGram,
   MassUnits.picoGram: prefixValue[Prefix.pico] * _gramToKiloGram,
   MassUnits.picoTonne: prefixValue[Prefix.pico] * _tonneToKiloGram,
   MassUnits.pood: 16.3807,
-  MassUnits.pound: 0.45359237,
-  MassUnits.shortHundredWeight: 45.359237,
-  MassUnits.shortTonne: 907.18474,
+  MassUnits.pound: _poundToKiloGram,
+  MassUnits.shortHundredWeight: 100 * _poundToKiloGram,
+  MassUnits.shortTonne: 2000 * _poundToKiloGram,
   MassUnits.slug: 14.5939029,
-  MassUnits.stone: 6.35029318,
+  MassUnits.stone: 14 * _poundToKiloGram,
   MassUnits.teraGram: prefixValue[Prefix.tera] * _gramToKiloGram,
   MassUnits.teraTonne: prefixValue[Prefix.tera] * _tonneToKiloGram,
   MassUnits.tonne: _tonneToKiloGram,
-  MassUnits.troyOunce: 0.0311034768,
-  MassUnits.troyPound: 0.3732417216,
+  MassUnits.troyOunce:
+      480 * getConversionFactor(ConversionType.mass, MassUnits.grain),
+  MassUnits.troyPound:
+      5760 * getConversionFactor(ConversionType.mass, MassUnits.grain),
   MassUnits.yoctoGram: prefixValue[Prefix.yocto] * _gramToKiloGram,
   MassUnits.yoctoTonne: prefixValue[Prefix.yocto] * _tonneToKiloGram,
   MassUnits.yottaGram: prefixValue[Prefix.yotta] * _gramToKiloGram,
