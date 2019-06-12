@@ -24,6 +24,7 @@ import 'magnetic_flux/magnetic_flux_conversion_details.dart';
 import 'magnetic_flux_density/magnetic_flux_density_conversion_details.dart';
 import 'mass/mass_conversion_details.dart';
 import 'mass_per_area/mass_per_area_conversion_details.dart';
+import 'plane_angle/plane_angle_conversion_details.dart';
 import 'radioactivity/radioactivity_conversion_details.dart';
 import 'speed/speed_conversion_details.dart';
 import 'time/time_conversion_details.dart';
@@ -44,9 +45,9 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.dataRate: dataRateConversionDetails,
   ConversionType.dynamicViscocity: dynamicViscocityConversionDetails,
   ConversionType.electricCharge: electricChargeConversionDetails,
-  ConversionType.electricalConductance: electricalConductanceConversionDetails,
   ConversionType.electricCurrent: electricCurrentConversionDetails,
   ConversionType.electricPotential: electricPotentialConversionDetails,
+  ConversionType.electricalConductance: electricalConductanceConversionDetails,
   ConversionType.electricalResistance: electricalResistanceConversionDetails,
   ConversionType.force: forceConversionDetails,
   ConversionType.frequency: frequencyConversionDetails,
@@ -61,6 +62,7 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.magneticFluxDensity: magneticFluxDensityConversionDetails,
   ConversionType.mass: massConversionDetails,
   ConversionType.massPerArea: massPerAreaConversionDetails,
+  ConversionType.planeAngle: planeAngleConversionDetails,
   ConversionType.radioactivity: radioactivityConversionDetails,
   ConversionType.speed: speedConversionDetails,
   ConversionType.time: timeConversionDetails,

@@ -2,7 +2,7 @@ import '../../enum/symbol_parts.dart';
 import 'unicode_constants.dart';
 
 // Convert the [charCode] to String and append [postfix] to it, and returns the result
-String _createStringFromUnicode(String charCode) {
+String _stringFromUnicode(String charCode) {
   return String.fromCharCodes(Runes('\\u{$charCode}'));
 }
 
@@ -10,7 +10,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.ab: 'ab',
   SymbolParts.acre: 'ac',
   SymbolParts.ampere: 'A',
-  SymbolParts.angstrom: _createStringFromUnicode(unicodeAngstrom),
+  SymbolParts.angstrom: _stringFromUnicode(unicodeAngstrom),
   SymbolParts.are: 'a',
   SymbolParts.astronomicalUnit: 'au',
   SymbolParts.atto: 'a',
@@ -61,6 +61,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.deca: 'da',
   SymbolParts.decade: 'decade',
   SymbolParts.deci: 'd',
+  SymbolParts.doubleQuote: '"',
   SymbolParts.dram: 'dr',
   SymbolParts.dyne: 'dyn',
   SymbolParts.exa: 'E',
@@ -136,8 +137,8 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.maxwell: 'Mx',
   SymbolParts.mega: 'M',
   SymbolParts.metre: 'm',
-  SymbolParts.mho: _createStringFromUnicode(unicodeMho),
-  SymbolParts.micro: _createStringFromUnicode(unicodeMicro),
+  SymbolParts.mho: _stringFromUnicode(unicodeMho),
+  SymbolParts.micro: _stringFromUnicode(unicodeMicro),
   SymbolParts.mile: 'mi',
   SymbolParts.millennium: 'millennium',
   SymbolParts.milli: 'm',
@@ -150,7 +151,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.newton: 'N',
   SymbolParts.nox: 'nx',
   SymbolParts.oersted: 'Oe',
-  SymbolParts.ohm: _createStringFromUnicode(unicodeOhm),
+  SymbolParts.ohm: _stringFromUnicode(unicodeOhm),
   SymbolParts.oilBarrel: 'bbl',
   SymbolParts.ounce: 'oz',
   SymbolParts.parsec: 'pc',
@@ -162,7 +163,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.pica: 'pica',
   SymbolParts.pico: 'p',
   SymbolParts.pint: 'pt',
-  SymbolParts.planck: '${_createStringFromUnicode(unicodePlanck)}p',
+  SymbolParts.planck: '${_stringFromUnicode(unicodePlanck)}p',
   SymbolParts.point: 'pt',
   SymbolParts.poise: 'P',
   SymbolParts.pole: 'pole',
@@ -180,6 +181,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.second: 's',
   SymbolParts.short: 'sh',
   SymbolParts.siemens: 'S',
+  SymbolParts.singleQuote: '\'',
   SymbolParts.slug: 'slug',
   SymbolParts.space: ' ',
   SymbolParts.space: ' ',
@@ -188,14 +190,14 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.stilb: 'sb',
   SymbolParts.stokes: 'St',
   SymbolParts.stone: 'st',
-  SymbolParts.subscriptThree: _createStringFromUnicode(unicodeSubscriptThree),
-  SymbolParts.subscriptZero: _createStringFromUnicode(unicodeSubscriptZero),
-  SymbolParts.superscriptPlus: _createStringFromUnicode(unicodeSuperscriptPlus),
-  SymbolParts.superscriptThree:
-      _createStringFromUnicode(unicodeSuperscriptThree),
-  SymbolParts.superscriptTwo: _createStringFromUnicode(unicodeSuperscriptTwo),
-  SymbolParts.superscriptZero: _createStringFromUnicode(unicodeSuperscriptZero),
+  SymbolParts.subscriptThree: _stringFromUnicode(unicodeSubscriptThree),
+  SymbolParts.subscriptZero: _stringFromUnicode(unicodeSubscriptZero),
+  SymbolParts.superscriptPlus: _stringFromUnicode(unicodeSuperscriptPlus),
+  SymbolParts.superscriptThree: _stringFromUnicode(unicodeSuperscriptThree),
+  SymbolParts.superscriptTwo: _stringFromUnicode(unicodeSuperscriptTwo),
+  SymbolParts.superscriptZero: _stringFromUnicode(unicodeSuperscriptZero),
   SymbolParts.tablespoon: 'tbsp',
+  SymbolParts.tau: _stringFromUnicode(unicodeTau),
   SymbolParts.teaspoon: 'tsp',
   SymbolParts.tera: 'T',
   SymbolParts.tesla: 'T',

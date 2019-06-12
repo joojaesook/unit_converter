@@ -25,6 +25,7 @@ import 'enum/magnetic_flux_density_units.dart';
 import 'enum/magnetic_flux_units.dart';
 import 'enum/mass_per_area_units.dart';
 import 'enum/mass_units.dart';
+import 'enum/plane_angle_units.dart';
 import 'enum/radioactivity_units.dart';
 import 'enum/speed_units.dart';
 import 'enum/time_units.dart';
@@ -60,6 +61,7 @@ export 'enum/magnetic_flux_density_units.dart';
 export 'enum/magnetic_flux_units.dart';
 export 'enum/mass_per_area_units.dart';
 export 'enum/mass_units.dart';
+export 'enum/plane_angle_units.dart';
 export 'enum/radioactivity_units.dart';
 export 'enum/speed_units.dart';
 export 'enum/time_units.dart';
@@ -218,6 +220,12 @@ class UnitConverter {
   static MultiplicationBasedConverter massPerArea() {
     return MultiplicationBasedConverter<MassPerAreaUnits>(
       ConversionType.massPerArea,
+    );
+  }
+
+  static MultiplicationBasedConverter planeAngle() {
+    return MultiplicationBasedConverter<PlaneAngleUnits>(
+      ConversionType.planeAngle,
     );
   }
 

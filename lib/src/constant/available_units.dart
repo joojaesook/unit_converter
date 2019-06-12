@@ -25,6 +25,7 @@ import 'magnetic_flux/magnetic_flux_unit_details.dart';
 import 'magnetic_flux_density/magnetic_flux_density_unit_details.dart';
 import 'mass/mass_unit_details.dart';
 import 'mass_per_area/mass_per_area_unit_details.dart';
+import 'plane_angle/plane_angle_unit_details.dart';
 import 'radioactivity/radioactivity_unit_details.dart';
 import 'speed/speed_unit_details.dart';
 import 'time/time_unit_details.dart';
@@ -61,6 +62,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.magneticFluxDensity: magneticFluxDensityUnitDetails,
   ConversionType.mass: massUnitDetails,
   ConversionType.massPerArea: massPerAreaUnitDetails,
+  ConversionType.planeAngle: planeAngleUnitDetails,
   ConversionType.radioactivity: radioactivityUnitDetails,
   ConversionType.speed: speedUnitDetails,
   ConversionType.time: timeUnitDetails,
