@@ -1,5 +1,3 @@
-import 'dart:math' show pow;
-
 import '../../enum/electrical_resistance_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
@@ -10,7 +8,7 @@ final Map<ElectricalResistanceUnits, double>
   // Base unit
   ElectricalResistanceUnits.ohm: 1,
 
-  ElectricalResistanceUnits.abOhm: pow(10, -9),
+  ElectricalResistanceUnits.abOhm: prefixValue[Prefix.nano],
   ElectricalResistanceUnits.attoOhm: prefixValue[Prefix.atto],
   ElectricalResistanceUnits.centiOhm: prefixValue[Prefix.centi],
   ElectricalResistanceUnits.decaOhm: prefixValue[Prefix.deca],

@@ -1,5 +1,3 @@
-import 'dart:math' show pow;
-
 import '../../enum/inductance_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
@@ -9,7 +7,7 @@ Map<InductanceUnits, double> inductanceConversionDetails = {
   // Base unit
   InductanceUnits.henry: 1,
 
-  InductanceUnits.abHenry: pow(10, -9),
+  InductanceUnits.abHenry: prefixValue[Prefix.nano],
   InductanceUnits.attoHenry: prefixValue[Prefix.atto],
   InductanceUnits.centiHenry: prefixValue[Prefix.centi],
   InductanceUnits.decaHenry: prefixValue[Prefix.deca],
