@@ -1,6 +1,8 @@
 import '../../enum/symbol_parts.dart';
 import '../../enum/unit_systems.dart';
 import '../../misc/global.dart';
+import 'symbol.dart';
+import 'unicode_constants.dart';
 
 final Map<UnitSystems, String> unitSystem = {
   UnitSystems.australian: 'Australian',
@@ -17,9 +19,12 @@ final Map<UnitSystems, String> unitSystem = {
     ],
   )}',
   UnitSystems.caO: 'CaO',
+  UnitSystems.degree15C: '15 ${stringFromUnicode(unicodeSuperscriptZero)}C',
+  UnitSystems.ec: 'EC',
   UnitSystems.gregorian: 'Gregorian',
   UnitSystems.gunter: 'Gunter\'s',
   UnitSystems.imperial: 'Imperial',
+  UnitSystems.intlSteamTable: 'IT',
   UnitSystems.julian: 'Julian',
   UnitSystems.land: 'Land',
   UnitSystems.metric: 'Metric',
@@ -29,6 +34,7 @@ final Map<UnitSystems, String> unitSystem = {
       SymbolParts.superscriptPlus,
     ],
   )}',
+  UnitSystems.tnt: 'TNT',
   UnitSystems.typographic: 'Typographic',
   UnitSystems.us: 'US',
   UnitSystems.usDry: 'US dry',

@@ -14,6 +14,7 @@ enum ConversionType {
   electricPotential,
   electricalConductance,
   electricalResistance,
+  energy,
   force,
   frequency,
   fuelConsumption,

@@ -1,3 +1,5 @@
+import 'package:unit_converter/src/constant/energy/energy_unit_details.dart';
+
 import '../../enum/conversion_type.dart';
 import '../../model/unit.dart';
 import '../acceleration/acceleration_unit_details.dart';
@@ -52,6 +54,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.electricPotential: electricPotentialUnitDetails,
   ConversionType.electricalConductance: electricalConductanceUnitDetails,
   ConversionType.electricalResistance: electricalResistanceUnitDetails,
+  ConversionType.energy: energyUnitDetails,
   ConversionType.force: forceUnitDetails,
   ConversionType.frequency: frequencyUnitDetails,
   ConversionType.fuelConsumption: fuelConsumptionUnitDetails,

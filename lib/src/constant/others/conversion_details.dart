@@ -12,6 +12,7 @@ import '../electric_current/electric_current_conversion_details.dart';
 import '../electric_potential/electric_potential_conversion_details.dart';
 import '../electrical_conductance/electrical_conductance_conversion_details.dart';
 import '../electrical_resistance/electrical_resistance_conversion_details.dart';
+import '../energy/energy_conversion_details.dart';
 import '../force/force_conversion_details.dart';
 import '../frequency/frequency_conversion_details.dart';
 import '../illuminance/illuminance_conversion_details.dart';
@@ -50,6 +51,7 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.electricPotential: electricPotentialConversionDetails,
   ConversionType.electricalConductance: electricalConductanceConversionDetails,
   ConversionType.electricalResistance: electricalResistanceConversionDetails,
+  ConversionType.energy: energyConversionDetails,
   ConversionType.force: forceConversionDetails,
   ConversionType.frequency: frequencyConversionDetails,
   ConversionType.illuminance: illuminanceConversionDetails,
