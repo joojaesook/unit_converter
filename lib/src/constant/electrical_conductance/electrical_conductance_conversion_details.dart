@@ -1,5 +1,3 @@
-import 'dart:math' show pow;
-
 import '../../enum/electrical_conductance_units.dart';
 import '../../enum/prefix.dart';
 import '../others/prefix_value.dart';
@@ -10,8 +8,8 @@ final Map<ElectricalConductanceUnits, double>
   // Base unit
   ElectricalConductanceUnits.siemens: 1,
 
-  ElectricalConductanceUnits.abMho: pow(10, 9),
-  ElectricalConductanceUnits.abSiemens: pow(10, 9),
+  ElectricalConductanceUnits.abMho: prefixValue[Prefix.giga],
+  ElectricalConductanceUnits.abSiemens: prefixValue[Prefix.giga],
   ElectricalConductanceUnits.attoMho: prefixValue[Prefix.atto],
   ElectricalConductanceUnits.attoSiemens: prefixValue[Prefix.atto],
   ElectricalConductanceUnits.centiMho: prefixValue[Prefix.centi],

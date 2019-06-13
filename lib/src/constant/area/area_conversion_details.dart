@@ -10,7 +10,6 @@ import '../others/prefix_value.dart';
 final _barnToSquareMetre = pow(10, -28);
 final _squareFoot =
     pow(getConversionFactor(ConversionType.length, LengthUnits.foot), 2);
-
 final _acreToSquareMetre = 43560 * _squareFoot;
 
 // Conversion factors to baseUnit

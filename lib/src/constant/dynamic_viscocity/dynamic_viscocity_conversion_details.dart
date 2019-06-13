@@ -52,7 +52,7 @@ final Map<DynamicViscocityUnits, double> dynamicViscocityConversionDetails = {
   DynamicViscocityUnits.picoPascalSecond: prefixValue[Prefix.pico],
   DynamicViscocityUnits.picoPoise:
       prefixValue[Prefix.pico] * prefixValue[Prefix.deci],
-  DynamicViscocityUnits.poise: prefixValue[Prefix.deci],
+  DynamicViscocityUnits.poise: 0.1,
   DynamicViscocityUnits.teraPascalSecond: prefixValue[Prefix.tera],
   DynamicViscocityUnits.teraPoise:
       prefixValue[Prefix.tera] * prefixValue[Prefix.deci],
