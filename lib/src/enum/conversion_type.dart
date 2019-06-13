@@ -30,6 +30,7 @@ enum ConversionType {
   massFlow,
   massPerArea,
   planeAngle,
+  power,
   radioactivity,
   speed,
   time,

@@ -1,5 +1,3 @@
-import 'package:unit_converter/src/constant/energy/energy_unit_details.dart';
-
 import '../../enum/conversion_type.dart';
 import '../../model/unit.dart';
 import '../acceleration/acceleration_unit_details.dart';
@@ -15,6 +13,7 @@ import '../electric_current/electric_current_unit_details.dart';
 import '../electric_potential/electric_potential_unit_details.dart';
 import '../electrical_conductance/electrical_conductance_unit_details.dart';
 import '../electrical_resistance/electrical_resistance_unit_details.dart';
+import '../energy/energy_unit_details.dart';
 import '../force/force_unit_details.dart';
 import '../frequency/frequency_unit_details.dart';
 import '../fuel_consumption/fuel_consumption_unit_details.dart';
@@ -30,6 +29,7 @@ import '../mass/mass_unit_details.dart';
 import '../mass_flow/mass_flow_unit_details.dart';
 import '../mass_per_area/mass_per_area_unit_details.dart';
 import '../plane_angle/plane_angle_unit_details.dart';
+import '../power/power_unit_details.dart';
 import '../radioactivity/radioactivity_unit_details.dart';
 import '../speed/speed_unit_details.dart';
 import '../time/time_unit_details.dart';
@@ -70,6 +70,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.massFlow: massFlowUnitDetails,
   ConversionType.massPerArea: massPerAreaUnitDetails,
   ConversionType.planeAngle: planeAngleUnitDetails,
+  ConversionType.power: powerUnitDetails,
   ConversionType.radioactivity: radioactivityUnitDetails,
   ConversionType.speed: speedUnitDetails,
   ConversionType.time: timeUnitDetails,

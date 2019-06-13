@@ -7,6 +7,7 @@ import 'unicode_constants.dart';
 final Map<UnitSystems, String> unitSystem = {
   UnitSystems.australian: 'Australian',
   UnitSystems.binary: 'Binary',
+  UnitSystems.boiler: 'Boiler',
   UnitSystems.ca2: 'Ca${createSymbol(
     const [
       SymbolParts.superscriptTwo,
@@ -21,12 +22,14 @@ final Map<UnitSystems, String> unitSystem = {
   UnitSystems.caO: 'CaO',
   UnitSystems.degree15C: '15 ${stringFromUnicode(unicodeSuperscriptZero)}C',
   UnitSystems.ec: 'EC',
+  UnitSystems.electric: 'Electric',
   UnitSystems.gregorian: 'Gregorian',
   UnitSystems.gunter: 'Gunter\'s',
   UnitSystems.imperial: 'Imperial',
   UnitSystems.intlSteamTable: 'IT',
   UnitSystems.julian: 'Julian',
   UnitSystems.land: 'Land',
+  UnitSystems.mechanical: 'Mechanical',
   UnitSystems.metric: 'Metric',
   UnitSystems.mg2: 'Mg${createSymbol(
     const [

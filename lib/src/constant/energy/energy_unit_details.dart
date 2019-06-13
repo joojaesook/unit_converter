@@ -1108,6 +1108,7 @@ final Set<Unit> energyUnitDetails = {
     ),
     EnergyUnits.millionBritishThermalUnits_IntlSteamTable,
     system: unitSystem[UnitSystems.intlSteamTable],
+    variation: true,
   ),
   Unit<EnergyUnits>(
     'million decatherms',
@@ -1120,6 +1121,7 @@ final Set<Unit> energyUnitDetails = {
     ),
     EnergyUnits.millionDecaTherms,
     system: unitSystem[UnitSystems.ec],
+    variation: true,
   ),
   Unit<EnergyUnits>(
     'millitonne',
@@ -1541,6 +1543,7 @@ final Set<Unit> energyUnitDetails = {
     ),
     EnergyUnits.thousandBritishThermalUnits_IntlSteamTable,
     system: unitSystem[UnitSystems.intlSteamTable],
+    variation: true,
   ),
   Unit<EnergyUnits>(
     'thousand decatherms',
@@ -1552,6 +1555,7 @@ final Set<Unit> energyUnitDetails = {
     ),
     EnergyUnits.thousandDecaTherms,
     system: unitSystem[UnitSystems.ec],
+    variation: true,
   ),
   Unit<EnergyUnits>(
     'tonne',

@@ -27,6 +27,7 @@ import '../mass/mass_conversion_details.dart';
 import '../mass_flow/mass_flow_conversion_details.dart';
 import '../mass_per_area/mass_per_area_conversion_details.dart';
 import '../plane_angle/plane_angle_conversion_details.dart';
+import '../power/power_conversion_details.dart';
 import '../radioactivity/radioactivity_conversion_details.dart';
 import '../speed/speed_conversion_details.dart';
 import '../time/time_conversion_details.dart';
@@ -67,6 +68,7 @@ final Map<ConversionType, Map<dynamic, double>> conversionDetails = {
   ConversionType.massFlow: massFlowConversionDetails,
   ConversionType.massPerArea: massPerAreaConversionDetails,
   ConversionType.planeAngle: planeAngleConversionDetails,
+  ConversionType.power: powerConversionDetails,
   ConversionType.radioactivity: radioactivityConversionDetails,
   ConversionType.speed: speedConversionDetails,
   ConversionType.time: timeConversionDetails,
