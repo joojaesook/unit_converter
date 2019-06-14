@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 // blood cholesterol unit details
-final Set<Unit> bloodCholesterolUnitDetails = {
+final bloodCholesterolUnitDetails = {
   Unit<BloodCholesterolUnits>(
     'milligram per decilitre',
     createSymbol(

@@ -80,7 +80,7 @@ Set<Unit<T>> createUnitVariation<T>(
   Iterable<T> unitEnum,
   T baseUnit,
   double baseConversionFactor,
-  List<Prefix> variables, {
+  List<Prefix> variations, {
   String namePrefix = '',
   String namePostfix = '',
   String symbolPrefix = '',
@@ -108,7 +108,7 @@ Set<Unit<T>> createUnitVariation<T>(
   baseUnitName =
       baseUnitName.substring(0, 1).toUpperCase() + baseUnitName.substring(1);
 
-  for (Prefix p in variables) {
+  for (Prefix p in variations) {
     var prefix = stringFromEnum(p);
     var variationName = prefixName[p];
     var unit = createUnit(

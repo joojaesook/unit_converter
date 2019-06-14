@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 // blood gucose unit details
-final Set<Unit> bloodGlucoseUnitDetails = {
+final bloodGlucoseUnitDetails = {
   Unit<BloodGlucoseUnits>(
     'milligram per decilitre',
     createSymbol(

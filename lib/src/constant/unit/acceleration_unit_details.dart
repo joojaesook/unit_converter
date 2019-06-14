@@ -66,7 +66,7 @@ final _metrePerHourPerSecondVariations = createUnitVariation(
   ),
   addAmericanName: true,
   americanNamePostfix: 'meter per hour per second',
-).toSet();
+);
 
 // metrePerHourSquared units
 final _metrePerHourSquaredVariations = createUnitVariation(
@@ -85,7 +85,7 @@ final _metrePerHourSquaredVariations = createUnitVariation(
   ),
   addAmericanName: true,
   americanNamePostfix: 'meter per hour squared',
-).toSet();
+);
 
 // metrePerMinutePerSecond units
 final _metrePerMinutePerSecondVariations = createUnitVariation(
@@ -105,7 +105,7 @@ final _metrePerMinutePerSecondVariations = createUnitVariation(
   ),
   addAmericanName: true,
   americanNamePostfix: 'meter per minute per second',
-).toSet();
+);
 
 // mtrePerMinuteSquared units
 final _metrePerMinuteSquaredVariations = createUnitVariation(
@@ -124,7 +124,7 @@ final _metrePerMinuteSquaredVariations = createUnitVariation(
   ),
   addAmericanName: true,
   americanNamePostfix: 'meter per minute squared',
-).toSet();
+);
 
 // metrePerSecondSquared units
 final _metrePerSecondSquaredVariations = createUnitVariation(
@@ -143,7 +143,7 @@ final _metrePerSecondSquaredVariations = createUnitVariation(
   ),
   addAmericanName: true,
   americanNamePostfix: 'meter per second squared',
-).toSet();
+);
 
 // other units
 final _otherUnits = {
