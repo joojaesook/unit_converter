@@ -34,7 +34,7 @@ final _yardToMetre = conversionFactor(
   LengthUnits.yard,
 );
 
-// gal
+// gal units
 final _galVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.gal,
@@ -48,7 +48,7 @@ final _galVariations = createUnitVariation(
   ),
 );
 
-// metrePerHourPerSecond
+// metrePerHourPerSecond units
 final _metrePerHourPerSecondVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerHourPerSecond,
@@ -68,7 +68,7 @@ final _metrePerHourPerSecondVariations = createUnitVariation(
   americanNamePostfix: 'meter per hour per second',
 ).toSet();
 
-// metrePerHourSquared
+// metrePerHourSquared units
 final _metrePerHourSquaredVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerHourSquared,
@@ -87,7 +87,7 @@ final _metrePerHourSquaredVariations = createUnitVariation(
   americanNamePostfix: 'meter per hour squared',
 ).toSet();
 
-// metrePerMinutePerSecond
+// metrePerMinutePerSecond units
 final _metrePerMinutePerSecondVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerMinutePerSecond,
@@ -107,7 +107,7 @@ final _metrePerMinutePerSecondVariations = createUnitVariation(
   americanNamePostfix: 'meter per minute per second',
 ).toSet();
 
-// mtrePerMinuteSquared
+// mtrePerMinuteSquared units
 final _metrePerMinuteSquaredVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerMinuteSquared,
@@ -126,7 +126,7 @@ final _metrePerMinuteSquaredVariations = createUnitVariation(
   americanNamePostfix: 'meter per minute squared',
 ).toSet();
 
-// metrePerSecondSquared
+// metrePerSecondSquared units
 final _metrePerSecondSquaredVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerSecondSquared,
@@ -145,6 +145,7 @@ final _metrePerSecondSquaredVariations = createUnitVariation(
   americanNamePostfix: 'meter per second squared',
 ).toSet();
 
+// other units
 final _otherUnits = {
   // foot
   Unit<AccelerationUnits>(
@@ -436,6 +437,7 @@ final _otherUnits = {
   ),
 };
 
+// acceleration unit details
 final accelerationUnitDetails = <Unit<AccelerationUnits>>{
   ..._galVariations,
   ..._metrePerHourPerSecondVariations,
