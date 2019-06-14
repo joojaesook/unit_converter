@@ -16,7 +16,7 @@ final _minuteToSecond = conversionFactor(
 );
 const double _byteToBit = 8;
 
-// bitPerHour units
+// bit per hour variations
 final _bitPerHourVariations = createUnitVariation(
   DataRateUnits.values,
   DataRateUnits.bitPerHour,
@@ -34,7 +34,7 @@ final _bitPerHourVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// bitPerMinute units
+// bit per minute variations
 final _bitPerMinuteVariations = createUnitVariation(
   DataRateUnits.values,
   DataRateUnits.bitPerMinute,
@@ -52,7 +52,7 @@ final _bitPerMinuteVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// bitPerSecond units
+// bit per second variations
 final _bitPerSecondVariations = createUnitVariation(
   DataRateUnits.values,
   DataRateUnits.bitPerSecond,
@@ -70,7 +70,7 @@ final _bitPerSecondVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// bytePerHour units
+// byte per hour variations
 final _bytePerHourVariations = createUnitVariation(
   DataRateUnits.values,
   DataRateUnits.bytePerHour,
@@ -88,7 +88,7 @@ final _bytePerHourVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// bytePerMinute units
+// byte per minute variations
 final _bytePerMinuteVariations = createUnitVariation(
   DataRateUnits.values,
   DataRateUnits.bytePerMinute,
@@ -106,7 +106,7 @@ final _bytePerMinuteVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// bytePerSecond units
+// byte per second variations
 final _bytePerSecondVariations = createUnitVariation(
   DataRateUnits.values,
   DataRateUnits.bytePerSecond,

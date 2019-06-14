@@ -19,7 +19,7 @@ final _squareFoot = pow(
 );
 final _acreToSquareMetre = 43560 * _squareFoot;
 
-// barn units
+// barn variations
 final _barnVariations = createUnitVariation(
   AreaUnits.values,
   AreaUnits.barn,
@@ -33,7 +33,7 @@ final _barnVariations = createUnitVariation(
   ),
 );
 
-// squareMetre units
+// square metre variations
 final _squareMetreVariations = createUnitVariation(
   AreaUnits.values,
   AreaUnits.squareMetre,

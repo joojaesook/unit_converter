@@ -4,7 +4,7 @@ import '../../enum/unit_systems.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// bit units
+// bit variations
 final _bitVariations = createUnitVariation(
   DataUnits.values,
   DataUnits.bit,
@@ -20,7 +20,7 @@ final _bitVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// byte units
+// byte variations
 final _byteVariations = createUnitVariation(
   DataUnits.values,
   DataUnits.byte,
