@@ -5,6 +5,8 @@ import '../unit/area_unit_details.dart';
 import '../unit/blood_cholesterol_unit_details.dart';
 import '../unit/blood_glucose_unit_details.dart';
 import '../unit/capacitance_unit_details.dart';
+import '../unit/data_rate_unit_details.dart';
+import '../unit/data_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.acceleration: accelerationUnitDetails,
@@ -12,8 +14,8 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.bloodCholesterol: bloodCholesterolUnitDetails,
   ConversionType.bloodGlucose: bloodGlucoseUnitDetails,
   ConversionType.capacitance: capacitanceUnitDetails,
-  // ConversionType.data: dataUnitDetails,
-  // ConversionType.dataRate: dataRateUnitDetails,
+  ConversionType.data: dataUnitDetails,
+  ConversionType.dataRate: dataRateUnitDetails,
   // ConversionType.dynamicViscocity: dynamicViscocityUnitDetails,
   // ConversionType.electricCharge: electricChargeUnitDetails,
   // ConversionType.electricCurrent: electricCurrentUnitDetails,
