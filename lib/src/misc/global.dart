@@ -79,7 +79,7 @@ Unit<T> createUnit<T>(
 Set<Unit<T>> createUnitVariation<T>(
   Iterable<T> unitEnum,
   T baseUnit,
-  double baseConversionFactor,
+  double conversionFactorToBaseUnit,
   List<Prefix> variations, {
   String namePrefix = '',
   String namePostfix = '',
@@ -105,7 +105,7 @@ Set<Unit<T>> createUnitVariation<T>(
     americanNamePostfix,
     symbolPrefix,
     symbolPostfix,
-    baseConversionFactor,
+    conversionFactorToBaseUnit,
     addAmericanName,
     baseUnit,
     system,
@@ -127,7 +127,7 @@ Set<Unit<T>> createUnitVariation<T>(
       americanNamePostfix,
       symbolPrefix,
       symbolPostfix,
-      baseConversionFactor * prefixValue[p],
+      conversionFactorToBaseUnit * prefixValue[p],
       addAmericanName,
       enumFromString(unitEnum, '$variationName$baseUnitName'),
       system,
