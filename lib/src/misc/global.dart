@@ -89,8 +89,15 @@ Set<Unit<T>> createUnitVariation<T>(
   bool addAmericanName = false,
   String americanNamePrefix = '',
   String americanNamePostfix = '',
+  bool appendUnitTypeWithSystemName = false,
+  bool appendVariationUnitTypeWithSystemName = false,
 }) {
   var units = <Unit<T>>{};
+  if (appendUnitTypeWithSystemName) {
+    var unitName = stringFromEnum(baseUnit);
+    var systemName = stringFromEnum(system);
+    baseUnit = enumFromString(unitEnum, '${unitName}_$systemName');
+  }
   var variationBae = createUnit(
     namePrefix,
     namePostfix,
@@ -105,11 +112,13 @@ Set<Unit<T>> createUnitVariation<T>(
   );
   units.add(variationBae);
   var baseUnitName = stringFromEnum(baseUnit);
+  if (!appendUnitTypeWithSystemName && appendVariationUnitTypeWithSystemName) {
+    var systemName = stringFromEnum(system);
+    baseUnitName += '_$systemName';
+  }
   baseUnitName =
       baseUnitName.substring(0, 1).toUpperCase() + baseUnitName.substring(1);
-
   for (Prefix p in variations) {
-    var prefix = stringFromEnum(p);
     var variationName = prefixName[p];
     var unit = createUnit(
       namePrefix,
@@ -120,13 +129,13 @@ Set<Unit<T>> createUnitVariation<T>(
       symbolPostfix,
       baseConversionFactor * prefixValue[p],
       addAmericanName,
-      enumFromString(unitEnum, '$prefix$baseUnitName'),
+      enumFromString(unitEnum, '$variationName$baseUnitName'),
       system,
       variation: true,
       variationName: variationName,
       variationSymbol: createSymbol(
         [
-          enumFromString(SymbolParts.values, prefix),
+          enumFromString(SymbolParts.values, variationName),
         ],
       ),
     );

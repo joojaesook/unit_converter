@@ -31,6 +31,7 @@ final _bitPerHourVariations = createUnitVariation(
     ],
   ),
   system: UnitSystems.binary,
+  appendVariationUnitTypeWithSystemName: true,
 );
 
 // bitPerMinute units
@@ -48,6 +49,7 @@ final _bitPerMinuteVariations = createUnitVariation(
     ],
   ),
   system: UnitSystems.binary,
+  appendVariationUnitTypeWithSystemName: true,
 );
 
 // bitPerSecond units
@@ -65,6 +67,7 @@ final _bitPerSecondVariations = createUnitVariation(
     ],
   ),
   system: UnitSystems.binary,
+  appendVariationUnitTypeWithSystemName: true,
 );
 
 // bytePerHour units
@@ -82,6 +85,7 @@ final _bytePerHourVariations = createUnitVariation(
     ],
   ),
   system: UnitSystems.binary,
+  appendVariationUnitTypeWithSystemName: true,
 );
 
 // bytePerMinute units
@@ -99,6 +103,7 @@ final _bytePerMinuteVariations = createUnitVariation(
     ],
   ),
   system: UnitSystems.binary,
+  appendVariationUnitTypeWithSystemName: true,
 );
 
 // bytePerSecond units
@@ -116,6 +121,7 @@ final _bytePerSecondVariations = createUnitVariation(
     ],
   ),
   system: UnitSystems.binary,
+  appendVariationUnitTypeWithSystemName: true,
 );
 
 // data rate unit details

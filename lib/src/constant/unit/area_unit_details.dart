@@ -70,7 +70,7 @@ final _otherUnits = {
         SymbolParts.acre,
       ],
     ),
-    AreaUnits.acre_USSurvey,
+    AreaUnits.acre_usSurvey,
     4046.872609874252,
     system: unitSystem[UnitSystems.usSurvey],
   ),

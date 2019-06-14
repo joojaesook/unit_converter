@@ -1,7 +1,7 @@
 /// Units of area
 enum AreaUnits {
   acre,
-  acre_USSurvey,
+  acre_usSurvey,
   are,
   attoBarn,
   barn,
