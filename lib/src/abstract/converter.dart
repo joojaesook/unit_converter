@@ -1,4 +1,3 @@
-import '../constant/others/available_units.dart';
 import '../enum/conversion_type.dart';
 import '../model/unit.dart';
 
@@ -9,7 +8,8 @@ abstract class Converter {
   Converter(this.type) : assert(type != null);
 
   Set<Unit> getUnits<T>({Set<T> include, Set<T> exclude}) {
-    final units = availableUnits[type];
+    // final units = availableUnits[type];
+    final units = <Unit>{};
     if (include != null) {
       return units.where((unit) => include.contains(unit.type));
     }

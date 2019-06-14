@@ -1,6 +1,6 @@
 // Types of unit prefixes
 enum Prefix {
-  angstrom,
+  // angstrom,
   atto,
   binaryExa,
   binaryGiga,
@@ -24,7 +24,6 @@ enum Prefix {
   nano,
   peta,
   pico,
-  planck,
   tera,
   yocto,
   yotta,

@@ -3,7 +3,7 @@ import 'dart:math' show pow;
 import '../../enum/prefix.dart';
 
 final Map<Prefix, double> prefixValue = {
-  Prefix.angstrom: pow(10, -10),
+  // Prefix.angstrom: pow(10, -10),
   Prefix.atto: pow(10, -18),
   Prefix.binaryExa: pow(2, 60),
   Prefix.binaryGiga: pow(2, 30),

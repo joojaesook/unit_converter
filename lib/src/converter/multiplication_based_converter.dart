@@ -17,8 +17,8 @@ class MultiplicationBasedConverter<T> extends Converter {
     assert(from != null);
     assert(to != null);
 
-    final double fromOffset = getConversionFactor(type, from);
-    final double toOffset = getConversionFactor(type, to);
+    final double fromOffset = conversionFactor(type, from);
+    final double toOffset = conversionFactor(type, to);
     value *= fromOffset;
     value /= toOffset;
     return value;
