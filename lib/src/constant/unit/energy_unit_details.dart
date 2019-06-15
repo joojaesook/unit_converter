@@ -11,10 +11,10 @@ import '../others/unit_system.dart';
 
 const _britishThermalUnitToJoule = 1054.350264;
 const _britishThermalUnitToJoule_15DegreeC = 1054.804;
-const _britishThermalUnitToJoule_IntlSteamTable = 1055.05585;
-const _thermToJoule_EC = 100000 * _britishThermalUnitToJoule_IntlSteamTable;
+const _britishThermalUnitToJoule_intlSteamTable = 1055.05585;
+const _thermToJoule_ec = 100000 * _britishThermalUnitToJoule_intlSteamTable;
 final _decaThermToJoule =
-    conversionFactor(ConversionType.energy, EnergyUnits.decaTherm_EC);
+    conversionFactor(ConversionType.energy, EnergyUnits.decaTherm_ec);
 
 // calorie variations
 final _calorieVariations = createUnitVariation(
@@ -46,9 +46,9 @@ final _calorieVariations_15DegreeC = createUnitVariation(
 );
 
 // calorie International Steam Table variations
-final _calorieVariations_IntlSteamTable = createUnitVariation(
+final _calorieVariations_intlSteamTable = createUnitVariation(
   EnergyUnits.values,
-  EnergyUnits.calorie_IntlSteamTable,
+  EnergyUnits.calorie_intlSteamTable,
   4.1868,
   decimalPrefixes,
   namePostfix: 'calorie',
@@ -151,8 +151,8 @@ final _otherUnits = {
         SymbolParts.britishThermalUnit,
       ],
     ),
-    EnergyUnits.britishThermalUnit_IntlSteamTable,
-    _britishThermalUnitToJoule_IntlSteamTable,
+    EnergyUnits.britishThermalUnit_intlSteamTable,
+    _britishThermalUnitToJoule_intlSteamTable,
     system: unitSystem[UnitSystems.intlSteamTable],
   ),
   Unit<EnergyUnits>(
@@ -162,8 +162,8 @@ final _otherUnits = {
         SymbolParts.decaTherm,
       ],
     ),
-    EnergyUnits.decaTherm_EC,
-    10 * _thermToJoule_EC,
+    EnergyUnits.decaTherm_ec,
+    10 * _thermToJoule_ec,
     system: unitSystem[UnitSystems.ec],
   ),
   Unit<EnergyUnits>(
@@ -211,8 +211,8 @@ final _otherUnits = {
         SymbolParts.britishThermalUnit,
       ],
     ),
-    EnergyUnits.millionBritishThermalUnits_IntlSteamTable,
-    _britishThermalUnitToJoule_IntlSteamTable * pow(10, 6),
+    EnergyUnits.millionBritishThermalUnits_intlSteamTable,
+    _britishThermalUnitToJoule_intlSteamTable * pow(10, 6),
     system: unitSystem[UnitSystems.intlSteamTable],
     variation: true,
   ),
@@ -241,7 +241,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnits.quad,
-    _britishThermalUnitToJoule_IntlSteamTable * pow(10, 15),
+    _britishThermalUnitToJoule_intlSteamTable * pow(10, 15),
   ),
   Unit<EnergyUnits>(
     'therm',
@@ -250,8 +250,8 @@ final _otherUnits = {
         SymbolParts.therm,
       ],
     ),
-    EnergyUnits.therm_EC,
-    _thermToJoule_EC,
+    EnergyUnits.therm_ec,
+    _thermToJoule_ec,
     system: unitSystem[UnitSystems.ec],
   ),
   Unit<EnergyUnits>(
@@ -272,7 +272,7 @@ final _otherUnits = {
         SymbolParts.therm,
       ],
     ),
-    EnergyUnits.therm_US,
+    EnergyUnits.therm_us,
     100000 * _britishThermalUnitToJoule_15DegreeC,
     system: unitSystem[UnitSystems.us],
   ),
@@ -295,8 +295,8 @@ final _otherUnits = {
         SymbolParts.britishThermalUnit,
       ],
     ),
-    EnergyUnits.thousandBritishThermalUnits_IntlSteamTable,
-    _britishThermalUnitToJoule_IntlSteamTable * pow(10, 3),
+    EnergyUnits.thousandBritishThermalUnits_intlSteamTable,
+    _britishThermalUnitToJoule_intlSteamTable * pow(10, 3),
     system: unitSystem[UnitSystems.intlSteamTable],
     variation: true,
   ),
@@ -332,7 +332,7 @@ final _otherUnits = {
 final energyUnitDetails = {
   ..._calorieVariations,
   ..._calorieVariations_15DegreeC,
-  ..._calorieVariations_IntlSteamTable,
+  ..._calorieVariations_intlSteamTable,
   ..._electronVoltVariations,
   ..._jouleVariations,
   ..._tonneVariations,

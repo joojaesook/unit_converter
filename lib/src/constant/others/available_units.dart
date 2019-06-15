@@ -28,6 +28,7 @@ import '../unit/mass_flow_unit_details.dart';
 import '../unit/mass_per_area_unit_details.dart';
 import '../unit/mass_unit_details.dart';
 import '../unit/plane_angle_unit_details.dart';
+import '../unit/power_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.acceleration: accelerationUnitDetails,
@@ -59,7 +60,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.massFlow: massFlowUnitDetails,
   ConversionType.massPerArea: massPerAreaUnitDetails,
   ConversionType.planeAngle: planeAngleUnitDetails,
-  // ConversionType.power: powerUnitDetails,
+  ConversionType.power: powerUnitDetails,
   // ConversionType.radioactivity: radioactivityUnitDetails,
   // ConversionType.speed: speedUnitDetails,
   // ConversionType.time: timeUnitDetails,

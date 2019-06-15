@@ -148,7 +148,7 @@ final _otherUnits = {
         SymbolParts.foot,
       ],
     ),
-    LengthUnits.foot_USSurvey,
+    LengthUnits.foot_usSurvey,
     1200 / 3937,
     system: unitSystem[UnitSystems.usSurvey],
   ),
