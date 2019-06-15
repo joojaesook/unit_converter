@@ -1,3 +1,5 @@
+import 'dart:math' show pow;
+
 import '../constant/others/available_units.dart';
 import '../constant/others/prefix_name.dart';
 import '../constant/others/prefix_value.dart';
@@ -86,6 +88,7 @@ Set<Unit<T>> createUnitVariation<T>(
   String symbolPrefix = '',
   String symbolPostfix = '',
   UnitSystems system,
+  int powerOfVariationConversionFactor = 1,
   bool addAmericanName = false,
   String americanNamePrefix = '',
   String americanNamePostfix = '',
@@ -121,7 +124,8 @@ Set<Unit<T>> createUnitVariation<T>(
       americanNamePostfix,
       symbolPrefix,
       symbolPostfix,
-      conversionFactorToBaseUnit * prefixValue[p],
+      conversionFactorToBaseUnit *
+          pow(prefixValue[p], powerOfVariationConversionFactor),
       addAmericanName,
       enumFromString(unitEnum, '$variationName$baseUnitName'),
       system,

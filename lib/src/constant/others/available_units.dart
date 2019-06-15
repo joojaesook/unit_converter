@@ -16,6 +16,7 @@ import '../unit/electrical_resistance_unit_details.dart';
 import '../unit/energy_unit_details.dart';
 import '../unit/force_unit_details.dart';
 import '../unit/frequency_unit_details.dart';
+import '../unit/illuminance_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.acceleration: accelerationUnitDetails,
@@ -35,7 +36,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.force: forceUnitDetails,
   ConversionType.frequency: frequencyUnitDetails,
   // ConversionType.fuelConsumption: fuelConsumptionUnitDetails,
-  // ConversionType.illuminance: illuminanceUnitDetails,
+  ConversionType.illuminance: illuminanceUnitDetails,
   // ConversionType.inductance: inductanceUnitDetails,
   // ConversionType.kinematicViscocity: kinematicViscocityUnitDetails,
   // ConversionType.length: lengthUnitDetails,

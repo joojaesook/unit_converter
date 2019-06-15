@@ -50,19 +50,21 @@ final _squareMetreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'square ',
   americanNamePostfix: 'meter',
+  powerOfVariationConversionFactor: 2,
 );
 
 // other units
 final _otherUnits = {
   Unit<AreaUnits>(
-      'acre',
-      createSymbol(
-        const [
-          SymbolParts.acre,
-        ],
-      ),
-      AreaUnits.acre,
-      _acreToSquareMetre),
+    'acre',
+    createSymbol(
+      const [
+        SymbolParts.acre,
+      ],
+    ),
+    AreaUnits.acre,
+    _acreToSquareMetre,
+  ),
   Unit<AreaUnits>(
     'acre',
     createSymbol(
