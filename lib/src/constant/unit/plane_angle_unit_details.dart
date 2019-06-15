@@ -8,7 +8,7 @@ import '../../model/unit.dart';
 const _degreeToRadian = 2 * pi / 360;
 
 // plan angle unit details
-final Set<Unit> planeAngleUnitDetails = {
+final planeAngleUnitDetails = {
   Unit<PlaneAngleUnits>(
     'degree',
     createSymbol(
