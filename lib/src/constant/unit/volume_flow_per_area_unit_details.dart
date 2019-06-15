@@ -18,7 +18,7 @@ final _squareMileToSquareMetre =
 final _squareYardToSquareMetre =
     conversionFactor(ConversionType.area, AreaUnits.squareYard);
 final _gallonToCubicMetre_USLiquid =
-    conversionFactor(ConversionType.volume, VolumeUnits.gallon_USLiquid);
+    conversionFactor(ConversionType.volume, VolumeUnits.gallon_usLiquid);
 final _litreToCubicMetre =
     conversionFactor(ConversionType.volume, VolumeUnits.litre);
 final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnits.minute);
