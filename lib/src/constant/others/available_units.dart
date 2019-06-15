@@ -23,6 +23,8 @@ import '../unit/length_unit_details.dart';
 import '../unit/luminance_unit_details.dart';
 import '../unit/magnetic_field_intensity_unit_details.dart';
 import '../unit/magnetic_flux_density_unit_details.dart';
+import '../unit/magnetic_flux_unit_details.dart';
+import '../unit/mass_flow_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.acceleration: accelerationUnitDetails,
@@ -48,10 +50,10 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.length: lengthUnitDetails,
   ConversionType.luminance: luminanceUnitDetails,
   ConversionType.magneticFieldIntensity: magneticFieldIntensityUnitDetails,
-  // ConversionType.magneticFlux: magneticFluxUnitDetails,
+  ConversionType.magneticFlux: magneticFluxUnitDetails,
   ConversionType.magneticFluxDensity: magneticFluxDensityUnitDetails,
   // ConversionType.mass: massUnitDetails,
-  // ConversionType.massFlow: massFlowUnitDetails,
+  ConversionType.massFlow: massFlowUnitDetails,
   // ConversionType.massPerArea: massPerAreaUnitDetails,
   // ConversionType.planeAngle: planeAngleUnitDetails,
   // ConversionType.power: powerUnitDetails,
