@@ -95,16 +95,17 @@ final _otherUnits = {
     0.159154943091895000,
   ),
   Unit<FrequencyUnits>(
-      'revolution per hour',
-      createSymbol(
-        const [
-          SymbolParts.revolution,
-          SymbolParts.forwardSlash,
-          SymbolParts.lH,
-        ],
-      ),
-      FrequencyUnits.revolutionPerHour,
-      0.00027777777777778),
+    'revolution per hour',
+    createSymbol(
+      const [
+        SymbolParts.revolution,
+        SymbolParts.forwardSlash,
+        SymbolParts.lH,
+      ],
+    ),
+    FrequencyUnits.revolutionPerHour,
+    0.00027777777777778,
+  ),
   Unit<FrequencyUnits>(
     'revolution per minute',
     createSymbol(

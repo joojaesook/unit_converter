@@ -1,6 +1,5 @@
 import 'dart:math' show pow;
 
-import '../../enum/conversion_type.dart';
 import '../../enum/energy_units.dart';
 import '../../enum/symbol_parts.dart';
 import '../../enum/unit_systems.dart';
@@ -9,12 +8,10 @@ import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
-const _britishThermalUnitToJoule = 1054.350264;
 const _britishThermalUnitToJoule_15DegreeC = 1054.804;
 const _britishThermalUnitToJoule_intlSteamTable = 1055.05585;
 const _thermToJoule_ec = 100000 * _britishThermalUnitToJoule_intlSteamTable;
-final _decaThermToJoule =
-    conversionFactor(ConversionType.energy, EnergyUnits.decaTherm_ec);
+final _decaThermToJoule = 10 * _thermToJoule_ec;
 
 // calorie variations
 final _calorieVariations = createUnitVariation(
@@ -131,7 +128,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnits.britishThermalUnit,
-    _britishThermalUnitToJoule,
+    1054.350264,
   ),
   Unit<EnergyUnits>(
     'British thermal unit',
@@ -163,7 +160,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnits.decaTherm_ec,
-    10 * _thermToJoule_ec,
+    _decaThermToJoule,
     system: unitSystem[UnitSystems.ec],
   ),
   Unit<EnergyUnits>(

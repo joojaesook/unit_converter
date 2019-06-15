@@ -1,4 +1,3 @@
-import '../../enum/conversion_type.dart';
 import '../../enum/mass_units.dart';
 import '../../enum/symbol_parts.dart';
 import '../../enum/unit_systems.dart';
@@ -7,14 +6,14 @@ import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
-final _grainToKiloGram = conversionFactor(ConversionType.mass, MassUnits.grain);
-final _poundToKiloGram = conversionFactor(ConversionType.mass, MassUnits.pound);
+const _poundToKiloGram = 0.45359237;
+const _grainToKiloGram = _poundToKiloGram / 7000;
 
 // gram variations
 final _gramVariations = createUnitVariation(
   MassUnits.values,
   MassUnits.gram,
-  conversionFactor(ConversionType.mass, MassUnits.gram),
+  0.001,
   decimalPrefixes,
   namePostfix: 'gram',
   symbolPostfix: createSymbol(
@@ -28,7 +27,7 @@ final _gramVariations = createUnitVariation(
 final _tonneVariations = createUnitVariation(
   MassUnits.values,
   MassUnits.tonne,
-  conversionFactor(ConversionType.mass, MassUnits.tonne),
+  1000,
   decimalPrefixes,
   namePostfix: 'tonne',
   symbolPostfix: createSymbol(
@@ -59,7 +58,7 @@ final _otherUnits = {
       ],
     ),
     MassUnits.grain,
-    _poundToKiloGram / 7000,
+    _grainToKiloGram,
   ),
   Unit<MassUnits>(
     'long hundredweight',

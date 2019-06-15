@@ -75,15 +75,16 @@ final _otherUnits = {
     ),
   ),
   Unit<LuminanceUnits>(
-      'foot-lambert',
-      createSymbol(
-        const [
-          SymbolParts.lF,
-          SymbolParts.lambert,
-        ],
-      ),
-      LuminanceUnits.footLambert,
-      3.42625909964),
+    'foot-lambert',
+    createSymbol(
+      const [
+        SymbolParts.lF,
+        SymbolParts.lambert,
+      ],
+    ),
+    LuminanceUnits.footLambert,
+    3.42625909964,
+  ),
   Unit<LuminanceUnits>(
     'lambert',
     createSymbol(

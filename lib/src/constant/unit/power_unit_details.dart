@@ -318,4 +318,5 @@ final powerUnitDetails = {
   ..._joulePerMinuteVariations,
   ..._joulePerSecondVariations,
   ..._wattVariations,
+  ..._otherUnits,
 };
