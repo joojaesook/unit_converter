@@ -21,6 +21,7 @@ import '../unit/inductance_unit_details.dart';
 import '../unit/kinematic_viscocity_unit_details.dart';
 import '../unit/length_unit_details.dart';
 import '../unit/luminance_unit_details.dart';
+import '../unit/magnetic_field_intensity_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.acceleration: accelerationUnitDetails,
@@ -45,7 +46,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.kinematicViscocity: kinematicViscocityUnitDetails,
   ConversionType.length: lengthUnitDetails,
   ConversionType.luminance: luminanceUnitDetails,
-  // ConversionType.magneticFieldIntensity: magneticFieldIntensityUnitDetails,
+  ConversionType.magneticFieldIntensity: magneticFieldIntensityUnitDetails,
   // ConversionType.magneticFlux: magneticFluxUnitDetails,
   // ConversionType.magneticFluxDensity: magneticFluxDensityUnitDetails,
   // ConversionType.mass: massUnitDetails,
