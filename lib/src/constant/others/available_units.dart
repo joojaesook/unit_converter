@@ -31,6 +31,7 @@ import '../unit/plane_angle_unit_details.dart';
 import '../unit/power_unit_details.dart';
 import '../unit/radioactivity_unit_details.dart';
 import '../unit/speed_unit_details.dart';
+import '../unit/time_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.acceleration: accelerationUnitDetails,
@@ -65,7 +66,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.power: powerUnitDetails,
   ConversionType.radioactivity: radioactivityUnitDetails,
   ConversionType.speed: speedUnitDetails,
-  // ConversionType.time: timeUnitDetails,
+  ConversionType.time: timeUnitDetails,
   // ConversionType.torque: torqueUnitDetails,
   // ConversionType.volume: volumeUnitDetails,
   // ConversionType.volumeFlow: volumeFlowUnitDetails,
