@@ -9,6 +9,7 @@ import '../unit/data_rate_unit_details.dart';
 import '../unit/data_unit_details.dart';
 import '../unit/dynamic_viscocity_unit_details.dart';
 import '../unit/electric_charge_unit_details.dart';
+import '../unit/electric_current_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.acceleration: accelerationUnitDetails,
@@ -20,7 +21,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.dataRate: dataRateUnitDetails,
   ConversionType.dynamicViscocity: dynamicViscocityUnitDetails,
   ConversionType.electricCharge: electricChargeUnitDetails,
-  // ConversionType.electricCurrent: electricCurrentUnitDetails,
+  ConversionType.electricCurrent: electricCurrentUnitDetails,
   // ConversionType.electricPotential: electricPotentialUnitDetails,
   // ConversionType.electricalConductance: electricalConductanceUnitDetails,
   // ConversionType.electricalResistance: electricalResistanceUnitDetails,
