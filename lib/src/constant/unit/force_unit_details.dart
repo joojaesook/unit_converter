@@ -1,12 +1,10 @@
 import 'dart:math' show pow;
 
 import '../../enum/force_units.dart';
-import '../../enum/prefix.dart';
 import '../../enum/symbol_parts.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
-import '../others/prefix_value.dart';
 
 const _gramForceToNewton = 0.00980665;
 const _poundForceToNewton = 4.4482216152605;
@@ -61,7 +59,7 @@ final _otherUnits = {
       ],
     ),
     ForceUnits.kilopond,
-    _gramForceToNewton * prefixValue[Prefix.kilo],
+    _gramForceToNewton * pow(10, 3),
   ),
   Unit<ForceUnits>(
     'kip',
