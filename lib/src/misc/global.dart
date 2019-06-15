@@ -89,15 +89,9 @@ Set<Unit<T>> createUnitVariation<T>(
   bool addAmericanName = false,
   String americanNamePrefix = '',
   String americanNamePostfix = '',
-  bool appendUnitTypeWithSystemName = false,
   bool appendVariationUnitTypeWithSystemName = false,
 }) {
   var units = <Unit<T>>{};
-  if (appendUnitTypeWithSystemName) {
-    var unitName = stringFromEnum(baseUnit);
-    var systemName = stringFromEnum(system);
-    baseUnit = enumFromString(unitEnum, '${unitName}_$systemName');
-  }
   var variationBae = createUnit(
     namePrefix,
     namePostfix,
@@ -112,7 +106,7 @@ Set<Unit<T>> createUnitVariation<T>(
   );
   units.add(variationBae);
   var baseUnitName = stringFromEnum(baseUnit);
-  if (!appendUnitTypeWithSystemName && appendVariationUnitTypeWithSystemName) {
+  if (appendVariationUnitTypeWithSystemName) {
     var systemName = stringFromEnum(system);
     baseUnitName += '_$systemName';
   }
