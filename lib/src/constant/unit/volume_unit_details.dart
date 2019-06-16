@@ -17,15 +17,14 @@ final _acreToSquareMetre =
     conversionFactor(ConversionType.area, AreaUnits.acre);
 final _footToMetre = conversionFactor(ConversionType.length, LengthUnits.foot);
 final _inchToMetre = conversionFactor(ConversionType.length, LengthUnits.inch);
-final _litreToCubicMetre = 0.001;
-const _gallon_imperial = 0.00454609;
+const _litreToCubicMetre = 0.001;
+const _gallon_imperial = 4.54609 * _litreToCubicMetre;
 const _gallon_usDry = 0.00440488377086;
-const _gallon_usLiquid = 0.003785411784;
+final _gallon_usLiquid = 231 * pow(_inchToMetre, 3);
 final _milliLiterToCubicMetre = _litreToCubicMetre * prefixValue[Prefix.milli];
-
-const peck_imperial = 2 * _gallon_imperial;
-const peck_usDry = 2 * _gallon_usDry;
-const _fluidOunce_us = _gallon_usLiquid / 128;
+const _peck_imperial = 2 * _gallon_imperial;
+const _peck_usDry = 2 * _gallon_usDry;
+final _fluidOunce_us = _gallon_usLiquid / 128;
 const _fluidOunce_imperial = _gallon_imperial / 160;
 
 // litre variations
@@ -61,6 +60,7 @@ final _cubicMetreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'cubic ',
   americanNamePostfix: 'meter',
+  powerOfVariationConversionFactor: 3,
 );
 
 // other units
@@ -235,7 +235,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnits.firlot_imperial,
-    4 * peck_imperial,
+    4 * _peck_imperial,
     system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
@@ -246,7 +246,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnits.firlot_usDry,
-    4 * peck_usDry,
+    4 * _peck_usDry,
     system: unitSystem[UnitSystems.usDry],
   ),
   Unit<VolumeUnits>(
@@ -357,6 +357,19 @@ final _otherUnits = {
     system: unitSystem[UnitSystems.us],
   ),
   Unit<VolumeUnits>(
+    'hectare metre',
+    createSymbol(
+      const [
+        SymbolParts.hectare,
+        SymbolParts.space,
+        SymbolParts.metre,
+      ],
+    ),
+    VolumeUnits.hectareMetre,
+    10000,
+    americanName: 'hectare meter',
+  ),
+  Unit<VolumeUnits>(
     'jigger',
     createSymbol(
       const [
@@ -412,7 +425,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnits.peck_imperial,
-    peck_imperial,
+    _peck_imperial,
     system: unitSystem[UnitSystems.imperial],
   ),
   Unit<VolumeUnits>(
@@ -423,7 +436,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnits.peck_usDry,
-    peck_usDry,
+    _peck_usDry,
     system: unitSystem[UnitSystems.usDry],
   ),
   Unit<VolumeUnits>(
