@@ -74,7 +74,7 @@ enum VolumeUnits {
   quart_imperial,
   quart_usDry,
   quart_usLiquid,
-  tablespoon_Australian,
+  tablespoon_australian,
   tablespoon_metric,
   tablespoon_us,
   tablespoon_usFoodNutritionLabel,
