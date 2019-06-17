@@ -84,6 +84,7 @@ final _intermediateGramPerCubicMetreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'gram per cubic ',
   americanNamePostfix: 'meter',
+  powerOfVariationConversionFactor: -3,
 ).forEach(create);
 
 // __gram per cubic foot variations
@@ -162,12 +163,12 @@ final _gramPerCubicNauticalMileVariations = createUnitVariation(
         3,
       ),
   decimalPrefixes,
-  namePostfix: 'gram per cubic yard',
+  namePostfix: 'gram per cubic nautical mile',
   symbolPostfix: createSymbol(
     [
       SymbolParts.gram,
       SymbolParts.forwardSlash,
-      SymbolParts.yard,
+      SymbolParts.nauticalMile,
       SymbolParts.superscriptThree,
     ],
   ),
@@ -183,12 +184,12 @@ final _gramPerCubicYardVariations = createUnitVariation(
         VolumeUnits.cubicYard,
       ),
   decimalPrefixes,
-  namePostfix: 'gram per cubic nautical mile',
+  namePostfix: 'gram per cubic yard',
   symbolPostfix: createSymbol(
     [
       SymbolParts.gram,
       SymbolParts.forwardSlash,
-      SymbolParts.nauticalMile,
+      SymbolParts.yard,
       SymbolParts.superscriptThree,
     ],
   ),
@@ -306,6 +307,7 @@ final _grainPerCubicMetreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'grain per cubic ',
   americanNamePostfix: 'meter',
+  powerOfVariationConversionFactor: -3,
 );
 
 // ounce per __litre variations
@@ -355,6 +357,7 @@ final _ouncePerCubicMetreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'ounce per cubic ',
   americanNamePostfix: 'meter',
+  powerOfVariationConversionFactor: -3,
 );
 
 // pound per __litre variations
@@ -404,6 +407,7 @@ final _poundPerCubicMetreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'pound per cubic ',
   americanNamePostfix: 'meter',
+  powerOfVariationConversionFactor: -3,
 );
 
 // other units
