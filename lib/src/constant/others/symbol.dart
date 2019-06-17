@@ -3,7 +3,7 @@ import 'unicode_constants.dart';
 
 // Convert the [charCode] to String and append [postfix] to it, and returns the result
 String stringFromUnicode(String charCode) {
-  return String.fromCharCodes(Runes('\\u{$charCode}'));
+  return String.fromCharCodes(Runes(charCode));
 }
 
 final Map<SymbolParts, String> symbol = {
