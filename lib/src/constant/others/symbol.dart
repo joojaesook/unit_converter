@@ -200,6 +200,7 @@ final Map<SymbolParts, String> symbol = {
   SymbolParts.stokes: 'St',
   SymbolParts.stone: 'st',
   SymbolParts.subscriptThree: stringFromUnicode(unicodeSubscriptThree),
+  SymbolParts.subscriptTwo: stringFromUnicode(unicodeSubscriptTwo),
   SymbolParts.subscriptZero: stringFromUnicode(unicodeSubscriptZero),
   SymbolParts.superscriptPlus: stringFromUnicode(unicodeSuperscriptPlus),
   SymbolParts.superscriptThree: stringFromUnicode(unicodeSuperscriptThree),

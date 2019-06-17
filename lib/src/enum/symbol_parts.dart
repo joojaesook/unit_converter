@@ -192,6 +192,7 @@ enum SymbolParts {
   stokes,
   stone,
   subscriptThree,
+  subscriptTwo,
   subscriptZero,
   superscriptPlus,
   superscriptThree,

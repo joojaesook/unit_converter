@@ -7,6 +7,7 @@ const unicodePartPerTenThousand = '\u2031';
 const unicodePartPerThousand = '\u2030';
 const unicodePlanck = '\u2133';
 const unicodeSubscriptThree = '\u2083';
+const unicodeSubscriptTwo = '\u2082';
 const unicodeSubscriptZero = '\u2080';
 const unicodeSuperscriptPlus = '\u207A';
 const unicodeSuperscriptThree = '\u00b3';
