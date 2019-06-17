@@ -9,7 +9,7 @@ import '../others/misc.dart';
 const _gramForceToNewton = 0.00980665;
 const _poundForceToNewton = 4.4482216152605;
 
-// gram force variations
+// __gram force variations
 final _gramForceVariations = createUnitVariation(
   ForceUnits.values,
   ForceUnits.gramForce,
@@ -24,7 +24,7 @@ final _gramForceVariations = createUnitVariation(
   ),
 );
 
-// newton variations
+// __newton variations
 final _newtonVariations = createUnitVariation(
   ForceUnits.values,
   ForceUnits.newton,

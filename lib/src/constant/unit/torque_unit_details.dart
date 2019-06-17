@@ -6,7 +6,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// newton metre variations
+// __newton metre variations
 final _newtonMetreVariations = createUnitVariation(
   TorqueUnits.values,
   TorqueUnits.newtonMetre,

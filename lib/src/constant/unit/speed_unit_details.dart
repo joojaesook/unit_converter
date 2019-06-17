@@ -18,7 +18,7 @@ final _nauticalMileToMetre =
     conversionFactor(ConversionType.length, LengthUnits.nauticalMile);
 final _yardToMetre = conversionFactor(ConversionType.length, LengthUnits.yard);
 
-// metre per day variations
+// __metre per day variations
 final _metrePerDayVariations = createUnitVariation(
   SpeedUnits.values,
   SpeedUnits.metrePerDay,
@@ -36,7 +36,7 @@ final _metrePerDayVariations = createUnitVariation(
   americanNamePostfix: 'meter per day',
 );
 
-// metre per hour variations
+// __metre per hour variations
 final _metrePerHourVariations = createUnitVariation(
   SpeedUnits.values,
   SpeedUnits.metrePerHour,
@@ -54,7 +54,7 @@ final _metrePerHourVariations = createUnitVariation(
   americanNamePostfix: 'meter per hour',
 );
 
-// metre per minute variations
+// __metre per minute variations
 final _metrePerMinuteVariations = createUnitVariation(
   SpeedUnits.values,
   SpeedUnits.metrePerMinute,
@@ -72,7 +72,7 @@ final _metrePerMinuteVariations = createUnitVariation(
   americanNamePostfix: 'meter per minute',
 );
 
-// metre per second variations
+// __metre per second variations
 final _metrePerSecondVariations = createUnitVariation(
   SpeedUnits.values,
   SpeedUnits.metrePerSecond,

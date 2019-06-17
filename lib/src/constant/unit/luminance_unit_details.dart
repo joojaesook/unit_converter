@@ -8,7 +8,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// candela per square metre variations
+// candela per square __metre variations
 final _candelaPerSquareMetreVariations = createUnitVariation(
   LuminanceUnits.values,
   LuminanceUnits.candelaPerSquareMetre,

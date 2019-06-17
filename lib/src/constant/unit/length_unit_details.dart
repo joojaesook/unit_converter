@@ -13,7 +13,7 @@ const _footToMetre = 12 * _inchToMetre;
 const _mileToMetre = 5280 * _footToMetre;
 const double _nauticalMileToMetre = 1852;
 
-// light year variations
+// __light year variations
 final _lightYearVariations = createUnitVariation(
   LengthUnits.values,
   LengthUnits.lightYear,
@@ -28,7 +28,7 @@ final _lightYearVariations = createUnitVariation(
   system: UnitSystems.julian,
 );
 
-// metre variations
+// __metre variations
 final _metreVariations = createUnitVariation(
   LengthUnits.values,
   LengthUnits.metre,
@@ -44,7 +44,7 @@ final _metreVariations = createUnitVariation(
   americanNamePostfix: 'meter',
 );
 
-// parsec variations
+// __parsec variations
 final _parsecVariations = createUnitVariation(
   LengthUnits.values,
   LengthUnits.parsec,

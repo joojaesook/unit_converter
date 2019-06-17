@@ -15,7 +15,7 @@ final _dayToSecond = conversionFactor(ConversionType.time, TimeUnits.day);
 final _hourToSecond = conversionFactor(ConversionType.time, TimeUnits.hour);
 final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnits.minute);
 
-// gram per day variations
+// __gram per day variations
 final _gramPerDayVariations = createUnitVariation(
   MassFlowUnits.values,
   MassFlowUnits.gramPerDay,
@@ -31,7 +31,7 @@ final _gramPerDayVariations = createUnitVariation(
   ),
 );
 
-// gram per hour variations
+// __gram per hour variations
 final _gramPerHourVariations = createUnitVariation(
   MassFlowUnits.values,
   MassFlowUnits.gramPerHour,
@@ -47,7 +47,7 @@ final _gramPerHourVariations = createUnitVariation(
   ),
 );
 
-// gram per minute variations
+// __gram per minute variations
 final _gramPerMinuteVariations = createUnitVariation(
   MassFlowUnits.values,
   MassFlowUnits.gramPerMinute,
@@ -63,7 +63,7 @@ final _gramPerMinuteVariations = createUnitVariation(
   ),
 );
 
-// gram per second variations
+// __gram per second variations
 final _gramPerSecondVariations = createUnitVariation(
   MassFlowUnits.values,
   MassFlowUnits.gramPerSecond,

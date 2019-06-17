@@ -20,7 +20,7 @@ final _footPoundForceToJoule =
 final _britishThermalUnitToJoule_intlSteamTable = conversionFactor(
     ConversionType.energy, EnergyUnits.britishThermalUnit_intlSteamTable);
 
-// calorie per hour International Steam Table variations
+// __calorie per hour International Steam Table variations
 final _caloriePerHourVariations_intlSteamTable = createUnitVariation(
   PowerUnits.values,
   PowerUnits.caloriePerHour_intlSteamTable,
@@ -37,7 +37,7 @@ final _caloriePerHourVariations_intlSteamTable = createUnitVariation(
   system: UnitSystems.intlSteamTable,
 );
 
-// calorie per minute International Steam Table variations
+// __calorie per minute International Steam Table variations
 final _caloriePerMinuteVariations_intlSteamTable = createUnitVariation(
   PowerUnits.values,
   PowerUnits.caloriePerMinute_intlSteamTable,
@@ -54,7 +54,7 @@ final _caloriePerMinuteVariations_intlSteamTable = createUnitVariation(
   system: UnitSystems.intlSteamTable,
 );
 
-// calorie per second International Steam Table variations
+// __calorie per second International Steam Table variations
 final _caloriePerSecondVariations_intlSteamTable = createUnitVariation(
   PowerUnits.values,
   PowerUnits.caloriePerSecond_intlSteamTable,
@@ -71,7 +71,7 @@ final _caloriePerSecondVariations_intlSteamTable = createUnitVariation(
   system: UnitSystems.intlSteamTable,
 );
 
-// joule per hour variations
+// __joule per hour variations
 final _joulePerHourVariations = createUnitVariation(
   PowerUnits.values,
   PowerUnits.joulePerHour,
@@ -87,7 +87,7 @@ final _joulePerHourVariations = createUnitVariation(
   ),
 );
 
-// joule per minute variations
+// __joule per minute variations
 final _joulePerMinuteVariations = createUnitVariation(
   PowerUnits.values,
   PowerUnits.joulePerMinute,
@@ -103,7 +103,7 @@ final _joulePerMinuteVariations = createUnitVariation(
   ),
 );
 
-// joule per second variations
+// __joule per second variations
 final _joulePerSecondVariations = createUnitVariation(
   PowerUnits.values,
   PowerUnits.joulePerSecond,
@@ -119,7 +119,7 @@ final _joulePerSecondVariations = createUnitVariation(
   ),
 );
 
-// watt variations
+// __watt variations
 final _wattVariations = createUnitVariation(
   PowerUnits.values,
   PowerUnits.watt,

@@ -7,7 +7,7 @@ import '../../model/unit.dart';
 
 const _degreeToRadian = 2 * pi / 360;
 
-// plan angle unit details
+// plane angle unit details
 final planeAngleUnitDetails = {
   Unit<PlaneAngleUnits>(
     'degree',

@@ -34,7 +34,7 @@ final _yardToMetre = conversionFactor(
   LengthUnits.yard,
 );
 
-// gal variations
+// __gal variations
 final _galVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.gal,
@@ -48,7 +48,7 @@ final _galVariations = createUnitVariation(
   ),
 );
 
-// metre per hour per second variations
+// __metre per hour per second variations
 final _metrePerHourPerSecondVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerHourPerSecond,
@@ -68,7 +68,7 @@ final _metrePerHourPerSecondVariations = createUnitVariation(
   americanNamePostfix: 'meter per hour per second',
 );
 
-// metre per hour squared variations
+// __metre per hour squared variations
 final _metrePerHourSquaredVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerHourSquared,
@@ -87,7 +87,7 @@ final _metrePerHourSquaredVariations = createUnitVariation(
   americanNamePostfix: 'meter per hour squared',
 );
 
-// metre per minute per second variations
+// __metre per minute per second variations
 final _metrePerMinutePerSecondVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerMinutePerSecond,
@@ -107,7 +107,7 @@ final _metrePerMinutePerSecondVariations = createUnitVariation(
   americanNamePostfix: 'meter per minute per second',
 );
 
-// metre per minute squared variations
+// __metre per minute squared variations
 final _metrePerMinuteSquaredVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerMinuteSquared,
@@ -126,7 +126,7 @@ final _metrePerMinuteSquaredVariations = createUnitVariation(
   americanNamePostfix: 'meter per minute squared',
 );
 
-// metre per second squared variations
+// __metre per second squared variations
 final _metrePerSecondSquaredVariations = createUnitVariation(
   AccelerationUnits.values,
   AccelerationUnits.metrePerSecondSquared,

@@ -6,7 +6,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// weber variations
+// __weber variations
 final _weberVariations = createUnitVariation(
   MagneticFluxUnits.values,
   MagneticFluxUnits.weber,

@@ -1,6 +1,7 @@
 /// Supported conversion types
 // Types of converter
 enum ConversionType {
+  // fuelConsumption,
   acceleration,
   area,
   bloodCholesterol,
@@ -8,6 +9,7 @@ enum ConversionType {
   capacitance,
   data,
   dataRate,
+  density,
   dynamicViscocity,
   electricCharge,
   electricCurrent,
@@ -17,7 +19,6 @@ enum ConversionType {
   energy,
   force,
   frequency,
-  fuelConsumption,
   illuminance,
   inductance,
   kinematicViscocity,

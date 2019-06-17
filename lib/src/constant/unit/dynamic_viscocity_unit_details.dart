@@ -3,7 +3,7 @@ import '../../enum/symbol_parts.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// pascal second variations
+// __pascal second variations
 final _pascalSecondVariations = createUnitVariation(
   DynamicViscocityUnits.values,
   DynamicViscocityUnits.pascalSecond,
@@ -19,7 +19,7 @@ final _pascalSecondVariations = createUnitVariation(
   ),
 );
 
-// poise variations
+// __poise variations
 final _poiseVariations = createUnitVariation(
   DynamicViscocityUnits.values,
   DynamicViscocityUnits.poise,

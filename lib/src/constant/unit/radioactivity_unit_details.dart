@@ -5,7 +5,7 @@ import '../../enum/symbol_parts.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// becquerel variations
+// __becquerel variations
 final _becquerelVariations = createUnitVariation(
   RadioactivityUnits.values,
   RadioactivityUnits.becquerel,
@@ -19,7 +19,7 @@ final _becquerelVariations = createUnitVariation(
   ),
 );
 
-// curie variations
+// __curie variations
 final _curieVariations = createUnitVariation(
   RadioactivityUnits.values,
   RadioactivityUnits.curie,
@@ -33,7 +33,7 @@ final _curieVariations = createUnitVariation(
   ),
 );
 
-// rutherford variations
+// __rutherford variations
 final _rutherfordVariations = createUnitVariation(
   RadioactivityUnits.values,
   RadioactivityUnits.rutherford,

@@ -9,7 +9,7 @@ import '../others/unit_system.dart';
 const double _dayToSecond = 86400;
 const double _yearToSecond = 365.2425 * _dayToSecond;
 
-// second variations
+// __second variations
 final _secondVariations = createUnitVariation(
   TimeUnits.values,
   TimeUnits.second,

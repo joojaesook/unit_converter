@@ -6,7 +6,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// volt variations
+// __volt variations
 final _voltVariations = createUnitVariation(
   ElectricPotentialUnits.values,
   ElectricPotentialUnits.volt,

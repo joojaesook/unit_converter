@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// coulomb variations
+// __coulomb variations
 final _coulombVariations = createUnitVariation(
   ElectricChargeUnits.values,
   ElectricChargeUnits.coulomb,
@@ -18,7 +18,7 @@ final _coulombVariations = createUnitVariation(
   ),
 );
 
-// ampere-hour variations
+// __ampere-hour variations
 final _ampereHourVariations = createUnitVariation(
   ElectricChargeUnits.values,
   ElectricChargeUnits.ampereHour,
@@ -33,7 +33,7 @@ final _ampereHourVariations = createUnitVariation(
   ),
 );
 
-// ampere-second variations
+// __ampere-second variations
 final _ampereSecondVariations = createUnitVariation(
   ElectricChargeUnits.values,
   ElectricChargeUnits.ampereSecond,

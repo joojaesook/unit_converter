@@ -13,7 +13,7 @@ const _britishThermalUnitToJoule_intlSteamTable = 1055.05585;
 const _thermToJoule_ec = 100000 * _britishThermalUnitToJoule_intlSteamTable;
 final _decaThermToJoule = 10 * _thermToJoule_ec;
 
-// calorie variations
+// __calorie variations
 final _calorieVariations = createUnitVariation(
   EnergyUnits.values,
   EnergyUnits.calorie,
@@ -27,7 +27,7 @@ final _calorieVariations = createUnitVariation(
   ),
 );
 
-// calorie 15 degree C variations
+// __calorie 15 degree C variations
 final _calorieVariations_15DegreeC = createUnitVariation(
   EnergyUnits.values,
   EnergyUnits.calorie_15DegreeC,
@@ -42,7 +42,7 @@ final _calorieVariations_15DegreeC = createUnitVariation(
   system: UnitSystems.degree15C,
 );
 
-// calorie International Steam Table variations
+// __calorie International Steam Table variations
 final _calorieVariations_intlSteamTable = createUnitVariation(
   EnergyUnits.values,
   EnergyUnits.calorie_intlSteamTable,
@@ -57,7 +57,7 @@ final _calorieVariations_intlSteamTable = createUnitVariation(
   system: UnitSystems.intlSteamTable,
 );
 
-// electron volt variations
+// __electron volt variations
 final _electronVoltVariations = createUnitVariation(
   EnergyUnits.values,
   EnergyUnits.electronVolt,
@@ -71,7 +71,7 @@ final _electronVoltVariations = createUnitVariation(
   ),
 );
 
-// joule variations
+// __joule variations
 final _jouleVariations = createUnitVariation(
   EnergyUnits.values,
   EnergyUnits.joule,
@@ -85,7 +85,7 @@ final _jouleVariations = createUnitVariation(
   ),
 );
 
-// tonne variations
+// __tonne variations
 final _tonneVariations = createUnitVariation(
   EnergyUnits.values,
   EnergyUnits.tonne,
@@ -102,7 +102,7 @@ final _tonneVariations = createUnitVariation(
   americanNamePostfix: 'ton',
 );
 
-// watt hour variations
+// __watt hour variations
 final _wattHourVariations = createUnitVariation(
   EnergyUnits.values,
   EnergyUnits.wattHour,

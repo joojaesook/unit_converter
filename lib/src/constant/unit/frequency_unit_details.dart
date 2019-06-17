@@ -6,7 +6,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// hertz variations
+// __hertz variations
 final _hertzVariations = createUnitVariation(
   FrequencyUnits.values,
   FrequencyUnits.hertz,

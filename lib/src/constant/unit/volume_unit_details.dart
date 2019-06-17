@@ -27,7 +27,7 @@ const _peck_usDry = 2 * _gallon_usDry;
 final _fluidOunce_us = _gallon_usLiquid / 128;
 const _fluidOunce_imperial = _gallon_imperial / 160;
 
-// litre variations
+// __litre variations
 final _litreVariations = createUnitVariation(
   VolumeUnits.values,
   VolumeUnits.litre,
@@ -43,7 +43,7 @@ final _litreVariations = createUnitVariation(
   americanNamePostfix: 'liter',
 );
 
-// cubic metre variations
+// cubic __metre variations
 final _cubicMetreVariations = createUnitVariation(
   VolumeUnits.values,
   VolumeUnits.cubicMetre,

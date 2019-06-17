@@ -8,7 +8,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// lux variations
+// __lux variations
 final _luxVariations = createUnitVariation(
   IlluminanceUnits.values,
   IlluminanceUnits.lux,
@@ -22,7 +22,7 @@ final _luxVariations = createUnitVariation(
   ),
 );
 
-// phot variations
+// __phot variations
 final _photVariations = createUnitVariation(
   IlluminanceUnits.values,
   IlluminanceUnits.phot,
@@ -36,7 +36,7 @@ final _photVariations = createUnitVariation(
   ),
 );
 
-// lumen per square metre variations
+// lumen per square __metre variations
 final _lumenPerSquareMetreVariations = createUnitVariation(
   IlluminanceUnits.values,
   IlluminanceUnits.lumenPerSquareMetre,

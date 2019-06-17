@@ -18,7 +18,7 @@ final _minuteToSecond = conversionFactor(
   TimeUnits.minute,
 );
 
-// stokes variations
+// __stokes variations
 final _stokesVariations = createUnitVariation(
   KinematicViscocityUnits.values,
   KinematicViscocityUnits.stokes,
@@ -32,7 +32,7 @@ final _stokesVariations = createUnitVariation(
   ),
 );
 
-// square metre per day variations
+// square __metre per day variations
 final _squareMetrePerDayVariations = createUnitVariation(
   KinematicViscocityUnits.values,
   KinematicViscocityUnits.squareMetrePerDay,
@@ -54,7 +54,7 @@ final _squareMetrePerDayVariations = createUnitVariation(
   powerOfVariationConversionFactor: 2,
 );
 
-// square metre per hour variations
+// square __metre per hour variations
 final _squareMetrePerHourVariations = createUnitVariation(
   KinematicViscocityUnits.values,
   KinematicViscocityUnits.squareMetrePerHour,
@@ -76,7 +76,7 @@ final _squareMetrePerHourVariations = createUnitVariation(
   powerOfVariationConversionFactor: 2,
 );
 
-// square metre per minute variations
+// square __metre per minute variations
 final _squareMetrePerMinuteVariations = createUnitVariation(
   KinematicViscocityUnits.values,
   KinematicViscocityUnits.squareMetrePerMinute,
@@ -98,7 +98,7 @@ final _squareMetrePerMinuteVariations = createUnitVariation(
   powerOfVariationConversionFactor: 2,
 );
 
-// square metre per second variations
+// square __metre per second variations
 final _squareMetrePerSecondVariations = createUnitVariation(
   KinematicViscocityUnits.values,
   KinematicViscocityUnits.squareMetrePerSecond,

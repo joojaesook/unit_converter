@@ -9,7 +9,7 @@ import '../others/unit_system.dart';
 const _poundToKiloGram = 0.45359237;
 const _grainToKiloGram = _poundToKiloGram / 7000;
 
-// gram variations
+// __gram variations
 final _gramVariations = createUnitVariation(
   MassUnits.values,
   MassUnits.gram,
@@ -23,7 +23,7 @@ final _gramVariations = createUnitVariation(
   ),
 );
 
-// tonne variations
+// __tonne variations
 final _tonneVariations = createUnitVariation(
   MassUnits.values,
   MassUnits.tonne,

@@ -3,7 +3,7 @@ import '../../enum/symbol_parts.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// gauss variations
+// __gauss variations
 final _gaussVariations = createUnitVariation(
   MagneticFluxDensityUnits.values,
   MagneticFluxDensityUnits.gauss,
@@ -17,7 +17,7 @@ final _gaussVariations = createUnitVariation(
   ),
 );
 
-// tesla variations
+// __tesla variations
 final _teslaVariations = createUnitVariation(
   MagneticFluxDensityUnits.values,
   MagneticFluxDensityUnits.tesla,

@@ -6,7 +6,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// mho variations
+// __mho variations
 final _mhoVariations = createUnitVariation(
   ElectricalConductanceUnits.values,
   ElectricalConductanceUnits.mho,
@@ -20,7 +20,7 @@ final _mhoVariations = createUnitVariation(
   ),
 );
 
-// siemens variations
+// __siemens variations
 final _siemensVariations = createUnitVariation(
   ElectricalConductanceUnits.values,
   ElectricalConductanceUnits.siemens,

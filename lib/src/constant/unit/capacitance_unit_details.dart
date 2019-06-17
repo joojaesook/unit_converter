@@ -6,7 +6,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// farad variations
+// __farad variations
 final _faradVariations = createUnitVariation(
   CapacitanceUnits.values,
   CapacitanceUnits.farad,

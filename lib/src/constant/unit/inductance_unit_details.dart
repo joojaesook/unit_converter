@@ -6,7 +6,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// henry variations
+// __henry variations
 final _henryVariations = createUnitVariation(
   InductanceUnits.values,
   InductanceUnits.henry,

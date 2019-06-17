@@ -4,7 +4,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// ampere variations
+// __ampere variations
 final _ampereVariations = createUnitVariation(
   ElectricCurrentUnits.values,
   ElectricCurrentUnits.ampere,

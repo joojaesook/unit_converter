@@ -6,7 +6,7 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-// ohm variations
+// __ohm variations
 final _ohmVariations = createUnitVariation(
   ElectricalResistanceUnits.values,
   ElectricalResistanceUnits.ohm,
