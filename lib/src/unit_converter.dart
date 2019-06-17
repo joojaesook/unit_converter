@@ -7,6 +7,7 @@ import 'enum/capacitance_units.dart';
 import 'enum/conversion_type.dart';
 import 'enum/data_rate_units.dart';
 import 'enum/data_units.dart';
+import 'enum/density_units.dart';
 import 'enum/dynamic_viscocity_units.dart';
 import 'enum/electric_charge_units.dart';
 import 'enum/electric_current_units.dart';
@@ -46,6 +47,7 @@ export 'enum/blood_glucose_units.dart';
 export 'enum/capacitance_units.dart';
 export 'enum/data_rate_units.dart';
 export 'enum/data_units.dart';
+export 'enum/density_units.dart';
 export 'enum/dynamic_viscocity_units.dart';
 export 'enum/electric_charge_units.dart';
 export 'enum/electric_current_units.dart';
@@ -118,6 +120,12 @@ class UnitConverter {
   static MultiplicationBasedConverter dataRate() {
     return MultiplicationBasedConverter<DataRateUnits>(
       ConversionType.dataRate,
+    );
+  }
+
+  static MultiplicationBasedConverter density() {
+    return MultiplicationBasedConverter<DensityUnits>(
+      ConversionType.density,
     );
   }
 

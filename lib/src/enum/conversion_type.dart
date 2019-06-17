@@ -29,6 +29,7 @@ enum ConversionType {
   magneticFluxDensity,
   mass,
   massFlow,
+  massFraction,
   massPerArea,
   planeAngle,
   power,

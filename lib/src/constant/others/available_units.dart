@@ -7,6 +7,7 @@ import '../unit/blood_glucose_unit_details.dart';
 import '../unit/capacitance_unit_details.dart';
 import '../unit/data_rate_unit_details.dart';
 import '../unit/data_unit_details.dart';
+import '../unit/density_unit_details.dart';
 import '../unit/dynamic_viscocity_unit_details.dart';
 import '../unit/electric_charge_unit_details.dart';
 import '../unit/electric_current_unit_details.dart';
@@ -40,6 +41,7 @@ import '../unit/volume_unit_details.dart';
 import '../unit/water_hardness_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnits = {
+  // ConversionType.fuelConsumption: fuelConsumptionUnitDetails,
   ConversionType.acceleration: accelerationUnitDetails,
   ConversionType.area: areaUnitDetails,
   ConversionType.bloodCholesterol: bloodCholesterolUnitDetails,
@@ -47,6 +49,7 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.capacitance: capacitanceUnitDetails,
   ConversionType.data: dataUnitDetails,
   ConversionType.dataRate: dataRateUnitDetails,
+  ConversionType.density: densityUnitDetails,
   ConversionType.dynamicViscocity: dynamicViscocityUnitDetails,
   ConversionType.electricCharge: electricChargeUnitDetails,
   ConversionType.electricCurrent: electricCurrentUnitDetails,
@@ -56,7 +59,6 @@ final Map<ConversionType, Set<Unit>> availableUnits = {
   ConversionType.energy: energyUnitDetails,
   ConversionType.force: forceUnitDetails,
   ConversionType.frequency: frequencyUnitDetails,
-  // ConversionType.fuelConsumption: fuelConsumptionUnitDetails,
   ConversionType.illuminance: illuminanceUnitDetails,
   ConversionType.inductance: inductanceUnitDetails,
   ConversionType.kinematicViscocity: kinematicViscocityUnitDetails,
