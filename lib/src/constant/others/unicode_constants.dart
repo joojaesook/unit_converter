@@ -1,9 +1,10 @@
 // UTF-32 code point
-
 const unicodeAngstrom = '00c5';
 const unicodeMho = '2127';
 const unicodeMicro = '03bc';
 const unicodeOhm = '2126';
+const unicodePartPerTenThousand = '2031';
+const unicodePartPerThousand = '2030';
 const unicodePlanck = '2133';
 const unicodeSubscriptThree = '2083';
 const unicodeSubscriptZero = '2080';
