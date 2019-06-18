@@ -1,309 +1,309 @@
 import '../../enum/conversion_type.dart';
-import '../../enum/energy_units.dart';
-import '../../enum/power_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/time_units.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/energy_unit.dart';
+import '../../enum/power_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/time_unit.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
-final _hourToSecond = conversionFactor(ConversionType.time, TimeUnits.hour);
-final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnits.minute);
+final _hourToSecond = conversionFactor(ConversionType.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
 
 final _calorieToJoule_intlSteamTable =
-    conversionFactor(ConversionType.energy, EnergyUnits.calorie_intlSteamTable);
-final _ergToJoule = conversionFactor(ConversionType.energy, EnergyUnits.erg);
+    conversionFactor(ConversionType.energy, EnergyUnit.calorie_intlSteamTable);
+final _ergToJoule = conversionFactor(ConversionType.energy, EnergyUnit.erg);
 final _footPoundForceToJoule =
-    conversionFactor(ConversionType.energy, EnergyUnits.footPoundForce);
+    conversionFactor(ConversionType.energy, EnergyUnit.footPoundForce);
 final _britishThermalUnitToJoule_intlSteamTable = conversionFactor(
-    ConversionType.energy, EnergyUnits.britishThermalUnit_intlSteamTable);
+    ConversionType.energy, EnergyUnit.britishThermalUnit_intlSteamTable);
 
 // __calorie per hour International Steam Table variations
 final _caloriePerHourVariations_intlSteamTable = createUnitVariation(
-  PowerUnits.values,
-  PowerUnits.caloriePerHour_intlSteamTable,
+  PowerUnit.values,
+  PowerUnit.caloriePerHour_intlSteamTable,
   _calorieToJoule_intlSteamTable / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'calorie per hour',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.calorie,
-      SymbolParts.forwardSlash,
-      SymbolParts.lH,
+      SymbolPart.calorie,
+      SymbolPart.forwardSlash,
+      SymbolPart.lH,
     ],
   ),
-  system: UnitSystems.intlSteamTable,
+  system: UnitSystem.intlSteamTable,
 );
 
 // __calorie per minute International Steam Table variations
 final _caloriePerMinuteVariations_intlSteamTable = createUnitVariation(
-  PowerUnits.values,
-  PowerUnits.caloriePerMinute_intlSteamTable,
+  PowerUnit.values,
+  PowerUnit.caloriePerMinute_intlSteamTable,
   _calorieToJoule_intlSteamTable / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'calorie per minute',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.calorie,
-      SymbolParts.forwardSlash,
-      SymbolParts.minute,
+      SymbolPart.calorie,
+      SymbolPart.forwardSlash,
+      SymbolPart.minute,
     ],
   ),
-  system: UnitSystems.intlSteamTable,
+  system: UnitSystem.intlSteamTable,
 );
 
 // __calorie per second International Steam Table variations
 final _caloriePerSecondVariations_intlSteamTable = createUnitVariation(
-  PowerUnits.values,
-  PowerUnits.caloriePerSecond_intlSteamTable,
+  PowerUnit.values,
+  PowerUnit.caloriePerSecond_intlSteamTable,
   _calorieToJoule_intlSteamTable,
   decimalPrefixes,
   namePostfix: 'calorie per second',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.calorie,
-      SymbolParts.forwardSlash,
-      SymbolParts.second,
+      SymbolPart.calorie,
+      SymbolPart.forwardSlash,
+      SymbolPart.second,
     ],
   ),
-  system: UnitSystems.intlSteamTable,
+  system: UnitSystem.intlSteamTable,
 );
 
 // __joule per hour variations
 final _joulePerHourVariations = createUnitVariation(
-  PowerUnits.values,
-  PowerUnits.joulePerHour,
+  PowerUnit.values,
+  PowerUnit.joulePerHour,
   1 / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'joule per hour',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.joule,
-      SymbolParts.forwardSlash,
-      SymbolParts.lH,
+      SymbolPart.joule,
+      SymbolPart.forwardSlash,
+      SymbolPart.lH,
     ],
   ),
 );
 
 // __joule per minute variations
 final _joulePerMinuteVariations = createUnitVariation(
-  PowerUnits.values,
-  PowerUnits.joulePerMinute,
+  PowerUnit.values,
+  PowerUnit.joulePerMinute,
   1 / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'joule per minute',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.joule,
-      SymbolParts.forwardSlash,
-      SymbolParts.minute,
+      SymbolPart.joule,
+      SymbolPart.forwardSlash,
+      SymbolPart.minute,
     ],
   ),
 );
 
 // __joule per second variations
 final _joulePerSecondVariations = createUnitVariation(
-  PowerUnits.values,
-  PowerUnits.joulePerSecond,
+  PowerUnit.values,
+  PowerUnit.joulePerSecond,
   1,
   decimalPrefixes,
   namePostfix: 'joule per second',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.joule,
-      SymbolParts.forwardSlash,
-      SymbolParts.second,
+      SymbolPart.joule,
+      SymbolPart.forwardSlash,
+      SymbolPart.second,
     ],
   ),
 );
 
 // __watt variations
 final _wattVariations = createUnitVariation(
-  PowerUnits.values,
-  PowerUnits.watt,
+  PowerUnit.values,
+  PowerUnit.watt,
   1,
   decimalPrefixes,
   namePostfix: 'watt',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.watt,
+      SymbolPart.watt,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'British thermal unit per hour',
     createSymbol(
       const [
-        SymbolParts.britishThermalUnit,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.britishThermalUnit,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    PowerUnits.britishThermalUnitPerHour_intlSteamTable,
+    PowerUnit.britishThermalUnitPerHour_intlSteamTable,
     _britishThermalUnitToJoule_intlSteamTable / _hourToSecond,
-    system: unitSystem[UnitSystems.intlSteamTable],
+    system: unitSystem[UnitSystem.intlSteamTable],
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'British thermal unit per minute',
     createSymbol(
       const [
-        SymbolParts.britishThermalUnit,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.britishThermalUnit,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    PowerUnits.britishThermalUnitPerMinute_intlSteamTable,
+    PowerUnit.britishThermalUnitPerMinute_intlSteamTable,
     _britishThermalUnitToJoule_intlSteamTable / _minuteToSecond,
-    system: unitSystem[UnitSystems.intlSteamTable],
+    system: unitSystem[UnitSystem.intlSteamTable],
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'British thermal unit per second',
     createSymbol(
       const [
-        SymbolParts.britishThermalUnit,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.britishThermalUnit,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    PowerUnits.britishThermalUnitPerSecond_intlSteamTable,
+    PowerUnit.britishThermalUnitPerSecond_intlSteamTable,
     _britishThermalUnitToJoule_intlSteamTable,
-    system: unitSystem[UnitSystems.intlSteamTable],
+    system: unitSystem[UnitSystem.intlSteamTable],
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'erg per hour',
     createSymbol(
       const [
-        SymbolParts.lE,
-        SymbolParts.lR,
-        SymbolParts.lG,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.lE,
+        SymbolPart.lR,
+        SymbolPart.lG,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    PowerUnits.ergPerHour,
+    PowerUnit.ergPerHour,
     _ergToJoule / _hourToSecond,
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'erg per minute',
     createSymbol(
       const [
-        SymbolParts.lE,
-        SymbolParts.lR,
-        SymbolParts.lG,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.lE,
+        SymbolPart.lR,
+        SymbolPart.lG,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    PowerUnits.ergPerMinute,
+    PowerUnit.ergPerMinute,
     _ergToJoule / _minuteToSecond,
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'erg per second',
     createSymbol(
       const [
-        SymbolParts.lE,
-        SymbolParts.lR,
-        SymbolParts.lG,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.lE,
+        SymbolPart.lR,
+        SymbolPart.lG,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    PowerUnits.ergPerSecond,
+    PowerUnit.ergPerSecond,
     _ergToJoule,
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'foot pound per minute',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.space,
-        SymbolParts.pound,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.foot,
+        SymbolPart.space,
+        SymbolPart.pound,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    PowerUnits.footPoundPerMinute,
+    PowerUnit.footPoundPerMinute,
     _footPoundForceToJoule / _minuteToSecond,
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'foot pound per second',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.space,
-        SymbolParts.pound,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.foot,
+        SymbolPart.space,
+        SymbolPart.pound,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    PowerUnits.footPoundPerSecond,
+    PowerUnit.footPoundPerSecond,
     _footPoundForceToJoule,
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'horsepower',
     createSymbol(
       const [
-        SymbolParts.clB,
-        SymbolParts.clH,
-        SymbolParts.clP,
+        SymbolPart.clB,
+        SymbolPart.clH,
+        SymbolPart.clP,
       ],
     ),
-    PowerUnits.horsePower_boiler,
+    PowerUnit.horsePower_boiler,
     9809.5,
-    system: unitSystem[UnitSystems.boiler],
+    system: unitSystem[UnitSystem.boiler],
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'horsepower',
     createSymbol(
       const [
-        SymbolParts.lH,
-        SymbolParts.lP,
+        SymbolPart.lH,
+        SymbolPart.lP,
       ],
     ),
-    PowerUnits.horsePower_electric,
+    PowerUnit.horsePower_electric,
     746,
-    system: unitSystem[UnitSystems.electric],
+    system: unitSystem[UnitSystem.electric],
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'horsepower',
     createSymbol(
       const [
-        SymbolParts.lH,
-        SymbolParts.lP,
+        SymbolPart.lH,
+        SymbolPart.lP,
       ],
     ),
-    PowerUnits.horsePower_mechanical,
+    PowerUnit.horsePower_mechanical,
     550 * _footPoundForceToJoule,
-    system: unitSystem[UnitSystems.mechanical],
+    system: unitSystem[UnitSystem.mechanical],
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'horsepower',
     createSymbol(
       const [
-        SymbolParts.lH,
-        SymbolParts.lP,
+        SymbolPart.lH,
+        SymbolPart.lP,
       ],
     ),
-    PowerUnits.horsePower_metric,
+    PowerUnit.horsePower_metric,
     735.49875,
-    system: unitSystem[UnitSystems.metric],
+    system: unitSystem[UnitSystem.metric],
   ),
-  Unit<PowerUnits>(
+  Unit<PowerUnit>(
     'tonne of refrigeration',
     createSymbol(
       const [
-        SymbolParts.clR,
-        SymbolParts.clT,
+        SymbolPart.clR,
+        SymbolPart.clT,
       ],
     ),
-    PowerUnits.tonneOfRefrigeration,
+    PowerUnit.tonneOfRefrigeration,
     3516.8528420667,
     americanName: 'ton of refrigeration',
   ),

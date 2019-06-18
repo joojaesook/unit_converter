@@ -1,17 +1,17 @@
 import 'dart:math';
 
-import '../../enum/mass_fraction_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/mass_fraction_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __gram per __gram variations
-final _gramPerGramVariations = <Unit<MassFractionUnits>>{};
+final _gramPerGramVariations = <Unit<MassFractionUnit>>{};
 
-void create(Unit<MassFractionUnits> unit) {
+void create(Unit<MassFractionUnit> unit) {
   var units = createUnitVariation(
-    MassFractionUnits.values,
+    MassFractionUnit.values,
     unit.type,
     unit.conversionFactor,
     decimalPrefixes,
@@ -23,103 +23,103 @@ void create(Unit<MassFractionUnits> unit) {
 
 // gram per __gram variations
 final _intermediateGramPerGramVariations = createUnitVariation(
-  MassFractionUnits.values,
-  MassFractionUnits.gramPerGram,
+  MassFractionUnit.values,
+  MassFractionUnit.gramPerGram,
   1,
   decimalPrefixes,
   namePrefix: 'gram per ',
   namePostfix: 'gram',
   symbolPrefix: createSymbol(
     [
-      SymbolParts.gram,
-      SymbolParts.forwardSlash,
+      SymbolPart.gram,
+      SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
     [
-      SymbolParts.gram,
+      SymbolPart.gram,
     ],
   ),
 ).forEach(create);
 
 // other units
 final _otherUnits = {
-  Unit<MassFractionUnits>(
+  Unit<MassFractionUnit>(
     'part per billion',
     createSymbol(
       const [
-        SymbolParts.lP,
-        SymbolParts.lP,
-        SymbolParts.lB,
+        SymbolPart.lP,
+        SymbolPart.lP,
+        SymbolPart.lB,
       ],
     ),
-    MassFractionUnits.partPerBillion,
+    MassFractionUnit.partPerBillion,
     pow(10, -9),
   ),
-  Unit<MassFractionUnits>(
+  Unit<MassFractionUnit>(
     'part per hendred',
     createSymbol(
       const [
-        SymbolParts.percentage,
+        SymbolPart.percentage,
       ],
     ),
-    MassFractionUnits.partPerHundred,
+    MassFractionUnit.partPerHundred,
     0.01,
   ),
-  Unit<MassFractionUnits>(
+  Unit<MassFractionUnit>(
     'part per million',
     createSymbol(
       const [
-        SymbolParts.lP,
-        SymbolParts.lP,
-        SymbolParts.lM,
+        SymbolPart.lP,
+        SymbolPart.lP,
+        SymbolPart.lM,
       ],
     ),
-    MassFractionUnits.partPerMillion,
+    MassFractionUnit.partPerMillion,
     pow(10, -6),
   ),
-  Unit<MassFractionUnits>(
+  Unit<MassFractionUnit>(
     'part per quadrillion',
     createSymbol(
       const [
-        SymbolParts.lP,
-        SymbolParts.lP,
-        SymbolParts.lQ,
+        SymbolPart.lP,
+        SymbolPart.lP,
+        SymbolPart.lQ,
       ],
     ),
-    MassFractionUnits.partPerQuadrillion,
+    MassFractionUnit.partPerQuadrillion,
     pow(10, -15),
   ),
-  Unit<MassFractionUnits>(
+  Unit<MassFractionUnit>(
     'part per ten thousand',
     createSymbol(
       const [
-        SymbolParts.partPerTenThousand,
+        SymbolPart.partPerTenThousand,
       ],
     ),
-    MassFractionUnits.partPerTenThousand,
+    MassFractionUnit.partPerTenThousand,
     0.0001,
   ),
-  Unit<MassFractionUnits>(
+  Unit<MassFractionUnit>(
     'part per thousand',
     createSymbol(
       const [
-        SymbolParts.partPerThousand,
+        SymbolPart.partPerThousand,
       ],
     ),
-    MassFractionUnits.partPerThousand,
+    MassFractionUnit.partPerThousand,
     0.001,
   ),
-  Unit<MassFractionUnits>(
+  Unit<MassFractionUnit>(
     'part per trillion',
     createSymbol(
       const [
-        SymbolParts.lP,
-        SymbolParts.lP,
-        SymbolParts.lT,
+        SymbolPart.lP,
+        SymbolPart.lP,
+        SymbolPart.lT,
       ],
     ),
-    MassFractionUnits.partPerTrillion,
+    MassFractionUnit.partPerTrillion,
     pow(10, -12),
   ),
 };

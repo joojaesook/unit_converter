@@ -1,52 +1,52 @@
-import '../../enum/symbol_parts.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import 'symbol.dart';
-import 'unicode_constants.dart';
+import 'unicode_constant.dart';
 
-final Map<UnitSystems, String> unitSystem = {
-  UnitSystems.australian: 'Australian',
-  UnitSystems.binary: 'Binary',
-  UnitSystems.boiler: 'Boiler',
-  UnitSystems.ca2: 'Ca${createSymbol(
+final Map<UnitSystem, String> unitSystem = {
+  UnitSystem.australian: 'Australian',
+  UnitSystem.binary: 'Binary',
+  UnitSystem.boiler: 'Boiler',
+  UnitSystem.ca2: 'Ca${createSymbol(
     const [
-      SymbolParts.superscriptTwo,
-      SymbolParts.superscriptPlus,
+      SymbolPart.superscriptTwo,
+      SymbolPart.superscriptPlus,
     ],
   )}',
-  UnitSystems.caCO3: 'CaCO${createSymbol(
+  UnitSystem.caCO3: 'CaCO${createSymbol(
     const [
-      SymbolParts.subscriptThree,
+      SymbolPart.subscriptThree,
     ],
   )}',
-  UnitSystems.caO: 'CaO',
-  UnitSystems.conventional: 'Conventional',
-  UnitSystems.degree15C: '15 ${stringFromUnicode(unicodeSuperscriptZero)}C',
-  UnitSystems.degree4: '4 ${stringFromUnicode(unicodeSuperscriptZero)}C',
-  UnitSystems.ec: 'EC',
-  UnitSystems.electric: 'Electric',
-  UnitSystems.gregorian: 'Gregorian',
-  UnitSystems.gunter: 'Gunter\'s',
-  UnitSystems.imperial: 'Imperial',
-  UnitSystems.intlSteamTable: 'IT',
-  UnitSystems.julian: 'Julian',
-  UnitSystems.land: 'Land',
-  UnitSystems.mechanical: 'Mechanical',
-  UnitSystems.metric: 'Metric',
-  UnitSystems.mg2: 'Mg${createSymbol(
+  UnitSystem.caO: 'CaO',
+  UnitSystem.conventional: 'Conventional',
+  UnitSystem.degree15C: '15 ${stringFromUnicode(unicodeSuperscriptZero)}C',
+  UnitSystem.degree4: '4 ${stringFromUnicode(unicodeSuperscriptZero)}C',
+  UnitSystem.ec: 'EC',
+  UnitSystem.electric: 'Electric',
+  UnitSystem.gregorian: 'Gregorian',
+  UnitSystem.gunter: 'Gunter\'s',
+  UnitSystem.imperial: 'Imperial',
+  UnitSystem.intlSteamTable: 'IT',
+  UnitSystem.julian: 'Julian',
+  UnitSystem.land: 'Land',
+  UnitSystem.mechanical: 'Mechanical',
+  UnitSystem.metric: 'Metric',
+  UnitSystem.mg2: 'Mg${createSymbol(
     const [
-      SymbolParts.superscriptTwo,
-      SymbolParts.superscriptPlus,
+      SymbolPart.superscriptTwo,
+      SymbolPart.superscriptPlus,
     ],
   )}',
-  UnitSystems.standard: 'Standard',
-  UnitSystems.technical: 'Technical',
-  UnitSystems.tnt: 'TNT',
-  UnitSystems.typographic: 'Typographic',
-  UnitSystems.us: 'US',
-  UnitSystems.usDry: 'US dry',
-  UnitSystems.usDryLevel: 'US dry level',
-  UnitSystems.usFoodNutritionLabel: 'US food nutrition labeling',
-  UnitSystems.usLiquid: 'US liquid',
-  UnitSystems.usSurvey: 'US Survey',
+  UnitSystem.standard: 'Standard',
+  UnitSystem.technical: 'Technical',
+  UnitSystem.tnt: 'TNT',
+  UnitSystem.typographic: 'Typographic',
+  UnitSystem.us: 'US',
+  UnitSystem.usDry: 'US dry',
+  UnitSystem.usDryLevel: 'US dry level',
+  UnitSystem.usFoodNutritionLabel: 'US food nutrition labeling',
+  UnitSystem.usLiquid: 'US liquid',
+  UnitSystem.usSurvey: 'US Survey',
 };

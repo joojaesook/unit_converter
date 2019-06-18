@@ -1,64 +1,64 @@
-import '../../enum/electric_charge_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/electric_charge_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __coulomb variations
 final _coulombVariations = createUnitVariation(
-  ElectricChargeUnits.values,
-  ElectricChargeUnits.coulomb,
+  ElectricChargeUnit.values,
+  ElectricChargeUnit.coulomb,
   1,
   decimalPrefixes,
   namePostfix: 'coulomb',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.coulomb,
+      SymbolPart.coulomb,
     ],
   ),
 );
 
 // __ampere-hour variations
 final _ampereHourVariations = createUnitVariation(
-  ElectricChargeUnits.values,
-  ElectricChargeUnits.ampereHour,
+  ElectricChargeUnit.values,
+  ElectricChargeUnit.ampereHour,
   3600,
   decimalPrefixes,
   namePostfix: 'ampere-hour',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.ampere,
-      SymbolParts.lH,
+      SymbolPart.ampere,
+      SymbolPart.lH,
     ],
   ),
 );
 
 // __ampere-second variations
 final _ampereSecondVariations = createUnitVariation(
-  ElectricChargeUnits.values,
-  ElectricChargeUnits.ampereSecond,
+  ElectricChargeUnit.values,
+  ElectricChargeUnit.ampereSecond,
   1,
   decimalPrefixes,
   namePostfix: 'ampere-second',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.ampere,
-      SymbolParts.second,
+      SymbolPart.ampere,
+      SymbolPart.second,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<ElectricChargeUnits>(
+  Unit<ElectricChargeUnit>(
     'abcoulomb',
     createSymbol(
       const [
-        SymbolParts.ab,
-        SymbolParts.coulomb,
+        SymbolPart.ab,
+        SymbolPart.coulomb,
       ],
     ),
-    ElectricChargeUnits.abCoulomb,
+    ElectricChargeUnit.abCoulomb,
     10,
     variation: true,
   ),

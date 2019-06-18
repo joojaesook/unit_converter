@@ -1,10 +1,10 @@
 import 'dart:math' show pow;
 
-import '../../enum/area_units.dart';
+import '../../enum/area_unit.dart';
 import '../../enum/conversion_type.dart';
-import '../../enum/length_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/length_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
@@ -13,7 +13,7 @@ import '../others/unit_system.dart';
 final _squareFoot = pow(
   conversionFactor(
     ConversionType.length,
-    LengthUnits.foot,
+    LengthUnit.foot,
   ),
   2,
 );
@@ -21,30 +21,30 @@ final _acreToSquareMetre = 43560 * _squareFoot;
 
 // __barn variations
 final _barnVariations = createUnitVariation(
-  AreaUnits.values,
-  AreaUnits.barn,
+  AreaUnit.values,
+  AreaUnit.barn,
   pow(10, -28),
   decimalPrefixes,
   namePostfix: 'barn',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.barn,
+      SymbolPart.barn,
     ],
   ),
 );
 
 // square __metre variations
 final _squareMetreVariations = createUnitVariation(
-  AreaUnits.values,
-  AreaUnits.squareMetre,
+  AreaUnit.values,
+  AreaUnit.squareMetre,
   1,
   decimalPrefixes,
   namePrefix: 'square ',
   namePostfix: 'metre',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.metre,
-      SymbolParts.superscriptTwo,
+      SymbolPart.metre,
+      SymbolPart.superscriptTwo,
     ],
   ),
   addAmericanName: true,
@@ -55,169 +55,169 @@ final _squareMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'acre',
     createSymbol(
       const [
-        SymbolParts.acre,
+        SymbolPart.acre,
       ],
     ),
-    AreaUnits.acre,
+    AreaUnit.acre,
     _acreToSquareMetre,
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'acre',
     createSymbol(
       const [
-        SymbolParts.acre,
+        SymbolPart.acre,
       ],
     ),
-    AreaUnits.acre_usSurvey,
+    AreaUnit.acre_usSurvey,
     4046.872609874252,
-    system: unitSystem[UnitSystems.usSurvey],
+    system: unitSystem[UnitSystem.usSurvey],
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'are',
     createSymbol(
       const [
-        SymbolParts.are,
+        SymbolPart.are,
       ],
     ),
-    AreaUnits.are,
+    AreaUnit.are,
     100,
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'circular mil',
     createSymbol(
       const [
-        SymbolParts.lC,
-        SymbolParts.lM,
-        SymbolParts.lI,
-        SymbolParts.lL,
+        SymbolPart.lC,
+        SymbolPart.lM,
+        SymbolPart.lI,
+        SymbolPart.lL,
       ],
     ),
-    AreaUnits.circularMil,
+    AreaUnit.circularMil,
     5.067074790975 * pow(10, -10),
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'hectare',
     createSymbol(
       const [
-        SymbolParts.hectare,
+        SymbolPart.hectare,
       ],
     ),
-    AreaUnits.hectare,
+    AreaUnit.hectare,
     10000,
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'rai',
     createSymbol(
       const [
-        SymbolParts.rai,
+        SymbolPart.rai,
       ],
     ),
-    AreaUnits.rai,
+    AreaUnit.rai,
     1600,
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'rood',
     createSymbol(
       const [
-        SymbolParts.rood,
+        SymbolPart.rood,
       ],
     ),
-    AreaUnits.rood,
+    AreaUnit.rood,
     _acreToSquareMetre / 4,
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'square',
     createSymbol(
       const [
-        SymbolParts.lS,
-        SymbolParts.lQ,
-        SymbolParts.lU,
-        SymbolParts.lA,
-        SymbolParts.lR,
-        SymbolParts.lE,
+        SymbolPart.lS,
+        SymbolPart.lQ,
+        SymbolPart.lU,
+        SymbolPart.lA,
+        SymbolPart.lR,
+        SymbolPart.lE,
       ],
     ),
-    AreaUnits.square,
+    AreaUnit.square,
     100 * _squareFoot,
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'square foot',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.superscriptTwo,
+        SymbolPart.foot,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AreaUnits.squareFoot,
+    AreaUnit.squareFoot,
     _squareFoot,
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'square inch',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.superscriptTwo,
+        SymbolPart.inch,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AreaUnits.squareInch,
+    AreaUnit.squareInch,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.inch,
+        LengthUnit.inch,
       ),
       2,
     ),
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'square mile',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.superscriptTwo,
+        SymbolPart.mile,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AreaUnits.squareMile,
+    AreaUnit.squareMile,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.mile,
+        LengthUnit.mile,
       ),
       2,
     ),
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'square perch',
     createSymbol(
       const [
-        SymbolParts.squarePerch,
+        SymbolPart.squarePerch,
       ],
     ),
-    AreaUnits.squarePerch,
+    AreaUnit.squarePerch,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.rod,
+        LengthUnit.rod,
       ),
       2,
     ),
   ),
-  Unit<AreaUnits>(
+  Unit<AreaUnit>(
     'square yard',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.superscriptTwo,
+        SymbolPart.yard,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AreaUnits.squareYard,
+    AreaUnit.squareYard,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.yard,
+        LengthUnit.yard,
       ),
       2,
     ),
@@ -225,7 +225,7 @@ final _otherUnits = {
 };
 
 // area unit details
-final areaUnitDetails = <Unit<AreaUnits>>{
+final areaUnitDetails = <Unit<AreaUnit>>{
   ..._barnVariations,
   ..._squareMetreVariations,
   ..._otherUnits,

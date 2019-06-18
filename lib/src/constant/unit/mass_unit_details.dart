@@ -1,6 +1,6 @@
-import '../../enum/mass_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/mass_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
@@ -11,203 +11,203 @@ const _grainToKiloGram = _poundToKiloGram / 7000;
 
 // __gram variations
 final _gramVariations = createUnitVariation(
-  MassUnits.values,
-  MassUnits.gram,
+  MassUnit.values,
+  MassUnit.gram,
   0.001,
   decimalPrefixes,
   namePostfix: 'gram',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.gram,
+      SymbolPart.gram,
     ],
   ),
 );
 
 // __tonne variations
 final _tonneVariations = createUnitVariation(
-  MassUnits.values,
-  MassUnits.tonne,
+  MassUnit.values,
+  MassUnit.tonne,
   1000,
   decimalPrefixes,
   namePostfix: 'tonne',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.tonne,
+      SymbolPart.tonne,
     ],
   ),
-  system: UnitSystems.metric,
+  system: UnitSystem.metric,
 );
 
 // other units
 final _otherUnits = {
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'carat',
     createSymbol(
       const [
-        SymbolParts.carat,
+        SymbolPart.carat,
       ],
     ),
-    MassUnits.carat,
+    MassUnit.carat,
     0.0002,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'grain',
     createSymbol(
       const [
-        SymbolParts.grain,
+        SymbolPart.grain,
       ],
     ),
-    MassUnits.grain,
+    MassUnit.grain,
     _grainToKiloGram,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'long hundredweight',
     createSymbol(
       const [
-        SymbolParts.long,
-        SymbolParts.space,
-        SymbolParts.hundredWeight,
+        SymbolPart.long,
+        SymbolPart.space,
+        SymbolPart.hundredWeight,
       ],
     ),
-    MassUnits.longHundredWeight,
+    MassUnit.longHundredWeight,
     112 * _poundToKiloGram,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'long tonne',
     createSymbol(
       const [
-        SymbolParts.long,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
+        SymbolPart.long,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
       ],
     ),
-    MassUnits.longTonne,
+    MassUnit.longTonne,
     2240 * _poundToKiloGram,
     americanName: 'long ton',
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'ounce',
     createSymbol(
       const [
-        SymbolParts.ounce,
+        SymbolPart.ounce,
       ],
     ),
-    MassUnits.ounce,
+    MassUnit.ounce,
     _poundToKiloGram / 16,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'ounce',
     createSymbol(
       const [
-        SymbolParts.ounce,
+        SymbolPart.ounce,
       ],
     ),
-    MassUnits.ounce_USFoodNutritionLabel,
+    MassUnit.ounce_USFoodNutritionLabel,
     0.028,
-    system: unitSystem[UnitSystems.usFoodNutritionLabel],
+    system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'pennyweight',
     createSymbol(
       const [
-        SymbolParts.pennyWeight,
+        SymbolPart.pennyWeight,
       ],
     ),
-    MassUnits.pennyWeight,
+    MassUnit.pennyWeight,
     24 * _grainToKiloGram,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'pood',
     createSymbol(
       const [
-        SymbolParts.pood,
+        SymbolPart.pood,
       ],
     ),
-    MassUnits.pood,
+    MassUnit.pood,
     16.3807,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'pound',
     createSymbol(
       const [
-        SymbolParts.pound,
+        SymbolPart.pound,
       ],
     ),
-    MassUnits.pound,
+    MassUnit.pound,
     _poundToKiloGram,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'short hundredweight',
     createSymbol(
       const [
-        SymbolParts.short,
-        SymbolParts.space,
-        SymbolParts.hundredWeight,
+        SymbolPart.short,
+        SymbolPart.space,
+        SymbolPart.hundredWeight,
       ],
     ),
-    MassUnits.shortHundredWeight,
+    MassUnit.shortHundredWeight,
     100 * _poundToKiloGram,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'short tonne',
     createSymbol(
       const [
-        SymbolParts.short,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
+        SymbolPart.short,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
       ],
     ),
-    MassUnits.shortTonne,
+    MassUnit.shortTonne,
     2000 * _poundToKiloGram,
     americanName: 'short ton',
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'slug',
     createSymbol(
       const [
-        SymbolParts.slug,
+        SymbolPart.slug,
       ],
     ),
-    MassUnits.slug,
+    MassUnit.slug,
     14.5939029,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'stone',
     createSymbol(
       const [
-        SymbolParts.stone,
+        SymbolPart.stone,
       ],
     ),
-    MassUnits.stone,
+    MassUnit.stone,
     14 * _poundToKiloGram,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'troy ounce',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.space,
-        SymbolParts.troy,
+        SymbolPart.ounce,
+        SymbolPart.space,
+        SymbolPart.troy,
       ],
     ),
-    MassUnits.troyOunce,
+    MassUnit.troyOunce,
     480 * _grainToKiloGram,
   ),
-  Unit<MassUnits>(
+  Unit<MassUnit>(
     'troy pound',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.space,
-        SymbolParts.troy,
+        SymbolPart.pound,
+        SymbolPart.space,
+        SymbolPart.troy,
       ],
     ),
-    MassUnits.troyPound,
+    MassUnit.troyPound,
     5760 * _grainToKiloGram,
   ),
 };

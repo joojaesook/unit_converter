@@ -1,38 +1,38 @@
-import '../../enum/data_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/data_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
 // __bit variations
 final _bitVariations = createUnitVariation(
-  DataUnits.values,
-  DataUnits.bit,
+  DataUnit.values,
+  DataUnit.bit,
   1,
   binaryPrefixes,
   namePostfix: 'bit',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.bit,
+      SymbolPart.bit,
     ],
   ),
-  system: UnitSystems.binary,
+  system: UnitSystem.binary,
   appendVariationUnitTypeWithSystemName: true,
 );
 
 // __byte variations
 final _byteVariations = createUnitVariation(
-  DataUnits.values,
-  DataUnits.byte,
+  DataUnit.values,
+  DataUnit.byte,
   8,
   binaryPrefixes,
   namePostfix: 'byte',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.byte,
+      SymbolPart.byte,
     ],
   ),
-  system: UnitSystems.binary,
+  system: UnitSystem.binary,
   appendVariationUnitTypeWithSystemName: true,
 );
 

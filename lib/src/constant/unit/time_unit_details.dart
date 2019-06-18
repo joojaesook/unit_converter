@@ -1,6 +1,6 @@
-import '../../enum/symbol_parts.dart';
-import '../../enum/time_units.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/time_unit.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
@@ -11,124 +11,124 @@ const double _yearToSecond = 365.2425 * _dayToSecond;
 
 // __second variations
 final _secondVariations = createUnitVariation(
-  TimeUnits.values,
-  TimeUnits.second,
+  TimeUnit.values,
+  TimeUnit.second,
   1,
   decimalPrefixes,
   namePostfix: 'second',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.second,
+      SymbolPart.second,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'century',
     createSymbol(
       const [
-        SymbolParts.century,
+        SymbolPart.century,
       ],
     ),
-    TimeUnits.century,
+    TimeUnit.century,
     100 * _yearToSecond,
-    system: unitSystem[UnitSystems.gregorian],
+    system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'day',
     createSymbol(
       const [
-        SymbolParts.day,
+        SymbolPart.day,
       ],
     ),
-    TimeUnits.day,
+    TimeUnit.day,
     _dayToSecond,
   ),
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'decade',
     createSymbol(
       const [
-        SymbolParts.decade,
+        SymbolPart.decade,
       ],
     ),
-    TimeUnits.decade,
+    TimeUnit.decade,
     10 * _yearToSecond,
-    system: unitSystem[UnitSystems.gregorian],
+    system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'fortnight',
     createSymbol(
       const [
-        SymbolParts.fortnight,
+        SymbolPart.fortnight,
       ],
     ),
-    TimeUnits.fortnight,
+    TimeUnit.fortnight,
     1209600,
   ),
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'hour',
     createSymbol(
       const [
-        SymbolParts.hour,
+        SymbolPart.hour,
       ],
     ),
-    TimeUnits.hour,
+    TimeUnit.hour,
     3600,
   ),
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'millennium',
     createSymbol(
       const [
-        SymbolParts.millennium,
+        SymbolPart.millennium,
       ],
     ),
-    TimeUnits.millennium,
+    TimeUnit.millennium,
     1000 * _yearToSecond,
-    system: unitSystem[UnitSystems.gregorian],
+    system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'minute',
     createSymbol(
       const [
-        SymbolParts.minute,
+        SymbolPart.minute,
       ],
     ),
-    TimeUnits.minute,
+    TimeUnit.minute,
     60,
   ),
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'month',
     createSymbol(
       const [
-        SymbolParts.month,
+        SymbolPart.month,
       ],
     ),
-    TimeUnits.month,
+    TimeUnit.month,
     _yearToSecond / 12,
-    system: unitSystem[UnitSystems.gregorian],
+    system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'week',
     createSymbol(
       const [
-        SymbolParts.week,
+        SymbolPart.week,
       ],
     ),
-    TimeUnits.week,
+    TimeUnit.week,
     604800,
   ),
-  Unit<TimeUnits>(
+  Unit<TimeUnit>(
     'year',
     createSymbol(
       const [
-        SymbolParts.year,
+        SymbolPart.year,
       ],
     ),
-    TimeUnits.year,
+    TimeUnit.year,
     _yearToSecond,
-    system: unitSystem[UnitSystems.gregorian],
+    system: unitSystem[UnitSystem.gregorian],
   ),
 };
 

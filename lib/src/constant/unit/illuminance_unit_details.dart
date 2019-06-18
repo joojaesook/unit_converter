@@ -1,59 +1,59 @@
 import 'dart:math' show pow;
 
 import '../../enum/conversion_type.dart';
-import '../../enum/illuminance_units.dart';
-import '../../enum/length_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/illuminance_unit.dart';
+import '../../enum/length_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __lux variations
 final _luxVariations = createUnitVariation(
-  IlluminanceUnits.values,
-  IlluminanceUnits.lux,
+  IlluminanceUnit.values,
+  IlluminanceUnit.lux,
   1,
   decimalPrefixes,
   namePostfix: 'lux',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.lux,
+      SymbolPart.lux,
     ],
   ),
 );
 
 // __phot variations
 final _photVariations = createUnitVariation(
-  IlluminanceUnits.values,
-  IlluminanceUnits.phot,
+  IlluminanceUnit.values,
+  IlluminanceUnit.phot,
   10000,
   decimalPrefixes,
   namePostfix: 'phot',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.phot,
+      SymbolPart.phot,
     ],
   ),
 );
 
 // lumen per square __metre variations
 final _lumenPerSquareMetreVariations = createUnitVariation(
-  IlluminanceUnits.values,
-  IlluminanceUnits.lumenPerSquareMetre,
+  IlluminanceUnit.values,
+  IlluminanceUnit.lumenPerSquareMetre,
   1,
   decimalPrefixes,
   namePrefix: 'lumen per square ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
     [
-      SymbolParts.lumen,
-      SymbolParts.forwardSlash,
+      SymbolPart.lumen,
+      SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.superscriptTwo,
+      SymbolPart.metre,
+      SymbolPart.superscriptTwo,
     ],
   ),
   addAmericanName: true,
@@ -64,63 +64,63 @@ final _lumenPerSquareMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<IlluminanceUnits>(
+  Unit<IlluminanceUnit>(
     'foot-candle',
     createSymbol(
       const [
-        SymbolParts.lF,
-        SymbolParts.lC,
+        SymbolPart.lF,
+        SymbolPart.lC,
       ],
     ),
-    IlluminanceUnits.footCandle,
+    IlluminanceUnit.footCandle,
     10.7639,
   ),
-  Unit<IlluminanceUnits>(
+  Unit<IlluminanceUnit>(
     'lumen per square foot',
     createSymbol(
       const [
-        SymbolParts.lumen,
-        SymbolParts.forwardSlash,
-        SymbolParts.foot,
-        SymbolParts.superscriptTwo,
+        SymbolPart.lumen,
+        SymbolPart.forwardSlash,
+        SymbolPart.foot,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    IlluminanceUnits.lumenPerSquareFoot,
+    IlluminanceUnit.lumenPerSquareFoot,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.foot,
+        LengthUnit.foot,
       ),
       -2,
     ),
   ),
-  Unit<IlluminanceUnits>(
+  Unit<IlluminanceUnit>(
     'lumen per square inch',
     createSymbol(
       const [
-        SymbolParts.lumen,
-        SymbolParts.forwardSlash,
-        SymbolParts.inch,
-        SymbolParts.superscriptTwo,
+        SymbolPart.lumen,
+        SymbolPart.forwardSlash,
+        SymbolPart.inch,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    IlluminanceUnits.lumenPerSquareInch,
+    IlluminanceUnit.lumenPerSquareInch,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.inch,
+        LengthUnit.inch,
       ),
       -2,
     ),
   ),
-  Unit<IlluminanceUnits>(
+  Unit<IlluminanceUnit>(
     'nox',
     createSymbol(
       const [
-        SymbolParts.nox,
+        SymbolPart.nox,
       ],
     ),
-    IlluminanceUnits.nox,
+    IlluminanceUnit.nox,
     0.001,
   ),
 };

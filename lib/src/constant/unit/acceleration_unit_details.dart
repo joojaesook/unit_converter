@@ -1,67 +1,67 @@
 import 'dart:math' show pow;
 
-import '../../enum/acceleration_units.dart';
+import '../../enum/acceleration_unit.dart';
 import '../../enum/conversion_type.dart';
-import '../../enum/length_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/time_units.dart';
+import '../../enum/length_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 final _hourToSecond = conversionFactor(
   ConversionType.time,
-  TimeUnits.hour,
+  TimeUnit.hour,
 );
 final _minuteToSecond = conversionFactor(
   ConversionType.time,
-  TimeUnits.minute,
+  TimeUnit.minute,
 );
 final _footToMetre = conversionFactor(
   ConversionType.length,
-  LengthUnits.foot,
+  LengthUnit.foot,
 );
 final _inchToMetre = conversionFactor(
   ConversionType.length,
-  LengthUnits.inch,
+  LengthUnit.inch,
 );
 final _mileToMetre = conversionFactor(
   ConversionType.length,
-  LengthUnits.mile,
+  LengthUnit.mile,
 );
 final _yardToMetre = conversionFactor(
   ConversionType.length,
-  LengthUnits.yard,
+  LengthUnit.yard,
 );
 
 // __gal variations
 final _galVariations = createUnitVariation(
-  AccelerationUnits.values,
-  AccelerationUnits.gal,
+  AccelerationUnit.values,
+  AccelerationUnit.gal,
   .01,
   decimalPrefixes,
   namePostfix: 'gal',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.gal,
+      SymbolPart.gal,
     ],
   ),
 );
 
 // __metre per hour per second variations
 final _metrePerHourPerSecondVariations = createUnitVariation(
-  AccelerationUnits.values,
-  AccelerationUnits.metrePerHourPerSecond,
+  AccelerationUnit.values,
+  AccelerationUnit.metrePerHourPerSecond,
   1 / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'metre per hour per second',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.forwardSlash,
-      SymbolParts.lH,
-      SymbolParts.forwardSlash,
-      SymbolParts.second,
+      SymbolPart.metre,
+      SymbolPart.forwardSlash,
+      SymbolPart.lH,
+      SymbolPart.forwardSlash,
+      SymbolPart.second,
     ],
   ),
   addAmericanName: true,
@@ -70,17 +70,17 @@ final _metrePerHourPerSecondVariations = createUnitVariation(
 
 // __metre per hour squared variations
 final _metrePerHourSquaredVariations = createUnitVariation(
-  AccelerationUnits.values,
-  AccelerationUnits.metrePerHourSquared,
+  AccelerationUnit.values,
+  AccelerationUnit.metrePerHourSquared,
   1 / pow(_hourToSecond, 2),
   decimalPrefixes,
   namePostfix: 'metre per hour squared',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.forwardSlash,
-      SymbolParts.lH,
-      SymbolParts.superscriptTwo,
+      SymbolPart.metre,
+      SymbolPart.forwardSlash,
+      SymbolPart.lH,
+      SymbolPart.superscriptTwo,
     ],
   ),
   addAmericanName: true,
@@ -89,18 +89,18 @@ final _metrePerHourSquaredVariations = createUnitVariation(
 
 // __metre per minute per second variations
 final _metrePerMinutePerSecondVariations = createUnitVariation(
-  AccelerationUnits.values,
-  AccelerationUnits.metrePerMinutePerSecond,
+  AccelerationUnit.values,
+  AccelerationUnit.metrePerMinutePerSecond,
   1 / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'metre per minute per second',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.forwardSlash,
-      SymbolParts.minute,
-      SymbolParts.forwardSlash,
-      SymbolParts.second,
+      SymbolPart.metre,
+      SymbolPart.forwardSlash,
+      SymbolPart.minute,
+      SymbolPart.forwardSlash,
+      SymbolPart.second,
     ],
   ),
   addAmericanName: true,
@@ -109,17 +109,17 @@ final _metrePerMinutePerSecondVariations = createUnitVariation(
 
 // __metre per minute squared variations
 final _metrePerMinuteSquaredVariations = createUnitVariation(
-  AccelerationUnits.values,
-  AccelerationUnits.metrePerMinuteSquared,
+  AccelerationUnit.values,
+  AccelerationUnit.metrePerMinuteSquared,
   1 / pow(_minuteToSecond, 2),
   decimalPrefixes,
   namePostfix: 'metre per minute squared',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.forwardSlash,
-      SymbolParts.minute,
-      SymbolParts.superscriptTwo,
+      SymbolPart.metre,
+      SymbolPart.forwardSlash,
+      SymbolPart.minute,
+      SymbolPart.superscriptTwo,
     ],
   ),
   addAmericanName: true,
@@ -128,17 +128,17 @@ final _metrePerMinuteSquaredVariations = createUnitVariation(
 
 // __metre per second squared variations
 final _metrePerSecondSquaredVariations = createUnitVariation(
-  AccelerationUnits.values,
-  AccelerationUnits.metrePerSecondSquared,
+  AccelerationUnit.values,
+  AccelerationUnit.metrePerSecondSquared,
   1,
   decimalPrefixes,
   namePostfix: 'metre per second squared',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.forwardSlash,
-      SymbolParts.second,
-      SymbolParts.superscriptTwo,
+      SymbolPart.metre,
+      SymbolPart.forwardSlash,
+      SymbolPart.second,
+      SymbolPart.superscriptTwo,
     ],
   ),
   addAmericanName: true,
@@ -148,297 +148,297 @@ final _metrePerSecondSquaredVariations = createUnitVariation(
 // other units
 final _otherUnits = {
   // foot
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'foot per hour per second',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    AccelerationUnits.footPerHourPerSecond,
+    AccelerationUnit.footPerHourPerSecond,
     _footToMetre / _hourToSecond,
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'foot per hour squared',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
-        SymbolParts.superscriptTwo,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.footPerHourSquared,
+    AccelerationUnit.footPerHourSquared,
     _footToMetre / pow(_hourToSecond, 2),
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'foot per minute per second',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    AccelerationUnits.footPerMinutePerSecond,
+    AccelerationUnit.footPerMinutePerSecond,
     _footToMetre / _minuteToSecond,
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'foot per minute squared',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
-        SymbolParts.superscriptTwo,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.footPerMinuteSquared,
+    AccelerationUnit.footPerMinuteSquared,
     _footToMetre / pow(_minuteToSecond, 2),
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'foot per second squared',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
-        SymbolParts.superscriptTwo,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.footPerSecondSquared,
+    AccelerationUnit.footPerSecondSquared,
     _footToMetre,
   ),
 
   // inch
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'inch per hour per second',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.inch,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    AccelerationUnits.inchPerHourPerSecond,
+    AccelerationUnit.inchPerHourPerSecond,
     _inchToMetre / _hourToSecond,
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'inch per hour squared',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
-        SymbolParts.superscriptTwo,
+        SymbolPart.inch,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.inchPerHourSquared,
+    AccelerationUnit.inchPerHourSquared,
     _inchToMetre / pow(_hourToSecond, 2),
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'inch per minute per second',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.inch,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    AccelerationUnits.inchPerMinutePerSecond,
+    AccelerationUnit.inchPerMinutePerSecond,
     _inchToMetre / _minuteToSecond,
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'inch per minute squared',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
-        SymbolParts.superscriptTwo,
+        SymbolPart.inch,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.inchPerMinuteSquared,
+    AccelerationUnit.inchPerMinuteSquared,
     _inchToMetre / pow(_minuteToSecond, 2),
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'inch per second squared',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
-        SymbolParts.superscriptTwo,
+        SymbolPart.inch,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.inchPerSecondSquared,
+    AccelerationUnit.inchPerSecondSquared,
     _inchToMetre,
   ),
 
   // mile
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'mile per hour per second',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.mile,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    AccelerationUnits.milePerHourPerSecond,
+    AccelerationUnit.milePerHourPerSecond,
     _mileToMetre / _hourToSecond,
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'mile per hour squared',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
-        SymbolParts.superscriptTwo,
+        SymbolPart.mile,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.milePerHourSquared,
+    AccelerationUnit.milePerHourSquared,
     _mileToMetre / pow(_hourToSecond, 2),
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'mile per minute per second',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.mile,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    AccelerationUnits.milePerMinutePerSecond,
+    AccelerationUnit.milePerMinutePerSecond,
     _mileToMetre / _minuteToSecond,
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'mile per minute squared',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
-        SymbolParts.superscriptTwo,
+        SymbolPart.mile,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.milePerMinuteSquared,
+    AccelerationUnit.milePerMinuteSquared,
     _mileToMetre / pow(_minuteToSecond, 2),
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'mile per second squared',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
-        SymbolParts.superscriptTwo,
+        SymbolPart.mile,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.milePerSecondSquared,
+    AccelerationUnit.milePerSecondSquared,
     _mileToMetre,
   ),
 
   //yard
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'yard per hour per second',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.yard,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    AccelerationUnits.yardPerHourPerSecond,
+    AccelerationUnit.yardPerHourPerSecond,
     _yardToMetre / _hourToSecond,
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'yard per hour squared',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
-        SymbolParts.superscriptTwo,
+        SymbolPart.yard,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.yardPerHourSquared,
+    AccelerationUnit.yardPerHourSquared,
     _yardToMetre / pow(_hourToSecond, 2),
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'yard per minute per second',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.yard,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    AccelerationUnits.yardPerMinutePerSecond,
+    AccelerationUnit.yardPerMinutePerSecond,
     _yardToMetre / _minuteToSecond,
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'yard per minute squared',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
-        SymbolParts.superscriptTwo,
+        SymbolPart.yard,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.yardPerMinuteSquared,
+    AccelerationUnit.yardPerMinuteSquared,
     _yardToMetre / pow(_minuteToSecond, 2),
   ),
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'yard per second squared',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
-        SymbolParts.superscriptTwo,
+        SymbolPart.yard,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    AccelerationUnits.yardPerSecondSquared,
+    AccelerationUnit.yardPerSecondSquared,
     _yardToMetre,
   ),
 
   // others
-  Unit<AccelerationUnits>(
+  Unit<AccelerationUnit>(
     'standard gravity',
     createSymbol(
       const [
-        SymbolParts.gravity,
-        SymbolParts.subscriptZero,
+        SymbolPart.gravity,
+        SymbolPart.subscriptZero,
       ],
     ),
-    AccelerationUnits.standardGravity,
+    AccelerationUnit.standardGravity,
     9.80665,
   ),
 };
 
 // acceleration unit details
-final accelerationUnitDetails = <Unit<AccelerationUnits>>{
+final accelerationUnitDetails = <Unit<AccelerationUnit>>{
   ..._galVariations,
   ..._metrePerHourPerSecondVariations,
   ..._metrePerHourSquaredVariations,

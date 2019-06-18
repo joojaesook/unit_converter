@@ -1,36 +1,36 @@
 import 'dart:math' show pow;
 
-import '../../enum/capacitance_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/capacitance_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __farad variations
 final _faradVariations = createUnitVariation(
-  CapacitanceUnits.values,
-  CapacitanceUnits.farad,
+  CapacitanceUnit.values,
+  CapacitanceUnit.farad,
   1,
   decimalPrefixes,
   namePostfix: 'farad',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.farad,
+      SymbolPart.farad,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<CapacitanceUnits>(
+  Unit<CapacitanceUnit>(
     'abfarad',
     createSymbol(
       const [
-        SymbolParts.ab,
-        SymbolParts.farad,
+        SymbolPart.ab,
+        SymbolPart.farad,
       ],
     ),
-    CapacitanceUnits.abFarad,
+    CapacitanceUnit.abFarad,
     pow(10, 9),
     variation: true,
   ),

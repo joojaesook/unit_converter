@@ -1,22 +1,21 @@
 import 'dart:math' show pow;
 
-import '../../enum/area_units.dart';
+import '../../enum/area_unit.dart';
 import '../../enum/conversion_type.dart';
-import '../../enum/length_units.dart';
+import '../../enum/length_unit.dart';
 import '../../enum/prefix.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/unit_systems.dart';
-import '../../enum/volume_units.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/unit_system.dart';
+import '../../enum/volume_unit.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/prefix_value.dart';
 import '../others/unit_system.dart';
 
-final _acreToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnits.acre);
-final _footToMetre = conversionFactor(ConversionType.length, LengthUnits.foot);
-final _inchToMetre = conversionFactor(ConversionType.length, LengthUnits.inch);
+final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
+final _footToMetre = conversionFactor(ConversionType.length, LengthUnit.foot);
+final _inchToMetre = conversionFactor(ConversionType.length, LengthUnit.inch);
 const _litreToCubicMetre = 0.001;
 const _gallon_imperial = 4.54609 * _litreToCubicMetre;
 const _gallon_usDry = 0.00440488377086;
@@ -29,14 +28,14 @@ const _fluidOunce_imperial = _gallon_imperial / 160;
 
 // __litre variations
 final _litreVariations = createUnitVariation(
-  VolumeUnits.values,
-  VolumeUnits.litre,
+  VolumeUnit.values,
+  VolumeUnit.litre,
   _litreToCubicMetre,
   decimalPrefixes,
   namePostfix: 'litre',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.litre,
+      SymbolPart.litre,
     ],
   ),
   addAmericanName: true,
@@ -45,16 +44,16 @@ final _litreVariations = createUnitVariation(
 
 // cubic __metre variations
 final _cubicMetreVariations = createUnitVariation(
-  VolumeUnits.values,
-  VolumeUnits.cubicMetre,
+  VolumeUnit.values,
+  VolumeUnit.cubicMetre,
   1,
   decimalPrefixes,
   namePrefix: 'cubic ',
   namePostfix: 'metre',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.superscriptThree,
+      SymbolPart.metre,
+      SymbolPart.superscriptThree,
     ],
   ),
   addAmericanName: true,
@@ -65,522 +64,522 @@ final _cubicMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'acre-foot',
     createSymbol(
       const [
-        SymbolParts.acre,
-        SymbolParts.space,
-        SymbolParts.foot,
+        SymbolPart.acre,
+        SymbolPart.space,
+        SymbolPart.foot,
       ],
     ),
-    VolumeUnits.acreFoot,
+    VolumeUnit.acreFoot,
     _acreToSquareMetre * _footToMetre,
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'acre-inch',
     createSymbol(
       const [
-        SymbolParts.acre,
-        SymbolParts.space,
-        SymbolParts.inch,
+        SymbolPart.acre,
+        SymbolPart.space,
+        SymbolPart.inch,
       ],
     ),
-    VolumeUnits.acreInch,
+    VolumeUnit.acreInch,
     _acreToSquareMetre * _inchToMetre,
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'board foot',
     createSymbol(
       const [
-        SymbolParts.boardFoot,
+        SymbolPart.boardFoot,
       ],
     ),
-    VolumeUnits.boardFoot,
+    VolumeUnit.boardFoot,
     pow(_footToMetre, 3) / 12,
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'bushel',
     createSymbol(
       const [
-        SymbolParts.bushel,
+        SymbolPart.bushel,
       ],
     ),
-    VolumeUnits.bushel_imperial,
+    VolumeUnit.bushel_imperial,
     8 * _gallon_imperial,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'bushel',
     createSymbol(
       const [
-        SymbolParts.bushel,
+        SymbolPart.bushel,
       ],
     ),
-    VolumeUnits.bushel_usDryLevel,
+    VolumeUnit.bushel_usDryLevel,
     8 * _gallon_usDry,
-    system: unitSystem[UnitSystems.usDryLevel],
+    system: unitSystem[UnitSystem.usDryLevel],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'cubic foot',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.superscriptThree,
+        SymbolPart.foot,
+        SymbolPart.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicFoot,
+    VolumeUnit.cubicFoot,
     pow(
       _footToMetre,
       3,
     ),
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'cubic inch',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.superscriptThree,
+        SymbolPart.inch,
+        SymbolPart.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicInch,
+    VolumeUnit.cubicInch,
     pow(
       _inchToMetre,
       3,
     ),
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'cubic mile',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.superscriptThree,
+        SymbolPart.mile,
+        SymbolPart.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicMile,
+    VolumeUnit.cubicMile,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.mile,
+        LengthUnit.mile,
       ),
       3,
     ),
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'cubic yard',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.superscriptThree,
+        SymbolPart.yard,
+        SymbolPart.superscriptThree,
       ],
     ),
-    VolumeUnits.cubicYard,
+    VolumeUnit.cubicYard,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.yard,
+        LengthUnit.yard,
       ),
       3,
     ),
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'cup',
     createSymbol(
       const [
-        SymbolParts.lC,
+        SymbolPart.lC,
       ],
     ),
-    VolumeUnits.cup_imperial,
+    VolumeUnit.cup_imperial,
     _gallon_imperial / 16,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'cup',
     createSymbol(
       const [
-        SymbolParts.lC,
+        SymbolPart.lC,
       ],
     ),
-    VolumeUnits.cup_metric,
+    VolumeUnit.cup_metric,
     250 * _milliLiterToCubicMetre,
-    system: unitSystem[UnitSystems.metric],
+    system: unitSystem[UnitSystem.metric],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'cup',
     createSymbol(
       const [
-        SymbolParts.lC,
+        SymbolPart.lC,
       ],
     ),
-    VolumeUnits.cup_us,
+    VolumeUnit.cup_us,
     _gallon_usLiquid / 16,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'cup',
     createSymbol(
       const [
-        SymbolParts.lC,
+        SymbolPart.lC,
       ],
     ),
-    VolumeUnits.cup_usFoodNutritionLabel,
+    VolumeUnit.cup_usFoodNutritionLabel,
     240 * _milliLiterToCubicMetre,
-    system: unitSystem[UnitSystems.usFoodNutritionLabel],
+    system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'firlot',
     createSymbol(
       const [
-        SymbolParts.firlot,
+        SymbolPart.firlot,
       ],
     ),
-    VolumeUnits.firlot_imperial,
+    VolumeUnit.firlot_imperial,
     4 * _peck_imperial,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'firlot',
     createSymbol(
       const [
-        SymbolParts.firlot,
+        SymbolPart.firlot,
       ],
     ),
-    VolumeUnits.firlot_usDry,
+    VolumeUnit.firlot_usDry,
     4 * _peck_usDry,
-    system: unitSystem[UnitSystems.usDry],
+    system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'fluid dram',
     createSymbol(
       const [
-        SymbolParts.fluid,
-        SymbolParts.space,
-        SymbolParts.dram,
+        SymbolPart.fluid,
+        SymbolPart.space,
+        SymbolPart.dram,
       ],
     ),
-    VolumeUnits.fluidDram_us,
+    VolumeUnit.fluidDram_us,
     0.000003696691195313,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'fluid ounce',
     createSymbol(
       const [
-        SymbolParts.fluid,
-        SymbolParts.space,
-        SymbolParts.ounce,
+        SymbolPart.fluid,
+        SymbolPart.space,
+        SymbolPart.ounce,
       ],
     ),
-    VolumeUnits.fluidOunce_imperial,
+    VolumeUnit.fluidOunce_imperial,
     _fluidOunce_imperial,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'fluid ounce',
     createSymbol(
       const [
-        SymbolParts.fluid,
-        SymbolParts.space,
-        SymbolParts.ounce,
+        SymbolPart.fluid,
+        SymbolPart.space,
+        SymbolPart.ounce,
       ],
     ),
-    VolumeUnits.fluidOunce_us,
+    VolumeUnit.fluidOunce_us,
     _fluidOunce_us,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'fluid ounce',
     createSymbol(
       const [
-        SymbolParts.fluid,
-        SymbolParts.space,
-        SymbolParts.ounce,
+        SymbolPart.fluid,
+        SymbolPart.space,
+        SymbolPart.ounce,
       ],
     ),
-    VolumeUnits.fluidOunce_usFoodNutritionLabel,
+    VolumeUnit.fluidOunce_usFoodNutritionLabel,
     30 * _milliLiterToCubicMetre,
-    system: unitSystem[UnitSystems.usFoodNutritionLabel],
+    system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'gallon',
     createSymbol(
       const [
-        SymbolParts.gallon,
+        SymbolPart.gallon,
       ],
     ),
-    VolumeUnits.gallon_imperial,
+    VolumeUnit.gallon_imperial,
     _gallon_imperial,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'gallon',
     createSymbol(
       const [
-        SymbolParts.gallon,
+        SymbolPart.gallon,
       ],
     ),
-    VolumeUnits.gallon_usDry,
+    VolumeUnit.gallon_usDry,
     _gallon_usDry,
-    system: unitSystem[UnitSystems.usDry],
+    system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'gallon',
     createSymbol(
       const [
-        SymbolParts.gallon,
+        SymbolPart.gallon,
       ],
     ),
-    VolumeUnits.gallon_usLiquid,
+    VolumeUnit.gallon_usLiquid,
     _gallon_usLiquid,
-    system: unitSystem[UnitSystems.usLiquid],
+    system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'gill',
     createSymbol(
       const [
-        SymbolParts.gill,
+        SymbolPart.gill,
       ],
     ),
-    VolumeUnits.gill_imperial,
+    VolumeUnit.gill_imperial,
     _gallon_imperial / 32,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'gill',
     createSymbol(
       const [
-        SymbolParts.gill,
+        SymbolPart.gill,
       ],
     ),
-    VolumeUnits.gill_us,
+    VolumeUnit.gill_us,
     _gallon_usLiquid / 32,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'hectare metre',
     createSymbol(
       const [
-        SymbolParts.hectare,
-        SymbolParts.space,
-        SymbolParts.metre,
+        SymbolPart.hectare,
+        SymbolPart.space,
+        SymbolPart.metre,
       ],
     ),
-    VolumeUnits.hectareMetre,
+    VolumeUnit.hectareMetre,
     10000,
     americanName: 'hectare meter',
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'jigger',
     createSymbol(
       const [
-        SymbolParts.lJ,
-        SymbolParts.lI,
-        SymbolParts.lG,
-        SymbolParts.lG,
-        SymbolParts.lE,
-        SymbolParts.lR,
+        SymbolPart.lJ,
+        SymbolPart.lI,
+        SymbolPart.lG,
+        SymbolPart.lG,
+        SymbolPart.lE,
+        SymbolPart.lR,
       ],
     ),
-    VolumeUnits.jigger,
+    VolumeUnit.jigger,
     1.5 * _fluidOunce_us,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'minim',
     createSymbol(
       const [
-        SymbolParts.minim,
+        SymbolPart.minim,
       ],
     ),
-    VolumeUnits.minim_imperial,
+    VolumeUnit.minim_imperial,
     _fluidOunce_imperial / 480,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'minim',
     createSymbol(
       const [
-        SymbolParts.minim,
+        SymbolPart.minim,
       ],
     ),
-    VolumeUnits.minim_us,
+    VolumeUnit.minim_us,
     _fluidOunce_us / 480,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'oil barrel',
     createSymbol(
       const [
-        SymbolParts.oilBarrel,
+        SymbolPart.oilBarrel,
       ],
     ),
-    VolumeUnits.oilBarrel,
+    VolumeUnit.oilBarrel,
     42 * _gallon_usLiquid,
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'peck',
     createSymbol(
       const [
-        SymbolParts.peck,
+        SymbolPart.peck,
       ],
     ),
-    VolumeUnits.peck_imperial,
+    VolumeUnit.peck_imperial,
     _peck_imperial,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'peck',
     createSymbol(
       const [
-        SymbolParts.peck,
+        SymbolPart.peck,
       ],
     ),
-    VolumeUnits.peck_usDry,
+    VolumeUnit.peck_usDry,
     _peck_usDry,
-    system: unitSystem[UnitSystems.usDry],
+    system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'pint',
     createSymbol(
       const [
-        SymbolParts.pint,
+        SymbolPart.pint,
       ],
     ),
-    VolumeUnits.pint_imperial,
+    VolumeUnit.pint_imperial,
     _gallon_imperial / 8,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'pint',
     createSymbol(
       const [
-        SymbolParts.pint,
+        SymbolPart.pint,
       ],
     ),
-    VolumeUnits.pint_usDry,
+    VolumeUnit.pint_usDry,
     _gallon_usDry / 8,
-    system: unitSystem[UnitSystems.usDry],
+    system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'pint',
     createSymbol(
       const [
-        SymbolParts.pint,
+        SymbolPart.pint,
       ],
     ),
-    VolumeUnits.pint_usLiquid,
+    VolumeUnit.pint_usLiquid,
     _gallon_usLiquid / 8,
-    system: unitSystem[UnitSystems.usLiquid],
+    system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'quart',
     createSymbol(
       const [
-        SymbolParts.quart,
+        SymbolPart.quart,
       ],
     ),
-    VolumeUnits.quart_imperial,
+    VolumeUnit.quart_imperial,
     _gallon_imperial / 4,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'quart',
     createSymbol(
       const [
-        SymbolParts.quart,
+        SymbolPart.quart,
       ],
     ),
-    VolumeUnits.quart_usDry,
+    VolumeUnit.quart_usDry,
     _gallon_usDry / 4,
-    system: unitSystem[UnitSystems.usDry],
+    system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'quart',
     createSymbol(
       const [
-        SymbolParts.quart,
+        SymbolPart.quart,
       ],
     ),
-    VolumeUnits.quart_usLiquid,
+    VolumeUnit.quart_usLiquid,
     _gallon_usLiquid / 4,
-    system: unitSystem[UnitSystems.usLiquid],
+    system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'tablespoon',
     createSymbol(
       const [
-        SymbolParts.tablespoon,
+        SymbolPart.tablespoon,
       ],
     ),
-    VolumeUnits.tablespoon_australian,
+    VolumeUnit.tablespoon_australian,
     20 * _milliLiterToCubicMetre,
-    system: unitSystem[UnitSystems.australian],
+    system: unitSystem[UnitSystem.australian],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'tablespoon',
     createSymbol(
       const [
-        SymbolParts.tablespoon,
+        SymbolPart.tablespoon,
       ],
     ),
-    VolumeUnits.tablespoon_metric,
+    VolumeUnit.tablespoon_metric,
     15 * _milliLiterToCubicMetre,
-    system: unitSystem[UnitSystems.metric],
+    system: unitSystem[UnitSystem.metric],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'tablespoon',
     createSymbol(
       const [
-        SymbolParts.tablespoon,
+        SymbolPart.tablespoon,
       ],
     ),
-    VolumeUnits.tablespoon_us,
+    VolumeUnit.tablespoon_us,
     _gallon_usLiquid / 256,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'tablespoon',
     createSymbol(
       const [
-        SymbolParts.tablespoon,
+        SymbolPart.tablespoon,
       ],
     ),
-    VolumeUnits.tablespoon_usFoodNutritionLabel,
+    VolumeUnit.tablespoon_usFoodNutritionLabel,
     15 * _milliLiterToCubicMetre,
-    system: unitSystem[UnitSystems.usFoodNutritionLabel],
+    system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'teaspoon',
     createSymbol(
       const [
-        SymbolParts.teaspoon,
+        SymbolPart.teaspoon,
       ],
     ),
-    VolumeUnits.teaspoon_metric,
+    VolumeUnit.teaspoon_metric,
     5 * _milliLiterToCubicMetre,
-    system: unitSystem[UnitSystems.metric],
+    system: unitSystem[UnitSystem.metric],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'teaspoon',
     createSymbol(
       const [
-        SymbolParts.teaspoon,
+        SymbolPart.teaspoon,
       ],
     ),
-    VolumeUnits.teaspoon_us,
+    VolumeUnit.teaspoon_us,
     _gallon_usLiquid / 768,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnits>(
+  Unit<VolumeUnit>(
     'teaspoon',
     createSymbol(
       const [
-        SymbolParts.teaspoon,
+        SymbolPart.teaspoon,
       ],
     ),
-    VolumeUnits.teaspoon_usFoodNutritionLabel,
+    VolumeUnit.teaspoon_usFoodNutritionLabel,
     5 * _milliLiterToCubicMetre,
-    system: unitSystem[UnitSystems.usFoodNutritionLabel],
+    system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
 };
 

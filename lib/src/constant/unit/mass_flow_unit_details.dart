@@ -1,228 +1,228 @@
 import '../../enum/conversion_type.dart';
-import '../../enum/mass_flow_units.dart';
-import '../../enum/mass_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/time_units.dart';
+import '../../enum/mass_flow_unit.dart';
+import '../../enum/mass_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-final _gramToKiloGram = conversionFactor(ConversionType.mass, MassUnits.gram);
-final _grainToKiloGram = conversionFactor(ConversionType.mass, MassUnits.grain);
-final _ounceToKiloGram = conversionFactor(ConversionType.mass, MassUnits.ounce);
-final _poundToKiloGram = conversionFactor(ConversionType.mass, MassUnits.pound);
-final _dayToSecond = conversionFactor(ConversionType.time, TimeUnits.day);
-final _hourToSecond = conversionFactor(ConversionType.time, TimeUnits.hour);
-final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnits.minute);
+final _gramToKiloGram = conversionFactor(ConversionType.mass, MassUnit.gram);
+final _grainToKiloGram = conversionFactor(ConversionType.mass, MassUnit.grain);
+final _ounceToKiloGram = conversionFactor(ConversionType.mass, MassUnit.ounce);
+final _poundToKiloGram = conversionFactor(ConversionType.mass, MassUnit.pound);
+final _dayToSecond = conversionFactor(ConversionType.time, TimeUnit.day);
+final _hourToSecond = conversionFactor(ConversionType.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
 
 // __gram per day variations
 final _gramPerDayVariations = createUnitVariation(
-  MassFlowUnits.values,
-  MassFlowUnits.gramPerDay,
+  MassFlowUnit.values,
+  MassFlowUnit.gramPerDay,
   _gramToKiloGram / _dayToSecond,
   decimalPrefixes,
   namePostfix: 'gram per day',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.gram,
-      SymbolParts.forwardSlash,
-      SymbolParts.day,
+      SymbolPart.gram,
+      SymbolPart.forwardSlash,
+      SymbolPart.day,
     ],
   ),
 );
 
 // __gram per hour variations
 final _gramPerHourVariations = createUnitVariation(
-  MassFlowUnits.values,
-  MassFlowUnits.gramPerHour,
+  MassFlowUnit.values,
+  MassFlowUnit.gramPerHour,
   _gramToKiloGram / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'gram per hour',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.gram,
-      SymbolParts.forwardSlash,
-      SymbolParts.lH,
+      SymbolPart.gram,
+      SymbolPart.forwardSlash,
+      SymbolPart.lH,
     ],
   ),
 );
 
 // __gram per minute variations
 final _gramPerMinuteVariations = createUnitVariation(
-  MassFlowUnits.values,
-  MassFlowUnits.gramPerMinute,
+  MassFlowUnit.values,
+  MassFlowUnit.gramPerMinute,
   _gramToKiloGram / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'gram per minute',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.gram,
-      SymbolParts.forwardSlash,
-      SymbolParts.minute,
+      SymbolPart.gram,
+      SymbolPart.forwardSlash,
+      SymbolPart.minute,
     ],
   ),
 );
 
 // __gram per second variations
 final _gramPerSecondVariations = createUnitVariation(
-  MassFlowUnits.values,
-  MassFlowUnits.gramPerSecond,
+  MassFlowUnit.values,
+  MassFlowUnit.gramPerSecond,
   _gramToKiloGram,
   decimalPrefixes,
   namePostfix: 'gram per second',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.gram,
-      SymbolParts.forwardSlash,
-      SymbolParts.second,
+      SymbolPart.gram,
+      SymbolPart.forwardSlash,
+      SymbolPart.second,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'grain per day',
     createSymbol(
       const [
-        SymbolParts.grain,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.grain,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    MassFlowUnits.grainPerDay,
+    MassFlowUnit.grainPerDay,
     _grainToKiloGram / _dayToSecond,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'grain per hour',
     createSymbol(
       const [
-        SymbolParts.grain,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.grain,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    MassFlowUnits.grainPerHour,
+    MassFlowUnit.grainPerHour,
     _grainToKiloGram / _hourToSecond,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'grain per minute',
     createSymbol(
       const [
-        SymbolParts.grain,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.grain,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    MassFlowUnits.grainPerMinute,
+    MassFlowUnit.grainPerMinute,
     _grainToKiloGram / _minuteToSecond,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'grain per second',
     createSymbol(
       const [
-        SymbolParts.grain,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.grain,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    MassFlowUnits.grainPerSecond,
+    MassFlowUnit.grainPerSecond,
     _grainToKiloGram,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'ounce per day',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.ounce,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    MassFlowUnits.ouncePerDay,
+    MassFlowUnit.ouncePerDay,
     _ounceToKiloGram / _dayToSecond,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'ounce per hour',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.ounce,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    MassFlowUnits.ouncePerHour,
+    MassFlowUnit.ouncePerHour,
     _ounceToKiloGram / _hourToSecond,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'ounce per minute',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.ounce,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    MassFlowUnits.ouncePerMinute,
+    MassFlowUnit.ouncePerMinute,
     _ounceToKiloGram / _minuteToSecond,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'ounce per second',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.ounce,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    MassFlowUnits.ouncePerSecond,
+    MassFlowUnit.ouncePerSecond,
     _ounceToKiloGram,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'pound per day',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.pound,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    MassFlowUnits.poundPerDay,
+    MassFlowUnit.poundPerDay,
     _poundToKiloGram / _dayToSecond,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'pound per hour',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.pound,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    MassFlowUnits.poundPerHour,
+    MassFlowUnit.poundPerHour,
     _poundToKiloGram / _hourToSecond,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'pound per minute',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.pound,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    MassFlowUnits.poundPerMinute,
+    MassFlowUnit.poundPerMinute,
     _poundToKiloGram / _minuteToSecond,
   ),
-  Unit<MassFlowUnits>(
+  Unit<MassFlowUnit>(
     'pound per second',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.pound,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    MassFlowUnits.poundPerSecond,
+    MassFlowUnit.poundPerSecond,
     _poundToKiloGram,
   ),
 };

@@ -1,32 +1,32 @@
-import '../../enum/magnetic_flux_density_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/magnetic_flux_density_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
 // __gauss variations
 final _gaussVariations = createUnitVariation(
-  MagneticFluxDensityUnits.values,
-  MagneticFluxDensityUnits.gauss,
+  MagneticFluxDensityUnit.values,
+  MagneticFluxDensityUnit.gauss,
   0.0001,
   decimalPrefixes,
   namePostfix: 'gauss',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.gauss,
+      SymbolPart.gauss,
     ],
   ),
 );
 
 // __tesla variations
 final _teslaVariations = createUnitVariation(
-  MagneticFluxDensityUnits.values,
-  MagneticFluxDensityUnits.tesla,
+  MagneticFluxDensityUnit.values,
+  MagneticFluxDensityUnit.tesla,
   1,
   decimalPrefixes,
   namePostfix: 'tesla',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.tesla,
+      SymbolPart.tesla,
     ],
   ),
 );

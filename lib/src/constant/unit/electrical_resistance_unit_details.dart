@@ -1,36 +1,36 @@
 import 'dart:math' show pow;
 
-import '../../enum/electrical_resistance_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/electrical_resistance_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __ohm variations
 final _ohmVariations = createUnitVariation(
-  ElectricalResistanceUnits.values,
-  ElectricalResistanceUnits.ohm,
+  ElectricalResistanceUnit.values,
+  ElectricalResistanceUnit.ohm,
   1,
   decimalPrefixes,
   namePostfix: 'ohm',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.ohm,
+      SymbolPart.ohm,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<ElectricalResistanceUnits>(
+  Unit<ElectricalResistanceUnit>(
     'abohm',
     createSymbol(
       const [
-        SymbolParts.ab,
-        SymbolParts.ohm,
+        SymbolPart.ab,
+        SymbolPart.ohm,
       ],
     ),
-    ElectricalResistanceUnits.abOhm,
+    ElectricalResistanceUnit.abOhm,
     pow(10, -9),
     variation: true,
   ),

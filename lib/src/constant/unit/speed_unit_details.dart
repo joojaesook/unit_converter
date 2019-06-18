@@ -1,35 +1,35 @@
 import '../../enum/conversion_type.dart';
-import '../../enum/length_units.dart';
-import '../../enum/speed_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/time_units.dart';
+import '../../enum/length_unit.dart';
+import '../../enum/speed_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-final _dayToSecond = conversionFactor(ConversionType.time, TimeUnits.day);
-final _hourToSecond = conversionFactor(ConversionType.time, TimeUnits.hour);
-final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnits.minute);
+final _dayToSecond = conversionFactor(ConversionType.time, TimeUnit.day);
+final _hourToSecond = conversionFactor(ConversionType.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
 
-final _footToMetre = conversionFactor(ConversionType.length, LengthUnits.foot);
-final _inchToMetre = conversionFactor(ConversionType.length, LengthUnits.inch);
-final _mileToMetre = conversionFactor(ConversionType.length, LengthUnits.mile);
+final _footToMetre = conversionFactor(ConversionType.length, LengthUnit.foot);
+final _inchToMetre = conversionFactor(ConversionType.length, LengthUnit.inch);
+final _mileToMetre = conversionFactor(ConversionType.length, LengthUnit.mile);
 final _nauticalMileToMetre =
-    conversionFactor(ConversionType.length, LengthUnits.nauticalMile);
-final _yardToMetre = conversionFactor(ConversionType.length, LengthUnits.yard);
+    conversionFactor(ConversionType.length, LengthUnit.nauticalMile);
+final _yardToMetre = conversionFactor(ConversionType.length, LengthUnit.yard);
 
 // __metre per day variations
 final _metrePerDayVariations = createUnitVariation(
-  SpeedUnits.values,
-  SpeedUnits.metrePerDay,
+  SpeedUnit.values,
+  SpeedUnit.metrePerDay,
   1 / _dayToSecond,
   decimalPrefixes,
   namePostfix: 'metre per day',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.forwardSlash,
-      SymbolParts.day,
+      SymbolPart.metre,
+      SymbolPart.forwardSlash,
+      SymbolPart.day,
     ],
   ),
   addAmericanName: true,
@@ -38,16 +38,16 @@ final _metrePerDayVariations = createUnitVariation(
 
 // __metre per hour variations
 final _metrePerHourVariations = createUnitVariation(
-  SpeedUnits.values,
-  SpeedUnits.metrePerHour,
+  SpeedUnit.values,
+  SpeedUnit.metrePerHour,
   1 / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'metre per hour',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.forwardSlash,
-      SymbolParts.lH,
+      SymbolPart.metre,
+      SymbolPart.forwardSlash,
+      SymbolPart.lH,
     ],
   ),
   addAmericanName: true,
@@ -56,16 +56,16 @@ final _metrePerHourVariations = createUnitVariation(
 
 // __metre per minute variations
 final _metrePerMinuteVariations = createUnitVariation(
-  SpeedUnits.values,
-  SpeedUnits.metrePerMinute,
+  SpeedUnit.values,
+  SpeedUnit.metrePerMinute,
   1 / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'metre per minute',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.forwardSlash,
-      SymbolParts.minute,
+      SymbolPart.metre,
+      SymbolPart.forwardSlash,
+      SymbolPart.minute,
     ],
   ),
   addAmericanName: true,
@@ -74,16 +74,16 @@ final _metrePerMinuteVariations = createUnitVariation(
 
 // __metre per second variations
 final _metrePerSecondVariations = createUnitVariation(
-  SpeedUnits.values,
-  SpeedUnits.metrePerSecond,
+  SpeedUnit.values,
+  SpeedUnit.metrePerSecond,
   1,
   decimalPrefixes,
   namePostfix: 'metre per second',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.forwardSlash,
-      SymbolParts.second,
+      SymbolPart.metre,
+      SymbolPart.forwardSlash,
+      SymbolPart.second,
     ],
   ),
   addAmericanName: true,
@@ -92,242 +92,242 @@ final _metrePerSecondVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'foot per day',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    SpeedUnits.footPerDay,
+    SpeedUnit.footPerDay,
     _footToMetre / _dayToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'foot per hour',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    SpeedUnits.footPerHour,
+    SpeedUnit.footPerHour,
     _footToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'foot per minute',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    SpeedUnits.footPerMinute,
+    SpeedUnit.footPerMinute,
     _footToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'foot per second',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    SpeedUnits.footPerSecond,
+    SpeedUnit.footPerSecond,
     _footToMetre,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'inch per day',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.inch,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    SpeedUnits.inchPerDay,
+    SpeedUnit.inchPerDay,
     _inchToMetre / _dayToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'inch per hour',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.inch,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    SpeedUnits.inchPerHour,
+    SpeedUnit.inchPerHour,
     _inchToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'inch per minute',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.inch,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    SpeedUnits.inchPerMinute,
+    SpeedUnit.inchPerMinute,
     _inchToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'inch per second',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.inch,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    SpeedUnits.inchPerSecond,
+    SpeedUnit.inchPerSecond,
     _inchToMetre,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'knot',
     createSymbol(
       const [
-        SymbolParts.knot,
+        SymbolPart.knot,
       ],
     ),
-    SpeedUnits.knot,
+    SpeedUnit.knot,
     0.514444444,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'mile per day',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.mile,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    SpeedUnits.milePerDay,
+    SpeedUnit.milePerDay,
     _mileToMetre / _dayToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'mile per hour',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.mile,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    SpeedUnits.milePerHour,
+    SpeedUnit.milePerHour,
     _mileToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'mile per minute',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.mile,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    SpeedUnits.milePerMinute,
+    SpeedUnit.milePerMinute,
     _mileToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'mile per second',
     createSymbol(
       const [
-        SymbolParts.mile,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.mile,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    SpeedUnits.milePerSecond,
+    SpeedUnit.milePerSecond,
     _mileToMetre,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'nautical mile per hour',
     createSymbol(
       const [
-        SymbolParts.nauticalMile,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.nauticalMile,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    SpeedUnits.nauticalMilePerHour,
+    SpeedUnit.nauticalMilePerHour,
     _nauticalMileToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'nautical mile per minute',
     createSymbol(
       const [
-        SymbolParts.nauticalMile,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.nauticalMile,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    SpeedUnits.nauticalMilePerMinute,
+    SpeedUnit.nauticalMilePerMinute,
     _nauticalMileToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'nautical mile per second',
     createSymbol(
       const [
-        SymbolParts.nauticalMile,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.nauticalMile,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    SpeedUnits.nauticalMilePerSecond,
+    SpeedUnit.nauticalMilePerSecond,
     _nauticalMileToMetre,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'yard per day',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.yard,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    SpeedUnits.yardPerDay,
+    SpeedUnit.yardPerDay,
     _yardToMetre / _dayToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'yard per hour',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.yard,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    SpeedUnits.yardPerHour,
+    SpeedUnit.yardPerHour,
     _yardToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'yard per minute',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.yard,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    SpeedUnits.yardPerMinute,
+    SpeedUnit.yardPerMinute,
     _yardToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnits>(
+  Unit<SpeedUnit>(
     'yard per second',
     createSymbol(
       const [
-        SymbolParts.yard,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.yard,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    SpeedUnits.yardPerSecond,
+    SpeedUnit.yardPerSecond,
     _yardToMetre,
   ),
 };

@@ -1,8 +1,8 @@
 import 'dart:math' show pow;
 
-import '../../enum/length_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/length_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
@@ -15,29 +15,29 @@ const double _nauticalMileToMetre = 1852;
 
 // __light year variations
 final _lightYearVariations = createUnitVariation(
-  LengthUnits.values,
-  LengthUnits.lightYear,
+  LengthUnit.values,
+  LengthUnit.lightYear,
   9.4607304725808 * pow(10, 15),
   decimalPrefixes,
   namePostfix: 'light-year',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.lightYear,
+      SymbolPart.lightYear,
     ],
   ),
-  system: UnitSystems.julian,
+  system: UnitSystem.julian,
 );
 
 // __metre variations
 final _metreVariations = createUnitVariation(
-  LengthUnits.values,
-  LengthUnits.metre,
+  LengthUnit.values,
+  LengthUnit.metre,
   1,
   decimalPrefixes,
   namePostfix: 'metre',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
+      SymbolPart.metre,
     ],
   ),
   addAmericanName: true,
@@ -46,326 +46,326 @@ final _metreVariations = createUnitVariation(
 
 // __parsec variations
 final _parsecVariations = createUnitVariation(
-  LengthUnits.values,
-  LengthUnits.parsec,
+  LengthUnit.values,
+  LengthUnit.parsec,
   3.08567782 * pow(10, 16),
   decimalPrefixes,
   namePostfix: 'parsec',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.parsec,
+      SymbolPart.parsec,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'angstrom',
     createSymbol(
       const [
-        SymbolParts.angstrom,
+        SymbolPart.angstrom,
       ],
     ),
-    LengthUnits.angstrom,
+    LengthUnit.angstrom,
     pow(10, -10),
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'astronomical unit',
     createSymbol(
       const [
-        SymbolParts.astronomicalUnit,
+        SymbolPart.astronomicalUnit,
       ],
     ),
-    LengthUnits.astronomicalUnit,
+    LengthUnit.astronomicalUnit,
     149597870700,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'barleycorn',
     createSymbol(
       const [
-        SymbolParts.barleycorn,
+        SymbolPart.barleycorn,
       ],
     ),
-    LengthUnits.barleycorn,
+    LengthUnit.barleycorn,
     0.00846667,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'chain',
     createSymbol(
       const [
-        SymbolParts.chain,
+        SymbolPart.chain,
       ],
     ),
-    LengthUnits.chain,
+    LengthUnit.chain,
     20.1168,
-    system: unitSystem[UnitSystems.gunter],
+    system: unitSystem[UnitSystem.gunter],
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'chinese mile',
     createSymbol(
       const [
-        SymbolParts.chineseMile,
+        SymbolPart.chineseMile,
       ],
     ),
-    LengthUnits.chineseMile,
+    LengthUnit.chineseMile,
     500,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'fathom',
     createSymbol(
       const [
-        SymbolParts.fathom,
+        SymbolPart.fathom,
       ],
     ),
-    LengthUnits.fathom,
+    LengthUnit.fathom,
     6 * _footToMetre,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'fermi',
     createSymbol(
       const [
-        SymbolParts.fermi,
+        SymbolPart.fermi,
       ],
     ),
-    LengthUnits.fermi,
+    LengthUnit.fermi,
     pow(10, -15),
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'foot',
     createSymbol(
       const [
-        SymbolParts.foot,
+        SymbolPart.foot,
       ],
     ),
-    LengthUnits.foot,
+    LengthUnit.foot,
     _footToMetre,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'foot',
     createSymbol(
       const [
-        SymbolParts.foot,
+        SymbolPart.foot,
       ],
     ),
-    LengthUnits.foot_usSurvey,
+    LengthUnit.foot_usSurvey,
     1200 / 3937,
-    system: unitSystem[UnitSystems.usSurvey],
+    system: unitSystem[UnitSystem.usSurvey],
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'furlong',
     createSymbol(
       const [
-        SymbolParts.furlong,
+        SymbolPart.furlong,
       ],
     ),
-    LengthUnits.furlong,
+    LengthUnit.furlong,
     _mileToMetre / 8,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'hand',
     createSymbol(
       const [
-        SymbolParts.hand,
+        SymbolPart.hand,
       ],
     ),
-    LengthUnits.hand,
+    LengthUnit.hand,
     4 * _inchToMetre,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'inch',
     createSymbol(
       const [
-        SymbolParts.inch,
+        SymbolPart.inch,
       ],
     ),
-    LengthUnits.inch,
+    LengthUnit.inch,
     _inchToMetre,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'league',
     createSymbol(
       const [
-        SymbolParts.league,
+        SymbolPart.league,
       ],
     ),
-    LengthUnits.league,
+    LengthUnit.league,
     3 * _mileToMetre,
-    system: unitSystem[UnitSystems.land],
+    system: unitSystem[UnitSystem.land],
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'light-day',
     createSymbol(
       const [
-        SymbolParts.lightDay,
+        SymbolPart.lightDay,
       ],
     ),
-    LengthUnits.lightDay,
+    LengthUnit.lightDay,
     2.59020683712 * pow(10, 13),
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'light-hour',
     createSymbol(
       const [
-        SymbolParts.lightHour,
+        SymbolPart.lightHour,
       ],
     ),
-    LengthUnits.lightHour,
+    LengthUnit.lightHour,
     1.0792528488 * pow(10, 12),
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'light-minute',
     createSymbol(
       const [
-        SymbolParts.lightMinute,
+        SymbolPart.lightMinute,
       ],
     ),
-    LengthUnits.lightMinute,
+    LengthUnit.lightMinute,
     1.798754748 * pow(10, 10),
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'light-second',
     createSymbol(
       const [
-        SymbolParts.lightSecond,
+        SymbolPart.lightSecond,
       ],
     ),
-    LengthUnits.lightSecond,
+    LengthUnit.lightSecond,
     299792458,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'link',
     createSymbol(
       const [
-        SymbolParts.link,
+        SymbolPart.link,
       ],
     ),
-    LengthUnits.link,
+    LengthUnit.link,
     (66 * _footToMetre) / 100,
-    system: unitSystem[UnitSystems.gunter],
+    system: unitSystem[UnitSystem.gunter],
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'microinch',
     createSymbol(
       const [
-        SymbolParts.micro,
-        SymbolParts.inch,
+        SymbolPart.micro,
+        SymbolPart.inch,
       ],
     ),
-    LengthUnits.microInch,
+    LengthUnit.microInch,
     _inchToMetre * pow(10, -6),
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'micron',
     createSymbol(
       const [
-        SymbolParts.micro,
+        SymbolPart.micro,
       ],
     ),
-    LengthUnits.micron,
+    LengthUnit.micron,
     pow(10, -6),
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'mile',
     createSymbol(
       const [
-        SymbolParts.mile,
+        SymbolPart.mile,
       ],
     ),
-    LengthUnits.mile,
+    LengthUnit.mile,
     _mileToMetre,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'nautical league',
     createSymbol(
       const [
-        SymbolParts.lN,
-        SymbolParts.lL,
+        SymbolPart.lN,
+        SymbolPart.lL,
       ],
     ),
-    LengthUnits.nauticalLeague,
+    LengthUnit.nauticalLeague,
     3 * _nauticalMileToMetre,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'nautical mile',
     createSymbol(
       const [
-        SymbolParts.nauticalMile,
+        SymbolPart.nauticalMile,
       ],
     ),
-    LengthUnits.nauticalMile,
+    LengthUnit.nauticalMile,
     _nauticalMileToMetre,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'pica',
     createSymbol(
       const [
-        SymbolParts.pica,
+        SymbolPart.pica,
       ],
     ),
-    LengthUnits.pica,
+    LengthUnit.pica,
     _inchToMetre / 6,
-    system: unitSystem[UnitSystems.typographic],
+    system: unitSystem[UnitSystem.typographic],
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'planck length',
     createSymbol(
       const [
-        SymbolParts.planck,
+        SymbolPart.planck,
       ],
     ),
-    LengthUnits.planckLength,
+    LengthUnit.planckLength,
     1.616255 * pow(10, -35),
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'point',
     createSymbol(
       const [
-        SymbolParts.point,
+        SymbolPart.point,
       ],
     ),
-    LengthUnits.point,
+    LengthUnit.point,
     _inchToMetre / 72,
-    system: unitSystem[UnitSystems.typographic],
+    system: unitSystem[UnitSystem.typographic],
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'pole',
     createSymbol(
       const [
-        SymbolParts.pole,
+        SymbolPart.pole,
       ],
     ),
-    LengthUnits.pole,
+    LengthUnit.pole,
     16.5 * _footToMetre,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'rod',
     createSymbol(
       const [
-        SymbolParts.rod,
+        SymbolPart.rod,
       ],
     ),
-    LengthUnits.rod,
+    LengthUnit.rod,
     16.5 * _footToMetre,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'thousand of an inch',
     createSymbol(
       const [
-        SymbolParts.thousandOfAnInch,
+        SymbolPart.thousandOfAnInch,
       ],
     ),
-    LengthUnits.thousandOfAnInch,
+    LengthUnit.thousandOfAnInch,
     _inchToMetre / 1000,
   ),
-  Unit<LengthUnits>(
+  Unit<LengthUnit>(
     'yard',
     createSymbol(
       const [
-        SymbolParts.yard,
+        SymbolPart.yard,
       ],
     ),
-    LengthUnits.yard,
+    LengthUnit.yard,
     3 * _footToMetre,
   ),
 };

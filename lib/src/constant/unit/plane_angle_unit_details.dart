@@ -1,7 +1,7 @@
 import 'dart:math' show pi;
 
-import '../../enum/plane_angle_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/plane_angle_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 
@@ -9,78 +9,78 @@ const _degreeToRadian = 2 * pi / 360;
 
 // plane angle unit details
 final planeAngleUnitDetails = {
-  Unit<PlaneAngleUnits>(
+  Unit<PlaneAngleUnit>(
     'degree',
     createSymbol(
       const [
-        SymbolParts.superscriptZero,
+        SymbolPart.superscriptZero,
       ],
     ),
-    PlaneAngleUnits.degree,
+    PlaneAngleUnit.degree,
     _degreeToRadian,
   ),
-  Unit<PlaneAngleUnits>(
+  Unit<PlaneAngleUnit>(
     'gradian',
     createSymbol(
       const [
-        SymbolParts.lG,
-        SymbolParts.lR,
-        SymbolParts.lA,
-        SymbolParts.lD,
+        SymbolPart.lG,
+        SymbolPart.lR,
+        SymbolPart.lA,
+        SymbolPart.lD,
       ],
     ),
-    PlaneAngleUnits.gradian,
+    PlaneAngleUnit.gradian,
     2 * pi / 400,
   ),
-  Unit<PlaneAngleUnits>(
+  Unit<PlaneAngleUnit>(
     'milliradian',
     createSymbol(
       const [
-        SymbolParts.milli,
-        SymbolParts.radian,
+        SymbolPart.milli,
+        SymbolPart.radian,
       ],
     ),
-    PlaneAngleUnits.milliRadian,
+    PlaneAngleUnit.milliRadian,
     .001,
   ),
-  Unit<PlaneAngleUnits>(
+  Unit<PlaneAngleUnit>(
     'minute of arc',
     createSymbol(
       const [
-        SymbolParts.singleQuote,
+        SymbolPart.singleQuote,
       ],
     ),
-    PlaneAngleUnits.minuteOfArc,
+    PlaneAngleUnit.minuteOfArc,
     _degreeToRadian / 60,
   ),
-  Unit<PlaneAngleUnits>(
+  Unit<PlaneAngleUnit>(
     'radian',
     createSymbol(
       const [
-        SymbolParts.radian,
+        SymbolPart.radian,
       ],
     ),
-    PlaneAngleUnits.radian,
+    PlaneAngleUnit.radian,
     1,
   ),
-  Unit<PlaneAngleUnits>(
+  Unit<PlaneAngleUnit>(
     'second of arc',
     createSymbol(
       const [
-        SymbolParts.doubleQuote,
+        SymbolPart.doubleQuote,
       ],
     ),
-    PlaneAngleUnits.secondOfArc,
+    PlaneAngleUnit.secondOfArc,
     _degreeToRadian / 3600,
   ),
-  Unit<PlaneAngleUnits>(
+  Unit<PlaneAngleUnit>(
     'turn',
     createSymbol(
       const [
-        SymbolParts.tau,
+        SymbolPart.tau,
       ],
     ),
-    PlaneAngleUnits.turn,
+    PlaneAngleUnit.turn,
     2 * pi,
   ),
 };

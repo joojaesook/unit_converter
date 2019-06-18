@@ -1,407 +1,406 @@
-import '../../enum/area_units.dart';
+import '../../enum/area_unit.dart';
 import '../../enum/conversion_type.dart';
-import '../../enum/mass_per_area_units.dart';
-import '../../enum/mass_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/mass_per_area_unit.dart';
+import '../../enum/mass_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/unit_system.dart';
 
-final _acreToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnits.acre);
+final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
 final _hectareToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnits.hectare);
+    conversionFactor(ConversionType.area, AreaUnit.hectare);
 final _squareMileToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnits.squareMile);
+    conversionFactor(ConversionType.area, AreaUnit.squareMile);
 final _squareYardToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnits.squareYard);
+    conversionFactor(ConversionType.area, AreaUnit.squareYard);
 
 final _longTonneToKiloGram =
-    conversionFactor(ConversionType.mass, MassUnits.longTonne);
+    conversionFactor(ConversionType.mass, MassUnit.longTonne);
 final _shortTonneToKiloGram =
-    conversionFactor(ConversionType.mass, MassUnits.shortTonne);
-final _poundToKiloGram = conversionFactor(ConversionType.mass, MassUnits.pound);
-final _tonneToKiloGram = conversionFactor(ConversionType.mass, MassUnits.tonne);
+    conversionFactor(ConversionType.mass, MassUnit.shortTonne);
+final _poundToKiloGram = conversionFactor(ConversionType.mass, MassUnit.pound);
+final _tonneToKiloGram = conversionFactor(ConversionType.mass, MassUnit.tonne);
 
 // mass per area unit details
 final massPerAreaUnitDetails = {
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'kilogram per acre',
     createSymbol(
       const [
-        SymbolParts.kilo,
-        SymbolParts.gram,
-        SymbolParts.forwardSlash,
-        SymbolParts.acre,
+        SymbolPart.kilo,
+        SymbolPart.gram,
+        SymbolPart.forwardSlash,
+        SymbolPart.acre,
       ],
     ),
-    MassPerAreaUnits.kiloGramPerAcre,
+    MassPerAreaUnit.kiloGramPerAcre,
     1 / _acreToSquareMetre,
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'kilogram per hectare',
     createSymbol(
       const [
-        SymbolParts.kilo,
-        SymbolParts.gram,
-        SymbolParts.forwardSlash,
-        SymbolParts.hectare,
+        SymbolPart.kilo,
+        SymbolPart.gram,
+        SymbolPart.forwardSlash,
+        SymbolPart.hectare,
       ],
     ),
-    MassPerAreaUnits.kiloGramPerHectare,
+    MassPerAreaUnit.kiloGramPerHectare,
     1 / _hectareToSquareMetre,
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'kilogram per square metre',
     createSymbol(
       const [
-        SymbolParts.kilo,
-        SymbolParts.gram,
-        SymbolParts.forwardSlash,
-        SymbolParts.metre,
-        SymbolParts.superscriptTwo,
+        SymbolPart.kilo,
+        SymbolPart.gram,
+        SymbolPart.forwardSlash,
+        SymbolPart.metre,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.kiloGramPerSquareMetre,
+    MassPerAreaUnit.kiloGramPerSquareMetre,
     1,
     americanName: 'kilogram per square meter',
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'kilogram per square mile',
     createSymbol(
       const [
-        SymbolParts.kilo,
-        SymbolParts.gram,
-        SymbolParts.forwardSlash,
-        SymbolParts.mile,
-        SymbolParts.superscriptTwo,
+        SymbolPart.kilo,
+        SymbolPart.gram,
+        SymbolPart.forwardSlash,
+        SymbolPart.mile,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.kiloGramPerSquareMile,
+    MassPerAreaUnit.kiloGramPerSquareMile,
     1 / _squareMileToSquareMetre,
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'kilogram per square yard',
     createSymbol(
       const [
-        SymbolParts.kilo,
-        SymbolParts.gram,
-        SymbolParts.forwardSlash,
-        SymbolParts.yard,
-        SymbolParts.superscriptTwo,
+        SymbolPart.kilo,
+        SymbolPart.gram,
+        SymbolPart.forwardSlash,
+        SymbolPart.yard,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.kiloGramPerSquareYard,
+    MassPerAreaUnit.kiloGramPerSquareYard,
     1 / _squareYardToSquareMetre,
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'long tonne per acre',
     createSymbol(
       const [
-        SymbolParts.long,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.acre,
+        SymbolPart.long,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.acre,
       ],
     ),
-    MassPerAreaUnits.longTonnePerAcre,
+    MassPerAreaUnit.longTonnePerAcre,
     _longTonneToKiloGram / _acreToSquareMetre,
     americanName: 'long ton per acre',
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'long tonne per hectare',
     createSymbol(
       const [
-        SymbolParts.long,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.hectare,
+        SymbolPart.long,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.hectare,
       ],
     ),
-    MassPerAreaUnits.longTonnePerHectare,
+    MassPerAreaUnit.longTonnePerHectare,
     _longTonneToKiloGram / _hectareToSquareMetre,
     americanName: 'long ton per hectare',
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'long tonne per square metre',
     createSymbol(
       const [
-        SymbolParts.long,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.metre,
-        SymbolParts.superscriptTwo,
+        SymbolPart.long,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.metre,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.longTonnePerSquareMetre,
+    MassPerAreaUnit.longTonnePerSquareMetre,
     _longTonneToKiloGram,
     americanName: 'long ton per square meter',
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'long tonne per square mile',
     createSymbol(
       const [
-        SymbolParts.long,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.mile,
-        SymbolParts.superscriptTwo,
+        SymbolPart.long,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.mile,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.longTonnePerSquareMile,
+    MassPerAreaUnit.longTonnePerSquareMile,
     _longTonneToKiloGram / _squareMileToSquareMetre,
     americanName: 'long ton per square mile',
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'long tonne per square yard',
     createSymbol(
       const [
-        SymbolParts.long,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.yard,
-        SymbolParts.superscriptTwo,
+        SymbolPart.long,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.yard,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.longTonnePerSquareYard,
+    MassPerAreaUnit.longTonnePerSquareYard,
     _longTonneToKiloGram / _squareYardToSquareMetre,
     americanName: 'long ton per square yard',
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'pound per acre',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.forwardSlash,
-        SymbolParts.acre,
+        SymbolPart.pound,
+        SymbolPart.forwardSlash,
+        SymbolPart.acre,
       ],
     ),
-    MassPerAreaUnits.poundPerAcre,
+    MassPerAreaUnit.poundPerAcre,
     _poundToKiloGram / _acreToSquareMetre,
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'pound per hectare',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.forwardSlash,
-        SymbolParts.hectare,
+        SymbolPart.pound,
+        SymbolPart.forwardSlash,
+        SymbolPart.hectare,
       ],
     ),
-    MassPerAreaUnits.poundPerHectare,
+    MassPerAreaUnit.poundPerHectare,
     _poundToKiloGram / _hectareToSquareMetre,
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'pound per square metre',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.forwardSlash,
-        SymbolParts.metre,
-        SymbolParts.superscriptTwo,
+        SymbolPart.pound,
+        SymbolPart.forwardSlash,
+        SymbolPart.metre,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.poundPerSquareMetre,
+    MassPerAreaUnit.poundPerSquareMetre,
     _poundToKiloGram,
     americanName: 'pound per square meter',
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'pound per square mile',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.forwardSlash,
-        SymbolParts.mile,
-        SymbolParts.superscriptTwo,
+        SymbolPart.pound,
+        SymbolPart.forwardSlash,
+        SymbolPart.mile,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.poundPerSquareMile,
+    MassPerAreaUnit.poundPerSquareMile,
     _poundToKiloGram / _squareMileToSquareMetre,
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'pound per square yard',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.forwardSlash,
-        SymbolParts.yard,
-        SymbolParts.superscriptTwo,
+        SymbolPart.pound,
+        SymbolPart.forwardSlash,
+        SymbolPart.yard,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.poundPerSquareYard,
+    MassPerAreaUnit.poundPerSquareYard,
     _poundToKiloGram / _squareYardToSquareMetre,
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'short tonne per acre',
     createSymbol(
       const [
-        SymbolParts.short,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.acre,
+        SymbolPart.short,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.acre,
       ],
     ),
-    MassPerAreaUnits.shortTonnePerAcre,
+    MassPerAreaUnit.shortTonnePerAcre,
     _shortTonneToKiloGram / _acreToSquareMetre,
     americanName: 'short ton per acre',
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'short tonne per hectare',
     createSymbol(
       const [
-        SymbolParts.short,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.hectare,
+        SymbolPart.short,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.hectare,
       ],
     ),
-    MassPerAreaUnits.shortTonnePerHectare,
+    MassPerAreaUnit.shortTonnePerHectare,
     _shortTonneToKiloGram / _hectareToSquareMetre,
     americanName: 'short ton per hectare',
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'short tonne per square metre',
     createSymbol(
       const [
-        SymbolParts.short,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.metre,
-        SymbolParts.superscriptTwo,
+        SymbolPart.short,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.metre,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.shortTonnePerSquareMetre,
+    MassPerAreaUnit.shortTonnePerSquareMetre,
     _shortTonneToKiloGram,
     americanName: 'short ton per square meter',
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'short tonne per square mile',
     createSymbol(
       const [
-        SymbolParts.short,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.mile,
-        SymbolParts.superscriptTwo,
+        SymbolPart.short,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.mile,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.shortTonnePerSquareMile,
+    MassPerAreaUnit.shortTonnePerSquareMile,
     _shortTonneToKiloGram / _squareMileToSquareMetre,
     americanName: 'short ton per square mile',
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'short tonne per square yard',
     createSymbol(
       const [
-        SymbolParts.short,
-        SymbolParts.space,
-        SymbolParts.lT,
-        SymbolParts.lN,
-        SymbolParts.forwardSlash,
-        SymbolParts.yard,
-        SymbolParts.superscriptTwo,
+        SymbolPart.short,
+        SymbolPart.space,
+        SymbolPart.lT,
+        SymbolPart.lN,
+        SymbolPart.forwardSlash,
+        SymbolPart.yard,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.shortTonnePerSquareYard,
+    MassPerAreaUnit.shortTonnePerSquareYard,
     _shortTonneToKiloGram / _squareYardToSquareMetre,
     americanName: 'short ton per square yard',
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'tonne per acre',
     createSymbol(
       const [
-        SymbolParts.tonne,
-        SymbolParts.forwardSlash,
-        SymbolParts.acre,
+        SymbolPart.tonne,
+        SymbolPart.forwardSlash,
+        SymbolPart.acre,
       ],
     ),
-    MassPerAreaUnits.tonnePerAcre,
+    MassPerAreaUnit.tonnePerAcre,
     _tonneToKiloGram / _acreToSquareMetre,
-    system: unitSystem[UnitSystems.metric],
+    system: unitSystem[UnitSystem.metric],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'tonne per hectare',
     createSymbol(
       const [
-        SymbolParts.tonne,
-        SymbolParts.forwardSlash,
-        SymbolParts.hectare,
+        SymbolPart.tonne,
+        SymbolPart.forwardSlash,
+        SymbolPart.hectare,
       ],
     ),
-    MassPerAreaUnits.tonnePerHectare,
+    MassPerAreaUnit.tonnePerHectare,
     _tonneToKiloGram / _hectareToSquareMetre,
-    system: unitSystem[UnitSystems.metric],
+    system: unitSystem[UnitSystem.metric],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'tonne per square metre',
     createSymbol(
       const [
-        SymbolParts.tonne,
-        SymbolParts.forwardSlash,
-        SymbolParts.metre,
-        SymbolParts.superscriptTwo,
+        SymbolPart.tonne,
+        SymbolPart.forwardSlash,
+        SymbolPart.metre,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.tonnePerSquareMetre,
+    MassPerAreaUnit.tonnePerSquareMetre,
     _tonneToKiloGram,
     americanName: 'tonne per square meter',
-    system: unitSystem[UnitSystems.metric],
+    system: unitSystem[UnitSystem.metric],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'tonne per square mile',
     createSymbol(
       const [
-        SymbolParts.tonne,
-        SymbolParts.forwardSlash,
-        SymbolParts.mile,
-        SymbolParts.superscriptTwo,
+        SymbolPart.tonne,
+        SymbolPart.forwardSlash,
+        SymbolPart.mile,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.tonnePerSquareMile,
+    MassPerAreaUnit.tonnePerSquareMile,
     _tonneToKiloGram / _squareMileToSquareMetre,
-    system: unitSystem[UnitSystems.metric],
+    system: unitSystem[UnitSystem.metric],
   ),
-  Unit<MassPerAreaUnits>(
+  Unit<MassPerAreaUnit>(
     'tonne per square yard',
     createSymbol(
       const [
-        SymbolParts.tonne,
-        SymbolParts.forwardSlash,
-        SymbolParts.yard,
-        SymbolParts.superscriptTwo,
+        SymbolPart.tonne,
+        SymbolPart.forwardSlash,
+        SymbolPart.yard,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    MassPerAreaUnits.tonnePerSquareYard,
+    MassPerAreaUnit.tonnePerSquareYard,
     _tonneToKiloGram / _squareYardToSquareMetre,
-    system: unitSystem[UnitSystems.metric],
+    system: unitSystem[UnitSystem.metric],
   ),
 };

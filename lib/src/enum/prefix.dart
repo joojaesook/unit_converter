@@ -1,6 +1,5 @@
 // Types of unit prefixes
 enum Prefix {
-  // angstrom,
   atto,
   binaryExa,
   binaryGiga,

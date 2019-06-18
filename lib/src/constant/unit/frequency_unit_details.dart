@@ -1,133 +1,133 @@
 import 'dart:math' show pow;
 
-import '../../enum/frequency_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/frequency_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __hertz variations
 final _hertzVariations = createUnitVariation(
-  FrequencyUnits.values,
-  FrequencyUnits.hertz,
+  FrequencyUnit.values,
+  FrequencyUnit.hertz,
   1,
   decimalPrefixes,
   namePostfix: 'hertz',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.hertz,
+      SymbolPart.hertz,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<FrequencyUnits>(
+  Unit<FrequencyUnit>(
     'degree per hour',
     createSymbol(
       const [
-        SymbolParts.superscriptZero,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.superscriptZero,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    FrequencyUnits.degreePerHour,
+    FrequencyUnit.degreePerHour,
     0.000000771604938272,
   ),
-  Unit<FrequencyUnits>(
+  Unit<FrequencyUnit>(
     'degree per minute',
     createSymbol(
       const [
-        SymbolParts.superscriptZero,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.superscriptZero,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    FrequencyUnits.degreePerMinute,
+    FrequencyUnit.degreePerMinute,
     4.6296296296296 * pow(10, -5),
   ),
-  Unit<FrequencyUnits>(
+  Unit<FrequencyUnit>(
     'degree per second',
     createSymbol(
       const [
-        SymbolParts.superscriptZero,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.superscriptZero,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    FrequencyUnits.degreePerSecond,
+    FrequencyUnit.degreePerSecond,
     0.00277777777777778,
   ),
-  Unit<FrequencyUnits>(
+  Unit<FrequencyUnit>(
     'radian per hour',
     createSymbol(
       const [
-        SymbolParts.radian,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.radian,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    FrequencyUnits.radianPerHour,
+    FrequencyUnit.radianPerHour,
     4.4209706414415 * pow(10, -5),
   ),
-  Unit<FrequencyUnits>(
+  Unit<FrequencyUnit>(
     'radian per minute',
     createSymbol(
       const [
-        SymbolParts.radian,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.radian,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    FrequencyUnits.radianPerMinute,
+    FrequencyUnit.radianPerMinute,
     0.00265258238486,
   ),
-  Unit<FrequencyUnits>(
+  Unit<FrequencyUnit>(
     'radian per second',
     createSymbol(
       const [
-        SymbolParts.radian,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.radian,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    FrequencyUnits.radianPerSecond,
+    FrequencyUnit.radianPerSecond,
     0.159154943091895000,
   ),
-  Unit<FrequencyUnits>(
+  Unit<FrequencyUnit>(
     'revolution per hour',
     createSymbol(
       const [
-        SymbolParts.revolution,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.revolution,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    FrequencyUnits.revolutionPerHour,
+    FrequencyUnit.revolutionPerHour,
     0.00027777777777778,
   ),
-  Unit<FrequencyUnits>(
+  Unit<FrequencyUnit>(
     'revolution per minute',
     createSymbol(
       const [
-        SymbolParts.revolution,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.revolution,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    FrequencyUnits.revolutionPerMinute,
+    FrequencyUnit.revolutionPerMinute,
     0.0166666666666667,
   ),
-  Unit<FrequencyUnits>(
+  Unit<FrequencyUnit>(
     'revolution per second',
     createSymbol(
       const [
-        SymbolParts.revolution,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.revolution,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    FrequencyUnits.revolutionPerSecond,
+    FrequencyUnit.revolutionPerSecond,
     1,
   ),
 };

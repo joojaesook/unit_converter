@@ -1,36 +1,36 @@
-import '../../enum/blood_glucose_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/blood_glucose_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 
 // blood gucose unit details
 final bloodGlucoseUnitDetails = {
-  Unit<BloodGlucoseUnits>(
+  Unit<BloodGlucoseUnit>(
     'milligram per decilitre',
     createSymbol(
       const [
-        SymbolParts.milli,
-        SymbolParts.gram,
-        SymbolParts.forwardSlash,
-        SymbolParts.deci,
-        SymbolParts.litre,
+        SymbolPart.milli,
+        SymbolPart.gram,
+        SymbolPart.forwardSlash,
+        SymbolPart.deci,
+        SymbolPart.litre,
       ],
     ),
-    BloodGlucoseUnits.milliGramPerDeciLitre,
+    BloodGlucoseUnit.milliGramPerDeciLitre,
     1,
     americanName: 'milligram per deciliter',
   ),
-  Unit<BloodGlucoseUnits>(
+  Unit<BloodGlucoseUnit>(
     'millimole per litre',
     createSymbol(
       const [
-        SymbolParts.milli,
-        SymbolParts.mole,
-        SymbolParts.forwardSlash,
-        SymbolParts.litre,
+        SymbolPart.milli,
+        SymbolPart.mole,
+        SymbolPart.forwardSlash,
+        SymbolPart.litre,
       ],
     ),
-    BloodGlucoseUnits.milliMolePerLitre,
+    BloodGlucoseUnit.milliMolePerLitre,
     18.01559,
     americanName: 'millimole per liter',
   ),

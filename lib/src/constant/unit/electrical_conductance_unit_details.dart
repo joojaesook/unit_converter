@@ -1,62 +1,62 @@
 import 'dart:math' show pow;
 
-import '../../enum/electrical_conductance_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/electrical_conductance_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __mho variations
 final _mhoVariations = createUnitVariation(
-  ElectricalConductanceUnits.values,
-  ElectricalConductanceUnits.mho,
+  ElectricalConductanceUnit.values,
+  ElectricalConductanceUnit.mho,
   1,
   decimalPrefixes,
   namePostfix: 'mho',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.mho,
+      SymbolPart.mho,
     ],
   ),
 );
 
 // __siemens variations
 final _siemensVariations = createUnitVariation(
-  ElectricalConductanceUnits.values,
-  ElectricalConductanceUnits.siemens,
+  ElectricalConductanceUnit.values,
+  ElectricalConductanceUnit.siemens,
   1,
   decimalPrefixes,
   namePostfix: 'siemens',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.siemens,
+      SymbolPart.siemens,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<ElectricalConductanceUnits>(
+  Unit<ElectricalConductanceUnit>(
     'abmho',
     createSymbol(
       const [
-        SymbolParts.ab,
-        SymbolParts.mho,
+        SymbolPart.ab,
+        SymbolPart.mho,
       ],
     ),
-    ElectricalConductanceUnits.abMho,
+    ElectricalConductanceUnit.abMho,
     pow(10, 9),
     variation: true,
   ),
-  Unit<ElectricalConductanceUnits>(
+  Unit<ElectricalConductanceUnit>(
     'absiemens',
     createSymbol(
       const [
-        SymbolParts.ab,
-        SymbolParts.siemens,
+        SymbolPart.ab,
+        SymbolPart.siemens,
       ],
     ),
-    ElectricalConductanceUnits.abSiemens,
+    ElectricalConductanceUnit.abSiemens,
     pow(10, 9),
     variation: true,
   ),

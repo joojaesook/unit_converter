@@ -1,31 +1,31 @@
 import 'dart:math' show pow;
 
 import '../../enum/conversion_type.dart';
-import '../../enum/length_units.dart';
-import '../../enum/luminance_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/length_unit.dart';
+import '../../enum/luminance_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // candela per square __metre variations
 final _candelaPerSquareMetreVariations = createUnitVariation(
-  LuminanceUnits.values,
-  LuminanceUnits.candelaPerSquareMetre,
+  LuminanceUnit.values,
+  LuminanceUnit.candelaPerSquareMetre,
   1,
   decimalPrefixes,
   namePrefix: 'candela per square ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
     [
-      SymbolParts.candela,
-      SymbolParts.forwardSlash,
+      SymbolPart.candela,
+      SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.superscriptTwo,
+      SymbolPart.metre,
+      SymbolPart.superscriptTwo,
     ],
   ),
   addAmericanName: true,
@@ -36,73 +36,73 @@ final _candelaPerSquareMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<LuminanceUnits>(
+  Unit<LuminanceUnit>(
     'candela per square foot',
     createSymbol(
       const [
-        SymbolParts.candela,
-        SymbolParts.forwardSlash,
-        SymbolParts.foot,
-        SymbolParts.superscriptTwo,
+        SymbolPart.candela,
+        SymbolPart.forwardSlash,
+        SymbolPart.foot,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareFoot,
+    LuminanceUnit.candelaPerSquareFoot,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.foot,
+        LengthUnit.foot,
       ),
       -2,
     ),
   ),
-  Unit<LuminanceUnits>(
+  Unit<LuminanceUnit>(
     'candela per square inch',
     createSymbol(
       const [
-        SymbolParts.candela,
-        SymbolParts.forwardSlash,
-        SymbolParts.inch,
-        SymbolParts.superscriptTwo,
+        SymbolPart.candela,
+        SymbolPart.forwardSlash,
+        SymbolPart.inch,
+        SymbolPart.superscriptTwo,
       ],
     ),
-    LuminanceUnits.candelaPerSquareInch,
+    LuminanceUnit.candelaPerSquareInch,
     pow(
       conversionFactor(
         ConversionType.length,
-        LengthUnits.inch,
+        LengthUnit.inch,
       ),
       -2,
     ),
   ),
-  Unit<LuminanceUnits>(
+  Unit<LuminanceUnit>(
     'foot-lambert',
     createSymbol(
       const [
-        SymbolParts.lF,
-        SymbolParts.lambert,
+        SymbolPart.lF,
+        SymbolPart.lambert,
       ],
     ),
-    LuminanceUnits.footLambert,
+    LuminanceUnit.footLambert,
     3.42625909964,
   ),
-  Unit<LuminanceUnits>(
+  Unit<LuminanceUnit>(
     'lambert',
     createSymbol(
       const [
-        SymbolParts.lambert,
+        SymbolPart.lambert,
       ],
     ),
-    LuminanceUnits.lambert,
+    LuminanceUnit.lambert,
     3183.09886184,
   ),
-  Unit<LuminanceUnits>(
+  Unit<LuminanceUnit>(
     'stilb',
     createSymbol(
       const [
-        SymbolParts.stilb,
+        SymbolPart.stilb,
       ],
     ),
-    LuminanceUnits.stilb,
+    LuminanceUnit.stilb,
     10000,
   ),
 };

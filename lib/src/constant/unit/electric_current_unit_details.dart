@@ -1,34 +1,34 @@
-import '../../enum/electric_current_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/electric_current_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __ampere variations
 final _ampereVariations = createUnitVariation(
-  ElectricCurrentUnits.values,
-  ElectricCurrentUnits.ampere,
+  ElectricCurrentUnit.values,
+  ElectricCurrentUnit.ampere,
   1,
   decimalPrefixes,
   namePostfix: 'ampere',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.ampere,
+      SymbolPart.ampere,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<ElectricCurrentUnits>(
+  Unit<ElectricCurrentUnit>(
     'abampere',
     createSymbol(
       const [
-        SymbolParts.ab,
-        SymbolParts.ampere,
+        SymbolPart.ab,
+        SymbolPart.ampere,
       ],
     ),
-    ElectricCurrentUnits.abAmpere,
+    ElectricCurrentUnit.abAmpere,
     10,
     variation: true,
   ),

@@ -1,18 +1,18 @@
 import 'dart:math' show pow;
 
-import '../constant/others/available_units.dart';
+import '../constant/others/available_unit.dart';
 import '../constant/others/prefix_name.dart';
 import '../constant/others/prefix_value.dart';
 import '../constant/others/symbol.dart';
 import '../constant/others/unit_system.dart';
 import '../enum/conversion_type.dart';
 import '../enum/prefix.dart';
-import '../enum/symbol_parts.dart';
-import '../enum/unit_systems.dart';
+import '../enum/symbol_part.dart';
+import '../enum/unit_system.dart';
 import '../model/unit.dart';
 
 // Create symbol for unit from the [symbolParts]
-String createSymbol(List<SymbolParts> symbolParts) {
+String createSymbol(List<SymbolPart> symbolParts) {
   String symbolName = '';
   if (symbolParts == null || symbolParts.isEmpty) {
     assert(false, 'symbolParts cannot be null or empty');
@@ -26,16 +26,9 @@ String createSymbol(List<SymbolParts> symbolParts) {
 
 // get conversion factor for unit [unit] from conversion type [type]
 double conversionFactor<T>(ConversionType conversionType, T unitType) {
-  return availableUnits[conversionType]
+  return availableUnit[conversionType]
       .firstWhere((unit) => unit.type == unitType)
       .conversionFactor;
-}
-
-double globalConvert(double value, double fromOffset, double toOffset) {
-  var result = value;
-  result *= fromOffset;
-  result /= toOffset;
-  return result;
 }
 
 T enumFromString<T>(Iterable<T> values, String value) {
@@ -57,7 +50,7 @@ Unit<T> createUnit<T>(
   double conversionFactor,
   bool addAmericanName,
   T type,
-  UnitSystems system, {
+  UnitSystem system, {
   String variationName = '',
   String variationSymbol = '',
   bool variation = false,
@@ -87,7 +80,7 @@ Set<Unit<T>> createUnitVariation<T>(
   String namePostfix = '',
   String symbolPrefix = '',
   String symbolPostfix = '',
-  UnitSystems system,
+  UnitSystem system,
   int powerOfVariationConversionFactor = 1,
   bool addAmericanName = false,
   String americanNamePrefix = '',
@@ -133,7 +126,7 @@ Set<Unit<T>> createUnitVariation<T>(
       variationName: variationName,
       variationSymbol: createSymbol(
         [
-          enumFromString(SymbolParts.values, variationName),
+          enumFromString(SymbolPart.values, variationName),
         ],
       ),
     );

@@ -1,7 +1,7 @@
 import 'dart:math' show pow;
 
-import '../../enum/force_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/force_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
@@ -11,96 +11,96 @@ const _poundForceToNewton = 4.4482216152605;
 
 // __gram force variations
 final _gramForceVariations = createUnitVariation(
-  ForceUnits.values,
-  ForceUnits.gramForce,
+  ForceUnit.values,
+  ForceUnit.gramForce,
   _gramForceToNewton,
   decimalPrefixes,
   namePostfix: 'gram-force',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.gram,
-      SymbolParts.force,
+      SymbolPart.gram,
+      SymbolPart.force,
     ],
   ),
 );
 
 // __newton variations
 final _newtonVariations = createUnitVariation(
-  ForceUnits.values,
-  ForceUnits.newton,
+  ForceUnit.values,
+  ForceUnit.newton,
   1,
   decimalPrefixes,
   namePostfix: 'newton',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.newton,
+      SymbolPart.newton,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<ForceUnits>(
+  Unit<ForceUnit>(
     'dyne',
     createSymbol(
       const [
-        SymbolParts.dyne,
+        SymbolPart.dyne,
       ],
     ),
-    ForceUnits.dyne,
+    ForceUnit.dyne,
     pow(10, -5),
   ),
-  Unit<ForceUnits>(
+  Unit<ForceUnit>(
     'kilopond',
     createSymbol(
       const [
-        SymbolParts.kilo,
-        SymbolParts.pond,
+        SymbolPart.kilo,
+        SymbolPart.pond,
       ],
     ),
-    ForceUnits.kilopond,
+    ForceUnit.kilopond,
     _gramForceToNewton * pow(10, 3),
   ),
-  Unit<ForceUnits>(
+  Unit<ForceUnit>(
     'kip',
     createSymbol(
       const [
-        SymbolParts.kip,
+        SymbolPart.kip,
       ],
     ),
-    ForceUnits.kip,
+    ForceUnit.kip,
     1000 * _poundForceToNewton,
   ),
-  Unit<ForceUnits>(
+  Unit<ForceUnit>(
     'ounce-force',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.force,
+        SymbolPart.ounce,
+        SymbolPart.force,
       ],
     ),
-    ForceUnits.ounceForce,
+    ForceUnit.ounceForce,
     _poundForceToNewton / 16,
   ),
-  Unit<ForceUnits>(
+  Unit<ForceUnit>(
     'pound-force',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.force,
+        SymbolPart.pound,
+        SymbolPart.force,
       ],
     ),
-    ForceUnits.poundForce,
+    ForceUnit.poundForce,
     _poundForceToNewton,
   ),
-  Unit<ForceUnits>(
+  Unit<ForceUnit>(
     'poundal',
     createSymbol(
       const [
-        SymbolParts.poundal,
+        SymbolPart.poundal,
       ],
     ),
-    ForceUnits.poundal,
+    ForceUnit.poundal,
     0.138254954376,
   ),
 };

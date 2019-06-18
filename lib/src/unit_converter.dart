@@ -1,374 +1,374 @@
 import 'converter/multiplication_based_converter.dart';
-import 'enum/acceleration_units.dart';
-import 'enum/area_units.dart';
-import 'enum/blood_cholesterol_units.dart';
-import 'enum/blood_glucose_units.dart';
-import 'enum/capacitance_units.dart';
+import 'enum/acceleration_unit.dart';
+import 'enum/area_unit.dart';
+import 'enum/blood_cholesterol_unit.dart';
+import 'enum/blood_glucose_unit.dart';
+import 'enum/capacitance_unit.dart';
 import 'enum/conversion_type.dart';
-import 'enum/data_rate_units.dart';
-import 'enum/data_units.dart';
-import 'enum/density_units.dart';
-import 'enum/dynamic_viscocity_units.dart';
-import 'enum/electric_charge_units.dart';
-import 'enum/electric_current_units.dart';
-import 'enum/electric_potential_units.dart';
-import 'enum/electrical_conductance_units.dart';
-import 'enum/electrical_resistance_units.dart';
-import 'enum/energy_units.dart';
-import 'enum/force_units.dart';
-import 'enum/frequency_units.dart';
-import 'enum/illuminance_units.dart';
-import 'enum/inductance_units.dart';
-import 'enum/kinematic_viscocity_units.dart';
-import 'enum/length_units.dart';
-import 'enum/luminance_units.dart';
-import 'enum/magnetic_field_intensity_units.dart';
-import 'enum/magnetic_flux_density_units.dart';
-import 'enum/magnetic_flux_units.dart';
-import 'enum/mass_flow_units.dart';
-import 'enum/mass_fraction_units.dart';
-import 'enum/mass_per_area_units.dart';
-import 'enum/mass_units.dart';
-import 'enum/plane_angle_units.dart';
-import 'enum/power_units.dart';
-import 'enum/pressure_units.dart';
-import 'enum/radioactivity_units.dart';
-import 'enum/speed_units.dart';
-import 'enum/time_units.dart';
-import 'enum/torque_units.dart';
-import 'enum/volume_flow_per_area_units.dart';
-import 'enum/volume_flow_units.dart';
-import 'enum/volume_per_area_units.dart';
-import 'enum/volume_units.dart';
-import 'enum/water_hardness_units.dart';
+import 'enum/data_rate_unit.dart';
+import 'enum/data_unit.dart';
+import 'enum/density_unit.dart';
+import 'enum/dynamic_viscocity_unit.dart';
+import 'enum/electric_charge_unit.dart';
+import 'enum/electric_current_unit.dart';
+import 'enum/electric_potential_unit.dart';
+import 'enum/electrical_conductance_unit.dart';
+import 'enum/electrical_resistance_unit.dart';
+import 'enum/energy_unit.dart';
+import 'enum/force_unit.dart';
+import 'enum/frequency_unit.dart';
+import 'enum/illuminance_unit.dart';
+import 'enum/inductance_unit.dart';
+import 'enum/kinematic_viscocity_unit.dart';
+import 'enum/length_unit.dart';
+import 'enum/luminance_unit.dart';
+import 'enum/magnetic_field_intensity_unit.dart';
+import 'enum/magnetic_flux_density_unit.dart';
+import 'enum/magnetic_flux_unit.dart';
+import 'enum/mass_flow_unit.dart';
+import 'enum/mass_fraction_unit.dart';
+import 'enum/mass_per_area_unit.dart';
+import 'enum/mass_unit.dart';
+import 'enum/plane_angle_unit.dart';
+import 'enum/power_unit.dart';
+import 'enum/pressure_unit.dart';
+import 'enum/radioactivity_unit.dart';
+import 'enum/speed_unit.dart';
+import 'enum/time_unit.dart';
+import 'enum/torque_unit.dart';
+import 'enum/volume_flow_per_area_unit.dart';
+import 'enum/volume_flow_unit.dart';
+import 'enum/volume_per_area_unit.dart';
+import 'enum/volume_unit.dart';
+import 'enum/water_hardness_unit.dart';
 
-export 'enum/acceleration_units.dart';
-export 'enum/area_units.dart';
-export 'enum/blood_cholesterol_units.dart';
-export 'enum/blood_glucose_units.dart';
-export 'enum/capacitance_units.dart';
-export 'enum/data_rate_units.dart';
-export 'enum/data_units.dart';
-export 'enum/density_units.dart';
-export 'enum/dynamic_viscocity_units.dart';
-export 'enum/electric_charge_units.dart';
-export 'enum/electric_current_units.dart';
-export 'enum/electric_potential_units.dart';
-export 'enum/electrical_conductance_units.dart';
-export 'enum/electrical_resistance_units.dart';
-export 'enum/energy_units.dart';
-export 'enum/force_units.dart';
-export 'enum/frequency_units.dart';
-export 'enum/illuminance_units.dart';
-export 'enum/inductance_units.dart';
-export 'enum/kinematic_viscocity_units.dart';
-export 'enum/length_units.dart';
-export 'enum/luminance_units.dart';
-export 'enum/magnetic_field_intensity_units.dart';
-export 'enum/magnetic_flux_density_units.dart';
-export 'enum/magnetic_flux_units.dart';
-export 'enum/mass_flow_units.dart';
-export 'enum/mass_fraction_units.dart';
-export 'enum/mass_per_area_units.dart';
-export 'enum/mass_units.dart';
-export 'enum/plane_angle_units.dart';
-export 'enum/power_units.dart';
-export 'enum/pressure_units.dart';
-export 'enum/radioactivity_units.dart';
-export 'enum/speed_units.dart';
-export 'enum/time_units.dart';
-export 'enum/torque_units.dart';
-export 'enum/volume_flow_per_area_units.dart';
-export 'enum/volume_flow_units.dart';
-export 'enum/volume_per_area_units.dart';
-export 'enum/volume_units.dart';
-export 'enum/water_hardness_units.dart';
+export 'enum/acceleration_unit.dart';
+export 'enum/area_unit.dart';
+export 'enum/blood_cholesterol_unit.dart';
+export 'enum/blood_glucose_unit.dart';
+export 'enum/capacitance_unit.dart';
+export 'enum/data_rate_unit.dart';
+export 'enum/data_unit.dart';
+export 'enum/density_unit.dart';
+export 'enum/dynamic_viscocity_unit.dart';
+export 'enum/electric_charge_unit.dart';
+export 'enum/electric_current_unit.dart';
+export 'enum/electric_potential_unit.dart';
+export 'enum/electrical_conductance_unit.dart';
+export 'enum/electrical_resistance_unit.dart';
+export 'enum/energy_unit.dart';
+export 'enum/force_unit.dart';
+export 'enum/frequency_unit.dart';
+export 'enum/illuminance_unit.dart';
+export 'enum/inductance_unit.dart';
+export 'enum/kinematic_viscocity_unit.dart';
+export 'enum/length_unit.dart';
+export 'enum/luminance_unit.dart';
+export 'enum/magnetic_field_intensity_unit.dart';
+export 'enum/magnetic_flux_density_unit.dart';
+export 'enum/magnetic_flux_unit.dart';
+export 'enum/mass_flow_unit.dart';
+export 'enum/mass_fraction_unit.dart';
+export 'enum/mass_per_area_unit.dart';
+export 'enum/mass_unit.dart';
+export 'enum/plane_angle_unit.dart';
+export 'enum/power_unit.dart';
+export 'enum/pressure_unit.dart';
+export 'enum/radioactivity_unit.dart';
+export 'enum/speed_unit.dart';
+export 'enum/time_unit.dart';
+export 'enum/torque_unit.dart';
+export 'enum/volume_flow_per_area_unit.dart';
+export 'enum/volume_flow_unit.dart';
+export 'enum/volume_per_area_unit.dart';
+export 'enum/volume_unit.dart';
+export 'enum/water_hardness_unit.dart';
 
 class UnitConverter {
   static MultiplicationBasedConverter acceleration() {
-    return MultiplicationBasedConverter<AccelerationUnits>(
+    return MultiplicationBasedConverter<AccelerationUnit>(
       ConversionType.acceleration,
-      AccelerationUnits.metrePerSecondSquared,
+      AccelerationUnit.metrePerSecondSquared,
     );
   }
 
   static MultiplicationBasedConverter area() {
-    return MultiplicationBasedConverter<AreaUnits>(
+    return MultiplicationBasedConverter<AreaUnit>(
       ConversionType.area,
-      AreaUnits.squareMetre,
+      AreaUnit.squareMetre,
     );
   }
 
   static MultiplicationBasedConverter bloodCholesterol() {
-    return MultiplicationBasedConverter<BloodCholesterolUnits>(
+    return MultiplicationBasedConverter<BloodCholesterolUnit>(
       ConversionType.bloodCholesterol,
-      BloodCholesterolUnits.milliGramPerDeciLitre,
+      BloodCholesterolUnit.milliGramPerDeciLitre,
     );
   }
 
   static MultiplicationBasedConverter bloodGlucose() {
-    return MultiplicationBasedConverter<BloodGlucoseUnits>(
+    return MultiplicationBasedConverter<BloodGlucoseUnit>(
       ConversionType.bloodGlucose,
-      BloodGlucoseUnits.milliGramPerDeciLitre,
+      BloodGlucoseUnit.milliGramPerDeciLitre,
     );
   }
 
   static MultiplicationBasedConverter capacitance() {
-    return MultiplicationBasedConverter<CapacitanceUnits>(
+    return MultiplicationBasedConverter<CapacitanceUnit>(
       ConversionType.capacitance,
-      CapacitanceUnits.farad,
+      CapacitanceUnit.farad,
     );
   }
 
   static MultiplicationBasedConverter data() {
-    return MultiplicationBasedConverter<DataUnits>(
+    return MultiplicationBasedConverter<DataUnit>(
       ConversionType.data,
-      DataUnits.bit,
+      DataUnit.bit,
     );
   }
 
   static MultiplicationBasedConverter dataRate() {
-    return MultiplicationBasedConverter<DataRateUnits>(
+    return MultiplicationBasedConverter<DataRateUnit>(
       ConversionType.dataRate,
-      DataRateUnits.bitPerSecond,
+      DataRateUnit.bitPerSecond,
     );
   }
 
   static MultiplicationBasedConverter density() {
-    return MultiplicationBasedConverter<DensityUnits>(
+    return MultiplicationBasedConverter<DensityUnit>(
       ConversionType.density,
-      DensityUnits.gramPerLitre,
+      DensityUnit.gramPerLitre,
     );
   }
 
   static MultiplicationBasedConverter dynamicViscocity() {
-    return MultiplicationBasedConverter<DynamicViscocityUnits>(
+    return MultiplicationBasedConverter<DynamicViscocityUnit>(
       ConversionType.dynamicViscocity,
-      DynamicViscocityUnits.pascalSecond,
+      DynamicViscocityUnit.pascalSecond,
     );
   }
 
   static MultiplicationBasedConverter electricalConductance() {
-    return MultiplicationBasedConverter<ElectricalConductanceUnits>(
+    return MultiplicationBasedConverter<ElectricalConductanceUnit>(
       ConversionType.electricalConductance,
-      ElectricalConductanceUnits.siemens,
+      ElectricalConductanceUnit.siemens,
     );
   }
 
   static MultiplicationBasedConverter electricalResistance() {
-    return MultiplicationBasedConverter<ElectricalResistanceUnits>(
+    return MultiplicationBasedConverter<ElectricalResistanceUnit>(
       ConversionType.electricalResistance,
-      ElectricalResistanceUnits.ohm,
+      ElectricalResistanceUnit.ohm,
     );
   }
 
   static MultiplicationBasedConverter electricCharge() {
-    return MultiplicationBasedConverter<ElectricChargeUnits>(
+    return MultiplicationBasedConverter<ElectricChargeUnit>(
       ConversionType.electricCharge,
-      ElectricChargeUnits.coulomb,
+      ElectricChargeUnit.coulomb,
     );
   }
 
   static MultiplicationBasedConverter electricCurrent() {
-    return MultiplicationBasedConverter<ElectricCurrentUnits>(
+    return MultiplicationBasedConverter<ElectricCurrentUnit>(
       ConversionType.electricCurrent,
-      ElectricCurrentUnits.ampere,
+      ElectricCurrentUnit.ampere,
     );
   }
 
   static MultiplicationBasedConverter electricPotential() {
-    return MultiplicationBasedConverter<ElectricPotentialUnits>(
+    return MultiplicationBasedConverter<ElectricPotentialUnit>(
       ConversionType.electricPotential,
-      ElectricPotentialUnits.volt,
+      ElectricPotentialUnit.volt,
     );
   }
 
   static MultiplicationBasedConverter energy() {
-    return MultiplicationBasedConverter<EnergyUnits>(
+    return MultiplicationBasedConverter<EnergyUnit>(
       ConversionType.energy,
-      EnergyUnits.joule,
+      EnergyUnit.joule,
     );
   }
 
   static MultiplicationBasedConverter force() {
-    return MultiplicationBasedConverter<ForceUnits>(
+    return MultiplicationBasedConverter<ForceUnit>(
       ConversionType.force,
-      ForceUnits.newton,
+      ForceUnit.newton,
     );
   }
 
   static MultiplicationBasedConverter frequency() {
-    return MultiplicationBasedConverter<FrequencyUnits>(
+    return MultiplicationBasedConverter<FrequencyUnit>(
       ConversionType.frequency,
-      FrequencyUnits.hertz,
+      FrequencyUnit.hertz,
     );
   }
 
   static MultiplicationBasedConverter illuminance() {
-    return MultiplicationBasedConverter<IlluminanceUnits>(
+    return MultiplicationBasedConverter<IlluminanceUnit>(
       ConversionType.illuminance,
-      IlluminanceUnits.lux,
+      IlluminanceUnit.lux,
     );
   }
 
   static MultiplicationBasedConverter inductance() {
-    return MultiplicationBasedConverter<InductanceUnits>(
+    return MultiplicationBasedConverter<InductanceUnit>(
       ConversionType.inductance,
-      InductanceUnits.henry,
+      InductanceUnit.henry,
     );
   }
 
   static MultiplicationBasedConverter kinematicViscocity() {
-    return MultiplicationBasedConverter<KinematicViscocityUnits>(
+    return MultiplicationBasedConverter<KinematicViscocityUnit>(
       ConversionType.kinematicViscocity,
-      KinematicViscocityUnits.squareMetrePerSecond,
+      KinematicViscocityUnit.squareMetrePerSecond,
     );
   }
 
   static MultiplicationBasedConverter length() {
-    return MultiplicationBasedConverter<LengthUnits>(
+    return MultiplicationBasedConverter<LengthUnit>(
       ConversionType.length,
-      LengthUnits.metre,
+      LengthUnit.metre,
     );
   }
 
   static MultiplicationBasedConverter luminance() {
-    return MultiplicationBasedConverter<LuminanceUnits>(
+    return MultiplicationBasedConverter<LuminanceUnit>(
       ConversionType.luminance,
-      LuminanceUnits.candelaPerSquareMetre,
+      LuminanceUnit.candelaPerSquareMetre,
     );
   }
 
   static MultiplicationBasedConverter magneticFieldIntensity() {
-    return MultiplicationBasedConverter<MagneticFieldIntensityUnits>(
+    return MultiplicationBasedConverter<MagneticFieldIntensityUnit>(
       ConversionType.magneticFieldIntensity,
-      MagneticFieldIntensityUnits.amperePerMetre,
+      MagneticFieldIntensityUnit.amperePerMetre,
     );
   }
 
   static MultiplicationBasedConverter magneticFlux() {
-    return MultiplicationBasedConverter<MagneticFluxUnits>(
+    return MultiplicationBasedConverter<MagneticFluxUnit>(
       ConversionType.magneticFlux,
-      MagneticFluxUnits.weber,
+      MagneticFluxUnit.weber,
     );
   }
 
   static MultiplicationBasedConverter magneticFluxDensity() {
-    return MultiplicationBasedConverter<MagneticFluxDensityUnits>(
+    return MultiplicationBasedConverter<MagneticFluxDensityUnit>(
       ConversionType.magneticFluxDensity,
-      MagneticFluxDensityUnits.tesla,
+      MagneticFluxDensityUnit.tesla,
     );
   }
 
   static MultiplicationBasedConverter mass() {
-    return MultiplicationBasedConverter<MassUnits>(
+    return MultiplicationBasedConverter<MassUnit>(
       ConversionType.mass,
-      MassUnits.kiloGram,
+      MassUnit.kiloGram,
     );
   }
 
   static MultiplicationBasedConverter massFlow() {
-    return MultiplicationBasedConverter<MassFlowUnits>(
+    return MultiplicationBasedConverter<MassFlowUnit>(
       ConversionType.massFlow,
-      MassFlowUnits.kiloGramPerSecond,
+      MassFlowUnit.kiloGramPerSecond,
     );
   }
 
   static MultiplicationBasedConverter massFraction() {
-    return MultiplicationBasedConverter<MassFractionUnits>(
+    return MultiplicationBasedConverter<MassFractionUnit>(
       ConversionType.massFraction,
-      MassFractionUnits.gramPerGram,
+      MassFractionUnit.gramPerGram,
     );
   }
 
   static MultiplicationBasedConverter massPerArea() {
-    return MultiplicationBasedConverter<MassPerAreaUnits>(
+    return MultiplicationBasedConverter<MassPerAreaUnit>(
       ConversionType.massPerArea,
-      MassPerAreaUnits.kiloGramPerSquareMetre,
+      MassPerAreaUnit.kiloGramPerSquareMetre,
     );
   }
 
   static MultiplicationBasedConverter planeAngle() {
-    return MultiplicationBasedConverter<PlaneAngleUnits>(
+    return MultiplicationBasedConverter<PlaneAngleUnit>(
       ConversionType.planeAngle,
-      PlaneAngleUnits.radian,
+      PlaneAngleUnit.radian,
     );
   }
 
   static MultiplicationBasedConverter power() {
-    return MultiplicationBasedConverter<PowerUnits>(
+    return MultiplicationBasedConverter<PowerUnit>(
       ConversionType.power,
-      PowerUnits.joulePerSecond,
+      PowerUnit.joulePerSecond,
     );
   }
 
   static MultiplicationBasedConverter pressure() {
-    return MultiplicationBasedConverter<PressureUnits>(
+    return MultiplicationBasedConverter<PressureUnit>(
       ConversionType.pressure,
-      PressureUnits.pascal,
+      PressureUnit.pascal,
     );
   }
 
   static MultiplicationBasedConverter radioactivity() {
-    return MultiplicationBasedConverter<RadioactivityUnits>(
+    return MultiplicationBasedConverter<RadioactivityUnit>(
       ConversionType.radioactivity,
-      RadioactivityUnits.becquerel,
+      RadioactivityUnit.becquerel,
     );
   }
 
   static MultiplicationBasedConverter speed() {
-    return MultiplicationBasedConverter<SpeedUnits>(
+    return MultiplicationBasedConverter<SpeedUnit>(
       ConversionType.speed,
-      SpeedUnits.metrePerSecond,
+      SpeedUnit.metrePerSecond,
     );
   }
 
   static MultiplicationBasedConverter time() {
-    return MultiplicationBasedConverter<TimeUnits>(
+    return MultiplicationBasedConverter<TimeUnit>(
       ConversionType.time,
-      TimeUnits.second,
+      TimeUnit.second,
     );
   }
 
   static MultiplicationBasedConverter torque() {
-    return MultiplicationBasedConverter<TorqueUnits>(
+    return MultiplicationBasedConverter<TorqueUnit>(
       ConversionType.torque,
-      TorqueUnits.newtonMetre,
+      TorqueUnit.newtonMetre,
     );
   }
 
   static MultiplicationBasedConverter volume() {
-    return MultiplicationBasedConverter<VolumeUnits>(
+    return MultiplicationBasedConverter<VolumeUnit>(
       ConversionType.volume,
-      VolumeUnits.cubicMetre,
+      VolumeUnit.cubicMetre,
     );
   }
 
   static MultiplicationBasedConverter volumeFlow() {
-    return MultiplicationBasedConverter<VolumeFlowUnits>(
+    return MultiplicationBasedConverter<VolumeFlowUnit>(
       ConversionType.volumeFlow,
-      VolumeFlowUnits.cubicMetrePerSecond,
+      VolumeFlowUnit.cubicMetrePerSecond,
     );
   }
 
   static MultiplicationBasedConverter volumeFlowPerArea() {
-    return MultiplicationBasedConverter<VolumeFlowPerAreaUnits>(
+    return MultiplicationBasedConverter<VolumeFlowPerAreaUnit>(
       ConversionType.volumeFlowPerArea,
-      VolumeFlowPerAreaUnits.cubicMetrePerSecondPerSquareMetre,
+      VolumeFlowPerAreaUnit.cubicMetrePerSecondPerSquareMetre,
     );
   }
 
   static MultiplicationBasedConverter volumePerArea() {
-    return MultiplicationBasedConverter<VolumePerAreaUnits>(
+    return MultiplicationBasedConverter<VolumePerAreaUnit>(
       ConversionType.volumePerArea,
-      VolumePerAreaUnits.cubicMetrePerSquareMetre,
+      VolumePerAreaUnit.cubicMetrePerSquareMetre,
     );
   }
 
   static MultiplicationBasedConverter waterHardness() {
-    return MultiplicationBasedConverter<WaterHardnessUnits>(
+    return MultiplicationBasedConverter<WaterHardnessUnit>(
       ConversionType.waterHardness,
-      WaterHardnessUnits.milliMolePerLitre_CaCO3,
+      WaterHardnessUnit.milliMolePerLitre_CaCO3,
     );
   }
 }

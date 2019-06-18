@@ -1,36 +1,36 @@
 import 'dart:math' show pow;
 
-import '../../enum/electric_potential_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/electric_potential_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __volt variations
 final _voltVariations = createUnitVariation(
-  ElectricPotentialUnits.values,
-  ElectricPotentialUnits.volt,
+  ElectricPotentialUnit.values,
+  ElectricPotentialUnit.volt,
   1,
   decimalPrefixes,
   namePostfix: 'volt',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.volt,
+      SymbolPart.volt,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<ElectricPotentialUnits>(
+  Unit<ElectricPotentialUnit>(
     'abvolt',
     createSymbol(
       const [
-        SymbolParts.ab,
-        SymbolParts.volt,
+        SymbolPart.ab,
+        SymbolPart.volt,
       ],
     ),
-    ElectricPotentialUnits.abVolt,
+    ElectricPotentialUnit.abVolt,
     pow(10, -8),
     variation: true,
   ),

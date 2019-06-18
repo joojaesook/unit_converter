@@ -1,21 +1,21 @@
-import '../../enum/magnetic_field_intensity_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/magnetic_field_intensity_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __ampere per metre variations
 final _amperePerMetreVariations = createUnitVariation(
-  MagneticFieldIntensityUnits.values,
-  MagneticFieldIntensityUnits.amperePerMetre,
+  MagneticFieldIntensityUnit.values,
+  MagneticFieldIntensityUnit.amperePerMetre,
   1,
   decimalPrefixes,
   namePostfix: 'ampere per metre',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.ampere,
-      SymbolParts.forwardSlash,
-      SymbolParts.metre,
+      SymbolPart.ampere,
+      SymbolPart.forwardSlash,
+      SymbolPart.metre,
     ],
   ),
   addAmericanName: true,
@@ -24,14 +24,14 @@ final _amperePerMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<MagneticFieldIntensityUnits>(
+  Unit<MagneticFieldIntensityUnit>(
     'oersted',
     createSymbol(
       const [
-        SymbolParts.oersted,
+        SymbolPart.oersted,
       ],
     ),
-    MagneticFieldIntensityUnits.oersted,
+    MagneticFieldIntensityUnit.oersted,
     79.5774715,
   ),
 };

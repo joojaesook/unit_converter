@@ -1,36 +1,36 @@
 import 'dart:math' show pow;
 
-import '../../enum/inductance_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/inductance_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __henry variations
 final _henryVariations = createUnitVariation(
-  InductanceUnits.values,
-  InductanceUnits.henry,
+  InductanceUnit.values,
+  InductanceUnit.henry,
   1,
   decimalPrefixes,
   namePostfix: 'henry',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.henry,
+      SymbolPart.henry,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<InductanceUnits>(
+  Unit<InductanceUnit>(
     'abhenry',
     createSymbol(
       const [
-        SymbolParts.ab,
-        SymbolParts.henry,
+        SymbolPart.ab,
+        SymbolPart.henry,
       ],
     ),
-    InductanceUnits.abHenry,
+    InductanceUnit.abHenry,
     pow(10, -9),
     variation: true,
   ),

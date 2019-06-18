@@ -1,8 +1,8 @@
 import 'dart:math' show pow;
 
-import '../../enum/energy_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/energy_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
@@ -15,311 +15,311 @@ final _decaThermToJoule = 10 * _thermToJoule_ec;
 
 // __calorie variations
 final _calorieVariations = createUnitVariation(
-  EnergyUnits.values,
-  EnergyUnits.calorie,
+  EnergyUnit.values,
+  EnergyUnit.calorie,
   4.184,
   decimalPrefixes,
   namePostfix: 'calorie',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.calorie,
+      SymbolPart.calorie,
     ],
   ),
 );
 
 // __calorie 15 degree C variations
 final _calorieVariations_15DegreeC = createUnitVariation(
-  EnergyUnits.values,
-  EnergyUnits.calorie_15DegreeC,
+  EnergyUnit.values,
+  EnergyUnit.calorie_15DegreeC,
   4.1855,
   decimalPrefixes,
   namePostfix: 'calorie',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.calorie,
+      SymbolPart.calorie,
     ],
   ),
-  system: UnitSystems.degree15C,
+  system: UnitSystem.degree15C,
 );
 
 // __calorie International Steam Table variations
 final _calorieVariations_intlSteamTable = createUnitVariation(
-  EnergyUnits.values,
-  EnergyUnits.calorie_intlSteamTable,
+  EnergyUnit.values,
+  EnergyUnit.calorie_intlSteamTable,
   4.1868,
   decimalPrefixes,
   namePostfix: 'calorie',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.calorie,
+      SymbolPart.calorie,
     ],
   ),
-  system: UnitSystems.intlSteamTable,
+  system: UnitSystem.intlSteamTable,
 );
 
 // __electron volt variations
 final _electronVoltVariations = createUnitVariation(
-  EnergyUnits.values,
-  EnergyUnits.electronVolt,
+  EnergyUnit.values,
+  EnergyUnit.electronVolt,
   1.6021766 * pow(10, -19),
   decimalPrefixes,
   namePostfix: 'electron volt',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.electronVolt,
+      SymbolPart.electronVolt,
     ],
   ),
 );
 
 // __joule variations
 final _jouleVariations = createUnitVariation(
-  EnergyUnits.values,
-  EnergyUnits.joule,
+  EnergyUnit.values,
+  EnergyUnit.joule,
   1,
   decimalPrefixes,
   namePostfix: 'joule',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.joule,
+      SymbolPart.joule,
     ],
   ),
 );
 
 // __tonne variations
 final _tonneVariations = createUnitVariation(
-  EnergyUnits.values,
-  EnergyUnits.tonne,
+  EnergyUnit.values,
+  EnergyUnit.tonne,
   4.184 * pow(10, 9),
   decimalPrefixes,
   namePostfix: 'tonne',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.tonne,
+      SymbolPart.tonne,
     ],
   ),
-  system: UnitSystems.tnt,
+  system: UnitSystem.tnt,
   addAmericanName: true,
   americanNamePostfix: 'ton',
 );
 
 // __watt hour variations
 final _wattHourVariations = createUnitVariation(
-  EnergyUnits.values,
-  EnergyUnits.wattHour,
+  EnergyUnit.values,
+  EnergyUnit.wattHour,
   3600,
   decimalPrefixes,
   namePostfix: 'watt hour',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.watt,
-      SymbolParts.space,
-      SymbolParts.lH,
+      SymbolPart.watt,
+      SymbolPart.space,
+      SymbolPart.lH,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'British thermal unit',
     createSymbol(
       const [
-        SymbolParts.britishThermalUnit,
+        SymbolPart.britishThermalUnit,
       ],
     ),
-    EnergyUnits.britishThermalUnit,
+    EnergyUnit.britishThermalUnit,
     1054.350264,
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'British thermal unit',
     createSymbol(
       const [
-        SymbolParts.britishThermalUnit,
+        SymbolPart.britishThermalUnit,
       ],
     ),
-    EnergyUnits.britishThermalUnit_15DegreeC,
+    EnergyUnit.britishThermalUnit_15DegreeC,
     _britishThermalUnitToJoule_15DegreeC,
-    system: unitSystem[UnitSystems.degree15C],
+    system: unitSystem[UnitSystem.degree15C],
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'British thermal unit',
     createSymbol(
       const [
-        SymbolParts.britishThermalUnit,
+        SymbolPart.britishThermalUnit,
       ],
     ),
-    EnergyUnits.britishThermalUnit_intlSteamTable,
+    EnergyUnit.britishThermalUnit_intlSteamTable,
     _britishThermalUnitToJoule_intlSteamTable,
-    system: unitSystem[UnitSystems.intlSteamTable],
+    system: unitSystem[UnitSystem.intlSteamTable],
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'decatherm',
     createSymbol(
       const [
-        SymbolParts.decaTherm,
+        SymbolPart.decaTherm,
       ],
     ),
-    EnergyUnits.decaTherm_ec,
+    EnergyUnit.decaTherm_ec,
     _decaThermToJoule,
-    system: unitSystem[UnitSystems.ec],
+    system: unitSystem[UnitSystem.ec],
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'erg',
     createSymbol(
       const [
-        SymbolParts.lE,
-        SymbolParts.lR,
-        SymbolParts.lG,
+        SymbolPart.lE,
+        SymbolPart.lR,
+        SymbolPart.lG,
       ],
     ),
-    EnergyUnits.erg,
+    EnergyUnit.erg,
     pow(10, -7),
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'foot-pound force',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.space,
-        SymbolParts.pound,
-        SymbolParts.force,
+        SymbolPart.foot,
+        SymbolPart.space,
+        SymbolPart.pound,
+        SymbolPart.force,
       ],
     ),
-    EnergyUnits.footPoundForce,
+    EnergyUnit.footPoundForce,
     1.3558179483,
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'hartree',
     createSymbol(
       const [
-        SymbolParts.lH,
-        SymbolParts.lA,
+        SymbolPart.lH,
+        SymbolPart.lA,
       ],
     ),
-    EnergyUnits.hartree,
+    EnergyUnit.hartree,
     4.35974 * pow(10, -18),
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'million British thermal units',
     createSymbol(
       const [
-        SymbolParts.clM,
-        SymbolParts.clM,
-        SymbolParts.britishThermalUnit,
+        SymbolPart.clM,
+        SymbolPart.clM,
+        SymbolPart.britishThermalUnit,
       ],
     ),
-    EnergyUnits.millionBritishThermalUnits_intlSteamTable,
+    EnergyUnit.millionBritishThermalUnits_intlSteamTable,
     _britishThermalUnitToJoule_intlSteamTable * pow(10, 6),
-    system: unitSystem[UnitSystems.intlSteamTable],
+    system: unitSystem[UnitSystem.intlSteamTable],
     variation: true,
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'million decatherms',
     createSymbol(
       const [
-        SymbolParts.clM,
-        SymbolParts.clM,
-        SymbolParts.decaTherm,
+        SymbolPart.clM,
+        SymbolPart.clM,
+        SymbolPart.decaTherm,
       ],
     ),
-    EnergyUnits.millionDecaTherms,
+    EnergyUnit.millionDecaTherms,
     _decaThermToJoule * pow(10, 6),
-    system: unitSystem[UnitSystems.ec],
+    system: unitSystem[UnitSystem.ec],
     variation: true,
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'quad',
     createSymbol(
       const [
-        SymbolParts.lQ,
-        SymbolParts.lU,
-        SymbolParts.lA,
-        SymbolParts.lD,
+        SymbolPart.lQ,
+        SymbolPart.lU,
+        SymbolPart.lA,
+        SymbolPart.lD,
       ],
     ),
-    EnergyUnits.quad,
+    EnergyUnit.quad,
     _britishThermalUnitToJoule_intlSteamTable * pow(10, 15),
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'therm',
     createSymbol(
       const [
-        SymbolParts.therm,
+        SymbolPart.therm,
       ],
     ),
-    EnergyUnits.therm_ec,
+    EnergyUnit.therm_ec,
     _thermToJoule_ec,
-    system: unitSystem[UnitSystems.ec],
+    system: unitSystem[UnitSystem.ec],
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'therm',
     createSymbol(
       const [
-        SymbolParts.therm,
+        SymbolPart.therm,
       ],
     ),
-    EnergyUnits.therm_Imperial,
+    EnergyUnit.therm_Imperial,
     105505585.257348,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'therm',
     createSymbol(
       const [
-        SymbolParts.therm,
+        SymbolPart.therm,
       ],
     ),
-    EnergyUnits.therm_us,
+    EnergyUnit.therm_us,
     100000 * _britishThermalUnitToJoule_15DegreeC,
-    system: unitSystem[UnitSystems.us],
+    system: unitSystem[UnitSystem.us],
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'thermie',
     createSymbol(
       const [
-        SymbolParts.lT,
-        SymbolParts.lH,
+        SymbolPart.lT,
+        SymbolPart.lH,
       ],
     ),
-    EnergyUnits.thermie,
+    EnergyUnit.thermie,
     4186800,
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'thousand British thermal units',
     createSymbol(
       const [
-        SymbolParts.clM,
-        SymbolParts.britishThermalUnit,
+        SymbolPart.clM,
+        SymbolPart.britishThermalUnit,
       ],
     ),
-    EnergyUnits.thousandBritishThermalUnits_intlSteamTable,
+    EnergyUnit.thousandBritishThermalUnits_intlSteamTable,
     _britishThermalUnitToJoule_intlSteamTable * pow(10, 3),
-    system: unitSystem[UnitSystems.intlSteamTable],
+    system: unitSystem[UnitSystem.intlSteamTable],
     variation: true,
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'thousand decatherms',
     createSymbol(
       const [
-        SymbolParts.clM,
-        SymbolParts.decaTherm,
+        SymbolPart.clM,
+        SymbolPart.decaTherm,
       ],
     ),
-    EnergyUnits.thousandDecaTherms,
+    EnergyUnit.thousandDecaTherms,
     _decaThermToJoule * pow(10, 3),
-    system: unitSystem[UnitSystems.ec],
+    system: unitSystem[UnitSystem.ec],
     variation: true,
   ),
-  Unit<EnergyUnits>(
+  Unit<EnergyUnit>(
     'tonne of oil equivalent',
     createSymbol(
       const [
-        SymbolParts.tonne,
-        SymbolParts.lO,
-        SymbolParts.lE,
+        SymbolPart.tonne,
+        SymbolPart.lO,
+        SymbolPart.lE,
       ],
     ),
-    EnergyUnits.tonneOfOilEquivalent,
+    EnergyUnit.tonneOfOilEquivalent,
     4.1868 * pow(10, 10),
     americanName: 'ton of oil equivalent',
   ),

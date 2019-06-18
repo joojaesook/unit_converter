@@ -1,23 +1,23 @@
 import 'dart:math' show pow;
 
-import '../../enum/symbol_parts.dart';
-import '../../enum/torque_units.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/torque_unit.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __newton metre variations
 final _newtonMetreVariations = createUnitVariation(
-  TorqueUnits.values,
-  TorqueUnits.newtonMetre,
+  TorqueUnit.values,
+  TorqueUnit.newtonMetre,
   1,
   decimalPrefixes,
   namePostfix: 'newton metre',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.newton,
-      SymbolParts.space,
-      SymbolParts.metre,
+      SymbolPart.newton,
+      SymbolPart.space,
+      SymbolPart.metre,
     ],
   ),
   addAmericanName: true,
@@ -26,114 +26,114 @@ final _newtonMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<TorqueUnits>(
+  Unit<TorqueUnit>(
     'gram-force centimetre',
     createSymbol(
       const [
-        SymbolParts.gram,
-        SymbolParts.force,
-        SymbolParts.space,
-        SymbolParts.centi,
-        SymbolParts.metre,
+        SymbolPart.gram,
+        SymbolPart.force,
+        SymbolPart.space,
+        SymbolPart.centi,
+        SymbolPart.metre,
       ],
     ),
-    TorqueUnits.gramForceCentiMetre,
+    TorqueUnit.gramForceCentiMetre,
     9.80665 * pow(10, -5),
     americanName: 'gram-force centimeter',
   ),
-  Unit<TorqueUnits>(
+  Unit<TorqueUnit>(
     'kilogram-force centimetre',
     createSymbol(
       const [
-        SymbolParts.kilo,
-        SymbolParts.gram,
-        SymbolParts.force,
-        SymbolParts.space,
-        SymbolParts.centi,
-        SymbolParts.metre,
+        SymbolPart.kilo,
+        SymbolPart.gram,
+        SymbolPart.force,
+        SymbolPart.space,
+        SymbolPart.centi,
+        SymbolPart.metre,
       ],
     ),
-    TorqueUnits.kiloGramForceCentiMetre,
+    TorqueUnit.kiloGramForceCentiMetre,
     0.0980665,
     americanName: 'kilogram-force centimeter',
   ),
-  Unit<TorqueUnits>(
+  Unit<TorqueUnit>(
     'kilogram-force metre',
     createSymbol(
       const [
-        SymbolParts.kilo,
-        SymbolParts.gram,
-        SymbolParts.force,
-        SymbolParts.space,
-        SymbolParts.metre,
+        SymbolPart.kilo,
+        SymbolPart.gram,
+        SymbolPart.force,
+        SymbolPart.space,
+        SymbolPart.metre,
       ],
     ),
-    TorqueUnits.kiloGramForceMetre,
+    TorqueUnit.kiloGramForceMetre,
     9.80665,
     americanName: 'kilogram-force meter',
   ),
-  Unit<TorqueUnits>(
+  Unit<TorqueUnit>(
     'ounce-force foot',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.force,
-        SymbolParts.space,
-        SymbolParts.foot,
+        SymbolPart.ounce,
+        SymbolPart.force,
+        SymbolPart.space,
+        SymbolPart.foot,
       ],
     ),
-    TorqueUnits.ounceForceFoot,
+    TorqueUnit.ounceForceFoot,
     0.084738624,
   ),
-  Unit<TorqueUnits>(
+  Unit<TorqueUnit>(
     'ounce-force inch',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.force,
-        SymbolParts.space,
-        SymbolParts.inch,
+        SymbolPart.ounce,
+        SymbolPart.force,
+        SymbolPart.space,
+        SymbolPart.inch,
       ],
     ),
-    TorqueUnits.ounceForceInch,
+    TorqueUnit.ounceForceInch,
     0.00706155,
   ),
-  Unit<TorqueUnits>(
+  Unit<TorqueUnit>(
     'pound-force foot',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.force,
-        SymbolParts.space,
-        SymbolParts.foot,
+        SymbolPart.pound,
+        SymbolPart.force,
+        SymbolPart.space,
+        SymbolPart.foot,
       ],
     ),
-    TorqueUnits.poundForceFoot,
+    TorqueUnit.poundForceFoot,
     1.355817948331,
   ),
-  Unit<TorqueUnits>(
+  Unit<TorqueUnit>(
     'pound-force inch',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.force,
-        SymbolParts.space,
-        SymbolParts.inch,
+        SymbolPart.pound,
+        SymbolPart.force,
+        SymbolPart.space,
+        SymbolPart.inch,
       ],
     ),
-    TorqueUnits.poundForceInch,
+    TorqueUnit.poundForceInch,
     0.1129848290,
   ),
-  Unit<TorqueUnits>(
+  Unit<TorqueUnit>(
     'poundal foot',
     createSymbol(
       const [
-        SymbolParts.poundal,
-        SymbolParts.space,
-        SymbolParts.foot,
+        SymbolPart.poundal,
+        SymbolPart.space,
+        SymbolPart.foot,
       ],
     ),
-    TorqueUnits.poundalFoot,
+    TorqueUnit.poundalFoot,
     0.0421401,
   ),
 };

@@ -1,4 +1,4 @@
-import '../constant/others/available_units.dart';
+import '../constant/others/available_unit.dart';
 import '../enum/conversion_type.dart';
 import '../model/unit.dart';
 
@@ -44,6 +44,6 @@ abstract class Converter<T> {
   }
 
   Set<Unit<T>> _availableUnits() {
-    return availableUnits[type];
+    return availableUnit[type];
   }
 }

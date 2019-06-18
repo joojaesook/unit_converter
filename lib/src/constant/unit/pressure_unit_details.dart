@@ -1,10 +1,10 @@
-import '../../enum/area_units.dart';
+import '../../enum/area_unit.dart';
 import '../../enum/conversion_type.dart';
-import '../../enum/force_units.dart';
-import '../../enum/length_units.dart';
-import '../../enum/pressure_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/unit_systems.dart';
+import '../../enum/force_unit.dart';
+import '../../enum/length_unit.dart';
+import '../../enum/pressure_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
@@ -14,11 +14,11 @@ const _metreOfMercuryToPascal_conventional = 133322.387415;
 const _metreOfWaterToPascal_degree4C = 9806.3754138;
 
 // __gram force per square __metre variations
-final _gramForcePerSquareMetreVariations = <Unit<PressureUnits>>{};
+final _gramForcePerSquareMetreVariations = <Unit<PressureUnit>>{};
 
-void create(Unit<PressureUnits> unit) {
+void create(Unit<PressureUnit> unit) {
   var units = createUnitVariation(
-    PressureUnits.values,
+    PressureUnit.values,
     unit.type,
     unit.conversionFactor,
     decimalPrefixes,
@@ -32,25 +32,25 @@ void create(Unit<PressureUnits> unit) {
 
 // gram force per square __metre variations
 final _intermediateGramForcePerSquareMetreVariations = createUnitVariation(
-  PressureUnits.values,
-  PressureUnits.gramForcePerSquareMetre,
+  PressureUnit.values,
+  PressureUnit.gramForcePerSquareMetre,
   conversionFactor(
     ConversionType.force,
-    ForceUnits.gramForce,
+    ForceUnit.gramForce,
   ),
   decimalPrefixes,
   namePrefix: 'gram-force per square ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
     [
-      SymbolParts.gram,
-      SymbolParts.force,
-      SymbolParts.forwardSlash,
+      SymbolPart.gram,
+      SymbolPart.force,
+      SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
+      SymbolPart.metre,
     ],
   ),
   addAmericanName: true,
@@ -61,52 +61,52 @@ final _intermediateGramForcePerSquareMetreVariations = createUnitVariation(
 
 // __bar variations
 final _barVariations = createUnitVariation(
-  PressureUnits.values,
-  PressureUnits.bar,
+  PressureUnit.values,
+  PressureUnit.bar,
   100000,
   decimalPrefixes,
   namePostfix: 'bar',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.lB,
-      SymbolParts.lA,
-      SymbolParts.lR,
+      SymbolPart.lB,
+      SymbolPart.lA,
+      SymbolPart.lR,
     ],
   ),
 );
 
 // __metre of mercury conventional variations
 final _metreOfMercuryVariations_conventional = createUnitVariation(
-  PressureUnits.values,
-  PressureUnits.metreOfMercury_conventional,
+  PressureUnit.values,
+  PressureUnit.metreOfMercury_conventional,
   _metreOfMercuryToPascal_conventional,
   decimalPrefixes,
   namePostfix: 'metre of mercury',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.lM,
-      SymbolParts.clH,
-      SymbolParts.lG,
+      SymbolPart.lM,
+      SymbolPart.clH,
+      SymbolPart.lG,
     ],
   ),
   addAmericanName: true,
   americanNamePostfix: 'meter of mercury',
-  system: UnitSystems.conventional,
+  system: UnitSystem.conventional,
 );
 
 // __metre of water degree 4C variations
 final _metreOfWaterVariations_degree4C = createUnitVariation(
-  PressureUnits.values,
-  PressureUnits.metreOfWater_degree4C,
+  PressureUnit.values,
+  PressureUnit.metreOfWater_degree4C,
   _metreOfWaterToPascal_degree4C,
   decimalPrefixes,
   namePostfix: 'metre of water',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.lM,
-      SymbolParts.clH,
-      SymbolParts.subscriptTwo,
-      SymbolParts.clO,
+      SymbolPart.lM,
+      SymbolPart.clH,
+      SymbolPart.subscriptTwo,
+      SymbolPart.clO,
     ],
   ),
   addAmericanName: true,
@@ -114,11 +114,11 @@ final _metreOfWaterVariations_degree4C = createUnitVariation(
 );
 
 // __newton per square __metre variations
-final _newtonPerSquareMetreVariations = <Unit<PressureUnits>>{};
+final _newtonPerSquareMetreVariations = <Unit<PressureUnit>>{};
 
-void create1(Unit<PressureUnits> unit) {
+void create1(Unit<PressureUnit> unit) {
   var units = createUnitVariation(
-    PressureUnits.values,
+    PressureUnit.values,
     unit.type,
     unit.conversionFactor,
     decimalPrefixes,
@@ -132,22 +132,22 @@ void create1(Unit<PressureUnits> unit) {
 
 // newton per square __metre variations
 final _intermediateNewtonPerSquareMetreVariations = createUnitVariation(
-  PressureUnits.values,
-  PressureUnits.newtonPerSquareMetre,
+  PressureUnit.values,
+  PressureUnit.newtonPerSquareMetre,
   1,
   decimalPrefixes,
   namePrefix: 'newton per square ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
     [
-      SymbolParts.newton,
-      SymbolParts.force,
-      SymbolParts.forwardSlash,
+      SymbolPart.newton,
+      SymbolPart.force,
+      SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
+      SymbolPart.metre,
     ],
   ),
   addAmericanName: true,
@@ -158,285 +158,285 @@ final _intermediateNewtonPerSquareMetreVariations = createUnitVariation(
 
 // __pascal variations
 final _pascalVariations = createUnitVariation(
-  PressureUnits.values,
-  PressureUnits.pascal,
+  PressureUnit.values,
+  PressureUnit.pascal,
   1,
   decimalPrefixes,
   namePostfix: 'pascal',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.pascal,
+      SymbolPart.pascal,
     ],
   ),
 );
 
 // __torr variations
 final _torrVariations = createUnitVariation(
-  PressureUnits.values,
-  PressureUnits.torr,
+  PressureUnit.values,
+  PressureUnit.torr,
   133.322368421053,
   decimalPrefixes,
   namePostfix: 'torr',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.clT,
-      SymbolParts.lO,
-      SymbolParts.lR,
-      SymbolParts.lR,
+      SymbolPart.clT,
+      SymbolPart.lO,
+      SymbolPart.lR,
+      SymbolPart.lR,
     ],
   ),
 );
 
 // other units
 final _otherUnits = {
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'atmosphere',
     createSymbol(
       const [
-        SymbolParts.lA,
-        SymbolParts.lT,
-        SymbolParts.lM,
+        SymbolPart.lA,
+        SymbolPart.lT,
+        SymbolPart.lM,
       ],
     ),
-    PressureUnits.atmosphere_standard,
+    PressureUnit.atmosphere_standard,
     101325,
-    system: unitSystem[UnitSystems.standard],
+    system: unitSystem[UnitSystem.standard],
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'atmosphere',
     createSymbol(
       const [
-        SymbolParts.lA,
-        SymbolParts.lT,
+        SymbolPart.lA,
+        SymbolPart.lT,
       ],
     ),
-    PressureUnits.atmosphere_technical,
+    PressureUnit.atmosphere_technical,
     98066.5,
-    system: unitSystem[UnitSystems.technical],
+    system: unitSystem[UnitSystem.technical],
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'barye',
     createSymbol(
       const [
-        SymbolParts.clB,
-        SymbolParts.lA,
+        SymbolPart.clB,
+        SymbolPart.lA,
       ],
     ),
-    PressureUnits.barye,
+    PressureUnit.barye,
     0.1,
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'foot of mercury',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.clH,
-        SymbolParts.lG,
+        SymbolPart.foot,
+        SymbolPart.clH,
+        SymbolPart.lG,
       ],
     ),
-    PressureUnits.footOfMercury_conventional,
+    PressureUnit.footOfMercury_conventional,
     _metreOfMercuryToPascal_conventional *
         conversionFactor(
           ConversionType.length,
-          LengthUnits.foot,
+          LengthUnit.foot,
         ),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'foot of water',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.clH,
-        SymbolParts.subscriptTwo,
-        SymbolParts.clO,
+        SymbolPart.foot,
+        SymbolPart.clH,
+        SymbolPart.subscriptTwo,
+        SymbolPart.clO,
       ],
     ),
-    PressureUnits.footOfWater_degree4C,
+    PressureUnit.footOfWater_degree4C,
     _metreOfWaterToPascal_degree4C *
         conversionFactor(
           ConversionType.length,
-          LengthUnits.foot,
+          LengthUnit.foot,
         ),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'inch of mercury',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.clH,
-        SymbolParts.lG,
+        SymbolPart.inch,
+        SymbolPart.clH,
+        SymbolPart.lG,
       ],
     ),
-    PressureUnits.inchOfMercury_conventional,
+    PressureUnit.inchOfMercury_conventional,
     _metreOfMercuryToPascal_conventional *
         conversionFactor(
           ConversionType.length,
-          LengthUnits.inch,
+          LengthUnit.inch,
         ),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'inch of water',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.clH,
-        SymbolParts.subscriptTwo,
-        SymbolParts.clO,
+        SymbolPart.inch,
+        SymbolPart.clH,
+        SymbolPart.subscriptTwo,
+        SymbolPart.clO,
       ],
     ),
-    PressureUnits.inchOfWater_degree4C,
+    PressureUnit.inchOfWater_degree4C,
     _metreOfWaterToPascal_degree4C *
         conversionFactor(
           ConversionType.length,
-          LengthUnits.inch,
+          LengthUnit.inch,
         ),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'kip per square inch',
     createSymbol(
       const [
-        SymbolParts.lK,
-        SymbolParts.lI,
-        SymbolParts.lP,
+        SymbolPart.lK,
+        SymbolPart.lI,
+        SymbolPart.lP,
       ],
     ),
-    PressureUnits.kipPerSquareInch,
-    conversionFactor(ConversionType.force, ForceUnits.kip) /
-        conversionFactor(ConversionType.area, AreaUnits.squareInch),
+    PressureUnit.kipPerSquareInch,
+    conversionFactor(ConversionType.force, ForceUnit.kip) /
+        conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'ounce force per square foot',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.foot,
-        SymbolParts.subscriptTwo,
+        SymbolPart.ounce,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.foot,
+        SymbolPart.subscriptTwo,
       ],
     ),
-    PressureUnits.ounceForcePerSquareFoot,
-    conversionFactor(ConversionType.force, ForceUnits.ounceForce) /
-        conversionFactor(ConversionType.area, AreaUnits.squareFoot),
+    PressureUnit.ounceForcePerSquareFoot,
+    conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
+        conversionFactor(ConversionType.area, AreaUnit.squareFoot),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'ounce force per square inch',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.inch,
-        SymbolParts.subscriptTwo,
+        SymbolPart.ounce,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.inch,
+        SymbolPart.subscriptTwo,
       ],
     ),
-    PressureUnits.ounceForcePerSquareInch,
-    conversionFactor(ConversionType.force, ForceUnits.ounceForce) /
-        conversionFactor(ConversionType.area, AreaUnits.squareInch),
+    PressureUnit.ounceForcePerSquareInch,
+    conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
+        conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'ounce force per square yard',
     createSymbol(
       const [
-        SymbolParts.ounce,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.yard,
-        SymbolParts.subscriptTwo,
+        SymbolPart.ounce,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.yard,
+        SymbolPart.subscriptTwo,
       ],
     ),
-    PressureUnits.ounceForcePerSquareYard,
-    conversionFactor(ConversionType.force, ForceUnits.ounceForce) /
-        conversionFactor(ConversionType.area, AreaUnits.squareYard),
+    PressureUnit.ounceForcePerSquareYard,
+    conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
+        conversionFactor(ConversionType.area, AreaUnit.squareYard),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'pound force per acre',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.acre,
+        SymbolPart.pound,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.acre,
       ],
     ),
-    PressureUnits.poundForcePerAcre,
-    conversionFactor(ConversionType.force, ForceUnits.poundForce) /
-        conversionFactor(ConversionType.area, AreaUnits.acre),
+    PressureUnit.poundForcePerAcre,
+    conversionFactor(ConversionType.force, ForceUnit.poundForce) /
+        conversionFactor(ConversionType.area, AreaUnit.acre),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'pound force per square foot',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.foot,
-        SymbolParts.subscriptTwo,
+        SymbolPart.pound,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.foot,
+        SymbolPart.subscriptTwo,
       ],
     ),
-    PressureUnits.poundForcePerSquareFoot,
-    conversionFactor(ConversionType.force, ForceUnits.poundForce) /
-        conversionFactor(ConversionType.area, AreaUnits.squareFoot),
+    PressureUnit.poundForcePerSquareFoot,
+    conversionFactor(ConversionType.force, ForceUnit.poundForce) /
+        conversionFactor(ConversionType.area, AreaUnit.squareFoot),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'pound force per square inch',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.inch,
-        SymbolParts.subscriptTwo,
+        SymbolPart.pound,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.inch,
+        SymbolPart.subscriptTwo,
       ],
     ),
-    PressureUnits.poundForcePerSquareInch,
-    conversionFactor(ConversionType.force, ForceUnits.poundForce) /
-        conversionFactor(ConversionType.area, AreaUnits.squareInch),
+    PressureUnit.poundForcePerSquareInch,
+    conversionFactor(ConversionType.force, ForceUnit.poundForce) /
+        conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'pound force per square yard',
     createSymbol(
       const [
-        SymbolParts.pound,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.yard,
-        SymbolParts.subscriptTwo,
+        SymbolPart.pound,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.yard,
+        SymbolPart.subscriptTwo,
       ],
     ),
-    PressureUnits.poundForcePerSquareYard,
-    conversionFactor(ConversionType.force, ForceUnits.poundForce) /
-        conversionFactor(ConversionType.area, AreaUnits.squareYard),
+    PressureUnit.poundForcePerSquareYard,
+    conversionFactor(ConversionType.force, ForceUnit.poundForce) /
+        conversionFactor(ConversionType.area, AreaUnit.squareYard),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'poundal per square foot',
     createSymbol(
       const [
-        SymbolParts.poundal,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.foot,
-        SymbolParts.subscriptTwo,
+        SymbolPart.poundal,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.foot,
+        SymbolPart.subscriptTwo,
       ],
     ),
-    PressureUnits.poundalPerSquareFoot,
-    conversionFactor(ConversionType.force, ForceUnits.poundal) /
-        conversionFactor(ConversionType.area, AreaUnits.squareFoot),
+    PressureUnit.poundalPerSquareFoot,
+    conversionFactor(ConversionType.force, ForceUnit.poundal) /
+        conversionFactor(ConversionType.area, AreaUnit.squareFoot),
   ),
-  Unit<PressureUnits>(
+  Unit<PressureUnit>(
     'poundal per square inch',
     createSymbol(
       const [
-        SymbolParts.poundal,
-        SymbolParts.force,
-        SymbolParts.forwardSlash,
-        SymbolParts.inch,
-        SymbolParts.subscriptTwo,
+        SymbolPart.poundal,
+        SymbolPart.force,
+        SymbolPart.forwardSlash,
+        SymbolPart.inch,
+        SymbolPart.subscriptTwo,
       ],
     ),
-    PressureUnits.poundalPerSquareInch,
-    conversionFactor(ConversionType.force, ForceUnits.poundal) /
-        conversionFactor(ConversionType.area, AreaUnits.squareInch),
+    PressureUnit.poundalPerSquareInch,
+    conversionFactor(ConversionType.force, ForceUnit.poundal) /
+        conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
 };
 

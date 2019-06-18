@@ -1,7 +1,6 @@
 import '../../enum/prefix.dart';
 
 final Map<Prefix, String> prefixName = {
-  // Prefix.angstrom: 'angstrom',
   Prefix.atto: 'atto',
   Prefix.binaryExa: 'exa',
   Prefix.binaryGiga: 'giga',

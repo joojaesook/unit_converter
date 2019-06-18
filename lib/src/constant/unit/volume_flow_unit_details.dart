@@ -1,47 +1,46 @@
 import 'dart:math' show pow;
 
-import '../../enum/area_units.dart';
+import '../../enum/area_unit.dart';
 import '../../enum/conversion_type.dart';
-import '../../enum/length_units.dart';
-import '../../enum/symbol_parts.dart';
-import '../../enum/time_units.dart';
-import '../../enum/unit_systems.dart';
-import '../../enum/volume_flow_units.dart';
-import '../../enum/volume_units.dart';
+import '../../enum/length_unit.dart';
+import '../../enum/symbol_part.dart';
+import '../../enum/time_unit.dart';
+import '../../enum/unit_system.dart';
+import '../../enum/volume_flow_unit.dart';
+import '../../enum/volume_unit.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
-final _acreToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnits.acre);
-final _footToMetre = conversionFactor(ConversionType.length, LengthUnits.foot);
-final _inchToMetre = conversionFactor(ConversionType.length, LengthUnits.inch);
+final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
+final _footToMetre = conversionFactor(ConversionType.length, LengthUnit.foot);
+final _inchToMetre = conversionFactor(ConversionType.length, LengthUnit.inch);
 final _litreToCubicMetre =
-    conversionFactor(ConversionType.volume, VolumeUnits.litre);
+    conversionFactor(ConversionType.volume, VolumeUnit.litre);
 final _gallonToCubicMetre_imperial =
-    conversionFactor(ConversionType.volume, VolumeUnits.gallon_imperial);
+    conversionFactor(ConversionType.volume, VolumeUnit.gallon_imperial);
 final _gallonToCubicMetre_usLiquid =
-    conversionFactor(ConversionType.volume, VolumeUnits.gallon_usLiquid);
+    conversionFactor(ConversionType.volume, VolumeUnit.gallon_usLiquid);
 final _oilBarrelToCubicMetre =
-    conversionFactor(ConversionType.volume, VolumeUnits.oilBarrel);
-final _dayToSecond = conversionFactor(ConversionType.time, TimeUnits.day);
-final _hourToSecond = conversionFactor(ConversionType.time, TimeUnits.hour);
-final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnits.minute);
-final _yearToSecond = conversionFactor(ConversionType.time, TimeUnits.year);
+    conversionFactor(ConversionType.volume, VolumeUnit.oilBarrel);
+final _dayToSecond = conversionFactor(ConversionType.time, TimeUnit.day);
+final _hourToSecond = conversionFactor(ConversionType.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
+final _yearToSecond = conversionFactor(ConversionType.time, TimeUnit.year);
 
 // __litre per day variations
 final _litrePerDayVariations = createUnitVariation(
-  VolumeFlowUnits.values,
-  VolumeFlowUnits.litrePerDay,
+  VolumeFlowUnit.values,
+  VolumeFlowUnit.litrePerDay,
   _litreToCubicMetre / _dayToSecond,
   decimalPrefixes,
   namePostfix: 'litre per day',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.litre,
-      SymbolParts.forwardSlash,
-      SymbolParts.day,
+      SymbolPart.litre,
+      SymbolPart.forwardSlash,
+      SymbolPart.day,
     ],
   ),
   addAmericanName: true,
@@ -50,16 +49,16 @@ final _litrePerDayVariations = createUnitVariation(
 
 // __litre per hour variations
 final _litrePerHourVariations = createUnitVariation(
-  VolumeFlowUnits.values,
-  VolumeFlowUnits.litrePerHour,
+  VolumeFlowUnit.values,
+  VolumeFlowUnit.litrePerHour,
   _litreToCubicMetre / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'litre per hour',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.litre,
-      SymbolParts.forwardSlash,
-      SymbolParts.lH,
+      SymbolPart.litre,
+      SymbolPart.forwardSlash,
+      SymbolPart.lH,
     ],
   ),
   addAmericanName: true,
@@ -68,16 +67,16 @@ final _litrePerHourVariations = createUnitVariation(
 
 // __litre per minute variations
 final _litrePerMinuteVariations = createUnitVariation(
-  VolumeFlowUnits.values,
-  VolumeFlowUnits.litrePerMinute,
+  VolumeFlowUnit.values,
+  VolumeFlowUnit.litrePerMinute,
   _litreToCubicMetre / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'litre per minute',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.litre,
-      SymbolParts.forwardSlash,
-      SymbolParts.minute,
+      SymbolPart.litre,
+      SymbolPart.forwardSlash,
+      SymbolPart.minute,
     ],
   ),
   addAmericanName: true,
@@ -86,16 +85,16 @@ final _litrePerMinuteVariations = createUnitVariation(
 
 // __litre per second variations
 final _litrePerSecondVariations = createUnitVariation(
-  VolumeFlowUnits.values,
-  VolumeFlowUnits.litrePerSecond,
+  VolumeFlowUnit.values,
+  VolumeFlowUnit.litrePerSecond,
   _litreToCubicMetre,
   decimalPrefixes,
   namePostfix: 'litre per second',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.litre,
-      SymbolParts.forwardSlash,
-      SymbolParts.second,
+      SymbolPart.litre,
+      SymbolPart.forwardSlash,
+      SymbolPart.second,
     ],
   ),
   addAmericanName: true,
@@ -104,18 +103,18 @@ final _litrePerSecondVariations = createUnitVariation(
 
 // cubic __metre per day variations
 final _cubicMetrePerDayVariations = createUnitVariation(
-  VolumeFlowUnits.values,
-  VolumeFlowUnits.cubicMetrePerDay,
+  VolumeFlowUnit.values,
+  VolumeFlowUnit.cubicMetrePerDay,
   1 / _dayToSecond,
   decimalPrefixes,
   namePrefix: 'cubic ',
   namePostfix: 'metre per day',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.superscriptThree,
-      SymbolParts.forwardSlash,
-      SymbolParts.day,
+      SymbolPart.metre,
+      SymbolPart.superscriptThree,
+      SymbolPart.forwardSlash,
+      SymbolPart.day,
     ],
   ),
   addAmericanName: true,
@@ -126,18 +125,18 @@ final _cubicMetrePerDayVariations = createUnitVariation(
 
 // cubic __metre per hour variations
 final _cubicMetrePerHourVariations = createUnitVariation(
-  VolumeFlowUnits.values,
-  VolumeFlowUnits.cubicMetrePerHour,
+  VolumeFlowUnit.values,
+  VolumeFlowUnit.cubicMetrePerHour,
   1 / _hourToSecond,
   decimalPrefixes,
   namePrefix: 'cubic ',
   namePostfix: 'metre per hour',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.superscriptThree,
-      SymbolParts.forwardSlash,
-      SymbolParts.lH,
+      SymbolPart.metre,
+      SymbolPart.superscriptThree,
+      SymbolPart.forwardSlash,
+      SymbolPart.lH,
     ],
   ),
   addAmericanName: true,
@@ -148,18 +147,18 @@ final _cubicMetrePerHourVariations = createUnitVariation(
 
 // cubic __metre per minute variations
 final _cubicMetrePerMinuteVariations = createUnitVariation(
-  VolumeFlowUnits.values,
-  VolumeFlowUnits.cubicMetrePerMinute,
+  VolumeFlowUnit.values,
+  VolumeFlowUnit.cubicMetrePerMinute,
   1 / _minuteToSecond,
   decimalPrefixes,
   namePrefix: 'cubic ',
   namePostfix: 'metre per minute',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.superscriptThree,
-      SymbolParts.forwardSlash,
-      SymbolParts.minute,
+      SymbolPart.metre,
+      SymbolPart.superscriptThree,
+      SymbolPart.forwardSlash,
+      SymbolPart.minute,
     ],
   ),
   addAmericanName: true,
@@ -170,18 +169,18 @@ final _cubicMetrePerMinuteVariations = createUnitVariation(
 
 // cubic __metre per second variations
 final _cubicMetrePerSecondVariations = createUnitVariation(
-  VolumeFlowUnits.values,
-  VolumeFlowUnits.cubicMetrePerSecond,
+  VolumeFlowUnit.values,
+  VolumeFlowUnit.cubicMetrePerSecond,
   1,
   decimalPrefixes,
   namePrefix: 'cubic ',
   namePostfix: 'metre per second',
   symbolPostfix: createSymbol(
     [
-      SymbolParts.metre,
-      SymbolParts.superscriptThree,
-      SymbolParts.forwardSlash,
-      SymbolParts.second,
+      SymbolPart.metre,
+      SymbolPart.superscriptThree,
+      SymbolPart.forwardSlash,
+      SymbolPart.second,
     ],
   ),
   addAmericanName: true,
@@ -192,317 +191,317 @@ final _cubicMetrePerSecondVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'acre-foot per day',
     createSymbol(
       const [
-        SymbolParts.acre,
-        SymbolParts.space,
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.acre,
+        SymbolPart.space,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    VolumeFlowUnits.acreFootPerDay,
+    VolumeFlowUnit.acreFootPerDay,
     (_acreToSquareMetre * _footToMetre) / _dayToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'acre-foot per year',
     createSymbol(
       const [
-        SymbolParts.acre,
-        SymbolParts.space,
-        SymbolParts.foot,
-        SymbolParts.forwardSlash,
-        SymbolParts.lY,
+        SymbolPart.acre,
+        SymbolPart.space,
+        SymbolPart.foot,
+        SymbolPart.forwardSlash,
+        SymbolPart.lY,
       ],
     ),
-    VolumeFlowUnits.acreFootPerYear,
+    VolumeFlowUnit.acreFootPerYear,
     (_acreToSquareMetre * _footToMetre) / _yearToSecond,
-    system: unitSystem[UnitSystems.gregorian],
+    system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'cubic foot per day',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.superscriptThree,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.foot,
+        SymbolPart.superscriptThree,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    VolumeFlowUnits.cubicFootPerDay,
+    VolumeFlowUnit.cubicFootPerDay,
     pow(_footToMetre, 3) / _dayToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'cubic foot per hour',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.superscriptThree,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.foot,
+        SymbolPart.superscriptThree,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    VolumeFlowUnits.cubicFootPerHour,
+    VolumeFlowUnit.cubicFootPerHour,
     pow(_footToMetre, 3) / _hourToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'cubic foot per minute',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.superscriptThree,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.foot,
+        SymbolPart.superscriptThree,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    VolumeFlowUnits.cubicFootPerMinute,
+    VolumeFlowUnit.cubicFootPerMinute,
     pow(_footToMetre, 3) / _minuteToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'cubic foot per second',
     createSymbol(
       const [
-        SymbolParts.foot,
-        SymbolParts.superscriptThree,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.foot,
+        SymbolPart.superscriptThree,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    VolumeFlowUnits.cubicFootPerSecond,
+    VolumeFlowUnit.cubicFootPerSecond,
     pow(_footToMetre, 3),
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'cubic inch per day',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.superscriptThree,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.inch,
+        SymbolPart.superscriptThree,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    VolumeFlowUnits.cubicInchPerDay,
+    VolumeFlowUnit.cubicInchPerDay,
     pow(_inchToMetre, 3) / _dayToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'cubic inch per hour',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.superscriptThree,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.inch,
+        SymbolPart.superscriptThree,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    VolumeFlowUnits.cubicInchPerHour,
+    VolumeFlowUnit.cubicInchPerHour,
     pow(_inchToMetre, 3) / _hourToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'cubic inch per minute',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.superscriptThree,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.inch,
+        SymbolPart.superscriptThree,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    VolumeFlowUnits.cubicInchPerMinute,
+    VolumeFlowUnit.cubicInchPerMinute,
     pow(_inchToMetre, 3) / _minuteToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'cubic inch per second',
     createSymbol(
       const [
-        SymbolParts.inch,
-        SymbolParts.superscriptThree,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.inch,
+        SymbolPart.superscriptThree,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    VolumeFlowUnits.cubicInchPerSecond,
+    VolumeFlowUnit.cubicInchPerSecond,
     pow(_inchToMetre, 3),
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'gallon per day',
     createSymbol(
       const [
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    VolumeFlowUnits.gallonPerDay_imperial,
+    VolumeFlowUnit.gallonPerDay_imperial,
     _gallonToCubicMetre_imperial / _dayToSecond,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'gallon per day',
     createSymbol(
       const [
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    VolumeFlowUnits.gallonPerDay_usLiquid,
+    VolumeFlowUnit.gallonPerDay_usLiquid,
     _gallonToCubicMetre_usLiquid / _dayToSecond,
-    system: unitSystem[UnitSystems.usLiquid],
+    system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'gallon per hour',
     createSymbol(
       const [
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    VolumeFlowUnits.gallonPerHour_imperial,
+    VolumeFlowUnit.gallonPerHour_imperial,
     _gallonToCubicMetre_imperial / _hourToSecond,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'gallon per hour',
     createSymbol(
       const [
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    VolumeFlowUnits.gallonPerHour_usLiquid,
+    VolumeFlowUnit.gallonPerHour_usLiquid,
     _gallonToCubicMetre_usLiquid / _hourToSecond,
-    system: unitSystem[UnitSystems.usLiquid],
+    system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'gallon per minute',
     createSymbol(
       const [
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    VolumeFlowUnits.gallonPerMinute_imperial,
+    VolumeFlowUnit.gallonPerMinute_imperial,
     _gallonToCubicMetre_imperial / _minuteToSecond,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'gallon per minute',
     createSymbol(
       const [
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    VolumeFlowUnits.gallonPerMinute_usLiquid,
+    VolumeFlowUnit.gallonPerMinute_usLiquid,
     _gallonToCubicMetre_usLiquid / _minuteToSecond,
-    system: unitSystem[UnitSystems.usLiquid],
+    system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'gallon per second',
     createSymbol(
       const [
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    VolumeFlowUnits.gallonPerSecond_imperial,
+    VolumeFlowUnit.gallonPerSecond_imperial,
     _gallonToCubicMetre_imperial,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'gallon per second',
     createSymbol(
       const [
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    VolumeFlowUnits.gallonPerSecond_usLiquid,
+    VolumeFlowUnit.gallonPerSecond_usLiquid,
     _gallonToCubicMetre_usLiquid,
-    system: unitSystem[UnitSystems.usLiquid],
+    system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'million gallon per day',
     createSymbol(
       const [
-        SymbolParts.mega,
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.mega,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    VolumeFlowUnits.millionGallonPerDay_imperial,
+    VolumeFlowUnit.millionGallonPerDay_imperial,
     (_gallonToCubicMetre_imperial * pow(10, 6)) / _dayToSecond,
-    system: unitSystem[UnitSystems.imperial],
+    system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'million gallon per day',
     createSymbol(
       const [
-        SymbolParts.mega,
-        SymbolParts.gallon,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.mega,
+        SymbolPart.gallon,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    VolumeFlowUnits.millionGallonPerDay_usLiquid,
+    VolumeFlowUnit.millionGallonPerDay_usLiquid,
     (_gallonToCubicMetre_usLiquid * pow(10, 6)) / _dayToSecond,
-    system: unitSystem[UnitSystems.usLiquid],
+    system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'oil barrel per day',
     createSymbol(
       const [
-        SymbolParts.oilBarrel,
-        SymbolParts.forwardSlash,
-        SymbolParts.day,
+        SymbolPart.oilBarrel,
+        SymbolPart.forwardSlash,
+        SymbolPart.day,
       ],
     ),
-    VolumeFlowUnits.oilBarrelPerDay,
+    VolumeFlowUnit.oilBarrelPerDay,
     _oilBarrelToCubicMetre / _dayToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'oil barrel per hour',
     createSymbol(
       const [
-        SymbolParts.oilBarrel,
-        SymbolParts.forwardSlash,
-        SymbolParts.lH,
+        SymbolPart.oilBarrel,
+        SymbolPart.forwardSlash,
+        SymbolPart.lH,
       ],
     ),
-    VolumeFlowUnits.oilBarrelPerHour,
+    VolumeFlowUnit.oilBarrelPerHour,
     _oilBarrelToCubicMetre / _hourToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'oil barrel per minute',
     createSymbol(
       const [
-        SymbolParts.oilBarrel,
-        SymbolParts.forwardSlash,
-        SymbolParts.minute,
+        SymbolPart.oilBarrel,
+        SymbolPart.forwardSlash,
+        SymbolPart.minute,
       ],
     ),
-    VolumeFlowUnits.oilBarrelPerMinute,
+    VolumeFlowUnit.oilBarrelPerMinute,
     _oilBarrelToCubicMetre / _minuteToSecond,
   ),
-  Unit<VolumeFlowUnits>(
+  Unit<VolumeFlowUnit>(
     'oil barrel per second',
     createSymbol(
       const [
-        SymbolParts.oilBarrel,
-        SymbolParts.forwardSlash,
-        SymbolParts.second,
+        SymbolPart.oilBarrel,
+        SymbolPart.forwardSlash,
+        SymbolPart.second,
       ],
     ),
-    VolumeFlowUnits.oilBarrelPerSecond,
+    VolumeFlowUnit.oilBarrelPerSecond,
     _oilBarrelToCubicMetre,
   ),
 };

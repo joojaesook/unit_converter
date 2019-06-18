@@ -1,34 +1,34 @@
-import '../../enum/dynamic_viscocity_units.dart';
-import '../../enum/symbol_parts.dart';
+import '../../enum/dynamic_viscocity_unit.dart';
+import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
 // __pascal second variations
 final _pascalSecondVariations = createUnitVariation(
-  DynamicViscocityUnits.values,
-  DynamicViscocityUnits.pascalSecond,
+  DynamicViscocityUnit.values,
+  DynamicViscocityUnit.pascalSecond,
   1,
   decimalPrefixes,
   namePostfix: 'pascal second',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.pascal,
-      SymbolParts.space,
-      SymbolParts.second,
+      SymbolPart.pascal,
+      SymbolPart.space,
+      SymbolPart.second,
     ],
   ),
 );
 
 // __poise variations
 final _poiseVariations = createUnitVariation(
-  DynamicViscocityUnits.values,
-  DynamicViscocityUnits.poise,
+  DynamicViscocityUnit.values,
+  DynamicViscocityUnit.poise,
   0.1,
   decimalPrefixes,
   namePostfix: 'poise',
   symbolPostfix: createSymbol(
     const [
-      SymbolParts.poise,
+      SymbolPart.poise,
     ],
   ),
 );
