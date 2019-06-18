@@ -5,8 +5,9 @@ import '../enum/conversion_type.dart';
 import '../misc/global.dart';
 
 // Converter for multiplication based conversion. extends base [Converter] class.
-class MultiplicationBasedConverter<T> extends Converter {
-  MultiplicationBasedConverter(ConversionType type) : super(type);
+class MultiplicationBasedConverter<T> extends Converter<T> {
+  MultiplicationBasedConverter(ConversionType type, T baseUnit)
+      : super(type, baseUnit);
 
   double convert({
     @required double value,

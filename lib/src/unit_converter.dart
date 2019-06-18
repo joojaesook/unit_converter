@@ -88,246 +88,287 @@ class UnitConverter {
   static MultiplicationBasedConverter acceleration() {
     return MultiplicationBasedConverter<AccelerationUnits>(
       ConversionType.acceleration,
+      AccelerationUnits.metrePerSecondSquared,
     );
   }
 
   static MultiplicationBasedConverter area() {
     return MultiplicationBasedConverter<AreaUnits>(
       ConversionType.area,
+      AreaUnits.squareMetre,
     );
   }
 
   static MultiplicationBasedConverter bloodCholesterol() {
     return MultiplicationBasedConverter<BloodCholesterolUnits>(
       ConversionType.bloodCholesterol,
+      BloodCholesterolUnits.milliGramPerDeciLitre,
     );
   }
 
   static MultiplicationBasedConverter bloodGlucose() {
     return MultiplicationBasedConverter<BloodGlucoseUnits>(
       ConversionType.bloodGlucose,
+      BloodGlucoseUnits.milliGramPerDeciLitre,
     );
   }
 
   static MultiplicationBasedConverter capacitance() {
     return MultiplicationBasedConverter<CapacitanceUnits>(
       ConversionType.capacitance,
+      CapacitanceUnits.farad,
     );
   }
 
   static MultiplicationBasedConverter data() {
     return MultiplicationBasedConverter<DataUnits>(
       ConversionType.data,
+      DataUnits.bit,
     );
   }
 
   static MultiplicationBasedConverter dataRate() {
     return MultiplicationBasedConverter<DataRateUnits>(
       ConversionType.dataRate,
+      DataRateUnits.bitPerSecond,
     );
   }
 
   static MultiplicationBasedConverter density() {
     return MultiplicationBasedConverter<DensityUnits>(
       ConversionType.density,
+      DensityUnits.gramPerLitre,
     );
   }
 
   static MultiplicationBasedConverter dynamicViscocity() {
     return MultiplicationBasedConverter<DynamicViscocityUnits>(
       ConversionType.dynamicViscocity,
+      DynamicViscocityUnits.pascalSecond,
     );
   }
 
   static MultiplicationBasedConverter electricalConductance() {
     return MultiplicationBasedConverter<ElectricalConductanceUnits>(
       ConversionType.electricalConductance,
+      ElectricalConductanceUnits.siemens,
     );
   }
 
   static MultiplicationBasedConverter electricalResistance() {
     return MultiplicationBasedConverter<ElectricalResistanceUnits>(
       ConversionType.electricalResistance,
+      ElectricalResistanceUnits.ohm,
     );
   }
 
   static MultiplicationBasedConverter electricCharge() {
     return MultiplicationBasedConverter<ElectricChargeUnits>(
       ConversionType.electricCharge,
+      ElectricChargeUnits.coulomb,
     );
   }
 
   static MultiplicationBasedConverter electricCurrent() {
     return MultiplicationBasedConverter<ElectricCurrentUnits>(
       ConversionType.electricCurrent,
+      ElectricCurrentUnits.ampere,
     );
   }
 
   static MultiplicationBasedConverter electricPotential() {
     return MultiplicationBasedConverter<ElectricPotentialUnits>(
       ConversionType.electricPotential,
+      ElectricPotentialUnits.volt,
     );
   }
 
   static MultiplicationBasedConverter energy() {
     return MultiplicationBasedConverter<EnergyUnits>(
       ConversionType.energy,
+      EnergyUnits.joule,
     );
   }
 
   static MultiplicationBasedConverter force() {
     return MultiplicationBasedConverter<ForceUnits>(
       ConversionType.force,
+      ForceUnits.newton,
     );
   }
 
   static MultiplicationBasedConverter frequency() {
     return MultiplicationBasedConverter<FrequencyUnits>(
       ConversionType.frequency,
+      FrequencyUnits.hertz,
     );
   }
 
   static MultiplicationBasedConverter illuminance() {
     return MultiplicationBasedConverter<IlluminanceUnits>(
       ConversionType.illuminance,
+      IlluminanceUnits.lux,
     );
   }
 
   static MultiplicationBasedConverter inductance() {
     return MultiplicationBasedConverter<InductanceUnits>(
       ConversionType.inductance,
+      InductanceUnits.henry,
     );
   }
 
   static MultiplicationBasedConverter kinematicViscocity() {
     return MultiplicationBasedConverter<KinematicViscocityUnits>(
       ConversionType.kinematicViscocity,
+      KinematicViscocityUnits.squareMetrePerSecond,
     );
   }
 
   static MultiplicationBasedConverter length() {
     return MultiplicationBasedConverter<LengthUnits>(
       ConversionType.length,
+      LengthUnits.metre,
     );
   }
 
   static MultiplicationBasedConverter luminance() {
     return MultiplicationBasedConverter<LuminanceUnits>(
       ConversionType.luminance,
+      LuminanceUnits.candelaPerSquareMetre,
     );
   }
 
   static MultiplicationBasedConverter magneticFieldIntensity() {
     return MultiplicationBasedConverter<MagneticFieldIntensityUnits>(
       ConversionType.magneticFieldIntensity,
+      MagneticFieldIntensityUnits.amperePerMetre,
     );
   }
 
   static MultiplicationBasedConverter magneticFlux() {
     return MultiplicationBasedConverter<MagneticFluxUnits>(
       ConversionType.magneticFlux,
+      MagneticFluxUnits.weber,
     );
   }
 
   static MultiplicationBasedConverter magneticFluxDensity() {
     return MultiplicationBasedConverter<MagneticFluxDensityUnits>(
       ConversionType.magneticFluxDensity,
+      MagneticFluxDensityUnits.tesla,
     );
   }
 
   static MultiplicationBasedConverter mass() {
     return MultiplicationBasedConverter<MassUnits>(
       ConversionType.mass,
+      MassUnits.kiloGram,
     );
   }
 
   static MultiplicationBasedConverter massFlow() {
     return MultiplicationBasedConverter<MassFlowUnits>(
       ConversionType.massFlow,
+      MassFlowUnits.kiloGramPerSecond,
     );
   }
 
   static MultiplicationBasedConverter massFraction() {
     return MultiplicationBasedConverter<MassFractionUnits>(
       ConversionType.massFraction,
+      MassFractionUnits.gramPerGram,
     );
   }
 
   static MultiplicationBasedConverter massPerArea() {
     return MultiplicationBasedConverter<MassPerAreaUnits>(
       ConversionType.massPerArea,
+      MassPerAreaUnits.kiloGramPerSquareMetre,
     );
   }
 
   static MultiplicationBasedConverter planeAngle() {
     return MultiplicationBasedConverter<PlaneAngleUnits>(
       ConversionType.planeAngle,
+      PlaneAngleUnits.radian,
     );
   }
 
   static MultiplicationBasedConverter power() {
     return MultiplicationBasedConverter<PowerUnits>(
       ConversionType.power,
+      PowerUnits.joulePerSecond,
     );
   }
 
   static MultiplicationBasedConverter pressure() {
     return MultiplicationBasedConverter<PressureUnits>(
       ConversionType.pressure,
+      PressureUnits.pascal,
     );
   }
 
   static MultiplicationBasedConverter radioactivity() {
     return MultiplicationBasedConverter<RadioactivityUnits>(
       ConversionType.radioactivity,
+      RadioactivityUnits.becquerel,
     );
   }
 
   static MultiplicationBasedConverter speed() {
     return MultiplicationBasedConverter<SpeedUnits>(
       ConversionType.speed,
+      SpeedUnits.metrePerSecond,
     );
   }
 
   static MultiplicationBasedConverter time() {
     return MultiplicationBasedConverter<TimeUnits>(
       ConversionType.time,
+      TimeUnits.second,
     );
   }
 
   static MultiplicationBasedConverter torque() {
     return MultiplicationBasedConverter<TorqueUnits>(
       ConversionType.torque,
+      TorqueUnits.newtonMetre,
     );
   }
 
   static MultiplicationBasedConverter volume() {
     return MultiplicationBasedConverter<VolumeUnits>(
       ConversionType.volume,
+      VolumeUnits.cubicMetre,
     );
   }
 
   static MultiplicationBasedConverter volumeFlow() {
     return MultiplicationBasedConverter<VolumeFlowUnits>(
       ConversionType.volumeFlow,
+      VolumeFlowUnits.cubicMetrePerSecond,
     );
   }
 
   static MultiplicationBasedConverter volumeFlowPerArea() {
     return MultiplicationBasedConverter<VolumeFlowPerAreaUnits>(
       ConversionType.volumeFlowPerArea,
+      VolumeFlowPerAreaUnits.cubicMetrePerSecondPerSquareMetre,
     );
   }
 
   static MultiplicationBasedConverter volumePerArea() {
     return MultiplicationBasedConverter<VolumePerAreaUnits>(
       ConversionType.volumePerArea,
+      VolumePerAreaUnits.cubicMetrePerSquareMetre,
     );
   }
 
   static MultiplicationBasedConverter waterHardness() {
     return MultiplicationBasedConverter<WaterHardnessUnits>(
       ConversionType.waterHardness,
+      WaterHardnessUnits.milliMolePerLitre_CaCO3,
     );
   }
 }
