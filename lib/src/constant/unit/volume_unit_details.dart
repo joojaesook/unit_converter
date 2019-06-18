@@ -3,7 +3,7 @@ import 'dart:math' show pow;
 import '../../enum/area_unit.dart';
 import '../../enum/conversion_type.dart';
 import '../../enum/length_unit.dart';
-import '../../enum/prefix.dart';
+import '../../enum/metric_prefix.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../enum/volume_unit.dart';
@@ -20,7 +20,8 @@ const _litreToCubicMetre = 0.001;
 const _gallon_imperial = 4.54609 * _litreToCubicMetre;
 const _gallon_usDry = 0.00440488377086;
 final _gallon_usLiquid = 231 * pow(_inchToMetre, 3);
-final _milliLiterToCubicMetre = _litreToCubicMetre * prefixValue[Prefix.milli];
+final _milliLiterToCubicMetre =
+    _litreToCubicMetre * prefixValue[MetricPrefix.milli];
 const _peck_imperial = 2 * _gallon_imperial;
 const _peck_usDry = 2 * _gallon_usDry;
 final _fluidOunce_us = _gallon_usLiquid / 128;

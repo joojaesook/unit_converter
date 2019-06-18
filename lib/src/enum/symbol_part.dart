@@ -1,4 +1,4 @@
-// Symbols of units
+// Symbol parts of units
 enum SymbolPart {
   ab,
   acre,

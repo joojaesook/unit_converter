@@ -6,7 +6,7 @@ import '../constant/others/prefix_value.dart';
 import '../constant/others/symbol.dart';
 import '../constant/others/unit_system.dart';
 import '../enum/conversion_type.dart';
-import '../enum/prefix.dart';
+import '../enum/metric_prefix.dart';
 import '../enum/symbol_part.dart';
 import '../enum/unit_system.dart';
 import '../model/unit.dart';
@@ -75,7 +75,7 @@ Set<Unit<T>> createUnitVariation<T>(
   Iterable<T> unitEnum,
   T baseUnit,
   double conversionFactorToBaseUnit,
-  List<Prefix> variations, {
+  List<MetricPrefix> variations, {
   String namePrefix = '',
   String namePostfix = '',
   String symbolPrefix = '',
@@ -108,7 +108,7 @@ Set<Unit<T>> createUnitVariation<T>(
   }
   baseUnitName =
       baseUnitName.substring(0, 1).toUpperCase() + baseUnitName.substring(1);
-  for (Prefix p in variations) {
+  for (MetricPrefix p in variations) {
     var variationName = prefixName[p];
     var unit = createUnit(
       namePrefix,

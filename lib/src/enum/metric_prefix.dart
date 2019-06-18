@@ -1,5 +1,5 @@
-// Types of unit prefixes
-enum Prefix {
+// Metric prefixes
+enum MetricPrefix {
   atto,
   binaryExa,
   binaryGiga,
