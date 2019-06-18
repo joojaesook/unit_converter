@@ -11,10 +11,13 @@ abstract class Converter<T> {
       : assert(type != null),
         assert(_baseUnit != null);
 
+  /// total number of units
   get unitCount => _availableUnits().length;
 
+  /// base unit of this type
   get baseUnit => unit(_baseUnit);
 
+  /// get the information for the unit type [type]
   Unit<T> unit(T type) {
     return _availableUnits().firstWhere((unit) => unit.type == type);
   }

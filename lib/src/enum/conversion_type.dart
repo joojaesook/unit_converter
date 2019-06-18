@@ -36,6 +36,7 @@ enum ConversionType {
   pressure,
   radioactivity,
   speed,
+  temperature,
   time,
   torque,
   volume,
