@@ -7,7 +7,7 @@ import '../others/misc.dart';
 // __ampere per metre variations
 final _amperePerMetreVariations = createUnitVariation(
   MagneticFieldIntensityUnit.values,
-  MagneticFieldIntensityUnit.amperePerMetre,
+  '${variationUnitNameSeperator}amperePerMetre',
   1,
   decimalPrefixes,
   namePostfix: 'ampere per metre',
