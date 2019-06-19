@@ -9,7 +9,7 @@ import '../others/misc.dart';
 // __newton metre variations
 final _newtonMetreVariations = createUnitVariation(
   TorqueUnit.values,
-  TorqueUnit.newtonMetre,
+  '${variationUnitNameSeperator}newtonMetre',
   1,
   decimalPrefixes,
   namePostfix: 'newton metre',
