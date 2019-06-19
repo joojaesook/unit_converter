@@ -6,7 +6,7 @@ import '../others/misc.dart';
 // __gauss variations
 final _gaussVariations = createUnitVariation(
   MagneticFluxDensityUnit.values,
-  MagneticFluxDensityUnit.gauss,
+  '${variationUnitNameSeperator}gauss',
   0.0001,
   decimalPrefixes,
   namePostfix: 'gauss',
@@ -20,7 +20,7 @@ final _gaussVariations = createUnitVariation(
 // __tesla variations
 final _teslaVariations = createUnitVariation(
   MagneticFluxDensityUnit.values,
-  MagneticFluxDensityUnit.tesla,
+  '${variationUnitNameSeperator}tesla',
   1,
   decimalPrefixes,
   namePostfix: 'tesla',
