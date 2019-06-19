@@ -12,7 +12,7 @@ const double _yearToSecond = 365.2425 * _dayToSecond;
 // __second variations
 final _secondVariations = createUnitVariation(
   TimeUnit.values,
-  TimeUnit.second,
+  '${variationUnitNameSeperator}second',
   1,
   decimalPrefixes,
   namePostfix: 'second',
