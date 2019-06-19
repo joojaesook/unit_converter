@@ -11,7 +11,7 @@ import '../others/misc.dart';
 // candela per square __metre variations
 final _candelaPerSquareMetreVariations = createUnitVariation(
   LuminanceUnit.values,
-  LuminanceUnit.candelaPerSquareMetre,
+  'candelaPerSquare${variationUnitNameSeperator}Metre',
   1,
   decimalPrefixes,
   namePrefix: 'candela per square ',
