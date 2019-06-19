@@ -14,12 +14,13 @@ const _metreOfMercuryToPascal_conventional = 133322.387415;
 const _metreOfWaterToPascal_degree4C = 9806.3754138;
 
 // __gram force per square __metre variations
-final _gramForcePerSquareMetreVariations = <Unit<PressureUnit>>{};
+final _gramForcePerSquareMetreAndNewtonPerSquareMetreVariations =
+    <Unit<PressureUnit>>{};
 
 void create(Unit<PressureUnit> unit) {
   var units = createUnitVariation(
     PressureUnit.values,
-    unit.type,
+    '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
     unit.conversionFactor,
     decimalPrefixes,
     namePostfix: unit.name,
@@ -27,13 +28,13 @@ void create(Unit<PressureUnit> unit) {
     addAmericanName: true,
     americanNamePostfix: unit.americanName,
   );
-  _gramForcePerSquareMetreVariations.addAll(units);
+  _gramForcePerSquareMetreAndNewtonPerSquareMetreVariations.addAll(units);
 }
 
 // gram force per square __metre variations
 final _intermediateGramForcePerSquareMetreVariations = createUnitVariation(
   PressureUnit.values,
-  PressureUnit.gramForcePerSquareMetre,
+  'gramForcePerSquare${variationUnitNameSeperator}Metre',
   conversionFactor(
     ConversionType.force,
     ForceUnit.gramForce,
@@ -62,7 +63,7 @@ final _intermediateGramForcePerSquareMetreVariations = createUnitVariation(
 // __bar variations
 final _barVariations = createUnitVariation(
   PressureUnit.values,
-  PressureUnit.bar,
+  '${variationUnitNameSeperator}bar',
   100000,
   decimalPrefixes,
   namePostfix: 'bar',
@@ -78,7 +79,7 @@ final _barVariations = createUnitVariation(
 // __metre of mercury conventional variations
 final _metreOfMercuryVariations_conventional = createUnitVariation(
   PressureUnit.values,
-  PressureUnit.metreOfMercury_conventional,
+  '${variationUnitNameSeperator}metreOfMercury_conventional',
   _metreOfMercuryToPascal_conventional,
   decimalPrefixes,
   namePostfix: 'metre of mercury',
@@ -97,7 +98,7 @@ final _metreOfMercuryVariations_conventional = createUnitVariation(
 // __metre of water degree 4C variations
 final _metreOfWaterVariations_degree4C = createUnitVariation(
   PressureUnit.values,
-  PressureUnit.metreOfWater_degree4C,
+  '${variationUnitNameSeperator}metreOfWater_degree4C',
   _metreOfWaterToPascal_degree4C,
   decimalPrefixes,
   namePostfix: 'metre of water',
@@ -113,27 +114,10 @@ final _metreOfWaterVariations_degree4C = createUnitVariation(
   americanNamePostfix: 'meter of water',
 );
 
-// __newton per square __metre variations
-final _newtonPerSquareMetreVariations = <Unit<PressureUnit>>{};
-
-void create1(Unit<PressureUnit> unit) {
-  var units = createUnitVariation(
-    PressureUnit.values,
-    unit.type,
-    unit.conversionFactor,
-    decimalPrefixes,
-    namePostfix: unit.name,
-    symbolPostfix: unit.symbol,
-    addAmericanName: true,
-    americanNamePostfix: unit.americanName,
-  );
-  _newtonPerSquareMetreVariations.addAll(units);
-}
-
 // newton per square __metre variations
 final _intermediateNewtonPerSquareMetreVariations = createUnitVariation(
   PressureUnit.values,
-  PressureUnit.newtonPerSquareMetre,
+  'newtonPerSquare${variationUnitNameSeperator}Metre',
   1,
   decimalPrefixes,
   namePrefix: 'newton per square ',
@@ -154,12 +138,12 @@ final _intermediateNewtonPerSquareMetreVariations = createUnitVariation(
   americanNamePrefix: 'newton per square ',
   americanNamePostfix: 'meter',
   powerOfVariationConversionFactor: -2,
-).forEach(create1);
+).forEach(create);
 
 // __pascal variations
 final _pascalVariations = createUnitVariation(
   PressureUnit.values,
-  PressureUnit.pascal,
+  '${variationUnitNameSeperator}pascal',
   1,
   decimalPrefixes,
   namePostfix: 'pascal',
@@ -173,7 +157,7 @@ final _pascalVariations = createUnitVariation(
 // __torr variations
 final _torrVariations = createUnitVariation(
   PressureUnit.values,
-  PressureUnit.torr,
+  '${variationUnitNameSeperator}torr',
   133.322368421053,
   decimalPrefixes,
   namePostfix: 'torr',
@@ -442,8 +426,7 @@ final _otherUnits = {
 
 // pressure unit details
 final pressureUnitDetails = {
-  ..._gramForcePerSquareMetreVariations,
-  ..._newtonPerSquareMetreVariations,
+  ..._gramForcePerSquareMetreAndNewtonPerSquareMetreVariations,
   ..._barVariations,
   ..._metreOfMercuryVariations_conventional,
   ..._metreOfWaterVariations_degree4C,
