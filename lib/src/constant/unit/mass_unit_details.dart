@@ -12,7 +12,7 @@ const _grainToKiloGram = _poundToKiloGram / 7000;
 // __gram variations
 final _gramVariations = createUnitVariation(
   MassUnit.values,
-  MassUnit.gram,
+  '${variationUnitNameSeperator}gram',
   0.001,
   decimalPrefixes,
   namePostfix: 'gram',
@@ -26,7 +26,7 @@ final _gramVariations = createUnitVariation(
 // __tonne variations
 final _tonneVariations = createUnitVariation(
   MassUnit.values,
-  MassUnit.tonne,
+  '${variationUnitNameSeperator}tonne',
   1000,
   decimalPrefixes,
   namePostfix: 'tonne',
