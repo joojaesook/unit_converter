@@ -8,7 +8,7 @@ import '../others/misc.dart';
 // __becquerel variations
 final _becquerelVariations = createUnitVariation(
   RadioactivityUnit.values,
-  RadioactivityUnit.becquerel,
+  '${variationUnitNameSeperator}becquerel',
   1,
   decimalPrefixes,
   namePostfix: 'becquerel',
@@ -22,7 +22,7 @@ final _becquerelVariations = createUnitVariation(
 // __curie variations
 final _curieVariations = createUnitVariation(
   RadioactivityUnit.values,
-  RadioactivityUnit.curie,
+  '${variationUnitNameSeperator}curie',
   3.7 * pow(10, 10),
   decimalPrefixes,
   namePostfix: 'curie',
@@ -36,7 +36,7 @@ final _curieVariations = createUnitVariation(
 // __rutherford variations
 final _rutherfordVariations = createUnitVariation(
   RadioactivityUnit.values,
-  RadioactivityUnit.rutherford,
+  '${variationUnitNameSeperator}rutherford',
   1000000,
   decimalPrefixes,
   namePostfix: 'rutherford',
