@@ -21,7 +21,7 @@ final _minuteToSecond = conversionFactor(
 // __stokes variations
 final _stokesVariations = createUnitVariation(
   KinematicViscocityUnit.values,
-  KinematicViscocityUnit.stokes,
+  '${variationUnitNameSeperator}stokes',
   0.0001,
   decimalPrefixes,
   namePostfix: 'stokes',
@@ -35,7 +35,7 @@ final _stokesVariations = createUnitVariation(
 // square __metre per day variations
 final _squareMetrePerDayVariations = createUnitVariation(
   KinematicViscocityUnit.values,
-  KinematicViscocityUnit.squareMetrePerDay,
+  'square${variationUnitNameSeperator}MetrePerDay',
   1 / _dayToSecond,
   decimalPrefixes,
   namePrefix: 'square ',
@@ -57,7 +57,7 @@ final _squareMetrePerDayVariations = createUnitVariation(
 // square __metre per hour variations
 final _squareMetrePerHourVariations = createUnitVariation(
   KinematicViscocityUnit.values,
-  KinematicViscocityUnit.squareMetrePerHour,
+  'square${variationUnitNameSeperator}MetrePerHour',
   1 / _hourToSecond,
   decimalPrefixes,
   namePrefix: 'square ',
@@ -79,7 +79,7 @@ final _squareMetrePerHourVariations = createUnitVariation(
 // square __metre per minute variations
 final _squareMetrePerMinuteVariations = createUnitVariation(
   KinematicViscocityUnit.values,
-  KinematicViscocityUnit.squareMetrePerMinute,
+  'square${variationUnitNameSeperator}MetrePerMinute',
   1 / _minuteToSecond,
   decimalPrefixes,
   namePrefix: 'square ',
@@ -101,7 +101,7 @@ final _squareMetrePerMinuteVariations = createUnitVariation(
 // square __metre per second variations
 final _squareMetrePerSecondVariations = createUnitVariation(
   KinematicViscocityUnit.values,
-  KinematicViscocityUnit.squareMetrePerSecond,
+  'square${variationUnitNameSeperator}MetrePerSecond',
   1,
   decimalPrefixes,
   namePrefix: 'square ',
