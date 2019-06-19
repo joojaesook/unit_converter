@@ -23,7 +23,7 @@ final _britishThermalUnitToJoule_intlSteamTable = conversionFactor(
 // __calorie per hour International Steam Table variations
 final _caloriePerHourVariations_intlSteamTable = createUnitVariation(
   PowerUnit.values,
-  PowerUnit.caloriePerHour_intlSteamTable,
+  '${variationUnitNameSeperator}caloriePerHour_intlSteamTable',
   _calorieToJoule_intlSteamTable / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'calorie per hour',
@@ -40,7 +40,7 @@ final _caloriePerHourVariations_intlSteamTable = createUnitVariation(
 // __calorie per minute International Steam Table variations
 final _caloriePerMinuteVariations_intlSteamTable = createUnitVariation(
   PowerUnit.values,
-  PowerUnit.caloriePerMinute_intlSteamTable,
+  '${variationUnitNameSeperator}caloriePerMinute_intlSteamTable',
   _calorieToJoule_intlSteamTable / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'calorie per minute',
@@ -57,7 +57,7 @@ final _caloriePerMinuteVariations_intlSteamTable = createUnitVariation(
 // __calorie per second International Steam Table variations
 final _caloriePerSecondVariations_intlSteamTable = createUnitVariation(
   PowerUnit.values,
-  PowerUnit.caloriePerSecond_intlSteamTable,
+  '${variationUnitNameSeperator}caloriePerSecond_intlSteamTable',
   _calorieToJoule_intlSteamTable,
   decimalPrefixes,
   namePostfix: 'calorie per second',
@@ -74,7 +74,7 @@ final _caloriePerSecondVariations_intlSteamTable = createUnitVariation(
 // __joule per hour variations
 final _joulePerHourVariations = createUnitVariation(
   PowerUnit.values,
-  PowerUnit.joulePerHour,
+  '${variationUnitNameSeperator}joulePerHour',
   1 / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'joule per hour',
@@ -90,7 +90,7 @@ final _joulePerHourVariations = createUnitVariation(
 // __joule per minute variations
 final _joulePerMinuteVariations = createUnitVariation(
   PowerUnit.values,
-  PowerUnit.joulePerMinute,
+  '${variationUnitNameSeperator}joulePerMinute',
   1 / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'joule per minute',
@@ -106,7 +106,7 @@ final _joulePerMinuteVariations = createUnitVariation(
 // __joule per second variations
 final _joulePerSecondVariations = createUnitVariation(
   PowerUnit.values,
-  PowerUnit.joulePerSecond,
+  '${variationUnitNameSeperator}joulePerSecond',
   1,
   decimalPrefixes,
   namePostfix: 'joule per second',
@@ -122,7 +122,7 @@ final _joulePerSecondVariations = createUnitVariation(
 // __watt variations
 final _wattVariations = createUnitVariation(
   PowerUnit.values,
-  PowerUnit.watt,
+  '${variationUnitNameSeperator}watt',
   1,
   decimalPrefixes,
   namePostfix: 'watt',
