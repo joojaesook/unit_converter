@@ -18,7 +18,7 @@ final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
 // __gram per day variations
 final _gramPerDayVariations = createUnitVariation(
   MassFlowUnit.values,
-  MassFlowUnit.gramPerDay,
+  '${variationUnitNameSeperator}gramPerDay',
   _gramToKiloGram / _dayToSecond,
   decimalPrefixes,
   namePostfix: 'gram per day',
@@ -34,7 +34,7 @@ final _gramPerDayVariations = createUnitVariation(
 // __gram per hour variations
 final _gramPerHourVariations = createUnitVariation(
   MassFlowUnit.values,
-  MassFlowUnit.gramPerHour,
+  '${variationUnitNameSeperator}gramPerHour',
   _gramToKiloGram / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'gram per hour',
@@ -50,7 +50,7 @@ final _gramPerHourVariations = createUnitVariation(
 // __gram per minute variations
 final _gramPerMinuteVariations = createUnitVariation(
   MassFlowUnit.values,
-  MassFlowUnit.gramPerMinute,
+  '${variationUnitNameSeperator}gramPerMinute',
   _gramToKiloGram / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'gram per minute',
@@ -66,7 +66,7 @@ final _gramPerMinuteVariations = createUnitVariation(
 // __gram per second variations
 final _gramPerSecondVariations = createUnitVariation(
   MassFlowUnit.values,
-  MassFlowUnit.gramPerSecond,
+  '${variationUnitNameSeperator}gramPerSecond',
   _gramToKiloGram,
   decimalPrefixes,
   namePostfix: 'gram per second',
