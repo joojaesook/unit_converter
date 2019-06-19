@@ -32,7 +32,7 @@ final _yearToSecond = conversionFactor(ConversionType.time, TimeUnit.year);
 // __litre per day variations
 final _litrePerDayVariations = createUnitVariation(
   VolumeFlowUnit.values,
-  VolumeFlowUnit.litrePerDay,
+  '${variationUnitNameSeperator}litrePerDay',
   _litreToCubicMetre / _dayToSecond,
   decimalPrefixes,
   namePostfix: 'litre per day',
@@ -50,7 +50,7 @@ final _litrePerDayVariations = createUnitVariation(
 // __litre per hour variations
 final _litrePerHourVariations = createUnitVariation(
   VolumeFlowUnit.values,
-  VolumeFlowUnit.litrePerHour,
+  '${variationUnitNameSeperator}litrePerHour',
   _litreToCubicMetre / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'litre per hour',
@@ -68,7 +68,7 @@ final _litrePerHourVariations = createUnitVariation(
 // __litre per minute variations
 final _litrePerMinuteVariations = createUnitVariation(
   VolumeFlowUnit.values,
-  VolumeFlowUnit.litrePerMinute,
+  '${variationUnitNameSeperator}litrePerMinute',
   _litreToCubicMetre / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'litre per minute',
@@ -86,7 +86,7 @@ final _litrePerMinuteVariations = createUnitVariation(
 // __litre per second variations
 final _litrePerSecondVariations = createUnitVariation(
   VolumeFlowUnit.values,
-  VolumeFlowUnit.litrePerSecond,
+  '${variationUnitNameSeperator}litrePerSecond',
   _litreToCubicMetre,
   decimalPrefixes,
   namePostfix: 'litre per second',
@@ -104,7 +104,7 @@ final _litrePerSecondVariations = createUnitVariation(
 // cubic __metre per day variations
 final _cubicMetrePerDayVariations = createUnitVariation(
   VolumeFlowUnit.values,
-  VolumeFlowUnit.cubicMetrePerDay,
+  'cubic${variationUnitNameSeperator}MetrePerDay',
   1 / _dayToSecond,
   decimalPrefixes,
   namePrefix: 'cubic ',
@@ -126,7 +126,7 @@ final _cubicMetrePerDayVariations = createUnitVariation(
 // cubic __metre per hour variations
 final _cubicMetrePerHourVariations = createUnitVariation(
   VolumeFlowUnit.values,
-  VolumeFlowUnit.cubicMetrePerHour,
+  'cubic${variationUnitNameSeperator}MetrePerHour',
   1 / _hourToSecond,
   decimalPrefixes,
   namePrefix: 'cubic ',
@@ -148,7 +148,7 @@ final _cubicMetrePerHourVariations = createUnitVariation(
 // cubic __metre per minute variations
 final _cubicMetrePerMinuteVariations = createUnitVariation(
   VolumeFlowUnit.values,
-  VolumeFlowUnit.cubicMetrePerMinute,
+  'cubic${variationUnitNameSeperator}MetrePerMinute',
   1 / _minuteToSecond,
   decimalPrefixes,
   namePrefix: 'cubic ',
@@ -170,7 +170,7 @@ final _cubicMetrePerMinuteVariations = createUnitVariation(
 // cubic __metre per second variations
 final _cubicMetrePerSecondVariations = createUnitVariation(
   VolumeFlowUnit.values,
-  VolumeFlowUnit.cubicMetrePerSecond,
+  'cubic${variationUnitNameSeperator}MetrePerSecond',
   1,
   decimalPrefixes,
   namePrefix: 'cubic ',
