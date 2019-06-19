@@ -9,7 +9,7 @@ import '../others/misc.dart';
 // __hertz variations
 final _hertzVariations = createUnitVariation(
   FrequencyUnit.values,
-  FrequencyUnit.hertz,
+  '${variationUnitNameSeperator}hertz',
   1,
   decimalPrefixes,
   namePostfix: 'hertz',
