@@ -31,6 +31,7 @@ enum ConversionType {
   massFlow,
   massFraction,
   massPerArea,
+  moleFraction,
   planeAngle,
   power,
   pressure,

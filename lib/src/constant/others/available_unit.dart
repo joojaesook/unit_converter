@@ -29,6 +29,7 @@ import '../unit/mass_flow_unit_details.dart';
 import '../unit/mass_fraction_unit_details.dart';
 import '../unit/mass_per_area_unit_details.dart';
 import '../unit/mass_unit_details.dart';
+import '../unit/mole_fraction_unit_details.dart';
 import '../unit/plane_angle_unit_details.dart';
 import '../unit/power_unit_details.dart';
 import '../unit/pressure_unit_details.dart';
@@ -43,7 +44,6 @@ import '../unit/volume_unit_details.dart';
 import '../unit/water_hardness_unit_details.dart';
 
 final Map<ConversionType, Set<Unit>> availableUnit = {
-  // ConversionType.fuelConsumption: fuelConsumptionUnitDetails,
   ConversionType.acceleration: accelerationUnitDetails,
   ConversionType.area: areaUnitDetails,
   ConversionType.bloodCholesterol: bloodCholesterolUnitDetails,
@@ -73,6 +73,7 @@ final Map<ConversionType, Set<Unit>> availableUnit = {
   ConversionType.massFlow: massFlowUnitDetails,
   ConversionType.massFraction: massFractionUnitDetails,
   ConversionType.massPerArea: massPerAreaUnitDetails,
+  ConversionType.moleFraction: moleFractionUnitDetails,
   ConversionType.planeAngle: planeAngleUnitDetails,
   ConversionType.power: powerUnitDetails,
   ConversionType.pressure: pressureUnitDetails,

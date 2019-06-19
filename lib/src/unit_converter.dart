@@ -29,6 +29,7 @@ import 'enum/mass_flow_unit.dart';
 import 'enum/mass_fraction_unit.dart';
 import 'enum/mass_per_area_unit.dart';
 import 'enum/mass_unit.dart';
+import 'enum/mole_fraction_unit.dart';
 import 'enum/plane_angle_unit.dart';
 import 'enum/power_unit.dart';
 import 'enum/pressure_unit.dart';
@@ -71,6 +72,7 @@ export 'enum/mass_flow_unit.dart';
 export 'enum/mass_fraction_unit.dart';
 export 'enum/mass_per_area_unit.dart';
 export 'enum/mass_unit.dart';
+export 'enum/mole_fraction_unit.dart';
 export 'enum/plane_angle_unit.dart';
 export 'enum/power_unit.dart';
 export 'enum/pressure_unit.dart';
@@ -285,6 +287,13 @@ class UnitConverter {
     return MultiplicationBasedConverter<MassPerAreaUnit>(
       ConversionType.massPerArea,
       MassPerAreaUnit.kiloGramPerSquareMetre,
+    );
+  }
+
+  static MultiplicationBasedConverter moleFraction() {
+    return MultiplicationBasedConverter<MoleFractionUnit>(
+      ConversionType.moleFraction,
+      MoleFractionUnit.molePerMole,
     );
   }
 
