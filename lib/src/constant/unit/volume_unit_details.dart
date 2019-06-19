@@ -27,7 +27,7 @@ const _fluidOunce_imperial = _gallon_imperial / 160;
 // __litre variations
 final _litreVariations = createUnitVariation(
   VolumeUnit.values,
-  VolumeUnit.litre,
+  '${variationUnitNameSeperator}litre',
   _litreToCubicMetre,
   decimalPrefixes,
   namePostfix: 'litre',
@@ -43,7 +43,7 @@ final _litreVariations = createUnitVariation(
 // cubic __metre variations
 final _cubicMetreVariations = createUnitVariation(
   VolumeUnit.values,
-  VolumeUnit.cubicMetre,
+  'cubic${variationUnitNameSeperator}Metre',
   1,
   decimalPrefixes,
   namePrefix: 'cubic ',
