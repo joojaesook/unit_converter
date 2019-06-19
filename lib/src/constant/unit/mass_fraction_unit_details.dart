@@ -12,7 +12,7 @@ final _gramPerGramVariations = <Unit<MassFractionUnit>>{};
 void create(Unit<MassFractionUnit> unit) {
   var units = createUnitVariation(
     MassFractionUnit.values,
-    unit.type,
+    '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
     unit.conversionFactor,
     decimalPrefixes,
     namePostfix: unit.name,
@@ -24,7 +24,7 @@ void create(Unit<MassFractionUnit> unit) {
 // gram per __gram variations
 final _intermediateGramPerGramVariations = createUnitVariation(
   MassFractionUnit.values,
-  MassFractionUnit.gramPerGram,
+  'gramPer${variationUnitNameSeperator}Gram',
   1,
   decimalPrefixes,
   namePrefix: 'gram per ',
@@ -40,6 +40,7 @@ final _intermediateGramPerGramVariations = createUnitVariation(
       SymbolPart.gram,
     ],
   ),
+  powerOfVariationConversionFactor: -1,
 ).forEach(create);
 
 // other units
