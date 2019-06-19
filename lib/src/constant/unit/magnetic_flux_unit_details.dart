@@ -9,7 +9,7 @@ import '../others/misc.dart';
 // __weber variations
 final _weberVariations = createUnitVariation(
   MagneticFluxUnit.values,
-  MagneticFluxUnit.weber,
+  '${variationUnitNameSeperator}weber',
   1,
   decimalPrefixes,
   namePostfix: 'weber',
