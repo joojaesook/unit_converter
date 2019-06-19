@@ -7,7 +7,7 @@ import '../others/misc.dart';
 // __ampere variations
 final _ampereVariations = createUnitVariation(
   ElectricCurrentUnit.values,
-  ElectricCurrentUnit.ampere,
+  '${variationUnitNameSeperator}ampere',
   1,
   decimalPrefixes,
   namePostfix: 'ampere',

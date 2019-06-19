@@ -7,7 +7,7 @@ import '../others/misc.dart';
 // __coulomb variations
 final _coulombVariations = createUnitVariation(
   ElectricChargeUnit.values,
-  ElectricChargeUnit.coulomb,
+  '${variationUnitNameSeperator}coulomb',
   1,
   decimalPrefixes,
   namePostfix: 'coulomb',
@@ -21,7 +21,7 @@ final _coulombVariations = createUnitVariation(
 // __ampere-hour variations
 final _ampereHourVariations = createUnitVariation(
   ElectricChargeUnit.values,
-  ElectricChargeUnit.ampereHour,
+  '${variationUnitNameSeperator}ampereHour',
   3600,
   decimalPrefixes,
   namePostfix: 'ampere-hour',
@@ -36,7 +36,7 @@ final _ampereHourVariations = createUnitVariation(
 // __ampere-second variations
 final _ampereSecondVariations = createUnitVariation(
   ElectricChargeUnit.values,
-  ElectricChargeUnit.ampereSecond,
+  '${variationUnitNameSeperator}ampereSecond',
   1,
   decimalPrefixes,
   namePostfix: 'ampere-second',

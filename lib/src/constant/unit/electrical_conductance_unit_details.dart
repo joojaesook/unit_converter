@@ -9,7 +9,7 @@ import '../others/misc.dart';
 // __mho variations
 final _mhoVariations = createUnitVariation(
   ElectricalConductanceUnit.values,
-  ElectricalConductanceUnit.mho,
+  '${variationUnitNameSeperator}mho',
   1,
   decimalPrefixes,
   namePostfix: 'mho',
@@ -23,7 +23,7 @@ final _mhoVariations = createUnitVariation(
 // __siemens variations
 final _siemensVariations = createUnitVariation(
   ElectricalConductanceUnit.values,
-  ElectricalConductanceUnit.siemens,
+  '${variationUnitNameSeperator}siemens',
   1,
   decimalPrefixes,
   namePostfix: 'siemens',

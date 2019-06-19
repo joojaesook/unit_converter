@@ -9,7 +9,7 @@ import '../others/misc.dart';
 // __volt variations
 final _voltVariations = createUnitVariation(
   ElectricPotentialUnit.values,
-  ElectricPotentialUnit.volt,
+  '${variationUnitNameSeperator}volt',
   1,
   decimalPrefixes,
   namePostfix: 'volt',

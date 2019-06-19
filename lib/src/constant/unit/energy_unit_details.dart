@@ -16,7 +16,7 @@ final _decaThermToJoule = 10 * _thermToJoule_ec;
 // __calorie variations
 final _calorieVariations = createUnitVariation(
   EnergyUnit.values,
-  EnergyUnit.calorie,
+  '${variationUnitNameSeperator}calorie',
   4.184,
   decimalPrefixes,
   namePostfix: 'calorie',
@@ -30,7 +30,7 @@ final _calorieVariations = createUnitVariation(
 // __calorie 15 degree C variations
 final _calorieVariations_15DegreeC = createUnitVariation(
   EnergyUnit.values,
-  EnergyUnit.calorie_15DegreeC,
+  '${variationUnitNameSeperator}calorie_15DegreeC',
   4.1855,
   decimalPrefixes,
   namePostfix: 'calorie',
@@ -45,7 +45,7 @@ final _calorieVariations_15DegreeC = createUnitVariation(
 // __calorie International Steam Table variations
 final _calorieVariations_intlSteamTable = createUnitVariation(
   EnergyUnit.values,
-  EnergyUnit.calorie_intlSteamTable,
+  '${variationUnitNameSeperator}calorie_intlSteamTable',
   4.1868,
   decimalPrefixes,
   namePostfix: 'calorie',
@@ -60,7 +60,7 @@ final _calorieVariations_intlSteamTable = createUnitVariation(
 // __electron volt variations
 final _electronVoltVariations = createUnitVariation(
   EnergyUnit.values,
-  EnergyUnit.electronVolt,
+  '${variationUnitNameSeperator}electronVolt',
   1.6021766 * pow(10, -19),
   decimalPrefixes,
   namePostfix: 'electron volt',
@@ -74,7 +74,7 @@ final _electronVoltVariations = createUnitVariation(
 // __joule variations
 final _jouleVariations = createUnitVariation(
   EnergyUnit.values,
-  EnergyUnit.joule,
+  '${variationUnitNameSeperator}joule',
   1,
   decimalPrefixes,
   namePostfix: 'joule',
@@ -88,7 +88,7 @@ final _jouleVariations = createUnitVariation(
 // __tonne variations
 final _tonneVariations = createUnitVariation(
   EnergyUnit.values,
-  EnergyUnit.tonne,
+  '${variationUnitNameSeperator}tonne',
   4.184 * pow(10, 9),
   decimalPrefixes,
   namePostfix: 'tonne',
@@ -105,7 +105,7 @@ final _tonneVariations = createUnitVariation(
 // __watt hour variations
 final _wattHourVariations = createUnitVariation(
   EnergyUnit.values,
-  EnergyUnit.wattHour,
+  '${variationUnitNameSeperator}wattHour',
   3600,
   decimalPrefixes,
   namePostfix: 'watt hour',

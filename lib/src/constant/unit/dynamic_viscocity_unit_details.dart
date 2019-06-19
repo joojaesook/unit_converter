@@ -6,7 +6,7 @@ import '../others/misc.dart';
 // __pascal second variations
 final _pascalSecondVariations = createUnitVariation(
   DynamicViscocityUnit.values,
-  DynamicViscocityUnit.pascalSecond,
+  '${variationUnitNameSeperator}pascalSecond',
   1,
   decimalPrefixes,
   namePostfix: 'pascal second',
@@ -22,7 +22,7 @@ final _pascalSecondVariations = createUnitVariation(
 // __poise variations
 final _poiseVariations = createUnitVariation(
   DynamicViscocityUnit.values,
-  DynamicViscocityUnit.poise,
+  '${variationUnitNameSeperator}poise',
   0.1,
   decimalPrefixes,
   namePostfix: 'poise',

@@ -9,7 +9,7 @@ import '../others/misc.dart';
 // __ohm variations
 final _ohmVariations = createUnitVariation(
   ElectricalResistanceUnit.values,
-  ElectricalResistanceUnit.ohm,
+  '${variationUnitNameSeperator}ohm',
   1,
   decimalPrefixes,
   namePostfix: 'ohm',
