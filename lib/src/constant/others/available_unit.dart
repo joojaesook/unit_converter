@@ -27,6 +27,7 @@ import '../unit/magnetic_flux_density_unit_details.dart';
 import '../unit/magnetic_flux_unit_details.dart';
 import '../unit/mass_flow_unit_details.dart';
 import '../unit/mass_fraction_unit_details.dart';
+import '../unit/mass_moment_of_inertia_unit_details.dart';
 import '../unit/mass_per_area_unit_details.dart';
 import '../unit/mass_unit_details.dart';
 import '../unit/mole_fraction_unit_details.dart';
@@ -72,6 +73,7 @@ final Map<ConversionType, Set<Unit>> availableUnit = {
   ConversionType.mass: massUnitDetails,
   ConversionType.massFlow: massFlowUnitDetails,
   ConversionType.massFraction: massFractionUnitDetails,
+  ConversionType.massMomentOfInertia: massMomentOfInertiaUnitDetails,
   ConversionType.massPerArea: massPerAreaUnitDetails,
   ConversionType.moleFraction: moleFractionUnitDetails,
   ConversionType.planeAngle: planeAngleUnitDetails,

@@ -27,6 +27,7 @@ import 'enum/magnetic_flux_density_unit.dart';
 import 'enum/magnetic_flux_unit.dart';
 import 'enum/mass_flow_unit.dart';
 import 'enum/mass_fraction_unit.dart';
+import 'enum/mass_moment_of_inertia_unit.dart';
 import 'enum/mass_per_area_unit.dart';
 import 'enum/mass_unit.dart';
 import 'enum/mole_fraction_unit.dart';
@@ -70,6 +71,7 @@ export 'enum/magnetic_flux_density_unit.dart';
 export 'enum/magnetic_flux_unit.dart';
 export 'enum/mass_flow_unit.dart';
 export 'enum/mass_fraction_unit.dart';
+export 'enum/mass_moment_of_inertia_unit.dart';
 export 'enum/mass_per_area_unit.dart';
 export 'enum/mass_unit.dart';
 export 'enum/mole_fraction_unit.dart';
@@ -280,6 +282,13 @@ class UnitConverter {
     return MultiplicationBasedConverter<MassFractionUnit>(
       ConversionType.massFraction,
       MassFractionUnit.gramPerGram,
+    );
+  }
+
+  static MultiplicationBasedConverter massMomentOfInertia() {
+    return MultiplicationBasedConverter<MassMomentOfInertiaUnit>(
+      ConversionType.massMomentOfInertia,
+      MassMomentOfInertiaUnit.kiloGramSquareMetre,
     );
   }
 

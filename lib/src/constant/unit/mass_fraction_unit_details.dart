@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:math' show pow;
 
 import '../../enum/mass_fraction_unit.dart';
 import '../../enum/symbol_part.dart';

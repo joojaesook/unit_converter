@@ -30,6 +30,7 @@ enum ConversionType {
   mass,
   massFlow,
   massFraction,
+  massMomentOfInertia,
   massPerArea,
   moleFraction,
   planeAngle,
