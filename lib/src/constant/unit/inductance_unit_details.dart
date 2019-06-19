@@ -9,7 +9,7 @@ import '../others/misc.dart';
 // __henry variations
 final _henryVariations = createUnitVariation(
   InductanceUnit.values,
-  InductanceUnit.henry,
+  '${variationUnitNameSeperator}henry',
   1,
   decimalPrefixes,
   namePostfix: 'henry',
