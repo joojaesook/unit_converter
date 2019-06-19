@@ -11,7 +11,7 @@ import '../others/misc.dart';
 // __lux variations
 final _luxVariations = createUnitVariation(
   IlluminanceUnit.values,
-  IlluminanceUnit.lux,
+  '${variationUnitNameSeperator}lux',
   1,
   decimalPrefixes,
   namePostfix: 'lux',
@@ -25,7 +25,7 @@ final _luxVariations = createUnitVariation(
 // __phot variations
 final _photVariations = createUnitVariation(
   IlluminanceUnit.values,
-  IlluminanceUnit.phot,
+  '${variationUnitNameSeperator}phot',
   10000,
   decimalPrefixes,
   namePostfix: 'phot',
@@ -39,7 +39,7 @@ final _photVariations = createUnitVariation(
 // lumen per square __metre variations
 final _lumenPerSquareMetreVariations = createUnitVariation(
   IlluminanceUnit.values,
-  IlluminanceUnit.lumenPerSquareMetre,
+  'lumenPerSquare${variationUnitNameSeperator}Metre',
   1,
   decimalPrefixes,
   namePrefix: 'lumen per square ',
