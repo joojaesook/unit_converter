@@ -22,7 +22,7 @@ final _acreToSquareMetre = 43560 * _squareFoot;
 // __barn variations
 final _barnVariations = createUnitVariation(
   AreaUnit.values,
-  AreaUnit.barn,
+  '${variationUnitNameSeperator}barn',
   pow(10, -28),
   decimalPrefixes,
   namePostfix: 'barn',
@@ -36,7 +36,7 @@ final _barnVariations = createUnitVariation(
 // square __metre variations
 final _squareMetreVariations = createUnitVariation(
   AreaUnit.values,
-  AreaUnit.squareMetre,
+  'square${variationUnitNameSeperator}Metre',
   1,
   decimalPrefixes,
   namePrefix: 'square ',

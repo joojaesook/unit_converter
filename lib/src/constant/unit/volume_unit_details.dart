@@ -3,14 +3,12 @@ import 'dart:math' show pow;
 import '../../enum/area_unit.dart';
 import '../../enum/conversion_type.dart';
 import '../../enum/length_unit.dart';
-import '../../enum/metric_prefix.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../enum/volume_unit.dart';
 import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
-import '../others/prefix_value.dart';
 import '../others/unit_system.dart';
 
 final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
@@ -20,8 +18,7 @@ const _litreToCubicMetre = 0.001;
 const _gallon_imperial = 4.54609 * _litreToCubicMetre;
 const _gallon_usDry = 0.00440488377086;
 final _gallon_usLiquid = 231 * pow(_inchToMetre, 3);
-final _milliLiterToCubicMetre =
-    _litreToCubicMetre * prefixValue[MetricPrefix.milli];
+final _milliLiterToCubicMetre = _litreToCubicMetre * pow(10, -3);
 const _peck_imperial = 2 * _gallon_imperial;
 const _peck_usDry = 2 * _gallon_usDry;
 final _fluidOunce_us = _gallon_usLiquid / 128;

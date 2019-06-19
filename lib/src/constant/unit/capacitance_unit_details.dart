@@ -9,7 +9,7 @@ import '../others/misc.dart';
 // __farad variations
 final _faradVariations = createUnitVariation(
   CapacitanceUnit.values,
-  CapacitanceUnit.farad,
+  '${variationUnitNameSeperator}farad',
   1,
   decimalPrefixes,
   namePostfix: 'farad',

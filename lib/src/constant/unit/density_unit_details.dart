@@ -26,7 +26,7 @@ final _gramPerLitreAndPerCubicMetreVariations = <Unit<DensityUnit>>{};
 void create(Unit<DensityUnit> unit) {
   var units = createUnitVariation(
     DensityUnit.values,
-    unit.type,
+    '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
     unit.conversionFactor,
     decimalPrefixes,
     namePostfix: unit.name,
@@ -40,7 +40,7 @@ void create(Unit<DensityUnit> unit) {
 // gram per __litre variations
 final _intermediateGramPerLitreVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerLitre,
+  'gramPer${variationUnitNameSeperator}Litre',
   1,
   decimalPrefixes,
   namePrefix: 'gram per ',
@@ -59,12 +59,13 @@ final _intermediateGramPerLitreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'gram per ',
   americanNamePostfix: 'liter',
+  powerOfVariationConversionFactor: -1,
 ).forEach(create);
 
 // gram per cubic __metre variations
 final _intermediateGramPerCubicMetreVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerCubicMetre,
+  'gramPerCubic${variationUnitNameSeperator}Metre',
   _perCubicMetreToPerLitre,
   decimalPrefixes,
   namePrefix: 'gram per cubic ',
@@ -90,7 +91,7 @@ final _intermediateGramPerCubicMetreVariations = createUnitVariation(
 // __gram per cubic foot variations
 final _gramPerCubicFootVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerCubicFoot,
+  '${variationUnitNameSeperator}gramPerCubicFoot',
   _perCubicMetreToPerLitre /
       conversionFactor(
         ConversionType.volume,
@@ -111,7 +112,7 @@ final _gramPerCubicFootVariations = createUnitVariation(
 // __gram per cubic inch variations
 final _gramPerCubicInchVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerCubicInch,
+  '${variationUnitNameSeperator}gramPerCubicInch',
   _perCubicMetreToPerLitre /
       conversionFactor(
         ConversionType.volume,
@@ -132,7 +133,7 @@ final _gramPerCubicInchVariations = createUnitVariation(
 // __gram per cubic mile variations
 final _gramPerCubicMileVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerCubicMile,
+  '${variationUnitNameSeperator}gramPerCubicMile',
   _perCubicMetreToPerLitre /
       conversionFactor(
         ConversionType.volume,
@@ -153,7 +154,7 @@ final _gramPerCubicMileVariations = createUnitVariation(
 // __gram per cubic nautical mile variations
 final _gramPerCubicNauticalMileVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerCubicNauticalMile,
+  '${variationUnitNameSeperator}gramPerCubicNauticalMile',
   _perCubicMetreToPerLitre /
       pow(
         conversionFactor(
@@ -177,7 +178,7 @@ final _gramPerCubicNauticalMileVariations = createUnitVariation(
 // __gram per cubic yard variations
 final _gramPerCubicYardVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerCubicYard,
+  '${variationUnitNameSeperator}gramPerCubicYard',
   _perCubicMetreToPerLitre /
       conversionFactor(
         ConversionType.volume,
@@ -198,7 +199,7 @@ final _gramPerCubicYardVariations = createUnitVariation(
 // __gram per fluid ounce us variations
 final _gramPerFluidOunceVariations_us = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerFluidOunce_us,
+  '${variationUnitNameSeperator}gramPerFluidOunce_us',
   _perCubicMetreToPerLitre /
       conversionFactor(
         ConversionType.volume,
@@ -221,7 +222,7 @@ final _gramPerFluidOunceVariations_us = createUnitVariation(
 // __gram per gallon us liquid variations
 final _gramPerGallonVariations_usLiquid = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerGallon_usLiquid,
+  '${variationUnitNameSeperator}gramPerGallon_usLiquid',
   _perCubicMetreToPerLitre /
       conversionFactor(
         ConversionType.volume,
@@ -242,7 +243,7 @@ final _gramPerGallonVariations_usLiquid = createUnitVariation(
 // __gram per quart us liquid variations
 final _gramPerQuartVariations_usLiquid = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.gramPerQuart_usLiquid,
+  '${variationUnitNameSeperator}gramPerQuart_usLiquid',
   _perCubicMetreToPerLitre /
       conversionFactor(
         ConversionType.volume,
@@ -263,7 +264,7 @@ final _gramPerQuartVariations_usLiquid = createUnitVariation(
 // grain per __litre variations
 final _grainPerLitreVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.grainPerLitre,
+  'grainPer${variationUnitNameSeperator}Litre',
   _grainToGram,
   decimalPrefixes,
   namePrefix: 'grain per ',
@@ -282,12 +283,13 @@ final _grainPerLitreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'grain per ',
   americanNamePostfix: 'liter',
+  powerOfVariationConversionFactor: -1,
 );
 
 // grain per cubic __metre variations
 final _grainPerCubicMetreVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.grainPerCubicMetre,
+  'grainPerCubic${variationUnitNameSeperator}Metre',
   _grainToGram * _perCubicMetreToPerLitre,
   decimalPrefixes,
   namePrefix: 'grain per cubic ',
@@ -313,7 +315,7 @@ final _grainPerCubicMetreVariations = createUnitVariation(
 // ounce per __litre variations
 final _ouncePerLitreVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.ouncePerLitre,
+  'ouncePer${variationUnitNameSeperator}Litre',
   _ounceToGram,
   decimalPrefixes,
   namePrefix: 'ounce per ',
@@ -332,12 +334,13 @@ final _ouncePerLitreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'ounc per ',
   americanNamePostfix: 'liter',
+  powerOfVariationConversionFactor: -1,
 );
 
 // ounce per cubic __metre variations
 final _ouncePerCubicMetreVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.ouncePerCubicMetre,
+  'ouncePerCubic${variationUnitNameSeperator}Metre',
   _ounceToGram * _perCubicMetreToPerLitre,
   decimalPrefixes,
   namePrefix: 'ounce per cubic ',
@@ -363,7 +366,7 @@ final _ouncePerCubicMetreVariations = createUnitVariation(
 // pound per __litre variations
 final _poundPerLitreVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.poundPerLitre,
+  'poundPer${variationUnitNameSeperator}Litre',
   _poundToGram,
   decimalPrefixes,
   namePrefix: 'pound per ',
@@ -382,12 +385,13 @@ final _poundPerLitreVariations = createUnitVariation(
   addAmericanName: true,
   americanNamePrefix: 'pound per ',
   americanNamePostfix: 'liter',
+  powerOfVariationConversionFactor: -1,
 );
 
 // pound per cubic __metre variations
 final _poundPerCubicMetreVariations = createUnitVariation(
   DensityUnit.values,
-  DensityUnit.poundPerCubicMetre,
+  'poundPerCubic${variationUnitNameSeperator}Metre',
   _poundToGram * _perCubicMetreToPerLitre,
   decimalPrefixes,
   namePrefix: 'pound per cubic ',

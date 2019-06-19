@@ -1,6 +1,7 @@
 import 'dart:math' show pow;
 
 import '../constant/others/available_unit.dart';
+import '../constant/others/misc.dart';
 import '../constant/others/prefix_name.dart';
 import '../constant/others/prefix_value.dart';
 import '../constant/others/symbol.dart';
@@ -32,7 +33,9 @@ double conversionFactor<T>(ConversionType conversionType, T unitType) {
 }
 
 T enumFromString<T>(Iterable<T> values, String value) {
-  return values.firstWhere((type) => type.toString().split(".").last == value,
+  return values.firstWhere(
+      (type) =>
+          type.toString().split(".").last.toLowerCase() == value.toLowerCase(),
       orElse: () => null);
 }
 
@@ -71,9 +74,10 @@ Unit<T> createUnit<T>(
   return unit;
 }
 
+// variation unit type creation bug to be fixed
 Set<Unit<T>> createUnitVariation<T>(
   Iterable<T> unitEnum,
-  T baseUnit,
+  String variationBaseUnitName,
   double conversionFactorToBaseUnit,
   List<MetricPrefix> variations, {
   String namePrefix = '',
@@ -88,7 +92,7 @@ Set<Unit<T>> createUnitVariation<T>(
   bool appendVariationUnitTypeWithSystemName = false,
 }) {
   var units = <Unit<T>>{};
-  var variationBae = createUnit(
+  var variationBase = createUnit(
     namePrefix,
     namePostfix,
     americanNamePrefix,
@@ -97,19 +101,20 @@ Set<Unit<T>> createUnitVariation<T>(
     symbolPostfix,
     conversionFactorToBaseUnit,
     addAmericanName,
-    baseUnit,
+    enumFromString(
+      unitEnum,
+      variationBaseUnitName.replaceFirst(variationUnitNameSeperator, ''),
+    ),
     system,
   );
-  units.add(variationBae);
-  var baseUnitName = stringFromEnum(baseUnit);
+  units.add(variationBase);
   if (appendVariationUnitTypeWithSystemName) {
     var systemName = stringFromEnum(system);
-    baseUnitName += '_$systemName';
+    variationBaseUnitName += '_$systemName';
   }
-  baseUnitName =
-      baseUnitName.substring(0, 1).toUpperCase() + baseUnitName.substring(1);
   for (MetricPrefix p in variations) {
     var variationName = prefixName[p];
+    var prefix = prefixValue[p];
     var unit = createUnit(
       namePrefix,
       namePostfix,
@@ -118,9 +123,13 @@ Set<Unit<T>> createUnitVariation<T>(
       symbolPrefix,
       symbolPostfix,
       conversionFactorToBaseUnit *
-          pow(prefixValue[p], powerOfVariationConversionFactor),
+          pow(prefix.base, powerOfVariationConversionFactor * prefix.exponent),
       addAmericanName,
-      enumFromString(unitEnum, '$variationName$baseUnitName'),
+      enumFromString(
+        unitEnum,
+        variationBaseUnitName.replaceFirst(
+            variationUnitNameSeperator, variationName),
+      ),
       system,
       variation: true,
       variationName: variationName,

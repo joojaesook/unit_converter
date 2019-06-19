@@ -1,5 +1,7 @@
 import '../../enum/metric_prefix.dart';
 
+const variationUnitNameSeperator = '@';
+
 const decimalPrefixes = const [
   MetricPrefix.atto,
   MetricPrefix.centi,

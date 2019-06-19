@@ -37,7 +37,7 @@ final _yardToMetre = conversionFactor(
 // __gal variations
 final _galVariations = createUnitVariation(
   AccelerationUnit.values,
-  AccelerationUnit.gal,
+  '${variationUnitNameSeperator}gal',
   .01,
   decimalPrefixes,
   namePostfix: 'gal',
@@ -51,7 +51,7 @@ final _galVariations = createUnitVariation(
 // __metre per hour per second variations
 final _metrePerHourPerSecondVariations = createUnitVariation(
   AccelerationUnit.values,
-  AccelerationUnit.metrePerHourPerSecond,
+  '${variationUnitNameSeperator}metrePerHourPerSecond',
   1 / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'metre per hour per second',
@@ -71,7 +71,7 @@ final _metrePerHourPerSecondVariations = createUnitVariation(
 // __metre per hour squared variations
 final _metrePerHourSquaredVariations = createUnitVariation(
   AccelerationUnit.values,
-  AccelerationUnit.metrePerHourSquared,
+  '${variationUnitNameSeperator}metrePerHourSquared',
   1 / pow(_hourToSecond, 2),
   decimalPrefixes,
   namePostfix: 'metre per hour squared',
@@ -90,7 +90,7 @@ final _metrePerHourSquaredVariations = createUnitVariation(
 // __metre per minute per second variations
 final _metrePerMinutePerSecondVariations = createUnitVariation(
   AccelerationUnit.values,
-  AccelerationUnit.metrePerMinutePerSecond,
+  '${variationUnitNameSeperator}metrePerMinutePerSecond',
   1 / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'metre per minute per second',
@@ -110,7 +110,7 @@ final _metrePerMinutePerSecondVariations = createUnitVariation(
 // __metre per minute squared variations
 final _metrePerMinuteSquaredVariations = createUnitVariation(
   AccelerationUnit.values,
-  AccelerationUnit.metrePerMinuteSquared,
+  '${variationUnitNameSeperator}metrePerMinuteSquared',
   1 / pow(_minuteToSecond, 2),
   decimalPrefixes,
   namePostfix: 'metre per minute squared',
@@ -129,7 +129,7 @@ final _metrePerMinuteSquaredVariations = createUnitVariation(
 // __metre per second squared variations
 final _metrePerSecondSquaredVariations = createUnitVariation(
   AccelerationUnit.values,
-  AccelerationUnit.metrePerSecondSquared,
+  '${variationUnitNameSeperator}metrePerSecondSquared',
   1,
   decimalPrefixes,
   namePostfix: 'metre per second squared',

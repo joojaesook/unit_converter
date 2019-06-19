@@ -19,7 +19,7 @@ const double _byteToBit = 8;
 // __bit per hour variations
 final _bitPerHourVariations = createUnitVariation(
   DataRateUnit.values,
-  DataRateUnit.bitPerHour,
+  '${variationUnitNameSeperator}bitPerHour',
   1 / _hourToSecond,
   binaryPrefixes,
   namePostfix: 'bit per hour',
@@ -37,7 +37,7 @@ final _bitPerHourVariations = createUnitVariation(
 // __bit per minute variations
 final _bitPerMinuteVariations = createUnitVariation(
   DataRateUnit.values,
-  DataRateUnit.bitPerMinute,
+  '${variationUnitNameSeperator}bitPerMinute',
   1 / _minuteToSecond,
   binaryPrefixes,
   namePostfix: 'bit per minute',
@@ -55,7 +55,7 @@ final _bitPerMinuteVariations = createUnitVariation(
 // __bit per second variations
 final _bitPerSecondVariations = createUnitVariation(
   DataRateUnit.values,
-  DataRateUnit.bitPerSecond,
+  '${variationUnitNameSeperator}bitPerSecond',
   1,
   binaryPrefixes,
   namePostfix: 'bit per second',
@@ -73,7 +73,7 @@ final _bitPerSecondVariations = createUnitVariation(
 // __byte per hour variations
 final _bytePerHourVariations = createUnitVariation(
   DataRateUnit.values,
-  DataRateUnit.bytePerHour,
+  '${variationUnitNameSeperator}bytePerHour',
   _byteToBit / _hourToSecond,
   binaryPrefixes,
   namePostfix: 'byte per hour',
@@ -91,7 +91,7 @@ final _bytePerHourVariations = createUnitVariation(
 // __byte per minute variations
 final _bytePerMinuteVariations = createUnitVariation(
   DataRateUnit.values,
-  DataRateUnit.bytePerMinute,
+  '${variationUnitNameSeperator}bytePerMinute',
   _byteToBit / _minuteToSecond,
   binaryPrefixes,
   namePostfix: 'byte per minute',
@@ -109,7 +109,7 @@ final _bytePerMinuteVariations = createUnitVariation(
 // __byte per second variations
 final _bytePerSecondVariations = createUnitVariation(
   DataRateUnit.values,
-  DataRateUnit.bytePerSecond,
+  '${variationUnitNameSeperator}bytePerSecond',
   _byteToBit,
   binaryPrefixes,
   namePostfix: 'byte per second',

@@ -7,7 +7,7 @@ import '../others/misc.dart';
 // __bit variations
 final _bitVariations = createUnitVariation(
   DataUnit.values,
-  DataUnit.bit,
+  '${variationUnitNameSeperator}bit',
   1,
   binaryPrefixes,
   namePostfix: 'bit',
@@ -23,7 +23,7 @@ final _bitVariations = createUnitVariation(
 // __byte variations
 final _byteVariations = createUnitVariation(
   DataUnit.values,
-  DataUnit.byte,
+  '${variationUnitNameSeperator}byte',
   8,
   binaryPrefixes,
   namePostfix: 'byte',
