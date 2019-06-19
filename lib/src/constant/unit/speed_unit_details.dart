@@ -21,7 +21,7 @@ final _yardToMetre = conversionFactor(ConversionType.length, LengthUnit.yard);
 // __metre per day variations
 final _metrePerDayVariations = createUnitVariation(
   SpeedUnit.values,
-  SpeedUnit.metrePerDay,
+  '${variationUnitNameSeperator}metrePerDay',
   1 / _dayToSecond,
   decimalPrefixes,
   namePostfix: 'metre per day',
@@ -39,7 +39,7 @@ final _metrePerDayVariations = createUnitVariation(
 // __metre per hour variations
 final _metrePerHourVariations = createUnitVariation(
   SpeedUnit.values,
-  SpeedUnit.metrePerHour,
+  '${variationUnitNameSeperator}metrePerHour',
   1 / _hourToSecond,
   decimalPrefixes,
   namePostfix: 'metre per hour',
@@ -57,7 +57,7 @@ final _metrePerHourVariations = createUnitVariation(
 // __metre per minute variations
 final _metrePerMinuteVariations = createUnitVariation(
   SpeedUnit.values,
-  SpeedUnit.metrePerMinute,
+  '${variationUnitNameSeperator}metrePerMinute',
   1 / _minuteToSecond,
   decimalPrefixes,
   namePostfix: 'metre per minute',
@@ -75,7 +75,7 @@ final _metrePerMinuteVariations = createUnitVariation(
 // __metre per second variations
 final _metrePerSecondVariations = createUnitVariation(
   SpeedUnit.values,
-  SpeedUnit.metrePerSecond,
+  '${variationUnitNameSeperator}metrePerSecond',
   1,
   decimalPrefixes,
   namePostfix: 'metre per second',
