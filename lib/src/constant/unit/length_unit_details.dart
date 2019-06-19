@@ -16,7 +16,7 @@ const double _nauticalMileToMetre = 1852;
 // __light year variations
 final _lightYearVariations = createUnitVariation(
   LengthUnit.values,
-  LengthUnit.lightYear,
+  '${variationUnitNameSeperator}lightYear',
   9.4607304725808 * pow(10, 15),
   decimalPrefixes,
   namePostfix: 'light-year',
@@ -31,7 +31,7 @@ final _lightYearVariations = createUnitVariation(
 // __metre variations
 final _metreVariations = createUnitVariation(
   LengthUnit.values,
-  LengthUnit.metre,
+  '${variationUnitNameSeperator}metre',
   1,
   decimalPrefixes,
   namePostfix: 'metre',
@@ -47,7 +47,7 @@ final _metreVariations = createUnitVariation(
 // __parsec variations
 final _parsecVariations = createUnitVariation(
   LengthUnit.values,
-  LengthUnit.parsec,
+  '${variationUnitNameSeperator}parsec',
   3.08567782 * pow(10, 16),
   decimalPrefixes,
   namePostfix: 'parsec',
