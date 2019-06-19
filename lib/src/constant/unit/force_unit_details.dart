@@ -12,7 +12,7 @@ const _poundForceToNewton = 4.4482216152605;
 // __gram force variations
 final _gramForceVariations = createUnitVariation(
   ForceUnit.values,
-  ForceUnit.gramForce,
+  '${variationUnitNameSeperator}gramForce',
   _gramForceToNewton,
   decimalPrefixes,
   namePostfix: 'gram-force',
@@ -27,7 +27,7 @@ final _gramForceVariations = createUnitVariation(
 // __newton variations
 final _newtonVariations = createUnitVariation(
   ForceUnit.values,
-  ForceUnit.newton,
+  '${variationUnitNameSeperator}newton',
   1,
   decimalPrefixes,
   namePostfix: 'newton',
