@@ -183,7 +183,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.atmosphere_standard,
-    101325,
+    conversionFactor: 101325,
     system: unitSystem[UnitSystem.standard],
   ),
   createUnit(
@@ -195,7 +195,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.atmosphere_technical,
-    98066.5,
+    conversionFactor: 98066.5,
     system: unitSystem[UnitSystem.technical],
   ),
   createUnit(
@@ -207,7 +207,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.barye,
-    0.1,
+    conversionFactor: 0.1,
   ),
   createUnit(
     'foot of mercury',
@@ -219,7 +219,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.footOfMercury_conventional,
-    _metreOfMercuryToPascal_conventional *
+    conversionFactor: _metreOfMercuryToPascal_conventional *
         conversionFactor(
           ConversionType.length,
           LengthUnit.foot,
@@ -236,7 +236,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.footOfWater_degree4C,
-    _metreOfWaterToPascal_degree4C *
+    conversionFactor: _metreOfWaterToPascal_degree4C *
         conversionFactor(
           ConversionType.length,
           LengthUnit.foot,
@@ -252,7 +252,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.inchOfMercury_conventional,
-    _metreOfMercuryToPascal_conventional *
+    conversionFactor: _metreOfMercuryToPascal_conventional *
         conversionFactor(
           ConversionType.length,
           LengthUnit.inch,
@@ -269,7 +269,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.inchOfWater_degree4C,
-    _metreOfWaterToPascal_degree4C *
+    conversionFactor: _metreOfWaterToPascal_degree4C *
         conversionFactor(
           ConversionType.length,
           LengthUnit.inch,
@@ -285,7 +285,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.kipPerSquareInch,
-    conversionFactor(ConversionType.force, ForceUnit.kip) /
+    conversionFactor: conversionFactor(ConversionType.force, ForceUnit.kip) /
         conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
   createUnit(
@@ -300,8 +300,9 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.ounceForcePerSquareFoot,
-    conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
-        conversionFactor(ConversionType.area, AreaUnit.squareFoot),
+    conversionFactor:
+        conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
+            conversionFactor(ConversionType.area, AreaUnit.squareFoot),
   ),
   createUnit(
     'ounce force per square inch',
@@ -315,8 +316,9 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.ounceForcePerSquareInch,
-    conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
-        conversionFactor(ConversionType.area, AreaUnit.squareInch),
+    conversionFactor:
+        conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
+            conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
   createUnit(
     'ounce force per square yard',
@@ -330,8 +332,9 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.ounceForcePerSquareYard,
-    conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
-        conversionFactor(ConversionType.area, AreaUnit.squareYard),
+    conversionFactor:
+        conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
+            conversionFactor(ConversionType.area, AreaUnit.squareYard),
   ),
   createUnit(
     'pound force per acre',
@@ -344,8 +347,9 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerAcre,
-    conversionFactor(ConversionType.force, ForceUnit.poundForce) /
-        conversionFactor(ConversionType.area, AreaUnit.acre),
+    conversionFactor:
+        conversionFactor(ConversionType.force, ForceUnit.poundForce) /
+            conversionFactor(ConversionType.area, AreaUnit.acre),
   ),
   createUnit(
     'pound force per square foot',
@@ -359,8 +363,9 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerSquareFoot,
-    conversionFactor(ConversionType.force, ForceUnit.poundForce) /
-        conversionFactor(ConversionType.area, AreaUnit.squareFoot),
+    conversionFactor:
+        conversionFactor(ConversionType.force, ForceUnit.poundForce) /
+            conversionFactor(ConversionType.area, AreaUnit.squareFoot),
   ),
   createUnit(
     'pound force per square inch',
@@ -374,8 +379,9 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerSquareInch,
-    conversionFactor(ConversionType.force, ForceUnit.poundForce) /
-        conversionFactor(ConversionType.area, AreaUnit.squareInch),
+    conversionFactor:
+        conversionFactor(ConversionType.force, ForceUnit.poundForce) /
+            conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
   createUnit(
     'pound force per square yard',
@@ -389,8 +395,9 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerSquareYard,
-    conversionFactor(ConversionType.force, ForceUnit.poundForce) /
-        conversionFactor(ConversionType.area, AreaUnit.squareYard),
+    conversionFactor:
+        conversionFactor(ConversionType.force, ForceUnit.poundForce) /
+            conversionFactor(ConversionType.area, AreaUnit.squareYard),
   ),
   createUnit(
     'poundal per square foot',
@@ -404,8 +411,9 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundalPerSquareFoot,
-    conversionFactor(ConversionType.force, ForceUnit.poundal) /
-        conversionFactor(ConversionType.area, AreaUnit.squareFoot),
+    conversionFactor:
+        conversionFactor(ConversionType.force, ForceUnit.poundal) /
+            conversionFactor(ConversionType.area, AreaUnit.squareFoot),
   ),
   createUnit(
     'poundal per square inch',
@@ -419,8 +427,9 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundalPerSquareInch,
-    conversionFactor(ConversionType.force, ForceUnit.poundal) /
-        conversionFactor(ConversionType.area, AreaUnit.squareInch),
+    conversionFactor:
+        conversionFactor(ConversionType.force, ForceUnit.poundal) /
+            conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
 };
 

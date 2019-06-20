@@ -159,7 +159,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.footPerHourPerSecond,
-    _footToMetre / _hourToSecond,
+    conversionFactor: _footToMetre / _hourToSecond,
   ),
   createUnit(
     'foot per hour squared',
@@ -172,7 +172,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.footPerHourSquared,
-    _footToMetre / pow(_hourToSecond, 2),
+    conversionFactor: _footToMetre / pow(_hourToSecond, 2),
   ),
   createUnit(
     'foot per minute per second',
@@ -186,7 +186,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.footPerMinutePerSecond,
-    _footToMetre / _minuteToSecond,
+    conversionFactor: _footToMetre / _minuteToSecond,
   ),
   createUnit(
     'foot per minute squared',
@@ -199,7 +199,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.footPerMinuteSquared,
-    _footToMetre / pow(_minuteToSecond, 2),
+    conversionFactor: _footToMetre / pow(_minuteToSecond, 2),
   ),
   createUnit(
     'foot per second squared',
@@ -212,7 +212,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.footPerSecondSquared,
-    _footToMetre,
+    conversionFactor: _footToMetre,
   ),
 
   // inch
@@ -228,7 +228,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.inchPerHourPerSecond,
-    _inchToMetre / _hourToSecond,
+    conversionFactor: _inchToMetre / _hourToSecond,
   ),
   createUnit(
     'inch per hour squared',
@@ -241,7 +241,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.inchPerHourSquared,
-    _inchToMetre / pow(_hourToSecond, 2),
+    conversionFactor: _inchToMetre / pow(_hourToSecond, 2),
   ),
   createUnit(
     'inch per minute per second',
@@ -255,7 +255,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.inchPerMinutePerSecond,
-    _inchToMetre / _minuteToSecond,
+    conversionFactor: _inchToMetre / _minuteToSecond,
   ),
   createUnit(
     'inch per minute squared',
@@ -268,7 +268,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.inchPerMinuteSquared,
-    _inchToMetre / pow(_minuteToSecond, 2),
+    conversionFactor: _inchToMetre / pow(_minuteToSecond, 2),
   ),
   createUnit(
     'inch per second squared',
@@ -281,7 +281,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.inchPerSecondSquared,
-    _inchToMetre,
+    conversionFactor: _inchToMetre,
   ),
 
   // mile
@@ -297,7 +297,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.milePerHourPerSecond,
-    _mileToMetre / _hourToSecond,
+    conversionFactor: _mileToMetre / _hourToSecond,
   ),
   createUnit(
     'mile per hour squared',
@@ -310,7 +310,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.milePerHourSquared,
-    _mileToMetre / pow(_hourToSecond, 2),
+    conversionFactor: _mileToMetre / pow(_hourToSecond, 2),
   ),
   createUnit(
     'mile per minute per second',
@@ -324,7 +324,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.milePerMinutePerSecond,
-    _mileToMetre / _minuteToSecond,
+    conversionFactor: _mileToMetre / _minuteToSecond,
   ),
   createUnit(
     'mile per minute squared',
@@ -337,7 +337,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.milePerMinuteSquared,
-    _mileToMetre / pow(_minuteToSecond, 2),
+    conversionFactor: _mileToMetre / pow(_minuteToSecond, 2),
   ),
   createUnit(
     'mile per second squared',
@@ -350,7 +350,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.milePerSecondSquared,
-    _mileToMetre,
+    conversionFactor: _mileToMetre,
   ),
 
   //yard
@@ -366,7 +366,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.yardPerHourPerSecond,
-    _yardToMetre / _hourToSecond,
+    conversionFactor: _yardToMetre / _hourToSecond,
   ),
   createUnit(
     'yard per hour squared',
@@ -379,7 +379,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.yardPerHourSquared,
-    _yardToMetre / pow(_hourToSecond, 2),
+    conversionFactor: _yardToMetre / pow(_hourToSecond, 2),
   ),
   createUnit(
     'yard per minute per second',
@@ -393,7 +393,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.yardPerMinutePerSecond,
-    _yardToMetre / _minuteToSecond,
+    conversionFactor: _yardToMetre / _minuteToSecond,
   ),
   createUnit(
     'yard per minute squared',
@@ -406,7 +406,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.yardPerMinuteSquared,
-    _yardToMetre / pow(_minuteToSecond, 2),
+    conversionFactor: _yardToMetre / pow(_minuteToSecond, 2),
   ),
   createUnit(
     'yard per second squared',
@@ -419,7 +419,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.yardPerSecondSquared,
-    _yardToMetre,
+    conversionFactor: _yardToMetre,
   ),
 
   // others
@@ -432,7 +432,7 @@ final _otherUnits = {
       ],
     ),
     AccelerationUnit.standardGravity,
-    9.80665,
+    conversionFactor: 9.80665,
   ),
 };
 

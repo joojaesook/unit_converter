@@ -101,7 +101,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.footPerDay,
-    _footToMetre / _dayToSecond,
+    conversionFactor: _footToMetre / _dayToSecond,
   ),
   createUnit(
     'foot per hour',
@@ -113,7 +113,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.footPerHour,
-    _footToMetre / _hourToSecond,
+    conversionFactor: _footToMetre / _hourToSecond,
   ),
   createUnit(
     'foot per minute',
@@ -125,7 +125,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.footPerMinute,
-    _footToMetre / _minuteToSecond,
+    conversionFactor: _footToMetre / _minuteToSecond,
   ),
   createUnit(
     'foot per second',
@@ -137,7 +137,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.footPerSecond,
-    _footToMetre,
+    conversionFactor: _footToMetre,
   ),
   createUnit(
     'inch per day',
@@ -149,7 +149,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.inchPerDay,
-    _inchToMetre / _dayToSecond,
+    conversionFactor: _inchToMetre / _dayToSecond,
   ),
   createUnit(
     'inch per hour',
@@ -161,7 +161,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.inchPerHour,
-    _inchToMetre / _hourToSecond,
+    conversionFactor: _inchToMetre / _hourToSecond,
   ),
   createUnit(
     'inch per minute',
@@ -173,7 +173,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.inchPerMinute,
-    _inchToMetre / _minuteToSecond,
+    conversionFactor: _inchToMetre / _minuteToSecond,
   ),
   createUnit(
     'inch per second',
@@ -185,7 +185,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.inchPerSecond,
-    _inchToMetre,
+    conversionFactor: _inchToMetre,
   ),
   createUnit(
     'knot',
@@ -195,7 +195,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.knot,
-    0.514444444,
+    conversionFactor: 0.514444444,
   ),
   createUnit(
     'mile per day',
@@ -207,7 +207,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.milePerDay,
-    _mileToMetre / _dayToSecond,
+    conversionFactor: _mileToMetre / _dayToSecond,
   ),
   createUnit(
     'mile per hour',
@@ -219,7 +219,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.milePerHour,
-    _mileToMetre / _hourToSecond,
+    conversionFactor: _mileToMetre / _hourToSecond,
   ),
   createUnit(
     'mile per minute',
@@ -231,7 +231,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.milePerMinute,
-    _mileToMetre / _minuteToSecond,
+    conversionFactor: _mileToMetre / _minuteToSecond,
   ),
   createUnit(
     'mile per second',
@@ -243,7 +243,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.milePerSecond,
-    _mileToMetre,
+    conversionFactor: _mileToMetre,
   ),
   createUnit(
     'nautical mile per hour',
@@ -255,7 +255,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.nauticalMilePerHour,
-    _nauticalMileToMetre / _hourToSecond,
+    conversionFactor: _nauticalMileToMetre / _hourToSecond,
   ),
   createUnit(
     'nautical mile per minute',
@@ -267,7 +267,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.nauticalMilePerMinute,
-    _nauticalMileToMetre / _minuteToSecond,
+    conversionFactor: _nauticalMileToMetre / _minuteToSecond,
   ),
   createUnit(
     'nautical mile per second',
@@ -279,7 +279,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.nauticalMilePerSecond,
-    _nauticalMileToMetre,
+    conversionFactor: _nauticalMileToMetre,
   ),
   createUnit(
     'yard per day',
@@ -291,7 +291,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.yardPerDay,
-    _yardToMetre / _dayToSecond,
+    conversionFactor: _yardToMetre / _dayToSecond,
   ),
   createUnit(
     'yard per hour',
@@ -303,7 +303,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.yardPerHour,
-    _yardToMetre / _hourToSecond,
+    conversionFactor: _yardToMetre / _hourToSecond,
   ),
   createUnit(
     'yard per minute',
@@ -315,7 +315,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.yardPerMinute,
-    _yardToMetre / _minuteToSecond,
+    conversionFactor: _yardToMetre / _minuteToSecond,
   ),
   createUnit(
     'yard per second',
@@ -327,7 +327,7 @@ final _otherUnits = {
       ],
     ),
     SpeedUnit.yardPerSecond,
-    _yardToMetre,
+    conversionFactor: _yardToMetre,
   ),
 };
 

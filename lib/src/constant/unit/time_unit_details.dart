@@ -32,7 +32,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.century,
-    100 * _yearToSecond,
+    conversionFactor: 100 * _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
   createUnit(
@@ -43,7 +43,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.day,
-    _dayToSecond,
+    conversionFactor: _dayToSecond,
   ),
   createUnit(
     'decade',
@@ -53,7 +53,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.decade,
-    10 * _yearToSecond,
+    conversionFactor: 10 * _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
   createUnit(
@@ -64,7 +64,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.fortnight,
-    1209600,
+    conversionFactor: 1209600,
   ),
   createUnit(
     'hour',
@@ -74,7 +74,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.hour,
-    3600,
+    conversionFactor: 3600,
   ),
   createUnit(
     'millennium',
@@ -84,7 +84,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.millennium,
-    1000 * _yearToSecond,
+    conversionFactor: 1000 * _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
   createUnit(
@@ -95,7 +95,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.minute,
-    60,
+    conversionFactor: 60,
   ),
   createUnit(
     'month',
@@ -105,7 +105,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.month,
-    _yearToSecond / 12,
+    conversionFactor: _yearToSecond / 12,
     system: unitSystem[UnitSystem.gregorian],
   ),
   createUnit(
@@ -116,7 +116,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.week,
-    604800,
+    conversionFactor: 604800,
   ),
   createUnit(
     'year',
@@ -126,7 +126,7 @@ final _otherUnits = {
       ],
     ),
     TimeUnit.year,
-    _yearToSecond,
+    conversionFactor: _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
 };

@@ -58,7 +58,7 @@ final _otherUnits = {
       ],
     ),
     ElectricChargeUnit.abCoulomb,
-    10,
+    conversionFactor: 10,
     variation: true,
   ),
 };

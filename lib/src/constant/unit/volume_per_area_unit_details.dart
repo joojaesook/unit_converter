@@ -32,7 +32,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.cubicMetrePerAcre,
-    1 / _acreToSquareMetre,
+    conversionFactor: 1 / _acreToSquareMetre,
     americanName: 'cubic meter per acre',
   ),
   createUnit(
@@ -46,7 +46,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.cubicMetrePerHectare,
-    1 / _hectareToSquareMetre,
+    conversionFactor: 1 / _hectareToSquareMetre,
     americanName: 'cubic meter per hectare',
   ),
   createUnit(
@@ -61,7 +61,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.cubicMetrePerSquareMetre,
-    1,
+    conversionFactor: 1,
     americanName: 'cubic meter per square meter',
   ),
   createUnit(
@@ -76,7 +76,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.cubicMetrePerSquareMile,
-    1 / _squareMileToSquareMetre,
+    conversionFactor: 1 / _squareMileToSquareMetre,
     americanName: 'cubic meter per square mile',
   ),
   createUnit(
@@ -91,7 +91,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.cubicMetrePerSquareYard,
-    1 / _squareYardToSquareMetre,
+    conversionFactor: 1 / _squareYardToSquareMetre,
     americanName: 'cubic meter per square yard',
   ),
   createUnit(
@@ -104,7 +104,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.gallonPerAcre_usLiquid,
-    _gallonToCubicMetre_usLiquid / _acreToSquareMetre,
+    conversionFactor: _gallonToCubicMetre_usLiquid / _acreToSquareMetre,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -117,7 +117,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.gallonPerHectare_usLiquid,
-    _gallonToCubicMetre_usLiquid / _hectareToSquareMetre,
+    conversionFactor: _gallonToCubicMetre_usLiquid / _hectareToSquareMetre,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -131,7 +131,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.gallonPerSquareMetre_usLiquid,
-    _gallonToCubicMetre_usLiquid,
+    conversionFactor: _gallonToCubicMetre_usLiquid,
     americanName: 'gallon per square meter',
     system: unitSystem[UnitSystem.usLiquid],
   ),
@@ -146,7 +146,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.gallonPerSquareMile_usLiquid,
-    _gallonToCubicMetre_usLiquid / _squareMileToSquareMetre,
+    conversionFactor: _gallonToCubicMetre_usLiquid / _squareMileToSquareMetre,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -160,7 +160,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.gallonPerSquareYard_usLiquid,
-    _gallonToCubicMetre_usLiquid / _squareYardToSquareMetre,
+    conversionFactor: _gallonToCubicMetre_usLiquid / _squareYardToSquareMetre,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -173,7 +173,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.litrePerAcre,
-    _litreToCubicMetre / _acreToSquareMetre,
+    conversionFactor: _litreToCubicMetre / _acreToSquareMetre,
     americanName: 'liter per acre',
   ),
   createUnit(
@@ -186,7 +186,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.litrePerHectare,
-    _litreToCubicMetre / _hectareToSquareMetre,
+    conversionFactor: _litreToCubicMetre / _hectareToSquareMetre,
     americanName: 'liter per hectare',
   ),
   createUnit(
@@ -200,7 +200,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.litrePerSquareMetre,
-    _litreToCubicMetre,
+    conversionFactor: _litreToCubicMetre,
     americanName: 'liter per square meter',
   ),
   createUnit(
@@ -214,7 +214,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.litrePerSquareMile,
-    _litreToCubicMetre / _squareMileToSquareMetre,
+    conversionFactor: _litreToCubicMetre / _squareMileToSquareMetre,
     americanName: 'liter per square mile',
   ),
   createUnit(
@@ -228,7 +228,7 @@ final volumePerAreaUnitDetails = {
       ],
     ),
     VolumePerAreaUnit.litrePerSquareYard,
-    _litreToCubicMetre / _squareYardToSquareMetre,
+    conversionFactor: _litreToCubicMetre / _squareYardToSquareMetre,
     americanName: 'liter per square yard',
   ),
 };

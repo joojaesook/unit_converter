@@ -29,7 +29,7 @@ final _otherUnits = {
       ],
     ),
     MagneticFluxUnit.maxwell,
-    pow(10, -8),
+    conversionFactor: pow(10, -8),
   ),
 };
 

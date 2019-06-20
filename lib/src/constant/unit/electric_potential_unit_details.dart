@@ -30,7 +30,7 @@ final _otherUnits = {
       ],
     ),
     ElectricPotentialUnit.abVolt,
-    pow(10, -8),
+    conversionFactor: pow(10, -8),
     variation: true,
   ),
 };

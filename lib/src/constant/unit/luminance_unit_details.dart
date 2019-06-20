@@ -46,7 +46,7 @@ final _otherUnits = {
       ],
     ),
     LuminanceUnit.candelaPerSquareFoot,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.foot,
@@ -65,7 +65,7 @@ final _otherUnits = {
       ],
     ),
     LuminanceUnit.candelaPerSquareInch,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.inch,
@@ -82,7 +82,7 @@ final _otherUnits = {
       ],
     ),
     LuminanceUnit.footLambert,
-    3.42625909964,
+    conversionFactor: 3.42625909964,
   ),
   createUnit(
     'lambert',
@@ -92,7 +92,7 @@ final _otherUnits = {
       ],
     ),
     LuminanceUnit.lambert,
-    3183.09886184,
+    conversionFactor: 3183.09886184,
   ),
   createUnit(
     'stilb',
@@ -102,7 +102,7 @@ final _otherUnits = {
       ],
     ),
     LuminanceUnit.stilb,
-    10000,
+    conversionFactor: 10000,
   ),
 };
 

@@ -16,7 +16,7 @@ final planeAngleUnitDetails = {
       ],
     ),
     PlaneAngleUnit.degree,
-    _degreeToRadian,
+    conversionFactor: _degreeToRadian,
   ),
   createUnit(
     'gradian',
@@ -29,7 +29,7 @@ final planeAngleUnitDetails = {
       ],
     ),
     PlaneAngleUnit.gradian,
-    2 * pi / 400,
+    conversionFactor: 2 * pi / 400,
   ),
   createUnit(
     'milliradian',
@@ -40,7 +40,7 @@ final planeAngleUnitDetails = {
       ],
     ),
     PlaneAngleUnit.milliRadian,
-    .001,
+    conversionFactor: .001,
   ),
   createUnit(
     'minute of arc',
@@ -50,7 +50,7 @@ final planeAngleUnitDetails = {
       ],
     ),
     PlaneAngleUnit.minuteOfArc,
-    _degreeToRadian / 60,
+    conversionFactor: _degreeToRadian / 60,
   ),
   createUnit(
     'radian',
@@ -60,7 +60,7 @@ final planeAngleUnitDetails = {
       ],
     ),
     PlaneAngleUnit.radian,
-    1,
+    conversionFactor: 1,
   ),
   createUnit(
     'second of arc',
@@ -70,7 +70,7 @@ final planeAngleUnitDetails = {
       ],
     ),
     PlaneAngleUnit.secondOfArc,
-    _degreeToRadian / 3600,
+    conversionFactor: _degreeToRadian / 3600,
   ),
   createUnit(
     'turn',
@@ -80,6 +80,6 @@ final planeAngleUnitDetails = {
       ],
     ),
     PlaneAngleUnit.turn,
-    2 * pi,
+    conversionFactor: 2 * pi,
   ),
 };

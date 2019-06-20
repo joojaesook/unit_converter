@@ -16,7 +16,7 @@ final bloodGlucoseUnitDetails = {
       ],
     ),
     BloodGlucoseUnit.milliGramPerDeciLitre,
-    1,
+    conversionFactor: 1,
     americanName: 'milligram per deciliter',
   ),
   createUnit(
@@ -30,7 +30,7 @@ final bloodGlucoseUnitDetails = {
       ],
     ),
     BloodGlucoseUnit.milliMolePerLitre,
-    18.01559,
+    conversionFactor: 18.01559,
     americanName: 'millimole per liter',
   ),
 };

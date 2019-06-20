@@ -28,7 +28,7 @@ final _otherUnits = {
       ],
     ),
     ElectricCurrentUnit.abAmpere,
-    10,
+    conversionFactor: 10,
     variation: true,
   ),
 };

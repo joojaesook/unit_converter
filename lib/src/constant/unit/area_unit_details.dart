@@ -62,7 +62,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.acre,
-    _acreToSquareMetre,
+    conversionFactor: _acreToSquareMetre,
   ),
   createUnit(
     'acre',
@@ -72,7 +72,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.acre_usSurvey,
-    4046.872609874252,
+    conversionFactor: 4046.872609874252,
     system: unitSystem[UnitSystem.usSurvey],
   ),
   createUnit(
@@ -83,7 +83,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.are,
-    100,
+    conversionFactor: 100,
   ),
   createUnit(
     'circular mil',
@@ -96,7 +96,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.circularMil,
-    5.067074790975 * pow(10, -10),
+    conversionFactor: 5.067074790975 * pow(10, -10),
   ),
   createUnit(
     'hectare',
@@ -106,7 +106,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.hectare,
-    10000,
+    conversionFactor: 10000,
   ),
   createUnit(
     'rai',
@@ -116,7 +116,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.rai,
-    1600,
+    conversionFactor: 1600,
   ),
   createUnit(
     'rood',
@@ -126,7 +126,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.rood,
-    _acreToSquareMetre / 4,
+    conversionFactor: _acreToSquareMetre / 4,
   ),
   createUnit(
     'square',
@@ -141,7 +141,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.square,
-    100 * _squareFoot,
+    conversionFactor: 100 * _squareFoot,
   ),
   createUnit(
     'square foot',
@@ -152,7 +152,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.squareFoot,
-    _squareFoot,
+    conversionFactor: _squareFoot,
   ),
   createUnit(
     'square inch',
@@ -163,7 +163,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.squareInch,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.inch,
@@ -180,7 +180,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.squareMile,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.mile,
@@ -196,7 +196,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.squarePerch,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.rod,
@@ -213,7 +213,7 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.squareYard,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.yard,

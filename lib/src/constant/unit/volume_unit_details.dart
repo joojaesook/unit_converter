@@ -71,7 +71,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.acreFoot,
-    _acreToSquareMetre * _footToMetre,
+    conversionFactor: _acreToSquareMetre * _footToMetre,
   ),
   createUnit(
     'acre-inch',
@@ -83,7 +83,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.acreInch,
-    _acreToSquareMetre * _inchToMetre,
+    conversionFactor: _acreToSquareMetre * _inchToMetre,
   ),
   createUnit(
     'board foot',
@@ -93,7 +93,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.boardFoot,
-    pow(_footToMetre, 3) / 12,
+    conversionFactor: pow(_footToMetre, 3) / 12,
   ),
   createUnit(
     'bushel',
@@ -103,7 +103,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.bushel_imperial,
-    8 * _gallon_imperial,
+    conversionFactor: 8 * _gallon_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -114,7 +114,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.bushel_usDryLevel,
-    8 * _gallon_usDry,
+    conversionFactor: 8 * _gallon_usDry,
     system: unitSystem[UnitSystem.usDryLevel],
   ),
   createUnit(
@@ -126,7 +126,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cubicFoot,
-    pow(
+    conversionFactor: pow(
       _footToMetre,
       3,
     ),
@@ -140,7 +140,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cubicInch,
-    pow(
+    conversionFactor: pow(
       _inchToMetre,
       3,
     ),
@@ -154,7 +154,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cubicMile,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.mile,
@@ -171,7 +171,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cubicYard,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.yard,
@@ -187,7 +187,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cup_imperial,
-    _gallon_imperial / 16,
+    conversionFactor: _gallon_imperial / 16,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -198,7 +198,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cup_metric,
-    250 * _milliLiterToCubicMetre,
+    conversionFactor: 250 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.metric],
   ),
   createUnit(
@@ -209,7 +209,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cup_us,
-    _gallon_usLiquid / 16,
+    conversionFactor: _gallon_usLiquid / 16,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -220,7 +220,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cup_usFoodNutritionLabel,
-    240 * _milliLiterToCubicMetre,
+    conversionFactor: 240 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
   createUnit(
@@ -231,7 +231,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.firlot_imperial,
-    4 * _peck_imperial,
+    conversionFactor: 4 * _peck_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -242,7 +242,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.firlot_usDry,
-    4 * _peck_usDry,
+    conversionFactor: 4 * _peck_usDry,
     system: unitSystem[UnitSystem.usDry],
   ),
   createUnit(
@@ -255,7 +255,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.fluidDram_us,
-    0.000003696691195313,
+    conversionFactor: 0.000003696691195313,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -268,7 +268,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.fluidOunce_imperial,
-    _fluidOunce_imperial,
+    conversionFactor: _fluidOunce_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -281,7 +281,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.fluidOunce_us,
-    _fluidOunce_us,
+    conversionFactor: _fluidOunce_us,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -294,7 +294,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.fluidOunce_usFoodNutritionLabel,
-    30 * _milliLiterToCubicMetre,
+    conversionFactor: 30 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
   createUnit(
@@ -305,7 +305,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.gallon_imperial,
-    _gallon_imperial,
+    conversionFactor: _gallon_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -316,7 +316,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.gallon_usDry,
-    _gallon_usDry,
+    conversionFactor: _gallon_usDry,
     system: unitSystem[UnitSystem.usDry],
   ),
   createUnit(
@@ -327,7 +327,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.gallon_usLiquid,
-    _gallon_usLiquid,
+    conversionFactor: _gallon_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -338,7 +338,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.gill_imperial,
-    _gallon_imperial / 32,
+    conversionFactor: _gallon_imperial / 32,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -349,7 +349,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.gill_us,
-    _gallon_usLiquid / 32,
+    conversionFactor: _gallon_usLiquid / 32,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -362,7 +362,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.hectareMetre,
-    10000,
+    conversionFactor: 10000,
     americanName: 'hectare meter',
   ),
   createUnit(
@@ -378,7 +378,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.jigger,
-    1.5 * _fluidOunce_us,
+    conversionFactor: 1.5 * _fluidOunce_us,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -389,7 +389,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.minim_imperial,
-    _fluidOunce_imperial / 480,
+    conversionFactor: _fluidOunce_imperial / 480,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -400,7 +400,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.minim_us,
-    _fluidOunce_us / 480,
+    conversionFactor: _fluidOunce_us / 480,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -411,7 +411,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.oilBarrel,
-    42 * _gallon_usLiquid,
+    conversionFactor: 42 * _gallon_usLiquid,
   ),
   createUnit(
     'peck',
@@ -421,7 +421,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.peck_imperial,
-    _peck_imperial,
+    conversionFactor: _peck_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -432,7 +432,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.peck_usDry,
-    _peck_usDry,
+    conversionFactor: _peck_usDry,
     system: unitSystem[UnitSystem.usDry],
   ),
   createUnit(
@@ -443,7 +443,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.pint_imperial,
-    _gallon_imperial / 8,
+    conversionFactor: _gallon_imperial / 8,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -454,7 +454,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.pint_usDry,
-    _gallon_usDry / 8,
+    conversionFactor: _gallon_usDry / 8,
     system: unitSystem[UnitSystem.usDry],
   ),
   createUnit(
@@ -465,7 +465,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.pint_usLiquid,
-    _gallon_usLiquid / 8,
+    conversionFactor: _gallon_usLiquid / 8,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -476,7 +476,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.quart_imperial,
-    _gallon_imperial / 4,
+    conversionFactor: _gallon_imperial / 4,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -487,7 +487,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.quart_usDry,
-    _gallon_usDry / 4,
+    conversionFactor: _gallon_usDry / 4,
     system: unitSystem[UnitSystem.usDry],
   ),
   createUnit(
@@ -498,7 +498,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.quart_usLiquid,
-    _gallon_usLiquid / 4,
+    conversionFactor: _gallon_usLiquid / 4,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -509,7 +509,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.tablespoon_australian,
-    20 * _milliLiterToCubicMetre,
+    conversionFactor: 20 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.australian],
   ),
   createUnit(
@@ -520,7 +520,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.tablespoon_metric,
-    15 * _milliLiterToCubicMetre,
+    conversionFactor: 15 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.metric],
   ),
   createUnit(
@@ -531,7 +531,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.tablespoon_us,
-    _gallon_usLiquid / 256,
+    conversionFactor: _gallon_usLiquid / 256,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -542,7 +542,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.tablespoon_usFoodNutritionLabel,
-    15 * _milliLiterToCubicMetre,
+    conversionFactor: 15 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
   createUnit(
@@ -553,7 +553,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.teaspoon_metric,
-    5 * _milliLiterToCubicMetre,
+    conversionFactor: 5 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.metric],
   ),
   createUnit(
@@ -564,7 +564,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.teaspoon_us,
-    _gallon_usLiquid / 768,
+    conversionFactor: _gallon_usLiquid / 768,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -575,7 +575,7 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.teaspoon_usFoodNutritionLabel,
-    5 * _milliLiterToCubicMetre,
+    conversionFactor: 5 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
 };

@@ -127,7 +127,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.britishThermalUnit,
-    1054.350264,
+    conversionFactor: 1054.350264,
   ),
   createUnit(
     'British thermal unit',
@@ -137,7 +137,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.britishThermalUnit_15DegreeC,
-    _britishThermalUnitToJoule_15DegreeC,
+    conversionFactor: _britishThermalUnitToJoule_15DegreeC,
     system: unitSystem[UnitSystem.degree15C],
   ),
   createUnit(
@@ -148,7 +148,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.britishThermalUnit_intlSteamTable,
-    _britishThermalUnitToJoule_intlSteamTable,
+    conversionFactor: _britishThermalUnitToJoule_intlSteamTable,
     system: unitSystem[UnitSystem.intlSteamTable],
   ),
   createUnit(
@@ -159,7 +159,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.decaTherm_ec,
-    _decaThermToJoule,
+    conversionFactor: _decaThermToJoule,
     system: unitSystem[UnitSystem.ec],
   ),
   createUnit(
@@ -172,7 +172,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.erg,
-    pow(10, -7),
+    conversionFactor: pow(10, -7),
   ),
   createUnit(
     'foot-pound force',
@@ -185,7 +185,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.footPoundForce,
-    1.3558179483,
+    conversionFactor: 1.3558179483,
   ),
   createUnit(
     'hartree',
@@ -196,7 +196,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.hartree,
-    4.35974 * pow(10, -18),
+    conversionFactor: 4.35974 * pow(10, -18),
   ),
   createUnit(
     'million British thermal units',
@@ -208,7 +208,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.millionBritishThermalUnits_intlSteamTable,
-    _britishThermalUnitToJoule_intlSteamTable * pow(10, 6),
+    conversionFactor: _britishThermalUnitToJoule_intlSteamTable * pow(10, 6),
     system: unitSystem[UnitSystem.intlSteamTable],
     variation: true,
   ),
@@ -222,7 +222,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.millionDecaTherms,
-    _decaThermToJoule * pow(10, 6),
+    conversionFactor: _decaThermToJoule * pow(10, 6),
     system: unitSystem[UnitSystem.ec],
     variation: true,
   ),
@@ -237,7 +237,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.quad,
-    _britishThermalUnitToJoule_intlSteamTable * pow(10, 15),
+    conversionFactor: _britishThermalUnitToJoule_intlSteamTable * pow(10, 15),
   ),
   createUnit(
     'therm',
@@ -247,7 +247,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.therm_ec,
-    _thermToJoule_ec,
+    conversionFactor: _thermToJoule_ec,
     system: unitSystem[UnitSystem.ec],
   ),
   createUnit(
@@ -258,7 +258,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.therm_Imperial,
-    105505585.257348,
+    conversionFactor: 105505585.257348,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -269,7 +269,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.therm_us,
-    100000 * _britishThermalUnitToJoule_15DegreeC,
+    conversionFactor: 100000 * _britishThermalUnitToJoule_15DegreeC,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -281,7 +281,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.thermie,
-    4186800,
+    conversionFactor: 4186800,
   ),
   createUnit(
     'thousand British thermal units',
@@ -292,7 +292,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.thousandBritishThermalUnits_intlSteamTable,
-    _britishThermalUnitToJoule_intlSteamTable * pow(10, 3),
+    conversionFactor: _britishThermalUnitToJoule_intlSteamTable * pow(10, 3),
     system: unitSystem[UnitSystem.intlSteamTable],
     variation: true,
   ),
@@ -305,7 +305,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.thousandDecaTherms,
-    _decaThermToJoule * pow(10, 3),
+    conversionFactor: _decaThermToJoule * pow(10, 3),
     system: unitSystem[UnitSystem.ec],
     variation: true,
   ),
@@ -319,7 +319,7 @@ final _otherUnits = {
       ],
     ),
     EnergyUnit.tonneOfOilEquivalent,
-    4.1868 * pow(10, 10),
+    conversionFactor: 4.1868 * pow(10, 10),
     americanName: 'ton of oil equivalent',
   ),
 };

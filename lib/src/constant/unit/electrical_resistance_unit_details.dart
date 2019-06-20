@@ -30,7 +30,7 @@ final _otherUnits = {
       ],
     ),
     ElectricalResistanceUnit.abOhm,
-    pow(10, -9),
+    conversionFactor: pow(10, -9),
     variation: true,
   ),
 };

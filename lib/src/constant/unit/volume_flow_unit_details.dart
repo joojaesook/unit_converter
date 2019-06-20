@@ -202,7 +202,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.acreFootPerDay,
-    (_acreToSquareMetre * _footToMetre) / _dayToSecond,
+    conversionFactor: (_acreToSquareMetre * _footToMetre) / _dayToSecond,
   ),
   createUnit(
     'acre-foot per year',
@@ -216,7 +216,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.acreFootPerYear,
-    (_acreToSquareMetre * _footToMetre) / _yearToSecond,
+    conversionFactor: (_acreToSquareMetre * _footToMetre) / _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
   createUnit(
@@ -230,7 +230,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.cubicFootPerDay,
-    pow(_footToMetre, 3) / _dayToSecond,
+    conversionFactor: pow(_footToMetre, 3) / _dayToSecond,
   ),
   createUnit(
     'cubic foot per hour',
@@ -243,7 +243,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.cubicFootPerHour,
-    pow(_footToMetre, 3) / _hourToSecond,
+    conversionFactor: pow(_footToMetre, 3) / _hourToSecond,
   ),
   createUnit(
     'cubic foot per minute',
@@ -256,7 +256,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.cubicFootPerMinute,
-    pow(_footToMetre, 3) / _minuteToSecond,
+    conversionFactor: pow(_footToMetre, 3) / _minuteToSecond,
   ),
   createUnit(
     'cubic foot per second',
@@ -269,7 +269,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.cubicFootPerSecond,
-    pow(_footToMetre, 3),
+    conversionFactor: pow(_footToMetre, 3),
   ),
   createUnit(
     'cubic inch per day',
@@ -282,7 +282,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.cubicInchPerDay,
-    pow(_inchToMetre, 3) / _dayToSecond,
+    conversionFactor: pow(_inchToMetre, 3) / _dayToSecond,
   ),
   createUnit(
     'cubic inch per hour',
@@ -295,7 +295,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.cubicInchPerHour,
-    pow(_inchToMetre, 3) / _hourToSecond,
+    conversionFactor: pow(_inchToMetre, 3) / _hourToSecond,
   ),
   createUnit(
     'cubic inch per minute',
@@ -308,7 +308,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.cubicInchPerMinute,
-    pow(_inchToMetre, 3) / _minuteToSecond,
+    conversionFactor: pow(_inchToMetre, 3) / _minuteToSecond,
   ),
   createUnit(
     'cubic inch per second',
@@ -321,7 +321,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.cubicInchPerSecond,
-    pow(_inchToMetre, 3),
+    conversionFactor: pow(_inchToMetre, 3),
   ),
   createUnit(
     'gallon per day',
@@ -333,7 +333,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.gallonPerDay_imperial,
-    _gallonToCubicMetre_imperial / _dayToSecond,
+    conversionFactor: _gallonToCubicMetre_imperial / _dayToSecond,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -346,7 +346,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.gallonPerDay_usLiquid,
-    _gallonToCubicMetre_usLiquid / _dayToSecond,
+    conversionFactor: _gallonToCubicMetre_usLiquid / _dayToSecond,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -359,7 +359,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.gallonPerHour_imperial,
-    _gallonToCubicMetre_imperial / _hourToSecond,
+    conversionFactor: _gallonToCubicMetre_imperial / _hourToSecond,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -372,7 +372,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.gallonPerHour_usLiquid,
-    _gallonToCubicMetre_usLiquid / _hourToSecond,
+    conversionFactor: _gallonToCubicMetre_usLiquid / _hourToSecond,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -385,7 +385,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.gallonPerMinute_imperial,
-    _gallonToCubicMetre_imperial / _minuteToSecond,
+    conversionFactor: _gallonToCubicMetre_imperial / _minuteToSecond,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -398,7 +398,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.gallonPerMinute_usLiquid,
-    _gallonToCubicMetre_usLiquid / _minuteToSecond,
+    conversionFactor: _gallonToCubicMetre_usLiquid / _minuteToSecond,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -411,7 +411,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.gallonPerSecond_imperial,
-    _gallonToCubicMetre_imperial,
+    conversionFactor: _gallonToCubicMetre_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -424,7 +424,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.gallonPerSecond_usLiquid,
-    _gallonToCubicMetre_usLiquid,
+    conversionFactor: _gallonToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -438,7 +438,8 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.millionGallonPerDay_imperial,
-    (_gallonToCubicMetre_imperial * pow(10, 6)) / _dayToSecond,
+    conversionFactor:
+        (_gallonToCubicMetre_imperial * pow(10, 6)) / _dayToSecond,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -452,7 +453,8 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.millionGallonPerDay_usLiquid,
-    (_gallonToCubicMetre_usLiquid * pow(10, 6)) / _dayToSecond,
+    conversionFactor:
+        (_gallonToCubicMetre_usLiquid * pow(10, 6)) / _dayToSecond,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
@@ -465,7 +467,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.oilBarrelPerDay,
-    _oilBarrelToCubicMetre / _dayToSecond,
+    conversionFactor: _oilBarrelToCubicMetre / _dayToSecond,
   ),
   createUnit(
     'oil barrel per hour',
@@ -477,7 +479,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.oilBarrelPerHour,
-    _oilBarrelToCubicMetre / _hourToSecond,
+    conversionFactor: _oilBarrelToCubicMetre / _hourToSecond,
   ),
   createUnit(
     'oil barrel per minute',
@@ -489,7 +491,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.oilBarrelPerMinute,
-    _oilBarrelToCubicMetre / _minuteToSecond,
+    conversionFactor: _oilBarrelToCubicMetre / _minuteToSecond,
   ),
   createUnit(
     'oil barrel per second',
@@ -501,7 +503,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.oilBarrelPerSecond,
-    _oilBarrelToCubicMetre,
+    conversionFactor: _oilBarrelToCubicMetre,
   ),
 };
 

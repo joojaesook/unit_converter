@@ -144,7 +144,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.britishThermalUnitPerHour_intlSteamTable,
-    _britishThermalUnitToJoule_intlSteamTable / _hourToSecond,
+    conversionFactor: _britishThermalUnitToJoule_intlSteamTable / _hourToSecond,
     system: unitSystem[UnitSystem.intlSteamTable],
   ),
   createUnit(
@@ -157,7 +157,8 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.britishThermalUnitPerMinute_intlSteamTable,
-    _britishThermalUnitToJoule_intlSteamTable / _minuteToSecond,
+    conversionFactor:
+        _britishThermalUnitToJoule_intlSteamTable / _minuteToSecond,
     system: unitSystem[UnitSystem.intlSteamTable],
   ),
   createUnit(
@@ -170,7 +171,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.britishThermalUnitPerSecond_intlSteamTable,
-    _britishThermalUnitToJoule_intlSteamTable,
+    conversionFactor: _britishThermalUnitToJoule_intlSteamTable,
     system: unitSystem[UnitSystem.intlSteamTable],
   ),
   createUnit(
@@ -185,7 +186,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.ergPerHour,
-    _ergToJoule / _hourToSecond,
+    conversionFactor: _ergToJoule / _hourToSecond,
   ),
   createUnit(
     'erg per minute',
@@ -199,7 +200,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.ergPerMinute,
-    _ergToJoule / _minuteToSecond,
+    conversionFactor: _ergToJoule / _minuteToSecond,
   ),
   createUnit(
     'erg per second',
@@ -213,7 +214,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.ergPerSecond,
-    _ergToJoule,
+    conversionFactor: _ergToJoule,
   ),
   createUnit(
     'foot pound per minute',
@@ -228,7 +229,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.footPoundPerMinute,
-    _footPoundForceToJoule / _minuteToSecond,
+    conversionFactor: _footPoundForceToJoule / _minuteToSecond,
   ),
   createUnit(
     'foot pound per second',
@@ -243,7 +244,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.footPoundPerSecond,
-    _footPoundForceToJoule,
+    conversionFactor: _footPoundForceToJoule,
   ),
   createUnit(
     'horsepower',
@@ -255,7 +256,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.horsePower_boiler,
-    9809.5,
+    conversionFactor: 9809.5,
     system: unitSystem[UnitSystem.boiler],
   ),
   createUnit(
@@ -267,7 +268,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.horsePower_electric,
-    746,
+    conversionFactor: 746,
     system: unitSystem[UnitSystem.electric],
   ),
   createUnit(
@@ -279,7 +280,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.horsePower_mechanical,
-    550 * _footPoundForceToJoule,
+    conversionFactor: 550 * _footPoundForceToJoule,
     system: unitSystem[UnitSystem.mechanical],
   ),
   createUnit(
@@ -291,7 +292,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.horsePower_metric,
-    735.49875,
+    conversionFactor: 735.49875,
     system: unitSystem[UnitSystem.metric],
   ),
   createUnit(
@@ -303,7 +304,7 @@ final _otherUnits = {
       ],
     ),
     PowerUnit.tonneOfRefrigeration,
-    3516.8528420667,
+    conversionFactor: 3516.8528420667,
     americanName: 'ton of refrigeration',
   ),
 };

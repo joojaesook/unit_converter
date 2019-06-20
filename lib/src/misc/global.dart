@@ -54,13 +54,15 @@ void _addConversionFactor<T>(T unitType, double conversionFactor) {
 Unit<T> createUnit<T>(
   String name,
   String symbol,
-  T type,
-  double conversionFactor, {
+  T type, {
+  double conversionFactor,
   String americanName,
   bool variation = false,
   String system,
 }) {
-  _addConversionFactor(type, conversionFactor);
+  if (conversionFactor != null) {
+    _addConversionFactor(type, conversionFactor);
+  }
   return Unit<T>(
     name,
     symbol,

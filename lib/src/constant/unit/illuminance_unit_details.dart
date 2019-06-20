@@ -72,7 +72,7 @@ final _otherUnits = {
       ],
     ),
     IlluminanceUnit.footCandle,
-    10.7639,
+    conversionFactor: 10.7639,
   ),
   createUnit(
     'lumen per square foot',
@@ -85,7 +85,7 @@ final _otherUnits = {
       ],
     ),
     IlluminanceUnit.lumenPerSquareFoot,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.foot,
@@ -104,7 +104,7 @@ final _otherUnits = {
       ],
     ),
     IlluminanceUnit.lumenPerSquareInch,
-    pow(
+    conversionFactor: pow(
       conversionFactor(
         ConversionType.length,
         LengthUnit.inch,
@@ -120,7 +120,7 @@ final _otherUnits = {
       ],
     ),
     IlluminanceUnit.nox,
-    0.001,
+    conversionFactor: 0.001,
   ),
 };
 

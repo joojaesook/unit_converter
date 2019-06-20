@@ -47,7 +47,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.carat,
-    0.0002,
+    conversionFactor: 0.0002,
   ),
   createUnit(
     'grain',
@@ -57,7 +57,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.grain,
-    _grainToKiloGram,
+    conversionFactor: _grainToKiloGram,
   ),
   createUnit(
     'long hundredweight',
@@ -69,7 +69,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.longHundredWeight,
-    112 * _poundToKiloGram,
+    conversionFactor: 112 * _poundToKiloGram,
   ),
   createUnit(
     'long tonne',
@@ -82,7 +82,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.longTonne,
-    2240 * _poundToKiloGram,
+    conversionFactor: 2240 * _poundToKiloGram,
     americanName: 'long ton',
     system: unitSystem[UnitSystem.imperial],
   ),
@@ -94,7 +94,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.ounce,
-    _poundToKiloGram / 16,
+    conversionFactor: _poundToKiloGram / 16,
   ),
   createUnit(
     'ounce',
@@ -104,7 +104,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.ounce_USFoodNutritionLabel,
-    0.028,
+    conversionFactor: 0.028,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
   createUnit(
@@ -115,7 +115,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.pennyWeight,
-    24 * _grainToKiloGram,
+    conversionFactor: 24 * _grainToKiloGram,
   ),
   createUnit(
     'pood',
@@ -125,7 +125,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.pood,
-    16.3807,
+    conversionFactor: 16.3807,
   ),
   createUnit(
     'pound',
@@ -135,7 +135,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.pound,
-    _poundToKiloGram,
+    conversionFactor: _poundToKiloGram,
   ),
   createUnit(
     'short hundredweight',
@@ -147,7 +147,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.shortHundredWeight,
-    100 * _poundToKiloGram,
+    conversionFactor: 100 * _poundToKiloGram,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
@@ -161,7 +161,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.shortTonne,
-    2000 * _poundToKiloGram,
+    conversionFactor: 2000 * _poundToKiloGram,
     americanName: 'short ton',
     system: unitSystem[UnitSystem.us],
   ),
@@ -173,7 +173,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.slug,
-    14.5939029,
+    conversionFactor: 14.5939029,
   ),
   createUnit(
     'stone',
@@ -183,7 +183,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.stone,
-    14 * _poundToKiloGram,
+    conversionFactor: 14 * _poundToKiloGram,
   ),
   createUnit(
     'troy ounce',
@@ -195,7 +195,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.troyOunce,
-    480 * _grainToKiloGram,
+    conversionFactor: 480 * _grainToKiloGram,
   ),
   createUnit(
     'troy pound',
@@ -207,7 +207,7 @@ final _otherUnits = {
       ],
     ),
     MassUnit.troyPound,
-    5760 * _grainToKiloGram,
+    conversionFactor: 5760 * _grainToKiloGram,
   ),
 };
 

@@ -67,7 +67,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.angstrom,
-    pow(10, -10),
+    conversionFactor: pow(10, -10),
   ),
   createUnit(
     'astronomical unit',
@@ -77,7 +77,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.astronomicalUnit,
-    149597870700,
+    conversionFactor: 149597870700,
   ),
   createUnit(
     'barleycorn',
@@ -87,7 +87,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.barleycorn,
-    0.00846667,
+    conversionFactor: 0.00846667,
   ),
   createUnit(
     'chain',
@@ -97,7 +97,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.chain,
-    20.1168,
+    conversionFactor: 20.1168,
     system: unitSystem[UnitSystem.gunter],
   ),
   createUnit(
@@ -108,7 +108,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.chineseMile,
-    500,
+    conversionFactor: 500,
   ),
   createUnit(
     'fathom',
@@ -118,7 +118,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.fathom,
-    6 * _footToMetre,
+    conversionFactor: 6 * _footToMetre,
   ),
   createUnit(
     'fermi',
@@ -128,7 +128,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.fermi,
-    pow(10, -15),
+    conversionFactor: pow(10, -15),
   ),
   createUnit(
     'foot',
@@ -138,7 +138,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.foot,
-    _footToMetre,
+    conversionFactor: _footToMetre,
   ),
   createUnit(
     'foot',
@@ -148,7 +148,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.foot_usSurvey,
-    1200 / 3937,
+    conversionFactor: 1200 / 3937,
     system: unitSystem[UnitSystem.usSurvey],
   ),
   createUnit(
@@ -159,7 +159,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.furlong,
-    _mileToMetre / 8,
+    conversionFactor: _mileToMetre / 8,
   ),
   createUnit(
     'hand',
@@ -169,7 +169,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.hand,
-    4 * _inchToMetre,
+    conversionFactor: 4 * _inchToMetre,
   ),
   createUnit(
     'inch',
@@ -179,7 +179,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.inch,
-    _inchToMetre,
+    conversionFactor: _inchToMetre,
   ),
   createUnit(
     'league',
@@ -189,7 +189,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.league,
-    3 * _mileToMetre,
+    conversionFactor: 3 * _mileToMetre,
     system: unitSystem[UnitSystem.land],
   ),
   createUnit(
@@ -200,7 +200,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.lightDay,
-    2.59020683712 * pow(10, 13),
+    conversionFactor: 2.59020683712 * pow(10, 13),
   ),
   createUnit(
     'light-hour',
@@ -210,7 +210,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.lightHour,
-    1.0792528488 * pow(10, 12),
+    conversionFactor: 1.0792528488 * pow(10, 12),
   ),
   createUnit(
     'light-minute',
@@ -220,7 +220,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.lightMinute,
-    1.798754748 * pow(10, 10),
+    conversionFactor: 1.798754748 * pow(10, 10),
   ),
   createUnit(
     'light-second',
@@ -230,7 +230,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.lightSecond,
-    299792458,
+    conversionFactor: 299792458,
   ),
   createUnit(
     'link',
@@ -240,7 +240,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.link,
-    (66 * _footToMetre) / 100,
+    conversionFactor: (66 * _footToMetre) / 100,
     system: unitSystem[UnitSystem.gunter],
   ),
   createUnit(
@@ -252,7 +252,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.microInch,
-    _inchToMetre * pow(10, -6),
+    conversionFactor: _inchToMetre * pow(10, -6),
   ),
   createUnit(
     'micron',
@@ -262,7 +262,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.micron,
-    pow(10, -6),
+    conversionFactor: pow(10, -6),
   ),
   createUnit(
     'mile',
@@ -272,7 +272,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.mile,
-    _mileToMetre,
+    conversionFactor: _mileToMetre,
   ),
   createUnit(
     'nautical league',
@@ -283,7 +283,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.nauticalLeague,
-    3 * _nauticalMileToMetre,
+    conversionFactor: 3 * _nauticalMileToMetre,
   ),
   createUnit(
     'nautical mile',
@@ -293,7 +293,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.nauticalMile,
-    _nauticalMileToMetre,
+    conversionFactor: _nauticalMileToMetre,
   ),
   createUnit(
     'pica',
@@ -303,7 +303,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.pica,
-    _inchToMetre / 6,
+    conversionFactor: _inchToMetre / 6,
     system: unitSystem[UnitSystem.typographic],
   ),
   createUnit(
@@ -314,7 +314,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.planckLength,
-    1.616255 * pow(10, -35),
+    conversionFactor: 1.616255 * pow(10, -35),
   ),
   createUnit(
     'point',
@@ -324,7 +324,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.point,
-    _inchToMetre / 72,
+    conversionFactor: _inchToMetre / 72,
     system: unitSystem[UnitSystem.typographic],
   ),
   createUnit(
@@ -335,7 +335,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.pole,
-    16.5 * _footToMetre,
+    conversionFactor: 16.5 * _footToMetre,
   ),
   createUnit(
     'rod',
@@ -345,7 +345,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.rod,
-    16.5 * _footToMetre,
+    conversionFactor: 16.5 * _footToMetre,
   ),
   createUnit(
     'thousand of an inch',
@@ -355,7 +355,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.thousandOfAnInch,
-    _inchToMetre / 1000,
+    conversionFactor: _inchToMetre / 1000,
   ),
   createUnit(
     'yard',
@@ -365,7 +365,7 @@ final _otherUnits = {
       ],
     ),
     LengthUnit.yard,
-    3 * _footToMetre,
+    conversionFactor: 3 * _footToMetre,
   ),
 };
 

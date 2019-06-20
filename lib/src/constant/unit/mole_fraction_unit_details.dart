@@ -55,7 +55,7 @@ final _otherUnits = {
       ],
     ),
     MoleFractionUnit.partPerBillion,
-    pow(10, -9),
+    conversionFactor: pow(10, -9),
   ),
   createUnit(
     'part per hendred',
@@ -65,7 +65,7 @@ final _otherUnits = {
       ],
     ),
     MoleFractionUnit.partPerHundred,
-    0.01,
+    conversionFactor: 0.01,
   ),
   createUnit(
     'part per million',
@@ -77,7 +77,7 @@ final _otherUnits = {
       ],
     ),
     MoleFractionUnit.partPerMillion,
-    pow(10, -6),
+    conversionFactor: pow(10, -6),
   ),
   createUnit(
     'part per quadrillion',
@@ -89,7 +89,7 @@ final _otherUnits = {
       ],
     ),
     MoleFractionUnit.partPerQuadrillion,
-    pow(10, -15),
+    conversionFactor: pow(10, -15),
   ),
   createUnit(
     'part per ten thousand',
@@ -99,7 +99,7 @@ final _otherUnits = {
       ],
     ),
     MoleFractionUnit.partPerTenThousand,
-    0.0001,
+    conversionFactor: 0.0001,
   ),
   createUnit(
     'part per thousand',
@@ -109,7 +109,7 @@ final _otherUnits = {
       ],
     ),
     MoleFractionUnit.partPerThousand,
-    0.001,
+    conversionFactor: 0.001,
   ),
   createUnit(
     'part per trillion',
@@ -121,7 +121,7 @@ final _otherUnits = {
       ],
     ),
     MoleFractionUnit.partPerTrillion,
-    pow(10, -12),
+    conversionFactor: pow(10, -12),
   ),
 };
 

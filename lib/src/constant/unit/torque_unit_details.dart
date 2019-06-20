@@ -37,7 +37,7 @@ final _otherUnits = {
       ],
     ),
     TorqueUnit.gramForceCentiMetre,
-    9.80665 * pow(10, -5),
+    conversionFactor: 9.80665 * pow(10, -5),
     americanName: 'gram-force centimeter',
   ),
   createUnit(
@@ -53,7 +53,7 @@ final _otherUnits = {
       ],
     ),
     TorqueUnit.kiloGramForceCentiMetre,
-    0.0980665,
+    conversionFactor: 0.0980665,
     americanName: 'kilogram-force centimeter',
   ),
   createUnit(
@@ -68,7 +68,7 @@ final _otherUnits = {
       ],
     ),
     TorqueUnit.kiloGramForceMetre,
-    9.80665,
+    conversionFactor: 9.80665,
     americanName: 'kilogram-force meter',
   ),
   createUnit(
@@ -82,7 +82,7 @@ final _otherUnits = {
       ],
     ),
     TorqueUnit.ounceForceFoot,
-    0.084738624,
+    conversionFactor: 0.084738624,
   ),
   createUnit(
     'ounce-force inch',
@@ -95,7 +95,7 @@ final _otherUnits = {
       ],
     ),
     TorqueUnit.ounceForceInch,
-    0.00706155,
+    conversionFactor: 0.00706155,
   ),
   createUnit(
     'pound-force foot',
@@ -108,7 +108,7 @@ final _otherUnits = {
       ],
     ),
     TorqueUnit.poundForceFoot,
-    1.355817948331,
+    conversionFactor: 1.355817948331,
   ),
   createUnit(
     'pound-force inch',
@@ -121,7 +121,7 @@ final _otherUnits = {
       ],
     ),
     TorqueUnit.poundForceInch,
-    0.1129848290,
+    conversionFactor: 0.1129848290,
   ),
   createUnit(
     'poundal foot',
@@ -133,7 +133,7 @@ final _otherUnits = {
       ],
     ),
     TorqueUnit.poundalFoot,
-    0.0421401,
+    conversionFactor: 0.0421401,
   ),
 };
 

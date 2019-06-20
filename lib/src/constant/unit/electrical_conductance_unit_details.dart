@@ -44,7 +44,7 @@ final _otherUnits = {
       ],
     ),
     ElectricalConductanceUnit.abMho,
-    pow(10, 9),
+    conversionFactor: pow(10, 9),
     variation: true,
   ),
   createUnit(
@@ -56,7 +56,7 @@ final _otherUnits = {
       ],
     ),
     ElectricalConductanceUnit.abSiemens,
-    pow(10, 9),
+    conversionFactor: pow(10, 9),
     variation: true,
   ),
 };

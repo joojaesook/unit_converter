@@ -31,7 +31,7 @@ final _otherUnits = {
       ],
     ),
     FrequencyUnit.degreePerHour,
-    0.000000771604938272,
+    conversionFactor: 0.000000771604938272,
   ),
   createUnit(
     'degree per minute',
@@ -43,7 +43,7 @@ final _otherUnits = {
       ],
     ),
     FrequencyUnit.degreePerMinute,
-    4.6296296296296 * pow(10, -5),
+    conversionFactor: 4.6296296296296 * pow(10, -5),
   ),
   createUnit(
     'degree per second',
@@ -55,7 +55,7 @@ final _otherUnits = {
       ],
     ),
     FrequencyUnit.degreePerSecond,
-    0.00277777777777778,
+    conversionFactor: 0.00277777777777778,
   ),
   createUnit(
     'radian per hour',
@@ -67,7 +67,7 @@ final _otherUnits = {
       ],
     ),
     FrequencyUnit.radianPerHour,
-    4.4209706414415 * pow(10, -5),
+    conversionFactor: 4.4209706414415 * pow(10, -5),
   ),
   createUnit(
     'radian per minute',
@@ -79,7 +79,7 @@ final _otherUnits = {
       ],
     ),
     FrequencyUnit.radianPerMinute,
-    0.00265258238486,
+    conversionFactor: 0.00265258238486,
   ),
   createUnit(
     'radian per second',
@@ -91,7 +91,7 @@ final _otherUnits = {
       ],
     ),
     FrequencyUnit.radianPerSecond,
-    0.159154943091895000,
+    conversionFactor: 0.159154943091895000,
   ),
   createUnit(
     'revolution per hour',
@@ -103,7 +103,7 @@ final _otherUnits = {
       ],
     ),
     FrequencyUnit.revolutionPerHour,
-    0.00027777777777778,
+    conversionFactor: 0.00027777777777778,
   ),
   createUnit(
     'revolution per minute',
@@ -115,7 +115,7 @@ final _otherUnits = {
       ],
     ),
     FrequencyUnit.revolutionPerMinute,
-    0.0166666666666667,
+    conversionFactor: 0.0166666666666667,
   ),
   createUnit(
     'revolution per second',
@@ -127,7 +127,7 @@ final _otherUnits = {
       ],
     ),
     FrequencyUnit.revolutionPerSecond,
-    1,
+    conversionFactor: 1,
   ),
 };
 

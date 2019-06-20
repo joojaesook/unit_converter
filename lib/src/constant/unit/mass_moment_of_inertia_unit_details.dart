@@ -69,7 +69,7 @@ final _otherUnits = {
       ],
     ),
     MassMomentOfInertiaUnit.poundSquareFoot,
-    _poundToKiloGram * _squareFootToSquareMetre,
+    conversionFactor: _poundToKiloGram * _squareFootToSquareMetre,
   ),
   createUnit(
     'pound square inch',
@@ -82,7 +82,7 @@ final _otherUnits = {
       ],
     ),
     MassMomentOfInertiaUnit.poundSquareInch,
-    _poundToKiloGram * _squareInchToSquareMetre,
+    conversionFactor: _poundToKiloGram * _squareInchToSquareMetre,
   ),
   createUnit(
     'slug square foot',
@@ -95,7 +95,7 @@ final _otherUnits = {
       ],
     ),
     MassMomentOfInertiaUnit.slugSquareFoot,
-    _slugToKiloGram * _squareFootToSquareMetre,
+    conversionFactor: _slugToKiloGram * _squareFootToSquareMetre,
   ),
   createUnit(
     'slug square inch',
@@ -108,7 +108,7 @@ final _otherUnits = {
       ],
     ),
     MassMomentOfInertiaUnit.slugSquareInch,
-    _slugToKiloGram * _squareInchToSquareMetre,
+    conversionFactor: _slugToKiloGram * _squareInchToSquareMetre,
   ),
 };
 

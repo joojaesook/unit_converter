@@ -90,7 +90,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.grainPerDay,
-    _grainToKiloGram / _dayToSecond,
+    conversionFactor: _grainToKiloGram / _dayToSecond,
   ),
   createUnit(
     'grain per hour',
@@ -102,7 +102,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.grainPerHour,
-    _grainToKiloGram / _hourToSecond,
+    conversionFactor: _grainToKiloGram / _hourToSecond,
   ),
   createUnit(
     'grain per minute',
@@ -114,7 +114,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.grainPerMinute,
-    _grainToKiloGram / _minuteToSecond,
+    conversionFactor: _grainToKiloGram / _minuteToSecond,
   ),
   createUnit(
     'grain per second',
@@ -126,7 +126,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.grainPerSecond,
-    _grainToKiloGram,
+    conversionFactor: _grainToKiloGram,
   ),
   createUnit(
     'ounce per day',
@@ -138,7 +138,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.ouncePerDay,
-    _ounceToKiloGram / _dayToSecond,
+    conversionFactor: _ounceToKiloGram / _dayToSecond,
   ),
   createUnit(
     'ounce per hour',
@@ -150,7 +150,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.ouncePerHour,
-    _ounceToKiloGram / _hourToSecond,
+    conversionFactor: _ounceToKiloGram / _hourToSecond,
   ),
   createUnit(
     'ounce per minute',
@@ -162,7 +162,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.ouncePerMinute,
-    _ounceToKiloGram / _minuteToSecond,
+    conversionFactor: _ounceToKiloGram / _minuteToSecond,
   ),
   createUnit(
     'ounce per second',
@@ -174,7 +174,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.ouncePerSecond,
-    _ounceToKiloGram,
+    conversionFactor: _ounceToKiloGram,
   ),
   createUnit(
     'pound per day',
@@ -186,7 +186,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.poundPerDay,
-    _poundToKiloGram / _dayToSecond,
+    conversionFactor: _poundToKiloGram / _dayToSecond,
   ),
   createUnit(
     'pound per hour',
@@ -198,7 +198,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.poundPerHour,
-    _poundToKiloGram / _hourToSecond,
+    conversionFactor: _poundToKiloGram / _hourToSecond,
   ),
   createUnit(
     'pound per minute',
@@ -210,7 +210,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.poundPerMinute,
-    _poundToKiloGram / _minuteToSecond,
+    conversionFactor: _poundToKiloGram / _minuteToSecond,
   ),
   createUnit(
     'pound per second',
@@ -222,7 +222,7 @@ final _otherUnits = {
       ],
     ),
     MassFlowUnit.poundPerSecond,
-    _poundToKiloGram,
+    conversionFactor: _poundToKiloGram,
   ),
 };
 

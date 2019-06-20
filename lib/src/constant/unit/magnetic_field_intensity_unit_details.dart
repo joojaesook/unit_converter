@@ -31,7 +31,7 @@ final _otherUnits = {
       ],
     ),
     MagneticFieldIntensityUnit.oersted,
-    79.5774715,
+    conversionFactor: 79.5774715,
   ),
 };
 

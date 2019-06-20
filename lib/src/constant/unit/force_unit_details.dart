@@ -47,7 +47,7 @@ final _otherUnits = {
       ],
     ),
     ForceUnit.dyne,
-    pow(10, -5),
+    conversionFactor: pow(10, -5),
   ),
   createUnit(
     'kilopond',
@@ -58,7 +58,7 @@ final _otherUnits = {
       ],
     ),
     ForceUnit.kilopond,
-    _gramForceToNewton * pow(10, 3),
+    conversionFactor: _gramForceToNewton * pow(10, 3),
   ),
   createUnit(
     'kip',
@@ -68,7 +68,7 @@ final _otherUnits = {
       ],
     ),
     ForceUnit.kip,
-    1000 * _poundForceToNewton,
+    conversionFactor: 1000 * _poundForceToNewton,
   ),
   createUnit(
     'ounce-force',
@@ -79,7 +79,7 @@ final _otherUnits = {
       ],
     ),
     ForceUnit.ounceForce,
-    _poundForceToNewton / 16,
+    conversionFactor: _poundForceToNewton / 16,
   ),
   createUnit(
     'pound-force',
@@ -90,7 +90,7 @@ final _otherUnits = {
       ],
     ),
     ForceUnit.poundForce,
-    _poundForceToNewton,
+    conversionFactor: _poundForceToNewton,
   ),
   createUnit(
     'poundal',
@@ -100,7 +100,7 @@ final _otherUnits = {
       ],
     ),
     ForceUnit.poundal,
-    0.138254954376,
+    conversionFactor: 0.138254954376,
   ),
 };
 
