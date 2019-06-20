@@ -1,7 +1,6 @@
 import '../../enum/magnetic_field_intensity_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __ampere per metre variations
@@ -24,7 +23,7 @@ final _amperePerMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<MagneticFieldIntensityUnit>(
+  createUnit(
     'oersted',
     createSymbol(
       const [

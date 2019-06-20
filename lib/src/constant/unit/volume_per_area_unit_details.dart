@@ -4,7 +4,6 @@ import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../enum/volume_per_area_unit.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../../unit_converter.dart';
 import '../others/unit_system.dart';
 
@@ -22,7 +21,7 @@ final _litreToCubicMetre =
 
 // volume per area unit details
 final volumePerAreaUnitDetails = {
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'cubic metre per acre',
     createSymbol(
       const [
@@ -36,7 +35,7 @@ final volumePerAreaUnitDetails = {
     1 / _acreToSquareMetre,
     americanName: 'cubic meter per acre',
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'cubic metre per hectare',
     createSymbol(
       const [
@@ -50,7 +49,7 @@ final volumePerAreaUnitDetails = {
     1 / _hectareToSquareMetre,
     americanName: 'cubic meter per hectare',
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'cubic metre per square metre',
     createSymbol(
       const [
@@ -65,7 +64,7 @@ final volumePerAreaUnitDetails = {
     1,
     americanName: 'cubic meter per square meter',
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'cubic metre per square mile',
     createSymbol(
       const [
@@ -80,7 +79,7 @@ final volumePerAreaUnitDetails = {
     1 / _squareMileToSquareMetre,
     americanName: 'cubic meter per square mile',
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'cubic metre per square yard',
     createSymbol(
       const [
@@ -95,7 +94,7 @@ final volumePerAreaUnitDetails = {
     1 / _squareYardToSquareMetre,
     americanName: 'cubic meter per square yard',
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'gallon per acre',
     createSymbol(
       const [
@@ -108,7 +107,7 @@ final volumePerAreaUnitDetails = {
     _gallonToCubicMetre_usLiquid / _acreToSquareMetre,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'gallon per hectare',
     createSymbol(
       const [
@@ -121,7 +120,7 @@ final volumePerAreaUnitDetails = {
     _gallonToCubicMetre_usLiquid / _hectareToSquareMetre,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'gallon per square metre',
     createSymbol(
       const [
@@ -136,7 +135,7 @@ final volumePerAreaUnitDetails = {
     americanName: 'gallon per square meter',
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'gallon per square mile',
     createSymbol(
       const [
@@ -150,7 +149,7 @@ final volumePerAreaUnitDetails = {
     _gallonToCubicMetre_usLiquid / _squareMileToSquareMetre,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'gallon per square yard',
     createSymbol(
       const [
@@ -164,7 +163,7 @@ final volumePerAreaUnitDetails = {
     _gallonToCubicMetre_usLiquid / _squareYardToSquareMetre,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'litre per acre',
     createSymbol(
       const [
@@ -177,7 +176,7 @@ final volumePerAreaUnitDetails = {
     _litreToCubicMetre / _acreToSquareMetre,
     americanName: 'liter per acre',
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'litre per hectare',
     createSymbol(
       const [
@@ -190,7 +189,7 @@ final volumePerAreaUnitDetails = {
     _litreToCubicMetre / _hectareToSquareMetre,
     americanName: 'liter per hectare',
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'litre per square metre',
     createSymbol(
       const [
@@ -204,7 +203,7 @@ final volumePerAreaUnitDetails = {
     _litreToCubicMetre,
     americanName: 'liter per square meter',
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'litre per square mile',
     createSymbol(
       const [
@@ -218,7 +217,7 @@ final volumePerAreaUnitDetails = {
     _litreToCubicMetre / _squareMileToSquareMetre,
     americanName: 'liter per square mile',
   ),
-  Unit<VolumePerAreaUnit>(
+  createUnit(
     'litre per square yard',
     createSymbol(
       const [

@@ -5,7 +5,6 @@ import '../../enum/mass_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/unit_system.dart';
 
 final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
@@ -25,7 +24,7 @@ final _tonneToKiloGram = conversionFactor(ConversionType.mass, MassUnit.tonne);
 
 // mass per area unit details
 final massPerAreaUnitDetails = {
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'kilogram per acre',
     createSymbol(
       const [
@@ -38,7 +37,7 @@ final massPerAreaUnitDetails = {
     MassPerAreaUnit.kiloGramPerAcre,
     1 / _acreToSquareMetre,
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'kilogram per hectare',
     createSymbol(
       const [
@@ -51,7 +50,7 @@ final massPerAreaUnitDetails = {
     MassPerAreaUnit.kiloGramPerHectare,
     1 / _hectareToSquareMetre,
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'kilogram per square metre',
     createSymbol(
       const [
@@ -66,7 +65,7 @@ final massPerAreaUnitDetails = {
     1,
     americanName: 'kilogram per square meter',
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'kilogram per square mile',
     createSymbol(
       const [
@@ -80,7 +79,7 @@ final massPerAreaUnitDetails = {
     MassPerAreaUnit.kiloGramPerSquareMile,
     1 / _squareMileToSquareMetre,
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'kilogram per square yard',
     createSymbol(
       const [
@@ -94,7 +93,7 @@ final massPerAreaUnitDetails = {
     MassPerAreaUnit.kiloGramPerSquareYard,
     1 / _squareYardToSquareMetre,
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'long tonne per acre',
     createSymbol(
       const [
@@ -111,7 +110,7 @@ final massPerAreaUnitDetails = {
     americanName: 'long ton per acre',
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'long tonne per hectare',
     createSymbol(
       const [
@@ -128,7 +127,7 @@ final massPerAreaUnitDetails = {
     americanName: 'long ton per hectare',
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'long tonne per square metre',
     createSymbol(
       const [
@@ -146,7 +145,7 @@ final massPerAreaUnitDetails = {
     americanName: 'long ton per square meter',
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'long tonne per square mile',
     createSymbol(
       const [
@@ -164,7 +163,7 @@ final massPerAreaUnitDetails = {
     americanName: 'long ton per square mile',
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'long tonne per square yard',
     createSymbol(
       const [
@@ -182,7 +181,7 @@ final massPerAreaUnitDetails = {
     americanName: 'long ton per square yard',
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'pound per acre',
     createSymbol(
       const [
@@ -194,7 +193,7 @@ final massPerAreaUnitDetails = {
     MassPerAreaUnit.poundPerAcre,
     _poundToKiloGram / _acreToSquareMetre,
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'pound per hectare',
     createSymbol(
       const [
@@ -206,7 +205,7 @@ final massPerAreaUnitDetails = {
     MassPerAreaUnit.poundPerHectare,
     _poundToKiloGram / _hectareToSquareMetre,
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'pound per square metre',
     createSymbol(
       const [
@@ -220,7 +219,7 @@ final massPerAreaUnitDetails = {
     _poundToKiloGram,
     americanName: 'pound per square meter',
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'pound per square mile',
     createSymbol(
       const [
@@ -233,7 +232,7 @@ final massPerAreaUnitDetails = {
     MassPerAreaUnit.poundPerSquareMile,
     _poundToKiloGram / _squareMileToSquareMetre,
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'pound per square yard',
     createSymbol(
       const [
@@ -246,7 +245,7 @@ final massPerAreaUnitDetails = {
     MassPerAreaUnit.poundPerSquareYard,
     _poundToKiloGram / _squareYardToSquareMetre,
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'short tonne per acre',
     createSymbol(
       const [
@@ -263,7 +262,7 @@ final massPerAreaUnitDetails = {
     americanName: 'short ton per acre',
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'short tonne per hectare',
     createSymbol(
       const [
@@ -280,7 +279,7 @@ final massPerAreaUnitDetails = {
     americanName: 'short ton per hectare',
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'short tonne per square metre',
     createSymbol(
       const [
@@ -298,7 +297,7 @@ final massPerAreaUnitDetails = {
     americanName: 'short ton per square meter',
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'short tonne per square mile',
     createSymbol(
       const [
@@ -316,7 +315,7 @@ final massPerAreaUnitDetails = {
     americanName: 'short ton per square mile',
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'short tonne per square yard',
     createSymbol(
       const [
@@ -334,7 +333,7 @@ final massPerAreaUnitDetails = {
     americanName: 'short ton per square yard',
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'tonne per acre',
     createSymbol(
       const [
@@ -347,7 +346,7 @@ final massPerAreaUnitDetails = {
     _tonneToKiloGram / _acreToSquareMetre,
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'tonne per hectare',
     createSymbol(
       const [
@@ -360,7 +359,7 @@ final massPerAreaUnitDetails = {
     _tonneToKiloGram / _hectareToSquareMetre,
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'tonne per square metre',
     createSymbol(
       const [
@@ -375,7 +374,7 @@ final massPerAreaUnitDetails = {
     americanName: 'tonne per square meter',
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'tonne per square mile',
     createSymbol(
       const [
@@ -389,7 +388,7 @@ final massPerAreaUnitDetails = {
     _tonneToKiloGram / _squareMileToSquareMetre,
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<MassPerAreaUnit>(
+  createUnit(
     'tonne per square yard',
     createSymbol(
       const [

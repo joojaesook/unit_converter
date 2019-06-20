@@ -3,7 +3,6 @@ import 'dart:math' show pow;
 import '../../enum/symbol_part.dart';
 import '../../enum/torque_unit.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __newton metre variations
@@ -26,7 +25,7 @@ final _newtonMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<TorqueUnit>(
+  createUnit(
     'gram-force centimetre',
     createSymbol(
       const [
@@ -41,7 +40,7 @@ final _otherUnits = {
     9.80665 * pow(10, -5),
     americanName: 'gram-force centimeter',
   ),
-  Unit<TorqueUnit>(
+  createUnit(
     'kilogram-force centimetre',
     createSymbol(
       const [
@@ -57,7 +56,7 @@ final _otherUnits = {
     0.0980665,
     americanName: 'kilogram-force centimeter',
   ),
-  Unit<TorqueUnit>(
+  createUnit(
     'kilogram-force metre',
     createSymbol(
       const [
@@ -72,7 +71,7 @@ final _otherUnits = {
     9.80665,
     americanName: 'kilogram-force meter',
   ),
-  Unit<TorqueUnit>(
+  createUnit(
     'ounce-force foot',
     createSymbol(
       const [
@@ -85,7 +84,7 @@ final _otherUnits = {
     TorqueUnit.ounceForceFoot,
     0.084738624,
   ),
-  Unit<TorqueUnit>(
+  createUnit(
     'ounce-force inch',
     createSymbol(
       const [
@@ -98,7 +97,7 @@ final _otherUnits = {
     TorqueUnit.ounceForceInch,
     0.00706155,
   ),
-  Unit<TorqueUnit>(
+  createUnit(
     'pound-force foot',
     createSymbol(
       const [
@@ -111,7 +110,7 @@ final _otherUnits = {
     TorqueUnit.poundForceFoot,
     1.355817948331,
   ),
-  Unit<TorqueUnit>(
+  createUnit(
     'pound-force inch',
     createSymbol(
       const [
@@ -124,7 +123,7 @@ final _otherUnits = {
     TorqueUnit.poundForceInch,
     0.1129848290,
   ),
-  Unit<TorqueUnit>(
+  createUnit(
     'poundal foot',
     createSymbol(
       const [

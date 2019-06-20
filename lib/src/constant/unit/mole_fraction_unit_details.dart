@@ -13,7 +13,7 @@ void create(Unit<MoleFractionUnit> unit) {
   var units = createUnitVariation(
     MoleFractionUnit.values,
     '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    unit.conversionFactor,
+    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
     decimalPrefixes,
     namePostfix: unit.name,
     symbolPostfix: unit.symbol,
@@ -45,7 +45,7 @@ final _intermediateMolePerMoleVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<MoleFractionUnit>(
+  createUnit(
     'part per billion',
     createSymbol(
       const [
@@ -57,7 +57,7 @@ final _otherUnits = {
     MoleFractionUnit.partPerBillion,
     pow(10, -9),
   ),
-  Unit<MoleFractionUnit>(
+  createUnit(
     'part per hendred',
     createSymbol(
       const [
@@ -67,7 +67,7 @@ final _otherUnits = {
     MoleFractionUnit.partPerHundred,
     0.01,
   ),
-  Unit<MoleFractionUnit>(
+  createUnit(
     'part per million',
     createSymbol(
       const [
@@ -79,7 +79,7 @@ final _otherUnits = {
     MoleFractionUnit.partPerMillion,
     pow(10, -6),
   ),
-  Unit<MoleFractionUnit>(
+  createUnit(
     'part per quadrillion',
     createSymbol(
       const [
@@ -91,7 +91,7 @@ final _otherUnits = {
     MoleFractionUnit.partPerQuadrillion,
     pow(10, -15),
   ),
-  Unit<MoleFractionUnit>(
+  createUnit(
     'part per ten thousand',
     createSymbol(
       const [
@@ -101,7 +101,7 @@ final _otherUnits = {
     MoleFractionUnit.partPerTenThousand,
     0.0001,
   ),
-  Unit<MoleFractionUnit>(
+  createUnit(
     'part per thousand',
     createSymbol(
       const [
@@ -111,7 +111,7 @@ final _otherUnits = {
     MoleFractionUnit.partPerThousand,
     0.001,
   ),
-  Unit<MoleFractionUnit>(
+  createUnit(
     'part per trillion',
     createSymbol(
       const [

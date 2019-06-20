@@ -2,12 +2,11 @@ import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../enum/water_hardness_unit.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/unit_system.dart';
 
 // water hardnes unit details
 final waterHardnessUnitDetails = {
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'clark degree',
     createSymbol(
       const [
@@ -18,7 +17,7 @@ final waterHardnessUnitDetails = {
     WaterHardnessUnit.clarkDegree,
     0.142413917539,
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'degree of general hardness',
     createSymbol(
       const [
@@ -30,7 +29,7 @@ final waterHardnessUnitDetails = {
     WaterHardnessUnit.degreeOfGeneralHardness,
     0.178324958004,
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'english degree',
     createSymbol(
       const [
@@ -41,7 +40,7 @@ final waterHardnessUnitDetails = {
     WaterHardnessUnit.englishDegree,
     0.142413917539,
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'french degree',
     createSymbol(
       const [
@@ -53,7 +52,7 @@ final waterHardnessUnitDetails = {
     WaterHardnessUnit.frenchDegree,
     0.0999131754505,
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'german degree',
     createSymbol(
       const [
@@ -65,7 +64,7 @@ final waterHardnessUnitDetails = {
     WaterHardnessUnit.germanDegree,
     0.178324958004,
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'grain per gallon',
     createSymbol(
       const [
@@ -77,7 +76,7 @@ final waterHardnessUnitDetails = {
     WaterHardnessUnit.grainPerGallon,
     0.171031983659,
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'milliequivalent per litre',
     createSymbol(
       const [
@@ -92,7 +91,7 @@ final waterHardnessUnitDetails = {
     0.5,
     americanName: 'milliequivalent per liter',
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'milligram per litre',
     createSymbol(
       const [
@@ -107,7 +106,7 @@ final waterHardnessUnitDetails = {
     americanName: 'milligram per liter',
     system: unitSystem[UnitSystem.ca2],
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'milligram per litre',
     createSymbol(
       const [
@@ -122,7 +121,7 @@ final waterHardnessUnitDetails = {
     americanName: 'milligram per liter',
     system: unitSystem[UnitSystem.caCO3],
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'milligram per litre',
     createSymbol(
       const [
@@ -137,7 +136,7 @@ final waterHardnessUnitDetails = {
     americanName: 'milligram per liter',
     system: unitSystem[UnitSystem.caO],
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'milligram per litre',
     createSymbol(
       const [
@@ -152,7 +151,7 @@ final waterHardnessUnitDetails = {
     americanName: 'milligram per liter',
     system: unitSystem[UnitSystem.mg2],
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'millimole per litre',
     createSymbol(
       const [
@@ -167,7 +166,7 @@ final waterHardnessUnitDetails = {
     americanName: 'millimole per liter',
     system: unitSystem[UnitSystem.caCO3],
   ),
-  Unit<WaterHardnessUnit>(
+  createUnit(
     'part per million',
     createSymbol(
       const [

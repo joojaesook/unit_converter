@@ -1,11 +1,10 @@
 import '../../enum/blood_cholesterol_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 
 // blood cholesterol unit details
 final bloodCholesterolUnitDetails = {
-  Unit<BloodCholesterolUnit>(
+  createUnit(
     'milligram per decilitre',
     createSymbol(
       const [
@@ -20,7 +19,7 @@ final bloodCholesterolUnitDetails = {
     1,
     americanName: 'milligram per deciliter',
   ),
-  Unit<BloodCholesterolUnit>(
+  createUnit(
     'millimole per litre',
     createSymbol(
       const [

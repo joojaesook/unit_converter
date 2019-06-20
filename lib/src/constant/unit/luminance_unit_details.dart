@@ -5,7 +5,6 @@ import '../../enum/length_unit.dart';
 import '../../enum/luminance_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // candela per square __metre variations
@@ -36,7 +35,7 @@ final _candelaPerSquareMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<LuminanceUnit>(
+  createUnit(
     'candela per square foot',
     createSymbol(
       const [
@@ -55,7 +54,7 @@ final _otherUnits = {
       -2,
     ),
   ),
-  Unit<LuminanceUnit>(
+  createUnit(
     'candela per square inch',
     createSymbol(
       const [
@@ -74,7 +73,7 @@ final _otherUnits = {
       -2,
     ),
   ),
-  Unit<LuminanceUnit>(
+  createUnit(
     'foot-lambert',
     createSymbol(
       const [
@@ -85,7 +84,7 @@ final _otherUnits = {
     LuminanceUnit.footLambert,
     3.42625909964,
   ),
-  Unit<LuminanceUnit>(
+  createUnit(
     'lambert',
     createSymbol(
       const [
@@ -95,7 +94,7 @@ final _otherUnits = {
     LuminanceUnit.lambert,
     3183.09886184,
   ),
-  Unit<LuminanceUnit>(
+  createUnit(
     'stilb',
     createSymbol(
       const [

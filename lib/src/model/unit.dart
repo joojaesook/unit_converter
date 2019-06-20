@@ -8,8 +8,6 @@ class Unit<T> {
   final String symbol;
   // Type of the unit
   final T type;
-  // Conversion factpr to base unit
-  final double conversionFactor;
   // Whether this unit is a prefixed variation of another unit
   final bool variation;
   // The unit system to which this unit belong to
@@ -18,8 +16,7 @@ class Unit<T> {
   Unit(
     this.name,
     this.symbol,
-    this.type,
-    this.conversionFactor, {
+    this.type, {
     this.americanName,
     this.variation = false,
     this.system,

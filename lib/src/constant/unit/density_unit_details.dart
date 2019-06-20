@@ -27,7 +27,7 @@ void create(Unit<DensityUnit> unit) {
   var units = createUnitVariation(
     DensityUnit.values,
     '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    unit.conversionFactor,
+    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
     decimalPrefixes,
     namePostfix: unit.name,
     symbolPostfix: unit.symbol,
@@ -416,7 +416,7 @@ final _poundPerCubicMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<DensityUnit>(
+  createUnit(
     'grain per cubic foot',
     createSymbol(
       [
@@ -433,7 +433,7 @@ final _otherUnits = {
           VolumeUnit.cubicFoot,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'grain per cubic inch',
     createSymbol(
       [
@@ -450,7 +450,7 @@ final _otherUnits = {
           VolumeUnit.cubicInch,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'grain per cubic mile',
     createSymbol(
       [
@@ -467,7 +467,7 @@ final _otherUnits = {
           VolumeUnit.cubicMile,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'grain per cubic nautical mile',
     createSymbol(
       [
@@ -487,7 +487,7 @@ final _otherUnits = {
           3,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'grain per cubic yard',
     createSymbol(
       [
@@ -504,7 +504,7 @@ final _otherUnits = {
           VolumeUnit.cubicYard,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'grain per fluid ounce',
     createSymbol(
       [
@@ -523,7 +523,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'grain per gallon',
     createSymbol(
       [
@@ -540,7 +540,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'grain per quart',
     createSymbol(
       [
@@ -557,7 +557,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'gram per cup',
     createSymbol(
       [
@@ -574,7 +574,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'gram per cup',
     createSymbol(
       [
@@ -591,7 +591,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'gram per cup',
     createSymbol(
       [
@@ -608,7 +608,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per cubic foot',
     createSymbol(
       [
@@ -625,7 +625,7 @@ final _otherUnits = {
           VolumeUnit.cubicFoot,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per cubic inch',
     createSymbol(
       [
@@ -642,7 +642,7 @@ final _otherUnits = {
           VolumeUnit.cubicInch,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per cubic mile',
     createSymbol(
       [
@@ -659,7 +659,7 @@ final _otherUnits = {
           VolumeUnit.cubicMile,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per cubic nautical mile',
     createSymbol(
       [
@@ -679,7 +679,7 @@ final _otherUnits = {
           3,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per cubic yard',
     createSymbol(
       [
@@ -696,7 +696,7 @@ final _otherUnits = {
           VolumeUnit.cubicYard,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per fluid ounce',
     createSymbol(
       [
@@ -715,7 +715,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per gallon',
     createSymbol(
       [
@@ -732,7 +732,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per quart',
     createSymbol(
       [
@@ -749,7 +749,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per cup',
     createSymbol(
       [
@@ -766,7 +766,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per cup',
     createSymbol(
       [
@@ -783,7 +783,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'ounce per cup',
     createSymbol(
       [
@@ -800,7 +800,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per cubic foot',
     createSymbol(
       [
@@ -817,7 +817,7 @@ final _otherUnits = {
           VolumeUnit.cubicFoot,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per cubic inch',
     createSymbol(
       [
@@ -834,7 +834,7 @@ final _otherUnits = {
           VolumeUnit.cubicInch,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per cubic mile',
     createSymbol(
       [
@@ -851,7 +851,7 @@ final _otherUnits = {
           VolumeUnit.cubicMile,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per cubic nautical mile',
     createSymbol(
       [
@@ -871,7 +871,7 @@ final _otherUnits = {
           3,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per cubic yard',
     createSymbol(
       [
@@ -888,7 +888,7 @@ final _otherUnits = {
           VolumeUnit.cubicYard,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per fluid ounce',
     createSymbol(
       [
@@ -907,7 +907,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per gallon',
     createSymbol(
       [
@@ -924,7 +924,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per quart',
     createSymbol(
       [
@@ -941,7 +941,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per cup',
     createSymbol(
       [
@@ -958,7 +958,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per cup',
     createSymbol(
       [
@@ -975,7 +975,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'pound per cup',
     createSymbol(
       [
@@ -992,7 +992,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'slug per cubic foot',
     createSymbol(
       [
@@ -1009,7 +1009,7 @@ final _otherUnits = {
           VolumeUnit.cubicFoot,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'slug per cubic inch',
     createSymbol(
       [
@@ -1026,7 +1026,7 @@ final _otherUnits = {
           VolumeUnit.cubicInch,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'slug per cubic mile',
     createSymbol(
       [
@@ -1043,7 +1043,7 @@ final _otherUnits = {
           VolumeUnit.cubicMile,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'slug per cubic nautical mile',
     createSymbol(
       [
@@ -1063,7 +1063,7 @@ final _otherUnits = {
           3,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'slug per cubic yard',
     createSymbol(
       [
@@ -1080,7 +1080,7 @@ final _otherUnits = {
           VolumeUnit.cubicYard,
         ),
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'slug per fluid ounce',
     createSymbol(
       [
@@ -1099,7 +1099,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'slug per gallon',
     createSymbol(
       [
@@ -1116,7 +1116,7 @@ final _otherUnits = {
         ),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<DensityUnit>(
+  createUnit(
     'slug per quart',
     createSymbol(
       [

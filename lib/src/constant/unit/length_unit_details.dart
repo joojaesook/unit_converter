@@ -4,7 +4,6 @@ import '../../enum/length_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
@@ -60,7 +59,7 @@ final _parsecVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<LengthUnit>(
+  createUnit(
     'angstrom',
     createSymbol(
       const [
@@ -70,7 +69,7 @@ final _otherUnits = {
     LengthUnit.angstrom,
     pow(10, -10),
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'astronomical unit',
     createSymbol(
       const [
@@ -80,7 +79,7 @@ final _otherUnits = {
     LengthUnit.astronomicalUnit,
     149597870700,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'barleycorn',
     createSymbol(
       const [
@@ -90,7 +89,7 @@ final _otherUnits = {
     LengthUnit.barleycorn,
     0.00846667,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'chain',
     createSymbol(
       const [
@@ -101,7 +100,7 @@ final _otherUnits = {
     20.1168,
     system: unitSystem[UnitSystem.gunter],
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'chinese mile',
     createSymbol(
       const [
@@ -111,7 +110,7 @@ final _otherUnits = {
     LengthUnit.chineseMile,
     500,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'fathom',
     createSymbol(
       const [
@@ -121,7 +120,7 @@ final _otherUnits = {
     LengthUnit.fathom,
     6 * _footToMetre,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'fermi',
     createSymbol(
       const [
@@ -131,7 +130,7 @@ final _otherUnits = {
     LengthUnit.fermi,
     pow(10, -15),
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'foot',
     createSymbol(
       const [
@@ -141,7 +140,7 @@ final _otherUnits = {
     LengthUnit.foot,
     _footToMetre,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'foot',
     createSymbol(
       const [
@@ -152,7 +151,7 @@ final _otherUnits = {
     1200 / 3937,
     system: unitSystem[UnitSystem.usSurvey],
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'furlong',
     createSymbol(
       const [
@@ -162,7 +161,7 @@ final _otherUnits = {
     LengthUnit.furlong,
     _mileToMetre / 8,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'hand',
     createSymbol(
       const [
@@ -172,7 +171,7 @@ final _otherUnits = {
     LengthUnit.hand,
     4 * _inchToMetre,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'inch',
     createSymbol(
       const [
@@ -182,7 +181,7 @@ final _otherUnits = {
     LengthUnit.inch,
     _inchToMetre,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'league',
     createSymbol(
       const [
@@ -193,7 +192,7 @@ final _otherUnits = {
     3 * _mileToMetre,
     system: unitSystem[UnitSystem.land],
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'light-day',
     createSymbol(
       const [
@@ -203,7 +202,7 @@ final _otherUnits = {
     LengthUnit.lightDay,
     2.59020683712 * pow(10, 13),
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'light-hour',
     createSymbol(
       const [
@@ -213,7 +212,7 @@ final _otherUnits = {
     LengthUnit.lightHour,
     1.0792528488 * pow(10, 12),
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'light-minute',
     createSymbol(
       const [
@@ -223,7 +222,7 @@ final _otherUnits = {
     LengthUnit.lightMinute,
     1.798754748 * pow(10, 10),
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'light-second',
     createSymbol(
       const [
@@ -233,7 +232,7 @@ final _otherUnits = {
     LengthUnit.lightSecond,
     299792458,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'link',
     createSymbol(
       const [
@@ -244,7 +243,7 @@ final _otherUnits = {
     (66 * _footToMetre) / 100,
     system: unitSystem[UnitSystem.gunter],
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'microinch',
     createSymbol(
       const [
@@ -255,7 +254,7 @@ final _otherUnits = {
     LengthUnit.microInch,
     _inchToMetre * pow(10, -6),
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'micron',
     createSymbol(
       const [
@@ -265,7 +264,7 @@ final _otherUnits = {
     LengthUnit.micron,
     pow(10, -6),
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'mile',
     createSymbol(
       const [
@@ -275,7 +274,7 @@ final _otherUnits = {
     LengthUnit.mile,
     _mileToMetre,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'nautical league',
     createSymbol(
       const [
@@ -286,7 +285,7 @@ final _otherUnits = {
     LengthUnit.nauticalLeague,
     3 * _nauticalMileToMetre,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'nautical mile',
     createSymbol(
       const [
@@ -296,7 +295,7 @@ final _otherUnits = {
     LengthUnit.nauticalMile,
     _nauticalMileToMetre,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'pica',
     createSymbol(
       const [
@@ -307,7 +306,7 @@ final _otherUnits = {
     _inchToMetre / 6,
     system: unitSystem[UnitSystem.typographic],
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'planck length',
     createSymbol(
       const [
@@ -317,7 +316,7 @@ final _otherUnits = {
     LengthUnit.planckLength,
     1.616255 * pow(10, -35),
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'point',
     createSymbol(
       const [
@@ -328,7 +327,7 @@ final _otherUnits = {
     _inchToMetre / 72,
     system: unitSystem[UnitSystem.typographic],
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'pole',
     createSymbol(
       const [
@@ -338,7 +337,7 @@ final _otherUnits = {
     LengthUnit.pole,
     16.5 * _footToMetre,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'rod',
     createSymbol(
       const [
@@ -348,7 +347,7 @@ final _otherUnits = {
     LengthUnit.rod,
     16.5 * _footToMetre,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'thousand of an inch',
     createSymbol(
       const [
@@ -358,7 +357,7 @@ final _otherUnits = {
     LengthUnit.thousandOfAnInch,
     _inchToMetre / 1000,
   ),
-  Unit<LengthUnit>(
+  createUnit(
     'yard',
     createSymbol(
       const [

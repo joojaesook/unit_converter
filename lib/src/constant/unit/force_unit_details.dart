@@ -3,7 +3,6 @@ import 'dart:math' show pow;
 import '../../enum/force_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 const _gramForceToNewton = 0.00980665;
@@ -40,7 +39,7 @@ final _newtonVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<ForceUnit>(
+  createUnit(
     'dyne',
     createSymbol(
       const [
@@ -50,7 +49,7 @@ final _otherUnits = {
     ForceUnit.dyne,
     pow(10, -5),
   ),
-  Unit<ForceUnit>(
+  createUnit(
     'kilopond',
     createSymbol(
       const [
@@ -61,7 +60,7 @@ final _otherUnits = {
     ForceUnit.kilopond,
     _gramForceToNewton * pow(10, 3),
   ),
-  Unit<ForceUnit>(
+  createUnit(
     'kip',
     createSymbol(
       const [
@@ -71,7 +70,7 @@ final _otherUnits = {
     ForceUnit.kip,
     1000 * _poundForceToNewton,
   ),
-  Unit<ForceUnit>(
+  createUnit(
     'ounce-force',
     createSymbol(
       const [
@@ -82,7 +81,7 @@ final _otherUnits = {
     ForceUnit.ounceForce,
     _poundForceToNewton / 16,
   ),
-  Unit<ForceUnit>(
+  createUnit(
     'pound-force',
     createSymbol(
       const [
@@ -93,7 +92,7 @@ final _otherUnits = {
     ForceUnit.poundForce,
     _poundForceToNewton,
   ),
-  Unit<ForceUnit>(
+  createUnit(
     'poundal',
     createSymbol(
       const [

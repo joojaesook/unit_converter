@@ -4,7 +4,6 @@ import '../../enum/energy_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
@@ -120,7 +119,7 @@ final _wattHourVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<EnergyUnit>(
+  createUnit(
     'British thermal unit',
     createSymbol(
       const [
@@ -130,7 +129,7 @@ final _otherUnits = {
     EnergyUnit.britishThermalUnit,
     1054.350264,
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'British thermal unit',
     createSymbol(
       const [
@@ -141,7 +140,7 @@ final _otherUnits = {
     _britishThermalUnitToJoule_15DegreeC,
     system: unitSystem[UnitSystem.degree15C],
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'British thermal unit',
     createSymbol(
       const [
@@ -152,7 +151,7 @@ final _otherUnits = {
     _britishThermalUnitToJoule_intlSteamTable,
     system: unitSystem[UnitSystem.intlSteamTable],
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'decatherm',
     createSymbol(
       const [
@@ -163,7 +162,7 @@ final _otherUnits = {
     _decaThermToJoule,
     system: unitSystem[UnitSystem.ec],
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'erg',
     createSymbol(
       const [
@@ -175,7 +174,7 @@ final _otherUnits = {
     EnergyUnit.erg,
     pow(10, -7),
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'foot-pound force',
     createSymbol(
       const [
@@ -188,7 +187,7 @@ final _otherUnits = {
     EnergyUnit.footPoundForce,
     1.3558179483,
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'hartree',
     createSymbol(
       const [
@@ -199,7 +198,7 @@ final _otherUnits = {
     EnergyUnit.hartree,
     4.35974 * pow(10, -18),
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'million British thermal units',
     createSymbol(
       const [
@@ -213,7 +212,7 @@ final _otherUnits = {
     system: unitSystem[UnitSystem.intlSteamTable],
     variation: true,
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'million decatherms',
     createSymbol(
       const [
@@ -227,7 +226,7 @@ final _otherUnits = {
     system: unitSystem[UnitSystem.ec],
     variation: true,
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'quad',
     createSymbol(
       const [
@@ -240,7 +239,7 @@ final _otherUnits = {
     EnergyUnit.quad,
     _britishThermalUnitToJoule_intlSteamTable * pow(10, 15),
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'therm',
     createSymbol(
       const [
@@ -251,7 +250,7 @@ final _otherUnits = {
     _thermToJoule_ec,
     system: unitSystem[UnitSystem.ec],
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'therm',
     createSymbol(
       const [
@@ -262,7 +261,7 @@ final _otherUnits = {
     105505585.257348,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'therm',
     createSymbol(
       const [
@@ -273,7 +272,7 @@ final _otherUnits = {
     100000 * _britishThermalUnitToJoule_15DegreeC,
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'thermie',
     createSymbol(
       const [
@@ -284,7 +283,7 @@ final _otherUnits = {
     EnergyUnit.thermie,
     4186800,
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'thousand British thermal units',
     createSymbol(
       const [
@@ -297,7 +296,7 @@ final _otherUnits = {
     system: unitSystem[UnitSystem.intlSteamTable],
     variation: true,
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'thousand decatherms',
     createSymbol(
       const [
@@ -310,7 +309,7 @@ final _otherUnits = {
     system: unitSystem[UnitSystem.ec],
     variation: true,
   ),
-  Unit<EnergyUnit>(
+  createUnit(
     'tonne of oil equivalent',
     createSymbol(
       const [

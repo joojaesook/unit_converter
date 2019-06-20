@@ -2,7 +2,6 @@ import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
 import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
@@ -25,7 +24,7 @@ final _secondVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<TimeUnit>(
+  createUnit(
     'century',
     createSymbol(
       const [
@@ -36,7 +35,7 @@ final _otherUnits = {
     100 * _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<TimeUnit>(
+  createUnit(
     'day',
     createSymbol(
       const [
@@ -46,7 +45,7 @@ final _otherUnits = {
     TimeUnit.day,
     _dayToSecond,
   ),
-  Unit<TimeUnit>(
+  createUnit(
     'decade',
     createSymbol(
       const [
@@ -57,7 +56,7 @@ final _otherUnits = {
     10 * _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<TimeUnit>(
+  createUnit(
     'fortnight',
     createSymbol(
       const [
@@ -67,7 +66,7 @@ final _otherUnits = {
     TimeUnit.fortnight,
     1209600,
   ),
-  Unit<TimeUnit>(
+  createUnit(
     'hour',
     createSymbol(
       const [
@@ -77,7 +76,7 @@ final _otherUnits = {
     TimeUnit.hour,
     3600,
   ),
-  Unit<TimeUnit>(
+  createUnit(
     'millennium',
     createSymbol(
       const [
@@ -88,7 +87,7 @@ final _otherUnits = {
     1000 * _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<TimeUnit>(
+  createUnit(
     'minute',
     createSymbol(
       const [
@@ -98,7 +97,7 @@ final _otherUnits = {
     TimeUnit.minute,
     60,
   ),
-  Unit<TimeUnit>(
+  createUnit(
     'month',
     createSymbol(
       const [
@@ -109,7 +108,7 @@ final _otherUnits = {
     _yearToSecond / 12,
     system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<TimeUnit>(
+  createUnit(
     'week',
     createSymbol(
       const [
@@ -119,7 +118,7 @@ final _otherUnits = {
     TimeUnit.week,
     604800,
   ),
-  Unit<TimeUnit>(
+  createUnit(
     'year',
     createSymbol(
       const [

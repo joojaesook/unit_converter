@@ -3,7 +3,6 @@ import 'dart:math' show pow;
 import '../../enum/electrical_conductance_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __mho variations
@@ -36,7 +35,7 @@ final _siemensVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<ElectricalConductanceUnit>(
+  createUnit(
     'abmho',
     createSymbol(
       const [
@@ -48,7 +47,7 @@ final _otherUnits = {
     pow(10, 9),
     variation: true,
   ),
-  Unit<ElectricalConductanceUnit>(
+  createUnit(
     'absiemens',
     createSymbol(
       const [

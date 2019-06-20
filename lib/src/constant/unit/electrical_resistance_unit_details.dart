@@ -3,7 +3,6 @@ import 'dart:math' show pow;
 import '../../enum/electrical_resistance_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __ohm variations
@@ -22,7 +21,7 @@ final _ohmVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<ElectricalResistanceUnit>(
+  createUnit(
     'abohm',
     createSymbol(
       const [

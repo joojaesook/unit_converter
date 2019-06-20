@@ -5,7 +5,6 @@ import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
 import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
@@ -135,7 +134,7 @@ final _wattVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<PowerUnit>(
+  createUnit(
     'British thermal unit per hour',
     createSymbol(
       const [
@@ -148,7 +147,7 @@ final _otherUnits = {
     _britishThermalUnitToJoule_intlSteamTable / _hourToSecond,
     system: unitSystem[UnitSystem.intlSteamTable],
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'British thermal unit per minute',
     createSymbol(
       const [
@@ -161,7 +160,7 @@ final _otherUnits = {
     _britishThermalUnitToJoule_intlSteamTable / _minuteToSecond,
     system: unitSystem[UnitSystem.intlSteamTable],
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'British thermal unit per second',
     createSymbol(
       const [
@@ -174,7 +173,7 @@ final _otherUnits = {
     _britishThermalUnitToJoule_intlSteamTable,
     system: unitSystem[UnitSystem.intlSteamTable],
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'erg per hour',
     createSymbol(
       const [
@@ -188,7 +187,7 @@ final _otherUnits = {
     PowerUnit.ergPerHour,
     _ergToJoule / _hourToSecond,
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'erg per minute',
     createSymbol(
       const [
@@ -202,7 +201,7 @@ final _otherUnits = {
     PowerUnit.ergPerMinute,
     _ergToJoule / _minuteToSecond,
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'erg per second',
     createSymbol(
       const [
@@ -216,7 +215,7 @@ final _otherUnits = {
     PowerUnit.ergPerSecond,
     _ergToJoule,
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'foot pound per minute',
     createSymbol(
       const [
@@ -231,7 +230,7 @@ final _otherUnits = {
     PowerUnit.footPoundPerMinute,
     _footPoundForceToJoule / _minuteToSecond,
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'foot pound per second',
     createSymbol(
       const [
@@ -246,7 +245,7 @@ final _otherUnits = {
     PowerUnit.footPoundPerSecond,
     _footPoundForceToJoule,
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'horsepower',
     createSymbol(
       const [
@@ -259,7 +258,7 @@ final _otherUnits = {
     9809.5,
     system: unitSystem[UnitSystem.boiler],
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'horsepower',
     createSymbol(
       const [
@@ -271,7 +270,7 @@ final _otherUnits = {
     746,
     system: unitSystem[UnitSystem.electric],
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'horsepower',
     createSymbol(
       const [
@@ -283,7 +282,7 @@ final _otherUnits = {
     550 * _footPoundForceToJoule,
     system: unitSystem[UnitSystem.mechanical],
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'horsepower',
     createSymbol(
       const [
@@ -295,7 +294,7 @@ final _otherUnits = {
     735.49875,
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<PowerUnit>(
+  createUnit(
     'tonne of refrigeration',
     createSymbol(
       const [

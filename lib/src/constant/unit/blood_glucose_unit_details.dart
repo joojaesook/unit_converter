@@ -1,11 +1,10 @@
 import '../../enum/blood_glucose_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 
 // blood gucose unit details
 final bloodGlucoseUnitDetails = {
-  Unit<BloodGlucoseUnit>(
+  createUnit(
     'milligram per decilitre',
     createSymbol(
       const [
@@ -20,7 +19,7 @@ final bloodGlucoseUnitDetails = {
     1,
     americanName: 'milligram per deciliter',
   ),
-  Unit<BloodGlucoseUnit>(
+  createUnit(
     'millimole per litre',
     createSymbol(
       const [

@@ -1,7 +1,6 @@
 import '../../enum/electric_current_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __ampere variations
@@ -20,7 +19,7 @@ final _ampereVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<ElectricCurrentUnit>(
+  createUnit(
     'abampere',
     createSymbol(
       const [

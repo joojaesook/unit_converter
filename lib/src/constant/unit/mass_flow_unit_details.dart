@@ -4,7 +4,6 @@ import '../../enum/mass_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 final _gramToKiloGram = conversionFactor(ConversionType.mass, MassUnit.gram);
@@ -81,7 +80,7 @@ final _gramPerSecondVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<MassFlowUnit>(
+  createUnit(
     'grain per day',
     createSymbol(
       const [
@@ -93,7 +92,7 @@ final _otherUnits = {
     MassFlowUnit.grainPerDay,
     _grainToKiloGram / _dayToSecond,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'grain per hour',
     createSymbol(
       const [
@@ -105,7 +104,7 @@ final _otherUnits = {
     MassFlowUnit.grainPerHour,
     _grainToKiloGram / _hourToSecond,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'grain per minute',
     createSymbol(
       const [
@@ -117,7 +116,7 @@ final _otherUnits = {
     MassFlowUnit.grainPerMinute,
     _grainToKiloGram / _minuteToSecond,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'grain per second',
     createSymbol(
       const [
@@ -129,7 +128,7 @@ final _otherUnits = {
     MassFlowUnit.grainPerSecond,
     _grainToKiloGram,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'ounce per day',
     createSymbol(
       const [
@@ -141,7 +140,7 @@ final _otherUnits = {
     MassFlowUnit.ouncePerDay,
     _ounceToKiloGram / _dayToSecond,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'ounce per hour',
     createSymbol(
       const [
@@ -153,7 +152,7 @@ final _otherUnits = {
     MassFlowUnit.ouncePerHour,
     _ounceToKiloGram / _hourToSecond,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'ounce per minute',
     createSymbol(
       const [
@@ -165,7 +164,7 @@ final _otherUnits = {
     MassFlowUnit.ouncePerMinute,
     _ounceToKiloGram / _minuteToSecond,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'ounce per second',
     createSymbol(
       const [
@@ -177,7 +176,7 @@ final _otherUnits = {
     MassFlowUnit.ouncePerSecond,
     _ounceToKiloGram,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'pound per day',
     createSymbol(
       const [
@@ -189,7 +188,7 @@ final _otherUnits = {
     MassFlowUnit.poundPerDay,
     _poundToKiloGram / _dayToSecond,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'pound per hour',
     createSymbol(
       const [
@@ -201,7 +200,7 @@ final _otherUnits = {
     MassFlowUnit.poundPerHour,
     _poundToKiloGram / _hourToSecond,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'pound per minute',
     createSymbol(
       const [
@@ -213,7 +212,7 @@ final _otherUnits = {
     MassFlowUnit.poundPerMinute,
     _poundToKiloGram / _minuteToSecond,
   ),
-  Unit<MassFlowUnit>(
+  createUnit(
     'pound per second',
     createSymbol(
       const [

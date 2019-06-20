@@ -3,7 +3,6 @@ import 'dart:math' show pow;
 import '../../enum/electric_potential_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __volt variations
@@ -22,7 +21,7 @@ final _voltVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<ElectricPotentialUnit>(
+  createUnit(
     'abvolt',
     createSymbol(
       const [

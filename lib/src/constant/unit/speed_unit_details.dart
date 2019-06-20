@@ -4,7 +4,6 @@ import '../../enum/speed_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 final _dayToSecond = conversionFactor(ConversionType.time, TimeUnit.day);
@@ -92,7 +91,7 @@ final _metrePerSecondVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<SpeedUnit>(
+  createUnit(
     'foot per day',
     createSymbol(
       const [
@@ -104,7 +103,7 @@ final _otherUnits = {
     SpeedUnit.footPerDay,
     _footToMetre / _dayToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'foot per hour',
     createSymbol(
       const [
@@ -116,7 +115,7 @@ final _otherUnits = {
     SpeedUnit.footPerHour,
     _footToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'foot per minute',
     createSymbol(
       const [
@@ -128,7 +127,7 @@ final _otherUnits = {
     SpeedUnit.footPerMinute,
     _footToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'foot per second',
     createSymbol(
       const [
@@ -140,7 +139,7 @@ final _otherUnits = {
     SpeedUnit.footPerSecond,
     _footToMetre,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'inch per day',
     createSymbol(
       const [
@@ -152,7 +151,7 @@ final _otherUnits = {
     SpeedUnit.inchPerDay,
     _inchToMetre / _dayToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'inch per hour',
     createSymbol(
       const [
@@ -164,7 +163,7 @@ final _otherUnits = {
     SpeedUnit.inchPerHour,
     _inchToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'inch per minute',
     createSymbol(
       const [
@@ -176,7 +175,7 @@ final _otherUnits = {
     SpeedUnit.inchPerMinute,
     _inchToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'inch per second',
     createSymbol(
       const [
@@ -188,7 +187,7 @@ final _otherUnits = {
     SpeedUnit.inchPerSecond,
     _inchToMetre,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'knot',
     createSymbol(
       const [
@@ -198,7 +197,7 @@ final _otherUnits = {
     SpeedUnit.knot,
     0.514444444,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'mile per day',
     createSymbol(
       const [
@@ -210,7 +209,7 @@ final _otherUnits = {
     SpeedUnit.milePerDay,
     _mileToMetre / _dayToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'mile per hour',
     createSymbol(
       const [
@@ -222,7 +221,7 @@ final _otherUnits = {
     SpeedUnit.milePerHour,
     _mileToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'mile per minute',
     createSymbol(
       const [
@@ -234,7 +233,7 @@ final _otherUnits = {
     SpeedUnit.milePerMinute,
     _mileToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'mile per second',
     createSymbol(
       const [
@@ -246,7 +245,7 @@ final _otherUnits = {
     SpeedUnit.milePerSecond,
     _mileToMetre,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'nautical mile per hour',
     createSymbol(
       const [
@@ -258,7 +257,7 @@ final _otherUnits = {
     SpeedUnit.nauticalMilePerHour,
     _nauticalMileToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'nautical mile per minute',
     createSymbol(
       const [
@@ -270,7 +269,7 @@ final _otherUnits = {
     SpeedUnit.nauticalMilePerMinute,
     _nauticalMileToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'nautical mile per second',
     createSymbol(
       const [
@@ -282,7 +281,7 @@ final _otherUnits = {
     SpeedUnit.nauticalMilePerSecond,
     _nauticalMileToMetre,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'yard per day',
     createSymbol(
       const [
@@ -294,7 +293,7 @@ final _otherUnits = {
     SpeedUnit.yardPerDay,
     _yardToMetre / _dayToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'yard per hour',
     createSymbol(
       const [
@@ -306,7 +305,7 @@ final _otherUnits = {
     SpeedUnit.yardPerHour,
     _yardToMetre / _hourToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'yard per minute',
     createSymbol(
       const [
@@ -318,7 +317,7 @@ final _otherUnits = {
     SpeedUnit.yardPerMinute,
     _yardToMetre / _minuteToSecond,
   ),
-  Unit<SpeedUnit>(
+  createUnit(
     'yard per second',
     createSymbol(
       const [

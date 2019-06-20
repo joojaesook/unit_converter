@@ -22,7 +22,7 @@ void create(Unit<MassMomentOfInertiaUnit> unit) {
   var units = createUnitVariation(
     MassMomentOfInertiaUnit.values,
     '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    unit.conversionFactor,
+    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
     decimalPrefixes,
     namePostfix: unit.name,
     symbolPostfix: unit.symbol,
@@ -58,7 +58,7 @@ final _intermediateGramSquareMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<MassMomentOfInertiaUnit>(
+  createUnit(
     'pound square foot',
     createSymbol(
       const [
@@ -71,7 +71,7 @@ final _otherUnits = {
     MassMomentOfInertiaUnit.poundSquareFoot,
     _poundToKiloGram * _squareFootToSquareMetre,
   ),
-  Unit<MassMomentOfInertiaUnit>(
+  createUnit(
     'pound square inch',
     createSymbol(
       const [
@@ -84,7 +84,7 @@ final _otherUnits = {
     MassMomentOfInertiaUnit.poundSquareInch,
     _poundToKiloGram * _squareInchToSquareMetre,
   ),
-  Unit<MassMomentOfInertiaUnit>(
+  createUnit(
     'slug square foot',
     createSymbol(
       const [
@@ -97,7 +97,7 @@ final _otherUnits = {
     MassMomentOfInertiaUnit.slugSquareFoot,
     _slugToKiloGram * _squareFootToSquareMetre,
   ),
-  Unit<MassMomentOfInertiaUnit>(
+  createUnit(
     'slug square inch',
     createSymbol(
       const [

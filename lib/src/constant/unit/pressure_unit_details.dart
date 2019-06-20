@@ -21,7 +21,7 @@ void create(Unit<PressureUnit> unit) {
   var units = createUnitVariation(
     PressureUnit.values,
     '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    unit.conversionFactor,
+    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
     decimalPrefixes,
     namePostfix: unit.name,
     symbolPostfix: unit.symbol,
@@ -173,7 +173,7 @@ final _torrVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<PressureUnit>(
+  createUnit(
     'atmosphere',
     createSymbol(
       const [
@@ -186,7 +186,7 @@ final _otherUnits = {
     101325,
     system: unitSystem[UnitSystem.standard],
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'atmosphere',
     createSymbol(
       const [
@@ -198,7 +198,7 @@ final _otherUnits = {
     98066.5,
     system: unitSystem[UnitSystem.technical],
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'barye',
     createSymbol(
       const [
@@ -209,7 +209,7 @@ final _otherUnits = {
     PressureUnit.barye,
     0.1,
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'foot of mercury',
     createSymbol(
       const [
@@ -225,7 +225,7 @@ final _otherUnits = {
           LengthUnit.foot,
         ),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'foot of water',
     createSymbol(
       const [
@@ -242,7 +242,7 @@ final _otherUnits = {
           LengthUnit.foot,
         ),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'inch of mercury',
     createSymbol(
       const [
@@ -258,7 +258,7 @@ final _otherUnits = {
           LengthUnit.inch,
         ),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'inch of water',
     createSymbol(
       const [
@@ -275,7 +275,7 @@ final _otherUnits = {
           LengthUnit.inch,
         ),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'kip per square inch',
     createSymbol(
       const [
@@ -288,7 +288,7 @@ final _otherUnits = {
     conversionFactor(ConversionType.force, ForceUnit.kip) /
         conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'ounce force per square foot',
     createSymbol(
       const [
@@ -303,7 +303,7 @@ final _otherUnits = {
     conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
         conversionFactor(ConversionType.area, AreaUnit.squareFoot),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'ounce force per square inch',
     createSymbol(
       const [
@@ -318,7 +318,7 @@ final _otherUnits = {
     conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
         conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'ounce force per square yard',
     createSymbol(
       const [
@@ -333,7 +333,7 @@ final _otherUnits = {
     conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
         conversionFactor(ConversionType.area, AreaUnit.squareYard),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'pound force per acre',
     createSymbol(
       const [
@@ -347,7 +347,7 @@ final _otherUnits = {
     conversionFactor(ConversionType.force, ForceUnit.poundForce) /
         conversionFactor(ConversionType.area, AreaUnit.acre),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'pound force per square foot',
     createSymbol(
       const [
@@ -362,7 +362,7 @@ final _otherUnits = {
     conversionFactor(ConversionType.force, ForceUnit.poundForce) /
         conversionFactor(ConversionType.area, AreaUnit.squareFoot),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'pound force per square inch',
     createSymbol(
       const [
@@ -377,7 +377,7 @@ final _otherUnits = {
     conversionFactor(ConversionType.force, ForceUnit.poundForce) /
         conversionFactor(ConversionType.area, AreaUnit.squareInch),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'pound force per square yard',
     createSymbol(
       const [
@@ -392,7 +392,7 @@ final _otherUnits = {
     conversionFactor(ConversionType.force, ForceUnit.poundForce) /
         conversionFactor(ConversionType.area, AreaUnit.squareYard),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'poundal per square foot',
     createSymbol(
       const [
@@ -407,7 +407,7 @@ final _otherUnits = {
     conversionFactor(ConversionType.force, ForceUnit.poundal) /
         conversionFactor(ConversionType.area, AreaUnit.squareFoot),
   ),
-  Unit<PressureUnit>(
+  createUnit(
     'poundal per square inch',
     createSymbol(
       const [

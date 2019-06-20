@@ -1,6 +1,6 @@
 import 'dart:math' show pow;
 
-import '../constant/others/available_unit.dart';
+import '../constant/others/conversion_factors.dart';
 import '../constant/others/misc.dart';
 import '../constant/others/prefix_name.dart';
 import '../constant/others/prefix_value.dart';
@@ -27,23 +27,51 @@ String createSymbol(List<SymbolPart> symbolParts) {
 
 // get conversion factor for unit [unit] from conversion type [type]
 double conversionFactor<T>(ConversionType conversionType, T unitType) {
-  return availableUnit[conversionType]
-      .firstWhere((unit) => unit.type == unitType)
-      .conversionFactor;
+  return conversionFactors[conversionType][unitType];
 }
 
-T enumFromString<T>(Iterable<T> values, String value) {
+T _enumFromString<T>(Iterable<T> values, String value) {
   return values.firstWhere(
       (type) =>
           type.toString().split(".").last.toLowerCase() == value.toLowerCase(),
       orElse: () => null);
 }
 
+ConversionType conversionTypeFromString(String value) {
+  value = value.split('Unit')[0];
+  return _enumFromString(ConversionType.values, value);
+}
+
 String stringFromEnum<T>(T type) {
   return type.toString().split(".").last;
 }
 
+void _addConversionFactor<T>(T unitType, double conversionFactor) {
+  var conversionType = conversionTypeFromString(unitType.toString());
+  conversionFactors[conversionType][unitType] = conversionFactor;
+}
+
 Unit<T> createUnit<T>(
+  String name,
+  String symbol,
+  T type,
+  double conversionFactor, {
+  String americanName,
+  bool variation = false,
+  String system,
+}) {
+  _addConversionFactor(type, conversionFactor);
+  return Unit<T>(
+    name,
+    symbol,
+    type,
+    americanName: americanName,
+    variation: variation,
+    system: system,
+  );
+}
+
+Unit<T> _createUnitForVariation<T>(
   String namePrefix,
   String namePostfix,
   String americanNamePrefix,
@@ -62,7 +90,6 @@ Unit<T> createUnit<T>(
     '$namePrefix$variationName$namePostfix',
     '$symbolPrefix$variationSymbol$symbolPostfix',
     type,
-    conversionFactor,
     variation: variation,
   );
   if (system != null) {
@@ -71,6 +98,7 @@ Unit<T> createUnit<T>(
   if (addAmericanName) {
     unit.americanName = '$americanNamePrefix$variationName$americanNamePostfix';
   }
+  _addConversionFactor(type, conversionFactor);
   return unit;
 }
 
@@ -92,7 +120,7 @@ Set<Unit<T>> createUnitVariation<T>(
   bool appendVariationUnitTypeWithSystemName = false,
 }) {
   var units = <Unit<T>>{};
-  var variationBase = createUnit(
+  var variationBase = _createUnitForVariation(
     namePrefix,
     namePostfix,
     americanNamePrefix,
@@ -101,7 +129,7 @@ Set<Unit<T>> createUnitVariation<T>(
     symbolPostfix,
     conversionFactorToBaseUnit,
     addAmericanName,
-    enumFromString(
+    _enumFromString(
       unitEnum,
       variationBaseUnitName.replaceFirst(variationUnitNameSeperator, ''),
     ),
@@ -115,7 +143,7 @@ Set<Unit<T>> createUnitVariation<T>(
   for (MetricPrefix p in variations) {
     var variationName = prefixName[p];
     var prefix = prefixValue[p];
-    var unit = createUnit(
+    var unit = _createUnitForVariation(
       namePrefix,
       namePostfix,
       americanNamePrefix,
@@ -125,7 +153,7 @@ Set<Unit<T>> createUnitVariation<T>(
       conversionFactorToBaseUnit *
           pow(prefix.base, powerOfVariationConversionFactor * prefix.exponent),
       addAmericanName,
-      enumFromString(
+      _enumFromString(
         unitEnum,
         variationBaseUnitName.replaceFirst(
             variationUnitNameSeperator, variationName),
@@ -135,7 +163,7 @@ Set<Unit<T>> createUnitVariation<T>(
       variationName: variationName,
       variationSymbol: createSymbol(
         [
-          enumFromString(SymbolPart.values, variationName),
+          _enumFromString(SymbolPart.values, variationName),
         ],
       ),
     );

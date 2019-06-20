@@ -7,7 +7,6 @@ import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../enum/volume_unit.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
@@ -62,7 +61,7 @@ final _cubicMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<VolumeUnit>(
+  createUnit(
     'acre-foot',
     createSymbol(
       const [
@@ -74,7 +73,7 @@ final _otherUnits = {
     VolumeUnit.acreFoot,
     _acreToSquareMetre * _footToMetre,
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'acre-inch',
     createSymbol(
       const [
@@ -86,7 +85,7 @@ final _otherUnits = {
     VolumeUnit.acreInch,
     _acreToSquareMetre * _inchToMetre,
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'board foot',
     createSymbol(
       const [
@@ -96,7 +95,7 @@ final _otherUnits = {
     VolumeUnit.boardFoot,
     pow(_footToMetre, 3) / 12,
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'bushel',
     createSymbol(
       const [
@@ -107,7 +106,7 @@ final _otherUnits = {
     8 * _gallon_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'bushel',
     createSymbol(
       const [
@@ -118,7 +117,7 @@ final _otherUnits = {
     8 * _gallon_usDry,
     system: unitSystem[UnitSystem.usDryLevel],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'cubic foot',
     createSymbol(
       const [
@@ -132,7 +131,7 @@ final _otherUnits = {
       3,
     ),
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'cubic inch',
     createSymbol(
       const [
@@ -146,7 +145,7 @@ final _otherUnits = {
       3,
     ),
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'cubic mile',
     createSymbol(
       const [
@@ -163,7 +162,7 @@ final _otherUnits = {
       3,
     ),
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'cubic yard',
     createSymbol(
       const [
@@ -180,7 +179,7 @@ final _otherUnits = {
       3,
     ),
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'cup',
     createSymbol(
       const [
@@ -191,7 +190,7 @@ final _otherUnits = {
     _gallon_imperial / 16,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'cup',
     createSymbol(
       const [
@@ -202,7 +201,7 @@ final _otherUnits = {
     250 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'cup',
     createSymbol(
       const [
@@ -213,7 +212,7 @@ final _otherUnits = {
     _gallon_usLiquid / 16,
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'cup',
     createSymbol(
       const [
@@ -224,7 +223,7 @@ final _otherUnits = {
     240 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'firlot',
     createSymbol(
       const [
@@ -235,7 +234,7 @@ final _otherUnits = {
     4 * _peck_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'firlot',
     createSymbol(
       const [
@@ -246,7 +245,7 @@ final _otherUnits = {
     4 * _peck_usDry,
     system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'fluid dram',
     createSymbol(
       const [
@@ -259,7 +258,7 @@ final _otherUnits = {
     0.000003696691195313,
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'fluid ounce',
     createSymbol(
       const [
@@ -272,7 +271,7 @@ final _otherUnits = {
     _fluidOunce_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'fluid ounce',
     createSymbol(
       const [
@@ -285,7 +284,7 @@ final _otherUnits = {
     _fluidOunce_us,
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'fluid ounce',
     createSymbol(
       const [
@@ -298,7 +297,7 @@ final _otherUnits = {
     30 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'gallon',
     createSymbol(
       const [
@@ -309,7 +308,7 @@ final _otherUnits = {
     _gallon_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'gallon',
     createSymbol(
       const [
@@ -320,7 +319,7 @@ final _otherUnits = {
     _gallon_usDry,
     system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'gallon',
     createSymbol(
       const [
@@ -331,7 +330,7 @@ final _otherUnits = {
     _gallon_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'gill',
     createSymbol(
       const [
@@ -342,7 +341,7 @@ final _otherUnits = {
     _gallon_imperial / 32,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'gill',
     createSymbol(
       const [
@@ -353,7 +352,7 @@ final _otherUnits = {
     _gallon_usLiquid / 32,
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'hectare metre',
     createSymbol(
       const [
@@ -366,7 +365,7 @@ final _otherUnits = {
     10000,
     americanName: 'hectare meter',
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'jigger',
     createSymbol(
       const [
@@ -382,7 +381,7 @@ final _otherUnits = {
     1.5 * _fluidOunce_us,
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'minim',
     createSymbol(
       const [
@@ -393,7 +392,7 @@ final _otherUnits = {
     _fluidOunce_imperial / 480,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'minim',
     createSymbol(
       const [
@@ -404,7 +403,7 @@ final _otherUnits = {
     _fluidOunce_us / 480,
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'oil barrel',
     createSymbol(
       const [
@@ -414,7 +413,7 @@ final _otherUnits = {
     VolumeUnit.oilBarrel,
     42 * _gallon_usLiquid,
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'peck',
     createSymbol(
       const [
@@ -425,7 +424,7 @@ final _otherUnits = {
     _peck_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'peck',
     createSymbol(
       const [
@@ -436,7 +435,7 @@ final _otherUnits = {
     _peck_usDry,
     system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'pint',
     createSymbol(
       const [
@@ -447,7 +446,7 @@ final _otherUnits = {
     _gallon_imperial / 8,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'pint',
     createSymbol(
       const [
@@ -458,7 +457,7 @@ final _otherUnits = {
     _gallon_usDry / 8,
     system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'pint',
     createSymbol(
       const [
@@ -469,7 +468,7 @@ final _otherUnits = {
     _gallon_usLiquid / 8,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'quart',
     createSymbol(
       const [
@@ -480,7 +479,7 @@ final _otherUnits = {
     _gallon_imperial / 4,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'quart',
     createSymbol(
       const [
@@ -491,7 +490,7 @@ final _otherUnits = {
     _gallon_usDry / 4,
     system: unitSystem[UnitSystem.usDry],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'quart',
     createSymbol(
       const [
@@ -502,7 +501,7 @@ final _otherUnits = {
     _gallon_usLiquid / 4,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'tablespoon',
     createSymbol(
       const [
@@ -513,7 +512,7 @@ final _otherUnits = {
     20 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.australian],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'tablespoon',
     createSymbol(
       const [
@@ -524,7 +523,7 @@ final _otherUnits = {
     15 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'tablespoon',
     createSymbol(
       const [
@@ -535,7 +534,7 @@ final _otherUnits = {
     _gallon_usLiquid / 256,
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'tablespoon',
     createSymbol(
       const [
@@ -546,7 +545,7 @@ final _otherUnits = {
     15 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'teaspoon',
     createSymbol(
       const [
@@ -557,7 +556,7 @@ final _otherUnits = {
     5 * _milliLiterToCubicMetre,
     system: unitSystem[UnitSystem.metric],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'teaspoon',
     createSymbol(
       const [
@@ -568,7 +567,7 @@ final _otherUnits = {
     _gallon_usLiquid / 768,
     system: unitSystem[UnitSystem.us],
   ),
-  Unit<VolumeUnit>(
+  createUnit(
     'teaspoon',
     createSymbol(
       const [

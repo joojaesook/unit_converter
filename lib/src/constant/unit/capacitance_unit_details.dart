@@ -3,7 +3,6 @@ import 'dart:math' show pow;
 import '../../enum/capacitance_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __farad variations
@@ -22,7 +21,7 @@ final _faradVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<CapacitanceUnit>(
+  createUnit(
     'abfarad',
     createSymbol(
       const [

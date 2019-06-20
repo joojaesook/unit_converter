@@ -6,7 +6,6 @@ import '../../enum/length_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
@@ -55,7 +54,7 @@ final _squareMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<AreaUnit>(
+  createUnit(
     'acre',
     createSymbol(
       const [
@@ -65,7 +64,7 @@ final _otherUnits = {
     AreaUnit.acre,
     _acreToSquareMetre,
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'acre',
     createSymbol(
       const [
@@ -76,7 +75,7 @@ final _otherUnits = {
     4046.872609874252,
     system: unitSystem[UnitSystem.usSurvey],
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'are',
     createSymbol(
       const [
@@ -86,7 +85,7 @@ final _otherUnits = {
     AreaUnit.are,
     100,
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'circular mil',
     createSymbol(
       const [
@@ -99,7 +98,7 @@ final _otherUnits = {
     AreaUnit.circularMil,
     5.067074790975 * pow(10, -10),
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'hectare',
     createSymbol(
       const [
@@ -109,7 +108,7 @@ final _otherUnits = {
     AreaUnit.hectare,
     10000,
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'rai',
     createSymbol(
       const [
@@ -119,7 +118,7 @@ final _otherUnits = {
     AreaUnit.rai,
     1600,
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'rood',
     createSymbol(
       const [
@@ -129,7 +128,7 @@ final _otherUnits = {
     AreaUnit.rood,
     _acreToSquareMetre / 4,
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'square',
     createSymbol(
       const [
@@ -144,7 +143,7 @@ final _otherUnits = {
     AreaUnit.square,
     100 * _squareFoot,
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'square foot',
     createSymbol(
       const [
@@ -155,7 +154,7 @@ final _otherUnits = {
     AreaUnit.squareFoot,
     _squareFoot,
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'square inch',
     createSymbol(
       const [
@@ -172,7 +171,7 @@ final _otherUnits = {
       2,
     ),
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'square mile',
     createSymbol(
       const [
@@ -189,7 +188,7 @@ final _otherUnits = {
       2,
     ),
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'square perch',
     createSymbol(
       const [
@@ -205,7 +204,7 @@ final _otherUnits = {
       2,
     ),
   ),
-  Unit<AreaUnit>(
+  createUnit(
     'square yard',
     createSymbol(
       const [
@@ -225,7 +224,7 @@ final _otherUnits = {
 };
 
 // area unit details
-final areaUnitDetails = <Unit<AreaUnit>>{
+final areaUnitDetails = {
   ..._barnVariations,
   ..._squareMetreVariations,
   ..._otherUnits,

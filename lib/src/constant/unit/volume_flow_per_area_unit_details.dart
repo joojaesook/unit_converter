@@ -6,7 +6,6 @@ import '../../enum/unit_system.dart';
 import '../../enum/volume_flow_per_area_unit.dart';
 import '../../enum/volume_unit.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/unit_system.dart';
 
 final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
@@ -24,7 +23,7 @@ final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
 
 // volume flow per area unit details
 final volumeFlowPerAreaUnitDetails = {
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'cubic metre per second per acre',
     createSymbol(
       const [
@@ -40,7 +39,7 @@ final volumeFlowPerAreaUnitDetails = {
     1 / _acreToSquareMetre,
     americanName: 'cubic meter per second per acre',
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'cubic metre per second per hectare',
     createSymbol(
       const [
@@ -56,7 +55,7 @@ final volumeFlowPerAreaUnitDetails = {
     1 / _hectareToSquareMetre,
     americanName: 'cubic meter per second per hectare',
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'cubic metre per second per square metre',
     createSymbol(
       const [
@@ -73,7 +72,7 @@ final volumeFlowPerAreaUnitDetails = {
     1,
     americanName: 'cubic meter per second per square meter',
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'cubic metre per second per square mile',
     createSymbol(
       const [
@@ -90,7 +89,7 @@ final volumeFlowPerAreaUnitDetails = {
     1 / _squareMileToSquareMetre,
     americanName: 'cubic meter per second per square mile',
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'cubic metre per second per square yard',
     createSymbol(
       const [
@@ -107,7 +106,7 @@ final volumeFlowPerAreaUnitDetails = {
     1 / _squareYardToSquareMetre,
     americanName: 'cubic meter per second per square yard',
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'gallon per minute per acre',
     createSymbol(
       const [
@@ -122,7 +121,7 @@ final volumeFlowPerAreaUnitDetails = {
     _gallonToCubicMetre_USLiquid / (_minuteToSecond * _acreToSquareMetre),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'gallon per minute per hectare',
     createSymbol(
       const [
@@ -137,7 +136,7 @@ final volumeFlowPerAreaUnitDetails = {
     _gallonToCubicMetre_USLiquid / (_minuteToSecond * _hectareToSquareMetre),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'gallon per minute per square metre',
     createSymbol(
       const [
@@ -154,7 +153,7 @@ final volumeFlowPerAreaUnitDetails = {
     americanName: 'gallon per minute per square meter',
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'gallon per minute per square mile',
     createSymbol(
       const [
@@ -170,7 +169,7 @@ final volumeFlowPerAreaUnitDetails = {
     _gallonToCubicMetre_USLiquid / (_minuteToSecond * _squareMileToSquareMetre),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'gallon per minute per square yard',
     createSymbol(
       const [
@@ -186,7 +185,7 @@ final volumeFlowPerAreaUnitDetails = {
     _gallonToCubicMetre_USLiquid / (_minuteToSecond * _squareYardToSquareMetre),
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'litre per minute per acre',
     createSymbol(
       const [
@@ -201,7 +200,7 @@ final volumeFlowPerAreaUnitDetails = {
     _litreToCubicMetre / (_minuteToSecond * _acreToSquareMetre),
     americanName: 'liter per minute per acre',
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'litre per minute per hectare',
     createSymbol(
       const [
@@ -216,7 +215,7 @@ final volumeFlowPerAreaUnitDetails = {
     _litreToCubicMetre / (_minuteToSecond * _hectareToSquareMetre),
     americanName: 'liter per minute per hectare',
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'litre per minute per square metre',
     createSymbol(
       const [
@@ -232,7 +231,7 @@ final volumeFlowPerAreaUnitDetails = {
     _litreToCubicMetre / _minuteToSecond,
     americanName: 'liter per minute per square meter',
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'litre per minute per square mile',
     createSymbol(
       const [
@@ -248,7 +247,7 @@ final volumeFlowPerAreaUnitDetails = {
     _litreToCubicMetre / (_minuteToSecond * _squareMileToSquareMetre),
     americanName: 'liter per minute per square mile',
   ),
-  Unit<VolumeFlowPerAreaUnit>(
+  createUnit(
     'litre per minute per square yard',
     createSymbol(
       const [

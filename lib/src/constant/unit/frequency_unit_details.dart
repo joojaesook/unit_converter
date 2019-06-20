@@ -3,7 +3,6 @@ import 'dart:math' show pow;
 import '../../enum/frequency_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __hertz variations
@@ -22,7 +21,7 @@ final _hertzVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<FrequencyUnit>(
+  createUnit(
     'degree per hour',
     createSymbol(
       const [
@@ -34,7 +33,7 @@ final _otherUnits = {
     FrequencyUnit.degreePerHour,
     0.000000771604938272,
   ),
-  Unit<FrequencyUnit>(
+  createUnit(
     'degree per minute',
     createSymbol(
       const [
@@ -46,7 +45,7 @@ final _otherUnits = {
     FrequencyUnit.degreePerMinute,
     4.6296296296296 * pow(10, -5),
   ),
-  Unit<FrequencyUnit>(
+  createUnit(
     'degree per second',
     createSymbol(
       const [
@@ -58,7 +57,7 @@ final _otherUnits = {
     FrequencyUnit.degreePerSecond,
     0.00277777777777778,
   ),
-  Unit<FrequencyUnit>(
+  createUnit(
     'radian per hour',
     createSymbol(
       const [
@@ -70,7 +69,7 @@ final _otherUnits = {
     FrequencyUnit.radianPerHour,
     4.4209706414415 * pow(10, -5),
   ),
-  Unit<FrequencyUnit>(
+  createUnit(
     'radian per minute',
     createSymbol(
       const [
@@ -82,7 +81,7 @@ final _otherUnits = {
     FrequencyUnit.radianPerMinute,
     0.00265258238486,
   ),
-  Unit<FrequencyUnit>(
+  createUnit(
     'radian per second',
     createSymbol(
       const [
@@ -94,7 +93,7 @@ final _otherUnits = {
     FrequencyUnit.radianPerSecond,
     0.159154943091895000,
   ),
-  Unit<FrequencyUnit>(
+  createUnit(
     'revolution per hour',
     createSymbol(
       const [
@@ -106,7 +105,7 @@ final _otherUnits = {
     FrequencyUnit.revolutionPerHour,
     0.00027777777777778,
   ),
-  Unit<FrequencyUnit>(
+  createUnit(
     'revolution per minute',
     createSymbol(
       const [
@@ -118,7 +117,7 @@ final _otherUnits = {
     FrequencyUnit.revolutionPerMinute,
     0.0166666666666667,
   ),
-  Unit<FrequencyUnit>(
+  createUnit(
     'revolution per second',
     createSymbol(
       const [

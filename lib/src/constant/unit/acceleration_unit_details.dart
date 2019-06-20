@@ -6,7 +6,6 @@ import '../../enum/length_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 final _hourToSecond = conversionFactor(
@@ -148,7 +147,7 @@ final _metrePerSecondSquaredVariations = createUnitVariation(
 // other units
 final _otherUnits = {
   // foot
-  Unit<AccelerationUnit>(
+  createUnit(
     'foot per hour per second',
     createSymbol(
       const [
@@ -162,7 +161,7 @@ final _otherUnits = {
     AccelerationUnit.footPerHourPerSecond,
     _footToMetre / _hourToSecond,
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'foot per hour squared',
     createSymbol(
       const [
@@ -175,7 +174,7 @@ final _otherUnits = {
     AccelerationUnit.footPerHourSquared,
     _footToMetre / pow(_hourToSecond, 2),
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'foot per minute per second',
     createSymbol(
       const [
@@ -189,7 +188,7 @@ final _otherUnits = {
     AccelerationUnit.footPerMinutePerSecond,
     _footToMetre / _minuteToSecond,
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'foot per minute squared',
     createSymbol(
       const [
@@ -202,7 +201,7 @@ final _otherUnits = {
     AccelerationUnit.footPerMinuteSquared,
     _footToMetre / pow(_minuteToSecond, 2),
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'foot per second squared',
     createSymbol(
       const [
@@ -217,7 +216,7 @@ final _otherUnits = {
   ),
 
   // inch
-  Unit<AccelerationUnit>(
+  createUnit(
     'inch per hour per second',
     createSymbol(
       const [
@@ -231,7 +230,7 @@ final _otherUnits = {
     AccelerationUnit.inchPerHourPerSecond,
     _inchToMetre / _hourToSecond,
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'inch per hour squared',
     createSymbol(
       const [
@@ -244,7 +243,7 @@ final _otherUnits = {
     AccelerationUnit.inchPerHourSquared,
     _inchToMetre / pow(_hourToSecond, 2),
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'inch per minute per second',
     createSymbol(
       const [
@@ -258,7 +257,7 @@ final _otherUnits = {
     AccelerationUnit.inchPerMinutePerSecond,
     _inchToMetre / _minuteToSecond,
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'inch per minute squared',
     createSymbol(
       const [
@@ -271,7 +270,7 @@ final _otherUnits = {
     AccelerationUnit.inchPerMinuteSquared,
     _inchToMetre / pow(_minuteToSecond, 2),
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'inch per second squared',
     createSymbol(
       const [
@@ -286,7 +285,7 @@ final _otherUnits = {
   ),
 
   // mile
-  Unit<AccelerationUnit>(
+  createUnit(
     'mile per hour per second',
     createSymbol(
       const [
@@ -300,7 +299,7 @@ final _otherUnits = {
     AccelerationUnit.milePerHourPerSecond,
     _mileToMetre / _hourToSecond,
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'mile per hour squared',
     createSymbol(
       const [
@@ -313,7 +312,7 @@ final _otherUnits = {
     AccelerationUnit.milePerHourSquared,
     _mileToMetre / pow(_hourToSecond, 2),
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'mile per minute per second',
     createSymbol(
       const [
@@ -327,7 +326,7 @@ final _otherUnits = {
     AccelerationUnit.milePerMinutePerSecond,
     _mileToMetre / _minuteToSecond,
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'mile per minute squared',
     createSymbol(
       const [
@@ -340,7 +339,7 @@ final _otherUnits = {
     AccelerationUnit.milePerMinuteSquared,
     _mileToMetre / pow(_minuteToSecond, 2),
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'mile per second squared',
     createSymbol(
       const [
@@ -355,7 +354,7 @@ final _otherUnits = {
   ),
 
   //yard
-  Unit<AccelerationUnit>(
+  createUnit(
     'yard per hour per second',
     createSymbol(
       const [
@@ -369,7 +368,7 @@ final _otherUnits = {
     AccelerationUnit.yardPerHourPerSecond,
     _yardToMetre / _hourToSecond,
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'yard per hour squared',
     createSymbol(
       const [
@@ -382,7 +381,7 @@ final _otherUnits = {
     AccelerationUnit.yardPerHourSquared,
     _yardToMetre / pow(_hourToSecond, 2),
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'yard per minute per second',
     createSymbol(
       const [
@@ -396,7 +395,7 @@ final _otherUnits = {
     AccelerationUnit.yardPerMinutePerSecond,
     _yardToMetre / _minuteToSecond,
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'yard per minute squared',
     createSymbol(
       const [
@@ -409,7 +408,7 @@ final _otherUnits = {
     AccelerationUnit.yardPerMinuteSquared,
     _yardToMetre / pow(_minuteToSecond, 2),
   ),
-  Unit<AccelerationUnit>(
+  createUnit(
     'yard per second squared',
     createSymbol(
       const [
@@ -424,7 +423,7 @@ final _otherUnits = {
   ),
 
   // others
-  Unit<AccelerationUnit>(
+  createUnit(
     'standard gravity',
     createSymbol(
       const [
@@ -438,7 +437,7 @@ final _otherUnits = {
 };
 
 // acceleration unit details
-final accelerationUnitDetails = <Unit<AccelerationUnit>>{
+final accelerationUnitDetails = {
   ..._galVariations,
   ..._metrePerHourPerSecondVariations,
   ..._metrePerHourSquaredVariations,

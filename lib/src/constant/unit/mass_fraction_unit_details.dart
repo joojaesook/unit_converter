@@ -13,7 +13,7 @@ void create(Unit<MassFractionUnit> unit) {
   var units = createUnitVariation(
     MassFractionUnit.values,
     '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    unit.conversionFactor,
+    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
     decimalPrefixes,
     namePostfix: unit.name,
     symbolPostfix: unit.symbol,
@@ -45,7 +45,7 @@ final _intermediateGramPerGramVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<MassFractionUnit>(
+  createUnit(
     'part per billion',
     createSymbol(
       const [
@@ -57,7 +57,7 @@ final _otherUnits = {
     MassFractionUnit.partPerBillion,
     pow(10, -9),
   ),
-  Unit<MassFractionUnit>(
+  createUnit(
     'part per hendred',
     createSymbol(
       const [
@@ -67,7 +67,7 @@ final _otherUnits = {
     MassFractionUnit.partPerHundred,
     0.01,
   ),
-  Unit<MassFractionUnit>(
+  createUnit(
     'part per million',
     createSymbol(
       const [
@@ -79,7 +79,7 @@ final _otherUnits = {
     MassFractionUnit.partPerMillion,
     pow(10, -6),
   ),
-  Unit<MassFractionUnit>(
+  createUnit(
     'part per quadrillion',
     createSymbol(
       const [
@@ -91,7 +91,7 @@ final _otherUnits = {
     MassFractionUnit.partPerQuadrillion,
     pow(10, -15),
   ),
-  Unit<MassFractionUnit>(
+  createUnit(
     'part per ten thousand',
     createSymbol(
       const [
@@ -101,7 +101,7 @@ final _otherUnits = {
     MassFractionUnit.partPerTenThousand,
     0.0001,
   ),
-  Unit<MassFractionUnit>(
+  createUnit(
     'part per thousand',
     createSymbol(
       const [
@@ -111,7 +111,7 @@ final _otherUnits = {
     MassFractionUnit.partPerThousand,
     0.001,
   ),
-  Unit<MassFractionUnit>(
+  createUnit(
     'part per trillion',
     createSymbol(
       const [

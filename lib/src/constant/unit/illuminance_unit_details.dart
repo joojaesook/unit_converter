@@ -5,7 +5,6 @@ import '../../enum/illuminance_unit.dart';
 import '../../enum/length_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __lux variations
@@ -64,7 +63,7 @@ final _lumenPerSquareMetreVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<IlluminanceUnit>(
+  createUnit(
     'foot-candle',
     createSymbol(
       const [
@@ -75,7 +74,7 @@ final _otherUnits = {
     IlluminanceUnit.footCandle,
     10.7639,
   ),
-  Unit<IlluminanceUnit>(
+  createUnit(
     'lumen per square foot',
     createSymbol(
       const [
@@ -94,7 +93,7 @@ final _otherUnits = {
       -2,
     ),
   ),
-  Unit<IlluminanceUnit>(
+  createUnit(
     'lumen per square inch',
     createSymbol(
       const [
@@ -113,7 +112,7 @@ final _otherUnits = {
       -2,
     ),
   ),
-  Unit<IlluminanceUnit>(
+  createUnit(
     'nox',
     createSymbol(
       const [

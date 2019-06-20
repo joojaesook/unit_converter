@@ -3,13 +3,12 @@ import 'dart:math' show pi;
 import '../../enum/plane_angle_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 
 const _degreeToRadian = 2 * pi / 360;
 
 // plane angle unit details
 final planeAngleUnitDetails = {
-  Unit<PlaneAngleUnit>(
+  createUnit(
     'degree',
     createSymbol(
       const [
@@ -19,7 +18,7 @@ final planeAngleUnitDetails = {
     PlaneAngleUnit.degree,
     _degreeToRadian,
   ),
-  Unit<PlaneAngleUnit>(
+  createUnit(
     'gradian',
     createSymbol(
       const [
@@ -32,7 +31,7 @@ final planeAngleUnitDetails = {
     PlaneAngleUnit.gradian,
     2 * pi / 400,
   ),
-  Unit<PlaneAngleUnit>(
+  createUnit(
     'milliradian',
     createSymbol(
       const [
@@ -43,7 +42,7 @@ final planeAngleUnitDetails = {
     PlaneAngleUnit.milliRadian,
     .001,
   ),
-  Unit<PlaneAngleUnit>(
+  createUnit(
     'minute of arc',
     createSymbol(
       const [
@@ -53,7 +52,7 @@ final planeAngleUnitDetails = {
     PlaneAngleUnit.minuteOfArc,
     _degreeToRadian / 60,
   ),
-  Unit<PlaneAngleUnit>(
+  createUnit(
     'radian',
     createSymbol(
       const [
@@ -63,7 +62,7 @@ final planeAngleUnitDetails = {
     PlaneAngleUnit.radian,
     1,
   ),
-  Unit<PlaneAngleUnit>(
+  createUnit(
     'second of arc',
     createSymbol(
       const [
@@ -73,7 +72,7 @@ final planeAngleUnitDetails = {
     PlaneAngleUnit.secondOfArc,
     _degreeToRadian / 3600,
   ),
-  Unit<PlaneAngleUnit>(
+  createUnit(
     'turn',
     createSymbol(
       const [

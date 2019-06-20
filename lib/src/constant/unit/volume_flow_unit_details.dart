@@ -9,7 +9,6 @@ import '../../enum/unit_system.dart';
 import '../../enum/volume_flow_unit.dart';
 import '../../enum/volume_unit.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
@@ -191,7 +190,7 @@ final _cubicMetrePerSecondVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'acre-foot per day',
     createSymbol(
       const [
@@ -205,7 +204,7 @@ final _otherUnits = {
     VolumeFlowUnit.acreFootPerDay,
     (_acreToSquareMetre * _footToMetre) / _dayToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'acre-foot per year',
     createSymbol(
       const [
@@ -220,7 +219,7 @@ final _otherUnits = {
     (_acreToSquareMetre * _footToMetre) / _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'cubic foot per day',
     createSymbol(
       const [
@@ -233,7 +232,7 @@ final _otherUnits = {
     VolumeFlowUnit.cubicFootPerDay,
     pow(_footToMetre, 3) / _dayToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'cubic foot per hour',
     createSymbol(
       const [
@@ -246,7 +245,7 @@ final _otherUnits = {
     VolumeFlowUnit.cubicFootPerHour,
     pow(_footToMetre, 3) / _hourToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'cubic foot per minute',
     createSymbol(
       const [
@@ -259,7 +258,7 @@ final _otherUnits = {
     VolumeFlowUnit.cubicFootPerMinute,
     pow(_footToMetre, 3) / _minuteToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'cubic foot per second',
     createSymbol(
       const [
@@ -272,7 +271,7 @@ final _otherUnits = {
     VolumeFlowUnit.cubicFootPerSecond,
     pow(_footToMetre, 3),
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'cubic inch per day',
     createSymbol(
       const [
@@ -285,7 +284,7 @@ final _otherUnits = {
     VolumeFlowUnit.cubicInchPerDay,
     pow(_inchToMetre, 3) / _dayToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'cubic inch per hour',
     createSymbol(
       const [
@@ -298,7 +297,7 @@ final _otherUnits = {
     VolumeFlowUnit.cubicInchPerHour,
     pow(_inchToMetre, 3) / _hourToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'cubic inch per minute',
     createSymbol(
       const [
@@ -311,7 +310,7 @@ final _otherUnits = {
     VolumeFlowUnit.cubicInchPerMinute,
     pow(_inchToMetre, 3) / _minuteToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'cubic inch per second',
     createSymbol(
       const [
@@ -324,7 +323,7 @@ final _otherUnits = {
     VolumeFlowUnit.cubicInchPerSecond,
     pow(_inchToMetre, 3),
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'gallon per day',
     createSymbol(
       const [
@@ -337,7 +336,7 @@ final _otherUnits = {
     _gallonToCubicMetre_imperial / _dayToSecond,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'gallon per day',
     createSymbol(
       const [
@@ -350,7 +349,7 @@ final _otherUnits = {
     _gallonToCubicMetre_usLiquid / _dayToSecond,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'gallon per hour',
     createSymbol(
       const [
@@ -363,7 +362,7 @@ final _otherUnits = {
     _gallonToCubicMetre_imperial / _hourToSecond,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'gallon per hour',
     createSymbol(
       const [
@@ -376,7 +375,7 @@ final _otherUnits = {
     _gallonToCubicMetre_usLiquid / _hourToSecond,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'gallon per minute',
     createSymbol(
       const [
@@ -389,7 +388,7 @@ final _otherUnits = {
     _gallonToCubicMetre_imperial / _minuteToSecond,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'gallon per minute',
     createSymbol(
       const [
@@ -402,7 +401,7 @@ final _otherUnits = {
     _gallonToCubicMetre_usLiquid / _minuteToSecond,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'gallon per second',
     createSymbol(
       const [
@@ -415,7 +414,7 @@ final _otherUnits = {
     _gallonToCubicMetre_imperial,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'gallon per second',
     createSymbol(
       const [
@@ -428,7 +427,7 @@ final _otherUnits = {
     _gallonToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'million gallon per day',
     createSymbol(
       const [
@@ -442,7 +441,7 @@ final _otherUnits = {
     (_gallonToCubicMetre_imperial * pow(10, 6)) / _dayToSecond,
     system: unitSystem[UnitSystem.imperial],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'million gallon per day',
     createSymbol(
       const [
@@ -456,7 +455,7 @@ final _otherUnits = {
     (_gallonToCubicMetre_usLiquid * pow(10, 6)) / _dayToSecond,
     system: unitSystem[UnitSystem.usLiquid],
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'oil barrel per day',
     createSymbol(
       const [
@@ -468,7 +467,7 @@ final _otherUnits = {
     VolumeFlowUnit.oilBarrelPerDay,
     _oilBarrelToCubicMetre / _dayToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'oil barrel per hour',
     createSymbol(
       const [
@@ -480,7 +479,7 @@ final _otherUnits = {
     VolumeFlowUnit.oilBarrelPerHour,
     _oilBarrelToCubicMetre / _hourToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'oil barrel per minute',
     createSymbol(
       const [
@@ -492,7 +491,7 @@ final _otherUnits = {
     VolumeFlowUnit.oilBarrelPerMinute,
     _oilBarrelToCubicMetre / _minuteToSecond,
   ),
-  Unit<VolumeFlowUnit>(
+  createUnit(
     'oil barrel per second',
     createSymbol(
       const [

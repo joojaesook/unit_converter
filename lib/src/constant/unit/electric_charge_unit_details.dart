@@ -1,7 +1,6 @@
 import '../../enum/electric_charge_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __coulomb variations
@@ -50,7 +49,7 @@ final _ampereSecondVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<ElectricChargeUnit>(
+  createUnit(
     'abcoulomb',
     createSymbol(
       const [

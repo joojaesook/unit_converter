@@ -3,7 +3,6 @@ import 'dart:math' show pow;
 import '../../enum/magnetic_flux_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __weber variations
@@ -22,7 +21,7 @@ final _weberVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<MagneticFluxUnit>(
+  createUnit(
     'maxwell',
     createSymbol(
       const [

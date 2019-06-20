@@ -3,7 +3,6 @@ import 'dart:math' show pow;
 import '../../enum/inductance_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 // __henry variations
@@ -22,7 +21,7 @@ final _henryVariations = createUnitVariation(
 
 // other units
 final _otherUnits = {
-  Unit<InductanceUnit>(
+  createUnit(
     'abhenry',
     createSymbol(
       const [
