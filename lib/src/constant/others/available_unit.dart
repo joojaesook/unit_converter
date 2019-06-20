@@ -36,6 +36,7 @@ import '../unit/power_unit_details.dart';
 import '../unit/pressure_unit_details.dart';
 import '../unit/radioactivity_unit_details.dart';
 import '../unit/speed_unit_details.dart';
+import '../unit/temperature_unit_details.dart';
 import '../unit/time_unit_details.dart';
 import '../unit/torque_unit_details.dart';
 import '../unit/volume_flow_per_area_unit_details.dart';
@@ -81,6 +82,7 @@ final Map<ConversionType, Set<Unit>> availableUnit = {
   ConversionType.pressure: pressureUnitDetails,
   ConversionType.radioactivity: radioactivityUnitDetails,
   ConversionType.speed: speedUnitDetails,
+  ConversionType.temperature: temperatureUnitDetails,
   ConversionType.time: timeUnitDetails,
   ConversionType.torque: torqueUnitDetails,
   ConversionType.volume: volumeUnitDetails,
