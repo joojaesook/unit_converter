@@ -5,5 +5,7 @@ enum TemperatureUnit {
   degreeFahrenheit,
   degreeNewton,
   degreeRankine,
+  degreeReaumur,
+  degreeRomer,
   kelvin,
 }

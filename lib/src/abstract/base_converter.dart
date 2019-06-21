@@ -3,11 +3,11 @@ import '../enum/conversion_type.dart';
 import '../model/unit.dart';
 
 // Base converter class. Implements the basic functionality for converter.
-abstract class Converter<T> {
+abstract class BaseConverter<T> {
   final ConversionType type;
   final T _baseUnit;
 
-  Converter(this.type, this._baseUnit)
+  BaseConverter(this.type, this._baseUnit)
       : assert(type != null),
         assert(_baseUnit != null);
 

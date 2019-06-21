@@ -1,13 +1,10 @@
-import 'package:unit_converter/src/enum/temperature_unit.dart';
-
-import '../abstract/converter.dart';
+import '../abstract/base_converter.dart';
 import '../enum/conversion_type.dart';
-import '../misc/global.dart';
+import '../enum/temperature_unit.dart';
 
-/// Converter for formula based conversion. extends base [Converter] class.
-class FormulaBasedConverter<T> extends Converter<T> {
-  FormulaBasedConverter(ConversionType type, T baseUnit)
-      : super(type, baseUnit);
+/// Converter for temperature. extends base [BaseConverter] class.
+class TemperatureConverter<T> extends BaseConverter<T> {
+  TemperatureConverter(ConversionType type, T baseUnit) : super(type, baseUnit);
 
   double convert(
     double value,
@@ -33,6 +30,10 @@ class FormulaBasedConverter<T> extends Converter<T> {
         return _newtonToKelvin(value);
       case TemperatureUnit.degreeRankine:
         return _rankineToKelvin(value);
+      case TemperatureUnit.degreeReaumur:
+        return _reaumurToKelvin(value);
+      case TemperatureUnit.degreeRomer:
+        return _romerToKelvin(value);
     }
   }
 
@@ -50,6 +51,10 @@ class FormulaBasedConverter<T> extends Converter<T> {
         return _newtonFromKelvin(value);
       case TemperatureUnit.degreeRankine:
         return _rankineFromKelvin(value);
+      case TemperatureUnit.degreeReaumur:
+        return _reaumurFromKelvin(value);
+      case TemperatureUnit.degreeRomer:
+        return _romerFromKelvin(value);
     }
   }
 
@@ -81,6 +86,14 @@ class FormulaBasedConverter<T> extends Converter<T> {
     return value / 0.33;
   }
 
+  double _reaumurToKelvin(double value) {
+    return value * 5 / 4 + 273.15;
+  }
+
+  double _romerToKelvin(double value) {
+    return (value - 7.5) * 40 / 21 + 273.15;
+  }
+
   double _celsiusFromKelvin(double value) {
     return value - 273.15;
   }
@@ -107,5 +120,13 @@ class FormulaBasedConverter<T> extends Converter<T> {
 
   double _rankineFromKelvin(double value) {
     return value * 9 / 5;
+  }
+
+  double _reaumurFromKelvin(double value) {
+    return (value - 273.15) * 4 / 5;
+  }
+
+  double _romerFromKelvin(double value) {
+    return (value - 273.15) * 21 / 40 + 7.5;
   }
 }
