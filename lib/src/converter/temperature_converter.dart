@@ -2,7 +2,7 @@ import '../abstract/base_converter.dart';
 import '../enum/conversion_type.dart';
 import '../enum/temperature_unit.dart';
 
-/// Converter for temperature. extends base [BaseConverter] class.
+/// Converter for temperature. extends [BaseConverter].
 class TemperatureConverter<T> extends BaseConverter<T> {
   TemperatureConverter(ConversionType type, T baseUnit) : super(type, baseUnit);
 
