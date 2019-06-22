@@ -1,7 +1,6 @@
-import '../abstract/base_converter.dart';
 import '../enum/temperature_unit.dart';
 
-/// Converter for temperature. extends [BaseConverter].
+// Converter for temperature.
 class TemperatureConverter {
   double convert(double value, TemperatureUnit from, TemperatureUnit to) {
     value = _convertToKelvin(from, value);

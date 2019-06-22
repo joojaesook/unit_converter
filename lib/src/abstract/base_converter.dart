@@ -7,53 +7,72 @@ import '../enum/temperature_unit.dart';
 import '../misc/global.dart';
 import '../model/unit.dart';
 
-/// Base converter class. Implements the basic functionality for converter.
+/// The base converter class. Implements the basic functionality for converter.
 abstract class BaseConverter<T> {
-  final ConversionType type;
+  /// The type of the converter
+  final ConversionType _type;
   final T _baseUnit;
 
-  BaseConverter(this.type, this._baseUnit)
-      : assert(type != null),
+  BaseConverter(this._type, this._baseUnit)
+      : assert(_type != null),
         assert(_baseUnit != null);
 
-  /// total number of units
+  /// Total number of units of this `_type`.
   get unitCount => _availableUnits().length;
 
-  /// base unit of this type
+  /// the base unit of this `_type`.
   get baseUnit => unit(_baseUnit);
 
+  /// Returns the result after converting the `value` from type `from` to type `to`.
+  ///
+  /// If `from` and `to` are same, returns the `value` itself.
   double convert(double value, T from, T to) {
-    switch (type) {
-      case ConversionType.temperature:
-        return TemperatureConverter().convert(
-          value,
-          from as TemperatureUnit,
-          to as TemperatureUnit,
-        );
-      case ConversionType.sound:
-        return SoundConverter().convert(
-          value,
-          from as SoundUnit,
-          to as SoundUnit,
-        );
-      default:
-        final double fromOffset = conversionFactor(type, from);
-        final double toOffset = conversionFactor(type, to);
-        value *= fromOffset;
-        value /= toOffset;
-        return value;
+    if (from != to) {
+      switch (_type) {
+        case ConversionType.temperature:
+          return TemperatureConverter().convert(
+            value,
+            from as TemperatureUnit,
+            to as TemperatureUnit,
+          );
+        case ConversionType.sound:
+          return SoundConverter().convert(
+            value,
+            from as SoundUnit,
+            to as SoundUnit,
+          );
+        default:
+          final double fromOffset = conversionFactor(_type, from);
+          final double toOffset = conversionFactor(_type, to);
+          value *= fromOffset;
+          value /= toOffset;
+          return value;
+      }
     }
+    return value;
   }
 
-  /// get the information for the unit type [type]
+  /// The information of the unit type `type`.
   Unit<T> unit(T type) {
     return _availableUnits().firstWhere((unit) => unit.type == type);
   }
 
+  /// Returns the units of `_type` filtered by `include` and `exclude`.
+  ///
+  /// Pass either one parameter of `include` and `exclude`.
+  /// If `include` is defined, returns only the units defined by `include`.
+  /// If `exclude` is defined, returns all the units except the units defined by `include`.
   Set<Unit<T>> units({Set<T> include, Set<T> exclude}) {
     return _filterUnits(_availableUnits(), include, exclude);
   }
 
+  /// Returns all the units without the prefixed variation units filtered by `include` and `exclude`.
+  ///
+  /// Pass either one parameter of `include` and `exclude`.
+  /// If `include` is defined, returns only the units defined by `include`.
+  /// If `exclude` is defined, returns all the units except the units defined by `include`.
+  ///
+  /// eg.
   Set<Unit<T>> unitsWithoutVariations({Set<T> include, Set<T> exclude}) {
     var units = _availableUnits();
     units = units.where((unit) => unit.variation == false);
@@ -72,6 +91,6 @@ abstract class BaseConverter<T> {
   }
 
   Set<Unit<T>> _availableUnits() {
-    return availableUnit[type];
+    return availableUnit[_type];
   }
 }

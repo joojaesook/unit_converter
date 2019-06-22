@@ -1,5 +1,6 @@
 import '../../enum/conversion_type.dart';
 
+// The conversion factor to base unit of each [ConversionType].
 final Map<ConversionType, Map<dynamic, double>> conversionFactors = {
   ConversionType.acceleration: <dynamic, double>{},
   ConversionType.area: <dynamic, double>{},

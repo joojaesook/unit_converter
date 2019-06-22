@@ -1,8 +1,8 @@
 // This class defines a metric prefix
 class Prefix {
-  // base
+  // Base of the prefix
   final int base;
-  // exponent
+  // Exponent  of the prefix
   final int exponent;
 
   const Prefix(this.base, this.exponent)

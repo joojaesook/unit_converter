@@ -12,7 +12,7 @@ import '../enum/symbol_part.dart';
 import '../enum/unit_system.dart';
 import '../model/unit.dart';
 
-// Create symbol for unit from the [symbolParts]
+// Create symbol from the `symbolParts`.
 String createSymbol(List<SymbolPart> symbolParts) {
   String symbolName = '';
   if (symbolParts == null || symbolParts.isEmpty) {
@@ -25,7 +25,7 @@ String createSymbol(List<SymbolPart> symbolParts) {
   return symbolName;
 }
 
-// get conversion factor for unit [unit] from conversion type [type]
+// Get conversion factor for `unitType` of `conversionType`
 double conversionFactor<T>(ConversionType conversionType, T unitType) {
   return conversionFactors[conversionType][unitType];
 }
