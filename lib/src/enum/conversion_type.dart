@@ -37,6 +37,7 @@ enum ConversionType {
   power,
   pressure,
   radioactivity,
+  sound,
   speed,
   temperature,
   time,

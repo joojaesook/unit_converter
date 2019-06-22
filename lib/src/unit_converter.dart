@@ -345,7 +345,7 @@ class UnitConverter {
   }
 
   static TemperatureConverter temperature() {
-    return TemperatureConverter<TemperatureUnit>(
+    return TemperatureConverter(
       ConversionType.temperature,
       TemperatureUnit.kelvin,
     );

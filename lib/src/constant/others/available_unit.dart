@@ -35,6 +35,7 @@ import '../unit/plane_angle_unit_details.dart';
 import '../unit/power_unit_details.dart';
 import '../unit/pressure_unit_details.dart';
 import '../unit/radioactivity_unit_details.dart';
+import '../unit/sound_unit_details.dart';
 import '../unit/speed_unit_details.dart';
 import '../unit/temperature_unit_details.dart';
 import '../unit/time_unit_details.dart';
@@ -81,6 +82,7 @@ final Map<ConversionType, Set<Unit>> availableUnit = {
   ConversionType.power: powerUnitDetails,
   ConversionType.pressure: pressureUnitDetails,
   ConversionType.radioactivity: radioactivityUnitDetails,
+  ConversionType.sound: soundUnitDetails,
   ConversionType.speed: speedUnitDetails,
   ConversionType.temperature: temperatureUnitDetails,
   ConversionType.time: timeUnitDetails,

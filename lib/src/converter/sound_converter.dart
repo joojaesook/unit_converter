@@ -1,0 +1,45 @@
+import 'dart:math';
+
+import '../abstract/base_converter.dart';
+import '../enum/conversion_type.dart';
+import '../enum/sound_unit.dart';
+
+/// Converter for sound. extends [BaseConverter].
+class SoundConverter extends BaseConverter<SoundUnit> {
+  SoundConverter(ConversionType type, SoundUnit baseUnit)
+      : super(type, baseUnit);
+
+  double convert(
+    double value,
+    SoundUnit from,
+    SoundUnit to,
+  ) {
+    value = _convertToDecibel(from, value);
+    value = _convertFromDecibel(to, value);
+    return value;
+  }
+
+  double _convertToDecibel(SoundUnit from, double value) {
+    switch (from) {
+      case SoundUnit.deciBel:
+        return value;
+      case SoundUnit.bel:
+        return value * 0.1;
+      case SoundUnit.neper:
+        return 8.6858896 * value;
+      case SoundUnit.powerRatio:
+
+      default:
+    }
+  }
+
+  double _convertFromDecibel(SoundUnit to, double value) {
+    switch (to) {
+      case SoundUnit.deciBel:
+        return value;
+      case SoundUnit.bel:
+        return 10 * value;
+      default:
+    }
+  }
+}
