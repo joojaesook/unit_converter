@@ -1,17 +1,9 @@
 import '../abstract/base_converter.dart';
-import '../enum/conversion_type.dart';
 import '../enum/sound_unit.dart';
 
 /// Converter for sound. extends [BaseConverter].
-class SoundConverter extends BaseConverter<SoundUnit> {
-  SoundConverter(ConversionType type, SoundUnit baseUnit)
-      : super(type, baseUnit);
-
-  double convert(
-    double value,
-    SoundUnit from,
-    SoundUnit to,
-  ) {
+class SoundConverter {
+  double convert(double value, SoundUnit from, SoundUnit to) {
     value = _convertToDecibel(from, value);
     value = _convertFromDecibel(to, value);
     return value;

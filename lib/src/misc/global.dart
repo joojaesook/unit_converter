@@ -51,15 +51,11 @@ void _addConversionFactor<T>(T unitType, double conversionFactor) {
   conversionFactors[conversionType][unitType] = conversionFactor;
 }
 
-Unit<T> createUnit<T>(
-  String name,
-  String symbol,
-  T type, {
-  double conversionFactor,
-  String americanName,
-  bool variation = false,
-  String system,
-}) {
+Unit<T> createUnit<T>(String name, String symbol, T type,
+    {double conversionFactor,
+    String americanName,
+    bool variation = false,
+    String system}) {
   if (conversionFactor != null) {
     _addConversionFactor(type, conversionFactor);
   }
@@ -74,20 +70,19 @@ Unit<T> createUnit<T>(
 }
 
 Unit<T> _createUnitForVariation<T>(
-  String namePrefix,
-  String namePostfix,
-  String americanNamePrefix,
-  String americanNamePostfix,
-  String symbolPrefix,
-  String symbolPostfix,
-  double conversionFactor,
-  bool addAmericanName,
-  T type,
-  UnitSystem system, {
-  String variationName = '',
-  String variationSymbol = '',
-  bool variation = false,
-}) {
+    String namePrefix,
+    String namePostfix,
+    String americanNamePrefix,
+    String americanNamePostfix,
+    String symbolPrefix,
+    String symbolPostfix,
+    double conversionFactor,
+    bool addAmericanName,
+    T type,
+    UnitSystem system,
+    {String variationName = '',
+    String variationSymbol = '',
+    bool variation = false}) {
   var unit = Unit<T>(
     '$namePrefix$variationName$namePostfix',
     '$symbolPrefix$variationSymbol$symbolPostfix',
@@ -106,21 +101,20 @@ Unit<T> _createUnitForVariation<T>(
 
 // variation unit type creation bug to be fixed
 Set<Unit<T>> createUnitVariation<T>(
-  Iterable<T> unitEnum,
-  String variationBaseUnitName,
-  double conversionFactorToBaseUnit,
-  List<MetricPrefix> variations, {
-  String namePrefix = '',
-  String namePostfix = '',
-  String symbolPrefix = '',
-  String symbolPostfix = '',
-  UnitSystem system,
-  int powerOfVariationConversionFactor = 1,
-  bool addAmericanName = false,
-  String americanNamePrefix = '',
-  String americanNamePostfix = '',
-  bool appendVariationUnitTypeWithSystemName = false,
-}) {
+    Iterable<T> unitEnum,
+    String variationBaseUnitName,
+    double conversionFactorToBaseUnit,
+    List<MetricPrefix> variations,
+    {String namePrefix = '',
+    String namePostfix = '',
+    String symbolPrefix = '',
+    String symbolPostfix = '',
+    UnitSystem system,
+    int powerOfVariationConversionFactor = 1,
+    bool addAmericanName = false,
+    String americanNamePrefix = '',
+    String americanNamePostfix = '',
+    bool appendVariationUnitTypeWithSystemName = false}) {
   var units = <Unit<T>>{};
   var variationBase = _createUnitForVariation(
     namePrefix,
