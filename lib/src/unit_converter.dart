@@ -1,4 +1,5 @@
 import 'converter/multiplication_based_converter.dart';
+import 'converter/temperature_converter.dart';
 import 'enum/acceleration_unit.dart';
 import 'enum/area_unit.dart';
 import 'enum/blood_cholesterol_unit.dart';
@@ -36,6 +37,7 @@ import 'enum/power_unit.dart';
 import 'enum/pressure_unit.dart';
 import 'enum/radioactivity_unit.dart';
 import 'enum/speed_unit.dart';
+import 'enum/temperature_unit.dart';
 import 'enum/time_unit.dart';
 import 'enum/torque_unit.dart';
 import 'enum/volume_flow_per_area_unit.dart';
@@ -80,6 +82,7 @@ export 'enum/power_unit.dart';
 export 'enum/pressure_unit.dart';
 export 'enum/radioactivity_unit.dart';
 export 'enum/speed_unit.dart';
+export 'enum/temperature_unit.dart';
 export 'enum/time_unit.dart';
 export 'enum/torque_unit.dart';
 export 'enum/volume_flow_per_area_unit.dart';
@@ -338,6 +341,13 @@ class UnitConverter {
     return MultiplicationBasedConverter<SpeedUnit>(
       ConversionType.speed,
       SpeedUnit.metrePerSecond,
+    );
+  }
+
+  static TemperatureConverter temperature() {
+    return TemperatureConverter<TemperatureUnit>(
+      ConversionType.temperature,
+      TemperatureUnit.kelvin,
     );
   }
 

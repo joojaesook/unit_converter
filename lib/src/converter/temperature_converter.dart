@@ -79,7 +79,7 @@ class TemperatureConverter<T> extends BaseConverter<T> {
   }
 
   double _fahrenheitToCelsius(double value) {
-    return ((value - 32) * 5) / 9;
+    return (value - 32) * 5 / 9;
   }
 
   double _newtonToCelsius(double value) {
