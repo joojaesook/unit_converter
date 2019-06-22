@@ -2,8 +2,8 @@ import '../../enum/symbol_part.dart';
 import '../../enum/temperature_unit.dart';
 import '../../misc/global.dart';
 
-// other units
-final _otherUnits = {
+// temperature unit details
+final temperatureUnitDetails = {
   createUnit(
     'degree celsius',
     createSymbol(
@@ -64,9 +64,4 @@ final _otherUnits = {
     ),
     TemperatureUnit.kelvin,
   ),
-};
-
-// temperature unit details
-final temperatureUnitDetails = {
-  ..._otherUnits,
 };

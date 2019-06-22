@@ -3,6 +3,6 @@ enum SoundUnit {
   bel,
   deciBel,
   neper,
-  powerRatio,
-  voltageRatio,
+  // powerRatio,
+  // voltageRatio,
 }

@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import '../abstract/base_converter.dart';
 import '../enum/conversion_type.dart';
 import '../enum/sound_unit.dart';
@@ -26,10 +24,7 @@ class SoundConverter extends BaseConverter<SoundUnit> {
       case SoundUnit.bel:
         return value * 0.1;
       case SoundUnit.neper:
-        return 8.6858896 * value;
-      case SoundUnit.powerRatio:
-
-      default:
+        return 8.68588963807 * value;
     }
   }
 
@@ -39,7 +34,8 @@ class SoundConverter extends BaseConverter<SoundUnit> {
         return value;
       case SoundUnit.bel:
         return 10 * value;
-      default:
+      case SoundUnit.neper:
+        return 0.1151292546496365 * value;
     }
   }
 }

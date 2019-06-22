@@ -2,8 +2,8 @@ import '../../enum/sound_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 
-// other units
-final _otherUnits = {
+// sound unit details
+final soundUnitDetails = {
   createUnit(
     'bel',
     createSymbol(
@@ -33,18 +33,4 @@ final _otherUnits = {
     ),
     SoundUnit.neper,
   ),
-  // createUnit(
-  //   '',
-  //   createSymbol(
-  //     const [
-  //       SymbolPart.,
-  //     ],
-  //   ),
-  //   SoundUnit.,
-  // ),
-};
-
-// sound unit details
-final soundUnitDetails = {
-  ..._otherUnits,
 };

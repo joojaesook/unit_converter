@@ -1,4 +1,5 @@
 import 'converter/multiplication_based_converter.dart';
+import 'converter/sound_converter.dart';
 import 'converter/temperature_converter.dart';
 import 'enum/acceleration_unit.dart';
 import 'enum/area_unit.dart';
@@ -36,6 +37,7 @@ import 'enum/plane_angle_unit.dart';
 import 'enum/power_unit.dart';
 import 'enum/pressure_unit.dart';
 import 'enum/radioactivity_unit.dart';
+import 'enum/sound_unit.dart';
 import 'enum/speed_unit.dart';
 import 'enum/temperature_unit.dart';
 import 'enum/time_unit.dart';
@@ -81,6 +83,7 @@ export 'enum/plane_angle_unit.dart';
 export 'enum/power_unit.dart';
 export 'enum/pressure_unit.dart';
 export 'enum/radioactivity_unit.dart';
+export 'enum/sound_unit.dart';
 export 'enum/speed_unit.dart';
 export 'enum/temperature_unit.dart';
 export 'enum/time_unit.dart';
@@ -334,6 +337,13 @@ class UnitConverter {
     return MultiplicationBasedConverter<RadioactivityUnit>(
       ConversionType.radioactivity,
       RadioactivityUnit.becquerel,
+    );
+  }
+
+  static SoundConverter sound() {
+    return SoundConverter(
+      ConversionType.sound,
+      SoundUnit.deciBel,
     );
   }
 
