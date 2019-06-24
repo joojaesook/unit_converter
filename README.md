@@ -22,9 +22,9 @@ Get the available units:
 ```
 See [units] method for mor details.
 
-Each unit have a [name](British name) and [americanName] property. For units that have the same americanName as name, the americanName is null. So, it is always good to check for the availability of americanName before displaying.
+Each unit have a [name](British name) and [americanName] property. For units that have the same [americanName] as [name], the [americanName] is null. So, it is always good to check for the availability of [americanName] before displaying it.
 ```dart
-  for(Unit unit in avilableUnits) {
+  for(var unit in avilableUnits) {
     if(unit.americanName != null) {
       print(unit.americanName);
     } else {

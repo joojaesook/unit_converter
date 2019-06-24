@@ -47,6 +47,8 @@ export 'enum/volume_flow_unit.dart';
 export 'enum/volume_per_area_unit.dart';
 export 'enum/volume_unit.dart';
 export 'enum/water_hardness_unit.dart';
+export 'enum/converter.dart';
+export 'model/unit.dart';
 
 /// The unit converter class. Extends [BaseConverter] class.
 class UnitConverter extends BaseConverter {

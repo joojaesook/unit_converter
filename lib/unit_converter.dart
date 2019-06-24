@@ -1,6 +1,4 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
+/// Unit converter library.
 library unit_converter;
 
 export 'src/unit_converter.dart';
