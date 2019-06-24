@@ -6,7 +6,7 @@ import '../constant/others/prefix_name.dart';
 import '../constant/others/prefix_value.dart';
 import '../constant/others/symbol.dart';
 import '../constant/others/unit_system.dart';
-import '../enum/conversion_type.dart';
+import '../enum/converter.dart';
 import '../enum/metric_prefix.dart';
 import '../enum/symbol_part.dart';
 import '../enum/unit_system.dart';
@@ -26,7 +26,7 @@ String createSymbol(List<SymbolPart> symbolParts) {
 }
 
 // Get conversion factor for `unitType` of `conversionType`
-double conversionFactor<T>(ConversionType conversionType, T unitType) {
+double conversionFactor<T>(Converter conversionType, T unitType) {
   return conversionFactors[conversionType][unitType];
 }
 
@@ -37,9 +37,9 @@ T _enumFromString<T>(Iterable<T> values, String value) {
       orElse: () => null);
 }
 
-ConversionType conversionTypeFromString(String value) {
+Converter conversionTypeFromString(String value) {
   value = value.split('Unit')[0];
-  return _enumFromString(ConversionType.values, value);
+  return _enumFromString(Converter.values, value);
 }
 
 String stringFromEnum<T>(T type) {

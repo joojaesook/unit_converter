@@ -1,7 +1,7 @@
 import 'dart:math' show pow;
 
 import '../../enum/acceleration_unit.dart';
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/length_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
@@ -9,27 +9,27 @@ import '../../misc/global.dart';
 import '../others/misc.dart';
 
 final _hourToSecond = conversionFactor(
-  ConversionType.time,
+  Converter.time,
   TimeUnit.hour,
 );
 final _minuteToSecond = conversionFactor(
-  ConversionType.time,
+  Converter.time,
   TimeUnit.minute,
 );
 final _footToMetre = conversionFactor(
-  ConversionType.length,
+  Converter.length,
   LengthUnit.foot,
 );
 final _inchToMetre = conversionFactor(
-  ConversionType.length,
+  Converter.length,
   LengthUnit.inch,
 );
 final _mileToMetre = conversionFactor(
-  ConversionType.length,
+  Converter.length,
   LengthUnit.mile,
 );
 final _yardToMetre = conversionFactor(
-  ConversionType.length,
+  Converter.length,
   LengthUnit.yard,
 );
 

@@ -1,6 +1,5 @@
-/// Supported conversion types
-// Types of converter
-enum ConversionType {
+/// Types of converter
+enum Converter {
   // fuelConsumption,
   acceleration,
   area,

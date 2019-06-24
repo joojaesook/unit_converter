@@ -1,4 +1,4 @@
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/energy_unit.dart';
 import '../../enum/power_unit.dart';
 import '../../enum/symbol_part.dart';
@@ -8,16 +8,16 @@ import '../../misc/global.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
-final _hourToSecond = conversionFactor(ConversionType.time, TimeUnit.hour);
-final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
+final _hourToSecond = conversionFactor(Converter.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
 
 final _calorieToJoule_intlSteamTable =
-    conversionFactor(ConversionType.energy, EnergyUnit.calorie_intlSteamTable);
-final _ergToJoule = conversionFactor(ConversionType.energy, EnergyUnit.erg);
+    conversionFactor(Converter.energy, EnergyUnit.calorie_intlSteamTable);
+final _ergToJoule = conversionFactor(Converter.energy, EnergyUnit.erg);
 final _footPoundForceToJoule =
-    conversionFactor(ConversionType.energy, EnergyUnit.footPoundForce);
+    conversionFactor(Converter.energy, EnergyUnit.footPoundForce);
 final _britishThermalUnitToJoule_intlSteamTable = conversionFactor(
-    ConversionType.energy, EnergyUnit.britishThermalUnit_intlSteamTable);
+    Converter.energy, EnergyUnit.britishThermalUnit_intlSteamTable);
 
 // __calorie per hour International Steam Table variations
 final _caloriePerHourVariations_intlSteamTable = createUnitVariation(

@@ -1,4 +1,4 @@
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
 import '../../enum/unit_system.dart';
@@ -7,11 +7,11 @@ import '../../unit_converter.dart';
 import '../others/misc.dart';
 
 final _hourToSecond = conversionFactor(
-  ConversionType.time,
+  Converter.time,
   TimeUnit.hour,
 );
 final _minuteToSecond = conversionFactor(
-  ConversionType.time,
+  Converter.time,
   TimeUnit.minute,
 );
 const double _byteToBit = 8;

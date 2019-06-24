@@ -1,4 +1,4 @@
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/kinematic_viscocity_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
@@ -6,15 +6,15 @@ import '../../misc/global.dart';
 import '../others/misc.dart';
 
 final _dayToSecond = conversionFactor(
-  ConversionType.time,
+  Converter.time,
   TimeUnit.day,
 );
 final _hourToSecond = conversionFactor(
-  ConversionType.time,
+  Converter.time,
   TimeUnit.hour,
 );
 final _minuteToSecond = conversionFactor(
-  ConversionType.time,
+  Converter.time,
   TimeUnit.minute,
 );
 

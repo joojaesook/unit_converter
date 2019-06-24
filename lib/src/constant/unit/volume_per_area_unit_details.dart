@@ -1,5 +1,5 @@
 import '../../enum/area_unit.dart';
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../enum/volume_per_area_unit.dart';
@@ -7,17 +7,16 @@ import '../../misc/global.dart';
 import '../../unit_converter.dart';
 import '../others/unit_system.dart';
 
-final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
+final _acreToSquareMetre = conversionFactor(Converter.area, AreaUnit.acre);
 final _hectareToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnit.hectare);
+    conversionFactor(Converter.area, AreaUnit.hectare);
 final _squareMileToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnit.squareMile);
+    conversionFactor(Converter.area, AreaUnit.squareMile);
 final _squareYardToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnit.squareYard);
+    conversionFactor(Converter.area, AreaUnit.squareYard);
 final _gallonToCubicMetre_usLiquid =
-    conversionFactor(ConversionType.volume, VolumeUnit.gallon_usLiquid);
-final _litreToCubicMetre =
-    conversionFactor(ConversionType.volume, VolumeUnit.litre);
+    conversionFactor(Converter.volume, VolumeUnit.gallon_usLiquid);
+final _litreToCubicMetre = conversionFactor(Converter.volume, VolumeUnit.litre);
 
 // volume per area unit details
 final volumePerAreaUnitDetails = {

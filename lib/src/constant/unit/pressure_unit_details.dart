@@ -1,5 +1,5 @@
 import '../../enum/area_unit.dart';
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/force_unit.dart';
 import '../../enum/length_unit.dart';
 import '../../enum/pressure_unit.dart';
@@ -36,7 +36,7 @@ final _intermediateGramForcePerSquareMetreVariations = createUnitVariation(
   PressureUnit.values,
   'gramForcePerSquare${variationUnitNameSeperator}Metre',
   conversionFactor(
-    ConversionType.force,
+    Converter.force,
     ForceUnit.gramForce,
   ),
   decimalPrefixes,
@@ -221,7 +221,7 @@ final _otherUnits = {
     PressureUnit.footOfMercury_conventional,
     conversionFactor: _metreOfMercuryToPascal_conventional *
         conversionFactor(
-          ConversionType.length,
+          Converter.length,
           LengthUnit.foot,
         ),
   ),
@@ -238,7 +238,7 @@ final _otherUnits = {
     PressureUnit.footOfWater_degree4C,
     conversionFactor: _metreOfWaterToPascal_degree4C *
         conversionFactor(
-          ConversionType.length,
+          Converter.length,
           LengthUnit.foot,
         ),
   ),
@@ -254,7 +254,7 @@ final _otherUnits = {
     PressureUnit.inchOfMercury_conventional,
     conversionFactor: _metreOfMercuryToPascal_conventional *
         conversionFactor(
-          ConversionType.length,
+          Converter.length,
           LengthUnit.inch,
         ),
   ),
@@ -271,7 +271,7 @@ final _otherUnits = {
     PressureUnit.inchOfWater_degree4C,
     conversionFactor: _metreOfWaterToPascal_degree4C *
         conversionFactor(
-          ConversionType.length,
+          Converter.length,
           LengthUnit.inch,
         ),
   ),
@@ -285,8 +285,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.kipPerSquareInch,
-    conversionFactor: conversionFactor(ConversionType.force, ForceUnit.kip) /
-        conversionFactor(ConversionType.area, AreaUnit.squareInch),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.kip) /
+        conversionFactor(Converter.area, AreaUnit.squareInch),
   ),
   createUnit(
     'ounce force per square foot',
@@ -300,9 +300,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.ounceForcePerSquareFoot,
-    conversionFactor:
-        conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
-            conversionFactor(ConversionType.area, AreaUnit.squareFoot),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.ounceForce) /
+        conversionFactor(Converter.area, AreaUnit.squareFoot),
   ),
   createUnit(
     'ounce force per square inch',
@@ -316,9 +315,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.ounceForcePerSquareInch,
-    conversionFactor:
-        conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
-            conversionFactor(ConversionType.area, AreaUnit.squareInch),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.ounceForce) /
+        conversionFactor(Converter.area, AreaUnit.squareInch),
   ),
   createUnit(
     'ounce force per square yard',
@@ -332,9 +330,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.ounceForcePerSquareYard,
-    conversionFactor:
-        conversionFactor(ConversionType.force, ForceUnit.ounceForce) /
-            conversionFactor(ConversionType.area, AreaUnit.squareYard),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.ounceForce) /
+        conversionFactor(Converter.area, AreaUnit.squareYard),
   ),
   createUnit(
     'pound force per acre',
@@ -347,9 +344,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerAcre,
-    conversionFactor:
-        conversionFactor(ConversionType.force, ForceUnit.poundForce) /
-            conversionFactor(ConversionType.area, AreaUnit.acre),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundForce) /
+        conversionFactor(Converter.area, AreaUnit.acre),
   ),
   createUnit(
     'pound force per square foot',
@@ -363,9 +359,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerSquareFoot,
-    conversionFactor:
-        conversionFactor(ConversionType.force, ForceUnit.poundForce) /
-            conversionFactor(ConversionType.area, AreaUnit.squareFoot),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundForce) /
+        conversionFactor(Converter.area, AreaUnit.squareFoot),
   ),
   createUnit(
     'pound force per square inch',
@@ -379,9 +374,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerSquareInch,
-    conversionFactor:
-        conversionFactor(ConversionType.force, ForceUnit.poundForce) /
-            conversionFactor(ConversionType.area, AreaUnit.squareInch),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundForce) /
+        conversionFactor(Converter.area, AreaUnit.squareInch),
   ),
   createUnit(
     'pound force per square yard',
@@ -395,9 +389,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerSquareYard,
-    conversionFactor:
-        conversionFactor(ConversionType.force, ForceUnit.poundForce) /
-            conversionFactor(ConversionType.area, AreaUnit.squareYard),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundForce) /
+        conversionFactor(Converter.area, AreaUnit.squareYard),
   ),
   createUnit(
     'poundal per square foot',
@@ -411,9 +404,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundalPerSquareFoot,
-    conversionFactor:
-        conversionFactor(ConversionType.force, ForceUnit.poundal) /
-            conversionFactor(ConversionType.area, AreaUnit.squareFoot),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundal) /
+        conversionFactor(Converter.area, AreaUnit.squareFoot),
   ),
   createUnit(
     'poundal per square inch',
@@ -427,9 +419,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundalPerSquareInch,
-    conversionFactor:
-        conversionFactor(ConversionType.force, ForceUnit.poundal) /
-            conversionFactor(ConversionType.area, AreaUnit.squareInch),
+    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundal) /
+        conversionFactor(Converter.area, AreaUnit.squareInch),
   ),
 };
 

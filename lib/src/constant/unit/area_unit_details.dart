@@ -1,7 +1,7 @@
 import 'dart:math' show pow;
 
 import '../../enum/area_unit.dart';
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/length_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
@@ -11,7 +11,7 @@ import '../others/unit_system.dart';
 
 final _squareFoot = pow(
   conversionFactor(
-    ConversionType.length,
+    Converter.length,
     LengthUnit.foot,
   ),
   2,
@@ -165,7 +165,7 @@ final _otherUnits = {
     AreaUnit.squareInch,
     conversionFactor: pow(
       conversionFactor(
-        ConversionType.length,
+        Converter.length,
         LengthUnit.inch,
       ),
       2,
@@ -182,7 +182,7 @@ final _otherUnits = {
     AreaUnit.squareMile,
     conversionFactor: pow(
       conversionFactor(
-        ConversionType.length,
+        Converter.length,
         LengthUnit.mile,
       ),
       2,
@@ -198,7 +198,7 @@ final _otherUnits = {
     AreaUnit.squarePerch,
     conversionFactor: pow(
       conversionFactor(
-        ConversionType.length,
+        Converter.length,
         LengthUnit.rod,
       ),
       2,
@@ -215,7 +215,7 @@ final _otherUnits = {
     AreaUnit.squareYard,
     conversionFactor: pow(
       conversionFactor(
-        ConversionType.length,
+        Converter.length,
         LengthUnit.yard,
       ),
       2,

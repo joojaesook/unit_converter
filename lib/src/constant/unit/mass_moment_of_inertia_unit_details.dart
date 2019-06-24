@@ -1,5 +1,5 @@
 import '../../enum/area_unit.dart';
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/mass_moment_of_inertia_unit.dart';
 import '../../enum/mass_unit.dart';
 import '../../enum/symbol_part.dart';
@@ -7,13 +7,13 @@ import '../../misc/global.dart';
 import '../../model/unit.dart';
 import '../others/misc.dart';
 
-final _gramToKiloGram = conversionFactor(ConversionType.mass, MassUnit.gram);
-final _poundToKiloGram = conversionFactor(ConversionType.mass, MassUnit.pound);
-final _slugToKiloGram = conversionFactor(ConversionType.mass, MassUnit.slug);
+final _gramToKiloGram = conversionFactor(Converter.mass, MassUnit.gram);
+final _poundToKiloGram = conversionFactor(Converter.mass, MassUnit.pound);
+final _slugToKiloGram = conversionFactor(Converter.mass, MassUnit.slug);
 final _squareFootToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnit.squareFoot);
+    conversionFactor(Converter.area, AreaUnit.squareFoot);
 final _squareInchToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnit.squareInch);
+    conversionFactor(Converter.area, AreaUnit.squareInch);
 
 // __gram square __metre variations
 final _gramSquareMetreVariations = <Unit<MassMomentOfInertiaUnit>>{};

@@ -1,6 +1,6 @@
 import 'dart:math' show pow;
 
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/illuminance_unit.dart';
 import '../../enum/length_unit.dart';
 import '../../enum/symbol_part.dart';
@@ -87,7 +87,7 @@ final _otherUnits = {
     IlluminanceUnit.lumenPerSquareFoot,
     conversionFactor: pow(
       conversionFactor(
-        ConversionType.length,
+        Converter.length,
         LengthUnit.foot,
       ),
       -2,
@@ -106,7 +106,7 @@ final _otherUnits = {
     IlluminanceUnit.lumenPerSquareInch,
     conversionFactor: pow(
       conversionFactor(
-        ConversionType.length,
+        Converter.length,
         LengthUnit.inch,
       ),
       -2,

@@ -1,6 +1,6 @@
 import 'dart:math' show pow;
 
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/density_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
@@ -11,14 +11,14 @@ import '../others/misc.dart';
 import '../others/unit_system.dart';
 
 const _perCubicMetreToPerLitre = 0.001;
-final _grainToGram = conversionFactor(ConversionType.mass, MassUnit.grain) /
-    conversionFactor(ConversionType.mass, MassUnit.gram);
-final _ounceToGram = conversionFactor(ConversionType.mass, MassUnit.ounce) /
-    conversionFactor(ConversionType.mass, MassUnit.gram);
-final _poundToGram = conversionFactor(ConversionType.mass, MassUnit.pound) /
-    conversionFactor(ConversionType.mass, MassUnit.gram);
-final _slugToGram = conversionFactor(ConversionType.mass, MassUnit.slug) /
-    conversionFactor(ConversionType.mass, MassUnit.gram);
+final _grainToGram = conversionFactor(Converter.mass, MassUnit.grain) /
+    conversionFactor(Converter.mass, MassUnit.gram);
+final _ounceToGram = conversionFactor(Converter.mass, MassUnit.ounce) /
+    conversionFactor(Converter.mass, MassUnit.gram);
+final _poundToGram = conversionFactor(Converter.mass, MassUnit.pound) /
+    conversionFactor(Converter.mass, MassUnit.gram);
+final _slugToGram = conversionFactor(Converter.mass, MassUnit.slug) /
+    conversionFactor(Converter.mass, MassUnit.gram);
 
 // __gram per __litre and per cubic __metre variations
 final _gramPerLitreAndPerCubicMetreVariations = <Unit<DensityUnit>>{};
@@ -94,7 +94,7 @@ final _gramPerCubicFootVariations = createUnitVariation(
   '${variationUnitNameSeperator}gramPerCubicFoot',
   _perCubicMetreToPerLitre /
       conversionFactor(
-        ConversionType.volume,
+        Converter.volume,
         VolumeUnit.cubicFoot,
       ),
   decimalPrefixes,
@@ -115,7 +115,7 @@ final _gramPerCubicInchVariations = createUnitVariation(
   '${variationUnitNameSeperator}gramPerCubicInch',
   _perCubicMetreToPerLitre /
       conversionFactor(
-        ConversionType.volume,
+        Converter.volume,
         VolumeUnit.cubicInch,
       ),
   decimalPrefixes,
@@ -136,7 +136,7 @@ final _gramPerCubicMileVariations = createUnitVariation(
   '${variationUnitNameSeperator}gramPerCubicMile',
   _perCubicMetreToPerLitre /
       conversionFactor(
-        ConversionType.volume,
+        Converter.volume,
         VolumeUnit.cubicMile,
       ),
   decimalPrefixes,
@@ -158,7 +158,7 @@ final _gramPerCubicNauticalMileVariations = createUnitVariation(
   _perCubicMetreToPerLitre /
       pow(
         conversionFactor(
-          ConversionType.length,
+          Converter.length,
           LengthUnit.nauticalMile,
         ),
         3,
@@ -181,7 +181,7 @@ final _gramPerCubicYardVariations = createUnitVariation(
   '${variationUnitNameSeperator}gramPerCubicYard',
   _perCubicMetreToPerLitre /
       conversionFactor(
-        ConversionType.volume,
+        Converter.volume,
         VolumeUnit.cubicYard,
       ),
   decimalPrefixes,
@@ -202,7 +202,7 @@ final _gramPerFluidOunceVariations_us = createUnitVariation(
   '${variationUnitNameSeperator}gramPerFluidOunce_us',
   _perCubicMetreToPerLitre /
       conversionFactor(
-        ConversionType.volume,
+        Converter.volume,
         VolumeUnit.fluidOunce_us,
       ),
   decimalPrefixes,
@@ -225,7 +225,7 @@ final _gramPerGallonVariations_usLiquid = createUnitVariation(
   '${variationUnitNameSeperator}gramPerGallon_usLiquid',
   _perCubicMetreToPerLitre /
       conversionFactor(
-        ConversionType.volume,
+        Converter.volume,
         VolumeUnit.gallon_usLiquid,
       ),
   decimalPrefixes,
@@ -246,7 +246,7 @@ final _gramPerQuartVariations_usLiquid = createUnitVariation(
   '${variationUnitNameSeperator}gramPerQuart_usLiquid',
   _perCubicMetreToPerLitre /
       conversionFactor(
-        ConversionType.volume,
+        Converter.volume,
         VolumeUnit.quart_usLiquid,
       ),
   decimalPrefixes,
@@ -429,7 +429,7 @@ final _otherUnits = {
     DensityUnit.grainPerCubicFoot,
     conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicFoot,
         ),
   ),
@@ -446,7 +446,7 @@ final _otherUnits = {
     DensityUnit.grainPerCubicInch,
     conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicInch,
         ),
   ),
@@ -463,7 +463,7 @@ final _otherUnits = {
     DensityUnit.grainPerCubicMile,
     conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicMile,
         ),
   ),
@@ -481,7 +481,7 @@ final _otherUnits = {
     conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
         pow(
           conversionFactor(
-            ConversionType.length,
+            Converter.length,
             LengthUnit.nauticalMile,
           ),
           3,
@@ -500,7 +500,7 @@ final _otherUnits = {
     DensityUnit.grainPerCubicYard,
     conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicYard,
         ),
   ),
@@ -518,7 +518,7 @@ final _otherUnits = {
     DensityUnit.grainPerFluidOunce_us,
     conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.fluidOunce_us,
         ),
     system: unitSystem[UnitSystem.us],
@@ -535,7 +535,7 @@ final _otherUnits = {
     DensityUnit.grainPerGallon_usLiquid,
     conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.gallon_usLiquid,
         ),
     system: unitSystem[UnitSystem.usLiquid],
@@ -552,7 +552,7 @@ final _otherUnits = {
     DensityUnit.grainPerQuart_usLiquid,
     conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.quart_usLiquid,
         ),
     system: unitSystem[UnitSystem.usLiquid],
@@ -569,7 +569,7 @@ final _otherUnits = {
     DensityUnit.gramPerCup_metric,
     conversionFactor: _perCubicMetreToPerLitre /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cup_metric,
         ),
     system: unitSystem[UnitSystem.metric],
@@ -586,7 +586,7 @@ final _otherUnits = {
     DensityUnit.gramPerCup_us,
     conversionFactor: _perCubicMetreToPerLitre /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cup_us,
         ),
     system: unitSystem[UnitSystem.us],
@@ -603,7 +603,7 @@ final _otherUnits = {
     DensityUnit.gramPerCup_usFoodNutrition,
     conversionFactor: _perCubicMetreToPerLitre /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cup_usFoodNutritionLabel,
         ),
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
@@ -621,7 +621,7 @@ final _otherUnits = {
     DensityUnit.ouncePerCubicFoot,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicFoot,
         ),
   ),
@@ -638,7 +638,7 @@ final _otherUnits = {
     DensityUnit.ouncePerCubicInch,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicInch,
         ),
   ),
@@ -655,7 +655,7 @@ final _otherUnits = {
     DensityUnit.ouncePerCubicMile,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicMile,
         ),
   ),
@@ -673,7 +673,7 @@ final _otherUnits = {
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         pow(
           conversionFactor(
-            ConversionType.length,
+            Converter.length,
             LengthUnit.nauticalMile,
           ),
           3,
@@ -692,7 +692,7 @@ final _otherUnits = {
     DensityUnit.ouncePerCubicYard,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicYard,
         ),
   ),
@@ -710,7 +710,7 @@ final _otherUnits = {
     DensityUnit.ouncePerFluidOunce_us,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.fluidOunce_us,
         ),
     system: unitSystem[UnitSystem.us],
@@ -727,7 +727,7 @@ final _otherUnits = {
     DensityUnit.ouncePerGallon_usLiquid,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.gallon_usLiquid,
         ),
     system: unitSystem[UnitSystem.usLiquid],
@@ -744,7 +744,7 @@ final _otherUnits = {
     DensityUnit.ouncePerQuart_usLiquid,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.quart_usLiquid,
         ),
     system: unitSystem[UnitSystem.usLiquid],
@@ -761,7 +761,7 @@ final _otherUnits = {
     DensityUnit.ouncePerCup_metric,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cup_metric,
         ),
     system: unitSystem[UnitSystem.metric],
@@ -778,7 +778,7 @@ final _otherUnits = {
     DensityUnit.ouncePerCup_us,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cup_us,
         ),
     system: unitSystem[UnitSystem.us],
@@ -795,7 +795,7 @@ final _otherUnits = {
     DensityUnit.ouncePerCup_usFoodNutrition,
     conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cup_usFoodNutritionLabel,
         ),
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
@@ -813,7 +813,7 @@ final _otherUnits = {
     DensityUnit.poundPerCubicFoot,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicFoot,
         ),
   ),
@@ -830,7 +830,7 @@ final _otherUnits = {
     DensityUnit.poundPerCubicInch,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicInch,
         ),
   ),
@@ -847,7 +847,7 @@ final _otherUnits = {
     DensityUnit.poundPerCubicMile,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicMile,
         ),
   ),
@@ -865,7 +865,7 @@ final _otherUnits = {
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         pow(
           conversionFactor(
-            ConversionType.length,
+            Converter.length,
             LengthUnit.nauticalMile,
           ),
           3,
@@ -884,7 +884,7 @@ final _otherUnits = {
     DensityUnit.poundPerCubicYard,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicYard,
         ),
   ),
@@ -902,7 +902,7 @@ final _otherUnits = {
     DensityUnit.poundPerFluidOunce_us,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.fluidOunce_us,
         ),
     system: unitSystem[UnitSystem.us],
@@ -919,7 +919,7 @@ final _otherUnits = {
     DensityUnit.poundPerGallon_usLiquid,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.gallon_usLiquid,
         ),
     system: unitSystem[UnitSystem.usLiquid],
@@ -936,7 +936,7 @@ final _otherUnits = {
     DensityUnit.poundPerQuart_usLiquid,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.quart_usLiquid,
         ),
     system: unitSystem[UnitSystem.usLiquid],
@@ -953,7 +953,7 @@ final _otherUnits = {
     DensityUnit.poundPerCup_metric,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cup_metric,
         ),
     system: unitSystem[UnitSystem.metric],
@@ -970,7 +970,7 @@ final _otherUnits = {
     DensityUnit.poundPerCup_us,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cup_us,
         ),
     system: unitSystem[UnitSystem.us],
@@ -987,7 +987,7 @@ final _otherUnits = {
     DensityUnit.poundPerCup_usFoodNutrition,
     conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cup_usFoodNutritionLabel,
         ),
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
@@ -1005,7 +1005,7 @@ final _otherUnits = {
     DensityUnit.slugPerCubicFoot,
     conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicFoot,
         ),
   ),
@@ -1022,7 +1022,7 @@ final _otherUnits = {
     DensityUnit.slugPerCubicInch,
     conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicInch,
         ),
   ),
@@ -1039,7 +1039,7 @@ final _otherUnits = {
     DensityUnit.slugPerCubicMile,
     conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicMile,
         ),
   ),
@@ -1057,7 +1057,7 @@ final _otherUnits = {
     conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
         pow(
           conversionFactor(
-            ConversionType.length,
+            Converter.length,
             LengthUnit.nauticalMile,
           ),
           3,
@@ -1076,7 +1076,7 @@ final _otherUnits = {
     DensityUnit.slugPerCubicYard,
     conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.cubicYard,
         ),
   ),
@@ -1094,7 +1094,7 @@ final _otherUnits = {
     DensityUnit.slugPerFluidOunce_us,
     conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.fluidOunce_us,
         ),
     system: unitSystem[UnitSystem.us],
@@ -1111,7 +1111,7 @@ final _otherUnits = {
     DensityUnit.slugPerGallon_usLiquid,
     conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.gallon_usLiquid,
         ),
     system: unitSystem[UnitSystem.usLiquid],
@@ -1128,7 +1128,7 @@ final _otherUnits = {
     DensityUnit.slugPerQuart_usLiquid,
     conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
         conversionFactor(
-          ConversionType.volume,
+          Converter.volume,
           VolumeUnit.quart_usLiquid,
         ),
     system: unitSystem[UnitSystem.usLiquid],

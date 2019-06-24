@@ -1,6 +1,6 @@
 import 'abstract/base_converter.dart';
 import 'constant/others/base_unit.dart';
-import 'enum/conversion_type.dart';
+import 'enum/converter.dart';
 
 export 'enum/acceleration_unit.dart';
 export 'enum/area_unit.dart';
@@ -50,5 +50,5 @@ export 'enum/water_hardness_unit.dart';
 
 /// The unit converter class. Extends [BaseConverter] class.
 class UnitConverter extends BaseConverter {
-  UnitConverter(ConversionType type) : super(type, baseUnit[type]);
+  UnitConverter(Converter type) : super(type, baseUnit[type]);
 }

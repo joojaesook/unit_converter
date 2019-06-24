@@ -1,4 +1,4 @@
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/mass_flow_unit.dart';
 import '../../enum/mass_unit.dart';
 import '../../enum/symbol_part.dart';
@@ -6,13 +6,13 @@ import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-final _gramToKiloGram = conversionFactor(ConversionType.mass, MassUnit.gram);
-final _grainToKiloGram = conversionFactor(ConversionType.mass, MassUnit.grain);
-final _ounceToKiloGram = conversionFactor(ConversionType.mass, MassUnit.ounce);
-final _poundToKiloGram = conversionFactor(ConversionType.mass, MassUnit.pound);
-final _dayToSecond = conversionFactor(ConversionType.time, TimeUnit.day);
-final _hourToSecond = conversionFactor(ConversionType.time, TimeUnit.hour);
-final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
+final _gramToKiloGram = conversionFactor(Converter.mass, MassUnit.gram);
+final _grainToKiloGram = conversionFactor(Converter.mass, MassUnit.grain);
+final _ounceToKiloGram = conversionFactor(Converter.mass, MassUnit.ounce);
+final _poundToKiloGram = conversionFactor(Converter.mass, MassUnit.pound);
+final _dayToSecond = conversionFactor(Converter.time, TimeUnit.day);
+final _hourToSecond = conversionFactor(Converter.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
 
 // __gram per day variations
 final _gramPerDayVariations = createUnitVariation(

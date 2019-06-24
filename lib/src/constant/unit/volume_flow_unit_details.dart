@@ -1,7 +1,7 @@
 import 'dart:math' show pow;
 
 import '../../enum/area_unit.dart';
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/length_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
@@ -12,21 +12,20 @@ import '../../misc/global.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
-final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
-final _footToMetre = conversionFactor(ConversionType.length, LengthUnit.foot);
-final _inchToMetre = conversionFactor(ConversionType.length, LengthUnit.inch);
-final _litreToCubicMetre =
-    conversionFactor(ConversionType.volume, VolumeUnit.litre);
+final _acreToSquareMetre = conversionFactor(Converter.area, AreaUnit.acre);
+final _footToMetre = conversionFactor(Converter.length, LengthUnit.foot);
+final _inchToMetre = conversionFactor(Converter.length, LengthUnit.inch);
+final _litreToCubicMetre = conversionFactor(Converter.volume, VolumeUnit.litre);
 final _gallonToCubicMetre_imperial =
-    conversionFactor(ConversionType.volume, VolumeUnit.gallon_imperial);
+    conversionFactor(Converter.volume, VolumeUnit.gallon_imperial);
 final _gallonToCubicMetre_usLiquid =
-    conversionFactor(ConversionType.volume, VolumeUnit.gallon_usLiquid);
+    conversionFactor(Converter.volume, VolumeUnit.gallon_usLiquid);
 final _oilBarrelToCubicMetre =
-    conversionFactor(ConversionType.volume, VolumeUnit.oilBarrel);
-final _dayToSecond = conversionFactor(ConversionType.time, TimeUnit.day);
-final _hourToSecond = conversionFactor(ConversionType.time, TimeUnit.hour);
-final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
-final _yearToSecond = conversionFactor(ConversionType.time, TimeUnit.year);
+    conversionFactor(Converter.volume, VolumeUnit.oilBarrel);
+final _dayToSecond = conversionFactor(Converter.time, TimeUnit.day);
+final _hourToSecond = conversionFactor(Converter.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
+final _yearToSecond = conversionFactor(Converter.time, TimeUnit.year);
 
 // __litre per day variations
 final _litrePerDayVariations = createUnitVariation(

@@ -1,4 +1,4 @@
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/length_unit.dart';
 import '../../enum/speed_unit.dart';
 import '../../enum/symbol_part.dart';
@@ -6,16 +6,16 @@ import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-final _dayToSecond = conversionFactor(ConversionType.time, TimeUnit.day);
-final _hourToSecond = conversionFactor(ConversionType.time, TimeUnit.hour);
-final _minuteToSecond = conversionFactor(ConversionType.time, TimeUnit.minute);
+final _dayToSecond = conversionFactor(Converter.time, TimeUnit.day);
+final _hourToSecond = conversionFactor(Converter.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
 
-final _footToMetre = conversionFactor(ConversionType.length, LengthUnit.foot);
-final _inchToMetre = conversionFactor(ConversionType.length, LengthUnit.inch);
-final _mileToMetre = conversionFactor(ConversionType.length, LengthUnit.mile);
+final _footToMetre = conversionFactor(Converter.length, LengthUnit.foot);
+final _inchToMetre = conversionFactor(Converter.length, LengthUnit.inch);
+final _mileToMetre = conversionFactor(Converter.length, LengthUnit.mile);
 final _nauticalMileToMetre =
-    conversionFactor(ConversionType.length, LengthUnit.nauticalMile);
-final _yardToMetre = conversionFactor(ConversionType.length, LengthUnit.yard);
+    conversionFactor(Converter.length, LengthUnit.nauticalMile);
+final _yardToMetre = conversionFactor(Converter.length, LengthUnit.yard);
 
 // __metre per day variations
 final _metrePerDayVariations = createUnitVariation(

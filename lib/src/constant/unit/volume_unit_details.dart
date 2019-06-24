@@ -1,7 +1,7 @@
 import 'dart:math' show pow;
 
 import '../../enum/area_unit.dart';
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/length_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
@@ -10,9 +10,9 @@ import '../../misc/global.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
-final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
-final _footToMetre = conversionFactor(ConversionType.length, LengthUnit.foot);
-final _inchToMetre = conversionFactor(ConversionType.length, LengthUnit.inch);
+final _acreToSquareMetre = conversionFactor(Converter.area, AreaUnit.acre);
+final _footToMetre = conversionFactor(Converter.length, LengthUnit.foot);
+final _inchToMetre = conversionFactor(Converter.length, LengthUnit.inch);
 const _litreToCubicMetre = 0.001;
 const _gallon_imperial = 4.54609 * _litreToCubicMetre;
 const _gallon_usDry = 0.00440488377086;
@@ -156,7 +156,7 @@ final _otherUnits = {
     VolumeUnit.cubicMile,
     conversionFactor: pow(
       conversionFactor(
-        ConversionType.length,
+        Converter.length,
         LengthUnit.mile,
       ),
       3,
@@ -173,7 +173,7 @@ final _otherUnits = {
     VolumeUnit.cubicYard,
     conversionFactor: pow(
       conversionFactor(
-        ConversionType.length,
+        Converter.length,
         LengthUnit.yard,
       ),
       3,

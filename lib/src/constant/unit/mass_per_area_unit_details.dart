@@ -1,5 +1,5 @@
 import '../../enum/area_unit.dart';
-import '../../enum/conversion_type.dart';
+import '../../enum/converter.dart';
 import '../../enum/mass_per_area_unit.dart';
 import '../../enum/mass_unit.dart';
 import '../../enum/symbol_part.dart';
@@ -7,20 +7,20 @@ import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../others/unit_system.dart';
 
-final _acreToSquareMetre = conversionFactor(ConversionType.area, AreaUnit.acre);
+final _acreToSquareMetre = conversionFactor(Converter.area, AreaUnit.acre);
 final _hectareToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnit.hectare);
+    conversionFactor(Converter.area, AreaUnit.hectare);
 final _squareMileToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnit.squareMile);
+    conversionFactor(Converter.area, AreaUnit.squareMile);
 final _squareYardToSquareMetre =
-    conversionFactor(ConversionType.area, AreaUnit.squareYard);
+    conversionFactor(Converter.area, AreaUnit.squareYard);
 
 final _longTonneToKiloGram =
-    conversionFactor(ConversionType.mass, MassUnit.longTonne);
+    conversionFactor(Converter.mass, MassUnit.longTonne);
 final _shortTonneToKiloGram =
-    conversionFactor(ConversionType.mass, MassUnit.shortTonne);
-final _poundToKiloGram = conversionFactor(ConversionType.mass, MassUnit.pound);
-final _tonneToKiloGram = conversionFactor(ConversionType.mass, MassUnit.tonne);
+    conversionFactor(Converter.mass, MassUnit.shortTonne);
+final _poundToKiloGram = conversionFactor(Converter.mass, MassUnit.pound);
+final _tonneToKiloGram = conversionFactor(Converter.mass, MassUnit.tonne);
 
 // mass per area unit details
 final massPerAreaUnitDetails = {
