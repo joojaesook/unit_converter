@@ -1,7 +1,7 @@
 name: unit_converter
-description: A starting point for Dart libraries or applications.
+description: A library to convert units.
 # version: 1.0.0
-# homepage: https://www.example.com
+homepage: https://github.com/arabbani/unit_converter
 author: Arif Rabbani <arif.93rabbani@gmail.com>
 
 environment:

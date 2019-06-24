@@ -26,7 +26,7 @@ abstract class BaseConverter<T> {
   /// Returns the result after converting the `value` from type `from` to type `to`.
   ///
   /// If `from` and `to` are same, returns the `value` itself.
-  double convert(double value, T from, T to) {
+  double convert({double value, T from, T to}) {
     if (from != to) {
       switch (type) {
         case Converter.temperature:
@@ -62,18 +62,14 @@ abstract class BaseConverter<T> {
   /// Pass either one parameter of `include` and `exclude`.
   /// If `include` is defined, returns only the units defined by `include`.
   /// If `exclude` is defined, returns all the units except the units defined by `include`.
-  Set<Unit<T>> units({Set<T> include, Set<T> exclude}) {
-    return _filterUnits(_availableUnits(), include, exclude);
-  }
-
-  /// Returns all the units without the prefixed variation units filtered by `include` and `exclude`.
   ///
-  /// Pass either one parameter of `include` and `exclude`.
-  /// If `include` is defined, returns only the units defined by `include`.
-  /// If `exclude` is defined, returns all the units except the units defined by `exclude`.
-  Set<Unit<T>> unitsWithoutVariations({Set<T> include, Set<T> exclude}) {
+  /// If you want to filter the prefixed variation units, pass `withoutPrefixedVariation = true`
+  Set<Unit<T>> units(
+      {Set<T> include, Set<T> exclude, withoutVariation = false}) {
     var units = _availableUnits();
-    units = units.where((unit) => unit.variation == false);
+    if (withoutVariation) {
+      units = units.where((unit) => unit.variation == false);
+    }
     return _filterUnits(units, include, exclude);
   }
 
