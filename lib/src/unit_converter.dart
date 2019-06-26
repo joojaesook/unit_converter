@@ -7,6 +7,7 @@ export 'enum/area_unit.dart';
 export 'enum/blood_cholesterol_unit.dart';
 export 'enum/blood_glucose_unit.dart';
 export 'enum/capacitance_unit.dart';
+export 'enum/converter.dart';
 export 'enum/data_rate_unit.dart';
 export 'enum/data_unit.dart';
 export 'enum/density_unit.dart';
@@ -47,7 +48,6 @@ export 'enum/volume_flow_unit.dart';
 export 'enum/volume_per_area_unit.dart';
 export 'enum/volume_unit.dart';
 export 'enum/water_hardness_unit.dart';
-export 'enum/converter.dart';
 export 'model/unit.dart';
 
 /// The unit converter class. Extends [BaseConverter] class.
