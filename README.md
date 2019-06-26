@@ -14,7 +14,7 @@ unit_converter: <latest_version>
 
 ## Usage
 
-If you want to convert area units, get an instance of area converter, and call the [convert] method:
+If you want to convert area units, get an instance of area converter, and call the `convert` method:
 
 ```dart
 import 'package:unit_converter/unit_converter.dart';
@@ -29,9 +29,9 @@ Get the available units:
 ```dart
   var avilableUnits = areaConverter.units();
 ```
-See [units] method for more details.
+See `units` method for more details.
 
-Each unit have a [name](British name) and [americanName] property. For units that have the same [americanName] as [name], the [americanName] is null. So, it is always good to check for the availability of [americanName] before displaying it.
+Each unit have a `name`(British spelling) and an `americanName`(American spelling) property. For units that have the same `americanName` as `name`, the `americanName` is null. So, it is always good to check for the availability of `americanName` before displaying it.
 ```dart
   for(var unit in avilableUnits) {
     if(unit.americanName != null) {
@@ -42,7 +42,7 @@ Each unit have a [name](British name) and [americanName] property. For units tha
   }
 ```
 
-For a complete list of supported methods, see the [UnitConverter] class.
+For a complete list of supported methods, see the `UnitConverter` class.
 
 ## Donations
 
