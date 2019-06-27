@@ -25,7 +25,7 @@ abstract class BaseConverter<T> {
 
   /// Returns the result after converting the `value` from type `from` to type `to`.
   ///
-  /// If `from` and `to` are same, returns the `value` itself.
+  /// If `from` and `to` are the same, returns the `value` itself.
   double convert({double value, T from, T to}) {
     if (from != to) {
       switch (type) {
@@ -59,9 +59,8 @@ abstract class BaseConverter<T> {
 
   /// Returns all the units filtered by `include` and `exclude`.
   ///
-  /// Pass either one parameter of `include` and `exclude`.
   /// If `include` is defined, returns only the units defined by `include`.
-  /// If `exclude` is defined, returns all the units except the units defined by `include`.
+  /// If `exclude` is defined, returns all the units except the units defined by `exclude`.
   ///
   /// If you want to filter the prefixed variation units, pass `withoutPrefixedVariation = true`
   Set<Unit<T>> units(

@@ -1,3 +1,3 @@
 ## 1.0.0
 
-- Initial version, created by Stagehand
+- Fully working version. Various types of converter added.

@@ -1,4 +1,10 @@
+import 'package:unit_converter/unit_converter.dart';
+
 main() {
-  // var awesome = Awesome();
-  // print('awesome: ${awesome.isAwesome}');
+  var areaConverter = UnitConverter(Converter.area);
+  areaConverter.convert(
+    value: 2,
+    from: AreaUnit.acre,
+    to: AreaUnit.squareFoot,
+  );
 }
