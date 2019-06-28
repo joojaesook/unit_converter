@@ -2,7 +2,7 @@ import '../../enum/sound_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 
-// sound unit details
+/// Sound unit details
 final soundUnitDetails = {
   createUnit(
     'bel',

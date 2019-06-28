@@ -137,7 +137,7 @@ final _otherUnits = {
   ),
 };
 
-// torque unit details
+/// Torque unit details
 final torqueUnitDetails = {
   ..._newtonMetreVariations,
   ..._otherUnits,

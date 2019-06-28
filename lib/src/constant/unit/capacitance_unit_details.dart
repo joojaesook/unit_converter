@@ -35,7 +35,7 @@ final _otherUnits = {
   ),
 };
 
-// capacitance unit details
+/// Capacitance unit details
 final capacitanceUnitDetails = {
   ..._faradVariations,
   ..._otherUnits,

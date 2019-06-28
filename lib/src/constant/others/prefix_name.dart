@@ -1,5 +1,6 @@
 import '../../enum/metric_prefix.dart';
 
+/// Metric prefix names
 final Map<MetricPrefix, String> prefixName = {
   MetricPrefix.atto: 'atto',
   MetricPrefix.binaryExa: 'exa',

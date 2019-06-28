@@ -506,7 +506,7 @@ final _otherUnits = {
   ),
 };
 
-// volume flow unit details
+/// Volume flow unit details
 final volumeFlowUnitDetails = {
   ..._litrePerDayVariations,
   ..._litrePerHourVariations,

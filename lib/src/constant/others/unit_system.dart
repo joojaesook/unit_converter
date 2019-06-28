@@ -4,6 +4,7 @@ import '../../misc/global.dart';
 import 'symbol.dart';
 import 'unicode_constant.dart';
 
+/// Unit system names
 final Map<UnitSystem, String> unitSystem = {
   UnitSystem.australian: 'Australian',
   UnitSystem.binary: 'Binary',

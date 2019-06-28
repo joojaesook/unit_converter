@@ -309,7 +309,7 @@ final _otherUnits = {
   ),
 };
 
-// power unit details
+/// Power unit details
 final powerUnitDetails = {
   ..._caloriePerHourVariations_intlSteamTable,
   ..._caloriePerMinuteVariations_intlSteamTable,

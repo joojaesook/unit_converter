@@ -35,7 +35,7 @@ final _otherUnits = {
   ),
 };
 
-// electrical resistance unit details
+/// Electrical resistance unit details
 final electricalResistanceUnitDetails = {
   ..._ohmVariations,
   ..._otherUnits,

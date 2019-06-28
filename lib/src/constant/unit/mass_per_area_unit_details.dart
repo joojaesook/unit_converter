@@ -22,7 +22,7 @@ final _shortTonneToKiloGram =
 final _poundToKiloGram = conversionFactor(Converter.mass, MassUnit.pound);
 final _tonneToKiloGram = conversionFactor(Converter.mass, MassUnit.tonne);
 
-// mass per area unit details
+/// Mass per area unit details
 final massPerAreaUnitDetails = {
   createUnit(
     'kilogram per acre',

@@ -47,7 +47,7 @@ final _rutherfordVariations = createUnitVariation(
   ),
 );
 
-// radioactivity unit details
+/// Radioactivity unit details
 final radioactivityUnitDetails = {
   ..._becquerelVariations,
   ..._curieVariations,

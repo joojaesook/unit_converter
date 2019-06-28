@@ -6,30 +6,11 @@ import '../../enum/pressure_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
 const _metreOfMercuryToPascal_conventional = 133322.387415;
 const _metreOfWaterToPascal_degree4C = 9806.3754138;
-
-// __gram force per square __metre variations
-final _gramForcePerSquareMetreAndNewtonPerSquareMetreVariations =
-    <Unit<PressureUnit>>{};
-
-void create(Unit<PressureUnit> unit) {
-  var units = createUnitVariation(
-    PressureUnit.values,
-    '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
-    decimalPrefixes,
-    namePostfix: unit.name,
-    symbolPostfix: unit.symbol,
-    addAmericanName: true,
-    americanNamePostfix: unit.americanName,
-  );
-  _gramForcePerSquareMetreAndNewtonPerSquareMetreVariations.addAll(units);
-}
 
 // gram force per square __metre variations
 final _intermediateGramForcePerSquareMetreVariations = createUnitVariation(
@@ -58,7 +39,7 @@ final _intermediateGramForcePerSquareMetreVariations = createUnitVariation(
   americanNamePrefix: 'gram-force per square ',
   americanNamePostfix: 'meter',
   powerOfVariationConversionFactor: -2,
-).forEach(create);
+);
 
 // __bar variations
 final _barVariations = createUnitVariation(
@@ -138,7 +119,15 @@ final _intermediateNewtonPerSquareMetreVariations = createUnitVariation(
   americanNamePrefix: 'newton per square ',
   americanNamePostfix: 'meter',
   powerOfVariationConversionFactor: -2,
-).forEach(create);
+);
+
+// __gram force per square __metre variations
+final _gramForcePerSquareMetreAndNewtonPerSquareMetreVariations = {
+  for (var unit in _intermediateGramForcePerSquareMetreVariations)
+    ...create(unit, PressureUnit.values),
+  for (var unit in _intermediateNewtonPerSquareMetreVariations)
+    ...create(unit, PressureUnit.values)
+};
 
 // __pascal variations
 final _pascalVariations = createUnitVariation(
@@ -424,7 +413,7 @@ final _otherUnits = {
   ),
 };
 
-// pressure unit details
+/// Pressure unit details
 final pressureUnitDetails = {
   ..._gramForcePerSquareMetreAndNewtonPerSquareMetreVariations,
   ..._barVariations,

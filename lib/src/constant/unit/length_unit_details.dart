@@ -369,7 +369,7 @@ final _otherUnits = {
   ),
 };
 
-// length unit details
+/// Length unit details
 final lengthUnitDetails = {
   ..._lightYearVariations,
   ..._metreVariations,

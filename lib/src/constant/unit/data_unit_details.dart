@@ -36,7 +36,7 @@ final _byteVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// data unit details
+/// Data unit details
 final dataUnitDetails = {
   ..._bitVariations,
   ..._byteVariations,

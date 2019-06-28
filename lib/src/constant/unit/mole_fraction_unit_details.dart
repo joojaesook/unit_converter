@@ -3,23 +3,7 @@ import 'dart:math' show pow;
 import '../../enum/mole_fraction_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
-
-// __mole per __mole variations
-final _molePerMoleVariations = <Unit<MoleFractionUnit>>{};
-
-void create(Unit<MoleFractionUnit> unit) {
-  var units = createUnitVariation(
-    MoleFractionUnit.values,
-    '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
-    decimalPrefixes,
-    namePostfix: unit.name,
-    symbolPostfix: unit.symbol,
-  );
-  _molePerMoleVariations.addAll(units);
-}
 
 // mole per __mole variations
 final _intermediateMolePerMoleVariations = createUnitVariation(
@@ -41,7 +25,13 @@ final _intermediateMolePerMoleVariations = createUnitVariation(
     ],
   ),
   powerOfVariationConversionFactor: -1,
-).forEach(create);
+);
+
+// __mole per __mole variations
+final _molePerMoleVariations = {
+  for (var unit in _intermediateMolePerMoleVariations)
+    ...create(unit, MoleFractionUnit.values)
+};
 
 // other units
 final _otherUnits = {
@@ -125,7 +115,7 @@ final _otherUnits = {
   ),
 };
 
-// mole fraction unit details
+/// Mole fraction unit details
 final moleFractionUnitDetails = {
   ..._molePerMoleVariations,
   ..._otherUnits,

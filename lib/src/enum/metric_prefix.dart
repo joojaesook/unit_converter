@@ -1,4 +1,4 @@
-// Metric prefixes
+/// Metric prefixes
 enum MetricPrefix {
   atto,
   binaryExa,

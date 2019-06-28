@@ -580,7 +580,7 @@ final _otherUnits = {
   ),
 };
 
-//volume unit details
+/// Volume unit details
 final volumeUnitDetails = {
   ..._litreVariations,
   ..._cubicMetreVariations,

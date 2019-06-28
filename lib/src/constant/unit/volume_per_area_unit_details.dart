@@ -18,7 +18,7 @@ final _gallonToCubicMetre_usLiquid =
     conversionFactor(Converter.volume, VolumeUnit.gallon_usLiquid);
 final _litreToCubicMetre = conversionFactor(Converter.volume, VolumeUnit.litre);
 
-// volume per area unit details
+/// Volume per area unit details
 final volumePerAreaUnitDetails = {
   createUnit(
     'cubic metre per acre',

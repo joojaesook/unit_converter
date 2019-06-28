@@ -2,7 +2,7 @@ import '../../enum/blood_cholesterol_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 
-// blood cholesterol unit details
+/// Blood cholesterol unit details
 final bloodCholesterolUnitDetails = {
   createUnit(
     'milligram per decilitre',

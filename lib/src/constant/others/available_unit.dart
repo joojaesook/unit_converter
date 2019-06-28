@@ -46,7 +46,7 @@ import '../unit/volume_per_area_unit_details.dart';
 import '../unit/volume_unit_details.dart';
 import '../unit/water_hardness_unit_details.dart';
 
-// Details of all the units of each [ConversionType].
+/// Details of all the units of each `ConversionType`.
 final Map<Converter, Set<Unit>> availableUnit = {
   Converter.acceleration: accelerationUnitDetails,
   Converter.area: areaUnitDetails,

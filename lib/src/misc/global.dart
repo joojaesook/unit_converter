@@ -12,7 +12,7 @@ import '../enum/symbol_part.dart';
 import '../enum/unit_system.dart';
 import '../model/unit.dart';
 
-// Create symbol from the `symbolParts`.
+/// Create symbol from `symbolParts`.
 String createSymbol(List<SymbolPart> symbolParts) {
   String symbolName = '';
   if (symbolParts == null || symbolParts.isEmpty) {
@@ -25,11 +25,12 @@ String createSymbol(List<SymbolPart> symbolParts) {
   return symbolName;
 }
 
-// Get conversion factor for `unitType` of `conversionType`
+/// Get conversion factor for `unitType` of `conversionType`
 double conversionFactor<T>(Converter conversionType, T unitType) {
   return conversionFactors[conversionType][unitType];
 }
 
+/// Get the enum from the string `value`.
 T _enumFromString<T>(Iterable<T> values, String value) {
   return values.firstWhere(
       (type) =>
@@ -37,20 +38,38 @@ T _enumFromString<T>(Iterable<T> values, String value) {
       orElse: () => null);
 }
 
-Converter conversionTypeFromString(String value) {
+/// Get `ConversionType` enum from the string `value`.
+Converter _conversionTypeFromString(String value) {
   value = value.split('Unit')[0];
   return _enumFromString(Converter.values, value);
 }
 
-String stringFromEnum<T>(T type) {
-  return type.toString().split(".").last;
+/// Get the string representation of the `enumType`.
+String stringFromEnum<T>(T enumType) {
+  return enumType.toString().split(".").last;
 }
 
 void _addConversionFactor<T>(T unitType, double conversionFactor) {
-  var conversionType = conversionTypeFromString(unitType.toString());
+  var conversionType = _conversionTypeFromString(unitType.toString());
   conversionFactors[conversionType][unitType] = conversionFactor;
 }
 
+/// Create variation of variation
+Set<Unit<T>> create<T>(Unit<T> unit, Iterable<T> values) {
+  return createUnitVariation(
+    values,
+    '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
+    conversionFactor(
+        _conversionTypeFromString(unit.type.toString()), unit.type),
+    decimalPrefixes,
+    namePostfix: unit.name,
+    symbolPostfix: unit.symbol,
+    addAmericanName: true,
+    americanNamePostfix: unit.americanName,
+  );
+}
+
+/// Create a unit
 Unit<T> createUnit<T>(String name, String symbol, T type,
     {double conversionFactor,
     String americanName,
@@ -99,7 +118,7 @@ Unit<T> _createUnitForVariation<T>(
   return unit;
 }
 
-// variation unit type creation bug to be fixed
+/// Create variation units
 Set<Unit<T>> createUnitVariation<T>(
     Iterable<T> unitEnum,
     String variationBaseUnitName,

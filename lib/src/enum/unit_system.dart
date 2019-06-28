@@ -1,4 +1,4 @@
-// Unit systems
+/// Unit systems
 enum UnitSystem {
   australian,
   binary,

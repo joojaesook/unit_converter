@@ -120,7 +120,7 @@ final _squareMetrePerSecondVariations = createUnitVariation(
   powerOfVariationConversionFactor: 2,
 );
 
-// kinematic viscocity unit details
+/// Kinematic viscocity unit details
 final kinematicViscocityUnitDetails = {
   ..._stokesVariations,
   ..._squareMetrePerDayVariations,

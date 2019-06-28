@@ -3,23 +3,7 @@ import 'dart:math' show pow;
 import '../../enum/mass_fraction_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
-
-// __gram per __gram variations
-final _gramPerGramVariations = <Unit<MassFractionUnit>>{};
-
-void create(Unit<MassFractionUnit> unit) {
-  var units = createUnitVariation(
-    MassFractionUnit.values,
-    '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
-    decimalPrefixes,
-    namePostfix: unit.name,
-    symbolPostfix: unit.symbol,
-  );
-  _gramPerGramVariations.addAll(units);
-}
 
 // gram per __gram variations
 final _intermediateGramPerGramVariations = createUnitVariation(
@@ -41,7 +25,13 @@ final _intermediateGramPerGramVariations = createUnitVariation(
     ],
   ),
   powerOfVariationConversionFactor: -1,
-).forEach(create);
+);
+
+// __gram per __gram variations
+final _gramPerGramVariations = {
+  for (var unit in _intermediateGramPerGramVariations)
+    ...create(unit, MassFractionUnit.values)
+};
 
 // other units
 final _otherUnits = {
@@ -125,7 +115,7 @@ final _otherUnits = {
   ),
 };
 
-// mass fraction unit details
+/// Mass fraction unit details
 final massFractionUnitDetails = {
   ..._gramPerGramVariations,
   ..._otherUnits,

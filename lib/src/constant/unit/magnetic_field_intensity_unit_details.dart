@@ -35,7 +35,7 @@ final _otherUnits = {
   ),
 };
 
-// magnetic field intensity unit details
+/// Magnetic field intensity unit details
 final magneticFieldIntensityUnitDetails = {
   ..._amperePerMetreVariations,
   ..._otherUnits,

@@ -1,7 +1,10 @@
 import '../enum/temperature_unit.dart';
 
-// Converter for temperature.
+/// Converter for temperature.
 class TemperatureConverter {
+  /// Returns the result after converting the `value` from type `from` to type `to`.
+  ///
+  /// If `from` and `to` are the same, returns the `value` itself.
   double convert(double value, TemperatureUnit from, TemperatureUnit to) {
     value = _convertToKelvin(from, value);
     value = _convertFromKelvin(to, value);

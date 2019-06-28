@@ -35,7 +35,7 @@ final _otherUnits = {
   ),
 };
 
-// electric potential unit details
+/// Electric potential unit details
 final electricPotentialUnitDetails = {
   ..._voltVariations,
   ..._otherUnits,

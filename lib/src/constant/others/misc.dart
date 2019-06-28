@@ -2,6 +2,7 @@ import '../../enum/metric_prefix.dart';
 
 const variationUnitNameSeperator = '@';
 
+/// Decimal metric prefixes
 const decimalPrefixes = const [
   MetricPrefix.atto,
   MetricPrefix.centi,
@@ -25,6 +26,7 @@ const decimalPrefixes = const [
   MetricPrefix.zetta,
 ];
 
+/// Binary metric prefixes
 const binaryPrefixes = const [
   MetricPrefix.binaryExa,
   MetricPrefix.binaryGiga,

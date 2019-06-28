@@ -5,7 +5,6 @@ import '../../enum/density_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../../unit_converter.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
@@ -19,23 +18,6 @@ final _poundToGram = conversionFactor(Converter.mass, MassUnit.pound) /
     conversionFactor(Converter.mass, MassUnit.gram);
 final _slugToGram = conversionFactor(Converter.mass, MassUnit.slug) /
     conversionFactor(Converter.mass, MassUnit.gram);
-
-// __gram per __litre and per cubic __metre variations
-final _gramPerLitreAndPerCubicMetreVariations = <Unit<DensityUnit>>{};
-
-void create(Unit<DensityUnit> unit) {
-  var units = createUnitVariation(
-    DensityUnit.values,
-    '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
-    decimalPrefixes,
-    namePostfix: unit.name,
-    symbolPostfix: unit.symbol,
-    addAmericanName: true,
-    americanNamePostfix: unit.americanName,
-  );
-  _gramPerLitreAndPerCubicMetreVariations.addAll(units);
-}
 
 // gram per __litre variations
 final _intermediateGramPerLitreVariations = createUnitVariation(
@@ -60,7 +42,7 @@ final _intermediateGramPerLitreVariations = createUnitVariation(
   americanNamePrefix: 'gram per ',
   americanNamePostfix: 'liter',
   powerOfVariationConversionFactor: -1,
-).forEach(create);
+);
 
 // gram per cubic __metre variations
 final _intermediateGramPerCubicMetreVariations = createUnitVariation(
@@ -86,7 +68,15 @@ final _intermediateGramPerCubicMetreVariations = createUnitVariation(
   americanNamePrefix: 'gram per cubic ',
   americanNamePostfix: 'meter',
   powerOfVariationConversionFactor: -3,
-).forEach(create);
+);
+
+// __gram per __litre and per cubic __metre variations
+final _gramPerLitreAndPerCubicMetreVariations = {
+  for (var unit in _intermediateGramPerLitreVariations)
+    ...create(unit, DensityUnit.values),
+  for (var unit in _intermediateGramPerCubicMetreVariations)
+    ...create(unit, DensityUnit.values),
+};
 
 // __gram per cubic foot variations
 final _gramPerCubicFootVariations = createUnitVariation(
@@ -1135,7 +1125,7 @@ final _otherUnits = {
   ),
 };
 
-// density unit details
+/// Density unit details
 final densityUnitDetails = {
   ..._gramPerLitreAndPerCubicMetreVariations,
   ..._gramPerCubicFootVariations,

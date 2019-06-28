@@ -4,7 +4,7 @@ import '../../enum/water_hardness_unit.dart';
 import '../../misc/global.dart';
 import '../others/unit_system.dart';
 
-// water hardnes unit details
+/// Water hardnes unit details
 final waterHardnessUnitDetails = {
   createUnit(
     'clark degree',

@@ -61,7 +61,7 @@ final _otherUnits = {
   ),
 };
 
-// electrical conductance unit details
+/// Electrical conductance unit details
 final electricalConductanceUnitDetails = {
   ..._mhoVariations,
   ..._siemensVariations,

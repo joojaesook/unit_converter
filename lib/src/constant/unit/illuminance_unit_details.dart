@@ -124,7 +124,7 @@ final _otherUnits = {
   ),
 };
 
-// illuminance unit details
+/// Illuminance unit details
 final illuminanceUnitDetails = {
   ..._luxVariations,
   ..._photVariations,

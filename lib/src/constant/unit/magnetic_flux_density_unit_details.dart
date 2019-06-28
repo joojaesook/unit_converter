@@ -31,7 +31,7 @@ final _teslaVariations = createUnitVariation(
   ),
 );
 
-// magnetic flux density unit details
+/// Magnetic flux density unit details
 final magneticFluxDensityUnitDetails = {
   ..._gaussVariations,
   ..._teslaVariations,

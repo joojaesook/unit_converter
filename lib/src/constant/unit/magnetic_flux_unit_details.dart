@@ -33,7 +33,7 @@ final _otherUnits = {
   ),
 };
 
-// magnetic flux unit details
+/// Magnetic flux unit details
 final magneticFluxUnitDetails = {
   ..._weberVariations,
   ..._otherUnits,

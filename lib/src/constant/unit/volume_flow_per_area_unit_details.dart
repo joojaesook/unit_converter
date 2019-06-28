@@ -20,7 +20,7 @@ final _gallonToCubicMetre_USLiquid =
 final _litreToCubicMetre = conversionFactor(Converter.volume, VolumeUnit.litre);
 final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
 
-// volume flow per area unit details
+/// Volume flow per area unit details
 final volumeFlowPerAreaUnitDetails = {
   createUnit(
     'cubic metre per second per acre',

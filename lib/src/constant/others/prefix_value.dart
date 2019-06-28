@@ -1,6 +1,7 @@
 import '../../enum/metric_prefix.dart';
 import '../../model/prefix.dart';
 
+/// Metric prefix values
 final Map<MetricPrefix, Prefix> prefixValue = {
   MetricPrefix.atto: const Prefix(10, -18),
   MetricPrefix.binaryExa: const Prefix(2, 60),

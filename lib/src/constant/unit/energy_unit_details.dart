@@ -324,7 +324,7 @@ final _otherUnits = {
   ),
 };
 
-// energy unit details
+/// Energy unit details
 final energyUnitDetails = {
   ..._calorieVariations,
   ..._calorieVariations_15DegreeC,

@@ -33,7 +33,7 @@ final _otherUnits = {
   ),
 };
 
-// electric current unit details
+/// Electric current unit details
 final electricCurrentUnitDetails = {
   ..._ampereVariations,
   ..._otherUnits,

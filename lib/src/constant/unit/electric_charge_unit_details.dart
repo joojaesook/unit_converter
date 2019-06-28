@@ -63,7 +63,7 @@ final _otherUnits = {
   ),
 };
 
-// electric charge unit details
+/// Electric charge unit details
 final electricChargeUnitDetails = {
   ..._coulombVariations,
   ..._ampereHourVariations,

@@ -2,7 +2,7 @@ import '../../enum/blood_glucose_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 
-// blood gucose unit details
+/// Blood gucose unit details
 final bloodGlucoseUnitDetails = {
   createUnit(
     'milligram per decilitre',

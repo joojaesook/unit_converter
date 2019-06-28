@@ -124,7 +124,7 @@ final _bytePerSecondVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// data rate unit details
+/// Data rate unit details
 final dataRateUnitDetails = {
   ..._bitPerHourVariations,
   ..._bitPerMinuteVariations,

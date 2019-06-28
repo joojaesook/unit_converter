@@ -2,7 +2,7 @@ import '../../enum/symbol_part.dart';
 import '../../enum/temperature_unit.dart';
 import '../../misc/global.dart';
 
-// temperature unit details
+/// Temperature unit details
 final temperatureUnitDetails = {
   createUnit(
     'degree celsius',

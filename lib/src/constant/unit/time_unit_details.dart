@@ -131,7 +131,7 @@ final _otherUnits = {
   ),
 };
 
-// time unit details
+/// Time unit details
 final timeUnitDetails = {
   ..._secondVariations,
   ..._otherUnits,

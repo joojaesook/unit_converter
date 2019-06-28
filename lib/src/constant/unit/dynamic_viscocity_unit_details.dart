@@ -33,7 +33,7 @@ final _poiseVariations = createUnitVariation(
   ),
 );
 
-// dynamic viscocity unit details
+/// Dynamic viscocity unit details
 final dynamicViscocityUnitDetails = {
   ..._pascalSecondVariations,
   ..._poiseVariations,

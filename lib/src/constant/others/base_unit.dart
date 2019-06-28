@@ -45,7 +45,7 @@ import '../../enum/volume_per_area_unit.dart';
 import '../../enum/volume_unit.dart';
 import '../../enum/water_hardness_unit.dart';
 
-// The base unit of each [ConversionType].
+/// The base unit of each `ConversionType`.
 final Map<Converter, dynamic> baseUnit = {
   Converter.acceleration: AccelerationUnit.metrePerSecondSquared,
   Converter.area: AreaUnit.squareMetre,

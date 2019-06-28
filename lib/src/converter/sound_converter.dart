@@ -1,7 +1,10 @@
 import '../enum/sound_unit.dart';
 
-// Converter for sound.
+/// Converter for sound.
 class SoundConverter {
+  /// Returns the result after converting the `value` from type `from` to type `to`.
+  ///
+  /// If `from` and `to` are the same, returns the `value` itself.
   double convert(double value, SoundUnit from, SoundUnit to) {
     value = _convertToDecibel(from, value);
     value = _convertFromDecibel(to, value);

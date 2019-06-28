@@ -1,11 +1,12 @@
 import '../../enum/symbol_part.dart';
 import 'unicode_constant.dart';
 
-// Convert the [charCode] to String and append [postfix] to it, and returns the result
+/// Convert the `charCode` to `String`.
 String stringFromUnicode(String charCode) {
   return String.fromCharCodes(Runes(charCode));
 }
 
+/// Symbols for units
 final Map<SymbolPart, String> symbol = {
   SymbolPart.ab: 'ab',
   SymbolPart.acre: 'ac',

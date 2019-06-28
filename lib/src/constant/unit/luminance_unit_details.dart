@@ -106,7 +106,7 @@ final _otherUnits = {
   ),
 };
 
-// luminance unit details
+/// Luminance unit details
 final luminanceUnitDetails = {
   ..._candelaPerSquareMetreVariations,
   ..._otherUnits,

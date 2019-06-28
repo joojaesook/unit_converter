@@ -1,4 +1,4 @@
-// UTF-32 code point
+/// UTF-32 code point
 const unicodeAngstrom = '\u00c5';
 const unicodeMho = '\u2127';
 const unicodeMicro = '\u03bc';

@@ -226,7 +226,7 @@ final _otherUnits = {
   ),
 };
 
-// mass fluw unit details
+/// Mass fluw unit details
 final massFlowUnitDetails = {
   ..._gramPerDayVariations,
   ..._gramPerHourVariations,

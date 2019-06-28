@@ -35,7 +35,7 @@ final _otherUnits = {
   ),
 };
 
-// inductance unit details
+/// Inductance unit details
 final inductanceUnitDetails = {
   ..._henryVariations,
   ..._otherUnits,

@@ -436,7 +436,7 @@ final _otherUnits = {
   ),
 };
 
-// acceleration unit details
+/// Acceleration unit details
 final accelerationUnitDetails = {
   ..._galVariations,
   ..._metrePerHourPerSecondVariations,

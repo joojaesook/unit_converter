@@ -104,7 +104,7 @@ final _otherUnits = {
   ),
 };
 
-// force unit details
+/// Force unit details
 final forceUnitDetails = {
   ..._gramForceVariations,
   ..._newtonVariations,

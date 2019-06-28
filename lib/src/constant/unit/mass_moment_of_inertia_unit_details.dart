@@ -4,7 +4,6 @@ import '../../enum/mass_moment_of_inertia_unit.dart';
 import '../../enum/mass_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
-import '../../model/unit.dart';
 import '../others/misc.dart';
 
 final _gramToKiloGram = conversionFactor(Converter.mass, MassUnit.gram);
@@ -14,21 +13,6 @@ final _squareFootToSquareMetre =
     conversionFactor(Converter.area, AreaUnit.squareFoot);
 final _squareInchToSquareMetre =
     conversionFactor(Converter.area, AreaUnit.squareInch);
-
-// __gram square __metre variations
-final _gramSquareMetreVariations = <Unit<MassMomentOfInertiaUnit>>{};
-
-void create(Unit<MassMomentOfInertiaUnit> unit) {
-  var units = createUnitVariation(
-    MassMomentOfInertiaUnit.values,
-    '$variationUnitNameSeperator${stringFromEnum(unit.type)}',
-    conversionFactor(conversionTypeFromString(unit.type.toString()), unit.type),
-    decimalPrefixes,
-    namePostfix: unit.name,
-    symbolPostfix: unit.symbol,
-  );
-  _gramSquareMetreVariations.addAll(units);
-}
 
 // gram square __metre variations
 final _intermediateGramSquareMetreVariations = createUnitVariation(
@@ -54,7 +38,13 @@ final _intermediateGramSquareMetreVariations = createUnitVariation(
   americanNamePrefix: 'gram square ',
   americanNamePostfix: 'meter',
   powerOfVariationConversionFactor: 2,
-).forEach(create);
+);
+
+// __gram square __metre variations
+final _gramSquareMetreVariations = {
+  for (var unit in _intermediateGramSquareMetreVariations)
+    ...create(unit, MassMomentOfInertiaUnit.values)
+};
 
 // other units
 final _otherUnits = {
@@ -112,7 +102,7 @@ final _otherUnits = {
   ),
 };
 
-// mass moment of inertia unit details
+/// Mass moment of inertia unit details
 final massMomentOfInertiaUnitDetails = {
   ..._gramSquareMetreVariations,
   ..._otherUnits,

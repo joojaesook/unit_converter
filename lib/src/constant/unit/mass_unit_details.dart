@@ -211,7 +211,7 @@ final _otherUnits = {
   ),
 };
 
-// mass unit details
+/// Mass unit details
 final massUnitDetails = {
   ..._gramVariations,
   ..._tonneVariations,

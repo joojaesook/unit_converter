@@ -9,18 +9,21 @@ import '../model/unit.dart';
 
 /// The base converter class. Implements the basic functionality for converter.
 abstract class BaseConverter<T> {
-  // The type of the converter
+  /// The type of the converter.
   final Converter type;
+
+  /// Base unit of the converter.
   final T _baseUnit;
 
+  /// BaseConverter constructor
   BaseConverter(this.type, this._baseUnit)
       : assert(type != null),
         assert(_baseUnit != null);
 
-  /// Total number of units of this `type`.
+  /// Total number of units of this converter.
   get unitCount => _availableUnits().length;
 
-  /// The base unit of this `type`.
+  /// The base unit of this converter.
   get baseUnit => unit(_baseUnit);
 
   /// Returns the result after converting the `value` from type `from` to type `to`.

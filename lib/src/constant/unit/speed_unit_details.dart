@@ -331,7 +331,7 @@ final _otherUnits = {
   ),
 };
 
-// speed unit details
+/// Speed unit details
 final speedUnitDetails = {
   ..._metrePerDayVariations,
   ..._metrePerHourVariations,

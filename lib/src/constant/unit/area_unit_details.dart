@@ -223,7 +223,7 @@ final _otherUnits = {
   ),
 };
 
-// area unit details
+/// Area unit details
 final areaUnitDetails = {
   ..._barnVariations,
   ..._squareMetreVariations,

@@ -1,18 +1,24 @@
 /// Class that defines an unit
 class Unit<T> {
-  // Name of the unit
+  /// Name of the unit
   final String name;
-  // Name of the unit in American spelling
+
+  /// Name of the unit in American spelling
   String americanName;
-  // Symbol of the unit
+
+  /// Symbol of the unit
   final String symbol;
-  // Type of the unit
+
+  /// Type of the unit
   final T type;
-  // Whether this unit is a prefixed variation of another unit
+
+  /// Whether this unit is a prefixed variation of another unit
   final bool variation;
-  // The unit system to which this unit belong to
+
+  /// The unit system to which this unit belong to
   String system;
 
+  /// Unit constructor
   Unit(
     this.name,
     this.symbol,

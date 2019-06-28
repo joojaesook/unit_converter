@@ -131,7 +131,7 @@ final _otherUnits = {
   ),
 };
 
-// frequency unit details
+/// Frequency unit details
 final frequencyUnitDetails = {
   ..._hertzVariations,
   ..._otherUnits,
