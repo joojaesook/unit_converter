@@ -6,7 +6,7 @@ A library to convert units.
 
 ### Show some :heart: and star the repo to support the project
 
-[![GitHub stars](https://img.shields.io/github/stars/arabbani/unit_converter.svg?style=social)](https://github.com/arabbani/unit_converter/stargazers)[![GitHub forks](https://img.shields.io/github/forks/arabbani/unit_converter.svg)](https://github.com/arabbani/unit_converter/fork)[![GitHub watchers](https://img.shields.io/github/watchers/arabbani/unit_converter.svg?style=social)](https://github.com/arabbani/unit_converter)
+[![GitHub stars](https://img.shields.io/github/stars/arabbani/unit_converter.svg?style=social)](https://github.com/arabbani/unit_converter/stargazers)[![GitHub forks](https://img.shields.io/github/forks/arabbani/unit_converter.svg?style=social)](https://github.com/arabbani/unit_converter/fork)[![GitHub watchers](https://img.shields.io/github/watchers/arabbani/unit_converter.svg?style=social)](https://github.com/arabbani/unit_converter)
 
 ## Installation
 
