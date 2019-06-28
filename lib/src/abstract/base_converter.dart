@@ -10,14 +10,14 @@ import '../model/unit.dart';
 /// The base converter class. Implements the basic functionality for converter.
 abstract class BaseConverter<T> {
   /// The type of the converter.
-  final Converter type;
+  final Converter _type;
 
   /// Base unit of the converter.
   final T _baseUnit;
 
   /// BaseConverter constructor
-  BaseConverter(this.type, this._baseUnit)
-      : assert(type != null),
+  BaseConverter(this._type, this._baseUnit)
+      : assert(_type != null),
         assert(_baseUnit != null);
 
   /// Total number of units of this converter.
@@ -31,7 +31,7 @@ abstract class BaseConverter<T> {
   /// If `from` and `to` are the same, returns the `value` itself.
   double convert({double value, T from, T to}) {
     if (from != to) {
-      switch (type) {
+      switch (_type) {
         case Converter.temperature:
           return TemperatureConverter().convert(
             value,
@@ -45,8 +45,8 @@ abstract class BaseConverter<T> {
             to as SoundUnit,
           );
         default:
-          final double fromOffset = conversionFactor(type, from);
-          final double toOffset = conversionFactor(type, to);
+          final double fromOffset = conversionFactor(_type, from);
+          final double toOffset = conversionFactor(_type, to);
           value *= fromOffset;
           value /= toOffset;
           return value;
@@ -87,6 +87,6 @@ abstract class BaseConverter<T> {
   }
 
   Set<Unit<T>> _availableUnits() {
-    return availableUnit[type];
+    return availableUnit[_type];
   }
 }

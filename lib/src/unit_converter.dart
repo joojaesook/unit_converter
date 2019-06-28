@@ -52,5 +52,8 @@ export 'model/unit.dart';
 
 /// The unit converter class. Extends `BaseConverter`.
 class UnitConverter extends BaseConverter {
+  /// UnitConverter constructor.
+  ///
+  /// `type` is the Converter Type.
   UnitConverter(Converter type) : super(type, baseUnit[type]);
 }
