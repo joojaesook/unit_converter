@@ -1,6 +1,6 @@
 name: unit_converter
 description: A library to easily convert between units of different system. 
-version: 1.0.0
+version: 1.0.0+1
 homepage: https://github.com/arabbani/unit_converter
 author: Arif Rabbani <arif.93rabbani@gmail.com>
 
