@@ -17,6 +17,7 @@ class SoundConverter {
       case SoundUnit.neper:
         return 8.68588963807 * value;
     }
+    return value;
   }
 
   double _convertFromDecibel(SoundUnit to, double value) {
@@ -28,5 +29,6 @@ class SoundConverter {
       case SoundUnit.neper:
         return 0.1151292546496365 * value;
     }
+    return value;
   }
 }

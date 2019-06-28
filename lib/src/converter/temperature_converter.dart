@@ -27,6 +27,7 @@ class TemperatureConverter {
       case TemperatureUnit.degreeRomer:
         return (value - 7.5) * 40 / 21 + 273.15;
     }
+    return value;
   }
 
   double _convertFromKelvin(TemperatureUnit to, double value) {
@@ -48,6 +49,7 @@ class TemperatureConverter {
       case TemperatureUnit.degreeRomer:
         return (value - 273.15) * 21 / 40 + 7.5;
     }
+    return value;
   }
 
   double _celsiusToKelvin(double value) {
