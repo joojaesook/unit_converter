@@ -1,8 +1,12 @@
+# unit_converter
+
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/arabbani/unit_converter.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Farabbani%2Funit_converter)
+
 A library to convert units.
 
-<!-- Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE). -->
+### Show some :heart: and star the repo to support the project
 
+[![GitHub stars](https://img.shields.io/github/stars/arabbani/unit_converter.svg?style=social)](https://github.com/arabbani/unit_converter/stargazers)[![GitHub forks](https://img.shields.io/github/forks/arabbani/unit_converter.svg?style=social)](https://github.com/arabbani/unit_converter/network)[![GitHub watchers](https://img.shields.io/github/watchers/arabbani/unit_converter.svg?style=social)](https://github.com/arabbani/unit_converter/network)
 
 ## Installation
 
