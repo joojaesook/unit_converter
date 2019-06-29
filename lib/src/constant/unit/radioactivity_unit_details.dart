@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __becquerel variations
+/// __becquerel variations
 final _becquerelVariations = createUnitVariation(
   RadioactivityUnit.values,
   '${variationUnitNameSeperator}becquerel',
@@ -13,13 +13,13 @@ final _becquerelVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'becquerel',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.becquerel,
     ],
   ),
 );
 
-// __curie variations
+/// __curie variations
 final _curieVariations = createUnitVariation(
   RadioactivityUnit.values,
   '${variationUnitNameSeperator}curie',
@@ -27,13 +27,13 @@ final _curieVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'curie',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.curie,
     ],
   ),
 );
 
-// __rutherford variations
+/// __rutherford variations
 final _rutherfordVariations = createUnitVariation(
   RadioactivityUnit.values,
   '${variationUnitNameSeperator}rutherford',
@@ -41,7 +41,7 @@ final _rutherfordVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'rutherford',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.rutherford,
     ],
   ),

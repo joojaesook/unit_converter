@@ -8,7 +8,7 @@ import '../others/misc.dart';
 const _gramForceToNewton = 0.00980665;
 const _poundForceToNewton = 4.4482216152605;
 
-// __gram force variations
+/// __gram force variations
 final _gramForceVariations = createUnitVariation(
   ForceUnit.values,
   '${variationUnitNameSeperator}gramForce',
@@ -16,14 +16,14 @@ final _gramForceVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'gram-force',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.force,
     ],
   ),
 );
 
-// __newton variations
+/// __newton variations
 final _newtonVariations = createUnitVariation(
   ForceUnit.values,
   '${variationUnitNameSeperator}newton',
@@ -31,13 +31,13 @@ final _newtonVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'newton',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.newton,
     ],
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'dyne',

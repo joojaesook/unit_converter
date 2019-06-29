@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// gram per __gram variations
+/// gram per __gram variations
 final _intermediateGramPerGramVariations = createUnitVariation(
   MassFractionUnit.values,
   'gramPer${variationUnitNameSeperator}Gram',
@@ -14,26 +14,26 @@ final _intermediateGramPerGramVariations = createUnitVariation(
   namePrefix: 'gram per ',
   namePostfix: 'gram',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
     ],
   ),
   powerOfVariationConversionFactor: -1,
 );
 
-// __gram per __gram variations
+/// __gram per __gram variations
 final _gramPerGramVariations = {
   for (var unit in _intermediateGramPerGramVariations)
     ...create(unit, MassFractionUnit.values)
 };
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'part per billion',

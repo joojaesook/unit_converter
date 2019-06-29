@@ -7,21 +7,21 @@ import '../enum/temperature_unit.dart';
 import '../misc/global.dart';
 import '../model/unit.dart';
 
-/// The base converter class. Implements the basic functionality for converter.
-abstract class BaseConverter<T> {
+/// The unit converter class. Implements the basic functionality for converter.
+class UnitConverter<T> {
   /// The type of the converter.
   final Converter _type;
 
   /// Base unit of the converter.
   final T _baseUnit;
 
-  /// BaseConverter constructor
-  BaseConverter(this._type, this._baseUnit)
+  /// UnitConverter constructor
+  UnitConverter(this._type, this._baseUnit)
       : assert(_type != null),
         assert(_baseUnit != null);
 
   /// Total number of units of this converter.
-  get unitCount => _availableUnits().length;
+  get unitCount => _availableUnit().length;
 
   /// The base unit of this converter.
   get baseUnit => unit(_baseUnit);
@@ -57,7 +57,7 @@ abstract class BaseConverter<T> {
 
   /// The information of the unit type `type`.
   Unit<T> unit(T type) {
-    return _availableUnits().firstWhere((unit) => unit.type == type);
+    return _availableUnit().firstWhere((unit) => unit.type == type);
   }
 
   /// Returns all the units filtered by `include` and `exclude`.
@@ -68,7 +68,7 @@ abstract class BaseConverter<T> {
   /// If you want to filter the prefixed variation units, pass `withoutPrefixedVariation = true`
   Set<Unit<T>> units(
       {Set<T> include, Set<T> exclude, withoutVariation = false}) {
-    var units = _availableUnits();
+    var units = _availableUnit();
     if (withoutVariation) {
       units = units.where((unit) => unit.variation == false);
     }
@@ -86,7 +86,8 @@ abstract class BaseConverter<T> {
     return units;
   }
 
-  Set<Unit<T>> _availableUnits() {
+  /// Get all the units of `_type`.
+  Set<Unit<T>> _availableUnit() {
     return availableUnit[_type];
   }
 }

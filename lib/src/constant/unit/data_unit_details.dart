@@ -4,7 +4,7 @@ import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __bit variations
+/// __bit variations
 final _bitVariations = createUnitVariation(
   DataUnit.values,
   '${variationUnitNameSeperator}bit',
@@ -12,7 +12,7 @@ final _bitVariations = createUnitVariation(
   binaryPrefixes,
   namePostfix: 'bit',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.bit,
     ],
   ),
@@ -20,7 +20,7 @@ final _bitVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// __byte variations
+/// __byte variations
 final _byteVariations = createUnitVariation(
   DataUnit.values,
   '${variationUnitNameSeperator}byte',
@@ -28,7 +28,7 @@ final _byteVariations = createUnitVariation(
   binaryPrefixes,
   namePostfix: 'byte',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.byte,
     ],
   ),

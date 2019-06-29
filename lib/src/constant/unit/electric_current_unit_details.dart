@@ -3,7 +3,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __ampere variations
+/// __ampere variations
 final _ampereVariations = createUnitVariation(
   ElectricCurrentUnit.values,
   '${variationUnitNameSeperator}ampere',
@@ -17,7 +17,7 @@ final _ampereVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'abampere',

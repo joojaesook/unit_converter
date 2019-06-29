@@ -27,7 +27,7 @@ final _hourToSecond = conversionFactor(Converter.time, TimeUnit.hour);
 final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
 final _yearToSecond = conversionFactor(Converter.time, TimeUnit.year);
 
-// __litre per day variations
+/// __litre per day variations
 final _litrePerDayVariations = createUnitVariation(
   VolumeFlowUnit.values,
   '${variationUnitNameSeperator}litrePerDay',
@@ -35,7 +35,7 @@ final _litrePerDayVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'litre per day',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.litre,
       SymbolPart.forwardSlash,
       SymbolPart.day,
@@ -45,7 +45,7 @@ final _litrePerDayVariations = createUnitVariation(
   americanNamePostfix: 'liter per day',
 );
 
-// __litre per hour variations
+/// __litre per hour variations
 final _litrePerHourVariations = createUnitVariation(
   VolumeFlowUnit.values,
   '${variationUnitNameSeperator}litrePerHour',
@@ -53,7 +53,7 @@ final _litrePerHourVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'litre per hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.litre,
       SymbolPart.forwardSlash,
       SymbolPart.lH,
@@ -63,7 +63,7 @@ final _litrePerHourVariations = createUnitVariation(
   americanNamePostfix: 'liter per hour',
 );
 
-// __litre per minute variations
+/// __litre per minute variations
 final _litrePerMinuteVariations = createUnitVariation(
   VolumeFlowUnit.values,
   '${variationUnitNameSeperator}litrePerMinute',
@@ -71,7 +71,7 @@ final _litrePerMinuteVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'litre per minute',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.litre,
       SymbolPart.forwardSlash,
       SymbolPart.minute,
@@ -81,7 +81,7 @@ final _litrePerMinuteVariations = createUnitVariation(
   americanNamePostfix: 'liter per minute',
 );
 
-// __litre per second variations
+/// __litre per second variations
 final _litrePerSecondVariations = createUnitVariation(
   VolumeFlowUnit.values,
   '${variationUnitNameSeperator}litrePerSecond',
@@ -89,7 +89,7 @@ final _litrePerSecondVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'litre per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.litre,
       SymbolPart.forwardSlash,
       SymbolPart.second,
@@ -99,7 +99,7 @@ final _litrePerSecondVariations = createUnitVariation(
   americanNamePostfix: 'liter per second',
 );
 
-// cubic __metre per day variations
+/// cubic __metre per day variations
 final _cubicMetrePerDayVariations = createUnitVariation(
   VolumeFlowUnit.values,
   'cubic${variationUnitNameSeperator}MetrePerDay',
@@ -108,7 +108,7 @@ final _cubicMetrePerDayVariations = createUnitVariation(
   namePrefix: 'cubic ',
   namePostfix: 'metre per day',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptThree,
       SymbolPart.forwardSlash,
@@ -121,7 +121,7 @@ final _cubicMetrePerDayVariations = createUnitVariation(
   powerOfVariationConversionFactor: 3,
 );
 
-// cubic __metre per hour variations
+/// cubic __metre per hour variations
 final _cubicMetrePerHourVariations = createUnitVariation(
   VolumeFlowUnit.values,
   'cubic${variationUnitNameSeperator}MetrePerHour',
@@ -130,7 +130,7 @@ final _cubicMetrePerHourVariations = createUnitVariation(
   namePrefix: 'cubic ',
   namePostfix: 'metre per hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptThree,
       SymbolPart.forwardSlash,
@@ -143,7 +143,7 @@ final _cubicMetrePerHourVariations = createUnitVariation(
   powerOfVariationConversionFactor: 3,
 );
 
-// cubic __metre per minute variations
+/// cubic __metre per minute variations
 final _cubicMetrePerMinuteVariations = createUnitVariation(
   VolumeFlowUnit.values,
   'cubic${variationUnitNameSeperator}MetrePerMinute',
@@ -152,7 +152,7 @@ final _cubicMetrePerMinuteVariations = createUnitVariation(
   namePrefix: 'cubic ',
   namePostfix: 'metre per minute',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptThree,
       SymbolPart.forwardSlash,
@@ -165,7 +165,7 @@ final _cubicMetrePerMinuteVariations = createUnitVariation(
   powerOfVariationConversionFactor: 3,
 );
 
-// cubic __metre per second variations
+/// cubic __metre per second variations
 final _cubicMetrePerSecondVariations = createUnitVariation(
   VolumeFlowUnit.values,
   'cubic${variationUnitNameSeperator}MetrePerSecond',
@@ -174,7 +174,7 @@ final _cubicMetrePerSecondVariations = createUnitVariation(
   namePrefix: 'cubic ',
   namePostfix: 'metre per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptThree,
       SymbolPart.forwardSlash,
@@ -187,7 +187,7 @@ final _cubicMetrePerSecondVariations = createUnitVariation(
   powerOfVariationConversionFactor: 3,
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'acre-foot per day',
@@ -201,7 +201,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.acreFootPerDay,
-    conversionFactor: (_acreToSquareMetre * _footToMetre) / _dayToSecond,
+    conversionFactor: _acreToSquareMetre * _footToMetre / _dayToSecond,
   ),
   createUnit(
     'acre-foot per year',
@@ -215,7 +215,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.acreFootPerYear,
-    conversionFactor: (_acreToSquareMetre * _footToMetre) / _yearToSecond,
+    conversionFactor: _acreToSquareMetre * _footToMetre / _yearToSecond,
     system: unitSystem[UnitSystem.gregorian],
   ),
   createUnit(
@@ -437,8 +437,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.millionGallonPerDay_imperial,
-    conversionFactor:
-        (_gallonToCubicMetre_imperial * pow(10, 6)) / _dayToSecond,
+    conversionFactor: _gallonToCubicMetre_imperial * pow(10, 6) / _dayToSecond,
     system: unitSystem[UnitSystem.imperial],
   ),
   createUnit(
@@ -452,8 +451,7 @@ final _otherUnits = {
       ],
     ),
     VolumeFlowUnit.millionGallonPerDay_usLiquid,
-    conversionFactor:
-        (_gallonToCubicMetre_usLiquid * pow(10, 6)) / _dayToSecond,
+    conversionFactor: _gallonToCubicMetre_usLiquid * pow(10, 6) / _dayToSecond,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(

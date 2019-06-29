@@ -23,13 +23,13 @@ final _intermediateGramSquareMetreVariations = createUnitVariation(
   namePrefix: 'gram square ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.space,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptTwo,
     ],
@@ -40,13 +40,13 @@ final _intermediateGramSquareMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: 2,
 );
 
-// __gram square __metre variations
+/// __gram square __metre variations
 final _gramSquareMetreVariations = {
   for (var unit in _intermediateGramSquareMetreVariations)
     ...create(unit, MassMomentOfInertiaUnit.values)
 };
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'pound square foot',

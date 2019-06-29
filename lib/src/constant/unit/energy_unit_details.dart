@@ -12,7 +12,7 @@ const _britishThermalUnitToJoule_intlSteamTable = 1055.05585;
 const _thermToJoule_ec = 100000 * _britishThermalUnitToJoule_intlSteamTable;
 final _decaThermToJoule = 10 * _thermToJoule_ec;
 
-// __calorie variations
+/// __calorie variations
 final _calorieVariations = createUnitVariation(
   EnergyUnit.values,
   '${variationUnitNameSeperator}calorie',
@@ -20,13 +20,13 @@ final _calorieVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'calorie',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.calorie,
     ],
   ),
 );
 
-// __calorie 15 degree C variations
+/// __calorie 15 degree C variations
 final _calorieVariations_15DegreeC = createUnitVariation(
   EnergyUnit.values,
   '${variationUnitNameSeperator}calorie_15DegreeC',
@@ -34,14 +34,14 @@ final _calorieVariations_15DegreeC = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'calorie',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.calorie,
     ],
   ),
   system: UnitSystem.degree15C,
 );
 
-// __calorie International Steam Table variations
+/// __calorie International Steam Table variations
 final _calorieVariations_intlSteamTable = createUnitVariation(
   EnergyUnit.values,
   '${variationUnitNameSeperator}calorie_intlSteamTable',
@@ -49,14 +49,14 @@ final _calorieVariations_intlSteamTable = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'calorie',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.calorie,
     ],
   ),
   system: UnitSystem.intlSteamTable,
 );
 
-// __electron volt variations
+/// __electron volt variations
 final _electronVoltVariations = createUnitVariation(
   EnergyUnit.values,
   '${variationUnitNameSeperator}electronVolt',
@@ -64,13 +64,13 @@ final _electronVoltVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'electron volt',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.electronVolt,
     ],
   ),
 );
 
-// __joule variations
+/// __joule variations
 final _jouleVariations = createUnitVariation(
   EnergyUnit.values,
   '${variationUnitNameSeperator}joule',
@@ -78,13 +78,13 @@ final _jouleVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'joule',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.joule,
     ],
   ),
 );
 
-// __tonne variations
+/// __tonne variations
 final _tonneVariations = createUnitVariation(
   EnergyUnit.values,
   '${variationUnitNameSeperator}tonne',
@@ -92,7 +92,7 @@ final _tonneVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'tonne',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.tonne,
     ],
   ),
@@ -101,7 +101,7 @@ final _tonneVariations = createUnitVariation(
   americanNamePostfix: 'ton',
 );
 
-// __watt hour variations
+/// __watt hour variations
 final _wattHourVariations = createUnitVariation(
   EnergyUnit.values,
   '${variationUnitNameSeperator}wattHour',
@@ -109,7 +109,7 @@ final _wattHourVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'watt hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.watt,
       SymbolPart.space,
       SymbolPart.lH,
@@ -117,7 +117,7 @@ final _wattHourVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'British thermal unit',

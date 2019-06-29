@@ -7,7 +7,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __lux variations
+/// __lux variations
 final _luxVariations = createUnitVariation(
   IlluminanceUnit.values,
   '${variationUnitNameSeperator}lux',
@@ -15,13 +15,13 @@ final _luxVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'lux',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.lux,
     ],
   ),
 );
 
-// __phot variations
+/// __phot variations
 final _photVariations = createUnitVariation(
   IlluminanceUnit.values,
   '${variationUnitNameSeperator}phot',
@@ -29,13 +29,13 @@ final _photVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'phot',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.phot,
     ],
   ),
 );
 
-// lumen per square __metre variations
+/// lumen per square __metre variations
 final _lumenPerSquareMetreVariations = createUnitVariation(
   IlluminanceUnit.values,
   'lumenPerSquare${variationUnitNameSeperator}Metre',
@@ -44,13 +44,13 @@ final _lumenPerSquareMetreVariations = createUnitVariation(
   namePrefix: 'lumen per square ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.lumen,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptTwo,
     ],
@@ -61,7 +61,7 @@ final _lumenPerSquareMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -2,
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'foot-candle',
@@ -85,13 +85,8 @@ final _otherUnits = {
       ],
     ),
     IlluminanceUnit.lumenPerSquareFoot,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.foot,
-      ),
-      -2,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.foot), -2),
   ),
   createUnit(
     'lumen per square inch',
@@ -104,13 +99,8 @@ final _otherUnits = {
       ],
     ),
     IlluminanceUnit.lumenPerSquareInch,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.inch,
-      ),
-      -2,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.inch), -2),
   ),
   createUnit(
     'nox',

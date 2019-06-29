@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __weber variations
+/// __weber variations
 final _weberVariations = createUnitVariation(
   MagneticFluxUnit.values,
   '${variationUnitNameSeperator}weber',
@@ -13,13 +13,13 @@ final _weberVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'weber',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.weber,
     ],
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'maxwell',

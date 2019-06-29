@@ -7,7 +7,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// candela per square __metre variations
+/// candela per square __metre variations
 final _candelaPerSquareMetreVariations = createUnitVariation(
   LuminanceUnit.values,
   'candelaPerSquare${variationUnitNameSeperator}Metre',
@@ -16,13 +16,13 @@ final _candelaPerSquareMetreVariations = createUnitVariation(
   namePrefix: 'candela per square ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.candela,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptTwo,
     ],
@@ -33,7 +33,7 @@ final _candelaPerSquareMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -2,
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'candela per square foot',
@@ -46,13 +46,8 @@ final _otherUnits = {
       ],
     ),
     LuminanceUnit.candelaPerSquareFoot,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.foot,
-      ),
-      -2,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.foot), -2),
   ),
   createUnit(
     'candela per square inch',
@@ -65,13 +60,8 @@ final _otherUnits = {
       ],
     ),
     LuminanceUnit.candelaPerSquareInch,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.inch,
-      ),
-      -2,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.inch), -2),
   ),
   createUnit(
     'foot-lambert',

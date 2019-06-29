@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __volt variations
+/// __volt variations
 final _voltVariations = createUnitVariation(
   ElectricPotentialUnit.values,
   '${variationUnitNameSeperator}volt',
@@ -19,7 +19,7 @@ final _voltVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'abvolt',

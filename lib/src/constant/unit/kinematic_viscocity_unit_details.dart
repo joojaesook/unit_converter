@@ -5,20 +5,11 @@ import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-final _dayToSecond = conversionFactor(
-  Converter.time,
-  TimeUnit.day,
-);
-final _hourToSecond = conversionFactor(
-  Converter.time,
-  TimeUnit.hour,
-);
-final _minuteToSecond = conversionFactor(
-  Converter.time,
-  TimeUnit.minute,
-);
+final _dayToSecond = conversionFactor(Converter.time, TimeUnit.day);
+final _hourToSecond = conversionFactor(Converter.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
 
-// __stokes variations
+/// __stokes variations
 final _stokesVariations = createUnitVariation(
   KinematicViscocityUnit.values,
   '${variationUnitNameSeperator}stokes',
@@ -32,7 +23,7 @@ final _stokesVariations = createUnitVariation(
   ),
 );
 
-// square __metre per day variations
+/// square __metre per day variations
 final _squareMetrePerDayVariations = createUnitVariation(
   KinematicViscocityUnit.values,
   'square${variationUnitNameSeperator}MetrePerDay',
@@ -41,7 +32,7 @@ final _squareMetrePerDayVariations = createUnitVariation(
   namePrefix: 'square ',
   namePostfix: 'metre per day',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptTwo,
       SymbolPart.forwardSlash,
@@ -54,7 +45,7 @@ final _squareMetrePerDayVariations = createUnitVariation(
   powerOfVariationConversionFactor: 2,
 );
 
-// square __metre per hour variations
+/// square __metre per hour variations
 final _squareMetrePerHourVariations = createUnitVariation(
   KinematicViscocityUnit.values,
   'square${variationUnitNameSeperator}MetrePerHour',
@@ -63,7 +54,7 @@ final _squareMetrePerHourVariations = createUnitVariation(
   namePrefix: 'square ',
   namePostfix: 'metre per hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptTwo,
       SymbolPart.forwardSlash,
@@ -76,7 +67,7 @@ final _squareMetrePerHourVariations = createUnitVariation(
   powerOfVariationConversionFactor: 2,
 );
 
-// square __metre per minute variations
+/// square __metre per minute variations
 final _squareMetrePerMinuteVariations = createUnitVariation(
   KinematicViscocityUnit.values,
   'square${variationUnitNameSeperator}MetrePerMinute',
@@ -85,7 +76,7 @@ final _squareMetrePerMinuteVariations = createUnitVariation(
   namePrefix: 'square ',
   namePostfix: 'metre per minute',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptTwo,
       SymbolPart.forwardSlash,
@@ -98,7 +89,7 @@ final _squareMetrePerMinuteVariations = createUnitVariation(
   powerOfVariationConversionFactor: 2,
 );
 
-// square __metre per second variations
+/// square __metre per second variations
 final _squareMetrePerSecondVariations = createUnitVariation(
   KinematicViscocityUnit.values,
   'square${variationUnitNameSeperator}MetrePerSecond',
@@ -107,7 +98,7 @@ final _squareMetrePerSecondVariations = createUnitVariation(
   namePrefix: 'square ',
   namePostfix: 'metre per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptTwo,
       SymbolPart.forwardSlash,

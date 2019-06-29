@@ -1,5 +1,5 @@
-import 'abstract/base_converter.dart';
 import 'constant/others/base_unit.dart';
+import 'converter/unit_converter.dart';
 import 'enum/converter.dart';
 
 export 'enum/acceleration_unit.dart';
@@ -48,12 +48,8 @@ export 'enum/volume_flow_unit.dart';
 export 'enum/volume_per_area_unit.dart';
 export 'enum/volume_unit.dart';
 export 'enum/water_hardness_unit.dart';
-export 'model/unit.dart';
 
-/// The unit converter class. Extends `BaseConverter`.
-class UnitConverter extends BaseConverter {
-  /// UnitConverter constructor.
-  ///
-  /// `type` is the Converter Type.
-  UnitConverter(Converter type) : super(type, baseUnit[type]);
+/// Get an `UnitConverter` instance of type `type`.
+UnitConverter getConverter(Converter type) {
+  return UnitConverter(type, baseUnit[type]);
 }

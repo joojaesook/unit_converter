@@ -11,6 +11,7 @@ class TemperatureConverter {
     return value;
   }
 
+  /// Convert other unit to kelvin.
   double _convertToKelvin(TemperatureUnit from, double value) {
     switch (from) {
       case TemperatureUnit.kelvin:
@@ -33,6 +34,7 @@ class TemperatureConverter {
     return value;
   }
 
+  /// Convert kelvin to other units.
   double _convertFromKelvin(TemperatureUnit to, double value) {
     switch (to) {
       case TemperatureUnit.kelvin:
@@ -55,26 +57,32 @@ class TemperatureConverter {
     return value;
   }
 
+  /// Convert Celsius to Kelvin.
   double _celsiusToKelvin(double value) {
     return value + 273.15;
   }
 
+  /// Convert Fahrenheit to Celsius.
   double _fahrenheitToCelsius(double value) {
     return (value - 32) * 5 / 9;
   }
 
+  /// Convert Newton to Celsius.
   double _newtonToCelsius(double value) {
     return value / 0.33;
   }
 
+  /// Convert Kelvin to Celsius.
   double _celsiusFromKelvin(double value) {
     return value - 273.15;
   }
 
+  /// Convert Celsius to Fahrenheit.
   double _fahrenheitFromCelsius(double value) {
     return (value * 9 / 5) + 32;
   }
 
+  /// Convert Celsius to Newton.
   double _newtonFromCelsius(double value) {
     return value * 0.33;
   }

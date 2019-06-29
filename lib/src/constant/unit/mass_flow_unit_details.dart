@@ -14,7 +14,7 @@ final _dayToSecond = conversionFactor(Converter.time, TimeUnit.day);
 final _hourToSecond = conversionFactor(Converter.time, TimeUnit.hour);
 final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
 
-// __gram per day variations
+/// __gram per day variations
 final _gramPerDayVariations = createUnitVariation(
   MassFlowUnit.values,
   '${variationUnitNameSeperator}gramPerDay',
@@ -22,7 +22,7 @@ final _gramPerDayVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'gram per day',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.day,
@@ -30,7 +30,7 @@ final _gramPerDayVariations = createUnitVariation(
   ),
 );
 
-// __gram per hour variations
+/// __gram per hour variations
 final _gramPerHourVariations = createUnitVariation(
   MassFlowUnit.values,
   '${variationUnitNameSeperator}gramPerHour',
@@ -38,7 +38,7 @@ final _gramPerHourVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'gram per hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.lH,
@@ -46,7 +46,7 @@ final _gramPerHourVariations = createUnitVariation(
   ),
 );
 
-// __gram per minute variations
+/// __gram per minute variations
 final _gramPerMinuteVariations = createUnitVariation(
   MassFlowUnit.values,
   '${variationUnitNameSeperator}gramPerMinute',
@@ -54,7 +54,7 @@ final _gramPerMinuteVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'gram per minute',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.minute,
@@ -62,7 +62,7 @@ final _gramPerMinuteVariations = createUnitVariation(
   ),
 );
 
-// __gram per second variations
+/// __gram per second variations
 final _gramPerSecondVariations = createUnitVariation(
   MassFlowUnit.values,
   '${variationUnitNameSeperator}gramPerSecond',
@@ -70,7 +70,7 @@ final _gramPerSecondVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'gram per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.second,
@@ -78,7 +78,7 @@ final _gramPerSecondVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'grain per day',

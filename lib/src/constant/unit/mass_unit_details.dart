@@ -8,7 +8,7 @@ import '../others/unit_system.dart';
 const _poundToKiloGram = 0.45359237;
 const _grainToKiloGram = _poundToKiloGram / 7000;
 
-// __gram variations
+/// __gram variations
 final _gramVariations = createUnitVariation(
   MassUnit.values,
   '${variationUnitNameSeperator}gram',
@@ -16,13 +16,13 @@ final _gramVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'gram',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
     ],
   ),
 );
 
-// __tonne variations
+/// __tonne variations
 final _tonneVariations = createUnitVariation(
   MassUnit.values,
   '${variationUnitNameSeperator}tonne',
@@ -30,14 +30,14 @@ final _tonneVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'tonne',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.tonne,
     ],
   ),
   system: UnitSystem.metric,
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'carat',

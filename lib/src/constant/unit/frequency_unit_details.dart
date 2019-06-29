@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __hertz variations
+/// __hertz variations
 final _hertzVariations = createUnitVariation(
   FrequencyUnit.values,
   '${variationUnitNameSeperator}hertz',
@@ -19,7 +19,7 @@ final _hertzVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'degree per hour',

@@ -17,7 +17,7 @@ final _nauticalMileToMetre =
     conversionFactor(Converter.length, LengthUnit.nauticalMile);
 final _yardToMetre = conversionFactor(Converter.length, LengthUnit.yard);
 
-// __metre per day variations
+/// __metre per day variations
 final _metrePerDayVariations = createUnitVariation(
   SpeedUnit.values,
   '${variationUnitNameSeperator}metrePerDay',
@@ -25,7 +25,7 @@ final _metrePerDayVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre per day',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.forwardSlash,
       SymbolPart.day,
@@ -35,7 +35,7 @@ final _metrePerDayVariations = createUnitVariation(
   americanNamePostfix: 'meter per day',
 );
 
-// __metre per hour variations
+/// __metre per hour variations
 final _metrePerHourVariations = createUnitVariation(
   SpeedUnit.values,
   '${variationUnitNameSeperator}metrePerHour',
@@ -43,7 +43,7 @@ final _metrePerHourVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre per hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.forwardSlash,
       SymbolPart.lH,
@@ -53,7 +53,7 @@ final _metrePerHourVariations = createUnitVariation(
   americanNamePostfix: 'meter per hour',
 );
 
-// __metre per minute variations
+/// __metre per minute variations
 final _metrePerMinuteVariations = createUnitVariation(
   SpeedUnit.values,
   '${variationUnitNameSeperator}metrePerMinute',
@@ -61,7 +61,7 @@ final _metrePerMinuteVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre per minute',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.forwardSlash,
       SymbolPart.minute,
@@ -71,7 +71,7 @@ final _metrePerMinuteVariations = createUnitVariation(
   americanNamePostfix: 'meter per minute',
 );
 
-// __metre per second variations
+/// __metre per second variations
 final _metrePerSecondVariations = createUnitVariation(
   SpeedUnit.values,
   '${variationUnitNameSeperator}metrePerSecond',
@@ -79,7 +79,7 @@ final _metrePerSecondVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.forwardSlash,
       SymbolPart.second,
@@ -89,7 +89,7 @@ final _metrePerSecondVariations = createUnitVariation(
   americanNamePostfix: 'meter per second',
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'foot per day',

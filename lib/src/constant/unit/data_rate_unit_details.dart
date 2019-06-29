@@ -1,22 +1,16 @@
 import '../../enum/converter.dart';
+import '../../enum/data_rate_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/time_unit.dart';
 import '../../enum/unit_system.dart';
 import '../../misc/global.dart';
-import '../../unit_converter.dart';
 import '../others/misc.dart';
 
-final _hourToSecond = conversionFactor(
-  Converter.time,
-  TimeUnit.hour,
-);
-final _minuteToSecond = conversionFactor(
-  Converter.time,
-  TimeUnit.minute,
-);
+final _hourToSecond = conversionFactor(Converter.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
 const double _byteToBit = 8;
 
-// __bit per hour variations
+/// __bit per hour variations
 final _bitPerHourVariations = createUnitVariation(
   DataRateUnit.values,
   '${variationUnitNameSeperator}bitPerHour',
@@ -24,7 +18,7 @@ final _bitPerHourVariations = createUnitVariation(
   binaryPrefixes,
   namePostfix: 'bit per hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.bit,
       SymbolPart.forwardSlash,
       SymbolPart.lH,
@@ -34,7 +28,7 @@ final _bitPerHourVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// __bit per minute variations
+/// __bit per minute variations
 final _bitPerMinuteVariations = createUnitVariation(
   DataRateUnit.values,
   '${variationUnitNameSeperator}bitPerMinute',
@@ -42,7 +36,7 @@ final _bitPerMinuteVariations = createUnitVariation(
   binaryPrefixes,
   namePostfix: 'bit per minute',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.bit,
       SymbolPart.forwardSlash,
       SymbolPart.minute,
@@ -52,7 +46,7 @@ final _bitPerMinuteVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// __bit per second variations
+/// __bit per second variations
 final _bitPerSecondVariations = createUnitVariation(
   DataRateUnit.values,
   '${variationUnitNameSeperator}bitPerSecond',
@@ -60,7 +54,7 @@ final _bitPerSecondVariations = createUnitVariation(
   binaryPrefixes,
   namePostfix: 'bit per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.bit,
       SymbolPart.forwardSlash,
       SymbolPart.second,
@@ -70,7 +64,7 @@ final _bitPerSecondVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// __byte per hour variations
+/// __byte per hour variations
 final _bytePerHourVariations = createUnitVariation(
   DataRateUnit.values,
   '${variationUnitNameSeperator}bytePerHour',
@@ -78,7 +72,7 @@ final _bytePerHourVariations = createUnitVariation(
   binaryPrefixes,
   namePostfix: 'byte per hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.byte,
       SymbolPart.forwardSlash,
       SymbolPart.lH,
@@ -88,7 +82,7 @@ final _bytePerHourVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// __byte per minute variations
+/// __byte per minute variations
 final _bytePerMinuteVariations = createUnitVariation(
   DataRateUnit.values,
   '${variationUnitNameSeperator}bytePerMinute',
@@ -96,7 +90,7 @@ final _bytePerMinuteVariations = createUnitVariation(
   binaryPrefixes,
   namePostfix: 'byte per minute',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.byte,
       SymbolPart.forwardSlash,
       SymbolPart.minute,
@@ -106,7 +100,7 @@ final _bytePerMinuteVariations = createUnitVariation(
   appendVariationUnitTypeWithSystemName: true,
 );
 
-// __byte per second variations
+/// __byte per second variations
 final _bytePerSecondVariations = createUnitVariation(
   DataRateUnit.values,
   '${variationUnitNameSeperator}bytePerSecond',
@@ -114,7 +108,7 @@ final _bytePerSecondVariations = createUnitVariation(
   binaryPrefixes,
   namePostfix: 'byte per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.byte,
       SymbolPart.forwardSlash,
       SymbolPart.second,

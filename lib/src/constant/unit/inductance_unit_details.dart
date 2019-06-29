@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __henry variations
+/// __henry variations
 final _henryVariations = createUnitVariation(
   InductanceUnit.values,
   '${variationUnitNameSeperator}henry',
@@ -19,7 +19,7 @@ final _henryVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'abhenry',

@@ -3,7 +3,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __gauss variations
+/// __gauss variations
 final _gaussVariations = createUnitVariation(
   MagneticFluxDensityUnit.values,
   '${variationUnitNameSeperator}gauss',
@@ -11,13 +11,13 @@ final _gaussVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'gauss',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gauss,
     ],
   ),
 );
 
-// __tesla variations
+/// __tesla variations
 final _teslaVariations = createUnitVariation(
   MagneticFluxDensityUnit.values,
   '${variationUnitNameSeperator}tesla',
@@ -25,7 +25,7 @@ final _teslaVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'tesla',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.tesla,
     ],
   ),

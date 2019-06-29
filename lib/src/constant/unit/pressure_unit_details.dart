@@ -12,26 +12,37 @@ import '../others/unit_system.dart';
 const _metreOfMercuryToPascal_conventional = 133322.387415;
 const _metreOfWaterToPascal_degree4C = 9806.3754138;
 
-// gram force per square __metre variations
+final _ounceForceToNewton =
+    conversionFactor(Converter.force, ForceUnit.ounceForce);
+final _poundForceToNewton =
+    conversionFactor(Converter.force, ForceUnit.poundForce);
+final _poundalToNewton = conversionFactor(Converter.force, ForceUnit.poundal);
+final _squareInchToSquareMetre =
+    conversionFactor(Converter.area, AreaUnit.squareInch);
+final _squareFootToSquareMetre =
+    conversionFactor(Converter.area, AreaUnit.squareFoot);
+final _squareYardToSquareMetre =
+    conversionFactor(Converter.area, AreaUnit.squareYard);
+final _footToMetre = conversionFactor(Converter.length, LengthUnit.foot);
+final _inchToMetre = conversionFactor(Converter.length, LengthUnit.inch);
+
+/// gram force per square __metre variations
 final _intermediateGramForcePerSquareMetreVariations = createUnitVariation(
   PressureUnit.values,
   'gramForcePerSquare${variationUnitNameSeperator}Metre',
-  conversionFactor(
-    Converter.force,
-    ForceUnit.gramForce,
-  ),
+  conversionFactor(Converter.force, ForceUnit.gramForce),
   decimalPrefixes,
   namePrefix: 'gram-force per square ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.force,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
     ],
   ),
@@ -41,7 +52,7 @@ final _intermediateGramForcePerSquareMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -2,
 );
 
-// __bar variations
+/// __bar variations
 final _barVariations = createUnitVariation(
   PressureUnit.values,
   '${variationUnitNameSeperator}bar',
@@ -49,7 +60,7 @@ final _barVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'bar',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.lB,
       SymbolPart.lA,
       SymbolPart.lR,
@@ -57,7 +68,7 @@ final _barVariations = createUnitVariation(
   ),
 );
 
-// __metre of mercury conventional variations
+/// __metre of mercury conventional variations
 final _metreOfMercuryVariations_conventional = createUnitVariation(
   PressureUnit.values,
   '${variationUnitNameSeperator}metreOfMercury_conventional',
@@ -65,7 +76,7 @@ final _metreOfMercuryVariations_conventional = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre of mercury',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.lM,
       SymbolPart.clH,
       SymbolPart.lG,
@@ -76,7 +87,7 @@ final _metreOfMercuryVariations_conventional = createUnitVariation(
   system: UnitSystem.conventional,
 );
 
-// __metre of water degree 4C variations
+/// __metre of water degree 4C variations
 final _metreOfWaterVariations_degree4C = createUnitVariation(
   PressureUnit.values,
   '${variationUnitNameSeperator}metreOfWater_degree4C',
@@ -84,7 +95,7 @@ final _metreOfWaterVariations_degree4C = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre of water',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.lM,
       SymbolPart.clH,
       SymbolPart.subscriptTwo,
@@ -95,7 +106,7 @@ final _metreOfWaterVariations_degree4C = createUnitVariation(
   americanNamePostfix: 'meter of water',
 );
 
-// newton per square __metre variations
+/// newton per square __metre variations
 final _intermediateNewtonPerSquareMetreVariations = createUnitVariation(
   PressureUnit.values,
   'newtonPerSquare${variationUnitNameSeperator}Metre',
@@ -104,14 +115,14 @@ final _intermediateNewtonPerSquareMetreVariations = createUnitVariation(
   namePrefix: 'newton per square ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.newton,
       SymbolPart.force,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
     ],
   ),
@@ -121,7 +132,7 @@ final _intermediateNewtonPerSquareMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -2,
 );
 
-// __gram force per square __metre variations
+/// __gram force per square __metre variations
 final _gramForcePerSquareMetreAndNewtonPerSquareMetreVariations = {
   for (var unit in _intermediateGramForcePerSquareMetreVariations)
     ...create(unit, PressureUnit.values),
@@ -129,7 +140,7 @@ final _gramForcePerSquareMetreAndNewtonPerSquareMetreVariations = {
     ...create(unit, PressureUnit.values)
 };
 
-// __pascal variations
+/// __pascal variations
 final _pascalVariations = createUnitVariation(
   PressureUnit.values,
   '${variationUnitNameSeperator}pascal',
@@ -137,13 +148,13 @@ final _pascalVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'pascal',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.pascal,
     ],
   ),
 );
 
-// __torr variations
+/// __torr variations
 final _torrVariations = createUnitVariation(
   PressureUnit.values,
   '${variationUnitNameSeperator}torr',
@@ -151,7 +162,7 @@ final _torrVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'torr',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.clT,
       SymbolPart.lO,
       SymbolPart.lR,
@@ -160,7 +171,7 @@ final _torrVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'atmosphere',
@@ -208,11 +219,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.footOfMercury_conventional,
-    conversionFactor: _metreOfMercuryToPascal_conventional *
-        conversionFactor(
-          Converter.length,
-          LengthUnit.foot,
-        ),
+    conversionFactor: _metreOfMercuryToPascal_conventional * _footToMetre,
   ),
   createUnit(
     'foot of water',
@@ -225,11 +232,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.footOfWater_degree4C,
-    conversionFactor: _metreOfWaterToPascal_degree4C *
-        conversionFactor(
-          Converter.length,
-          LengthUnit.foot,
-        ),
+    conversionFactor: _metreOfWaterToPascal_degree4C * _footToMetre,
   ),
   createUnit(
     'inch of mercury',
@@ -241,11 +244,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.inchOfMercury_conventional,
-    conversionFactor: _metreOfMercuryToPascal_conventional *
-        conversionFactor(
-          Converter.length,
-          LengthUnit.inch,
-        ),
+    conversionFactor: _metreOfMercuryToPascal_conventional * _inchToMetre,
   ),
   createUnit(
     'inch of water',
@@ -258,11 +257,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.inchOfWater_degree4C,
-    conversionFactor: _metreOfWaterToPascal_degree4C *
-        conversionFactor(
-          Converter.length,
-          LengthUnit.inch,
-        ),
+    conversionFactor: _metreOfWaterToPascal_degree4C * _inchToMetre,
   ),
   createUnit(
     'kip per square inch',
@@ -275,7 +270,7 @@ final _otherUnits = {
     ),
     PressureUnit.kipPerSquareInch,
     conversionFactor: conversionFactor(Converter.force, ForceUnit.kip) /
-        conversionFactor(Converter.area, AreaUnit.squareInch),
+        _squareInchToSquareMetre,
   ),
   createUnit(
     'ounce force per square foot',
@@ -289,8 +284,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.ounceForcePerSquareFoot,
-    conversionFactor: conversionFactor(Converter.force, ForceUnit.ounceForce) /
-        conversionFactor(Converter.area, AreaUnit.squareFoot),
+    conversionFactor: _ounceForceToNewton / _squareFootToSquareMetre,
   ),
   createUnit(
     'ounce force per square inch',
@@ -304,8 +298,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.ounceForcePerSquareInch,
-    conversionFactor: conversionFactor(Converter.force, ForceUnit.ounceForce) /
-        conversionFactor(Converter.area, AreaUnit.squareInch),
+    conversionFactor: _ounceForceToNewton / _squareInchToSquareMetre,
   ),
   createUnit(
     'ounce force per square yard',
@@ -319,8 +312,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.ounceForcePerSquareYard,
-    conversionFactor: conversionFactor(Converter.force, ForceUnit.ounceForce) /
-        conversionFactor(Converter.area, AreaUnit.squareYard),
+    conversionFactor: _ounceForceToNewton / _squareYardToSquareMetre,
   ),
   createUnit(
     'pound force per acre',
@@ -333,8 +325,8 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerAcre,
-    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundForce) /
-        conversionFactor(Converter.area, AreaUnit.acre),
+    conversionFactor:
+        _poundForceToNewton / conversionFactor(Converter.area, AreaUnit.acre),
   ),
   createUnit(
     'pound force per square foot',
@@ -348,8 +340,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerSquareFoot,
-    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundForce) /
-        conversionFactor(Converter.area, AreaUnit.squareFoot),
+    conversionFactor: _poundForceToNewton / _squareFootToSquareMetre,
   ),
   createUnit(
     'pound force per square inch',
@@ -363,8 +354,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerSquareInch,
-    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundForce) /
-        conversionFactor(Converter.area, AreaUnit.squareInch),
+    conversionFactor: _poundForceToNewton / _squareInchToSquareMetre,
   ),
   createUnit(
     'pound force per square yard',
@@ -378,8 +368,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundForcePerSquareYard,
-    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundForce) /
-        conversionFactor(Converter.area, AreaUnit.squareYard),
+    conversionFactor: _poundForceToNewton / _squareYardToSquareMetre,
   ),
   createUnit(
     'poundal per square foot',
@@ -393,8 +382,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundalPerSquareFoot,
-    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundal) /
-        conversionFactor(Converter.area, AreaUnit.squareFoot),
+    conversionFactor: _poundalToNewton / _squareFootToSquareMetre,
   ),
   createUnit(
     'poundal per square inch',
@@ -408,8 +396,7 @@ final _otherUnits = {
       ],
     ),
     PressureUnit.poundalPerSquareInch,
-    conversionFactor: conversionFactor(Converter.force, ForceUnit.poundal) /
-        conversionFactor(Converter.area, AreaUnit.squareInch),
+    conversionFactor: _poundalToNewton / _squareInchToSquareMetre,
   ),
 };
 

@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __ohm variations
+/// __ohm variations
 final _ohmVariations = createUnitVariation(
   ElectricalResistanceUnit.values,
   '${variationUnitNameSeperator}ohm',
@@ -19,7 +19,7 @@ final _ohmVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'abohm',

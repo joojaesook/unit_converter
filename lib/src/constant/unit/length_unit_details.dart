@@ -12,7 +12,7 @@ const _footToMetre = 12 * _inchToMetre;
 const _mileToMetre = 5280 * _footToMetre;
 const double _nauticalMileToMetre = 1852;
 
-// __light year variations
+/// __light year variations
 final _lightYearVariations = createUnitVariation(
   LengthUnit.values,
   '${variationUnitNameSeperator}lightYear',
@@ -20,14 +20,14 @@ final _lightYearVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'light-year',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.lightYear,
     ],
   ),
   system: UnitSystem.julian,
 );
 
-// __metre variations
+/// __metre variations
 final _metreVariations = createUnitVariation(
   LengthUnit.values,
   '${variationUnitNameSeperator}metre',
@@ -35,7 +35,7 @@ final _metreVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
     ],
   ),
@@ -43,7 +43,7 @@ final _metreVariations = createUnitVariation(
   americanNamePostfix: 'meter',
 );
 
-// __parsec variations
+/// __parsec variations
 final _parsecVariations = createUnitVariation(
   LengthUnit.values,
   '${variationUnitNameSeperator}parsec',
@@ -51,13 +51,13 @@ final _parsecVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'parsec',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.parsec,
     ],
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'angstrom',

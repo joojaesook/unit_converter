@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __farad variations
+/// __farad variations
 final _faradVariations = createUnitVariation(
   CapacitanceUnit.values,
   '${variationUnitNameSeperator}farad',
@@ -19,7 +19,7 @@ final _faradVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'abfarad',

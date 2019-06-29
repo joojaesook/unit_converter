@@ -23,7 +23,7 @@ const _peck_usDry = 2 * _gallon_usDry;
 final _fluidOunce_us = _gallon_usLiquid / 128;
 const _fluidOunce_imperial = _gallon_imperial / 160;
 
-// __litre variations
+/// __litre variations
 final _litreVariations = createUnitVariation(
   VolumeUnit.values,
   '${variationUnitNameSeperator}litre',
@@ -31,7 +31,7 @@ final _litreVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'litre',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.litre,
     ],
   ),
@@ -39,7 +39,7 @@ final _litreVariations = createUnitVariation(
   americanNamePostfix: 'liter',
 );
 
-// cubic __metre variations
+/// cubic __metre variations
 final _cubicMetreVariations = createUnitVariation(
   VolumeUnit.values,
   'cubic${variationUnitNameSeperator}Metre',
@@ -48,7 +48,7 @@ final _cubicMetreVariations = createUnitVariation(
   namePrefix: 'cubic ',
   namePostfix: 'metre',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptThree,
     ],
@@ -59,7 +59,7 @@ final _cubicMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: 3,
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'acre-foot',
@@ -154,13 +154,8 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cubicMile,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.mile,
-      ),
-      3,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.mile), 3),
   ),
   createUnit(
     'cubic yard',
@@ -171,13 +166,8 @@ final _otherUnits = {
       ],
     ),
     VolumeUnit.cubicYard,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.yard,
-      ),
-      3,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.yard), 3),
   ),
   createUnit(
     'cup',

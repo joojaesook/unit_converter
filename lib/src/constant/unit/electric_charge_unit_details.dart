@@ -3,7 +3,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __coulomb variations
+/// __coulomb variations
 final _coulombVariations = createUnitVariation(
   ElectricChargeUnit.values,
   '${variationUnitNameSeperator}coulomb',
@@ -17,7 +17,7 @@ final _coulombVariations = createUnitVariation(
   ),
 );
 
-// __ampere-hour variations
+/// __ampere-hour variations
 final _ampereHourVariations = createUnitVariation(
   ElectricChargeUnit.values,
   '${variationUnitNameSeperator}ampereHour',
@@ -32,7 +32,7 @@ final _ampereHourVariations = createUnitVariation(
   ),
 );
 
-// __ampere-second variations
+/// __ampere-second variations
 final _ampereSecondVariations = createUnitVariation(
   ElectricChargeUnit.values,
   '${variationUnitNameSeperator}ampereSecond',
@@ -47,7 +47,7 @@ final _ampereSecondVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'abcoulomb',

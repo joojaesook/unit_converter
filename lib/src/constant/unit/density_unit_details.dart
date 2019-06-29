@@ -2,10 +2,12 @@ import 'dart:math' show pow;
 
 import '../../enum/converter.dart';
 import '../../enum/density_unit.dart';
+import '../../enum/length_unit.dart';
+import '../../enum/mass_unit.dart';
 import '../../enum/symbol_part.dart';
 import '../../enum/unit_system.dart';
+import '../../enum/volume_unit.dart';
 import '../../misc/global.dart';
-import '../../unit_converter.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
@@ -18,8 +20,30 @@ final _poundToGram = conversionFactor(Converter.mass, MassUnit.pound) /
     conversionFactor(Converter.mass, MassUnit.gram);
 final _slugToGram = conversionFactor(Converter.mass, MassUnit.slug) /
     conversionFactor(Converter.mass, MassUnit.gram);
+final _cubicFootToCubicMetre =
+    conversionFactor(Converter.volume, VolumeUnit.cubicFoot);
+final _cubicInchToCubicMetre =
+    conversionFactor(Converter.volume, VolumeUnit.cubicInch);
+final _cubicMileToCubicMetre =
+    conversionFactor(Converter.volume, VolumeUnit.cubicMile);
+final _nauticalMileToCubicMetre =
+    pow(conversionFactor(Converter.length, LengthUnit.nauticalMile), 3);
+final _cubicYardToCubicMetre =
+    conversionFactor(Converter.volume, VolumeUnit.cubicYard);
+final _fluiOunceToCubicMetre_us =
+    conversionFactor(Converter.volume, VolumeUnit.fluidOunce_us);
+final _gallonToCubicMetre_usLiquid =
+    conversionFactor(Converter.volume, VolumeUnit.gallon_usLiquid);
+final _quartToCubicMetre_usLiquid =
+    conversionFactor(Converter.volume, VolumeUnit.quart_usLiquid);
+final _cupToCubicMetre_metric =
+    conversionFactor(Converter.volume, VolumeUnit.cup_metric);
+final _cupToCubicMetre_us =
+    conversionFactor(Converter.volume, VolumeUnit.cup_us);
+final _cupToCubicMetre_usFoodNutritionLabel =
+    conversionFactor(Converter.volume, VolumeUnit.cup_usFoodNutritionLabel);
 
-// gram per __litre variations
+/// gram per __litre variations
 final _intermediateGramPerLitreVariations = createUnitVariation(
   DensityUnit.values,
   'gramPer${variationUnitNameSeperator}Litre',
@@ -28,7 +52,7 @@ final _intermediateGramPerLitreVariations = createUnitVariation(
   namePrefix: 'gram per ',
   namePostfix: 'litre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
     ],
@@ -44,7 +68,7 @@ final _intermediateGramPerLitreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -1,
 );
 
-// gram per cubic __metre variations
+/// gram per cubic __metre variations
 final _intermediateGramPerCubicMetreVariations = createUnitVariation(
   DensityUnit.values,
   'gramPerCubic${variationUnitNameSeperator}Metre',
@@ -53,13 +77,13 @@ final _intermediateGramPerCubicMetreVariations = createUnitVariation(
   namePrefix: 'gram per cubic ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptThree,
     ],
@@ -70,7 +94,7 @@ final _intermediateGramPerCubicMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -3,
 );
 
-// __gram per __litre and per cubic __metre variations
+/// __gram per __litre and per cubic __metre variations
 final _gramPerLitreAndPerCubicMetreVariations = {
   for (var unit in _intermediateGramPerLitreVariations)
     ...create(unit, DensityUnit.values),
@@ -78,19 +102,15 @@ final _gramPerLitreAndPerCubicMetreVariations = {
     ...create(unit, DensityUnit.values),
 };
 
-// __gram per cubic foot variations
+/// __gram per cubic foot variations
 final _gramPerCubicFootVariations = createUnitVariation(
   DensityUnit.values,
   '${variationUnitNameSeperator}gramPerCubicFoot',
-  _perCubicMetreToPerLitre /
-      conversionFactor(
-        Converter.volume,
-        VolumeUnit.cubicFoot,
-      ),
+  _perCubicMetreToPerLitre / _cubicFootToCubicMetre,
   decimalPrefixes,
   namePostfix: 'gram per cubic foot',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.foot,
@@ -99,19 +119,15 @@ final _gramPerCubicFootVariations = createUnitVariation(
   ),
 );
 
-// __gram per cubic inch variations
+/// __gram per cubic inch variations
 final _gramPerCubicInchVariations = createUnitVariation(
   DensityUnit.values,
   '${variationUnitNameSeperator}gramPerCubicInch',
-  _perCubicMetreToPerLitre /
-      conversionFactor(
-        Converter.volume,
-        VolumeUnit.cubicInch,
-      ),
+  _perCubicMetreToPerLitre / _cubicInchToCubicMetre,
   decimalPrefixes,
   namePostfix: 'gram per cubic inch',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.inch,
@@ -120,19 +136,15 @@ final _gramPerCubicInchVariations = createUnitVariation(
   ),
 );
 
-// __gram per cubic mile variations
+/// __gram per cubic mile variations
 final _gramPerCubicMileVariations = createUnitVariation(
   DensityUnit.values,
   '${variationUnitNameSeperator}gramPerCubicMile',
-  _perCubicMetreToPerLitre /
-      conversionFactor(
-        Converter.volume,
-        VolumeUnit.cubicMile,
-      ),
+  _perCubicMetreToPerLitre / _cubicMileToCubicMetre,
   decimalPrefixes,
   namePostfix: 'gram per cubic mile',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.mile,
@@ -141,22 +153,15 @@ final _gramPerCubicMileVariations = createUnitVariation(
   ),
 );
 
-// __gram per cubic nautical mile variations
+/// __gram per cubic nautical mile variations
 final _gramPerCubicNauticalMileVariations = createUnitVariation(
   DensityUnit.values,
   '${variationUnitNameSeperator}gramPerCubicNauticalMile',
-  _perCubicMetreToPerLitre /
-      pow(
-        conversionFactor(
-          Converter.length,
-          LengthUnit.nauticalMile,
-        ),
-        3,
-      ),
+  _perCubicMetreToPerLitre / _nauticalMileToCubicMetre,
   decimalPrefixes,
   namePostfix: 'gram per cubic nautical mile',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.nauticalMile,
@@ -165,19 +170,15 @@ final _gramPerCubicNauticalMileVariations = createUnitVariation(
   ),
 );
 
-// __gram per cubic yard variations
+/// __gram per cubic yard variations
 final _gramPerCubicYardVariations = createUnitVariation(
   DensityUnit.values,
   '${variationUnitNameSeperator}gramPerCubicYard',
-  _perCubicMetreToPerLitre /
-      conversionFactor(
-        Converter.volume,
-        VolumeUnit.cubicYard,
-      ),
+  _perCubicMetreToPerLitre / _cubicYardToCubicMetre,
   decimalPrefixes,
   namePostfix: 'gram per cubic yard',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.yard,
@@ -186,19 +187,15 @@ final _gramPerCubicYardVariations = createUnitVariation(
   ),
 );
 
-// __gram per fluid ounce us variations
+/// __gram per fluid ounce us variations
 final _gramPerFluidOunceVariations_us = createUnitVariation(
   DensityUnit.values,
   '${variationUnitNameSeperator}gramPerFluidOunce_us',
-  _perCubicMetreToPerLitre /
-      conversionFactor(
-        Converter.volume,
-        VolumeUnit.fluidOunce_us,
-      ),
+  _perCubicMetreToPerLitre / _fluiOunceToCubicMetre_us,
   decimalPrefixes,
   namePostfix: 'gram per fluid ounce',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.fluid,
@@ -209,19 +206,15 @@ final _gramPerFluidOunceVariations_us = createUnitVariation(
   system: UnitSystem.us,
 );
 
-// __gram per gallon us liquid variations
+/// __gram per gallon us liquid variations
 final _gramPerGallonVariations_usLiquid = createUnitVariation(
   DensityUnit.values,
   '${variationUnitNameSeperator}gramPerGallon_usLiquid',
-  _perCubicMetreToPerLitre /
-      conversionFactor(
-        Converter.volume,
-        VolumeUnit.gallon_usLiquid,
-      ),
+  _perCubicMetreToPerLitre / _gallonToCubicMetre_usLiquid,
   decimalPrefixes,
   namePostfix: 'gram per gallon',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.gallon,
@@ -230,19 +223,15 @@ final _gramPerGallonVariations_usLiquid = createUnitVariation(
   system: UnitSystem.usLiquid,
 );
 
-// __gram per quart us liquid variations
+/// __gram per quart us liquid variations
 final _gramPerQuartVariations_usLiquid = createUnitVariation(
   DensityUnit.values,
   '${variationUnitNameSeperator}gramPerQuart_usLiquid',
-  _perCubicMetreToPerLitre /
-      conversionFactor(
-        Converter.volume,
-        VolumeUnit.quart_usLiquid,
-      ),
+  _perCubicMetreToPerLitre / _quartToCubicMetre_usLiquid,
   decimalPrefixes,
   namePostfix: 'gram per quart',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gram,
       SymbolPart.forwardSlash,
       SymbolPart.quart,
@@ -251,7 +240,7 @@ final _gramPerQuartVariations_usLiquid = createUnitVariation(
   system: UnitSystem.usLiquid,
 );
 
-// grain per __litre variations
+/// grain per __litre variations
 final _grainPerLitreVariations = createUnitVariation(
   DensityUnit.values,
   'grainPer${variationUnitNameSeperator}Litre',
@@ -260,13 +249,13 @@ final _grainPerLitreVariations = createUnitVariation(
   namePrefix: 'grain per ',
   namePostfix: 'litre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.grain,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.litre,
     ],
   ),
@@ -276,7 +265,7 @@ final _grainPerLitreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -1,
 );
 
-// grain per cubic __metre variations
+/// grain per cubic __metre variations
 final _grainPerCubicMetreVariations = createUnitVariation(
   DensityUnit.values,
   'grainPerCubic${variationUnitNameSeperator}Metre',
@@ -285,13 +274,13 @@ final _grainPerCubicMetreVariations = createUnitVariation(
   namePrefix: 'grain per cubic ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.grain,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptThree,
     ],
@@ -302,7 +291,7 @@ final _grainPerCubicMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -3,
 );
 
-// ounce per __litre variations
+/// ounce per __litre variations
 final _ouncePerLitreVariations = createUnitVariation(
   DensityUnit.values,
   'ouncePer${variationUnitNameSeperator}Litre',
@@ -311,13 +300,13 @@ final _ouncePerLitreVariations = createUnitVariation(
   namePrefix: 'ounce per ',
   namePostfix: 'litre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.ounce,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.litre,
     ],
   ),
@@ -327,7 +316,7 @@ final _ouncePerLitreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -1,
 );
 
-// ounce per cubic __metre variations
+/// ounce per cubic __metre variations
 final _ouncePerCubicMetreVariations = createUnitVariation(
   DensityUnit.values,
   'ouncePerCubic${variationUnitNameSeperator}Metre',
@@ -336,13 +325,13 @@ final _ouncePerCubicMetreVariations = createUnitVariation(
   namePrefix: 'ounce per cubic ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.ounce,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptThree,
     ],
@@ -353,7 +342,7 @@ final _ouncePerCubicMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -3,
 );
 
-// pound per __litre variations
+/// pound per __litre variations
 final _poundPerLitreVariations = createUnitVariation(
   DensityUnit.values,
   'poundPer${variationUnitNameSeperator}Litre',
@@ -362,13 +351,13 @@ final _poundPerLitreVariations = createUnitVariation(
   namePrefix: 'pound per ',
   namePostfix: 'litre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.pound,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.litre,
     ],
   ),
@@ -378,7 +367,7 @@ final _poundPerLitreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -1,
 );
 
-// pound per cubic __metre variations
+/// pound per cubic __metre variations
 final _poundPerCubicMetreVariations = createUnitVariation(
   DensityUnit.values,
   'poundPerCubic${variationUnitNameSeperator}Metre',
@@ -387,13 +376,13 @@ final _poundPerCubicMetreVariations = createUnitVariation(
   namePrefix: 'pound per cubic ',
   namePostfix: 'metre',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.pound,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.superscriptThree,
     ],
@@ -404,12 +393,12 @@ final _poundPerCubicMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: -3,
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'grain per cubic foot',
     createSymbol(
-      [
+      const [
         SymbolPart.grain,
         SymbolPart.forwardSlash,
         SymbolPart.foot,
@@ -417,16 +406,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.grainPerCubicFoot,
-    conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicFoot,
-        ),
+    conversionFactor:
+        _grainToGram * _perCubicMetreToPerLitre / _cubicFootToCubicMetre,
   ),
   createUnit(
     'grain per cubic inch',
     createSymbol(
-      [
+      const [
         SymbolPart.grain,
         SymbolPart.forwardSlash,
         SymbolPart.inch,
@@ -434,16 +420,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.grainPerCubicInch,
-    conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicInch,
-        ),
+    conversionFactor:
+        _grainToGram * _perCubicMetreToPerLitre / _cubicInchToCubicMetre,
   ),
   createUnit(
     'grain per cubic mile',
     createSymbol(
-      [
+      const [
         SymbolPart.grain,
         SymbolPart.forwardSlash,
         SymbolPart.mile,
@@ -451,16 +434,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.grainPerCubicMile,
-    conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicMile,
-        ),
+    conversionFactor:
+        _grainToGram * _perCubicMetreToPerLitre / _cubicMileToCubicMetre,
   ),
   createUnit(
     'grain per cubic nautical mile',
     createSymbol(
-      [
+      const [
         SymbolPart.grain,
         SymbolPart.forwardSlash,
         SymbolPart.nauticalMile,
@@ -468,19 +448,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.grainPerCubicNauticalMile,
-    conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
-        pow(
-          conversionFactor(
-            Converter.length,
-            LengthUnit.nauticalMile,
-          ),
-          3,
-        ),
+    conversionFactor:
+        _grainToGram * _perCubicMetreToPerLitre / _nauticalMileToCubicMetre,
   ),
   createUnit(
     'grain per cubic yard',
     createSymbol(
-      [
+      const [
         SymbolPart.grain,
         SymbolPart.forwardSlash,
         SymbolPart.yard,
@@ -488,16 +462,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.grainPerCubicYard,
-    conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicYard,
-        ),
+    conversionFactor:
+        _grainToGram * _perCubicMetreToPerLitre / _cubicYardToCubicMetre,
   ),
   createUnit(
     'grain per fluid ounce',
     createSymbol(
-      [
+      const [
         SymbolPart.grain,
         SymbolPart.forwardSlash,
         SymbolPart.fluid,
@@ -506,17 +477,14 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.grainPerFluidOunce_us,
-    conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.fluidOunce_us,
-        ),
+    conversionFactor:
+        _grainToGram * _perCubicMetreToPerLitre / _fluiOunceToCubicMetre_us,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
     'grain per gallon',
     createSymbol(
-      [
+      const [
         SymbolPart.grain,
         SymbolPart.forwardSlash,
         SymbolPart.gallon,
@@ -524,84 +492,67 @@ final _otherUnits = {
     ),
     DensityUnit.grainPerGallon_usLiquid,
     conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.gallon_usLiquid,
-        ),
+        _gallonToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
     'grain per quart',
     createSymbol(
-      [
+      const [
         SymbolPart.grain,
         SymbolPart.forwardSlash,
         SymbolPart.quart,
       ],
     ),
     DensityUnit.grainPerQuart_usLiquid,
-    conversionFactor: (_grainToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.quart_usLiquid,
-        ),
+    conversionFactor:
+        _grainToGram * _perCubicMetreToPerLitre / _quartToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
     'gram per cup',
     createSymbol(
-      [
+      const [
         SymbolPart.gram,
         SymbolPart.forwardSlash,
         SymbolPart.lC,
       ],
     ),
     DensityUnit.gramPerCup_metric,
-    conversionFactor: _perCubicMetreToPerLitre /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cup_metric,
-        ),
+    conversionFactor: _perCubicMetreToPerLitre / _cupToCubicMetre_metric,
     system: unitSystem[UnitSystem.metric],
   ),
   createUnit(
     'gram per cup',
     createSymbol(
-      [
+      const [
         SymbolPart.gram,
         SymbolPart.forwardSlash,
         SymbolPart.lC,
       ],
     ),
     DensityUnit.gramPerCup_us,
-    conversionFactor: _perCubicMetreToPerLitre /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cup_us,
-        ),
+    conversionFactor: _perCubicMetreToPerLitre / _cupToCubicMetre_us,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
     'gram per cup',
     createSymbol(
-      [
+      const [
         SymbolPart.gram,
         SymbolPart.forwardSlash,
         SymbolPart.lC,
       ],
     ),
     DensityUnit.gramPerCup_usFoodNutrition,
-    conversionFactor: _perCubicMetreToPerLitre /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cup_usFoodNutritionLabel,
-        ),
+    conversionFactor:
+        _perCubicMetreToPerLitre / _cupToCubicMetre_usFoodNutritionLabel,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
   createUnit(
     'ounce per cubic foot',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.foot,
@@ -609,16 +560,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.ouncePerCubicFoot,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicFoot,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _cubicFootToCubicMetre,
   ),
   createUnit(
     'ounce per cubic inch',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.inch,
@@ -626,16 +574,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.ouncePerCubicInch,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicInch,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _cubicInchToCubicMetre,
   ),
   createUnit(
     'ounce per cubic mile',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.mile,
@@ -643,16 +588,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.ouncePerCubicMile,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicMile,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _cubicMileToCubicMetre,
   ),
   createUnit(
     'ounce per cubic nautical mile',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.nauticalMile,
@@ -660,19 +602,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.ouncePerCubicNauticalMile,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        pow(
-          conversionFactor(
-            Converter.length,
-            LengthUnit.nauticalMile,
-          ),
-          3,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _nauticalMileToCubicMetre,
   ),
   createUnit(
     'ounce per cubic yard',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.yard,
@@ -680,16 +616,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.ouncePerCubicYard,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicYard,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _cubicYardToCubicMetre,
   ),
   createUnit(
     'ounce per fluid ounce',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.fluid,
@@ -698,102 +631,85 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.ouncePerFluidOunce_us,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.fluidOunce_us,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _fluiOunceToCubicMetre_us,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
     'ounce per gallon',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.gallon,
       ],
     ),
     DensityUnit.ouncePerGallon_usLiquid,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.gallon_usLiquid,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _gallonToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
     'ounce per quart',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.quart,
       ],
     ),
     DensityUnit.ouncePerQuart_usLiquid,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.quart_usLiquid,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _quartToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
     'ounce per cup',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.lC,
       ],
     ),
     DensityUnit.ouncePerCup_metric,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cup_metric,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _cupToCubicMetre_metric,
     system: unitSystem[UnitSystem.metric],
   ),
   createUnit(
     'ounce per cup',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.lC,
       ],
     ),
     DensityUnit.ouncePerCup_us,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cup_us,
-        ),
+    conversionFactor:
+        _ounceToGram * _perCubicMetreToPerLitre / _cupToCubicMetre_us,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
     'ounce per cup',
     createSymbol(
-      [
+      const [
         SymbolPart.ounce,
         SymbolPart.forwardSlash,
         SymbolPart.lC,
       ],
     ),
     DensityUnit.ouncePerCup_usFoodNutrition,
-    conversionFactor: (_ounceToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cup_usFoodNutritionLabel,
-        ),
+    conversionFactor: _ounceToGram *
+        _perCubicMetreToPerLitre /
+        _cupToCubicMetre_usFoodNutritionLabel,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
   createUnit(
     'pound per cubic foot',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.foot,
@@ -801,16 +717,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.poundPerCubicFoot,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicFoot,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _cubicFootToCubicMetre,
   ),
   createUnit(
     'pound per cubic inch',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.inch,
@@ -818,16 +731,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.poundPerCubicInch,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicInch,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _cubicInchToCubicMetre,
   ),
   createUnit(
     'pound per cubic mile',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.mile,
@@ -835,16 +745,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.poundPerCubicMile,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicMile,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _cubicMileToCubicMetre,
   ),
   createUnit(
     'pound per cubic nautical mile',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.nauticalMile,
@@ -852,19 +759,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.poundPerCubicNauticalMile,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        pow(
-          conversionFactor(
-            Converter.length,
-            LengthUnit.nauticalMile,
-          ),
-          3,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _nauticalMileToCubicMetre,
   ),
   createUnit(
     'pound per cubic yard',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.yard,
@@ -872,16 +773,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.poundPerCubicYard,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicYard,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _cubicYardToCubicMetre,
   ),
   createUnit(
     'pound per fluid ounce',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.fluid,
@@ -890,102 +788,85 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.poundPerFluidOunce_us,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.fluidOunce_us,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _fluiOunceToCubicMetre_us,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
     'pound per gallon',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.gallon,
       ],
     ),
     DensityUnit.poundPerGallon_usLiquid,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.gallon_usLiquid,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _gallonToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
     'pound per quart',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.quart,
       ],
     ),
     DensityUnit.poundPerQuart_usLiquid,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.quart_usLiquid,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _quartToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
     'pound per cup',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.lC,
       ],
     ),
     DensityUnit.poundPerCup_metric,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cup_metric,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _cupToCubicMetre_metric,
     system: unitSystem[UnitSystem.metric],
   ),
   createUnit(
     'pound per cup',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.lC,
       ],
     ),
     DensityUnit.poundPerCup_us,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cup_us,
-        ),
+    conversionFactor:
+        _poundToGram * _perCubicMetreToPerLitre / _cupToCubicMetre_us,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
     'pound per cup',
     createSymbol(
-      [
+      const [
         SymbolPart.pound,
         SymbolPart.forwardSlash,
         SymbolPart.lC,
       ],
     ),
     DensityUnit.poundPerCup_usFoodNutrition,
-    conversionFactor: (_poundToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cup_usFoodNutritionLabel,
-        ),
+    conversionFactor: _poundToGram *
+        _perCubicMetreToPerLitre /
+        _cupToCubicMetre_usFoodNutritionLabel,
     system: unitSystem[UnitSystem.usFoodNutritionLabel],
   ),
   createUnit(
     'slug per cubic foot',
     createSymbol(
-      [
+      const [
         SymbolPart.slug,
         SymbolPart.forwardSlash,
         SymbolPart.foot,
@@ -993,16 +874,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.slugPerCubicFoot,
-    conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicFoot,
-        ),
+    conversionFactor:
+        _slugToGram * _perCubicMetreToPerLitre / _cubicFootToCubicMetre,
   ),
   createUnit(
     'slug per cubic inch',
     createSymbol(
-      [
+      const [
         SymbolPart.slug,
         SymbolPart.forwardSlash,
         SymbolPart.inch,
@@ -1010,16 +888,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.slugPerCubicInch,
-    conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicInch,
-        ),
+    conversionFactor:
+        _slugToGram * _perCubicMetreToPerLitre / _cubicInchToCubicMetre,
   ),
   createUnit(
     'slug per cubic mile',
     createSymbol(
-      [
+      const [
         SymbolPart.slug,
         SymbolPart.forwardSlash,
         SymbolPart.mile,
@@ -1027,16 +902,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.slugPerCubicMile,
-    conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicMile,
-        ),
+    conversionFactor:
+        _slugToGram * _perCubicMetreToPerLitre / _cubicMileToCubicMetre,
   ),
   createUnit(
     'slug per cubic nautical mile',
     createSymbol(
-      [
+      const [
         SymbolPart.slug,
         SymbolPart.forwardSlash,
         SymbolPart.nauticalMile,
@@ -1044,19 +916,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.slugPerCubicNauticalMile,
-    conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
-        pow(
-          conversionFactor(
-            Converter.length,
-            LengthUnit.nauticalMile,
-          ),
-          3,
-        ),
+    conversionFactor:
+        _slugToGram * _perCubicMetreToPerLitre / _nauticalMileToCubicMetre,
   ),
   createUnit(
     'slug per cubic yard',
     createSymbol(
-      [
+      const [
         SymbolPart.slug,
         SymbolPart.forwardSlash,
         SymbolPart.yard,
@@ -1064,16 +930,13 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.slugPerCubicYard,
-    conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.cubicYard,
-        ),
+    conversionFactor:
+        _slugToGram * _perCubicMetreToPerLitre / _cubicYardToCubicMetre,
   ),
   createUnit(
     'slug per fluid ounce',
     createSymbol(
-      [
+      const [
         SymbolPart.slug,
         SymbolPart.forwardSlash,
         SymbolPart.fluid,
@@ -1082,45 +945,36 @@ final _otherUnits = {
       ],
     ),
     DensityUnit.slugPerFluidOunce_us,
-    conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.fluidOunce_us,
-        ),
+    conversionFactor:
+        _slugToGram * _perCubicMetreToPerLitre / _fluiOunceToCubicMetre_us,
     system: unitSystem[UnitSystem.us],
   ),
   createUnit(
     'slug per gallon',
     createSymbol(
-      [
+      const [
         SymbolPart.slug,
         SymbolPart.forwardSlash,
         SymbolPart.gallon,
       ],
     ),
     DensityUnit.slugPerGallon_usLiquid,
-    conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.gallon_usLiquid,
-        ),
+    conversionFactor:
+        _slugToGram * _perCubicMetreToPerLitre / _gallonToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
   createUnit(
     'slug per quart',
     createSymbol(
-      [
+      const [
         SymbolPart.slug,
         SymbolPart.forwardSlash,
         SymbolPart.quart,
       ],
     ),
     DensityUnit.slugPerQuart_usLiquid,
-    conversionFactor: (_slugToGram * _perCubicMetreToPerLitre) /
-        conversionFactor(
-          Converter.volume,
-          VolumeUnit.quart_usLiquid,
-        ),
+    conversionFactor:
+        _slugToGram * _perCubicMetreToPerLitre / _quartToCubicMetre_usLiquid,
     system: unitSystem[UnitSystem.usLiquid],
   ),
 };

@@ -5,7 +5,7 @@ import '../../enum/torque_unit.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __newton metre variations
+/// __newton metre variations
 final _newtonMetreVariations = createUnitVariation(
   TorqueUnit.values,
   '${variationUnitNameSeperator}newtonMetre',
@@ -13,7 +13,7 @@ final _newtonMetreVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'newton metre',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.newton,
       SymbolPart.space,
       SymbolPart.metre,
@@ -23,7 +23,7 @@ final _newtonMetreVariations = createUnitVariation(
   americanNamePostfix: 'newton meter',
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'gram-force centimetre',

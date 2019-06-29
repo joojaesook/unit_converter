@@ -3,7 +3,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __ampere per metre variations
+/// __ampere per metre variations
 final _amperePerMetreVariations = createUnitVariation(
   MagneticFieldIntensityUnit.values,
   '${variationUnitNameSeperator}amperePerMetre',
@@ -11,7 +11,7 @@ final _amperePerMetreVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'ampere per metre',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.ampere,
       SymbolPart.forwardSlash,
       SymbolPart.metre,
@@ -21,7 +21,7 @@ final _amperePerMetreVariations = createUnitVariation(
   americanNamePostfix: 'ampere per meter',
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'oersted',

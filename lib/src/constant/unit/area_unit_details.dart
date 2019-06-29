@@ -9,16 +9,10 @@ import '../../misc/global.dart';
 import '../others/misc.dart';
 import '../others/unit_system.dart';
 
-final _squareFoot = pow(
-  conversionFactor(
-    Converter.length,
-    LengthUnit.foot,
-  ),
-  2,
-);
+final _squareFoot = pow(conversionFactor(Converter.length, LengthUnit.foot), 2);
 final _acreToSquareMetre = 43560 * _squareFoot;
 
-// __barn variations
+/// __barn variations
 final _barnVariations = createUnitVariation(
   AreaUnit.values,
   '${variationUnitNameSeperator}barn',
@@ -26,13 +20,13 @@ final _barnVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'barn',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.barn,
     ],
   ),
 );
 
-// square __metre variations
+/// square __metre variations
 final _squareMetreVariations = createUnitVariation(
   AreaUnit.values,
   'square${variationUnitNameSeperator}Metre',
@@ -52,7 +46,7 @@ final _squareMetreVariations = createUnitVariation(
   powerOfVariationConversionFactor: 2,
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'acre',
@@ -163,13 +157,8 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.squareInch,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.inch,
-      ),
-      2,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.inch), 2),
   ),
   createUnit(
     'square mile',
@@ -180,13 +169,8 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.squareMile,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.mile,
-      ),
-      2,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.mile), 2),
   ),
   createUnit(
     'square perch',
@@ -196,13 +180,8 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.squarePerch,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.rod,
-      ),
-      2,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.rod), 2),
   ),
   createUnit(
     'square yard',
@@ -213,13 +192,8 @@ final _otherUnits = {
       ],
     ),
     AreaUnit.squareYard,
-    conversionFactor: pow(
-      conversionFactor(
-        Converter.length,
-        LengthUnit.yard,
-      ),
-      2,
-    ),
+    conversionFactor:
+        pow(conversionFactor(Converter.length, LengthUnit.yard), 2),
   ),
 };
 

@@ -8,32 +8,14 @@ import '../../enum/time_unit.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-final _hourToSecond = conversionFactor(
-  Converter.time,
-  TimeUnit.hour,
-);
-final _minuteToSecond = conversionFactor(
-  Converter.time,
-  TimeUnit.minute,
-);
-final _footToMetre = conversionFactor(
-  Converter.length,
-  LengthUnit.foot,
-);
-final _inchToMetre = conversionFactor(
-  Converter.length,
-  LengthUnit.inch,
-);
-final _mileToMetre = conversionFactor(
-  Converter.length,
-  LengthUnit.mile,
-);
-final _yardToMetre = conversionFactor(
-  Converter.length,
-  LengthUnit.yard,
-);
+final _hourToSecond = conversionFactor(Converter.time, TimeUnit.hour);
+final _minuteToSecond = conversionFactor(Converter.time, TimeUnit.minute);
+final _footToMetre = conversionFactor(Converter.length, LengthUnit.foot);
+final _inchToMetre = conversionFactor(Converter.length, LengthUnit.inch);
+final _mileToMetre = conversionFactor(Converter.length, LengthUnit.mile);
+final _yardToMetre = conversionFactor(Converter.length, LengthUnit.yard);
 
-// __gal variations
+/// __gal variations
 final _galVariations = createUnitVariation(
   AccelerationUnit.values,
   '${variationUnitNameSeperator}gal',
@@ -41,13 +23,13 @@ final _galVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'gal',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.gal,
     ],
   ),
 );
 
-// __metre per hour per second variations
+/// __metre per hour per second variations
 final _metrePerHourPerSecondVariations = createUnitVariation(
   AccelerationUnit.values,
   '${variationUnitNameSeperator}metrePerHourPerSecond',
@@ -55,7 +37,7 @@ final _metrePerHourPerSecondVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre per hour per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.forwardSlash,
       SymbolPart.lH,
@@ -67,7 +49,7 @@ final _metrePerHourPerSecondVariations = createUnitVariation(
   americanNamePostfix: 'meter per hour per second',
 );
 
-// __metre per hour squared variations
+/// __metre per hour squared variations
 final _metrePerHourSquaredVariations = createUnitVariation(
   AccelerationUnit.values,
   '${variationUnitNameSeperator}metrePerHourSquared',
@@ -75,7 +57,7 @@ final _metrePerHourSquaredVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre per hour squared',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.forwardSlash,
       SymbolPart.lH,
@@ -86,7 +68,7 @@ final _metrePerHourSquaredVariations = createUnitVariation(
   americanNamePostfix: 'meter per hour squared',
 );
 
-// __metre per minute per second variations
+/// __metre per minute per second variations
 final _metrePerMinutePerSecondVariations = createUnitVariation(
   AccelerationUnit.values,
   '${variationUnitNameSeperator}metrePerMinutePerSecond',
@@ -94,7 +76,7 @@ final _metrePerMinutePerSecondVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre per minute per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.forwardSlash,
       SymbolPart.minute,
@@ -106,7 +88,7 @@ final _metrePerMinutePerSecondVariations = createUnitVariation(
   americanNamePostfix: 'meter per minute per second',
 );
 
-// __metre per minute squared variations
+/// __metre per minute squared variations
 final _metrePerMinuteSquaredVariations = createUnitVariation(
   AccelerationUnit.values,
   '${variationUnitNameSeperator}metrePerMinuteSquared',
@@ -114,7 +96,7 @@ final _metrePerMinuteSquaredVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre per minute squared',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.forwardSlash,
       SymbolPart.minute,
@@ -125,7 +107,7 @@ final _metrePerMinuteSquaredVariations = createUnitVariation(
   americanNamePostfix: 'meter per minute squared',
 );
 
-// __metre per second squared variations
+/// __metre per second squared variations
 final _metrePerSecondSquaredVariations = createUnitVariation(
   AccelerationUnit.values,
   '${variationUnitNameSeperator}metrePerSecondSquared',
@@ -133,7 +115,7 @@ final _metrePerSecondSquaredVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'metre per second squared',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.metre,
       SymbolPart.forwardSlash,
       SymbolPart.second,
@@ -144,7 +126,7 @@ final _metrePerSecondSquaredVariations = createUnitVariation(
   americanNamePostfix: 'meter per second squared',
 );
 
-// other units
+/// other units
 final _otherUnits = {
   // foot
   createUnit(
@@ -353,7 +335,7 @@ final _otherUnits = {
     conversionFactor: _mileToMetre,
   ),
 
-  //yard
+  // yard
   createUnit(
     'yard per hour per second',
     createSymbol(

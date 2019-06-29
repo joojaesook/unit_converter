@@ -2,7 +2,7 @@
 
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/arabbani/unit_converter.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Farabbani%2Funit_converter)
 
-A library to convert units.
+A library to easily convert between units of different system.
 
 ### Show some :heart: and star the repo to support the project
 
@@ -24,7 +24,7 @@ If you want to convert area units, get an instance of area converter, and call t
 import 'package:unit_converter/unit_converter.dart';
 
 main() {
-  var areaConverter = UnitConverter(Converter.area);
+  var areaConverter = getConverter(Converter.area);
   areaConverter.convert(value: 2, from: AreaUnit.acre, to: AreaUnit.squareFoot);
 }
 ```
@@ -45,8 +45,6 @@ Each unit have a `name`(British spelling) and an `americanName`(American spellin
     }
   }
 ```
-
-For a complete list of supported methods, see the `UnitConverter` class.
 
 ## Donations
 

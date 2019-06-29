@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// mole per __mole variations
+/// mole per __mole variations
 final _intermediateMolePerMoleVariations = createUnitVariation(
   MoleFractionUnit.values,
   'molePer${variationUnitNameSeperator}Mole',
@@ -14,26 +14,26 @@ final _intermediateMolePerMoleVariations = createUnitVariation(
   namePrefix: 'mole per ',
   namePostfix: 'mole',
   symbolPrefix: createSymbol(
-    [
+    const [
       SymbolPart.mole,
       SymbolPart.forwardSlash,
     ],
   ),
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.mole,
     ],
   ),
   powerOfVariationConversionFactor: -1,
 );
 
-// __mole per __mole variations
+/// __mole per __mole variations
 final _molePerMoleVariations = {
   for (var unit in _intermediateMolePerMoleVariations)
     ...create(unit, MoleFractionUnit.values)
 };
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'part per billion',

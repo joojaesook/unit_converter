@@ -11,6 +11,7 @@ class SoundConverter {
     return value;
   }
 
+  /// Convert other unit to Decibel.
   double _convertToDecibel(SoundUnit from, double value) {
     switch (from) {
       case SoundUnit.deciBel:
@@ -23,6 +24,7 @@ class SoundConverter {
     return value;
   }
 
+  /// Convert Decibel to other units.
   double _convertFromDecibel(SoundUnit to, double value) {
     switch (to) {
       case SoundUnit.deciBel:

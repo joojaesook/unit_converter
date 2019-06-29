@@ -5,7 +5,7 @@ import '../../enum/symbol_part.dart';
 import '../../misc/global.dart';
 import '../others/misc.dart';
 
-// __mho variations
+/// __mho variations
 final _mhoVariations = createUnitVariation(
   ElectricalConductanceUnit.values,
   '${variationUnitNameSeperator}mho',
@@ -19,7 +19,7 @@ final _mhoVariations = createUnitVariation(
   ),
 );
 
-// __siemens variations
+/// __siemens variations
 final _siemensVariations = createUnitVariation(
   ElectricalConductanceUnit.values,
   '${variationUnitNameSeperator}siemens',
@@ -33,7 +33,7 @@ final _siemensVariations = createUnitVariation(
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'abmho',

@@ -19,7 +19,7 @@ final _footPoundForceToJoule =
 final _britishThermalUnitToJoule_intlSteamTable = conversionFactor(
     Converter.energy, EnergyUnit.britishThermalUnit_intlSteamTable);
 
-// __calorie per hour International Steam Table variations
+/// __calorie per hour International Steam Table variations
 final _caloriePerHourVariations_intlSteamTable = createUnitVariation(
   PowerUnit.values,
   '${variationUnitNameSeperator}caloriePerHour_intlSteamTable',
@@ -27,7 +27,7 @@ final _caloriePerHourVariations_intlSteamTable = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'calorie per hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.calorie,
       SymbolPart.forwardSlash,
       SymbolPart.lH,
@@ -36,7 +36,7 @@ final _caloriePerHourVariations_intlSteamTable = createUnitVariation(
   system: UnitSystem.intlSteamTable,
 );
 
-// __calorie per minute International Steam Table variations
+/// __calorie per minute International Steam Table variations
 final _caloriePerMinuteVariations_intlSteamTable = createUnitVariation(
   PowerUnit.values,
   '${variationUnitNameSeperator}caloriePerMinute_intlSteamTable',
@@ -44,7 +44,7 @@ final _caloriePerMinuteVariations_intlSteamTable = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'calorie per minute',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.calorie,
       SymbolPart.forwardSlash,
       SymbolPart.minute,
@@ -53,7 +53,7 @@ final _caloriePerMinuteVariations_intlSteamTable = createUnitVariation(
   system: UnitSystem.intlSteamTable,
 );
 
-// __calorie per second International Steam Table variations
+/// __calorie per second International Steam Table variations
 final _caloriePerSecondVariations_intlSteamTable = createUnitVariation(
   PowerUnit.values,
   '${variationUnitNameSeperator}caloriePerSecond_intlSteamTable',
@@ -61,7 +61,7 @@ final _caloriePerSecondVariations_intlSteamTable = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'calorie per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.calorie,
       SymbolPart.forwardSlash,
       SymbolPart.second,
@@ -70,7 +70,7 @@ final _caloriePerSecondVariations_intlSteamTable = createUnitVariation(
   system: UnitSystem.intlSteamTable,
 );
 
-// __joule per hour variations
+/// __joule per hour variations
 final _joulePerHourVariations = createUnitVariation(
   PowerUnit.values,
   '${variationUnitNameSeperator}joulePerHour',
@@ -78,7 +78,7 @@ final _joulePerHourVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'joule per hour',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.joule,
       SymbolPart.forwardSlash,
       SymbolPart.lH,
@@ -86,7 +86,7 @@ final _joulePerHourVariations = createUnitVariation(
   ),
 );
 
-// __joule per minute variations
+/// __joule per minute variations
 final _joulePerMinuteVariations = createUnitVariation(
   PowerUnit.values,
   '${variationUnitNameSeperator}joulePerMinute',
@@ -94,7 +94,7 @@ final _joulePerMinuteVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'joule per minute',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.joule,
       SymbolPart.forwardSlash,
       SymbolPart.minute,
@@ -102,7 +102,7 @@ final _joulePerMinuteVariations = createUnitVariation(
   ),
 );
 
-// __joule per second variations
+/// __joule per second variations
 final _joulePerSecondVariations = createUnitVariation(
   PowerUnit.values,
   '${variationUnitNameSeperator}joulePerSecond',
@@ -110,7 +110,7 @@ final _joulePerSecondVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'joule per second',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.joule,
       SymbolPart.forwardSlash,
       SymbolPart.second,
@@ -118,7 +118,7 @@ final _joulePerSecondVariations = createUnitVariation(
   ),
 );
 
-// __watt variations
+/// __watt variations
 final _wattVariations = createUnitVariation(
   PowerUnit.values,
   '${variationUnitNameSeperator}watt',
@@ -126,13 +126,13 @@ final _wattVariations = createUnitVariation(
   decimalPrefixes,
   namePostfix: 'watt',
   symbolPostfix: createSymbol(
-    [
+    const [
       SymbolPart.watt,
     ],
   ),
 );
 
-// other units
+/// other units
 final _otherUnits = {
   createUnit(
     'British thermal unit per hour',
