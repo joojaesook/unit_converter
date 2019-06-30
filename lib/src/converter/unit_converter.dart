@@ -33,17 +33,11 @@ class UnitConverter<T> {
     if (from != to) {
       switch (_type) {
         case Converter.temperature:
-          return TemperatureConverter().convert(
-            value,
-            from as TemperatureUnit,
-            to as TemperatureUnit,
-          );
+          return TemperatureConverter()
+              .convert(value, from as TemperatureUnit, to as TemperatureUnit);
         case Converter.sound:
-          return SoundConverter().convert(
-            value,
-            from as SoundUnit,
-            to as SoundUnit,
-          );
+          return SoundConverter()
+              .convert(value, from as SoundUnit, to as SoundUnit);
         default:
           final double fromOffset = conversionFactor(_type, from);
           final double toOffset = conversionFactor(_type, to);
