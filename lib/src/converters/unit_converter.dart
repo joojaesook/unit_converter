@@ -1,4 +1,5 @@
 import '../constants/others/available_unit.dart';
+import '../constants/others/base_units.dart';
 import '../converters/sound_converter.dart';
 import '../converters/temperature_converter.dart';
 import '../enums/converter.dart';
@@ -16,8 +17,9 @@ class UnitConverter<T> {
   final T _baseUnit;
 
   /// UnitConverter constructor
-  UnitConverter(this._type, this._baseUnit)
-      : assert(_type != null),
+  UnitConverter(this._type)
+      : _baseUnit = baseUnits[_type],
+        assert(_type != null),
         assert(_baseUnit != null);
 
   /// Total number of units of this converter.

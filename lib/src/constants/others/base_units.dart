@@ -46,7 +46,7 @@ import '../../enums/volume_unit.dart';
 import '../../enums/water_hardness_unit.dart';
 
 /// The base unit of each `ConversionType`.
-final Map<Converter, dynamic> baseUnit = {
+final Map<Converter, dynamic> baseUnits = {
   Converter.acceleration: AccelerationUnit.metrePerSecondSquared,
   Converter.area: AreaUnit.squareMetre,
   Converter.bloodCholesterol: BloodCholesterolUnit.milliGramPerDeciLitre,

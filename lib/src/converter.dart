@@ -1,4 +1,3 @@
-import 'constants/others/base_unit.dart';
 import 'converters/unit_converter.dart';
 import 'enums/converter.dart';
 
@@ -51,5 +50,5 @@ export 'enums/water_hardness_unit.dart';
 
 /// Get an `UnitConverter` instance of type `type`.
 UnitConverter getConverter(Converter type) {
-  return UnitConverter(type, baseUnit[type]);
+  return UnitConverter(type);
 }
