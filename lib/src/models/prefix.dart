@@ -8,6 +8,6 @@ class Prefix {
 
   /// Prefix constructor
   const Prefix(this.base, this.exponent)
-      : assert(base != null),
-        assert(exponent != null);
+      : assert(base != null, '\'base\' cannot be null'),
+        assert(exponent != null, '\'exponent\' cannot be null');
 }

@@ -26,7 +26,9 @@ class Unit<T> {
     this.americanName,
     this.variation = false,
     this.system,
-  })  : assert(name != null),
-        assert(symbol != null),
-        assert(type != null);
+  })  : assert(name != null, '\'name\' cannot be null'),
+        assert(symbol != null, '\'symbol\' cannot be null'),
+        assert(type != null, '\'type\' cannot be null'),
+        assert(name.isNotEmpty, '\'name\' cannot be empty'),
+        assert(symbol.isNotEmpty, '\'symbol\' cannot be empty');
 }

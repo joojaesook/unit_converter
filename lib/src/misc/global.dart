@@ -14,11 +14,9 @@ import '../models/unit.dart';
 
 /// Create symbol from `symbolParts`.
 String createSymbol(List<SymbolPart> symbolParts) {
+  assert(symbolParts != null || symbolParts.isNotEmpty,
+      '\'symbolParts\' cannot be null or empty');
   String symbolName = '';
-  if (symbolParts == null || symbolParts.isEmpty) {
-    assert(false, 'symbolParts cannot be null or empty');
-    return symbolName;
-  }
   for (var part in symbolParts) {
     symbolName += symbol[part];
   }
