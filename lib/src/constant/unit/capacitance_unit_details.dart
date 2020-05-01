@@ -30,7 +30,7 @@ final _otherUnits = {
       ],
     ),
     CapacitanceUnit.abFarad,
-    conversionFactor: pow(10, 9),
+    conversionFactor: pow(10, 9).toDouble(),
     variation: true,
   ),
 };

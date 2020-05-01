@@ -89,7 +89,7 @@ enum LengthUnit {
   yottaParsec,
   zeptoLightYear,
   zeptoMetre,
-  zeptopPrsec,
+  zeptoParsec,
   zettaLightYear,
   zettaMetre,
   zettaParsec,
