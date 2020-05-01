@@ -18,7 +18,10 @@ class UnitConverter<T> {
   /// UnitConverter constructor
   UnitConverter(this._type, this._baseUnit)
       : assert(_type != null),
-        assert(_baseUnit != null);
+        assert(_baseUnit != null) {
+    // HACK-Patch : init availableUnit by accessing it
+    print("available unitcout = $unitCount");
+	}
 
   /// Total number of units of this converter.
   get unitCount => _availableUnit().length;
