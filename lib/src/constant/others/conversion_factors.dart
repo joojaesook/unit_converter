@@ -1,4 +1,4 @@
-1 '../../enum/converter.dart';
+import '../../enum/converter.dart';
 
 /// The conversion factor to base unit of each `ConversionType`.
 final Map<Converter, Map<dynamic, double>> conversionFactors = {
